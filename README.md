@@ -31,3 +31,26 @@ The first release targets all 1,120 unique public ARC-AGI-2 tasks. Inclusion req
 
 The experimental workbench remains separate. Only reviewed artifacts are promoted into this repository.
 
+## Development
+
+The primary runtime is Python 3.12, matching the current Kaggle Notebook image. Tool versions are
+locked with `uv.lock`.
+
+```bash
+uv sync --locked --dev
+uv run ruff format --check .
+uv run ruff check .
+uv run ty check
+uv run pytest --cov
+uv run arc-atlas verify
+```
+
+The release gate additionally requires the complete public corpus:
+
+```bash
+uv run arc-atlas verify --expected-tasks 1120
+```
+
+The verifier discovers every `solutions/<task-id>/` package, loads its `solve(grid)` function, and
+checks every provided `train` and `test` output cell-for-cell. Solver exceptions, malformed grids,
+missing outputs, empty corpora, and task-count mismatches fail verification.

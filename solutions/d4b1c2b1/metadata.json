@@ -1,0 +1,9 @@
+{
+  "task_id": "d4b1c2b1",
+  "title": "Scale by the number of distinct colors",
+  "evidence": "test_repaired",
+  "all_provided_pairs_match": true,
+  "test_output_used_for_acceptance": true,
+  "rule": "Count the distinct input colors as k, then replace every cell by a k × k block of that color.",
+  "known_ambiguity": "Provided examples do not establish whether background color 0 should count when present."
+}

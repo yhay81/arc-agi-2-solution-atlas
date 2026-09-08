@@ -1,0 +1,47 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "arc-agi-2-solution-atlas"
+version = "0.1.0"
+description = "Executable and verifiable ARC-AGI-2 solution atlas"
+readme = "README.md"
+requires-python = ">=3.12,<3.15"
+dependencies = []
+
+[project.scripts]
+arc-atlas = "arc_agi_2_atlas.cli:main"
+
+[dependency-groups]
+dev = [
+  "pytest>=9.1.0",
+  "pytest-cov>=7.0.0",
+  "ruff>=0.13.0",
+  "ty>=0.0.79",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/arc_agi_2_atlas"]
+
+[tool.pytest.ini_options]
+addopts = "--strict-config --strict-markers -ra"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["arc_agi_2_atlas"]
+
+[tool.coverage.report]
+fail_under = 95
+show_missing = true
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP", "B", "SIM", "C4", "PIE", "RUF"]
+
+[tool.ruff.format]
+docstring-code-format = true
