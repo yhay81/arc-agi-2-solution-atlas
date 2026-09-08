@@ -10,10 +10,11 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("command", choices=["verify"])
     parser.add_argument("--solutions", type=Path, default=Path("solutions"))
+    parser.add_argument("--data", type=Path, default=Path("data/provided_tasks.json"))
     parser.add_argument("--expected-tasks", type=int)
     args = parser.parse_args()
 
-    result = verify_corpus(args.solutions)
+    result = verify_corpus(args.solutions, args.data)
     failures = [pair for pair in result.pair_results if not pair.passed]
     print(
         f"tasks={result.task_count} pairs={len(result.pair_results)} "

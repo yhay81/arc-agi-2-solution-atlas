@@ -1,7 +1,7 @@
-"""Discover solution packages and verify every provided pair exactly."""
+"""Discover solution modules and verify every provided pair exactly."""
 
 import json
-from collections.abc import Callable, Iterator
+from collections.abc import Callable, Iterator, Mapping
 from dataclasses import dataclass
 from importlib.util import module_from_spec, spec_from_file_location
 from pathlib import Path
@@ -10,7 +10,8 @@ from typing import cast
 
 from arc_agi_2_atlas.types import Grid, normalize_grid
 
-Solver = Callable[[Grid], Grid]
+type Solver = Callable[[Grid], Grid]
+type TaskDocument = Mapping[str, object]
 
 
 @dataclass(frozen=True, slots=True)
@@ -41,26 +42,38 @@ class CorpusResult:
         return bool(self.pair_results) and self.passed_pairs == len(self.pair_results)
 
 
-def discover_task_directories(root: Path) -> tuple[Path, ...]:
-    """Find complete solution packages in stable task-id order."""
+def discover_solution_paths(root: Path) -> tuple[Path, ...]:
+    """Find ``task_<id>.py`` solution modules in stable task-ID order."""
     if not root.is_dir():
         return ()
-    return tuple(
-        directory
-        for directory in sorted(root.iterdir())
-        if directory.is_dir()
-        and (directory / "task.json").is_file()
-        and (directory / "solution.py").is_file()
+    return tuple(sorted(root.glob("task_????????.py")))
+
+
+def task_id_from_path(path: Path) -> str:
+    """Extract the eight-character ARC task ID from a solution path."""
+    return path.stem.removeprefix("task_")
+
+
+def load_provided_tasks(path: Path) -> dict[str, TaskDocument]:
+    """Load the shared mapping of task IDs to provided input/output pairs."""
+    raw = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(raw, dict):
+        raise ValueError(f"provided task data must be an object: {path}")
+    valid = all(
+        isinstance(task_id, str) and isinstance(task, dict) for task_id, task in raw.items()
     )
+    if not valid:
+        raise ValueError(f"provided task data contains an invalid entry: {path}")
+    return cast("dict[str, TaskDocument]", raw)
 
 
-def _load_solver(path: Path) -> Solver:
-    spec = spec_from_file_location(f"arc_solution_{path.parent.name}", path)
+def _load_module(path: Path) -> ModuleType:
+    spec = spec_from_file_location(f"arc_solution_{task_id_from_path(path)}", path)
     if spec is None or spec.loader is None:
-        raise RuntimeError(f"cannot load solver module: {path}")
+        raise RuntimeError(f"cannot load solution module: {path}")
     module = module_from_spec(spec)
     spec.loader.exec_module(module)
-    return _solver_from_module(module, path)
+    return module
 
 
 def _solver_from_module(module: ModuleType, path: Path) -> Solver:
@@ -70,26 +83,26 @@ def _solver_from_module(module: ModuleType, path: Path) -> Solver:
     return cast("Solver", solve)
 
 
-def _pairs(task_path: Path) -> Iterator[tuple[str, int, Grid, Grid]]:
-    raw = json.loads(task_path.read_text(encoding="utf-8"))
-    if not isinstance(raw, dict):
-        raise ValueError(f"task must be an object: {task_path}")
+def _pairs(task: TaskDocument, task_id: str) -> Iterator[tuple[str, int, Grid, Grid]]:
     for split in ("train", "test"):
-        pairs = raw.get(split)
+        pairs = task.get(split)
         if not isinstance(pairs, list):
-            raise ValueError(f"{task_path}: {split} must be a list")
+            raise ValueError(f"{task_id}: {split} must be a list")
         for index, pair in enumerate(pairs):
             if not isinstance(pair, dict) or "input" not in pair or "output" not in pair:
-                raise ValueError(f"{task_path}: {split}[{index}] needs input and output")
+                raise ValueError(f"{task_id}: {split}[{index}] needs input and output")
             yield split, index, normalize_grid(pair["input"]), normalize_grid(pair["output"])
 
 
-def verify_task(task_directory: Path) -> tuple[PairResult, ...]:
-    """Run one task's solver against every provided train and test pair."""
-    task_id = task_directory.name
-    solver = _load_solver(task_directory / "solution.py")
+def verify_task(solution_path: Path, task: TaskDocument) -> tuple[PairResult, ...]:
+    """Run one solution against every provided train and test pair."""
+    task_id = task_id_from_path(solution_path)
+    module = _load_module(solution_path)
+    if getattr(module, "TASK_ID", None) != task_id:
+        raise ValueError(f"{solution_path}: TASK_ID must equal {task_id!r}")
+    solver = _solver_from_module(module, solution_path)
     results: list[PairResult] = []
-    for split, index, input_grid, expected in _pairs(task_directory / "task.json"):
+    for split, index, input_grid, expected in _pairs(task, task_id):
         try:
             actual = normalize_grid(solver(input_grid))
             results.append(PairResult(task_id, split, index, expected, actual))
@@ -98,10 +111,18 @@ def verify_task(task_directory: Path) -> tuple[PairResult, ...]:
     return tuple(results)
 
 
-def verify_corpus(solutions_root: Path) -> CorpusResult:
-    """Verify all discovered tasks and reject an empty corpus."""
-    task_directories = discover_task_directories(solutions_root)
+def verify_corpus(solutions_root: Path, data_path: Path) -> CorpusResult:
+    """Verify all discovered solutions and reject missing data or an empty corpus."""
+    solution_paths = discover_solution_paths(solutions_root)
+    tasks = load_provided_tasks(data_path)
+    missing_data = [
+        task_id_from_path(path) for path in solution_paths if task_id_from_path(path) not in tasks
+    ]
+    if missing_data:
+        raise ValueError(f"solutions without provided task data: {', '.join(missing_data)}")
     pair_results = tuple(
-        result for directory in task_directories for result in verify_task(directory)
+        result
+        for path in solution_paths
+        for result in verify_task(path, tasks[task_id_from_path(path)])
     )
-    return CorpusResult(len(task_directories), pair_results)
+    return CorpusResult(len(solution_paths), pair_results)

@@ -21,7 +21,7 @@ The first release targets all 1,120 unique public ARC-AGI-2 tasks. Inclusion req
 
 | Area | Purpose |
 |---|---|
-| `solutions/` | One reviewed solution package per task |
+| `solutions/` | One reviewed, English-documented Python module per task |
 | `arc_atlas/` | Small shared grid and object operations |
 | `synthetic/` | Generators and derived task families |
 | `catalog/` | Searchable metadata and aggregate statistics |
@@ -51,6 +51,6 @@ The release gate additionally requires the complete public corpus:
 uv run arc-atlas verify --expected-tasks 1120
 ```
 
-The verifier discovers every `solutions/<task-id>/` package, loads its `solve(grid)` function, and
+The verifier discovers every `solutions/task_<id>.py` module, loads its `solve(grid)` function, and
 checks every provided `train` and `test` output cell-for-cell. Solver exceptions, malformed grids,
 missing outputs, empty corpora, and task-count mismatches fail verification.
