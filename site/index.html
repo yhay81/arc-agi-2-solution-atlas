@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A visual, executable atlas of ARC-AGI-2 solutions.">
     <title>ARC-AGI-2 Solution Atlas</title>
-    <link rel="stylesheet" href="styles.css?v=2">
-    <script src="app.js?v=2" defer></script>
+    <link rel="stylesheet" href="styles.css?v=3">
+    <script src="app.js?v=3" defer></script>
   </head>
   <body>
     <header>
@@ -19,6 +19,7 @@
     </header>
 
     <nav class="task-nav" aria-label="Task navigation">
+      <button id="open-index" class="index-button" type="button">All Tasks</button>
       <span id="position">TASK — / —</span>
       <span id="dataset"></span>
       <div>
@@ -30,5 +31,18 @@
     <main id="task-view" aria-live="polite">
       <p class="loading">Loading tasks…</p>
     </main>
+
+    <dialog id="task-index">
+      <div class="index-header">
+        <div>
+          <h2>All Tasks</h2>
+          <p id="index-count"></p>
+        </div>
+        <button id="close-index" type="button" aria-label="Close task index">Close</button>
+      </div>
+      <label class="index-search-label" for="index-search">Search by ID, dataset, or concept</label>
+      <input id="index-search" type="search" placeholder="Search tasks…" autocomplete="off">
+      <div id="index-grid"></div>
+    </dialog>
   </body>
 </html>

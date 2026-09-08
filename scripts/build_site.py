@@ -15,11 +15,13 @@ OUTPUT = ROOT / ".site-build"
 class SolutionMetadata:
     documentation: str
     concepts: tuple[str, ...]
+    program: str
 
 
 def read_solution(path: Path) -> SolutionMetadata:
     """Read public documentation and concepts without executing a solver."""
-    module = ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
+    program = path.read_text(encoding="utf-8")
+    module = ast.parse(program, filename=str(path))
     documentation = ast.get_docstring(module, clean=False) or "No documentation yet."
     concepts: tuple[str, ...] = ()
     for node in module.body:
@@ -29,7 +31,7 @@ def read_solution(path: Path) -> SolutionMetadata:
             value = ast.literal_eval(node.value)
             if isinstance(value, tuple) and all(isinstance(item, str) for item in value):
                 concepts = value
-    return SolutionMetadata(documentation, concepts)
+    return SolutionMetadata(documentation, concepts, program)
 
 
 def build() -> None:
@@ -54,6 +56,7 @@ def build() -> None:
                     "split": split,
                     "documentation": metadata.documentation,
                     "concepts": metadata.concepts,
+                    "program": metadata.program,
                     "task": task,
                 }
             )

@@ -71,9 +71,10 @@ function render(index) {
     groupElement("EXAMPLES", item.task.train, "EXAMPLE"),
     groupElement("TEST", item.task.test, "TEST"),
   );
-  const explanation = document.createElement("details");
-  explanation.className = "explanation";
-  explanation.innerHTML = "<summary>SOLUTION NOTES</summary>";
+  const reference = document.createElement("div");
+  reference.className = "reference";
+  const notesSection = document.createElement("section");
+  notesSection.innerHTML = "<h2>SOLUTION NOTES</h2>";
   const concepts = document.createElement("div");
   concepts.className = "concepts";
   for (const value of item.concepts) {
@@ -83,13 +84,53 @@ function render(index) {
     concepts.append(concept);
   }
   const documentation = document.createElement("pre");
+  documentation.className = "notes";
   documentation.textContent = item.documentation;
-  explanation.append(concepts, documentation);
-  view.append(title, boards, explanation);
+  notesSection.append(concepts, documentation);
+  const programSection = document.createElement("section");
+  programSection.innerHTML = "<h2>PYTHON PROGRAM</h2>";
+  const program = document.createElement("pre");
+  const code = document.createElement("code");
+  code.textContent = item.program;
+  program.append(code);
+  programSection.append(program);
+  reference.append(notesSection, programSection);
+  view.append(title, boards, reference);
+}
+
+function renderIndex(query = "") {
+  const normalized = query.toLowerCase();
+  const matches = tasks.filter(item =>
+    `${item.id} ${item.split} ${item.concepts.join(" ")}`.toLowerCase().includes(normalized)
+  );
+  document.querySelector("#index-count").textContent = `${matches.length} of ${tasks.length} tasks`;
+  const buttons = matches.map(item => {
+    const button = document.createElement("button");
+    button.className = "index-item";
+    button.innerHTML = `<strong>${item.id}</strong><span>${item.split.toUpperCase()}</span><span>${item.concepts.join(" · ")}</span>`;
+    button.addEventListener("click", () => {
+      render(tasks.indexOf(item));
+      document.querySelector("#task-index").close();
+    });
+    return button;
+  });
+  document.querySelector("#index-grid").replaceChildren(...buttons);
 }
 
 document.querySelector("#previous").addEventListener("click", () => render(currentIndex - 1));
 document.querySelector("#next").addEventListener("click", () => render(currentIndex + 1));
+document.querySelector("#open-index").addEventListener("click", () => {
+  renderIndex();
+  document.querySelector("#task-index").showModal();
+  document.querySelector("#index-search").focus();
+});
+document.querySelector("#close-index").addEventListener("click", () => document.querySelector("#task-index").close());
+document.querySelector("#index-search").addEventListener("input", event => renderIndex(event.target.value));
+document.addEventListener("keydown", event => {
+  if (document.querySelector("#task-index").open || document.activeElement.matches("input")) return;
+  if (event.key === "ArrowLeft" && currentIndex > 0) render(currentIndex - 1);
+  if (event.key === "ArrowRight" && currentIndex < tasks.length - 1) render(currentIndex + 1);
+});
 document.querySelector("#task-search").addEventListener("submit", event => {
   event.preventDefault();
   const taskId = document.querySelector("#task-id").value.toLowerCase();
