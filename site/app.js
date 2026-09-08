@@ -1,13 +1,14 @@
-const COLORS = ["#000", "#0074d9", "#ff4136", "#2ecc40", "#ffdc00", "#aaaaaa", "#f012be", "#ff851b", "#7fdbff", "#870c25"];
-
-const state = { tasks: [], query: "", split: "all", selected: null };
-const list = document.querySelector("#task-list");
-const view = document.querySelector("#task-view");
+const COLORS = ["#000", "#0074d9", "#ff4136", "#2ecc40", "#ffdc00", "#aaa", "#f012be", "#ff851b", "#7fdbff", "#870c25"];
+let tasks = [];
+let currentIndex = 0;
 
 function gridElement(grid) {
+  const longestSide = Math.max(grid.length, grid[0].length);
+  const cellSize = Math.max(7, Math.min(26, Math.floor(280 / longestSide)));
   const element = document.createElement("div");
   element.className = "grid";
-  element.style.gridTemplateColumns = `repeat(${grid[0].length}, 1fr)`;
+  element.style.gridTemplateColumns = `repeat(${grid[0].length}, ${cellSize}px)`;
+  element.style.setProperty("--cell-size", `${cellSize}px`);
   element.setAttribute("aria-label", `${grid.length} by ${grid[0].length} grid`);
   for (const row of grid) for (const value of row) {
     const cell = document.createElement("span");
@@ -19,73 +20,92 @@ function gridElement(grid) {
   return element;
 }
 
-function renderTask(task) {
-  state.selected = task.id;
-  history.replaceState(null, "", `#${task.id}`);
+function pairElement(pair, label) {
+  const card = document.createElement("article");
+  card.className = "pair";
+  const title = document.createElement("h3");
+  title.className = "pair-title";
+  title.textContent = `${label} · INPUT → OUTPUT`;
+  const grids = document.createElement("div");
+  grids.className = "grids";
+  grids.append(gridElement(pair.input));
+  const arrow = document.createElement("span");
+  arrow.className = "arrow";
+  arrow.textContent = "→";
+  grids.append(arrow, gridElement(pair.output));
+  card.append(title, grids);
+  return card;
+}
+
+function groupElement(title, pairs, prefix) {
+  const section = document.createElement("section");
+  const heading = document.createElement("h2");
+  heading.className = "group-title";
+  heading.textContent = title;
+  const list = document.createElement("div");
+  list.className = "pairs";
+  list.append(...pairs.map((pair, index) => pairElement(pair, `${prefix} ${index + 1}`)));
+  section.append(heading, list);
+  return section;
+}
+
+function render(index) {
+  currentIndex = Math.max(0, Math.min(tasks.length - 1, index));
+  const item = tasks[currentIndex];
+  history.replaceState(null, "", `#${item.id}`);
+  document.title = `${item.id} · ARC-AGI-2 Solution Atlas`;
+  document.querySelector("#position").textContent = `TASK ${item.id.toUpperCase()} · ${currentIndex + 1} / ${tasks.length}`;
+  document.querySelector("#dataset").textContent = `ARC-AGI-2 PUBLIC ${item.split.toUpperCase()}`;
+  document.querySelector("#task-id").value = item.id;
+  document.querySelector("#previous").disabled = currentIndex === 0;
+  document.querySelector("#next").disabled = currentIndex === tasks.length - 1;
+
+  const view = document.querySelector("#task-view");
   view.replaceChildren();
-  const header = document.createElement("header");
-  header.className = "task-header";
-  header.innerHTML = `<h2>${task.id}</h2><div class="badges"><span class="badge">${task.split}</span>${task.concepts.map(value => `<span class="badge">${value}</span>`).join("")}</div>`;
-  const rule = document.createElement("pre");
-  rule.className = "rule";
-  rule.textContent = task.documentation;
-  const pairs = document.createElement("section");
-  pairs.className = "pairs";
-  for (const split of ["train", "test"]) task.task[split].forEach((pair, index) => {
-    const item = document.createElement("section");
-    item.className = "pair";
-    item.innerHTML = `<h3>${split} ${index + 1}</h3>`;
-    const grids = document.createElement("div");
-    grids.className = "grids";
-    grids.append(gridElement(pair.input));
-    const arrow = document.createElement("span");
-    arrow.className = "arrow";
-    arrow.textContent = "→";
-    grids.append(arrow, gridElement(pair.output));
-    item.append(grids);
-    pairs.append(item);
-  });
-  view.append(header, rule, pairs);
-  renderList();
-}
-
-function filteredTasks() {
-  const query = state.query.toLowerCase();
-  return state.tasks.filter(task =>
-    (state.split === "all" || task.split === state.split) &&
-    `${task.id} ${task.documentation} ${task.concepts.join(" ")}`.toLowerCase().includes(query)
+  const title = document.createElement("h1");
+  title.className = "task-title";
+  title.textContent = `Task ${item.id}`;
+  const boards = document.createElement("div");
+  boards.className = "boards";
+  boards.append(
+    groupElement("EXAMPLES", item.task.train, "EXAMPLE"),
+    groupElement("TEST", item.task.test, "TEST"),
   );
+  const explanation = document.createElement("details");
+  explanation.className = "explanation";
+  explanation.innerHTML = "<summary>SOLUTION NOTES</summary>";
+  const concepts = document.createElement("div");
+  concepts.className = "concepts";
+  for (const value of item.concepts) {
+    const concept = document.createElement("span");
+    concept.className = "concept";
+    concept.textContent = value;
+    concepts.append(concept);
+  }
+  const documentation = document.createElement("pre");
+  documentation.textContent = item.documentation;
+  explanation.append(concepts, documentation);
+  view.append(title, boards, explanation);
 }
 
-function renderList() {
-  const tasks = filteredTasks();
-  document.querySelector("#result-count").textContent = `${tasks.length} RESULTS`;
-  list.replaceChildren(...tasks.map(task => {
-    const button = document.createElement("button");
-    button.className = `task-link${task.id === state.selected ? " active" : ""}`;
-    button.innerHTML = `<strong>${task.id}</strong><span>${task.concepts.slice(0, 3).join(" · ")}</span>`;
-    button.addEventListener("click", () => renderTask(task));
-    return button;
-  }));
-}
-
-document.querySelector("#search").addEventListener("input", event => {
-  state.query = event.target.value;
-  renderList();
+document.querySelector("#previous").addEventListener("click", () => render(currentIndex - 1));
+document.querySelector("#next").addEventListener("click", () => render(currentIndex + 1));
+document.querySelector("#task-search").addEventListener("submit", event => {
+  event.preventDefault();
+  const taskId = document.querySelector("#task-id").value.toLowerCase();
+  const index = tasks.findIndex(item => item.id === taskId);
+  if (index >= 0) render(index);
 });
-document.querySelectorAll(".filter").forEach(button => button.addEventListener("click", () => {
-  document.querySelectorAll(".filter").forEach(item => item.classList.remove("active"));
-  button.classList.add("active");
-  state.split = button.dataset.split;
-  renderList();
-}));
 
 fetch("catalog.json").then(response => response.json()).then(catalog => {
-  state.tasks = catalog.tasks;
-  document.querySelector("#task-count").textContent = catalog.tasks.length.toLocaleString();
-  document.querySelector("#pair-count").textContent = catalog.pair_count.toLocaleString();
-  renderList();
+  tasks = catalog.tasks;
+  const options = tasks.map(item => {
+    const option = document.createElement("option");
+    option.value = item.id;
+    return option;
+  });
+  document.querySelector("#task-ids").append(...options);
   const requested = location.hash.slice(1);
-  renderTask(state.tasks.find(task => task.id === requested) || state.tasks[0]);
+  const index = tasks.findIndex(item => item.id === requested);
+  render(index >= 0 ? index : 0);
 });
-

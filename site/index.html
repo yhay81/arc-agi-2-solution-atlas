@@ -9,38 +9,26 @@
     <script src="app.js" defer></script>
   </head>
   <body>
-    <header class="masthead">
-      <div>
-        <p class="eyebrow">EXECUTABLE RULES · EXACT VERIFICATION</p>
-        <h1>ARC-AGI-2<br>Solution Atlas</h1>
-      </div>
-      <div class="summary" aria-live="polite">
-        <strong id="task-count">—</strong>
-        <span>documented tasks</span>
-        <strong id="pair-count">—</strong>
-        <span>provided pairs</span>
-      </div>
+    <header>
+      <a class="brand" href="./">ARC-AGI-2<br><strong>SOLUTION ATLAS</strong></a>
+      <form id="task-search" role="search">
+        <label for="task-id">TASK</label>
+        <input id="task-id" list="task-ids" placeholder="Task ID" autocomplete="off">
+        <datalist id="task-ids"></datalist>
+      </form>
     </header>
 
-    <main>
-      <aside class="browser" aria-label="Task browser">
-        <label for="search">Find a task or concept</label>
-        <input id="search" type="search" placeholder="d4b1c2b1, scaling…" autocomplete="off">
-        <div class="filters" role="group" aria-label="Dataset split">
-          <button class="filter active" data-split="all">All</button>
-          <button class="filter" data-split="training">Training</button>
-          <button class="filter" data-split="evaluation">Evaluation</button>
-        </div>
-        <p id="result-count" class="result-count"></p>
-        <nav id="task-list" aria-label="Tasks"></nav>
-      </aside>
+    <nav class="task-nav" aria-label="Task navigation">
+      <span id="position">TASK — / —</span>
+      <span id="dataset"></span>
+      <div>
+        <button id="previous" type="button">Previous</button>
+        <button id="next" type="button">Next</button>
+      </div>
+    </nav>
 
-      <article id="task-view" class="task-view" aria-live="polite">
-        <div class="empty-state">
-          <p>Select a task to inspect its rule, evidence, and every provided pair.</p>
-        </div>
-      </article>
+    <main id="task-view" aria-live="polite">
+      <p class="loading">Loading tasks…</p>
     </main>
   </body>
 </html>
-
