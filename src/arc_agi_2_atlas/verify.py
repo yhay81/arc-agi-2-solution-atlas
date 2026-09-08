@@ -43,28 +43,29 @@ class CorpusResult:
 
 
 def discover_solution_paths(root: Path) -> tuple[Path, ...]:
-    """Find ``task_<id>.py`` solution modules in stable task-ID order."""
+    """Find ``<task_id>.py`` solution modules in stable task-ID order."""
     if not root.is_dir():
         return ()
-    return tuple(sorted(root.glob("task_????????.py")))
+    return tuple(sorted(root.glob("????????.py")))
 
 
 def task_id_from_path(path: Path) -> str:
     """Extract the eight-character ARC task ID from a solution path."""
-    return path.stem.removeprefix("task_")
+    return path.stem
 
 
-def load_provided_tasks(path: Path) -> dict[str, TaskDocument]:
-    """Load the shared mapping of task IDs to provided input/output pairs."""
-    raw = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(raw, dict):
-        raise ValueError(f"provided task data must be an object: {path}")
-    valid = all(
-        isinstance(task_id, str) and isinstance(task, dict) for task_id, task in raw.items()
-    )
-    if not valid:
-        raise ValueError(f"provided task data contains an invalid entry: {path}")
-    return cast("dict[str, TaskDocument]", raw)
+def load_provided_tasks(data_root: Path) -> dict[str, TaskDocument]:
+    """Load ARC tasks from the official ``data/{training,evaluation}`` layout."""
+    tasks: dict[str, TaskDocument] = {}
+    for split in ("training", "evaluation"):
+        for path in sorted((data_root / split).glob("????????.json")):
+            raw = json.loads(path.read_text(encoding="utf-8"))
+            if not isinstance(raw, dict):
+                raise ValueError(f"task data must be an object: {path}")
+            if path.stem in tasks:
+                raise ValueError(f"duplicate task ID in provided data: {path.stem}")
+            tasks[path.stem] = cast("TaskDocument", raw)
+    return tasks
 
 
 def _load_module(path: Path) -> ModuleType:
@@ -111,10 +112,10 @@ def verify_task(solution_path: Path, task: TaskDocument) -> tuple[PairResult, ..
     return tuple(results)
 
 
-def verify_corpus(solutions_root: Path, data_path: Path) -> CorpusResult:
+def verify_corpus(solutions_root: Path, data_root: Path) -> CorpusResult:
     """Verify all discovered solutions and reject missing data or an empty corpus."""
     solution_paths = discover_solution_paths(solutions_root)
-    tasks = load_provided_tasks(data_path)
+    tasks = load_provided_tasks(data_root)
     missing_data = [
         task_id_from_path(path) for path in solution_paths if task_id_from_path(path) not in tasks
     ]

@@ -21,17 +21,20 @@ VALID_TASK = {
 
 def _write_solution(root: Path, source: str, task_id: str = "abc12345") -> Path:
     root.mkdir(exist_ok=True)
-    path = root / f"task_{task_id}.py"
+    path = root / f"{task_id}.py"
     path.write_text(source, encoding="utf-8")
     return path
 
 
-def _write_data(path: Path, tasks: object) -> Path:
-    path.write_text(json.dumps(tasks), encoding="utf-8")
-    return path
+def _write_data(root: Path, tasks: dict[str, object], split: str = "training") -> Path:
+    split_root = root / split
+    split_root.mkdir(parents=True)
+    for task_id, task in tasks.items():
+        (split_root / f"{task_id}.json").write_text(json.dumps(task), encoding="utf-8")
+    return root
 
 
-def test_discovery_uses_prefixed_task_modules_only(tmp_path: Path) -> None:
+def test_discovery_uses_task_id_modules_only(tmp_path: Path) -> None:
     assert discover_solution_paths(tmp_path / "missing") == ()
     _write_solution(tmp_path, "", "abc12345")
     (tmp_path / "notes.py").write_text("", encoding="utf-8")
@@ -39,9 +42,9 @@ def test_discovery_uses_prefixed_task_modules_only(tmp_path: Path) -> None:
     assert [task_id_from_path(path) for path in paths] == ["abc12345"]
 
 
-@pytest.mark.parametrize("data", [[], {"abc12345": []}])
+@pytest.mark.parametrize("data", [[], "invalid"])
 def test_invalid_provided_data_is_rejected(tmp_path: Path, data: object) -> None:
-    path = _write_data(tmp_path / "tasks.json", data)
+    path = _write_data(tmp_path / "data", {"abc12345": data})
     with pytest.raises(ValueError):
         load_provided_tasks(path)
 
@@ -86,13 +89,13 @@ def test_solver_exceptions_are_reported_per_pair(tmp_path: Path) -> None:
 def test_corpus_rejects_solution_without_data(tmp_path: Path) -> None:
     solutions = tmp_path / "solutions"
     _write_solution(solutions, 'TASK_ID = "abc12345"\ndef solve(grid): return grid\n')
-    data = _write_data(tmp_path / "tasks.json", {})
+    data = _write_data(tmp_path / "data", {})
     with pytest.raises(ValueError, match="without provided task data"):
         verify_corpus(solutions, data)
 
 
 def test_empty_corpus_fails(tmp_path: Path) -> None:
-    data = _write_data(tmp_path / "tasks.json", {})
+    data = _write_data(tmp_path / "data", {})
     result = verify_corpus(tmp_path / "solutions", data)
     assert result.task_count == 0
     assert result.pair_results == ()

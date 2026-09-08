@@ -11,7 +11,7 @@ from arc_agi_2_atlas.verify import (
 )
 
 SOLUTIONS = Path("solutions")
-DATA = Path("data/provided_tasks.json")
+DATA = Path("data")
 SOLUTION_PATHS = discover_solution_paths(SOLUTIONS)
 PROVIDED_TASKS = load_provided_tasks(DATA)
 
