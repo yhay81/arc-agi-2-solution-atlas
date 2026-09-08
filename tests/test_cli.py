@@ -5,13 +5,16 @@ from arc_agi_2_atlas.cli import main
 
 
 def test_cli_verifies_current_corpus(monkeypatch, capsys) -> None:
+    task_count = len(list(Path("solutions").glob("????????.py")))
     monkeypatch.setattr(
         sys,
         "argv",
-        ["arc-atlas", "verify", "--solutions", "solutions", "--expected-tasks", "1"],
+        ["arc-atlas", "verify", "--solutions", "solutions"],
     )
     assert main() == 0
-    assert "tasks=1 pairs=8 passed=8 failed=0" in capsys.readouterr().out
+    output = capsys.readouterr().out
+    assert f"tasks={task_count}" in output
+    assert "failed=0" in output
 
 
 def test_cli_rejects_wrong_task_count(monkeypatch, capsys, tmp_path: Path) -> None:

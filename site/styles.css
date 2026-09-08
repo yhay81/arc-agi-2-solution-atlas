@@ -9,12 +9,13 @@
 }
 
 * { box-sizing: border-box; }
-body { margin: 0; min-height: 100vh; }
+html, body { height: 100%; }
+body { margin: 0; overflow: hidden; display: grid; grid-template-rows: auto auto minmax(0, 1fr); }
 button, input { font: inherit; }
 
 header {
-  min-height: 5rem;
-  padding: 1.2rem clamp(1rem, 4vw, 4rem);
+  min-height: 3.5rem;
+  padding: .65rem clamp(1rem, 3vw, 3rem);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,8 +31,8 @@ header {
   display: flex;
   align-items: center;
   gap: 1.2rem;
-  min-height: 5rem;
-  padding: 1rem clamp(1rem, 4vw, 4rem);
+  min-height: 3.5rem;
+  padding: .55rem clamp(1rem, 3vw, 3rem);
   font-size: .75rem;
   border-bottom: 1px solid var(--line);
 }
@@ -42,11 +43,13 @@ button:hover:not(:disabled) { background: #383838; }
 button:disabled { opacity: .35; cursor: default; }
 .index-button { margin-right: .25rem; background: transparent; border: 1px solid var(--line); }
 
-main { padding: clamp(1rem, 4vw, 4rem); }
-.task-title { margin: 0 0 2rem; font-size: clamp(1.35rem, 3vw, 2rem); font-weight: 500; }
-.boards { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1.25rem; align-items: start; }
+main { min-height: 0; overflow: hidden; padding: .8rem clamp(1rem, 3vw, 3rem); }
+#task-view { display: grid; grid-template-rows: auto minmax(0, 1.15fr) minmax(0, .85fr); gap: .75rem; }
+.task-title { margin: 0; font-size: clamp(1.05rem, 2vw, 1.4rem); font-weight: 500; }
+.boards { min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: .75rem; }
+.boards > section { min-height: 0; display: flex; flex-direction: column; }
 .group-title { margin: 0 0 .75rem; font-size: .85rem; font-weight: 500; }
-.pairs { display: grid; gap: 1rem; }
+.pairs { min-height: 0; overflow: auto; display: grid; align-content: start; gap: .65rem; padding-right: .25rem; }
 .pair { padding: .8rem; border: 1px solid var(--line); background: var(--panel); overflow-x: auto; }
 .pair-title { margin: 0 0 .7rem; color: var(--muted); font-size: .72rem; font-weight: 400; }
 .grids { display: flex; align-items: center; gap: .65rem; width: max-content; min-width: 100%; }
@@ -54,10 +57,10 @@ main { padding: clamp(1rem, 4vw, 4rem); }
 .grid { display: grid; flex: 0 0 auto; border: 1px solid #555; background: #555; gap: 1px; }
 .cell { width: var(--cell-size); height: var(--cell-size); }
 
-.reference { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1.25rem; margin-top: 2rem; }
-.reference section { min-width: 0; padding-top: 1rem; border-top: 1px solid var(--line); }
-.reference h2 { margin: 0 0 1rem; font-size: .85rem; font-weight: 500; }
-.reference pre { margin: 0; max-height: 34rem; overflow: auto; white-space: pre; line-height: 1.55; color: #d2d2cc; font-size: .76rem; }
+.reference { min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: .75rem; }
+.reference section { min-width: 0; min-height: 0; overflow: auto; padding: .65rem .75rem; border: 1px solid var(--line); background: var(--panel); }
+.reference h2 { margin: 0 0 .65rem; position: sticky; top: -.65rem; padding: .65rem 0 .4rem; background: var(--panel); font-size: .85rem; font-weight: 500; z-index: 1; }
+.reference pre { margin: 0; white-space: pre; line-height: 1.5; color: #d2d2cc; font-size: .76rem; }
 .reference .notes { white-space: pre-wrap; }
 .concepts { display: flex; flex-wrap: wrap; gap: .45rem; padding-bottom: 1rem; }
 .concept { padding: .3rem .45rem; color: var(--muted); border: 1px solid var(--line); font-size: .68rem; }
@@ -76,8 +79,15 @@ dialog::backdrop { background: rgb(0 0 0 / 75%); }
 .index-item span { display: block; color: var(--muted); font-size: .66rem; line-height: 1.45; }
 
 @media (max-width: 850px) {
+  html, body { height: auto; }
+  body { display: block; overflow: auto; }
+  main, #task-view { overflow: visible; display: block; }
+  .task-title { margin-bottom: 1rem; }
   .boards { grid-template-columns: 1fr; }
+  .boards > section { margin-bottom: 1rem; }
+  .pairs { overflow: visible; }
   .reference { grid-template-columns: 1fr; }
+  .reference section { max-height: 28rem; margin-bottom: 1rem; }
 }
 
 @media (max-width: 520px) {

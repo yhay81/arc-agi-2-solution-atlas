@@ -1,0 +1,34 @@
+"""Executable re-arc DSL program for ARC-AGI-2 task 46442a0e.
+
+Evidence:
+- This program matches every provided training and test pair exactly.
+- Provided test outputs were used only for acceptance verification.
+
+Source:
+- re-arc verifiers.py, distributed under the MIT License.
+"""
+
+from arc_agi_2_atlas.re_arc_dsl import Grid as ReArcGrid
+from arc_agi_2_atlas.re_arc_dsl import hconcat, rot90, rot180, rot270, vconcat
+from arc_agi_2_atlas.types import Grid
+
+TASK_ID = "46442a0e"
+STATUS = "all_provided_pairs_match"
+EVIDENCE = "test_output_used_for_acceptance"
+CONCEPTS = ("re-arc", "dsl-program")
+
+
+def _program(grid: ReArcGrid) -> ReArcGrid:
+    x0 = rot90(grid)
+    x1 = rot180(grid)
+    x2 = rot270(grid)
+    x3 = hconcat(grid, x0)
+    x4 = hconcat(x2, x1)
+    x5 = vconcat(x3, x4)
+    return x5
+
+
+def solve(grid: Grid) -> Grid:
+    """Run the DSL program and return a mutable grid."""
+    immutable = tuple(tuple(row) for row in grid)
+    return [list(row) for row in _program(immutable)]

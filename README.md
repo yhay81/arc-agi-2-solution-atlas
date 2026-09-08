@@ -17,6 +17,8 @@ This repository is being developed privately. It will be released after every in
 
 The first release targets all 1,120 unique public ARC-AGI-2 tasks. Inclusion requires exact agreement on every provided example. This is a corpus-verification standard, not a claim of performance on unseen tasks.
 
+Current verified corpus: **551 tasks and 2,379 provided pairs**, all matched exactly.
+
 ## Repository plan
 
 | Area | Purpose |
@@ -24,7 +26,7 @@ The first release targets all 1,120 unique public ARC-AGI-2 tasks. Inclusion req
 | `solutions/` | One reviewed, English-documented Python module per task |
 | `data/training/` | Public training tasks in the official ARC-AGI-2 layout |
 | `data/evaluation/` | Public evaluation tasks in the official ARC-AGI-2 layout |
-| `arc_atlas/` | Small shared grid and object operations |
+| `src/arc_agi_2_atlas/` | Small shared grid and object operations |
 | `synthetic/` | Generators and derived task families |
 | `catalog/` | Searchable metadata and aggregate statistics |
 | `tests/` | Reproducible execution and schema checks |
@@ -42,7 +44,9 @@ locked with `uv.lock`.
 uv sync --locked --dev
 uv run ruff format --check .
 uv run ruff check .
-uv run ty check
+uv run ty check src tests scripts \
+  --exclude src/arc_agi_2_atlas/re_arc_dsl.py \
+  --exclude src/arc_agi_2_atlas/providers
 uv run pytest --cov
 uv run arc-atlas verify
 ```

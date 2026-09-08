@@ -18,7 +18,6 @@ jobs:
       - run: uv sync --locked --dev
       - run: uv run ruff format --check .
       - run: uv run ruff check .
-      - run: uv run ty check
+      - run: uv run ty check src tests scripts --exclude src/arc_agi_2_atlas/re_arc_dsl.py --exclude src/arc_agi_2_atlas/providers
       - run: uv run pytest --cov --cov-report=term-missing
       - run: uv run arc-atlas verify --expected-tasks 1120
-

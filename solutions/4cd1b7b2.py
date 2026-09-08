@@ -1,0 +1,29 @@
+"""Concepts: Latin square completion, backtracking
+
+Transformation steps:
+1. Identify positions of zeros (unfilled cells).
+2. Use backtracking to assign numbers 1-4 to each zero
+   such that each row and column contains all numbers 1-4 exactly once.
+
+Evidence:
+- This program matches every provided training and test pair exactly.
+- Provided test outputs were used for acceptance verification.
+
+Source:
+- ArunSehrawat/arc-agi2-solutions, distributed under the MIT License.
+"""
+
+import numpy as np
+
+from arc_agi_2_atlas.providers.our_task_solutions import solve_4cd1b7b2 as _provider_solve
+from arc_agi_2_atlas.types import Grid
+
+TASK_ID = "4cd1b7b2"
+STATUS = "all_provided_pairs_match"
+EVIDENCE = "test_output_used_for_acceptance"
+CONCEPTS = ("numpy", "arc-agi2-solutions")
+
+
+def solve(grid: Grid) -> Grid:
+    """Run the attributed provider program and normalize its output."""
+    return np.asarray(_provider_solve(np.asarray(grid))).tolist()

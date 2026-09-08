@@ -23,6 +23,18 @@ def read_solution(path: Path) -> SolutionMetadata:
     program = path.read_text(encoding="utf-8")
     module = ast.parse(program, filename=str(path))
     documentation = ast.get_docstring(module, clean=False) or "No documentation yet."
+    display_program = program
+    if module.body:
+        first = module.body[0]
+        if (
+            isinstance(first, ast.Expr)
+            and isinstance(first.value, ast.Constant)
+            and isinstance(first.value.value, str)
+            and first.end_lineno is not None
+        ):
+            display_program = "".join(
+                program.splitlines(keepends=True)[first.end_lineno :]
+            ).lstrip()
     concepts: tuple[str, ...] = ()
     for node in module.body:
         if isinstance(node, ast.Assign) and any(
@@ -31,7 +43,7 @@ def read_solution(path: Path) -> SolutionMetadata:
             value = ast.literal_eval(node.value)
             if isinstance(value, tuple) and all(isinstance(item, str) for item in value):
                 concepts = value
-    return SolutionMetadata(documentation, concepts, program)
+    return SolutionMetadata(documentation, concepts, display_program)
 
 
 def build() -> None:

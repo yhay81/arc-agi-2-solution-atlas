@@ -8,7 +8,9 @@ version = "0.1.0"
 description = "Executable and verifiable ARC-AGI-2 solution atlas"
 readme = "README.md"
 requires-python = ">=3.12,<3.15"
-dependencies = []
+dependencies = [
+    "numpy>=2.0",
+]
 
 [project.scripts]
 arc-atlas = "arc_agi_2_atlas.cli:main"
@@ -31,6 +33,10 @@ testpaths = ["tests"]
 [tool.coverage.run]
 branch = true
 source = ["arc_agi_2_atlas"]
+omit = [
+  "src/arc_agi_2_atlas/providers/*",
+  "src/arc_agi_2_atlas/re_arc_dsl.py",
+]
 
 [tool.coverage.report]
 fail_under = 95
@@ -42,6 +48,10 @@ line-length = 100
 
 [tool.ruff.lint]
 select = ["E4", "E7", "E9", "F", "I", "UP", "B", "SIM", "C4", "PIE", "RUF"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/arc_agi_2_atlas/re_arc_dsl.py" = ["ALL"]
+"src/arc_agi_2_atlas/providers/*.py" = ["ALL"]
 
 [tool.ruff.format]
 docstring-code-format = true
