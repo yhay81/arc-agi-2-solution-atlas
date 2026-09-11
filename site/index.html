@@ -5,38 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A visual, executable atlas of ARC-AGI-2 solutions.">
     <title>ARC-AGI-2 Solution Atlas</title>
-    <link rel="stylesheet" href="styles.css?v=6">
-    <script src="app.js?v=6" defer></script>
+    <link rel="stylesheet" href="styles.css?v=7">
+    <script src="app.js?v=7" defer></script>
   </head>
   <body>
+    <a class="skip-link" href="#task-view">Skip to task</a>
     <header>
       <a class="brand" href="./">ARC-AGI-2<br><strong>SOLUTION ATLAS</strong></a>
       <form id="task-search" role="search">
         <label for="task-id">TASK</label>
-        <input id="task-id" list="task-ids" placeholder="Task ID" autocomplete="off">
+        <input id="task-id" type="search" list="task-ids" placeholder="Task ID" autocomplete="off" spellcheck="false" aria-describedby="task-search-status">
         <datalist id="task-ids"></datalist>
+        <p id="task-search-status" class="visually-hidden" role="status" aria-live="polite"></p>
       </form>
     </header>
 
     <nav class="task-nav" aria-label="Task navigation">
-      <button id="open-index" class="index-button" type="button">All Tasks</button>
-      <span id="position">TASK — / —</span>
+      <button id="open-index" class="index-button" type="button" disabled>All Tasks</button>
+      <span id="position" role="status" aria-live="polite" aria-atomic="true">TASK — / —</span>
       <span id="dataset"></span>
       <div>
-        <button id="previous" type="button">Previous</button>
-        <button id="next" type="button">Next</button>
+        <button id="previous" type="button" aria-keyshortcuts="ArrowLeft" disabled>Previous</button>
+        <button id="next" type="button" aria-keyshortcuts="ArrowRight" disabled>Next</button>
       </div>
     </nav>
 
-    <main id="task-view" aria-live="polite">
-      <p class="loading">Loading tasks…</p>
+    <main id="task-view" tabindex="-1">
+      <p class="loading" role="status">Loading tasks…</p>
     </main>
 
-    <dialog id="task-index">
+    <dialog id="task-index" aria-labelledby="index-title">
       <div class="index-header">
         <div>
-          <h2>All Tasks</h2>
-          <p id="index-count"></p>
+          <h2 id="index-title">All Tasks</h2>
+          <p id="index-count" role="status" aria-live="polite"></p>
         </div>
         <button id="close-index" type="button" aria-label="Close task index">Close</button>
       </div>

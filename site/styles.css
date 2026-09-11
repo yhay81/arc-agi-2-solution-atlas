@@ -6,12 +6,28 @@
   --line: #414141;
   --panel: #181818;
   --muted: #aaa;
+  --focus: #7fdbff;
 }
 
 * { box-sizing: border-box; }
 html, body { height: 100%; }
 body { margin: 0; overflow: hidden; display: grid; grid-template-rows: auto auto minmax(0, 1fr); }
 button, input { font: inherit; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.skip-link { position: fixed; top: .75rem; left: .75rem; z-index: 10; padding: .65rem .8rem; color: #101010; background: var(--focus); transform: translateY(-5rem); }
+.skip-link:focus { transform: translateY(0); }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
 
 header {
   min-height: 3.5rem;
@@ -43,7 +59,7 @@ button:hover:not(:disabled) { background: #383838; }
 button:disabled { opacity: .35; cursor: default; }
 .index-button { margin-right: .25rem; background: transparent; border: 1px solid var(--line); }
 
-main { min-height: 0; overflow: hidden; padding: .8rem clamp(1rem, 3vw, 3rem); }
+main { width: 100%; max-width: 90rem; min-height: 0; margin: 0 auto; overflow: hidden; padding: .8rem clamp(1rem, 3vw, 3rem); }
 #task-view { display: grid; grid-template-rows: auto minmax(0, 1.15fr) minmax(0, .85fr); gap: .75rem; }
 .task-title { margin: 0; font-size: clamp(1.05rem, 2vw, 1.4rem); font-weight: 500; }
 .boards { min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: .75rem; }
@@ -51,7 +67,7 @@ main { min-height: 0; overflow: hidden; padding: .8rem clamp(1rem, 3vw, 3rem); }
 .group-title { margin: 0 0 .75rem; font-size: .85rem; font-weight: 500; }
 .pairs { min-height: 0; overflow: auto; display: grid; align-content: start; gap: .65rem; padding-right: .25rem; }
 .pair { padding: .8rem; border: 1px solid var(--line); background: var(--panel); }
-.pair-title { margin: 0 0 .7rem; color: var(--muted); font-size: .72rem; font-weight: 400; }
+.pair-title { margin: 0 0 .7rem; color: var(--muted); font-size: .72rem; font-weight: 400; text-transform: uppercase; }
 .grids { display: flex; align-items: center; gap: .65rem; width: max-content; min-width: 100%; }
 .arrow { color: var(--muted); }
 .grid { display: grid; flex: 0 0 auto; border: 1px solid #555; background: #555; gap: 1px; }
@@ -59,10 +75,9 @@ main { min-height: 0; overflow: hidden; padding: .8rem clamp(1rem, 3vw, 3rem); }
 
 .reference { min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: .75rem; }
 .reference section { min-width: 0; min-height: 0; overflow: auto; padding: .65rem .75rem; border: 1px solid var(--line); background: var(--panel); }
-.reference h2 { margin: 0 0 .65rem; position: sticky; top: -.65rem; padding: .65rem 0 .4rem; background: var(--panel); font-size: .85rem; font-weight: 500; z-index: 1; }
+.reference h2 { margin: 0 0 .65rem; position: sticky; top: -.65rem; padding: .65rem 0 .4rem; background: var(--panel); font-size: .85rem; font-weight: 500; text-transform: uppercase; z-index: 1; }
 .reference pre { margin: 0; white-space: pre; line-height: 1.5; color: #d2d2cc; font-size: .76rem; }
 .reference .notes { white-space: pre-wrap; }
-.provenance { margin: 0 0 .7rem; color: var(--muted); font-size: .65rem; overflow-wrap: anywhere; }
 .concepts { display: flex; flex-wrap: wrap; gap: .45rem; padding-bottom: 1rem; }
 .concept { padding: .3rem .45rem; color: var(--muted); border: 1px solid var(--line); font-size: .68rem; }
 .loading { color: var(--muted); }
@@ -78,6 +93,7 @@ dialog::backdrop { background: rgb(0 0 0 / 75%); }
 .index-item { min-height: 6rem; padding: .8rem; text-align: left; background: var(--panel); }
 .index-item strong { display: block; margin-bottom: .5rem; color: #fff; }
 .index-item span { display: block; color: var(--muted); font-size: .66rem; line-height: 1.45; }
+.index-empty { grid-column: 1 / -1; margin: 0; padding: 1.25rem; color: var(--muted); background: var(--panel); }
 
 @media (max-width: 850px) {
   html, body { height: auto; }
@@ -98,4 +114,8 @@ dialog::backdrop { background: rgb(0 0 0 / 75%); }
   .task-nav { gap: .5rem; flex-wrap: wrap; }
   .task-nav div { width: 100%; }
   .task-nav button { flex: 1; }
+}
+
+@media (forced-colors: active) {
+  .grid, .cell { forced-color-adjust: none; }
 }

@@ -17,8 +17,6 @@ class SolutionMetadata:
     documentation: str
     concepts: tuple[str, ...]
     program: str
-    evidence: str
-    implementation: str
 
 
 def read_solution(path: Path) -> SolutionMetadata:
@@ -26,19 +24,15 @@ def read_solution(path: Path) -> SolutionMetadata:
     program = path.read_text(encoding="utf-8")
     note_path = ROOT / "notes" / f"{path.stem}.json"
     note = json.loads(note_path.read_text(encoding="utf-8"))
+    sections = [note["title"]]
     steps = "\n".join(f"{index}. {step}" for index, step in enumerate(note["steps"], 1))
-    parameters = "\n".join(f"- {item}" for item in note.get("parameters", ()))
-    observations = "\n".join(f"- {item}" for item in note["observations"])
-    limitations = note.get("limitations", "See the repository-level evidence statement.")
-    documentation = (
-        f"{note['title']}\n\n{note['summary']}\n\nTransformation steps\n{steps}"
-        f"\n\nRule parameters\n{parameters}\n\nTraining-pair observations\n{observations}"
-        f"\n\nEvidence and limitations\n{limitations}"
-    )
-    implementation = f"solutions/{path.name}"
+    sections.append(f"Transformation steps\n{steps}")
+    parameters = note.get("parameters", ())
+    if parameters:
+        sections.append("Rule parameters\n" + "\n".join(f"- {item}" for item in parameters))
+    documentation = "\n\n".join(sections)
     concepts = tuple(note["concepts"])
-    evidence = note["inference"]
-    return SolutionMetadata(documentation, concepts, program, evidence, implementation)
+    return SolutionMetadata(documentation, concepts, program)
 
 
 def build() -> None:
@@ -66,8 +60,6 @@ def build() -> None:
                     "documentation": metadata.documentation,
                     "concepts": metadata.concepts,
                     "program": metadata.program,
-                    "evidence": metadata.evidence,
-                    "implementation": metadata.implementation,
                     "task": task,
                 }
             )

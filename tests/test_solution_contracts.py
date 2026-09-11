@@ -136,12 +136,15 @@ def _read_solution(path: Path) -> Any:
 
 def test_solution_displays_its_transformation() -> None:
     metadata = _read_solution(Path("solutions/1cf80156.py"))
+    concise_metadata = _read_solution(Path("solutions/00576224.py"))
 
-    assert metadata.implementation == "solutions/1cf80156.py"
     assert "def solve" in metadata.program
-    assert metadata.evidence == "training_outputs_only"
-    assert "Training-pair observations" in metadata.documentation
-    assert "Evidence and limitations" in metadata.documentation
+    assert "Transformation steps" in metadata.documentation
+    assert "Evidence and limitations" not in metadata.documentation
+    assert "Training-pair observations" not in metadata.documentation
+    assert "Rule parameters" not in concise_metadata.documentation
+    assert concise_metadata.documentation.count("Tile the input into a 3-by-3") == 1
+    assert "This is the training-inferred" not in concise_metadata.documentation
 
 
 def test_solution_signature_must_be_solve_grid(tmp_path: Path) -> None:
