@@ -1,0 +1,19 @@
+{
+  "title": "Use the small rectangle legend to read which direction the red mark is from the center.",
+  "summary": "In the legend of the small rectangle, read which way the red mark is from the center. Move the yellow dots surrounded by the frame color in the same direction. If you are moving diagonally, stop if there is a wall in front of you diagonally, vertically, or horizontally.",
+  "steps": [
+    "Use the small rectangle legend to read which direction the red mark is from the center.",
+    "Move the yellow dots surrounded by that frame color in the same direction",
+    "If you are moving diagonally, stop if there is a wall in front of you diagonally, vertically, or horizontally."
+  ],
+  "concepts": [
+    "local classification",
+    "Moving landmarks"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 20x20; colors [0, 1, 2, 4, 5, 7] -> [0, 1, 2, 4, 5, 7]; 10 cells changed.",
+    "Training pair 2: 20x20 -> 20x20; colors [0, 1, 2, 4, 5] -> [0, 1, 2, 4, 5]; 4 cells changed.",
+    "Training pair 3: 20x20 -> 20x20; colors [0, 1, 2, 4, 5] -> [0, 1, 2, 4, 5]; 6 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

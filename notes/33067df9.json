@@ -1,0 +1,20 @@
+{
+  "title": "Change the arrangement of small color blocks to a larger floor plan",
+  "summary": "Expand the small grid to 26x26. Combine horizontal sections of the same color, and vertically combine only the upper and lower sections with the same horizontal section.",
+  "steps": [
+    "Expand the small grid to 26x26.",
+    "Combine horizontal sections of the same color, and vertically combine only the upper and lower sections with the same horizontal section."
+  ],
+  "concepts": [
+    "lattice",
+    "Expand",
+    "area join"
+  ],
+  "observations": [
+    "Training pair 1: 9x5 -> 26x26; colors [0, 4, 6, 8] -> [0, 4, 6, 8]; output dimensions changed.",
+    "Training pair 2: 5x7 -> 26x26; colors [0, 3, 4, 6, 8] -> [0, 3, 4, 6, 8]; output dimensions changed.",
+    "Training pair 3: 9x9 -> 26x26; colors [0, 3, 4, 6, 8] -> [0, 3, 4, 6, 8]; output dimensions changed.",
+    "Training pair 4: 5x3 -> 26x26; colors [0, 4, 6] -> [0, 4, 6]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

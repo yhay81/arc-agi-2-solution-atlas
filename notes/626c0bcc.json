@@ -1,0 +1,18 @@
+{
+  "title": "Divide the light blue area into two squares and three types of L shapes.",
+  "summary": "Divide the light blue area into two squares and three types of L shapes. The square should be blue, the L with the top left corner missing should be red, the L with the bottom left corner missing should be green, and the L with the top right corner missing should be yellow.",
+  "steps": [
+    "Divide the light blue area into two squares and three types of L shapes.",
+    "The square is blue, the L with the top left chipped is red, the L with the bottom left chipped is green, and the top right is yellow."
+  ],
+  "concepts": [
+    "Classification of shapes",
+    "Color by orientation"
+  ],
+  "observations": [
+    "Training pair 1: 7x7 -> 7x7; colors [0, 8] -> [0, 1, 2, 3, 4]; 17 cells changed.",
+    "Training pair 2: 7x7 -> 7x7; colors [0, 8] -> [0, 1, 2, 3, 4]; 17 cells changed.",
+    "Training pair 3: 7x7 -> 7x7; colors [0, 8] -> [0, 1, 2, 3, 4]; 13 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

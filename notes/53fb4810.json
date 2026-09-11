@@ -1,0 +1,16 @@
+{
+  "title": "Repeat two-color shapes upwards",
+  "summary": "Detect the color band that touches the edge of the blue prototype, maintain the width of the band, and extend it to the edge with the minimum observed period.",
+  "steps": [
+    "Detect the color band that touches the edge of the blue prototype, maintain the width of the band, and extend it to the edge with the minimum observed period."
+  ],
+  "concepts": [
+    "Two-color correspondence",
+    "upward repeat"
+  ],
+  "observations": [
+    "Training pair 1: 24x14 -> 24x14; colors [1, 2, 3, 4, 8] -> [1, 2, 3, 4, 8]; 11 cells changed.",
+    "Training pair 2: 23x13 -> 23x13; colors [1, 2, 3, 4, 8] -> [1, 2, 3, 4, 8]; 22 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

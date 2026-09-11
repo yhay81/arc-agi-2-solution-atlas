@@ -1,0 +1,19 @@
+{
+  "title": "Discard noise while retaining cells covered by a solid 2-by-2 block",
+  "summary": "Discard noise while retaining cells covered by a solid 2-by-2 block. This is the training-inferred `keep_solid_rectangle_cells` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `keep_solid_rectangle_cells`: discard noise while retaining cells covered by a solid 2-by-2 block"
+  ],
+  "concepts": [
+    "keep",
+    "solid",
+    "rectangle",
+    "cells"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 6]; 84 cells changed.",
+    "Training pair 2: 16x16 -> 16x16; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 2]; 90 cells changed.",
+    "Training pair 3: 16x16 -> 16x16; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 7]; 63 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

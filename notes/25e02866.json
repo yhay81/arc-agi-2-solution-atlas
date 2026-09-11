@@ -1,0 +1,20 @@
+{
+  "title": "Layer the same mount pattern on one sheet",
+  "summary": "Patterns on separate squares of the same size are combined into a single sheet by aligning the mounts.",
+  "steps": [
+    "Cut out a square other than the background.",
+    "Many colors common to the squares are used as the mount color.",
+    "Overlap each square mount and the different colored parts at the same coordinates.",
+    "Output a square sheet including the mount."
+  ],
+  "concepts": [
+    "alignment",
+    "superposition",
+    "common background"
+  ],
+  "observations": [
+    "Training pair 1: 14x14 -> 4x4; colors [1, 2, 3, 6] -> [1, 3, 6]; output dimensions changed.",
+    "Training pair 2: 16x16 -> 5x5; colors [1, 2, 3, 4, 8] -> [1, 2, 3, 4]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Copy keyed glyph bodies to detached cells bearing each glyph's key",
+  "summary": "Copy keyed glyph bodies to detached cells bearing each glyph's key. A glyph is a connected component with one key-colored cell and a body of another color. Detached singleton cells of the key color are anchors for copies of that body's geometry. The key-2 glyphs in this family are presented from the opposite horizontal side, so their copied body is mirrored about the anchor; key-3 glyphs retain their handedness. This is deliberately geometry-driven: no task coordinates or output cells are retained. This is the training-inferred `copy_keyed_shapes_to_markers` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `copy_keyed_shapes_to_markers`: copy keyed glyph bodies to detached cells bearing each glyph's key"
+  ],
+  "concepts": [
+    "copy",
+    "keyed",
+    "shapes",
+    "markers"
+  ],
+  "observations": [
+    "Training pair 1: 13x13 -> 13x13; colors [0, 2, 3, 4, 8] -> [0, 2, 3, 4, 8]; 6 cells changed.",
+    "Training pair 2: 13x13 -> 13x13; colors [0, 3, 4] -> [0, 3, 4]; 10 cells changed.",
+    "Training pair 3: 13x13 -> 13x13; colors [0, 1, 2, 3, 4] -> [0, 1, 2, 3, 4]; 14 cells changed.",
+    "Training pair 4: 13x13 -> 13x13; colors [0, 1, 2] -> [0, 1, 2]; 4 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

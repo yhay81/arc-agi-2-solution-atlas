@@ -1,0 +1,21 @@
+{
+  "title": "Sharing a color between multiple boxes with the same separation",
+  "summary": "In the observation, multiple boxes with four compartments were filled with corresponding colors shown in other boxes. Each section of the box has different dimensions.",
+  "steps": [
+    "Normalize the input based on the frequency of appearance of the orientation and color selected in the learning example.",
+    "Separate rectangular boxes with borders.",
+    "Correlate the top left, top right, bottom left, and bottom right sections of each box.",
+    "Try a candidate that copies the color clue remaining in one of the boxes to a compartment at the same relative position.",
+    "Return the converted color and orientation to the original coordinate system."
+  ],
+  "concepts": [
+    "multiple samples",
+    "relative position",
+    "Filling the compartment"
+  ],
+  "observations": [
+    "Training pair 1: 22x22 -> 22x22; colors [0, 1, 3, 4, 6, 9] -> [0, 1, 3, 4, 6, 9]; 106 cells changed.",
+    "Training pair 2: 22x22 -> 22x22; colors [0, 1, 3, 4, 5, 6] -> [0, 1, 3, 4, 5, 6]; 49 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Arrange the frame and contents into smaller pieces and display in two places.",
+  "summary": "Read the large decoration on the orange background and shrink its outline to a 5x5 frame with no corners. Align the minimum area of ​​the inner pattern proportionally to the inner 3x3. If there is only one item inside, place it in the center. Place two identical decorations on a 15x15 orange board with the upper left coordinates starting at 0 and (2,2) and (8,8).",
+  "steps": [
+    "Read the large decoration on the orange background and shrink its outline to a 5x5 frame with no corners.",
+    "Align the minimum area of the inner pattern proportionally to the inner 3x3. If there is only one item inside, place it in the center.",
+    "Place two identical decorations on a 15x15 orange board with the upper left coordinates starting at 0 and (2,2) and (8,8)."
+  ],
+  "concepts": [
+    "standardization",
+    "Cut out",
+    "Reproduction"
+  ],
+  "observations": [
+    "Training pair 1: 9x7 -> 15x15; colors [1, 4, 7, 9] -> [1, 4, 7, 9]; output dimensions changed.",
+    "Training pair 2: 7x8 -> 15x15; colors [3, 7] -> [3, 7]; output dimensions changed.",
+    "Training pair 3: 9x9 -> 15x15; colors [7, 9] -> [7, 9]; output dimensions changed.",
+    "Training pair 4: 6x7 -> 15x15; colors [2, 6, 7, 8] -> [2, 6, 7, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

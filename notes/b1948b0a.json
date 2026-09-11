@@ -1,0 +1,13 @@
+{
+  "title": "Replace magenta with red",
+  "summary": "Recolor every magenta cell red while leaving orange cells unchanged.",
+  "steps": ["Replace color 6 with color 2 throughout the grid."],
+  "concepts": ["color substitution"],
+  "observations": [
+    "Training pair 1: 6x4 -> 6x4; colors [6, 7] -> [2, 7]; 11 cells changed.",
+    "Training pair 2: 3x4 -> 3x4; colors [6, 7] -> [2, 7]; 6 cells changed.",
+    "Training pair 3: 3x6 -> 3x6; colors [6, 7] -> [2, 7]; 8 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": ["magenta 6 becomes red 2"]
+}

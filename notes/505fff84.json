@@ -1,0 +1,21 @@
+{
+  "title": "Collect lines between two colored landmarks",
+  "summary": "In each row, find the row that has both blue and light blue markings. Cut out only the area between the two marks, not including the mark itself. Arrange vertically in the order of the original rows.",
+  "steps": [
+    "In each row, find the row that has both blue and light blue markings.",
+    "Cut out only the area between the two marks, not including the mark itself.",
+    "Arrange vertically in the order of the original rows."
+  ],
+  "concepts": [
+    "Specifying both ends",
+    "Extracting column intervals"
+  ],
+  "observations": [
+    "Training pair 1: 6x12 -> 3x4; colors [0, 1, 2, 8] -> [0, 2]; output dimensions changed.",
+    "Training pair 2: 4x11 -> 1x7; colors [0, 1, 2, 8] -> [0, 2]; output dimensions changed.",
+    "Training pair 3: 5x10 -> 2x3; colors [0, 1, 2, 8] -> [0, 2]; output dimensions changed.",
+    "Training pair 4: 8x12 -> 3x6; colors [0, 1, 2, 8] -> [0, 2]; output dimensions changed.",
+    "Training pair 5: 14x11 -> 5x5; colors [0, 1, 2, 8] -> [0, 2]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

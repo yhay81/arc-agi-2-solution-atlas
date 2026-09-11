@@ -1,0 +1,19 @@
+{
+  "title": "Make the color blocks twice as large",
+  "summary": "Extract the original color pattern from the smallest rectangle that encloses everything except the background. To the right of that, line up the same pattern twice, four times, and eight times the length and breadth without any gaps. Align the vertical center of each pattern with the original pattern, and cut off any parts that protrude from the surface of the board.",
+  "steps": [
+    "Extract the original color pattern from the smallest rectangle that encloses everything except the background.",
+    "To the right of that, line up the same pattern twice, four times, and eight times the length and breadth without any gaps.",
+    "Align the vertical center of each pattern with the original pattern, and cut off any parts that protrude from the surface of the board."
+  ],
+  "concepts": [
+    "double",
+    "color order"
+  ],
+  "observations": [
+    "Training pair 1: 10x14 -> 10x14; colors [0, 2, 3, 5] -> [0, 2, 3, 5]; 80 cells changed.",
+    "Training pair 2: 10x14 -> 10x14; colors [0, 1, 2, 3] -> [0, 1, 2, 3]; 80 cells changed.",
+    "Training pair 3: 16x30 -> 16x30; colors [0, 1, 2, 3, 4] -> [0, 1, 2, 3, 4]; 336 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

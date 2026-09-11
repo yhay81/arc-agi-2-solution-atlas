@@ -1,0 +1,19 @@
+{
+  "title": "Mark the position 5 squares in the direction from the top of the arrow of the three squares with a brown 9",
+  "summary": "Mark the position 5 squares in the direction from the top of the arrow of the three squares with a brown 9. When the marks overlap, they turn blue 1, and when they hit the original arrow, the entire arrow turns brown.",
+  "steps": [
+    "Mark the position 5 squares in the direction from the top of the arrow of the three squares with a brown 9",
+    "When the marks overlap, it becomes blue 1, and when it hits the original arrow, the entire arrow becomes brown."
+  ],
+  "concepts": [
+    "compression",
+    "alignment",
+    "even-odd order"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [7, 9] -> [1, 7, 9]; 3 cells changed.",
+    "Training pair 2: 16x16 -> 16x16; colors [0, 7] -> [0, 7, 9]; 6 cells changed.",
+    "Training pair 3: 16x16 -> 16x16; colors [2, 7] -> [2, 7, 9]; 11 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Move the color bar to the left to make the background gray",
+  "summary": "Prepare the output in gray with the same dimensions as the input. Move each input colored square exactly one column to the left. Keep the original color and each row, and make the remaining areas gray.",
+  "steps": [
+    "Prepare the output in gray with the same dimensions as the input.",
+    "Move each input colored square exactly one column to the left.",
+    "Keep the original color and each row, and make the remaining areas gray."
+  ],
+  "concepts": [
+    "move",
+    "background replacement"
+  ],
+  "observations": [
+    "Training pair 1: 8x8 -> 8x8; colors [0, 3] -> [3, 5]; 60 cells changed.",
+    "Training pair 2: 3x3 -> 3x3; colors [0, 4] -> [4, 5]; 7 cells changed.",
+    "Training pair 3: 7x7 -> 7x7; colors [0, 7] -> [5, 7]; 40 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

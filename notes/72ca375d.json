@@ -1,0 +1,19 @@
+{
+  "title": "Crop the sole non-background object symmetric about a vertical axis",
+  "summary": "Crop the sole non-background object symmetric about a vertical axis. This is the training-inferred `crop_unique_vertical_symmetry` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `crop_unique_vertical_symmetry`: crop the sole non-background object symmetric about a vertical axis"
+  ],
+  "concepts": [
+    "crop",
+    "unique",
+    "vertical",
+    "symmetry"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 2x2; colors [0, 2, 4, 8] -> [4]; output dimensions changed.",
+    "Training pair 2: 10x10 -> 2x4; colors [0, 2, 6, 7] -> [0, 6]; output dimensions changed.",
+    "Training pair 3: 10x10 -> 2x4; colors [0, 3, 5, 8] -> [0, 5]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

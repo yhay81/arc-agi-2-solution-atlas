@@ -1,0 +1,19 @@
+{
+  "title": "Make the number of two colors a rectangle and cross diagonal lines",
+  "summary": "Count the number of two colors other than the orange background. Draw a red rectangle at the bottom left of the 16 x 16 orange board, with the larger side as the width and the smaller side as the height. Draw a 45-degree yellow line inward and upward from the bottom left and right corners of the rectangle, equal to the height.",
+  "steps": [
+    "Count the number of two colors other than the orange background.",
+    "Draw a red rectangle at the bottom left of the 16 x 16 orange board, with the larger side as the width and the smaller side as the height.",
+    "Draw a 45-degree yellow line inward and upward from the bottom left and right corners of the rectangle, equal to the height."
+  ],
+  "concepts": [
+    "From number of pieces to dimensions",
+    "rectangle",
+    "diagonal"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [6, 7, 8] -> [2, 4, 7]; 61 cells changed.",
+    "Training pair 2: 15x15 -> 16x16; colors [4, 5, 7] -> [2, 4, 7]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

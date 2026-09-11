@@ -1,0 +1,20 @@
+{
+  "title": "Extend the color band to the gray reference line",
+  "summary": "Extend each colored band to form a rectangle toward the gray reference line.",
+  "steps": [
+    "Extend each colored band to form a rectangle toward the gray reference line.",
+    "In places where multiple rectangles overlap, a short rectangle made from a band close to the reference line is left in front.",
+    "The gray line itself cannot be changed."
+  ],
+  "concepts": [
+    "reference line",
+    "extension of the obi",
+    "stacking order"
+  ],
+  "observations": [
+    "Training pair 1: 16x17 -> 16x17; colors [0, 2, 3, 5, 7] -> [0, 2, 3, 5, 7]; 86 cells changed.",
+    "Training pair 2: 16x15 -> 16x15; colors [0, 3, 4, 5, 8] -> [0, 3, 4, 5, 8]; 84 cells changed.",
+    "Training pair 3: 17x17 -> 17x17; colors [0, 2, 3, 5, 6] -> [0, 2, 3, 5, 6]; 124 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

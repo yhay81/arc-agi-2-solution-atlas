@@ -1,0 +1,25 @@
+{
+  "title": "Summarize separator-delimited cells by whether they contain a target count",
+  "summary": "Summarize separator-delimited cells by whether they contain a target count. This is the training-inferred `count_marker_in_lattice` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `count_marker_in_lattice`: summarize separator-delimited cells by whether they contain a target count"
+  ],
+  "concepts": [
+    "count",
+    "marker",
+    "lattice"
+  ],
+  "observations": [
+    "Training pair 1: 11x11 -> 3x3; colors [0, 6, 8] -> [0, 1]; output dimensions changed.",
+    "Training pair 2: 11x11 -> 3x3; colors [0, 6, 8] -> [0, 1]; output dimensions changed.",
+    "Training pair 3: 11x11 -> 3x3; colors [0, 6, 8] -> [0, 1]; output dimensions changed.",
+    "Training pair 4: 11x11 -> 3x3; colors [0, 6, 8] -> [0, 1]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "separator: 8",
+    "target: 6",
+    "threshold: 1",
+    "final color map: 1 -> 0, 0 -> 1"
+  ]
+}

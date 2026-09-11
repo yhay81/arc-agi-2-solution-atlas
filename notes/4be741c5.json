@@ -1,0 +1,18 @@
+{
+  "title": "Summarize a noisy horizontal or vertical stripe pattern",
+  "summary": "Summarize a noisy horizontal or vertical stripe pattern. ARC stripe scenes contain a dominant color in each row (or column), with small boundary defects. Taking each line's mode and run-length collapsing the resulting sequence recovers the stripe colors while ignoring those defects. The axis with the stronger per-line dominance is selected so unrelated row/column texture does not win accidentally. This is the training-inferred `collapse_modal_stripes` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `collapse_modal_stripes`: summarize a noisy horizontal or vertical stripe pattern"
+  ],
+  "concepts": [
+    "collapse",
+    "modal",
+    "stripes"
+  ],
+  "observations": [
+    "Training pair 1: 9x7 -> 3x1; colors [2, 5, 8] -> [2, 5, 8]; output dimensions changed.",
+    "Training pair 2: 14x16 -> 1x3; colors [2, 4, 8] -> [2, 4, 8]; output dimensions changed.",
+    "Training pair 3: 11x9 -> 4x1; colors [2, 3, 4, 6] -> [2, 3, 4, 6]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

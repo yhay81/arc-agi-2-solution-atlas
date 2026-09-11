@@ -1,0 +1,20 @@
+{
+  "title": "Count filled squares by color, excluding noise",
+  "summary": "Eliminate noise and count the squares filled in by color. In each group, place a small square on top of the large square to the left, leaving one space between the groups. The number of sets should be the smaller of the maximum number of squares and twice the number of squares of maximum size.",
+  "steps": [
+    "Count filled squares by color, excluding noise",
+    "In each group, place a small square on top of the large square to the left, leaving one space between the groups.",
+    "The number of pairs should be the smaller of the maximum number of squares and twice the number of squares of maximum size."
+  ],
+  "concepts": [
+    "size",
+    "Listing",
+    "alignment"
+  ],
+  "observations": [
+    "Training pair 1: 28x28 -> 5x16; colors [1, 3, 4, 6, 8] -> [1, 3, 4, 6]; output dimensions changed.",
+    "Training pair 2: 28x28 -> 5x18; colors [1, 2, 3, 4, 8] -> [1, 2, 3, 4]; output dimensions changed.",
+    "Training pair 3: 28x28 -> 5x30; colors [1, 3, 4, 7, 8] -> [1, 3, 4, 7]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

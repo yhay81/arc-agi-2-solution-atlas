@@ -1,0 +1,18 @@
+{
+  "title": "Paint only below the border",
+  "summary": "Read the red 2 border line by column. The border can be horizontal or diagonal. In each column, the area above the border is black, and the area below is changed to a color other than red or black in the input. Keep the red border and make columns without red black.",
+  "steps": [
+    "Read the red 2 border line by column. The border can be horizontal or diagonal.",
+    "In each column, the area above the border is black, and the area below is changed to a color other than red or black in the input. Keep the red border and make columns without red black."
+  ],
+  "concepts": [
+    "above and below the border",
+    "Fill area"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 1, 2] -> [0, 1, 2]; 55 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 2, 5] -> [0, 2, 5]; 40 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 2, 8] -> [0, 2, 8]; 37 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

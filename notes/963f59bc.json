@@ -1,0 +1,20 @@
+{
+  "title": "Copy the blue sample by mirror copying it to a distant color point position.",
+  "summary": "Copy the blue sample by mirroring it to a distant color point. The points on the side are flipped horizontally based on the only blue in the same row, and the points below are flipped vertically based on the blue in the same column.",
+  "steps": [
+    "Copy the blue sample by mirror copying it to a distant color point position.",
+    "The horizontal point is flipped horizontally based on the only blue in the same row, and the bottom point is flipped vertically based on the blue in the same column."
+  ],
+  "concepts": [
+    "landmark",
+    "mirror image",
+    "alignment"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 12x12; colors [0, 1, 2] -> [0, 1, 2]; 8 cells changed.",
+    "Training pair 2: 12x11 -> 12x11; colors [0, 1, 6] -> [0, 1, 6]; 6 cells changed.",
+    "Training pair 3: 14x13 -> 14x13; colors [0, 1, 2, 8] -> [0, 1, 2, 8]; 10 cells changed.",
+    "Training pair 4: 11x11 -> 11x11; colors [0, 1, 3, 8] -> [0, 1, 3, 8]; 16 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

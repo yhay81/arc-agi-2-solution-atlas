@@ -1,0 +1,23 @@
+{
+  "title": "Denoise a regular frame lattice and mark all line intersections",
+  "summary": "Denoise a regular frame lattice and mark all line intersections. This is the training-inferred `restore_marker_grid` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `restore_marker_grid`: denoise a regular frame lattice and mark all line intersections"
+  ],
+  "concepts": [
+    "restore",
+    "marker",
+    "grid"
+  ],
+  "observations": [
+    "Training pair 1: 21x17 -> 21x17; colors [0, 3, 5] -> [0, 3, 5]; 61 cells changed.",
+    "Training pair 2: 19x13 -> 19x13; colors [0, 2, 5] -> [0, 2, 5]; 24 cells changed.",
+    "Training pair 3: 21x24 -> 21x24; colors [0, 4, 5] -> [0, 4, 5]; 73 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "frame color: 5",
+    "marker color: -1",
+    "background color: 0"
+  ]
+}

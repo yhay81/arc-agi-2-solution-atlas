@@ -1,0 +1,17 @@
+{
+  "title": "Label the corners of gray squares",
+  "summary": "For each gray 2x2 square, place colors 1 through 4 at its four outward diagonal corners.",
+  "steps": [
+    "Find every gray 2x2 square.",
+    "Place blue and red above its left and right corners.",
+    "Place green and yellow below its left and right corners."
+  ],
+  "concepts": ["square detection", "corner annotation"],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 5] -> [0, 1, 2, 3, 4, 5]; 8 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 5] -> [0, 1, 2, 3, 4, 5]; 4 cells changed.",
+    "Training pair 3: 15x15 -> 15x15; colors [0, 5] -> [0, 1, 2, 3, 4, 5]; 16 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": ["corner colors from upper-left clockwise: 1, 2, 4, 3"]
+}

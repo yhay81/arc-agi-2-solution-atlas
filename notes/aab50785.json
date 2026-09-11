@@ -1,0 +1,22 @@
+{
+  "title": "Collect patterns between light blue blocks",
+  "summary": "Find pairs of light blue 2x2 blocks facing each other on the left and right.",
+  "steps": [
+    "Find pairs of light blue 2x2 blocks facing each other on the left and right.",
+    "Extract the color pattern between them, excluding the light blue blocks at the edges.",
+    "If there are multiple pairs, stack them in order from top to bottom."
+  ],
+  "concepts": [
+    "marks on both ends",
+    "Cut out",
+    "order"
+  ],
+  "observations": [
+    "Training pair 1: 12x17 -> 6x5; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 6, 7, 9]; output dimensions changed.",
+    "Training pair 2: 12x15 -> 2x4; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 3, 5, 6, 9]; output dimensions changed.",
+    "Training pair 3: 12x10 -> 2x6; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 4, 5, 6, 7, 9]; output dimensions changed.",
+    "Training pair 4: 13x16 -> 4x3; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 5, 6, 9]; output dimensions changed.",
+    "Training pair 5: 13x17 -> 4x5; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 3, 4, 6, 7, 9]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

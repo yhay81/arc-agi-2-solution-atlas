@@ -1,0 +1,17 @@
+{
+  "title": "Arrange the four shapes separated by one square cross.",
+  "summary": "Gather the four 8-neighborhood symbols into a 3×3 section in two groups, top and bottom, and left and right.",
+  "steps": [
+    "Gather the four 8-neighborhood symbols into a 3x3 section in two groups, top and bottom, and left and right."
+  ],
+  "concepts": [
+    "Cut out",
+    "Relocation to the four corners"
+  ],
+  "observations": [
+    "Training pair 1: 17x19 -> 7x7; colors [0, 2] -> [0, 2]; output dimensions changed.",
+    "Training pair 2: 23x23 -> 7x7; colors [0, 2] -> [0, 2]; output dimensions changed.",
+    "Training pair 3: 17x16 -> 7x7; colors [0, 2] -> [0, 2]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

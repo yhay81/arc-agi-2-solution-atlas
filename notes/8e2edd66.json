@@ -1,0 +1,18 @@
+{
+  "title": "Place the flipped prototype on a blank layout",
+  "summary": "Copy the pattern in which the input foreground and black are exchanged to the arrangement of the input black squares.",
+  "steps": [
+    "Copy the pattern in which the input foreground and black are exchanged to the arrangement of the input black squares."
+  ],
+  "concepts": [
+    "self-replication",
+    "blank instructions",
+    "inversion"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 9x9; colors [0, 8] -> [0, 8]; output dimensions changed.",
+    "Training pair 2: 3x3 -> 9x9; colors [0, 9] -> [0, 9]; output dimensions changed.",
+    "Training pair 3: 3x3 -> 9x9; colors [0, 7] -> [0, 7]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

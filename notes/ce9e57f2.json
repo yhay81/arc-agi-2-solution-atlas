@@ -1,0 +1,20 @@
+{
+  "title": "Recolor the lower half of each vertical run of twos with eight",
+  "summary": "Recolor the lower half of each vertical run of twos with eight. The runs are independent vertical bars. Their upper half remains the source color and the lower half (rounded upward) is marked with eight. This is a geometric rule, so the run lengths and positions may vary. This is the training-inferred `recolor_lower_halves_of_vertical_twos` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `recolor_lower_halves_of_vertical_twos`: recolor the lower half of each vertical run of twos with eight"
+  ],
+  "concepts": [
+    "recolor",
+    "lower",
+    "halves",
+    "vertical",
+    "twos"
+  ],
+  "observations": [
+    "Training pair 1: 8x9 -> 8x9; colors [0, 2] -> [0, 2, 8]; 9 cells changed.",
+    "Training pair 2: 7x9 -> 7x9; colors [0, 2] -> [0, 2, 8]; 8 cells changed.",
+    "Training pair 3: 9x9 -> 9x9; colors [0, 2] -> [0, 2, 8]; 10 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

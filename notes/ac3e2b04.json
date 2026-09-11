@@ -1,0 +1,19 @@
+{
+  "title": "Create local patterns by projecting landmarks onto parallel lines",
+  "summary": "Project blue perpendicularly from the green ring on the red parallel line, and draw 3x3 blue rings at the intersections with other red lines.",
+  "steps": [
+    "Project blue perpendicularly from the green ring on the red parallel line, and draw 3x3 blue rings at the intersections with other red lines."
+  ],
+  "concepts": [
+    "projection",
+    "intersection",
+    "local pattern"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 12x12; colors [0, 2, 3] -> [0, 1, 2, 3]; 9 cells changed.",
+    "Training pair 2: 15x12 -> 15x12; colors [0, 2, 3] -> [0, 1, 2, 3]; 28 cells changed.",
+    "Training pair 3: 16x14 -> 16x14; colors [0, 2, 3] -> [0, 1, 2, 3]; 46 cells changed.",
+    "Training pair 4: 10x10 -> 10x10; colors [0, 2, 3] -> [0, 1, 2, 3]; 12 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

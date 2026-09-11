@@ -1,0 +1,18 @@
+{
+  "title": "Swap two colors and repeat twice horizontally and vertically",
+  "summary": "Swap the two input colors with each other. Arrange the replaced inputs in the same direction in four locations: top, bottom, left, and right.",
+  "steps": [
+    "Swap the two input colors with each other.",
+    "Arrange the replaced inputs in the same direction in four locations: top, bottom, left, and right."
+  ],
+  "concepts": [
+    "color exchange",
+    "repeat"
+  ],
+  "observations": [
+    "Training pair 1: 2x2 -> 4x4; colors [0, 7] -> [0, 7]; output dimensions changed.",
+    "Training pair 2: 3x3 -> 6x6; colors [0, 8] -> [0, 8]; output dimensions changed.",
+    "Training pair 3: 4x4 -> 8x8; colors [0, 4] -> [0, 4]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Create concentric squares from colored points",
+  "summary": "Taking cues from the sparse color dots in the input, the output is filled with square rings of color that share a common center.",
+  "steps": [
+    "Read the distance from the center of each color point.",
+    "Map colors from the outside to the inside ring.",
+    "Try drawing the missing ring once in the same color."
+  ],
+  "concepts": [
+    "concentric frame",
+    "distance",
+    "complement"
+  ],
+  "observations": [
+    "Training pair 1: 9x9 -> 9x9; colors [0, 1, 3, 4, 7, 8] -> [0, 1, 3, 4, 8]; 76 cells changed.",
+    "Training pair 2: 7x7 -> 7x7; colors [2, 5, 7, 8, 9] -> [2, 5, 8, 9]; 45 cells changed.",
+    "Training pair 3: 11x11 -> 11x11; colors [0, 1, 5, 6, 7, 8, 9] -> [0, 1, 5, 6, 8, 9]; 115 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

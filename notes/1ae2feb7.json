@@ -1,0 +1,20 @@
+{
+  "title": "Find a monochrome wall that runs vertically across the board.",
+  "summary": "Find a solid colored wall that runs vertically across the board. Count the length of each colored stick on one side of the wall, then mark dots of the same color on the other side of the wall at intervals of that length. The first point of every stick is right next to the wall, and where multiple colored points overlap, the color of the stick closest to the wall takes precedence.",
+  "steps": [
+    "Find a monochrome wall that runs vertically across the board.",
+    "Count the length of each colored bar on one side of the wall, then mark dots of the same color on the other side of the wall at intervals of that length.",
+    "The first point of every stick is immediately next to the wall, and where multiple colored points overlap, the color of the stick closest to the wall takes precedence."
+  ],
+  "concepts": [
+    "length encoding",
+    "period",
+    "Classification of instructions"
+  ],
+  "observations": [
+    "Training pair 1: 11x16 -> 11x16; colors [0, 1, 2, 3, 5, 6, 8] -> [0, 1, 2, 3, 5, 6, 8]; 18 cells changed.",
+    "Training pair 2: 11x16 -> 11x16; colors [0, 1, 2, 3, 4] -> [0, 1, 2, 3, 4]; 17 cells changed.",
+    "Training pair 3: 13x15 -> 13x15; colors [0, 1, 2, 5, 7] -> [0, 1, 2, 5, 7]; 21 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

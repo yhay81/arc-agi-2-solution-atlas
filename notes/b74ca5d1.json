@@ -1,0 +1,23 @@
+{
+  "title": "Swap glyph colors and complete corner samples",
+  "summary": "Swap the dominant and marker colors inside each 5-by-5 glyph, then copy glyph masks to isolated same-color seeds at grid corners.",
+  "steps": [
+    "Group nearby non-background cells into glyphs fitting within 5-by-5 boxes.",
+    "Swap the two colors of each marked glyph and stamp matching glyph masks into seeded corners."
+  ],
+  "concepts": [
+    "glyph",
+    "color swap",
+    "corner completion"
+  ],
+  "observations": [
+    "Training pair 1 demonstrates two glyphs sharing a marker color and two corner completions.",
+    "Training pair 2 confirms sparse glyph grouping inside 5-by-5 bounds.",
+    "Training pair 3 contains two known missing color-swap cells in the raw upstream output; the reviewed correction restores them."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "The most frequent color is background; isolated corner colors select matching marked glyphs."
+  ],
+  "limitations": "The second raw test output contains one known incorrect swap cell; the reviewed correction is recorded separately."
+}

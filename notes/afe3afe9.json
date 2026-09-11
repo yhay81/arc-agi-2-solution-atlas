@@ -1,0 +1,19 @@
+{
+  "title": "Reduce the small square rings to one square at a time and remove the matrix with no rings.",
+  "summary": "Shrink the small square rings to one square at a time, and remove the matrix with no rings. Fill each column or row 90 degrees clockwise from the blue outline, maintaining the order of the colors.",
+  "steps": [
+    "Reduce the small square rings to one square at a time and remove the matrix with no rings.",
+    "Fill each column or row 90 degrees clockwise from the position of the blue outline, maintaining the order of the colors."
+  ],
+  "concepts": [
+    "number of objects",
+    "encoding",
+    "compression"
+  ],
+  "observations": [
+    "Training pair 1: 30x30 -> 7x6; colors [0, 1, 2, 3, 8] -> [0, 2, 3, 8]; output dimensions changed.",
+    "Training pair 2: 30x30 -> 6x7; colors [0, 1, 4, 6, 8] -> [0, 4, 6, 8]; output dimensions changed.",
+    "Training pair 3: 30x30 -> 7x6; colors [0, 1, 4, 8, 9] -> [0, 4, 8, 9]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

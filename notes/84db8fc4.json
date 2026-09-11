@@ -1,0 +1,21 @@
+{
+  "title": "Separate spaces that connect to edges and spaces that close",
+  "summary": "Divide the black square into areas that connect vertically, horizontally, and vertically. Make the black area that reaches the edge of the board red. The inner black area that cannot pass through to the edge is made gray, and colors other than black are left as is.",
+  "steps": [
+    "Divide the black square into areas that connect vertically, horizontally, and vertically.",
+    "Make the black area that reaches the edge of the board red.",
+    "The inner black area that cannot pass through to the edge is made gray, and colors other than black are left as is."
+  ],
+  "concepts": [
+    "Concatenation",
+    "reaching the edge",
+    "inside and outside"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 1, 3] -> [1, 2, 3, 5]; 43 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 1, 3] -> [1, 2, 3, 5]; 37 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 1, 3] -> [1, 2, 3, 5]; 46 cells changed.",
+    "Training pair 4: 10x10 -> 10x10; colors [0, 1, 3] -> [1, 2, 3, 5]; 39 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

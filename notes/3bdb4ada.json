@@ -1,0 +1,20 @@
+{
+  "title": "Punch an alternating pattern through the middle of solid three-row bars",
+  "summary": "Punch an alternating pattern through the middle of solid three-row bars. This is the training-inferred `alternate_middle_rows_of_three_high_rectangles` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `alternate_middle_rows_of_three_high_rectangles`: punch an alternating pattern through the middle of solid three-row bars"
+  ],
+  "concepts": [
+    "alternate",
+    "middle",
+    "rows",
+    "three",
+    "high",
+    "rectangles"
+  ],
+  "observations": [
+    "Training pair 1: 8x20 -> 8x20; colors [0, 1, 7] -> [0, 1, 7]; 9 cells changed.",
+    "Training pair 2: 8x30 -> 8x30; colors [0, 4, 8] -> [0, 4, 8]; 20 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

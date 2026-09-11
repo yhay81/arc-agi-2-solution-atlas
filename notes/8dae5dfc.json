@@ -1,0 +1,20 @@
+{
+  "title": "Reverse colors assigned to successive rectangular nesting rings",
+  "summary": "Reverse colors assigned to successive rectangular nesting rings. This is the training-inferred `reverse_nested_frame_colors` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `reverse_nested_frame_colors`: reverse colors assigned to successive rectangular nesting rings"
+  ],
+  "concepts": [
+    "reverse",
+    "nested",
+    "frame",
+    "colors"
+  ],
+  "observations": [
+    "Training pair 1: 17x17 -> 17x17; colors [0, 1, 2, 3, 4, 6, 8] -> [0, 1, 2, 3, 4, 6, 8]; 120 cells changed.",
+    "Training pair 2: 18x16 -> 18x16; colors [0, 1, 2, 3, 8] -> [0, 1, 2, 3, 8]; 144 cells changed.",
+    "Training pair 3: 17x19 -> 17x19; colors [0, 1, 2, 4, 6, 8] -> [0, 1, 2, 4, 6, 8]; 147 cells changed.",
+    "Training pair 4: 18x19 -> 18x19; colors [0, 1, 2, 3, 4, 7, 8] -> [0, 1, 2, 3, 4, 7, 8]; 154 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

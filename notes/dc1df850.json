@@ -1,0 +1,24 @@
+{
+  "title": "Draw a blue halo around every red cell",
+  "summary": "Keep the input unchanged except for black cells in the eight-neighborhood of a red cell. Paint each such neighboring black cell blue, including diagonal neighbors.",
+  "steps": [
+    "Locate every red cell.",
+    "Paint each horizontally, vertically, or diagonally adjacent black cell blue."
+  ],
+  "concepts": [
+    "dilation",
+    "eight-neighborhood",
+    "halo"
+  ],
+  "observations": [
+    "Training pair 1: 8x8 -> 8x8; colors [0, 2, 3, 8] -> [0, 1, 2, 3, 8]; 11 cells changed.",
+    "Training pair 2: 5x5 -> 5x5; colors [0, 2, 6] -> [0, 1, 2, 6]; 11 cells changed.",
+    "Training pair 3: 4x5 -> 4x5; colors [0, 2] -> [0, 1, 2]; 8 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "source color: red 2",
+    "halo color: blue 1",
+    "connectivity: eight directions"
+  ]
+}

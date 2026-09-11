@@ -1,0 +1,20 @@
+{
+  "title": "Extend short bars to full length, giving priority to horizontal bars at intersections",
+  "summary": "Colors that line up 2 squares vertically extend to the entire column, and colors that line up 2 squares horizontally extend to the entire row. The intersection of the vertical and horizontal bands should be the color of the horizontal band.",
+  "steps": [
+    "Find short vertical bars of the same color on an orange (7) background. Paint the row from top to bottom with the same color as each bar.",
+    "Find a short horizontal line of the same color and paint the row from the left edge to the right edge.",
+    "Where the vertical and horizontal bands intersect, use the color of the horizontal band painted later. Leave the other backgrounds as orange."
+  ],
+  "concepts": [
+    "Direction detection",
+    "Extension to matrix",
+    "Intersection priority"
+  ],
+  "observations": [
+    "Training pair 1: 8x8 -> 8x8; colors [4, 5, 7, 9] -> [4, 5, 7, 9]; 23 cells changed.",
+    "Training pair 2: 7x7 -> 7x7; colors [1, 2, 5, 6, 7] -> [1, 2, 5, 6, 7]; 16 cells changed.",
+    "Training pair 3: 9x9 -> 9x9; colors [0, 1, 3, 6, 7] -> [0, 1, 3, 6, 7]; 31 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

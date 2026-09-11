@@ -1,0 +1,21 @@
+{
+  "title": "Rebuild a scene as one bottom-anchored stack for each color",
+  "summary": "Rebuild a scene as one bottom-anchored stack for each color. Each non-background color is a small collection of independent polyominoes. The colors are assigned horizontal lanes by the leftmost cell they occupy, and the pieces in a lane are placed from bottom to top in their left-to-right order. A blank row separates neighbouring pieces and a blank column separates lanes. Only the translated copies are rendered; the input coordinates themselves are not retained. This is the training-inferred `stack_color_components_by_input_column` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `stack_color_components_by_input_column`: rebuild a scene as one bottom-anchored stack for each color"
+  ],
+  "concepts": [
+    "stack",
+    "color",
+    "components",
+    "input",
+    "column"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 4, 8] -> [0, 4, 8]; 36 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 3, 4] -> [0, 3, 4]; 34 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 7, 9] -> [0, 7, 9]; 47 cells changed.",
+    "Training pair 4: 10x10 -> 10x10; colors [0, 1, 6] -> [0, 1, 6]; 29 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

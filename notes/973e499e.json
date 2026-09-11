@@ -1,0 +1,20 @@
+{
+  "title": "Place a small picture with only the color of each square extracted",
+  "summary": "A rule that divides each input square into a large section and draws only those positions in the original picture that have the same color as the square's color.",
+  "steps": [
+    "Create a small picture with the same height and width as the input for each color, and erase other colors to black 0",
+    "Expand the original square to a section the size of the original picture",
+    "Place a small picture in each section that retains only the color of the original square."
+  ],
+  "concepts": [
+    "Colored masks",
+    "self-similarity",
+    "Expanded arrangement"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 9x9; colors [6, 8] -> [0, 6, 8]; output dimensions changed.",
+    "Training pair 2: 3x3 -> 9x9; colors [2, 3, 4] -> [0, 2, 3, 4]; output dimensions changed.",
+    "Training pair 3: 5x5 -> 25x25; colors [1, 8] -> [0, 1, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Find an arrow-shaped container with an open mouth and count the squares of different colors inside.",
+  "summary": "Find an arrow-shaped container with an open mouth and count the squares of different colors inside. Erase the contents and push out that number in a straight line from the tip opposite the opening. Discard areas outside the board and leave isolated points outside.",
+  "steps": [
+    "Find an arrow-shaped container with an open mouth and count the squares of different colors inside.",
+    "Erase the contents and push out that number in a straight line from the tip opposite to the opening.",
+    "Discard areas outside the board and leave isolated points outside the board."
+  ],
+  "concepts": [
+    "center of gravity",
+    "parallel movement",
+    "Align to edge"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 12x12; colors [0, 3, 4, 6, 7] -> [0, 3, 4, 6, 7]; 8 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 3, 6, 9] -> [0, 3, 6, 9]; 8 cells changed.",
+    "Training pair 3: 12x12 -> 12x12; colors [0, 6, 7] -> [0, 6, 7]; 10 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

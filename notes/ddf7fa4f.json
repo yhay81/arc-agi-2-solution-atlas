@@ -1,0 +1,19 @@
+{
+  "title": "Project header key colors into the payload components beneath their columns",
+  "summary": "Project header key colors into the payload components beneath their columns. This is the training-inferred `recolor_components_from_header_columns` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `recolor_components_from_header_columns`: project header key colors into the payload components beneath their columns"
+  ],
+  "concepts": [
+    "recolor",
+    "components",
+    "header",
+    "columns"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 1, 4, 5, 7] -> [0, 1, 4, 7]; 36 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 2, 5, 6, 8] -> [0, 2, 6, 8]; 35 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 1, 5, 6, 7] -> [0, 1, 6, 7]; 21 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

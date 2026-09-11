@@ -1,0 +1,19 @@
+{
+  "title": "Separate large frames and small objects and count the number of small objects in each frame color.",
+  "summary": "Separate the large frame and small objects and count the number of small objects in each frame color. Draw a mark for that number every other square from the right in the center row of the frame, and erase small objects.",
+  "steps": [
+    "Separate large frames and small objects and count the number of small objects in each frame color.",
+    "Draw a mark for that number every other square from the right in the center row of the frame, and erase small objects."
+  ],
+  "concepts": [
+    "Decoding instructions",
+    "Number of pieces",
+    "stripes"
+  ],
+  "observations": [
+    "Training pair 1: 23x23 -> 23x23; colors [1, 2, 3, 4, 8] -> [1, 2, 4, 8]; 35 cells changed.",
+    "Training pair 2: 23x23 -> 23x23; colors [1, 2, 3, 4, 6, 8] -> [1, 4, 6, 8]; 33 cells changed.",
+    "Training pair 3: 20x23 -> 20x23; colors [1, 2, 3, 4, 8] -> [1, 2, 3, 4]; 34 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

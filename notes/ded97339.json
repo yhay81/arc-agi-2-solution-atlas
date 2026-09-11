@@ -1,0 +1,17 @@
+{
+  "title": "Connect markers",
+  "summary": "Connect markers. This is the training-inferred `connect_markers` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `connect_markers`: connect markers"
+  ],
+  "concepts": [
+    "connect",
+    "markers"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 8] -> [0, 8]; 7 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 8] -> [0, 8]; 9 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 8] -> [0, 8]; 13 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Return the color of a component that is a hollow rectangle",
+  "summary": "Return the color of a component that is a hollow rectangle. This is the training-inferred `hollow_rectangle_color_summary` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `hollow_rectangle_color_summary`: return the color of a component that is a hollow rectangle"
+  ],
+  "concepts": [
+    "hollow",
+    "rectangle",
+    "color",
+    "summary"
+  ],
+  "observations": [
+    "Training pair 1: 15x17 -> 1x1; colors [0, 2, 4, 5, 7, 8] -> [5]; output dimensions changed.",
+    "Training pair 2: 15x13 -> 1x1; colors [0, 1, 2, 3, 4, 6, 7, 8] -> [6]; output dimensions changed.",
+    "Training pair 3: 16x17 -> 1x1; colors [0, 1, 2, 3, 7] -> [2]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

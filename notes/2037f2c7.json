@@ -1,0 +1,20 @@
+{
+  "title": "Align two equal-sized objects and render their differing cells as color 8",
+  "summary": "Align two equal-sized objects and render their differing cells as color 8. This is the training-inferred `crop_difference_between_two_objects` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `crop_difference_between_two_objects`: align two equal-sized objects and render their differing cells as color 8"
+  ],
+  "concepts": [
+    "crop",
+    "difference",
+    "between",
+    "two",
+    "objects"
+  ],
+  "observations": [
+    "Training pair 1: 25x25 -> 4x8; colors [0, 1, 2, 3, 4, 6, 7] -> [0, 8]; output dimensions changed.",
+    "Training pair 2: 23x25 -> 3x7; colors [0, 2, 3, 4, 6] -> [0, 8]; output dimensions changed.",
+    "Training pair 3: 22x22 -> 2x6; colors [0, 2, 3, 4, 7] -> [0, 8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

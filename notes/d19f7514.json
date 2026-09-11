@@ -1,0 +1,20 @@
+{
+  "title": "Combine the top and bottom panels as a yellow occupancy mask",
+  "summary": "Compare the upper and lower sections of the same size for each position, and color the areas where both are black in black, and the rest in yellow.",
+  "steps": [
+    "Divide the board into upper and lower halves",
+    "Determine whether the corresponding cells are both black",
+    "If at least one is not black, make it yellow"
+  ],
+  "concepts": [
+    "superposition",
+    "logical sum"
+  ],
+  "observations": [
+    "Training pair 1: 12x4 -> 6x4; colors [0, 3, 5] -> [0, 4]; output dimensions changed.",
+    "Training pair 2: 12x4 -> 6x4; colors [0, 3, 5] -> [0, 4]; output dimensions changed.",
+    "Training pair 3: 12x4 -> 6x4; colors [0, 3, 5] -> [0, 4]; output dimensions changed.",
+    "Training pair 4: 12x4 -> 6x4; colors [0, 3, 5] -> [0, 4]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

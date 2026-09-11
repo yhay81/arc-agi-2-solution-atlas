@@ -1,0 +1,17 @@
+{
+  "title": "Extract the left third of the grid",
+  "summary": "Extract the left third of the grid. This is the training-inferred `left_third` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `left_third`: extract the left third of the grid"
+  ],
+  "concepts": [
+    "left",
+    "third"
+  ],
+  "observations": [
+    "Training pair 1: 4x12 -> 4x4; colors [0, 1, 2, 4] -> [0, 1, 2, 4]; output dimensions changed.",
+    "Training pair 2: 3x9 -> 3x3; colors [1, 4, 5] -> [1, 4, 5]; output dimensions changed.",
+    "Training pair 3: 2x6 -> 2x2; colors [1, 2, 3] -> [1, 2, 3]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

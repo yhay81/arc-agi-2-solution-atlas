@@ -1,0 +1,19 @@
+{
+  "title": "Label isolated holes in a solid background by their component size",
+  "summary": "Label isolated holes in a solid background by their component size. The scene consists of a single nonzero background color and several four-connected zero islands. The islands are a compact size code: areas one, two, and three become colors three, two, and one respectively. The background remains unchanged, so the operation is independent of the particular palette used by an example. This is the training-inferred `recolor_zero_components_by_size` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `recolor_zero_components_by_size`: label isolated holes in a solid background by their component size"
+  ],
+  "concepts": [
+    "recolor",
+    "zero",
+    "components",
+    "size"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 5] -> [1, 2, 3, 5]; 26 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 5] -> [1, 2, 3, 5]; 25 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 5] -> [1, 2, 3, 5]; 27 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

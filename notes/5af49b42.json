@@ -1,0 +1,17 @@
+{
+  "title": "Completing a multicolor pattern from a single color clue",
+  "summary": "A multi-color prototype is translated and copied to a position where the same color as the single-color cue overlaps.",
+  "steps": [
+    "A multi-color prototype is translated and copied to a position where the same color as the single-color cue overlaps."
+  ],
+  "concepts": [
+    "part to whole",
+    "Sample verification"
+  ],
+  "observations": [
+    "Training pair 1: 13x15 -> 13x15; colors [0, 1, 2, 3, 4, 5, 6, 7, 8] -> [0, 1, 2, 3, 4, 5, 6, 7, 8]; 14 cells changed.",
+    "Training pair 2: 12x14 -> 12x14; colors [0, 1, 2, 3, 4, 5, 6] -> [0, 1, 2, 3, 4, 5, 6]; 14 cells changed.",
+    "Training pair 3: 13x13 -> 13x13; colors [0, 1, 2, 3, 4, 6, 7, 8] -> [0, 1, 2, 3, 4, 6, 7, 8]; 10 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

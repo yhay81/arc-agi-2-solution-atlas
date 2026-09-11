@@ -1,0 +1,20 @@
+{
+  "title": "Match the yellow pattern to the black window mark",
+  "summary": "Find the black rectangle inside the light blue 8. Use the window marked yellow 4 and color as a sample. Copy the relative position of the yellow color from the sample mark to the same color mark on the other window. Cut out the window you copied.",
+  "steps": [
+    "Find the black rectangle inside the light blue 8. Use the window marked yellow 4 and color as a sample.",
+    "Copy the relative position of the yellow color from the sample mark to the same color mark on the other window.",
+    "Cut out the window you copied."
+  ],
+  "concepts": [
+    "Reference point correspondence",
+    "Copy",
+    "Cut out"
+  ],
+  "observations": [
+    "Training pair 1: 21x22 -> 5x5; colors [0, 2, 4, 8] -> [0, 2, 4]; output dimensions changed.",
+    "Training pair 2: 20x23 -> 9x9; colors [0, 3, 4, 8] -> [0, 3, 4]; output dimensions changed.",
+    "Training pair 3: 19x18 -> 8x7; colors [0, 1, 4, 8] -> [0, 1, 4]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

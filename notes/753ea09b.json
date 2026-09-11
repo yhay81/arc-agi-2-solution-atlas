@@ -1,0 +1,20 @@
+{
+  "title": "Paint the path created by the largest collection of lines",
+  "summary": "Paint the path created by the largest collection of lines. The two areas with large backgrounds are the exterior on both sides of the passage, and the other areas whose boundaries belong to this collection of lines are painted in the color of the wall.",
+  "steps": [
+    "Paint the path created by the largest collection of lines",
+    "Use the two large areas of the background as the exterior on both sides of the passage, and paint the other areas whose boundaries belong to this group of lines with the color of the wall."
+  ],
+  "concepts": [
+    "contour",
+    "Obi",
+    "inside and outside",
+    "filling"
+  ],
+  "observations": [
+    "Training pair 1: 30x30 -> 30x30; colors [5, 6, 7] -> [5, 6, 7]; 197 cells changed.",
+    "Training pair 2: 30x30 -> 30x30; colors [0, 3, 4] -> [0, 3, 4]; 203 cells changed.",
+    "Training pair 3: 30x30 -> 30x30; colors [3, 8, 9] -> [3, 8, 9]; 131 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

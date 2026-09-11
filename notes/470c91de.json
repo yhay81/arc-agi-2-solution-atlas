@@ -1,0 +1,19 @@
+{
+  "title": "Shift each object one diagonal cell toward its embedded 8 marker",
+  "summary": "Shift each object one diagonal cell toward its embedded 8 marker. This is the training-inferred `move_marked_components_diagonal` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `move_marked_components_diagonal`: shift each object one diagonal cell toward its embedded 8 marker"
+  ],
+  "concepts": [
+    "move",
+    "marked",
+    "components",
+    "diagonal"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [1, 5, 7, 8, 9] -> [1, 5, 7, 9]; 37 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [2, 6, 7, 8] -> [2, 6, 7]; 30 cells changed.",
+    "Training pair 3: 11x11 -> 11x11; colors [2, 3, 7, 8, 9] -> [2, 3, 7, 9]; 36 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

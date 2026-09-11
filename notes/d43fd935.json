@@ -1,0 +1,21 @@
+{
+  "title": "Draw marker-colored rays from aligned singletons to a unique two-by-two block",
+  "summary": "Draw marker-colored rays from aligned singletons to a unique two-by-two block. This is the training-inferred `project_aligned_markers_to_two_by_two_block` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `project_aligned_markers_to_two_by_two_block`: draw marker-colored rays from aligned singletons to a unique two-by-two block"
+  ],
+  "concepts": [
+    "project",
+    "aligned",
+    "markers",
+    "two",
+    "two",
+    "block"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 3, 7, 8] -> [0, 3, 7, 8]; 9 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 1, 3, 6] -> [0, 1, 3, 6]; 7 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 1, 3] -> [0, 1, 3]; 4 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

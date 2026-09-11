@@ -1,0 +1,19 @@
+{
+  "title": "Encode marker column",
+  "summary": "Encode marker column. This is the training-inferred `encode_marker_column` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `encode_marker_column`: encode marker column"
+  ],
+  "concepts": [
+    "encode",
+    "marker",
+    "column"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 3x3; colors [0, 5] -> [2, 4]; 9 cells changed.",
+    "Training pair 2: 3x3 -> 3x3; colors [0, 5] -> [3]; 9 cells changed.",
+    "Training pair 3: 3x3 -> 3x3; colors [0, 5] -> [3, 4]; 9 cells changed.",
+    "Training pair 4: 3x3 -> 3x3; colors [0, 5] -> [2, 3, 4]; 9 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Move the 8-connected object of the top color up until the top of the shape is on the first inner row, and move the object of the bottom color down until the bottom end of the shape is on the last inner row.",
+  "summary": "Move the 8-connected object of the top color up until the top of the shape is on the first inside row, and move the object of the bottom color down until the bottom end of the shape is on the last inside row. However, for lower colored objects with a height of 3 or more that touch the right edge, each column used is extended from the original upper edge to the front of the lower edge.",
+  "steps": [
+    "Move the 8-connected object of the top color up until the top of the shape is on the first inner row, and move the object of the bottom color down until the bottom end of the shape is on the last inner row.",
+    "However, for lower side colored objects with a height of 3 or more that touch the right edge, each column used will be extended from the original upper edge to the front of the bottom side."
+  ],
+  "concepts": [
+    "gravity",
+    "Same color compatible",
+    "shape complementation"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [7, 8, 9] -> [7, 8, 9]; 60 cells changed.",
+    "Training pair 2: 16x16 -> 16x16; colors [2, 5, 7] -> [2, 5, 7]; 40 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

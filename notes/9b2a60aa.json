@@ -1,0 +1,20 @@
+{
+  "title": "Read the color dots in a straight line as an indication of the color and spacing of the shape.",
+  "summary": "Read the colored dots in a straight line as an indication of the color and spacing of the shape. Duplicate a shape using points of the same color as the original shape, maintaining the order of the points and the number of spaces between them. Shift each point by the amount that it extends to the width or height of the shape.",
+  "steps": [
+    "Read a line of colored dots as an indication of the color and spacing of a shape",
+    "Duplicate a shape based on points of the same color as the original shape, maintaining the order of the points and the number of spaces between them.",
+    "Shift each point by the amount it extends to the width or height of the shape"
+  ],
+  "concepts": [
+    "instruction string",
+    "Interval transcription",
+    "Copy"
+  ],
+  "observations": [
+    "Training pair 1: 23x17 -> 23x17; colors [0, 2, 3, 4] -> [0, 2, 3, 4]; 18 cells changed.",
+    "Training pair 2: 16x22 -> 16x22; colors [0, 2, 3, 8] -> [0, 2, 3, 8]; 21 cells changed.",
+    "Training pair 3: 23x14 -> 23x14; colors [0, 2, 3, 8] -> [0, 2, 3, 8]; 21 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

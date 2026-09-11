@@ -1,0 +1,22 @@
+{
+  "title": "Read the overlapping order from all intersection points and arrange them into concentric squares",
+  "summary": "Read the context from the intersections of overlapping colored rectangles and find the order that matches the most intersections. Draw concentric squares with the back color on the outside and the front color on the inside.",
+  "steps": [
+    "Find the top, bottom, left and right edges of the visible line for each color and estimate the outline of the original rectangle.",
+    "Intersections where another color appears on the outline of one color are counted as evidence that the other color is in the foreground.",
+    "Compare the order of all colors and select the unique back-to-front order that maximizes the number of squares that match the evidence of intersection. An example of a train has locally inconsistent intersections, and a single intersection does not determine the order.",
+    "If there are n types of colors, create a square with sides of 2n-1, and draw a circle one square wide from the color in the back from outside to inside. The color closest to you becomes the center square."
+  ],
+  "concepts": [
+    "rectangle restoration",
+    "Context of overlap",
+    "overall integrity",
+    "concentric squares"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 9x9; colors [0, 1, 2, 3, 5, 7] -> [1, 2, 3, 5, 7]; output dimensions changed.",
+    "Training pair 2: 12x12 -> 9x9; colors [0, 1, 2, 3, 4, 8] -> [1, 2, 3, 4, 8]; output dimensions changed.",
+    "Training pair 3: 25x25 -> 11x11; colors [0, 2, 3, 4, 5, 7, 9] -> [2, 3, 4, 5, 7, 9]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

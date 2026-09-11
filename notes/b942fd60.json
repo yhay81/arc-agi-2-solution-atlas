@@ -1,0 +1,23 @@
+{
+  "title": "Extend the line to the right from the red starting point and branch up and down before the colored obstacle.",
+  "summary": "Extend the line to the right from the red starting point and branch up and down before the colored obstacle. Branching is repeated up to depth 5. However, if at least one of the lines immediately after the branch is a new red line, the line will not branch again. If the original second row is empty and contains multiple branches, connect the entire path with red.",
+  "steps": [
+    "Extend the line to the right from the red starting point and branch up and down before the colored obstacle.",
+    "Branching repeats up to depth 5",
+    "However, if at least one of the sides immediately after the branch is a new red line, it will not branch again.",
+    "If the original second row is empty and contains multiple branches, connect the entire path with red."
+  ],
+  "concepts": [
+    "recursive branch",
+    "obstacles"
+  ],
+  "observations": [
+    "Training pair 1: 8x8 -> 8x8; colors [0, 2, 3, 7, 8] -> [0, 2, 3, 7, 8]; 20 cells changed.",
+    "Training pair 2: 12x12 -> 12x12; colors [0, 2, 3, 6, 7, 8] -> [0, 2, 3, 6, 7, 8]; 54 cells changed.",
+    "Training pair 3: 6x6 -> 6x6; colors [0, 2, 3, 7, 8] -> [0, 2, 3, 7, 8]; 8 cells changed.",
+    "Training pair 4: 4x6 -> 4x6; colors [0, 2, 8] -> [0, 2, 8]; 6 cells changed.",
+    "Training pair 5: 10x10 -> 10x10; colors [0, 2, 3, 6, 7, 8] -> [0, 2, 3, 6, 7, 8]; 19 cells changed.",
+    "Training pair 6: 8x6 -> 8x6; colors [0, 2, 6, 7, 8] -> [0, 2, 6, 7, 8]; 19 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

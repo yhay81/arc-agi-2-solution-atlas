@@ -1,0 +1,19 @@
+{
+  "title": "Bounce an object up by the number of squares",
+  "summary": "A rule that moves a colored object on a light blue floor up a distance equal to the number of squares of that object.",
+  "steps": [
+    "Count the number of squares n of each object except floor 8 and background 7",
+    "Move each object up n rows keeping its shape and column position",
+    "Return the original position to background 7 and leave the floor"
+  ],
+  "concepts": [
+    "distance from number",
+    "move"
+  ],
+  "observations": [
+    "Training pair 1: 8x8 -> 8x8; colors [2, 7, 8, 9] -> [2, 7, 8, 9]; 14 cells changed.",
+    "Training pair 2: 8x8 -> 8x8; colors [1, 2, 3, 7, 8, 9] -> [1, 2, 3, 7, 8, 9]; 16 cells changed.",
+    "Training pair 3: 8x8 -> 8x8; colors [1, 3, 4, 7, 8] -> [1, 3, 4, 7, 8]; 22 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

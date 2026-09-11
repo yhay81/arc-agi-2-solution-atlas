@@ -1,0 +1,22 @@
+{
+  "title": "Sort vertical color bands",
+  "summary": "Sort the vertical color bands. Normally, the leftmost obi is sent to the rightmost obi. If all three bands have different widths, reverse the order of all the bands. Move the small seal inside the obi together with the obi.",
+  "steps": [
+    "Sort vertical color bands",
+    "Usually send the leftmost belt to the rightmost",
+    "If all three bands have different widths, reverse the order of the entire band.",
+    "Move the small mark inside the obi together with the obi."
+  ],
+  "concepts": [
+    "Reference relationship",
+    "order",
+    "Relocation"
+  ],
+  "observations": [
+    "Training pair 1: 9x14 -> 9x14; colors [5, 7, 9] -> [5, 7, 9]; 88 cells changed.",
+    "Training pair 2: 7x12 -> 7x12; colors [1, 3, 8, 9] -> [1, 3, 8, 9]; 68 cells changed.",
+    "Training pair 3: 8x13 -> 8x13; colors [1, 2, 8] -> [1, 2, 8]; 100 cells changed.",
+    "Training pair 4: 8x10 -> 8x10; colors [1, 5, 7] -> [1, 5, 7]; 68 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

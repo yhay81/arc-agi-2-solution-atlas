@@ -1,0 +1,18 @@
+{
+  "title": "Mirror the yellow shape with a red vertical line",
+  "summary": "Mirror the yellow shape with a red vertical line. Find the color dot at the position of the reflected shape and complete the shape on the mirror side with that color. Yellow squares diagonally apart are also treated as the same figure.",
+  "steps": [
+    "Mirror the yellow shape with a red vertical line",
+    "Find the color dot at the position of the reflected shape and complete the shape on the mirror side with that color.",
+    "Diagonally separated yellow squares are also treated as the same figure."
+  ],
+  "concepts": [
+    "axis of symmetry",
+    "Complementary color instructions"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [0, 2, 4, 5, 7] -> [0, 2, 4, 5, 7]; 23 cells changed.",
+    "Training pair 2: 14x16 -> 14x16; colors [0, 2, 3, 4, 8] -> [0, 2, 3, 4, 8]; 18 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

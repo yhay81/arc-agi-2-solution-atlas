@@ -1,0 +1,24 @@
+{
+  "title": "Recolor same-color paths according to their geometric topology",
+  "summary": "Recolor same-color paths according to their geometric topology. This is the training-inferred `recolor_components_by_topology` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `recolor_components_by_topology`: recolor same-color paths according to their geometric topology"
+  ],
+  "concepts": [
+    "recolor",
+    "components",
+    "topology"
+  ],
+  "observations": [
+    "Training pair 1: 10x11 -> 10x11; colors [0, 3] -> [0, 1, 2, 6]; 25 cells changed.",
+    "Training pair 2: 19x21 -> 19x21; colors [0, 3] -> [0, 1, 2, 6]; 51 cells changed.",
+    "Training pair 3: 14x12 -> 14x12; colors [0, 3] -> [0, 1, 2, 6]; 30 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "source color: 3",
+    "one turn color: 1",
+    "multi turn color: 6",
+    "branch color: 2"
+  ]
+}

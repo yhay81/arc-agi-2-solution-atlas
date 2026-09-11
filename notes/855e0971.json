@@ -1,0 +1,21 @@
+{
+  "title": "Extend zero markers along the short axis of each color region",
+  "summary": "Extend zero markers along the short axis of each color region. This is the training-inferred `extend_zero_markers_through_color_regions` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `extend_zero_markers_through_color_regions`: extend zero markers along the short axis of each color region"
+  ],
+  "concepts": [
+    "extend",
+    "zero",
+    "markers",
+    "color",
+    "regions"
+  ],
+  "observations": [
+    "Training pair 1: 13x15 -> 13x15; colors [0, 2, 3, 8] -> [0, 2, 3, 8]; 14 cells changed.",
+    "Training pair 2: 14x13 -> 14x13; colors [0, 1, 2] -> [0, 1, 2]; 11 cells changed.",
+    "Training pair 3: 14x15 -> 14x15; colors [0, 2, 4, 5] -> [0, 2, 4, 5]; 14 cells changed.",
+    "Training pair 4: 15x19 -> 15x19; colors [0, 4, 5, 8] -> [0, 4, 5, 8]; 17 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

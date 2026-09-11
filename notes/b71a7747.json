@@ -1,0 +1,17 @@
+{
+  "title": "Find rectangular tiles of the same color with lines drawn on them, and connect them without any gaps in the original order, except for the decorations between the tiles and on the outside.",
+  "summary": "Find rectangular tiles of the same color with lines drawn on them, and connect them without any gaps in the original order, except for the decorations between the tiles and on the outside.",
+  "steps": [
+    "Find rectangular tiles of the same color with lines drawn on them, and connect them without any gaps in the original order, except for the decorations between the tiles and on the outside."
+  ],
+  "concepts": [
+    "delimiter removal",
+    "reduction",
+    "Pattern extraction"
+  ],
+  "observations": [
+    "Training pair 1: 19x19 -> 12x12; colors [1, 4, 6, 8, 9] -> [8, 9]; output dimensions changed.",
+    "Training pair 2: 25x25 -> 9x9; colors [1, 2, 3, 8] -> [3, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

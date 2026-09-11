@@ -1,0 +1,18 @@
+{
+  "title": "Fill in the empty sections with mirror copies from the three samples",
+  "summary": "Divide the board into sections using colored partitions. Find a place in a 2×2 group of blocks where 3 blocks have figures of the same color and 1 block is empty. If the horizontally reversed shape of the horizontal partner and the vertically reversed shape of the vertical partner match, copy it to an empty area.",
+  "steps": [
+    "Divide the board into sections using colored partitions.",
+    "Find a place in a 2×2 group of blocks where 3 blocks have figures of the same color and 1 block is empty.",
+    "If the horizontally reversed shape of the horizontal partner and the vertically reversed shape of the vertical partner match, copy it to an empty area."
+  ],
+  "concepts": [
+    "Correspondence between partitions",
+    "complement"
+  ],
+  "observations": [
+    "Training pair 1: 19x18 -> 19x18; colors [0, 1, 2, 3] -> [0, 1, 2, 3]; 10 cells changed.",
+    "Training pair 2: 17x19 -> 17x19; colors [0, 4, 6] -> [0, 4, 6]; 5 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

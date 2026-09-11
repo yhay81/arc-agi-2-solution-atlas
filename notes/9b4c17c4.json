@@ -1,0 +1,18 @@
+{
+  "title": "Determine the left and right destination based on the background color",
+  "summary": "Divide each row into blue and light blue areas, and align the red squares to the right in the blue area and to the left in the light blue area.",
+  "steps": [
+    "Divide each row into blue and light blue areas, and align the red squares to the right in the blue area and to the left in the light blue area."
+  ],
+  "concepts": [
+    "Conditions by background",
+    "move"
+  ],
+  "observations": [
+    "Training pair 1: 12x11 -> 12x11; colors [1, 2, 8] -> [1, 2, 8]; 30 cells changed.",
+    "Training pair 2: 11x13 -> 11x13; colors [1, 2, 8] -> [1, 2, 8]; 32 cells changed.",
+    "Training pair 3: 12x14 -> 12x14; colors [1, 2, 8] -> [1, 2, 8]; 42 cells changed.",
+    "Training pair 4: 15x15 -> 15x15; colors [1, 2, 8] -> [1, 2, 8]; 34 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

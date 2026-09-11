@@ -1,0 +1,20 @@
+{
+  "title": "Erase the yellow that hits the front of the gray gun muzzle",
+  "summary": "Find the center of the gray stick and the position of the dark red handle. Imagine a horizontal or vertical line running from the handle to the center of the stick and beyond. Return the entire yellow shape that corresponds to that line to the orange background. Do not draw the line itself, but leave the gun barrel and other objects.",
+  "steps": [
+    "Find the center of the gray stick and the position of the dark red handle.",
+    "Imagine a horizontal or vertical line running from the handle to the center of the stick and beyond.",
+    "Return the entire yellow shape that corresponds to that line to the orange background. Do not draw the line itself, but leave the gun barrel and other objects."
+  ],
+  "concepts": [
+    "direction",
+    "outlook",
+    "Erase object units"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [4, 5, 7, 9] -> [4, 5, 7, 9]; 3 cells changed.",
+    "Training pair 2: 14x12 -> 14x12; colors [4, 5, 7, 9] -> [4, 5, 7, 9]; 7 cells changed.",
+    "Training pair 3: 10x13 -> 10x13; colors [4, 5, 7, 9] -> [4, 5, 7, 9]; 10 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

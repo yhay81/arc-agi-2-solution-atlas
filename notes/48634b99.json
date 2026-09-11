@@ -1,0 +1,20 @@
+{
+  "title": "Look for the vertical bar that is half brown.",
+  "summary": "Look for a vertical bar that is half brown. Transfer the brown half to a stick that is one step longer than that stick, keeping the top and bottom halves in the same direction. Return all the original sticks to light blue.",
+  "steps": [
+    "Look for the vertical bar that is half brown.",
+    "Transfer the brown half to a stick that is one step longer than that stick, keeping the top and bottom halves in the same direction.",
+    "All the original bars are returned to light blue."
+  ],
+  "concepts": [
+    "aisle",
+    "moving the rod",
+    "collision"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [7, 8, 9] -> [7, 8, 9]; 5 cells changed.",
+    "Training pair 2: 16x16 -> 16x16; colors [7, 8, 9] -> [7, 8, 9]; 3 cells changed.",
+    "Training pair 3: 16x16 -> 16x16; colors [7, 8, 9] -> [7, 8, 9]; 9 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

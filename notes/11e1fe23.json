@@ -1,0 +1,19 @@
+{
+  "title": "Draw the center and small corners from the three corners",
+  "summary": "Find the center of the square surrounding the three colored points. Make one square in the center gray. Add the color of the original point in the same direction as each point, diagonally one square away from the center in each direction.",
+  "steps": [
+    "Find the center of the square surrounding the three colored points.",
+    "Make one square in the center gray.",
+    "Add the color of the original point in the same direction as each point, diagonally one square away from the center in each direction."
+  ],
+  "concepts": [
+    "missing square",
+    "center",
+    "relative position"
+  ],
+  "observations": [
+    "Training pair 1: 12x11 -> 12x11; colors [0, 2, 6, 8] -> [0, 2, 5, 6, 8]; 4 cells changed.",
+    "Training pair 2: 10x12 -> 10x12; colors [0, 1, 2, 3] -> [0, 1, 2, 3, 5]; 4 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

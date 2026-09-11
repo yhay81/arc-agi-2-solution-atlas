@@ -1,0 +1,18 @@
+{
+  "title": "Extract the top-left 2-by-2 region",
+  "summary": "Extract the top-left 2-by-2 region. This is the training-inferred `top_left_two` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `top_left_two`: extract the top-left 2-by-2 region"
+  ],
+  "concepts": [
+    "top",
+    "left",
+    "two"
+  ],
+  "observations": [
+    "Training pair 1: 8x8 -> 2x2; colors [2, 4, 5] -> [2, 4, 5]; output dimensions changed.",
+    "Training pair 2: 6x6 -> 2x2; colors [0, 3, 4, 6] -> [0, 3, 4, 6]; output dimensions changed.",
+    "Training pair 3: 12x6 -> 2x2; colors [1, 2, 3, 4] -> [1, 2, 3, 4]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Drop the blue and if there is a hole in the red container, go around the hole at the bottom and drop it into the next container.",
+  "summary": "Drop the blue, and if the red container has a hole, it will go around the hole in the bottom and fall into the next container. Fill the first leak-proof container, and when it leaks to the end, fill the bottom row.",
+  "steps": [
+    "Drop the blue and if there is a hole in the red container, go around the hole at the bottom and drop it into the next container.",
+    "Fill the first leak-proof container, and when it leaks to the end, fill the bottom row."
+  ],
+  "concepts": [
+    "gravity",
+    "container",
+    "conditional branch"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 1, 2] -> [0, 1, 2]; 7 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 1, 2] -> [0, 1, 2]; 11 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 1, 2] -> [0, 1, 2]; 11 cells changed.",
+    "Training pair 4: 10x10 -> 10x10; colors [0, 1, 2] -> [0, 1, 2]; 4 cells changed.",
+    "Training pair 5: 10x10 -> 10x10; colors [0, 1, 2] -> [0, 1, 2]; 13 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

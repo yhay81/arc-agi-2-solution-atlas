@@ -1,0 +1,22 @@
+{
+  "title": "Read the blue L as a regular shape made up of horizontal and vertical bars.",
+  "summary": "Read the blue letter L as a regular shape made up of horizontal and vertical bars. Look for small protrusions or dents around its periphery. For rows and columns with protrusions, recess the opposite side by one cell. For rows and columns with depressions, make the opposite side protrude by one cell. The original unevenness remains.",
+  "steps": [
+    "Read the blue L as a regular shape made up of horizontal and vertical bars.",
+    "Look for small protrusions or dents around its periphery.",
+    "For rows and columns with protrusions, recess the opposite side by one cell.",
+    "For rows and columns with depressions, make the opposite side protrude by one cell.",
+    "Leaving the original unevenness"
+  ],
+  "concepts": [
+    "contour",
+    "parts conversion"
+  ],
+  "observations": [
+    "Training pair 1: 14x16 -> 14x16; colors [1, 8] -> [1, 8]; 4 cells changed.",
+    "Training pair 2: 13x17 -> 13x17; colors [1, 8] -> [1, 8]; 6 cells changed.",
+    "Training pair 3: 16x16 -> 16x16; colors [1, 8] -> [1, 8]; 2 cells changed.",
+    "Training pair 4: 14x15 -> 14x15; colors [1, 8] -> [1, 8]; 2 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

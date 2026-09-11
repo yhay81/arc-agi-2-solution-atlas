@@ -1,0 +1,20 @@
+{
+  "title": "Crop a palette panel and repeat each key by its outside object count",
+  "summary": "Crop a palette panel and repeat each key by its outside object count. This is the training-inferred `expand_panel_keys_by_object_count` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `expand_panel_keys_by_object_count`: crop a palette panel and repeat each key by its outside object count"
+  ],
+  "concepts": [
+    "expand",
+    "panel",
+    "keys",
+    "object",
+    "count"
+  ],
+  "observations": [
+    "Training pair 1: 20x22 -> 7x7; colors [0, 2, 3, 4, 8] -> [0, 2, 4, 8]; output dimensions changed.",
+    "Training pair 2: 23x23 -> 7x12; colors [0, 1, 2, 3, 4, 8] -> [0, 2, 3, 8]; output dimensions changed.",
+    "Training pair 3: 21x20 -> 5x5; colors [0, 1, 2, 4, 8] -> [0, 1, 4]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

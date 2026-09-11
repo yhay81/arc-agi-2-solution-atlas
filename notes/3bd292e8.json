@@ -1,0 +1,19 @@
+{
+  "title": "Use the red polygonal line as a wall to separate the gray area, and paint it green and yellow alternately each time you cross one wall.",
+  "summary": "Use the red polygonal line as a wall to separate the gray area, and paint it alternately green and yellow each time you cross a wall. Follow the first red path that enters from the top edge, or the left edge, inward, and on the left side in the direction of travel, set the starting point of alternating colors as green if the number of squares on the path is odd, and yellow if it is even.",
+  "steps": [
+    "Use the red polygonal line as a wall to separate the gray area, and paint it green and yellow alternately each time you cross one wall.",
+    "Follow the first red path that enters from the top edge, or the left edge, inward, and on the left side of the direction of travel, set the starting point of alternate colors as green if the number of squares on the path is odd, and yellow if it is even."
+  ],
+  "concepts": [
+    "boundary",
+    "inside and outside",
+    "Color coding"
+  ],
+  "observations": [
+    "Training pair 1: 7x7 -> 7x7; colors [2, 7] -> [2, 3, 5]; 33 cells changed.",
+    "Training pair 2: 7x7 -> 7x7; colors [2, 7] -> [2, 3, 5]; 36 cells changed.",
+    "Training pair 3: 8x8 -> 8x8; colors [2, 7] -> [2, 3, 5]; 42 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

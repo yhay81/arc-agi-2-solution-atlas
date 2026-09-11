@@ -1,0 +1,20 @@
+{
+  "title": "Paint the center shape with the color of the closest point",
+  "summary": "Select the color point with the shortest Euclidean distance to the gray figure, replace gray with that color, and make the others black.",
+  "steps": [
+    "Select the color point with the shortest Euclidean distance to the gray figure, replace gray with that color, and make the others black."
+  ],
+  "concepts": [
+    "distance",
+    "Attribute transcription",
+    "Delete"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 3, 4, 5, 6] -> [0, 6]; 15 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 2, 4, 5, 9] -> [0, 9]; 20 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 3, 4, 5, 8] -> [0, 4]; 19 cells changed.",
+    "Training pair 4: 10x10 -> 10x10; colors [0, 4, 5, 6] -> [0, 4]; 8 cells changed.",
+    "Training pair 5: 10x10 -> 10x10; colors [0, 5, 6, 7, 9] -> [0, 6]; 24 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Bouncing diagonal",
+  "summary": "Bouncing diagonal. This is the training-inferred `bouncing_diagonal` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `bouncing_diagonal`: bouncing diagonal"
+  ],
+  "concepts": [
+    "bouncing",
+    "diagonal"
+  ],
+  "observations": [
+    "Training pair 1: 10x3 -> 10x3; colors [0, 1] -> [1, 8]; 29 cells changed.",
+    "Training pair 2: 10x2 -> 10x2; colors [0, 1] -> [1, 8]; 19 cells changed.",
+    "Training pair 3: 10x4 -> 10x4; colors [0, 1] -> [1, 8]; 39 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

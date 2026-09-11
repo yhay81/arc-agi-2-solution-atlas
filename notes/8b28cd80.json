@@ -1,0 +1,22 @@
+{
+  "title": "Multiply each row and column of the 3×3 point by 4 to make it the starting point of 9×9",
+  "summary": "Multiply each row and column of the 3×3 points by 4 to create a 9×9 starting point. Draw a spiral extending 2, 2, 4, 4, 6, 6 squares in the order of top, right, bottom, and left. Don't draw the parts outside the board, but draw the parts that come back.",
+  "steps": [
+    "Multiply each row and column of the 3×3 point by 4 to make it the starting point of 9×9",
+    "Draw a spiral extending 2, 2, 4, 4, 6, 6 squares in the order of top, right, bottom, and left.",
+    "Do not draw the parts outside the board, but draw the parts that come back."
+  ],
+  "concepts": [
+    "swirl",
+    "center",
+    "increase in length"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 9x9; colors [0, 5] -> [0, 5]; output dimensions changed.",
+    "Training pair 2: 3x3 -> 9x9; colors [0, 8] -> [0, 8]; output dimensions changed.",
+    "Training pair 3: 3x3 -> 9x9; colors [0, 7] -> [0, 7]; output dimensions changed.",
+    "Training pair 4: 3x3 -> 9x9; colors [0, 3] -> [0, 3]; output dimensions changed.",
+    "Training pair 5: 3x3 -> 9x9; colors [0, 4] -> [0, 4]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

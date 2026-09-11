@@ -1,0 +1,19 @@
+{
+  "title": "Draw a four-colored rectangle and a cross through its red center",
+  "summary": "Read the four color points above, below, left and right of the red center point as the position and color of the sides, and draw the sides of the four-colored rectangle. Draw a gray cross in the center matrix and keep the center point red.",
+  "steps": [
+    "Identify the red center and the four color points on the top, bottom, left and right",
+    "Draw the four sides of a rectangle using the position and color of each point",
+    "Add gray vertical and horizontal lines through the center and return the center to red"
+  ],
+  "concepts": [
+    "four side markers",
+    "center cross"
+  ],
+  "observations": [
+    "Training pair 1: 15x14 -> 15x14; colors [0, 2, 4, 6, 7, 8] -> [0, 2, 4, 5, 6, 7, 8]; 43 cells changed.",
+    "Training pair 2: 14x15 -> 14x15; colors [0, 2, 3, 4, 6, 8] -> [0, 2, 3, 4, 5, 6, 8]; 43 cells changed.",
+    "Training pair 3: 15x15 -> 15x15; colors [0, 1, 2, 3, 6, 9] -> [0, 1, 2, 3, 5, 6, 9]; 52 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Correlate the upper pattern with the lower color legend",
+  "summary": "Correlate the upper pattern with the lower color legend. Create a layout plan by overlapping the shapes of each section in the middle row in the same position, and then draw the upper row pattern corresponding to the position of that color in the lower row color.",
+  "steps": [
+    "Correlate the upper pattern with the lower color legend",
+    "Create a layout map by overlapping the shapes of each section in the middle row in the same position, and draw the upper row pattern corresponding to the position of that color in the lower row color."
+  ],
+  "concepts": [
+    "parcel division",
+    "Shape substitution"
+  ],
+  "observations": [
+    "Training pair 1: 10x11 -> 9x9; colors [0, 1, 2, 4, 5, 6, 7] -> [0, 1, 6, 7]; output dimensions changed.",
+    "Training pair 2: 10x11 -> 9x9; colors [0, 1, 2, 3, 4, 5, 7, 9] -> [0, 3, 7, 9]; output dimensions changed.",
+    "Training pair 3: 14x17 -> 25x25; colors [0, 1, 2, 3, 4, 5, 6, 8] -> [0, 3, 6, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Overlay the left and right panels using the larger color index",
+  "summary": "Overlay the left and right panels using the larger color index. This is the training-inferred `overlay_lr_max` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `overlay_lr_max`: overlay the left and right panels using the larger color index"
+  ],
+  "concepts": [
+    "overlay",
+    "lr",
+    "max"
+  ],
+  "observations": [
+    "Training pair 1: 5x7 -> 5x3; colors [0, 1, 9] -> [0, 8]; output dimensions changed.",
+    "Training pair 2: 5x7 -> 5x3; colors [0, 1, 9] -> [0, 8]; output dimensions changed.",
+    "Training pair 3: 5x7 -> 5x3; colors [0, 1, 9] -> [0, 8]; output dimensions changed.",
+    "Training pair 4: 5x7 -> 5x3; colors [0, 1, 9] -> [0, 8]; output dimensions changed.",
+    "Training pair 5: 5x7 -> 5x3; colors [0, 1, 9] -> [0, 8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "final color map: 9 -> 0, 0 -> 8"
+  ]
+}

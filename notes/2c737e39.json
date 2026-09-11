@@ -1,0 +1,20 @@
+{
+  "title": "Copy the pattern according to the gray reference point",
+  "summary": "Take out a multicolored figure containing one reference point of gray 5 as a sample. For each distant gray point, move the reference point of the sample in parallel so that it overlaps there, and copy the pattern other than gray. The gray dot at the copy destination returns to black. The original sample and its gray reference points are retained.",
+  "steps": [
+    "Take out a multicolored figure containing one reference point of gray 5 as a sample.",
+    "For each distant gray point, move the reference point of the sample in parallel so that it overlaps there, and copy the pattern other than gray.",
+    "The gray dot at the copy destination returns to black. The original sample and its gray reference points are retained."
+  ],
+  "concepts": [
+    "Reference point",
+    "relative position",
+    "Copy"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 12x12; colors [0, 2, 3, 5] -> [0, 2, 3, 5]; 6 cells changed.",
+    "Training pair 2: 12x10 -> 12x10; colors [0, 1, 2, 3, 4, 5, 7] -> [0, 1, 2, 3, 4, 5, 7]; 10 cells changed.",
+    "Training pair 3: 9x10 -> 9x10; colors [0, 1, 2, 3, 5] -> [0, 1, 2, 3, 5]; 7 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

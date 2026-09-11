@@ -1,0 +1,19 @@
+{
+  "title": "Shrink the parallel black lines to one square on each side of the center, and keep the orthogonal lines at their original positions.",
+  "summary": "Shrink the parallel black lines to one square on each side of the center, and keep the orthogonal lines at their original positions. Sort the total gray areas into a straight line with the same center.",
+  "steps": [
+    "Shrink the parallel black lines to one square on each side of the center, and keep the orthogonal lines at their original positions.",
+    "Sort the total gray area into a straight line with the same center"
+  ],
+  "concepts": [
+    "Area conservation",
+    "Width compression",
+    "Centering"
+  ],
+  "observations": [
+    "Training pair 1: 11x11 -> 11x11; colors [0, 5, 7] -> [0, 5, 7]; 48 cells changed.",
+    "Training pair 2: 9x9 -> 9x9; colors [0, 5, 7] -> [0, 5, 7]; 38 cells changed.",
+    "Training pair 3: 13x13 -> 13x13; colors [0, 5, 7] -> [0, 5, 7]; 66 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Extend only columns and rows in directions where there are no points of other colors from the red rectangle to the top, bottom, left, and right to the edge of the board.",
+  "summary": "Extend only the columns and rows in the directions where there are no points of other colors from the red rectangle up, down, left, and right to the edge of the board.",
+  "steps": [
+    "Extend only columns and rows in directions where there are no points of other colors from the red rectangle to the top, bottom, left, and right to the edge of the board."
+  ],
+  "concepts": [
+    "shielding",
+    "straight line extension"
+  ],
+  "observations": [
+    "Training pair 1: 20x15 -> 20x15; colors [0, 2, 3] -> [0, 2, 3]; 74 cells changed.",
+    "Training pair 2: 21x25 -> 21x25; colors [0, 2, 8] -> [0, 2, 8]; 132 cells changed.",
+    "Training pair 3: 20x17 -> 20x17; colors [0, 2, 4] -> [0, 2, 4]; 101 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

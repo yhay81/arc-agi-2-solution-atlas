@@ -1,0 +1,16 @@
+{
+  "title": "Cross connect 8 7",
+  "summary": "Cross connect 8 7. This is the training-inferred `cross_connect_8_7` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `cross_connect_8_7`: cross connect 8 7"
+  ],
+  "concepts": [
+    "cross",
+    "connect"
+  ],
+  "observations": [
+    "Training pair 1: 9x9 -> 9x9; colors [0, 7, 8] -> [0, 2, 7, 8]; 30 cells changed.",
+    "Training pair 2: 9x9 -> 9x9; colors [0, 7, 8] -> [0, 2, 7, 8]; 30 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

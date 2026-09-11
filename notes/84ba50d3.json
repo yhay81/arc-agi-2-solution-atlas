@@ -1,0 +1,20 @@
+{
+  "title": "Drop a blue shape onto the red floor",
+  "summary": "For each blue 1 shape, check whether there is a line that is at least 2 squares wide. Lower the wide shapes until the bottom wide row is directly above the red 2 floor. If it's just the vertical bar, lower it to the bottom edge of the board. Return the red floor you passed to background 8. The thin part can go through the floor.",
+  "steps": [
+    "For each blue 1 shape, check whether there is a line that is at least 2 squares wide.",
+    "Lower the wide shapes until the bottom wide row is directly above the red 2 floor. If it's just the vertical bar, lower it to the bottom edge of the board.",
+    "Return the red floor you passed to background 8. The thin part can go through the floor."
+  ],
+  "concepts": [
+    "gravity",
+    "Catch",
+    "passing"
+  ],
+  "observations": [
+    "Training pair 1: 9x9 -> 9x9; colors [1, 2, 8] -> [1, 2, 8]; 12 cells changed.",
+    "Training pair 2: 7x7 -> 7x7; colors [1, 2, 8] -> [1, 2, 8]; 3 cells changed.",
+    "Training pair 3: 11x11 -> 11x11; colors [1, 2, 8] -> [1, 2, 8]; 20 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

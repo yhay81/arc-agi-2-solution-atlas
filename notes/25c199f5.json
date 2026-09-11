@@ -1,0 +1,24 @@
+{
+  "title": "Stack the three compartments from the bottom in order of left, center, and right.",
+  "summary": "Take the strip of rows containing the shapes in each compartment and stack the left compartment at the bottom, the center compartment above it, and the right compartment further on top. Maintain horizontal position within the compartment.",
+  "steps": [
+    "Two separator lines divide the input into three equal-width sections.",
+    "Remove only blank lines above and below the shape from each section. Keep blank lines between shapes and the column position of each square.",
+    "Prepare a background the same size as one section, and place the strip of the left section on the bottom.",
+    "Place the strip from the center section directly above it, and the strip from the right section further above."
+  ],
+  "concepts": [
+    "parcel division",
+    "Extracting row bands",
+    "ordered stacking",
+    "Save horizontal position"
+  ],
+  "observations": [
+    "Training pair 1: 5x17 -> 5x5; colors [1, 5, 6, 7] -> [1, 5, 7]; output dimensions changed.",
+    "Training pair 2: 5x17 -> 5x5; colors [1, 5, 6, 7] -> [1, 5, 7]; output dimensions changed.",
+    "Training pair 3: 5x17 -> 5x5; colors [1, 5, 6, 7] -> [1, 5, 7]; output dimensions changed.",
+    "Training pair 4: 5x17 -> 5x5; colors [1, 5, 6, 7] -> [1, 5, 7]; output dimensions changed.",
+    "Training pair 5: 5x17 -> 5x5; colors [1, 5, 6, 7] -> [1, 5, 7]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

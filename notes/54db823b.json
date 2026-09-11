@@ -1,0 +1,20 @@
+{
+  "title": "Erase the rectangle with the least number of marks inside",
+  "summary": "Take out each green 3 rectangle with connections other than black and count the brown 9 marks inside. Return the rectangle with the fewest marks to black, including the marks. Keep the other rectangles.",
+  "steps": [
+    "Take out each green 3 rectangle with connections other than black and count the brown 9 marks inside.",
+    "Return the rectangle with the fewest marks to black, including the marks. Keep the other rectangles."
+  ],
+  "concepts": [
+    "Comparison of numbers",
+    "smallest selection",
+    "Delete"
+  ],
+  "observations": [
+    "Training pair 1: 15x15 -> 15x15; colors [0, 3, 9] -> [0, 3, 9]; 15 cells changed.",
+    "Training pair 2: 15x15 -> 15x15; colors [0, 3, 9] -> [0, 3, 9]; 25 cells changed.",
+    "Training pair 3: 15x15 -> 15x15; colors [0, 3, 9] -> [0, 3, 9]; 35 cells changed.",
+    "Training pair 4: 15x15 -> 15x15; colors [0, 3, 9] -> [0, 3, 9]; 6 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

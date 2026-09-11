@@ -1,0 +1,19 @@
+{
+  "title": "Route one of two matching marker tracks according to color equality",
+  "summary": "Route one of two matching marker tracks according to color equality. A full-color frame line separates two sides of the canvas. On each side there is a sparse track of colored markers at the same coordinates. The track on the side enclosed by the frame is the reference; the other track is consumed. A consumed marker whose color agrees with the reference is placed immediately outside the frame, while a differing marker is sent to the outer edge on its side. This is deliberately inferred from the geometry of the frame and from the two tracks, rather than from task coordinates or a color palette. This is the training-inferred `compare_marker_tracks_across_frame` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `compare_marker_tracks_across_frame`: route one of two matching marker tracks according to color equality"
+  ],
+  "concepts": [
+    "compare",
+    "marker",
+    "tracks",
+    "across",
+    "frame"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [0, 2, 3, 5, 9] -> [0, 2, 3, 5, 9]; 14 cells changed.",
+    "Training pair 2: 16x16 -> 16x16; colors [1, 2, 3, 4, 5, 7, 8] -> [1, 2, 3, 4, 5, 7, 8]; 14 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

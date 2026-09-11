@@ -1,0 +1,18 @@
+{
+  "title": "Replace the symbol on the left with a movement command",
+  "summary": "Read the 3 × 3 symbols in column-major order, and draw a route to the right half using the shape-specific instructions for left and right -1/+2/-3 and 2 vertical squares.",
+  "steps": [
+    "Read the 3 × 3 symbols in column-major order, and draw a route to the right half using the shape-specific instructions for left and right -1/+2/-3 and 2 vertical squares."
+  ],
+  "concepts": [
+    "deciphering symbols",
+    "procedure sequence",
+    "drawing instructions"
+  ],
+  "observations": [
+    "Training pair 1: 15x15 -> 15x7; colors [0, 1, 2, 3, 4, 5, 6] -> [0, 1, 2, 3, 5, 6]; output dimensions changed.",
+    "Training pair 2: 7x15 -> 7x7; colors [0, 1, 2, 3, 4, 5, 6] -> [0, 1, 2, 3, 5, 6]; output dimensions changed.",
+    "Training pair 3: 11x15 -> 11x7; colors [0, 1, 2, 4, 5, 6] -> [0, 1, 2, 5, 6]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

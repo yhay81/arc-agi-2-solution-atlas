@@ -1,0 +1,19 @@
+{
+  "title": "Sort the leftmost color points into different color columns",
+  "summary": "Read the colored dots at the far left of each row.",
+  "steps": [
+    "Read the colored dots at the far left of each row.",
+    "Move light blue 8 to the second row from the left, red 2 to the third row, yellow 4 to the fourth row, and green 3 to the fifth row.",
+    "Without changing the line position of the dots, return the original left edge to black."
+  ],
+  "concepts": [
+    "Classification by color",
+    "Assign to columns"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 2, 3, 4, 8] -> [0, 2, 3, 4, 8]; 14 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 2, 3, 4, 8] -> [0, 2, 3, 4, 8]; 14 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 2, 3, 4, 8] -> [0, 2, 3, 4, 8]; 16 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

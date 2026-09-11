@@ -1,0 +1,20 @@
+{
+  "description": "Cell-level provenance for complete reviewed documents in data/corrections. Coordinates and pair indexes are zero-based; data/training and data/evaluation remain unchanged.",
+  "sources": [
+    "https://github.com/arcprize/ARC-AGI-2/pull/16",
+    "https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2/discussion/731040"
+  ],
+  "corrections": [
+    {"task_id": "b74ca5d1", "split": "train", "pair_index": 2, "row": 3, "column": 27, "raw": 8, "corrected": 4},
+    {"task_id": "b74ca5d1", "split": "train", "pair_index": 2, "row": 4, "column": 27, "raw": 8, "corrected": 4},
+    {"task_id": "b74ca5d1", "split": "test", "pair_index": 1, "row": 13, "column": 15, "raw": 4, "corrected": 6},
+    {"task_id": "963c33f8", "split": "train", "pair_index": 1, "row": 13, "column": 8, "raw": 7, "corrected": 5},
+    {"task_id": "963c33f8", "split": "train", "pair_index": 1, "row": 13, "column": 9, "raw": 7, "corrected": 5},
+    {"task_id": "963c33f8", "split": "train", "pair_index": 2, "row": 13, "column": 11, "raw": 7, "corrected": 9},
+    {"task_id": "963c33f8", "split": "train", "pair_index": 2, "row": 13, "column": 12, "raw": 9, "corrected": 5},
+    {"task_id": "963c33f8", "split": "train", "pair_index": 2, "row": 14, "column": 11, "raw": 5, "corrected": 9},
+    {"task_id": "963c33f8", "split": "train", "pair_index": 2, "row": 14, "column": 12, "raw": 9, "corrected": 5},
+    {"task_id": "963c33f8", "split": "train", "pair_index": 2, "row": 15, "column": 11, "raw": 7, "corrected": 9},
+    {"task_id": "963c33f8", "split": "train", "pair_index": 2, "row": 15, "column": 12, "raw": 9, "corrected": 7}
+  ]
+}

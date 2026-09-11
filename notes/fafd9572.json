@@ -1,0 +1,16 @@
+{
+  "title": "Copying a small color scheme sample to a large shape arrangement",
+  "summary": "Arrange the blue objects in the order of top, bottom, left, and right, and paint each object with the color from the same matrix of small color swatches.",
+  "steps": [
+    "Arrange the blue objects in the order of top, bottom, left, and right, and paint each object with the color from the same matrix of small color swatches."
+  ],
+  "concepts": [
+    "Compatibility with different scales",
+    "color scheme sample"
+  ],
+  "observations": [
+    "Training pair 1: 10x12 -> 10x12; colors [0, 1, 2, 3, 4] -> [0, 2, 3, 4]; 9 cells changed.",
+    "Training pair 2: 12x18 -> 12x18; colors [0, 1, 2, 3] -> [0, 2, 3]; 36 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

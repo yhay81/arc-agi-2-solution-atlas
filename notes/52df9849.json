@@ -1,0 +1,18 @@
+{
+  "title": "Compensate for overlapping and hidden shapes, reverse the order before and after, and redraw",
+  "summary": "Compensate for overlapping and hidden figures, reverse the order of the front and back, and redraw them. Figures whose two adjacent sides are completely visible are supplemented as rectangles, diagonal contours are supplemented with convex polygons, and lines are supplemented with straight lines.",
+  "steps": [
+    "Compensate for overlapping and hidden shapes, reverse the order before and after, and redraw",
+    "Figures where two adjacent sides are completely visible are replaced as rectangles, diagonal outlines are replaced as convex polygons, and lines are replaced as straight lines."
+  ],
+  "concepts": [
+    "shielding",
+    "context",
+    "stacking order"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [1, 4, 7] -> [1, 4, 7]; 8 cells changed.",
+    "Training pair 2: 16x16 -> 16x16; colors [5, 7, 9] -> [5, 7, 9]; 1 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Read the colored squares inside the large frame as clues to the enlarged shape.",
+  "summary": "Read the colored squares within the large frame as clues to the enlarged shape. Enlarge each of the small shapes above to the inside size of the frame and choose the one whose clues all match the part of the shape to be painted. Output the completed form with the frame and clue colors.",
+  "steps": [
+    "Read the colored squares inside the large frame as clues to the enlarged shape.",
+    "Enlarge each small shape above to the inside size of the frame and choose the one whose clues all match the painted part of the shape.",
+    "Output the completed form with frame and clue colors"
+  ],
+  "concepts": [
+    "Candidate selection",
+    "Expand",
+    "partial match"
+  ],
+  "observations": [
+    "Training pair 1: 27x21 -> 14x14; colors [1, 2, 3, 4, 5, 6, 8, 9] -> [5, 8, 9]; output dimensions changed.",
+    "Training pair 2: 27x21 -> 14x11; colors [0, 1, 2, 3, 4, 6, 8, 9] -> [0, 3, 8]; output dimensions changed.",
+    "Training pair 3: 27x21 -> 8x10; colors [1, 2, 3, 4, 8] -> [3, 4, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

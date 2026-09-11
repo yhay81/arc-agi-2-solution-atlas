@@ -1,0 +1,20 @@
+{
+  "title": "Assemble parts by matching connections of the same color",
+  "summary": "Separate multicolored parts other than the background. Look for a connection port with a color other than blue. Examine candidates for parallel movement where connection ports of the same color touch vertically, horizontally, and horizontally, and where the entire part does not overlap. The candidates are combined in order from the one with the smallest area surrounding the assembled whole, and finally the smallest rectangle is cut out. Verified implementations do not use rotation.",
+  "steps": [
+    "Separate multicolored parts other than the background. Look for a connection port with a color other than blue.",
+    "Examine candidates for parallel movement where connection ports of the same color touch vertically, horizontally, and horizontally, and where the entire part does not overlap.",
+    "The candidates are combined in order from the one with the smallest area surrounding the assembled whole, and finally the smallest rectangle is cut out. Verified implementations do not use rotation."
+  ],
+  "concepts": [
+    "Assembling",
+    "Connection conditions",
+    "rotation"
+  ],
+  "observations": [
+    "Training pair 1: 13x13 -> 8x5; colors [1, 2, 3, 8] -> [1, 2, 3, 8]; output dimensions changed.",
+    "Training pair 2: 13x13 -> 8x10; colors [1, 2, 3, 8] -> [1, 2, 3, 8]; output dimensions changed.",
+    "Training pair 3: 13x13 -> 8x6; colors [1, 2, 3, 4, 8] -> [1, 2, 3, 4, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

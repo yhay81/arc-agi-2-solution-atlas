@@ -1,0 +1,19 @@
+{
+  "title": "Extend isolated marker columns below a compact expanding object",
+  "summary": "Extend isolated marker columns below a compact expanding object. A connected, non-background fan is the structural object. Singleton markers below it select columns within the fan's bounding box; each such column is continued in the marker color from the last fan cell downward. Existing non-background cells are retained. This is the training-inferred `extend_fan_columns_to_bottom` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `extend_fan_columns_to_bottom`: extend isolated marker columns below a compact expanding object"
+  ],
+  "concepts": [
+    "extend",
+    "fan",
+    "columns",
+    "bottom"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 20x20; colors [0, 2, 7] -> [0, 2, 7]; 22 cells changed.",
+    "Training pair 2: 20x20 -> 20x20; colors [0, 8, 9] -> [0, 8, 9]; 12 cells changed.",
+    "Training pair 3: 20x20 -> 20x20; colors [0, 3, 4] -> [0, 3, 4]; 36 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

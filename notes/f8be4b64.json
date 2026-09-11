@@ -1,0 +1,20 @@
+{
+  "title": "Project non-zero centers of four-arm plus markers along both axes",
+  "summary": "Project non-zero centers of four-arm plus markers along both axes. A 3-by-3 plus whose four arms share one color is a directional key. Its center color is painted through the complete center row and column, but only over background cells; the keyed plus and any other objects remain intact. A zero center is an inactive key and therefore emits no ray. This is the training-inferred `project_plus_marker_rays` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `project_plus_marker_rays`: project non-zero centers of four-arm plus markers along both axes"
+  ],
+  "concepts": [
+    "project",
+    "plus",
+    "marker",
+    "rays"
+  ],
+  "observations": [
+    "Training pair 1: 18x18 -> 18x18; colors [0, 3, 4, 5, 6] -> [0, 3, 4, 5, 6]; 72 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 3, 5, 6, 8] -> [0, 3, 5, 6, 8]; 33 cells changed.",
+    "Training pair 3: 13x13 -> 13x13; colors [0, 2, 3] -> [0, 2, 3]; 19 cells changed.",
+    "Training pair 4: 30x30 -> 30x30; colors [0, 2, 3, 6, 8] -> [0, 2, 3, 6, 8]; 140 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

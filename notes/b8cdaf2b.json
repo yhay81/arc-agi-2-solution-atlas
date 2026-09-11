@@ -1,0 +1,19 @@
+{
+  "title": "Grow upward in stages determined by the foreground span",
+  "summary": "Grow upward in stages determined by the foreground span. This is the training-inferred `grow_upward_span` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `grow_upward_span`: grow upward in stages determined by the foreground span"
+  ],
+  "concepts": [
+    "grow",
+    "upward",
+    "span"
+  ],
+  "observations": [
+    "Training pair 1: 5x5 -> 5x5; colors [0, 1, 6] -> [0, 1, 6]; 2 cells changed.",
+    "Training pair 2: 5x5 -> 5x5; colors [0, 3, 8] -> [0, 3, 8]; 4 cells changed.",
+    "Training pair 3: 7x7 -> 7x7; colors [0, 2, 4] -> [0, 2, 4]; 4 cells changed.",
+    "Training pair 4: 3x3 -> 3x3; colors [0, 2, 4] -> [0, 2, 4]; 2 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Take out the rectangles lined up on the top side in order from the left",
+  "summary": "Take out the rectangles lined up on the top side in order from the left. Arrange each rectangle horizontally on the top edge and vertically on the bottom edge, leaving one space between each rectangle. Set the output height to 10 and the width to fit the top row.",
+  "steps": [
+    "Take out the rectangles lined up on the top side in order from the left",
+    "Arrange each rectangle horizontally on the top edge and vertically on the bottom edge, leaving one space between each rectangle.",
+    "Set the output height to 10 and the width to fit the top row."
+  ],
+  "concepts": [
+    "period",
+    "extension",
+    "dimensions"
+  ],
+  "observations": [
+    "Training pair 1: 4x13 -> 10x18; colors [1, 8] -> [1, 8]; output dimensions changed.",
+    "Training pair 2: 5x16 -> 10x25; colors [3, 7] -> [3, 7]; output dimensions changed.",
+    "Training pair 3: 6x11 -> 10x16; colors [6, 7] -> [6, 7]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Move another shape up/down or left/right towards a single-colored 2×2 square and stop it one square next to it.",
+  "summary": "Move another shape up and down or left and right toward the solid-colored 2x2 square and stop it one square next to it. Erase the square and mirror the moved shape at the boundary with the square. Draw the mirrored figure in the color of the square.",
+  "steps": [
+    "Move another shape up/down or left/right towards a single-colored 2×2 square and stop it one square next to it.",
+    "Erase the square and mirror the moved shape at the border with the square",
+    "Draw mirrored shapes in square colors"
+  ],
+  "concepts": [
+    "contact",
+    "reflection",
+    "color change"
+  ],
+  "observations": [
+    "Training pair 1: 13x13 -> 13x13; colors [2, 5, 7] -> [2, 5, 7]; 10 cells changed.",
+    "Training pair 2: 13x13 -> 13x13; colors [2, 5, 7] -> [2, 5, 7]; 8 cells changed.",
+    "Training pair 3: 13x13 -> 13x13; colors [2, 5, 7] -> [2, 5, 7]; 10 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

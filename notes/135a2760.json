@@ -1,0 +1,20 @@
+{
+  "title": "Take out the rectangular frames of the same color one by one and read the pattern inside.",
+  "summary": "Take out the rectangular frames of the same color one by one and read the pattern inside. |Compare repetitions up to length 6 for each row if horizontal, and each column if vertical, and select the period with the least number of squares to correct. If there is a tie, give priority to the shorter period. |While keeping the frame, fill the inside with the restored repetition.",
+  "steps": [
+    "Take out the rectangular frames of the same color one by one and read the pattern inside.",
+    "|Compare repetitions up to length 6 for each row if horizontal, and each column if vertical, and select the period with the least number of squares to correct.",
+    "If there is a tie, give priority to the shorter period",
+    "|While keeping the frame, fill the inside with the restored repetition"
+  ],
+  "concepts": [
+    "period",
+    "noise removal",
+    "Region division"
+  ],
+  "observations": [
+    "Training pair 1: 5x13 -> 5x13; colors [1, 2, 3] -> [1, 2, 3]; 1 cells changed.",
+    "Training pair 2: 21x22 -> 21x22; colors [1, 2, 3, 4, 8, 9] -> [1, 2, 3, 4, 8, 9]; 9 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

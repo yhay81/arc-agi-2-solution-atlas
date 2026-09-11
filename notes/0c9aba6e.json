@@ -1,0 +1,19 @@
+{
+  "title": "Make the positions where both the top and bottom are black light blue",
+  "summary": "Using one row in the center as a partition, divide the top and bottom into boards of the same size. If the same position is black 0 on both the top and bottom, it will be light blue 8, otherwise it will be black 0.",
+  "steps": [
+    "Using one row in the center as a partition, divide the top and bottom into boards of the same size.",
+    "If the same position is black 0 on both the top and bottom, it will be light blue 8, otherwise it will be black 0."
+  ],
+  "concepts": [
+    "Superposition of grids",
+    "condition that both are blank"
+  ],
+  "observations": [
+    "Training pair 1: 13x4 -> 6x4; colors [0, 2, 6, 7] -> [0, 8]; output dimensions changed.",
+    "Training pair 2: 13x4 -> 6x4; colors [0, 2, 6, 7] -> [0, 8]; output dimensions changed.",
+    "Training pair 3: 13x4 -> 6x4; colors [0, 2, 6, 7] -> [0, 8]; output dimensions changed.",
+    "Training pair 4: 13x4 -> 6x4; colors [0, 2, 6, 7] -> [0, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

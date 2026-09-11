@@ -1,0 +1,21 @@
+{
+  "title": "Copy the pattern above to the third purple line",
+  "summary": "Leave the two lines from the top and add a line with purple 6 except for the background of the first line as the third line.",
+  "steps": [
+    "Use the most common color in the entire input as the background.",
+    "Extract the first and second lines as is.",
+    "Change everything except the background of the first row to 6, and leave the background as the original background color.",
+    "Place that line on the third line and do not use the remaining input lines."
+  ],
+  "concepts": [
+    "Extracting rows",
+    "color replacement"
+  ],
+  "observations": [
+    "Training pair 1: 6x8 -> 3x8; colors [0, 7] -> [0, 6, 7]; output dimensions changed.",
+    "Training pair 2: 10x10 -> 3x10; colors [1, 2, 7] -> [1, 2, 6, 7]; output dimensions changed.",
+    "Training pair 3: 12x13 -> 3x13; colors [1, 4, 6] -> [1, 4, 6]; output dimensions changed.",
+    "Training pair 4: 8x11 -> 3x11; colors [4, 7, 9] -> [4, 6, 7, 9]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

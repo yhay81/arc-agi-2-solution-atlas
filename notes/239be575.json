@@ -1,0 +1,25 @@
+{
+  "title": "Classify whether a path-color component joins two square blocks",
+  "summary": "Classify whether a path-color component joins two square blocks. The two marker blocks and the connecting path are treated as traversable, while every other cell is an obstacle. This is deliberately structural: no coordinates or scene-specific pixel lists are retained. This is the training-inferred `connect_two_blocks` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `connect_two_blocks`: classify whether a path-color component joins two square blocks"
+  ],
+  "concepts": [
+    "connect",
+    "two",
+    "blocks"
+  ],
+  "observations": [
+    "Training pair 1: 6x7 -> 1x1; colors [0, 2, 8] -> [0]; output dimensions changed.",
+    "Training pair 2: 6x7 -> 1x1; colors [0, 2, 8] -> [8]; output dimensions changed.",
+    "Training pair 3: 6x6 -> 1x1; colors [0, 2, 8] -> [0]; output dimensions changed.",
+    "Training pair 4: 5x7 -> 1x1; colors [0, 2, 8] -> [8]; output dimensions changed.",
+    "Training pair 5: 6x7 -> 1x1; colors [0, 2, 8] -> [8]; output dimensions changed.",
+    "Training pair 6: 5x5 -> 1x1; colors [0, 2, 8] -> [0]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "block color: 2",
+    "path color: 8"
+  ]
+}

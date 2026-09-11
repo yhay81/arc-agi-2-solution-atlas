@@ -1,0 +1,19 @@
+{
+  "title": "Sort vertically from the left in order of number of colors",
+  "summary": "A rule that arranges colors in ascending order, maintains the number of each color, and packs them from the bottom to the top from the left column.",
+  "steps": [
+    "Count the number of squares of all colors and arrange them in descending order",
+    "Place the number of pieces of that color from the bottom of the leftmost column upwards.",
+    "When the row is filled, go to the bottom row on the right, and change the color to the next one depending on the number remaining."
+  ],
+  "concepts": [
+    "Number order",
+    "alignment",
+    "conservation of quantity"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [4, 5, 8, 9] -> [4, 5, 8, 9]; 67 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [2, 5, 6, 8] -> [2, 5, 6, 8]; 70 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

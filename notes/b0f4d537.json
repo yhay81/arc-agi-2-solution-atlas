@@ -1,0 +1,18 @@
+{
+  "title": "Redraw the vertical and horizontal lines on the sample to the positions indicated by the yellow marks in order.",
+  "summary": "Redraw the vertical and horizontal lines on the sample in the order indicated by the yellow marks. The vertical relationship of the intersection inherits the color of the sample intersection.",
+  "steps": [
+    "Redraw the vertical and horizontal lines on the sample to the positions indicated by the yellow marks in order.",
+    "The vertical relationship of the intersection inherits the color of the sample intersection."
+  ],
+  "concepts": [
+    "Composition of separate attributes"
+  ],
+  "observations": [
+    "Training pair 1: 11x13 -> 11x7; colors [0, 1, 2, 3, 4, 5] -> [0, 1, 2, 3]; output dimensions changed.",
+    "Training pair 2: 9x13 -> 9x7; colors [0, 1, 2, 3, 4, 5] -> [0, 1, 2, 3]; output dimensions changed.",
+    "Training pair 3: 7x13 -> 7x7; colors [0, 1, 2, 3, 4, 5] -> [0, 1, 2, 3]; output dimensions changed.",
+    "Training pair 4: 9x11 -> 9x7; colors [0, 1, 2, 3, 4, 5] -> [0, 1, 2, 3]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

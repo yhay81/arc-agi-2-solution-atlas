@@ -1,0 +1,19 @@
+{
+  "title": "Fill a gray container with a hole at the top with red.",
+  "summary": "Fill a gray container with a square opening on top with red. Extend a horizontal red line from one level above the mouth to the end of the long eaves.",
+  "steps": [
+    "Fill a gray container with a hole at the top with red.",
+    "Extend a horizontal red line from one level above the mouth to the side with the long eaves to the end."
+  ],
+  "concepts": [
+    "Hollow",
+    "Direction",
+    "line extension"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 5] -> [0, 2, 5]; 13 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 5] -> [0, 2, 5]; 10 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 5] -> [0, 2, 5]; 24 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

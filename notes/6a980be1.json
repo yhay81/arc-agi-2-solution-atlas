@@ -1,0 +1,19 @@
+{
+  "title": "Estimate the period of the stripes between the rails and extend the period to one step at the end where the outer frame was.",
+  "summary": "The period of the stripes between the rails is estimated, and the period is extended to one step at the end where the outer frame was. Project the outer frame color to the outside of the rail from the position where the stripes are located.",
+  "steps": [
+    "Estimate the period of the stripes between the rails and extend the period to one step at the end where the outer frame was.",
+    "Project the outer frame color from the striped position to the outside of the rail"
+  ],
+  "concepts": [
+    "projection",
+    "Obi",
+    "outer frame"
+  ],
+  "observations": [
+    "Training pair 1: 18x19 -> 18x19; colors [0, 2, 3, 8] -> [0, 2, 3, 8]; 160 cells changed.",
+    "Training pair 2: 14x18 -> 14x18; colors [0, 2, 3, 4] -> [0, 2, 3, 4]; 98 cells changed.",
+    "Training pair 3: 19x15 -> 19x15; colors [0, 2, 3, 6] -> [0, 2, 3, 6]; 112 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

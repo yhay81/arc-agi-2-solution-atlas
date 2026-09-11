@@ -1,0 +1,17 @@
+{
+  "title": "Complete a Latin grid with no repeated row or column color",
+  "summary": "Complete a Latin grid with no repeated row or column color. This is the training-inferred `latin_fill` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `latin_fill`: complete a Latin grid with no repeated row or column color"
+  ],
+  "concepts": [
+    "latin",
+    "fill"
+  ],
+  "observations": [
+    "Training pair 1: 4x4 -> 4x4; colors [0, 1, 2, 3, 4] -> [1, 2, 3, 4]; 5 cells changed.",
+    "Training pair 2: 4x4 -> 4x4; colors [0, 1, 2, 3, 4] -> [1, 2, 3, 4]; 5 cells changed.",
+    "Training pair 3: 4x4 -> 4x4; colors [0, 1, 2, 3, 4] -> [1, 2, 3, 4]; 6 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

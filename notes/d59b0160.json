@@ -1,0 +1,19 @@
+{
+  "title": "Read based on the color in the green frame",
+  "summary": "Read based on the color within the green frame. Black rectangles that contain all of that color are turned orange and erased. Leave even one thing missing.",
+  "steps": [
+    "Read based on the color in the green frame",
+    "Out of the black rectangles, turn all the contents of that color into orange and erase them.",
+    "Leave even one thing missing"
+  ],
+  "concepts": [
+    "Shape selection",
+    "Erase"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 79 cells changed.",
+    "Training pair 2: 16x16 -> 16x16; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 25 cells changed.",
+    "Training pair 3: 16x16 -> 16x16; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 5, 6, 7, 8, 9]; 81 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

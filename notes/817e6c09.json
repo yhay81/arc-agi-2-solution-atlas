@@ -1,0 +1,20 @@
+{
+  "title": "Color every other square from the right edge light blue",
+  "summary": "Arrange the red 2x2 squares in order of position from right to left.",
+  "steps": [
+    "Arrange the red 2x2 squares in order of position from right to left.",
+    "Starting from the right end, change the 1st, 3rd, 5th, etc. squares to light blue, leaving the squares in between red."
+  ],
+  "concepts": [
+    "order",
+    "alternating"
+  ],
+  "observations": [
+    "Training pair 1: 7x7 -> 7x7; colors [0, 2] -> [0, 2, 8]; 8 cells changed.",
+    "Training pair 2: 7x14 -> 7x14; colors [0, 2] -> [0, 2, 8]; 12 cells changed.",
+    "Training pair 3: 7x15 -> 7x15; colors [0, 2] -> [0, 2, 8]; 16 cells changed.",
+    "Training pair 4: 7x5 -> 7x5; colors [0, 2] -> [0, 2, 8]; 4 cells changed.",
+    "Training pair 5: 7x17 -> 7x17; colors [0, 2] -> [0, 2, 8]; 20 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

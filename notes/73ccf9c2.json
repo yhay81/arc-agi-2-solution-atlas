@@ -1,0 +1,19 @@
+{
+  "title": "Choose one shape that is not symmetrical",
+  "summary": "Cut out each separate shape and check whether it matches the horizontally flipped shape.",
+  "steps": [
+    "Cut out each separate shape and check whether it matches the horizontally flipped shape.",
+    "Select one shape that is not symmetrical and output it without the margins."
+  ],
+  "concepts": [
+    "symmetry",
+    "ostracism",
+    "Cut out"
+  ],
+  "observations": [
+    "Training pair 1: 21x21 -> 4x5; colors [0, 2] -> [0, 2]; output dimensions changed.",
+    "Training pair 2: 23x23 -> 4x4; colors [0, 1] -> [0, 1]; output dimensions changed.",
+    "Training pair 3: 20x20 -> 5x7; colors [0, 3] -> [0, 3]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

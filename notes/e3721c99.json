@@ -1,0 +1,19 @@
+{
+  "title": "Change the color depending on the number and shape of holes in the shape (candidate)",
+  "summary": "Read the correspondence between the number of holes and the color on the landscape or portrait color swatch. For each gray shape, count the number of holes in the top, bottom, left, and right that cannot go out. Paint the entire shape with the sample color that has the same number of holes. Erase the shapes with holes that are not in the sample in black, leaving the sample and partition.",
+  "steps": [
+    "Read the correspondence between the number of holes and the color on the landscape or portrait color swatch.",
+    "For each gray shape, count the number of holes in the top, bottom, left, and right that cannot go out.",
+    "Paint the entire shape with the sample color that has the same number of holes. Erase the shapes with holes that are not in the sample in black, leaving the sample and partition."
+  ],
+  "concepts": [
+    "Number of holes",
+    "classification",
+    "color change"
+  ],
+  "observations": [
+    "Training pair 1: 30x30 -> 30x30; colors [0, 1, 2, 3, 4, 5] -> [0, 1, 2, 3, 4]; 202 cells changed.",
+    "Training pair 2: 30x30 -> 30x30; colors [0, 1, 2, 3, 5] -> [0, 1, 2, 3]; 246 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

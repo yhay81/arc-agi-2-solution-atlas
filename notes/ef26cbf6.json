@@ -1,0 +1,19 @@
+{
+  "title": "Group the sections made by yellow lines in rows or columns.",
+  "summary": "Organize the sections made by yellow lines into groups in rows or columns. Repaint the entire blue shape with the color of one colored swatch from the same group. Leave the sample and yellow line.",
+  "steps": [
+    "Group the sections made by yellow lines in rows or columns.",
+    "Repaint the entire blue shape with the color of one colored swatch in the same group.",
+    "Leave the sample and yellow line"
+  ],
+  "concepts": [
+    "Matrix correspondence",
+    "legend",
+    "color change"
+  ],
+  "observations": [
+    "Training pair 1: 11x7 -> 11x7; colors [0, 1, 3, 4, 7, 8] -> [0, 3, 4, 7, 8]; 16 cells changed.",
+    "Training pair 2: 7x11 -> 7x11; colors [0, 1, 2, 3, 4, 6] -> [0, 2, 3, 4, 6]; 16 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

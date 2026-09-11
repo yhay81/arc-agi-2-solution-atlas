@@ -1,0 +1,20 @@
+{
+  "title": "Cycles each shape one column to the left from the last symbol column and draws each column in the originally specified color.",
+  "summary": "Starting from the last symbol column, each shape is cycled one column to the left, and each column is drawn in the originally specified color. Generate the next scene while preserving the colors.",
+  "steps": [
+    "Cycles each shape one column to the left from the last symbol column and draws each column in the originally specified color.",
+    "Generate the next scene while preserving the colors"
+  ],
+  "concepts": [
+    "periodic sequence",
+    "order of symbols",
+    "prediction"
+  ],
+  "observations": [
+    "Training pair 1: 5x15 -> 3x15; colors [0, 1, 2, 3, 5] -> [0, 1, 2, 3, 5]; output dimensions changed.",
+    "Training pair 2: 9x11 -> 3x11; colors [0, 1, 2, 3] -> [0, 1, 2, 3]; output dimensions changed.",
+    "Training pair 3: 9x15 -> 3x15; colors [0, 1, 2, 3, 5] -> [0, 1, 2, 3, 5]; output dimensions changed.",
+    "Training pair 4: 13x11 -> 3x11; colors [0, 1, 2, 3] -> [0, 1, 2, 3]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

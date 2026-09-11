@@ -1,0 +1,19 @@
+{
+  "title": "Draw a rectangle that passes through the three light blue points",
+  "summary": "Find the minimum and maximum row and column of the three light blue points. Draw the four sides of that range in blue. Draw back the original light blue dot, leaving the background inside and outside of the rectangle unchanged.",
+  "steps": [
+    "Find the minimum and maximum row and column of the three light blue points.",
+    "Draw the four sides of that range in blue.",
+    "Draw back the original light blue dot, leaving the background inside and outside of the rectangle unchanged."
+  ],
+  "concepts": [
+    "circumscribed rectangle",
+    "Restoration from point"
+  ],
+  "observations": [
+    "Training pair 1: 8x12 -> 8x12; colors [0, 8] -> [0, 1, 8]; 21 cells changed.",
+    "Training pair 2: 10x20 -> 10x20; colors [0, 8] -> [0, 1, 8]; 37 cells changed.",
+    "Training pair 3: 11x13 -> 11x13; colors [0, 8] -> [0, 1, 8]; 29 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

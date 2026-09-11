@@ -1,0 +1,20 @@
+{
+  "title": "Proceed to the opposite side from the green entrance and go around each wall at a right angle, leaving a distance equal to the number of blue squares on that wall + 1 square.",
+  "summary": "Proceed to the opposite side from the green entrance, bypassing each wall at a right angle the number of blue squares on that wall + 1 square. Finally, change the blue squares on the wall to red.",
+  "steps": [
+    "Proceed to the opposite side from the green entrance and go around each wall at a right angle, leaving a distance equal to the number of blue squares on that wall + 1 square.",
+    "The blue squares on the wall will change to red at the end."
+  ],
+  "concepts": [
+    "aisle",
+    "zigzag",
+    "margin"
+  ],
+  "observations": [
+    "Training pair 1: 19x13 -> 19x13; colors [1, 2, 3, 8] -> [2, 3, 8]; 29 cells changed.",
+    "Training pair 2: 17x19 -> 17x19; colors [1, 2, 3, 8] -> [2, 3, 8]; 32 cells changed.",
+    "Training pair 3: 19x19 -> 19x19; colors [1, 2, 3, 8] -> [2, 3, 8]; 41 cells changed.",
+    "Training pair 4: 12x19 -> 12x19; colors [1, 2, 3, 8] -> [2, 3, 8]; 29 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

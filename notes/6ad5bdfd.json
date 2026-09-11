@@ -1,0 +1,21 @@
+{
+  "title": "Slide colored blocks toward a full marker row or column",
+  "summary": "Slide colored blocks toward a full marker row or column. This is the training-inferred `slide_components_to_marker` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `slide_components_to_marker`: slide colored blocks toward a full marker row or column"
+  ],
+  "concepts": [
+    "slide",
+    "components",
+    "marker"
+  ],
+  "observations": [
+    "Training pair 1: 5x11 -> 5x11; colors [0, 2, 3, 4, 5, 6, 7, 8] -> [0, 2, 3, 4, 5, 6, 7, 8]; 19 cells changed.",
+    "Training pair 2: 10x6 -> 10x6; colors [0, 1, 2, 3, 4, 5, 6, 8] -> [0, 1, 2, 3, 4, 5, 6, 8]; 23 cells changed.",
+    "Training pair 3: 5x10 -> 5x10; colors [0, 2, 4, 5, 6, 8, 9] -> [0, 2, 4, 5, 6, 8, 9]; 19 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "marker: 2"
+  ]
+}

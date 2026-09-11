@@ -1,0 +1,20 @@
+{
+  "title": "Repeat input vertically and horizontally for as many colors as there are types",
+  "summary": "Count the number n of colors that appear in the input, including black. Arrange n inputs vertically and n horizontally in the same direction.",
+  "steps": [
+    "Count the number n of colors that appear in the input, including black.",
+    "Arrange n inputs vertically and n horizontally in the same direction."
+  ],
+  "concepts": [
+    "Number of color types",
+    "Number of repetitions"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 6x6; colors [2, 7] -> [2, 7]; output dimensions changed.",
+    "Training pair 2: 3x3 -> 6x6; colors [3, 4] -> [3, 4]; output dimensions changed.",
+    "Training pair 3: 3x3 -> 12x12; colors [1, 2, 3, 8] -> [1, 2, 3, 8]; output dimensions changed.",
+    "Training pair 4: 3x3 -> 9x9; colors [1, 2, 3] -> [1, 2, 3]; output dimensions changed.",
+    "Training pair 5: 3x3 -> 9x9; colors [6, 7, 9] -> [6, 7, 9]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

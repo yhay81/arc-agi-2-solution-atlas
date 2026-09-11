@@ -1,0 +1,20 @@
+{
+  "title": "Move all yellow dots down one space",
+  "summary": "Move all yellow dots down one square. After moving, from the point directly above the red line, extend a diagonal line to the upper left and upper right to the end.",
+  "steps": [
+    "Move all yellow dots down one space",
+    "From the point that is directly above the red line after moving, extend a diagonal line to the upper left and upper right until the end."
+  ],
+  "concepts": [
+    "Conditions after moving",
+    "contact",
+    "diagonal line"
+  ],
+  "observations": [
+    "Training pair 1: 12x8 -> 12x8; colors [0, 2, 4] -> [0, 2, 4]; 17 cells changed.",
+    "Training pair 2: 10x6 -> 10x6; colors [0, 2, 4] -> [0, 2, 4]; 9 cells changed.",
+    "Training pair 3: 6x3 -> 6x3; colors [0, 2, 4] -> [0, 2, 4]; 2 cells changed.",
+    "Training pair 4: 7x5 -> 7x5; colors [0, 2, 4] -> [0, 2, 4]; 6 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

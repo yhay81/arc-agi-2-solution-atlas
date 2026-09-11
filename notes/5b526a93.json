@@ -1,0 +1,18 @@
+{
+  "title": "Fill in the missing blue ring pair",
+  "summary": "Find the 3x3 ring of blue 1 and collect the center row and column. Find all combinations of center row and center column. Place a light blue 8 ring on the group without a ring, leaving the center black.",
+  "steps": [
+    "Find the 3x3 ring of blue 1 and collect the center row and column.",
+    "Find all combinations of center row and center column.",
+    "Place a light blue 8 ring on the group without a ring, leaving the center black."
+  ],
+  "concepts": [
+    "Edge coordinates indication",
+    "hollow shape"
+  ],
+  "observations": [
+    "Training pair 1: 22x16 -> 22x16; colors [0, 1] -> [0, 1, 8]; 48 cells changed.",
+    "Training pair 2: 19x17 -> 19x17; colors [0, 1] -> [0, 1, 8]; 32 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

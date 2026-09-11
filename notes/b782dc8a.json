@@ -1,0 +1,18 @@
+{
+  "title": "Propagate the seed parity through zero regions",
+  "summary": "Propagate a two-color seed through adjacent zero regions by parity. This is the training-inferred `propagate_seed_parity_through_zeros` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `propagate_seed_parity_through_zeros`: propagate the seed parity through zero regions"
+  ],
+  "concepts": [
+    "propagate",
+    "seed",
+    "parity",
+    "zeros"
+  ],
+  "observations": [
+    "Training pair 1: 13x14 -> 13x14; colors [0, 1, 4, 8] -> [0, 1, 4, 8]; 35 cells changed.",
+    "Training pair 2: 11x24 -> 11x24; colors [0, 2, 3, 8] -> [0, 2, 3, 8]; 57 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

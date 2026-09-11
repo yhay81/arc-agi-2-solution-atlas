@@ -1,0 +1,20 @@
+{
+  "title": "Group nearby red marks together",
+  "summary": "Group the nearby red marks together. Find a 3x3 square of only gray and red that contains the entire set, and change the center to yellow and the gray around the perimeter to orange. Leave the red around the outside.",
+  "steps": [
+    "Group nearby red marks together",
+    "Find a 3x3 square of only gray and red that contains the entire set, and change the center to yellow and the outer gray to orange.",
+    "Leave the red around the outside"
+  ],
+  "concepts": [
+    "enlarged symbol",
+    "center",
+    "frame"
+  ],
+  "observations": [
+    "Training pair 1: 19x19 -> 19x19; colors [0, 2, 5] -> [0, 2, 4, 5, 7]; 20 cells changed.",
+    "Training pair 2: 19x19 -> 19x19; colors [0, 2, 5] -> [0, 2, 4, 5, 7]; 23 cells changed.",
+    "Training pair 3: 19x19 -> 19x19; colors [0, 2, 5] -> [0, 2, 4, 5, 7]; 24 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

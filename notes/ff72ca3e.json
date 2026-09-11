@@ -1,0 +1,26 @@
+{
+  "title": "Draw filled squares sized by the nearest boundary marker",
+  "summary": "Draw filled squares sized by the nearest boundary marker. This is the training-inferred `draw_square_by_nearest_marker` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `draw_square_by_nearest_marker`: draw filled squares sized by the nearest boundary marker"
+  ],
+  "concepts": [
+    "draw",
+    "square",
+    "nearest",
+    "marker"
+  ],
+  "observations": [
+    "Training pair 1: 9x8 -> 9x8; colors [0, 4, 5] -> [0, 2, 4, 5]; 8 cells changed.",
+    "Training pair 2: 9x10 -> 9x10; colors [0, 4, 5] -> [0, 2, 4, 5]; 24 cells changed.",
+    "Training pair 3: 9x11 -> 9x11; colors [0, 4, 5] -> [0, 2, 4, 5]; 48 cells changed.",
+    "Training pair 4: 12x10 -> 12x10; colors [0, 4, 5] -> [0, 2, 4, 5]; 32 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "center color: 4",
+    "boundary color: 5",
+    "fill color: 1",
+    "final color map: 0 -> 0, 5 -> 5, 1 -> 2, 4 -> 4"
+  ]
+}

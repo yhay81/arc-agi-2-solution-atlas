@@ -1,0 +1,17 @@
+{
+  "title": "Change the line color on the base of the diagonal line",
+  "summary": "On the straight line connecting the two red points, turn blue into green and black into red.",
+  "steps": [
+    "On the straight line connecting the two red points, turn blue into green and black into red."
+  ],
+  "concepts": [
+    "route",
+    "Color classification by base"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 12x12; colors [0, 1, 2] -> [0, 1, 2, 3]; 10 cells changed.",
+    "Training pair 2: 16x16 -> 16x16; colors [0, 1, 2] -> [0, 1, 2, 3]; 14 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 1, 2] -> [0, 1, 2, 3]; 8 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

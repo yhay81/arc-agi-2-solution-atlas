@@ -1,0 +1,20 @@
+{
+  "title": "Restore concentric squares from sparse colors",
+  "summary": "Fill in the missing concentric squares using color clues at the same depth from the perimeter.",
+  "steps": [
+    "Measure the distance to the nearest outer edge of each square.",
+    "Collect colors other than 0 that are at the same distance and decide the color of the ring.",
+    "Fill each ring with that color once.",
+    "The outer ring, which has no color cues, stays at 0."
+  ],
+  "concepts": [
+    "concentric frame",
+    "Defect restoration",
+    "distance"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 2, 3, 8] -> [2, 3, 8]; 43 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 2, 8] -> [0, 2, 8]; 34 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

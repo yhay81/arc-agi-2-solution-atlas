@@ -1,0 +1,19 @@
+{
+  "title": "Arrange them to the left starting from the section with the most black squares.",
+  "summary": "Divide the input into equally wide partitions with a separator column whose lines are all black. Count the black squares in each section and rearrange them from left to right in descending order of number. Keep the separator columns.",
+  "steps": [
+    "Divide the input into equally wide partitions with a separator column whose lines are all black.",
+    "Count the black squares in each section and rearrange them from left to right in descending order of number. Keep the separator columns."
+  ],
+  "concepts": [
+    "Sorting columns",
+    "frequency"
+  ],
+  "observations": [
+    "Training pair 1: 13x14 -> 13x14; colors [0, 1] -> [0, 1]; 12 cells changed.",
+    "Training pair 2: 13x14 -> 13x14; colors [0, 7] -> [0, 7]; 14 cells changed.",
+    "Training pair 3: 13x14 -> 13x14; colors [0, 1] -> [0, 1]; 16 cells changed.",
+    "Training pair 4: 13x14 -> 13x14; colors [0, 6] -> [0, 6]; 14 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

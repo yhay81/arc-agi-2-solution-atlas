@@ -1,0 +1,19 @@
+{
+  "title": "Move shapes by matching multiple colored landmarks",
+  "summary": "Match colored landmarks included in a large shape with distant landmarks of the same color.",
+  "steps": [
+    "Match colored landmarks included in a large shape with distant landmarks of the same color.",
+    "Try rotating and flipping the shape, and copy the shape in a direction and position where all the corresponding colors overlap."
+  ],
+  "concepts": [
+    "multiple landmarks",
+    "rotation and reflection",
+    "alignment"
+  ],
+  "observations": [
+    "Training pair 1: 22x21 -> 9x9; colors [0, 1, 2, 4, 5, 8] -> [1, 2, 4, 5, 8]; output dimensions changed.",
+    "Training pair 2: 23x19 -> 10x9; colors [0, 1, 2, 3, 4, 8] -> [1, 2, 3, 4, 8]; output dimensions changed.",
+    "Training pair 3: 22x25 -> 12x10; colors [0, 1, 2, 3, 4, 5] -> [1, 2, 3, 4, 5]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

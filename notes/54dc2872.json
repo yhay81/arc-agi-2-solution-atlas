@@ -1,0 +1,19 @@
+{
+  "title": "Pair a single color L with a mark of a different color inside its circumscribed rectangle",
+  "summary": "Pair a single color L with a mark of a different color inside its circumscribed rectangle. If there is a dot with the same marking color on the outside, align the corner of the L with that point and transfer the L and the inside mark. Groups without opponents remain.",
+  "steps": [
+    "Pair a single color L with a mark of a different color inside its circumscribed rectangle",
+    "If there is a dot with the same marking color on the outside, align the corner of the L with that point and move the L and the inside mark.",
+    "Leave the group with no partner"
+  ],
+  "concepts": [
+    "color key",
+    "apex of shape",
+    "parallel movement"
+  ],
+  "observations": [
+    "Training pair 1: 12x13 -> 12x13; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 23 cells changed.",
+    "Training pair 2: 12x12 -> 12x12; colors [0, 6, 7, 8, 9] -> [0, 6, 7, 8, 9]; 12 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

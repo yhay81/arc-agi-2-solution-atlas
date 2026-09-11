@@ -1,0 +1,22 @@
+{
+  "title": "Replace the colored dots with a 4x4 pattern",
+  "summary": "Replace the colored dots with a 4x4 pattern. The red dots correspond to yellow square frames, the green dots correspond to blue round frames, the gray dots correspond to pink 2x2 squares arranged diagonally, and the light blue dots correspond to orange X's. The completed pattern and the outer dot on the bottom right are samples, so remove both. Draw a corresponding pattern using the remaining point as the top left.",
+  "steps": [
+    "Replace the colored dots with a 4x4 pattern",
+    "Red dots correspond to yellow square frames, green dots correspond to blue round frames, gray dots correspond to pink 2x2 squares arranged diagonally, and light blue dots correspond to orange Xs.",
+    "The completed pattern and the dot outside the bottom right are samples, so remove them both.",
+    "Draw a corresponding pattern using the remaining point as the upper left"
+  ],
+  "concepts": [
+    "local pattern",
+    "color condition",
+    "replacement"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 20x20; colors [0, 2, 3, 5, 6] -> [0, 1, 4, 6]; 109 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 1, 2, 3] -> [0, 1, 4]; 35 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 2, 4] -> [0, 4]; 49 cells changed.",
+    "Training pair 4: 20x20 -> 20x20; colors [0, 2, 3, 5, 8] -> [0, 1, 4, 6, 7]; 241 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

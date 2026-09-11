@@ -1,0 +1,20 @@
+{
+  "title": "Center a shape inside a four-corner rectangular marker frame",
+  "summary": "Center a shape inside a four-corner rectangular marker frame. Four equal markers at the corners of a rectangle delimit an inner box. When another colored shape has exactly that inner box's dimensions, move the shape (without changing its pixels) so its bounding box occupies the delimited area. Marker and background cells are otherwise preserved. This is the training-inferred `align_shapes_to_corner_frames` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `align_shapes_to_corner_frames`: center a shape inside a four-corner rectangular marker frame"
+  ],
+  "concepts": [
+    "align",
+    "shapes",
+    "corner",
+    "frames"
+  ],
+  "observations": [
+    "Training pair 1: 9x10 -> 9x10; colors [0, 2, 3] -> [0, 2, 3]; 18 cells changed.",
+    "Training pair 2: 9x9 -> 9x9; colors [0, 2, 3] -> [0, 2, 3]; 16 cells changed.",
+    "Training pair 3: 9x8 -> 9x8; colors [0, 2, 3] -> [0, 2, 3]; 10 cells changed.",
+    "Training pair 4: 7x7 -> 7x7; colors [0, 2, 3] -> [0, 2, 3]; 14 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

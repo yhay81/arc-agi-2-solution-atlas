@@ -1,0 +1,22 @@
+{
+  "title": "Align a cropped binary shape on a canonical canvas",
+  "summary": "Place a binary crop into the learned 20x20 canonical canvas. This is the training-inferred `align_binary_crop_to_canonical_canvas` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `align_binary_crop_to_canonical_canvas`: align a cropped binary shape on a canonical canvas"
+  ],
+  "concepts": [
+    "align",
+    "binary",
+    "crop",
+    "canonical",
+    "canvas"
+  ],
+  "observations": [
+    "Training pair 1: 8x10 -> 20x20; colors [7, 8] -> [7, 8]; output dimensions changed.",
+    "Training pair 2: 16x8 -> 20x20; colors [7, 8] -> [7, 8]; output dimensions changed.",
+    "Training pair 3: 10x10 -> 20x20; colors [0, 3] -> [0, 3]; output dimensions changed.",
+    "Training pair 4: 13x12 -> 20x20; colors [7, 8] -> [7, 8]; output dimensions changed.",
+    "Training pair 5: 8x10 -> 20x20; colors [7, 8] -> [7, 8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

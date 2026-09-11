@@ -1,0 +1,21 @@
+{
+  "title": "Yellow dots indicate three of the four corners of the square, find the missing corner",
+  "summary": "The yellow dots indicate three of the four corners of the square, and you look for the missing corner. From the first pair adjacent to the red swatch, learn how to place the red pattern on the outside of the missing corner. Copy the same red pattern onto the other yellow three-piece set, facing the same direction. If the red sample is a circle of eight squares, remove the center of the two outer sides to make a curved line of six squares before use.",
+  "steps": [
+    "Yellow dots indicate three of the four corners of the square, find the missing corner",
+    "Learn the red pattern placed outside the missing corner from the first pair adjacent to the red swatch.",
+    "Copy the same red pattern on the other yellow three-point set, facing the same direction.",
+    "If the red sample is a ring of 8 squares, remove the center of the two outer sides to make a curve of 6 squares before use."
+  ],
+  "concepts": [
+    "multiple landmarks",
+    "Orientation estimation",
+    "Copy"
+  ],
+  "observations": [
+    "Training pair 1: 26x26 -> 26x26; colors [0, 2, 4] -> [0, 2, 4]; 24 cells changed.",
+    "Training pair 2: 30x30 -> 30x30; colors [0, 2, 4] -> [0, 2, 4]; 24 cells changed.",
+    "Training pair 3: 25x25 -> 25x25; colors [0, 2, 4] -> [0, 2, 4]; 20 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

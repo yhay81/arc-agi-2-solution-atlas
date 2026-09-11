@@ -1,0 +1,19 @@
+{
+  "title": "Keep the length of the blue in each row and align the blue so that it starts at the height of the gray.",
+  "summary": "Keep the length of the blue in each row so that the blue starts at the height of the gray. Draw a light blue band on the top with a length that is common to many rows, and fill in the empty space below with brown.",
+  "steps": [
+    "Keep the length of the blue in each row and align the blue so that it starts at the height of the gray.",
+    "Draw a light blue band on the top with a length that is common to many rows, and fill in the empty space at the bottom with brown."
+  ],
+  "concepts": [
+    "color separation",
+    "boundary",
+    "Quantity retention"
+  ],
+  "observations": [
+    "Training pair 1: 11x11 -> 11x11; colors [1, 2, 5, 7, 8] -> [1, 2, 5, 7, 8, 9]; 53 cells changed.",
+    "Training pair 2: 9x9 -> 9x9; colors [1, 2, 5, 7, 8] -> [1, 2, 5, 7, 8, 9]; 21 cells changed.",
+    "Training pair 3: 13x13 -> 13x13; colors [1, 2, 5, 7, 8] -> [1, 2, 5, 7, 8, 9]; 51 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

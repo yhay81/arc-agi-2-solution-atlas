@@ -1,0 +1,18 @@
+{
+  "title": "Fill rotation panels",
+  "summary": "Fill rotation panels. This is the training-inferred `fill_rotation_panels` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `fill_rotation_panels`: fill rotation panels"
+  ],
+  "concepts": [
+    "fill",
+    "rotation",
+    "panels"
+  ],
+  "observations": [
+    "Training pair 1: 3x11 -> 3x11; colors [0, 2, 3, 5, 6] -> [2, 3, 5, 6]; 18 cells changed.",
+    "Training pair 2: 3x11 -> 3x11; colors [0, 1, 2, 4, 5] -> [1, 2, 4, 5]; 18 cells changed.",
+    "Training pair 3: 3x11 -> 3x11; colors [0, 2, 5, 7, 8] -> [2, 5, 7, 8]; 18 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

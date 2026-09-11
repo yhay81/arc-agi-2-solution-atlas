@@ -1,0 +1,20 @@
+{
+  "title": "Bridge horizontally visible overlapping solid rectangles with color nine",
+  "summary": "Bridge horizontally visible overlapping solid rectangles with color nine. This is the training-inferred `bridge_visible_rectangle_pairs_with_nine` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `bridge_visible_rectangle_pairs_with_nine`: bridge horizontally visible overlapping solid rectangles with color nine"
+  ],
+  "concepts": [
+    "bridge",
+    "visible",
+    "rectangle",
+    "pairs",
+    "nine"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 2] -> [0, 2, 9]; 13 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 2] -> [0, 2, 9]; 12 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 2] -> [0, 2, 9]; 8 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

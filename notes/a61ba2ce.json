@@ -1,0 +1,17 @@
+{
+  "title": "Arrange four 2x2 L pieces so their missing corners face the center",
+  "summary": "Arrange four 2x2 L pieces so their missing corners face the center. This is the training-inferred `assemble_l_quadrants` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `assemble_l_quadrants`: arrange four 2x2 L pieces so their missing corners face the center"
+  ],
+  "concepts": [
+    "assemble",
+    "l",
+    "quadrants"
+  ],
+  "observations": [
+    "Training pair 1: 13x13 -> 4x4; colors [0, 1, 2, 4, 8] -> [0, 1, 2, 4, 8]; output dimensions changed.",
+    "Training pair 2: 13x13 -> 4x4; colors [0, 1, 2, 3, 8] -> [0, 1, 2, 3, 8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

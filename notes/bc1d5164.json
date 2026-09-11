@@ -1,0 +1,20 @@
+{
+  "title": "Fold outer frame",
+  "summary": "Fold outer frame. This is the training-inferred `fold_outer_frame` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `fold_outer_frame`: fold outer frame"
+  ],
+  "concepts": [
+    "fold",
+    "outer",
+    "frame"
+  ],
+  "observations": [
+    "Training pair 1: 5x7 -> 3x3; colors [0, 4] -> [0, 4]; output dimensions changed.",
+    "Training pair 2: 5x7 -> 3x3; colors [0, 2] -> [0, 2]; output dimensions changed.",
+    "Training pair 3: 5x7 -> 3x3; colors [0, 4] -> [0, 4]; output dimensions changed.",
+    "Training pair 4: 5x7 -> 3x3; colors [0, 3] -> [0, 3]; output dimensions changed.",
+    "Training pair 5: 5x7 -> 3x3; colors [0, 8] -> [0, 8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

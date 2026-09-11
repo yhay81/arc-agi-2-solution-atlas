@@ -1,0 +1,21 @@
+{
+  "title": "Rules for placing colored parts into small grids are undefined.",
+  "summary": "Read from the top of the rightmost color column and sort by row and column heading color. Figures of each color are normalized and compared against translation, rotation, and inversion. Create a comparison table in which groups of the same shapes are colored red 2, groups of different shapes are colored gray 5, and the diagonal lines are colored black. Add headings to the top and left. Expand each square in the table to 2x2, with a black row and column of one square square in between.",
+  "steps": [
+    "Read from the top of the rightmost color column and sort by row and column heading color.",
+    "Figures of each color are normalized and compared against translation, rotation, and inversion.",
+    "Create a comparison table in which groups of the same shapes are colored red 2, groups of different shapes are colored gray 5, and the diagonal lines are colored black. Add headings to the top and left.",
+    "Expand each square in the table to 2x2, with a black row and column of one square square in between."
+  ],
+  "concepts": [
+    "symbol interpretation",
+    "lattice",
+    "arrangement"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 17x17; colors [0, 1, 3, 4, 7, 8] -> [0, 1, 2, 3, 4, 5, 7, 8]; output dimensions changed.",
+    "Training pair 2: 20x20 -> 14x14; colors [0, 1, 3, 4, 6] -> [0, 1, 2, 3, 4, 5, 6]; output dimensions changed.",
+    "Training pair 3: 20x20 -> 14x14; colors [0, 1, 3, 4, 8] -> [0, 1, 2, 3, 4, 5, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

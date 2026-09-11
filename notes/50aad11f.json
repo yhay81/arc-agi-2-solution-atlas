@@ -1,0 +1,20 @@
+{
+  "title": "Paint the pink parts with a nearby color and line them up.",
+  "summary": "Separate the parts of peach 6 including diagonal contact. Change the color of each part to the closest different color. If the arrangement is wide horizontally, align it horizontally and align it at the bottom, and if it is wide vertically, align it vertically and align it to the left.",
+  "steps": [
+    "Separate the parts of peach 6 including diagonal contact.",
+    "Change the color of each part to the closest different color.",
+    "If the arrangement is wide horizontally, align it horizontally and align it at the bottom, and if it is wide vertically, align it vertically and align it to the left."
+  ],
+  "concepts": [
+    "color instructions",
+    "Remove white space",
+    "Relocation"
+  ],
+  "observations": [
+    "Training pair 1: 12x14 -> 4x8; colors [0, 2, 3, 6] -> [0, 2, 3]; output dimensions changed.",
+    "Training pair 2: 12x9 -> 8x4; colors [0, 1, 6, 8] -> [0, 1, 8]; output dimensions changed.",
+    "Training pair 3: 12x18 -> 4x12; colors [0, 1, 3, 4, 6] -> [0, 1, 3, 4]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

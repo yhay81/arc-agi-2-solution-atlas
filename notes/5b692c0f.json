@@ -1,0 +1,17 @@
+{
+  "title": "Use the yellow straight line as the axis of the mirror, and copy the shape on the side where the yellow dot is located away from the axis to the opposite side.",
+  "summary": "Use the yellow straight line as the axis of the mirror, and copy the shape on the side where the yellow dot is located away from the axis to the opposite side. Replace the original shape on the opposite side.",
+  "steps": [
+    "Use the yellow straight line as the axis of the mirror, and copy the shape on the side where the yellow dot is located away from the axis to the opposite side.",
+    "Replace the original shape on the opposite side"
+  ],
+  "concepts": [
+    "Direction selection",
+    "reflection"
+  ],
+  "observations": [
+    "Training pair 1: 14x14 -> 14x14; colors [0, 3, 4] -> [0, 3, 4]; 12 cells changed.",
+    "Training pair 2: 17x19 -> 17x19; colors [0, 1, 2, 4] -> [0, 1, 2, 4]; 22 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

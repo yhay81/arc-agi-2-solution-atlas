@@ -1,0 +1,20 @@
+{
+  "title": "If the light blue dot touches red on the top, bottom, left, and right, change it to red and fill in the hole.",
+  "summary": "If the light blue dot touches red on the top, bottom, left and right, change it to red and fill in the hole. The light blue color that is not in contact with the red color extends 1 space toward the brown wall. Leave the wall itself.",
+  "steps": [
+    "If the light blue dot touches red on the top, bottom, left, and right, change it to red and fill in the hole.",
+    "The light blue color that is not in contact with red extends one space toward the brown wall.",
+    "leave the wall itself"
+  ],
+  "concepts": [
+    "Direction",
+    "refill",
+    "number of colors"
+  ],
+  "observations": [
+    "Training pair 1: 11x11 -> 11x11; colors [2, 7, 8, 9] -> [2, 7, 8, 9]; 11 cells changed.",
+    "Training pair 2: 8x8 -> 8x8; colors [2, 7, 8, 9] -> [2, 7, 8, 9]; 4 cells changed.",
+    "Training pair 3: 12x12 -> 12x12; colors [2, 7, 8, 9] -> [2, 7, 8, 9]; 13 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

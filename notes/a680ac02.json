@@ -1,0 +1,18 @@
+{
+  "title": "Extract hollow rectangular objects and concatenate them in layout order",
+  "summary": "Extract hollow rectangular objects and concatenate them in layout order. This is the training-inferred `stack_hollow_blocks` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `stack_hollow_blocks`: extract hollow rectangular objects and concatenate them in layout order"
+  ],
+  "concepts": [
+    "stack",
+    "hollow",
+    "blocks"
+  ],
+  "observations": [
+    "Training pair 1: 21x16 -> 8x4; colors [0, 1, 2, 4, 8] -> [0, 1, 2]; output dimensions changed.",
+    "Training pair 2: 18x17 -> 4x8; colors [0, 2, 3, 4, 8] -> [0, 2, 4]; output dimensions changed.",
+    "Training pair 3: 24x22 -> 4x12; colors [0, 1, 2, 3, 4, 6, 8] -> [0, 2, 3, 4]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

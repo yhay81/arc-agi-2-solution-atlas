@@ -1,0 +1,18 @@
+{
+  "title": "Arrange four reflected panels in reverse order",
+  "summary": "Arrange four reflected panels in reverse order. This is the training-inferred `reverse_mirror_quad` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `reverse_mirror_quad`: arrange four reflected panels in reverse order"
+  ],
+  "concepts": [
+    "reverse",
+    "mirror",
+    "quad"
+  ],
+  "observations": [
+    "Training pair 1: 3x4 -> 6x8; colors [5, 7, 9] -> [5, 7, 9]; output dimensions changed.",
+    "Training pair 2: 3x4 -> 6x8; colors [2, 4, 6] -> [2, 4, 6]; output dimensions changed.",
+    "Training pair 3: 3x4 -> 6x8; colors [3, 5, 8] -> [3, 5, 8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

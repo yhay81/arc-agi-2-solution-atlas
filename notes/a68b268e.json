@@ -1,0 +1,24 @@
+{
+  "title": "Overlay four equal quadrants around a central separator row and column",
+  "summary": "Overlay four equal quadrants around a central separator row and column. This is the training-inferred `overlay_four_quadrants` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `overlay_four_quadrants`: overlay four equal quadrants around a central separator row and column"
+  ],
+  "concepts": [
+    "overlay",
+    "four",
+    "quadrants"
+  ],
+  "observations": [
+    "Training pair 1: 9x9 -> 4x4; colors [0, 1, 4, 6, 7, 8] -> [0, 4, 6, 7, 8]; output dimensions changed.",
+    "Training pair 2: 9x9 -> 4x4; colors [0, 1, 4, 6, 7, 8] -> [0, 4, 6, 7, 8]; output dimensions changed.",
+    "Training pair 3: 9x9 -> 4x4; colors [0, 1, 4, 6, 7, 8] -> [0, 4, 7, 8]; output dimensions changed.",
+    "Training pair 4: 9x9 -> 4x4; colors [0, 1, 4, 6, 7, 8] -> [4, 6, 7, 8]; output dimensions changed.",
+    "Training pair 5: 9x9 -> 4x4; colors [0, 1, 4, 6, 7, 8] -> [0, 4, 6, 7, 8]; output dimensions changed.",
+    "Training pair 6: 9x9 -> 4x4; colors [0, 1, 4, 6, 7, 8] -> [4, 7, 8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "separator: 1"
+  ]
+}

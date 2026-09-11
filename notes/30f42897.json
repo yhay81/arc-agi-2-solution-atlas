@@ -1,0 +1,19 @@
+{
+  "title": "Read as a line that goes around the perimeter of the board",
+  "summary": "Read as a line that goes around the perimeter of the board. Paint only the length of the original colored part, and repeat around the entire outer circumference, leaving the same length.",
+  "steps": [
+    "Read as a line that goes around the perimeter of the board",
+    "Paint only the length of the original colored part, and repeat around the entire circumference, leaving the same length."
+  ],
+  "concepts": [
+    "edge",
+    "Number of pieces",
+    "Reproduction"
+  ],
+  "observations": [
+    "Training pair 1: 7x10 -> 7x10; colors [2, 8] -> [2, 8]; 10 cells changed.",
+    "Training pair 2: 4x10 -> 4x10; colors [8, 9] -> [8, 9]; 8 cells changed.",
+    "Training pair 3: 7x9 -> 7x9; colors [4, 8] -> [4, 8]; 12 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

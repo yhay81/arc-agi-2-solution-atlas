@@ -1,0 +1,17 @@
+{
+  "title": "Determine the position of the cross that touches the corner of the square",
+  "summary": "Identify the color of the cross that reaches the edge and the color of the rectangular frame from the input, and move the center of the cross to the upper right corner of the frame.",
+  "steps": [
+    "Identify the color of the cross that reaches the edge and the color of the rectangular frame from the input, and move the center of the cross to the upper right corner of the frame."
+  ],
+  "concepts": [
+    "alignment",
+    "contact with corners"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 12x12; colors [0, 1, 8] -> [0, 1, 8]; 29 cells changed.",
+    "Training pair 2: 12x12 -> 12x12; colors [0, 2, 3] -> [0, 2, 3]; 31 cells changed.",
+    "Training pair 3: 12x12 -> 12x12; colors [0, 3, 4] -> [0, 3, 4]; 33 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

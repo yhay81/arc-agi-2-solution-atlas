@@ -1,0 +1,19 @@
+{
+  "title": "Fill zeroes in columns containing a marker, then tile the scene 2x2",
+  "summary": "Fill zeroes in columns containing a marker, then tile the scene 2x2. This is the training-inferred `fill_active_columns_tile2` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `fill_active_columns_tile2`: fill zeroes in columns containing a marker, then tile the scene 2x2"
+  ],
+  "concepts": [
+    "fill",
+    "active",
+    "columns",
+    "tile2"
+  ],
+  "observations": [
+    "Training pair 1: 6x6 -> 12x12; colors [0, 5] -> [0, 5, 8]; output dimensions changed.",
+    "Training pair 2: 3x3 -> 6x6; colors [0, 2] -> [0, 2, 8]; output dimensions changed.",
+    "Training pair 3: 2x2 -> 4x4; colors [0, 4] -> [0, 4, 8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

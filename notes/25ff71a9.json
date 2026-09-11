@@ -1,0 +1,18 @@
+{
+  "title": "Shift the grid contents downward",
+  "summary": "Shift the grid contents downward. This is the training-inferred `shift_down` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `shift_down`: shift the grid contents downward"
+  ],
+  "concepts": [
+    "shift",
+    "down"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 3x3; colors [0, 2] -> [0, 2]; 4 cells changed.",
+    "Training pair 2: 3x3 -> 3x3; colors [0, 1] -> [0, 1]; 6 cells changed.",
+    "Training pair 3: 3x3 -> 3x3; colors [0, 1] -> [0, 1]; 4 cells changed.",
+    "Training pair 4: 3x3 -> 3x3; colors [0, 1] -> [0, 1]; 6 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

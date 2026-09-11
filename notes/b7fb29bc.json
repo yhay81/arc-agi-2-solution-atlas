@@ -1,0 +1,18 @@
+{
+  "title": "Draw a red-yellow ring around the small green dot",
+  "summary": "Draw a yellow ring if the maximum distance is an odd number, and a red ring if the maximum distance is an even number, centered around the green point inside the green frame. The center may touch the frame.",
+  "steps": [
+    "Draw a yellow ring if the maximum distance is an odd number, and a red ring if the maximum distance is an even number, centered around the green point inside the green frame. The center may touch the frame."
+  ],
+  "concepts": [
+    "concentric frame",
+    "alternating",
+    "Restrictions within the area"
+  ],
+  "observations": [
+    "Training pair 1: 15x15 -> 15x15; colors [0, 3] -> [0, 2, 3, 4]; 48 cells changed.",
+    "Training pair 2: 15x15 -> 15x15; colors [0, 3] -> [0, 2, 3, 4]; 48 cells changed.",
+    "Training pair 3: 15x15 -> 15x15; colors [0, 3] -> [0, 2, 3, 4]; 48 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

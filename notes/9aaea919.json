@@ -1,0 +1,20 @@
+{
+  "title": "Apply the two instructions encoded by bottom horizontal bars",
+  "summary": "Apply the two instructions encoded by bottom horizontal bars. The scene is a sparse collection of identical ``plus`` glyphs (a three-by-five mask containing 11 cells) and one-cell-high bars. A bar colored 2 marks its glyph column for recoloring to 5. A bar colored 3 marks its column for upward continuation; the number of glyphs added is the total number of glyphs marked by all color-2 bars. The instruction bars themselves are removed after being read. Both instructions are inferred from the repeated glyph/bar arrangement, rather than from absolute palette frequencies, so the background and the colors used for the glyphs may vary between examples. This is the training-inferred `repaint_cross_columns_from_bottom_bars` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `repaint_cross_columns_from_bottom_bars`: apply the two instructions encoded by bottom horizontal bars"
+  ],
+  "concepts": [
+    "repaint",
+    "cross",
+    "columns",
+    "bottom",
+    "bars"
+  ],
+  "observations": [
+    "Training pair 1: 30x30 -> 30x30; colors [0, 1, 2, 3, 4, 7, 9] -> [0, 1, 4, 5, 7]; 54 cells changed.",
+    "Training pair 2: 30x30 -> 30x30; colors [0, 1, 2, 3, 4, 6, 8] -> [0, 1, 4, 5, 8]; 32 cells changed.",
+    "Training pair 3: 30x30 -> 30x30; colors [0, 2, 3, 6, 7] -> [0, 2, 5, 6, 7]; 76 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

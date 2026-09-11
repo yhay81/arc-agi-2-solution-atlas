@@ -1,0 +1,19 @@
+{
+  "title": "Mark component centers bottom",
+  "summary": "Mark component centers bottom. This is the training-inferred `mark_component_centers_bottom` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `mark_component_centers_bottom`: mark component centers bottom"
+  ],
+  "concepts": [
+    "mark",
+    "component",
+    "centers",
+    "bottom"
+  ],
+  "observations": [
+    "Training pair 1: 5x5 -> 5x5; colors [0, 3] -> [0, 3, 4]; 1 cells changed.",
+    "Training pair 2: 8x8 -> 8x8; colors [0, 6] -> [0, 4, 6]; 2 cells changed.",
+    "Training pair 3: 5x7 -> 5x7; colors [0, 6, 8] -> [0, 4, 6, 8]; 2 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

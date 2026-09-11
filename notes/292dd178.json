@@ -1,0 +1,18 @@
+{
+  "title": "Emit a red path from each colored source",
+  "summary": "Fill near-rectangular 1-sources with 2 and emit through their openings. This is the training-inferred `source_emit_two` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `source_emit_two`: emit a red path from each colored source"
+  ],
+  "concepts": [
+    "source",
+    "emit",
+    "two"
+  ],
+  "observations": [
+    "Training pair 1: 7x9 -> 7x9; colors [1, 5] -> [1, 2, 5]; 7 cells changed.",
+    "Training pair 2: 11x10 -> 11x10; colors [1, 8] -> [1, 2, 8]; 13 cells changed.",
+    "Training pair 3: 11x9 -> 11x9; colors [1, 9] -> [1, 2, 9]; 13 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

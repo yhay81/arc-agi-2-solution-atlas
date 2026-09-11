@@ -1,0 +1,19 @@
+{
+  "title": "Divide the board into 2×2 sections",
+  "summary": "Divide the board into 2×2 sections. |The orientation and color of the contents of each compartment are kept as is, and only the order of the small compartments is reversed horizontally. |If the pattern is arranged from the upper left to the lower right, it will move from the upper right to the lower left, and if it is in the opposite direction, it will move to the opposite direction.",
+  "steps": [
+    "Divide the board into 2×2 sections",
+    "|Keep the orientation and color of the contents of each compartment as is, and only reverse the order of the subdivisions horizontally",
+    "|If the pattern is arranged from the top left to the bottom right, it will move from the top right to the bottom left, and if it is in the opposite direction, it will move to the opposite direction."
+  ],
+  "concepts": [
+    "reflection",
+    "color exchange"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 12x12; colors [0, 2, 3] -> [0, 2, 3]; 48 cells changed.",
+    "Training pair 2: 12x12 -> 12x12; colors [0, 2, 8] -> [0, 2, 8]; 36 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 1, 2] -> [0, 1, 2]; 24 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

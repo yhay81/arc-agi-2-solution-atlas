@@ -1,0 +1,22 @@
+{
+  "title": "Swap the picture and background to read the colors differently",
+  "summary": "Set the input colored squares to black. Paint the original black square yellow if the input is gray, red if it is light blue, and blue if it is green. The dimensions of the board and the positions of the squares do not change.",
+  "steps": [
+    "Set the input colored squares to black.",
+    "Paint the original black square yellow if the input is gray, red if it is light blue, and blue if it is green.",
+    "The dimensions of the board and the positions of the squares do not change."
+  ],
+  "concepts": [
+    "illustrations and backgrounds",
+    "Color correspondence"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 3x3; colors [0, 5] -> [0, 4]; 9 cells changed.",
+    "Training pair 2: 3x3 -> 3x3; colors [0, 8] -> [0, 2]; 9 cells changed.",
+    "Training pair 3: 3x3 -> 3x3; colors [0, 8] -> [0, 2]; 9 cells changed.",
+    "Training pair 4: 3x3 -> 3x3; colors [0, 3] -> [0, 1]; 9 cells changed.",
+    "Training pair 5: 3x3 -> 3x3; colors [0, 5] -> [0, 4]; 9 cells changed.",
+    "Training pair 6: 3x3 -> 3x3; colors [0, 8] -> [0, 2]; 9 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

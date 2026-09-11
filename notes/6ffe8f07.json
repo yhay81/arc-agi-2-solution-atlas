@@ -1,0 +1,21 @@
+{
+  "title": "Stretch yellow light in all directions from light blue in the center",
+  "summary": "Find the light blue 8 rectangle in the center. Stretch yellow 4 light up, down, left and right in the same row and column as that rectangle. Red 2 objects are overwritten with light. The light that hits Blue 1 in each row and column stops there, and the blue and beyond are not painted. Keep the light blue body.",
+  "steps": [
+    "Find the light blue 8 rectangle in the center.",
+    "Stretch yellow 4 light up, down, left and right in the same row and column as that rectangle. Red 2 objects are overwritten with light.",
+    "The light that hits Blue 1 in each row and column stops there, and the blue and beyond are not painted. Keep the light blue body."
+  ],
+  "concepts": [
+    "projection",
+    "thick rays",
+    "color condition"
+  ],
+  "observations": [
+    "Training pair 1: 19x19 -> 19x19; colors [0, 1, 2, 8] -> [0, 1, 2, 4, 8]; 113 cells changed.",
+    "Training pair 2: 19x19 -> 19x19; colors [0, 1, 2, 8] -> [0, 1, 2, 4, 8]; 148 cells changed.",
+    "Training pair 3: 19x19 -> 19x19; colors [0, 1, 2, 8] -> [0, 1, 2, 4, 8]; 100 cells changed.",
+    "Training pair 4: 19x18 -> 19x18; colors [0, 1, 2, 8] -> [0, 1, 2, 4, 8]; 88 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

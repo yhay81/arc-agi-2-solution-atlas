@@ -1,0 +1,19 @@
+{
+  "title": "Cut the leftmost two rows of each object",
+  "summary": "A rule that erases two rows of squares from the left end of each object other than the light blue background.",
+  "steps": [
+    "Separate objects with colors other than background 8",
+    "Find the leftmost column of each object",
+    "Set the object squares in that column and the column immediately to the right to 8, and do not move anything else."
+  ],
+  "concepts": [
+    "Cutting by object",
+    "relative position",
+    "Delete"
+  ],
+  "observations": [
+    "Training pair 1: 11x11 -> 11x11; colors [0, 3, 6, 8, 9] -> [0, 3, 6, 8, 9]; 14 cells changed.",
+    "Training pair 2: 9x9 -> 9x9; colors [0, 2, 3, 8, 9] -> [0, 2, 8, 9]; 12 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

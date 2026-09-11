@@ -1,0 +1,19 @@
+{
+  "title": "Encode the point count inside the blue frame as a 3-by-3 unary grid",
+  "summary": "Count the number of points of the same color inside the blue frame, and paint the 3×3 output with that number of points in the same color starting from the top left in row priority.",
+  "steps": [
+    "Identify inside the blue frame",
+    "Count the same color points inside",
+    "Paint 3×3 by the number of points from the top left"
+  ],
+  "concepts": [
+    "Number encoding",
+    "3×3"
+  ],
+  "observations": [
+    "Training pair 1: 9x9 -> 3x3; colors [0, 1, 6] -> [0, 6]; output dimensions changed.",
+    "Training pair 2: 7x7 -> 3x3; colors [0, 1, 4] -> [0, 4]; output dimensions changed.",
+    "Training pair 3: 9x9 -> 3x3; colors [0, 1, 3] -> [0, 3]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

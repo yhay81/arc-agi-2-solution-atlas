@@ -1,0 +1,18 @@
+{
+  "title": "Copy the shape by overlaying the green reference point on the red",
+  "summary": "Copy the relative coordinates from the green point of the light blue sample to each red point, and erase the original shape and all marks.",
+  "steps": [
+    "Copy the relative coordinates from the green point of the light blue sample to each red point, and erase the original shape and all marks."
+  ],
+  "concepts": [
+    "Reference point",
+    "parallel movement",
+    "Reproduction"
+  ],
+  "observations": [
+    "Training pair 1: 13x13 -> 13x13; colors [0, 2, 3, 8] -> [0, 8]; 33 cells changed.",
+    "Training pair 2: 13x13 -> 13x13; colors [0, 2, 3, 8] -> [0, 8]; 13 cells changed.",
+    "Training pair 3: 13x13 -> 13x13; colors [0, 2, 3, 8] -> [0, 8]; 30 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

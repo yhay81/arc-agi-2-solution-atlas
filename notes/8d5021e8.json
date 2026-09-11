@@ -1,0 +1,17 @@
+{
+  "title": "Place the input and its vertical reflection around a center line",
+  "summary": "Place the input and its vertical reflection around a center line. This is the training-inferred `sandwich_mirror` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `sandwich_mirror`: place the input and its vertical reflection around a center line"
+  ],
+  "concepts": [
+    "sandwich",
+    "mirror"
+  ],
+  "observations": [
+    "Training pair 1: 3x2 -> 9x4; colors [0, 2] -> [0, 2]; output dimensions changed.",
+    "Training pair 2: 3x2 -> 9x4; colors [0, 8] -> [0, 8]; output dimensions changed.",
+    "Training pair 3: 3x2 -> 9x4; colors [0, 5] -> [0, 5]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

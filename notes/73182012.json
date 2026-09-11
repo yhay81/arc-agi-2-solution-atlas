@@ -1,0 +1,18 @@
+{
+  "title": "Cut out the top left 4x4 of the color block",
+  "summary": "Find the range that encloses all non-black squares. Cut out 4 rows and 4 columns starting from the upper left corner.",
+  "steps": [
+    "Find the range that encloses all non-black squares.",
+    "Cut out 4 rows and 4 columns starting from the upper left corner."
+  ],
+  "concepts": [
+    "center",
+    "Extract relative position"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 4x4; colors [0, 1, 2, 3, 5] -> [0, 1, 2, 3, 5]; output dimensions changed.",
+    "Training pair 2: 12x12 -> 4x4; colors [0, 1, 2, 3] -> [0, 1, 2, 3]; output dimensions changed.",
+    "Training pair 3: 12x12 -> 4x4; colors [0, 2, 3, 7, 8] -> [0, 2, 3, 7, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

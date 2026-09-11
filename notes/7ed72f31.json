@@ -1,0 +1,18 @@
+{
+  "title": "Use the red mark on each shape as the standard of symmetry",
+  "summary": "Use the red mark on each shape as the standard of symmetry. If it is a red line, mirror it with that line, and if it is a single red point, add a shape rotated 180 degrees around that point.",
+  "steps": [
+    "Use the red mark on each shape as the standard of symmetry",
+    "If it is a red line, mirror it with that line, and if it is a single red point, add a shape rotated 180 degrees around that point."
+  ],
+  "concepts": [
+    "reflection",
+    "Axis selection",
+    "conditional drawing"
+  ],
+  "observations": [
+    "Training pair 1: 18x18 -> 18x18; colors [1, 2, 3, 4, 5, 8] -> [1, 2, 3, 4, 5, 8]; 18 cells changed.",
+    "Training pair 2: 18x18 -> 18x18; colors [1, 2, 3, 4, 8] -> [1, 2, 3, 4, 8]; 18 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

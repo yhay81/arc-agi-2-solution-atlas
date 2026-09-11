@@ -1,0 +1,19 @@
+{
+  "title": "Fill in the 4 square squares with the light blue shape in red.",
+  "summary": "Fill in the four square squares with the light blue shape in red. Leave the original light blue. Treat plots as separate plots even if they touch at the corners, and leave blank plots black.",
+  "steps": [
+    "Fill in the 4 square squares with the light blue shape in red.",
+    "Leave the original light blue",
+    "Even if plots touch at the corners, they are treated as separate plots, and empty plots remain black."
+  ],
+  "concepts": [
+    "circumscribed rectangle",
+    "Fill in the missing parts"
+  ],
+  "observations": [
+    "Training pair 1: 8x12 -> 8x12; colors [0, 8] -> [0, 2, 8]; 24 cells changed.",
+    "Training pair 2: 8x12 -> 8x12; colors [0, 8] -> [0, 2, 8]; 10 cells changed.",
+    "Training pair 3: 7x7 -> 7x7; colors [0, 8] -> [0, 2, 8]; 8 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

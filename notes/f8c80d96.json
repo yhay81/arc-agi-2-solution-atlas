@@ -1,0 +1,19 @@
+{
+  "title": "Complete either horizontal-bar or vertical-rail periodic mazes",
+  "summary": "Complete either horizontal-bar or vertical-rail periodic mazes. This is the training-inferred `complete_periodic_bar_maze` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `complete_periodic_bar_maze`: complete either horizontal-bar or vertical-rail periodic mazes"
+  ],
+  "concepts": [
+    "complete",
+    "periodic",
+    "bar",
+    "maze"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 1] -> [1, 5]; 84 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 8] -> [5, 8]; 79 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 2] -> [2, 5]; 82 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

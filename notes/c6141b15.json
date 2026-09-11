@@ -1,0 +1,19 @@
+{
+  "title": "Exchange one long line for copies and connections of compact shapes",
+  "summary": "Exchange one long line for copies and connections of compact shapes. This is the training-inferred `route_line_endpoints_and_shapes` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `route_line_endpoints_and_shapes`: exchange one long line for copies and connections of compact shapes"
+  ],
+  "concepts": [
+    "route",
+    "line",
+    "endpoints",
+    "shapes"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [1, 2, 7] -> [1, 2, 7]; 40 cells changed.",
+    "Training pair 2: 11x11 -> 11x11; colors [5, 7, 9] -> [5, 7, 9]; 11 cells changed.",
+    "Training pair 3: 16x16 -> 16x16; colors [4, 7, 8] -> [4, 7, 8]; 42 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

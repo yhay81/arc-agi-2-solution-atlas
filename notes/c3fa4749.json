@@ -1,0 +1,20 @@
+{
+  "title": "Follow a thin hole between a large solid color area and find the hole entrance when it reaches the outer edge of the area",
+  "summary": "Follow a narrow hole between a large solid color area until you find the entrance to the hole at the outer edge of the area. If the entrance has one color, paint the entire connected hole with that color. Also fill in the small islands of the same color that are trapped inside the hole.",
+  "steps": [
+    "Follow a thin hole between a large solid color area and find the hole entrance when it reaches the outer edge of the area",
+    "If the entrance has one color, paint the entire connected hole with that color.",
+    "Also fill in the small islands of the same color that are trapped in the hole."
+  ],
+  "concepts": [
+    "Shapes in noise",
+    "area detection",
+    "cross"
+  ],
+  "observations": [
+    "Training pair 1: 25x25 -> 25x25; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 18 cells changed.",
+    "Training pair 2: 20x20 -> 20x20; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 1 cells changed.",
+    "Training pair 3: 20x20 -> 20x20; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 20 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

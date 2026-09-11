@@ -1,0 +1,19 @@
+{
+  "title": "Drop the domino from the blue stick to the right",
+  "summary": "Drop the domino from the blue stick to the right. Make the actual height of each stick the length it fell down, and then knock down the next stick that reaches its tip.",
+  "steps": [
+    "Drop the domino from the blue stick to the right",
+    "Make the actual height of each stick the fallen length, then also fall the next stick that reaches its tip."
+  ],
+  "concepts": [
+    "chain",
+    "rotation",
+    "contact"
+  ],
+  "observations": [
+    "Training pair 1: 3x16 -> 3x16; colors [0, 1, 2] -> [0, 1, 2]; 12 cells changed.",
+    "Training pair 2: 3x16 -> 3x16; colors [0, 1, 2] -> [0, 1, 2]; 12 cells changed.",
+    "Training pair 3: 3x7 -> 3x7; colors [0, 1, 2] -> [0, 1, 2]; 8 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

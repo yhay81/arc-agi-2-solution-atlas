@@ -1,0 +1,13 @@
+{
+  "title": "Replace orange with gray",
+  "summary": "Recolor every orange cell gray and preserve all other colors.",
+  "steps": ["Replace orange 7 with gray 5 throughout the grid."],
+  "concepts": ["color substitution"],
+  "observations": [
+    "Training pair 1: 3x4 -> 3x4; colors [1, 7, 8] -> [1, 5, 8]; 6 cells changed.",
+    "Training pair 2: 3x6 -> 3x6; colors [1, 7, 8] -> [1, 5, 8]; 7 cells changed.",
+    "Training pair 3: 3x5 -> 3x5; colors [1, 7, 8] -> [1, 5, 8]; 4 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": ["orange 7 becomes gray 5"]
+}

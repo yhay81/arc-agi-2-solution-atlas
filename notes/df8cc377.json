@@ -1,0 +1,20 @@
+{
+  "title": "Count the scattered dots and fit them into the checkered frame",
+  "summary": "Count the single-point shapes that are independently scattered outside for each color. Count the number of squares required to place colors in a checkerboard pattern starting from the top left inside each rectangular frame. Color the inner checkered pattern with the same number of dots as the number of squares, and erase the outer dots.",
+  "steps": [
+    "Count the single-point shapes that are independently scattered outside for each color.",
+    "Count the number of squares needed to place colors in a checkerboard pattern starting from the top left inside each rectangular frame.",
+    "Color the inner checkered pattern with the same number of dots as the number of squares, and erase the outer dots."
+  ],
+  "concepts": [
+    "Checking the number of pieces",
+    "checkered pattern",
+    "Mapping"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 20x20; colors [0, 2, 3, 4, 8] -> [0, 2, 3, 4, 8]; 24 cells changed.",
+    "Training pair 2: 18x23 -> 18x23; colors [0, 3, 4, 6, 8] -> [0, 3, 4, 6, 8]; 40 cells changed.",
+    "Training pair 3: 12x20 -> 12x20; colors [0, 1, 2, 4, 8] -> [0, 1, 2, 4, 8]; 6 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Duplicate the pattern only in a frame of the same size as the sample",
+  "summary": "Find a frame with a pattern inside and measure its length and width. Leave only a frame with the same dimensions as the sample, and copy the contents of the sample in the same relative position in the color of the frame. Frames with different dimensions are erased in black.",
+  "steps": [
+    "Find a frame with a pattern inside and measure its length and width.",
+    "Leave only a frame with the same dimensions as the sample, and copy the contents of the sample in the same relative position in the color of the frame.",
+    "Frames with different dimensions are erased in black."
+  ],
+  "concepts": [
+    "Dimension matching",
+    "pattern reproduction",
+    "sorting"
+  ],
+  "observations": [
+    "Training pair 1: 21x21 -> 21x21; colors [0, 2, 3, 4, 5, 7] -> [0, 2, 3, 4, 5]; 32 cells changed.",
+    "Training pair 2: 19x19 -> 19x19; colors [0, 4, 5, 6, 8] -> [0, 4, 6, 8]; 38 cells changed.",
+    "Training pair 3: 22x22 -> 22x22; colors [0, 1, 2, 3, 7, 8] -> [0, 1, 2, 8]; 54 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

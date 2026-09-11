@@ -1,0 +1,17 @@
+{
+  "title": "Among the three shapes in each row, find one that differs only in color scheme and one that differs only in shape.",
+  "summary": "Among the three shapes in each row, find one that differs only in color scheme and one that differs only in shape. Read the color correspondence from two isomorphs and apply that color scheme to the variant.",
+  "steps": [
+    "Among the three shapes in each row, find one that differs only in color scheme and one that differs only in shape.",
+    "Read the color correspondence from two isomorphs and apply that color scheme to the variant"
+  ],
+  "concepts": [
+    "Two types of ostracism",
+    "Composition of attributes"
+  ],
+  "observations": [
+    "Training pair 1: 8x9 -> 8x2; colors [0, 1, 2, 3, 4, 5, 6, 7, 8] -> [0, 3, 4, 5, 6, 8]; output dimensions changed.",
+    "Training pair 2: 11x9 -> 11x2; colors [0, 1, 2, 3, 4, 5, 7, 8, 9] -> [0, 2, 3, 5, 7, 8, 9]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

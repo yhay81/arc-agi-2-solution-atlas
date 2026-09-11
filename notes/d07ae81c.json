@@ -1,0 +1,20 @@
+{
+  "title": "Project every sparse marker as an X, recoloring each base layer",
+  "summary": "Project every sparse marker as an X, recoloring each base layer. The two most frequent colors form a partitioned canvas. Each remaining color is a marker replacing one cell of one of those base layers; its surrounding base color identifies the layer it labels. Every marker emits both diagonal lines to the canvas edges. A ray cell is painted with the marker color belonging to the *original* base color at that cell, so rays naturally change color when crossing the partition. This is the training-inferred `draw_diagonal_rays_by_base_mapping` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `draw_diagonal_rays_by_base_mapping`: project every sparse marker as an X, recoloring each base layer"
+  ],
+  "concepts": [
+    "draw",
+    "diagonal",
+    "rays",
+    "base",
+    "mapping"
+  ],
+  "observations": [
+    "Training pair 1: 12x14 -> 12x14; colors [1, 2, 3, 8] -> [1, 2, 3, 8]; 23 cells changed.",
+    "Training pair 2: 19x12 -> 19x12; colors [1, 2, 4, 8] -> [1, 2, 4, 8]; 30 cells changed.",
+    "Training pair 3: 15x15 -> 15x15; colors [1, 3, 6, 8] -> [1, 3, 6, 8]; 37 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

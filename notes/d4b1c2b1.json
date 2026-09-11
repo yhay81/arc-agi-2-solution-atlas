@@ -1,0 +1,23 @@
+{
+  "title": "Scale every cell by the number of distinct input colors",
+  "summary": "Let k be the number of colors that appear on the board, and expand each input cell to the nearest k×k block of the same color.",
+  "steps": [
+    "Count the number k of different colors",
+    "Duplicate each cell horizontally k times",
+    "Duplicate each row vertically k times"
+  ],
+  "concepts": [
+    "number of colors",
+    "Nearest neighbor expansion"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 9x9; colors [4, 7, 8] -> [4, 7, 8]; output dimensions changed.",
+    "Training pair 2: 3x3 -> 3x3; colors [8] -> [8]; 0 cells changed.",
+    "Training pair 3: 3x3 -> 3x3; colors [3] -> [3]; 0 cells changed.",
+    "Training pair 4: 3x3 -> 12x12; colors [2, 4, 5, 8] -> [2, 4, 5, 8]; output dimensions changed.",
+    "Training pair 5: 3x3 -> 6x6; colors [2, 4] -> [2, 4]; output dimensions changed.",
+    "Training pair 6: 3x3 -> 6x6; colors [1, 6] -> [1, 6]; output dimensions changed.",
+    "Training pair 7: 3x3 -> 6x6; colors [3, 6] -> [3, 6]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

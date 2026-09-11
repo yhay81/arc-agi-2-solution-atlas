@@ -1,0 +1,20 @@
+{
+  "title": "Change the color of the end of the road by the length of the end of the road",
+  "summary": "Find a colored path one space wide and a dot of a different color beyond it. Extend the end of the path to just before the point. Change the color of the opposite end of the path to the color of the dot by the number of squares extended. Keep the original total number of path colors.",
+  "steps": [
+    "Find a colored path one space wide and a dot of a different color beyond it.",
+    "Extend the end of the path to just before the point.",
+    "Change the color of the opposite end of the path to the color of the dot by the number of squares extended. Keep the original total number of path colors."
+  ],
+  "concepts": [
+    "Correlation",
+    "line extension",
+    "color exchange"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 20x20; colors [0, 3, 4, 6, 8] -> [0, 3, 4, 6, 8]; 14 cells changed.",
+    "Training pair 2: 30x30 -> 30x30; colors [0, 1, 2, 4, 6] -> [0, 1, 2, 4, 6]; 22 cells changed.",
+    "Training pair 3: 20x20 -> 20x20; colors [0, 3, 4, 6, 8] -> [0, 3, 4, 6, 8]; 18 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

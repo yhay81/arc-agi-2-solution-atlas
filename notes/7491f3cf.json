@@ -1,0 +1,19 @@
+{
+  "title": "Read the first parcel line as the boundary and the independent point as the side designation",
+  "summary": "Read the first parcel line as the boundary and the independent point as the side designation. The second pattern is combined on the point side, the third pattern is combined on the opposite side, and the second foreground is given priority on the border.",
+  "steps": [
+    "Read the first parcel line as the boundary and the independent point as the side designation",
+    "Combine the second pattern on the point side, the third pattern on the opposite side, and prioritize the second foreground on the border."
+  ],
+  "concepts": [
+    "Composition of two figures",
+    "superposition"
+  ],
+  "observations": [
+    "Training pair 1: 7x25 -> 7x25; colors [2, 3, 4, 5, 6] -> [2, 3, 4, 5, 6]; 11 cells changed.",
+    "Training pair 2: 7x25 -> 7x25; colors [1, 2, 3, 4, 8] -> [1, 2, 3, 4, 8]; 11 cells changed.",
+    "Training pair 3: 7x25 -> 7x25; colors [1, 4, 6, 7, 9] -> [1, 4, 6, 7, 9]; 10 cells changed.",
+    "Training pair 4: 7x25 -> 7x25; colors [0, 1, 2, 3, 4] -> [0, 1, 2, 3, 4]; 11 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

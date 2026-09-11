@@ -1,0 +1,21 @@
+{
+  "title": "Copy the original to an arrangement with fewer colors",
+  "summary": "Copy the entire input to the position of the least frequent color.",
+  "steps": [
+    "Copy the entire input to the position of the least frequent color."
+  ],
+  "concepts": [
+    "few colors",
+    "self-replication",
+    "Layout diagram"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 9x9; colors [2, 3, 5, 7] -> [0, 2, 3, 5, 7]; output dimensions changed.",
+    "Training pair 2: 3x3 -> 9x9; colors [5, 8, 9] -> [0, 5, 8, 9]; output dimensions changed.",
+    "Training pair 3: 3x3 -> 9x9; colors [1, 7] -> [0, 1, 7]; output dimensions changed.",
+    "Training pair 4: 3x3 -> 9x9; colors [1, 5, 6] -> [0, 1, 5, 6]; output dimensions changed.",
+    "Training pair 5: 3x3 -> 9x9; colors [3, 6, 8, 9] -> [0, 3, 6, 8, 9]; output dimensions changed.",
+    "Training pair 6: 3x3 -> 9x9; colors [2, 4] -> [0, 2, 4]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

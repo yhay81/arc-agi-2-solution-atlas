@@ -1,0 +1,24 @@
+{
+  "title": "Replace touching red-green pairs with azure",
+  "summary": "Find red cells that share an edge with a green cell. Erase each touching red cell and recolor its adjacent green cell azure; leave separated red and green cells unchanged.",
+  "steps": [
+    "Find edge-adjacent red and green pairs.",
+    "Erase the red member and recolor the green member azure."
+  ],
+  "concepts": [
+    "adjacency",
+    "pair",
+    "recoloring"
+  ],
+  "observations": [
+    "Training pair 1: 7x6 -> 7x6; colors [0, 2, 3, 5] -> [0, 2, 3, 5, 8]; 4 cells changed.",
+    "Training pair 2: 3x3 -> 3x3; colors [0, 2, 3, 5] -> [0, 5, 8]; 2 cells changed.",
+    "Training pair 3: 7x7 -> 7x7; colors [0, 2, 3, 5] -> [0, 2, 3, 5, 8]; 6 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "red 2 -> black 0",
+    "adjacent green 3 -> azure 8",
+    "connectivity: four directions"
+  ]
+}

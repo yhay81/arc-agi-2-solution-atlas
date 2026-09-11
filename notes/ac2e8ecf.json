@@ -1,0 +1,20 @@
+{
+  "title": "Pack at the top and bottom depending on the type of shape",
+  "summary": "Find out if each shape has a completely enclosed hole. Move the shapes with holes to the top, and the crosses without holes to the bottom, without changing the rows. Fill shapes that are in the same direction from the edges so that they do not overlap. Figures with upside down orientations are assumed to pass each other during movement, and only the final position is determined.",
+  "steps": [
+    "Find out if each shape has a completely enclosed hole.",
+    "Move the shapes with holes to the top, and the crosses without holes to the bottom, without changing the rows.",
+    "Fill shapes that are in the same direction from the edges so that they do not overlap. Figures with upside down orientations are assumed to pass each other during movement, and only the final position is determined."
+  ],
+  "concepts": [
+    "classification",
+    "gravity",
+    "collision"
+  ],
+  "observations": [
+    "Training pair 1: 13x13 -> 13x13; colors [0, 1, 2, 5, 8] -> [0, 1, 2, 5, 8]; 71 cells changed.",
+    "Training pair 2: 13x16 -> 13x16; colors [0, 1, 2, 8] -> [0, 1, 2, 8]; 54 cells changed.",
+    "Training pair 3: 16x17 -> 16x17; colors [0, 1, 2, 3, 8] -> [0, 1, 2, 3, 8]; 97 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

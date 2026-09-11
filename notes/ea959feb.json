@@ -1,0 +1,18 @@
+{
+  "title": "Restore the periodic pattern hidden in blue",
+  "summary": "Ignore Blue 1 as a defective candidate and repair by estimating the minimum area vertical and horizontal period that does not conflict with other colors.",
+  "steps": [
+    "Ignore Blue 1 as a defective candidate and repair by estimating the minimum area vertical and horizontal period that does not conflict with other colors."
+  ],
+  "concepts": [
+    "shielding",
+    "period",
+    "restoration"
+  ],
+  "observations": [
+    "Training pair 1: 22x25 -> 22x25; colors [1, 2, 3, 4, 5, 6, 7] -> [1, 2, 3, 4, 5, 6, 7]; 60 cells changed.",
+    "Training pair 2: 22x25 -> 22x25; colors [1, 2, 3, 4, 5, 6] -> [1, 2, 3, 4, 5, 6]; 65 cells changed.",
+    "Training pair 3: 22x25 -> 22x25; colors [1, 2, 3, 4, 5, 6, 7, 8] -> [1, 2, 3, 4, 5, 6, 7, 8]; 41 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

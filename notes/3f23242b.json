@@ -1,0 +1,19 @@
+{
+  "title": "Draw a gate with a width of 5 and a height of 5 around each green dot.",
+  "summary": "Draw a gate five wide and five high around each green dot. Make the top two squares gray, the pillars on the two squares on the left and right red, and the width five below the two squares light blue. The line below is red outside the gate and extends to the edge.",
+  "steps": [
+    "Draw a gate with a width of 5 and a height of 5 around each green dot.",
+    "The top two squares are gray, the pillars on the two squares on the left and right are red, and the width five below two squares is light blue.",
+    "The line below is red outside the gate and extends to the edge."
+  ],
+  "concepts": [
+    "Reference point",
+    "component parts",
+    "Color by direction"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 3] -> [0, 2, 3, 5, 8]; 22 cells changed.",
+    "Training pair 2: 16x16 -> 16x16; colors [0, 3] -> [0, 2, 3, 5, 8]; 56 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

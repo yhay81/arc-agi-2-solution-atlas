@@ -1,0 +1,20 @@
+{
+  "title": "Reverse fill and white space for each subdivision",
+  "summary": "Read each 3×3 section surrounded by a black outline and a 1 square wide black divider. Change the light blue squares in the division to black, and change the black squares in the division to red. Leave the outer frame and partitions black.",
+  "steps": [
+    "Read each 3×3 section surrounded by a black outline and a 1 square wide black divider.",
+    "Change the light blue squares in the division to black, and change the black squares in the division to red.",
+    "Leave the outer frame and partitions black."
+  ],
+  "concepts": [
+    "small plot",
+    "inversion",
+    "color replacement"
+  ],
+  "observations": [
+    "Training pair 1: 9x13 -> 9x13; colors [0, 8] -> [0, 2]; 54 cells changed.",
+    "Training pair 2: 5x13 -> 5x13; colors [0, 8] -> [0, 2]; 27 cells changed.",
+    "Training pair 3: 9x9 -> 9x9; colors [0, 8] -> [0, 2]; 36 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

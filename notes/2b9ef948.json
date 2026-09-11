@@ -1,0 +1,20 @@
+{
+  "title": "Move the yellow ring and rays based on the amount of travel on the road",
+  "summary": "Find the 3x3 ring of yellow 4 and both ends of the road of gray 5. Find the amount of movement from the edge of the background color of the road to the yellow edge, and move the center of the ring by the same amount. Draw a ring after movement on the background-only board, and extend yellow diagonal lines from the four corners of the ring to the end.",
+  "steps": [
+    "Find the 3x3 ring of yellow 4 and both ends of the road of gray 5.",
+    "Find the amount of movement from the edge of the background color of the road to the yellow edge, and move the center of the ring by the same amount.",
+    "Draw a ring after movement on the background-only board, and extend yellow diagonal lines from the four corners of the ring to the end."
+  ],
+  "concepts": [
+    "diagonal repetition",
+    "legend",
+    "background change"
+  ],
+  "observations": [
+    "Training pair 1: 15x20 -> 15x20; colors [0, 4, 5, 7] -> [4, 7]; 297 cells changed.",
+    "Training pair 2: 30x30 -> 30x30; colors [0, 3, 4, 5] -> [3, 4]; 897 cells changed.",
+    "Training pair 3: 30x30 -> 30x30; colors [0, 4, 5, 8] -> [4, 8]; 898 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

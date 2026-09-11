@@ -1,0 +1,20 @@
+{
+  "title": "Duplicate it in two diagonal places and make the line between them green",
+  "summary": "Place one input at the top left and one at the bottom right of the black output with double the height and width. Look for exactly one blank line between colored lines. Makes the entire blank row green only if the colored rows above and below have colors in the same column. Do not unconditionally make the boundary between two copies green.",
+  "steps": [
+    "Place one input at the top left and one at the bottom right of the black output with double the height and width.",
+    "Look for exactly one blank line between colored lines.",
+    "Makes the entire blank row green only if the colored rows above and below have colors in the same column. Do not unconditionally make the boundary between two copies green."
+  ],
+  "concepts": [
+    "diagonal arrangement",
+    "Reproduction",
+    "horizontal line"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 6x6; colors [0, 8] -> [0, 3, 8]; output dimensions changed.",
+    "Training pair 2: 6x6 -> 12x12; colors [0, 4] -> [0, 3, 4]; output dimensions changed.",
+    "Training pair 3: 7x7 -> 14x14; colors [0, 7] -> [0, 3, 7]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

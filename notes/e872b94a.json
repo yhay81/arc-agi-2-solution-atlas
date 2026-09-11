@@ -1,0 +1,18 @@
+{
+  "title": "The number of separated black areas is indicated by black vertical bars.",
+  "summary": "Set the number of black 4-neighbor connected regions separated by gray to the number of vertical black squares.",
+  "steps": [
+    "Set the number of black 4-neighbor connected regions separated by gray to the number of vertical black squares."
+  ],
+  "concepts": [
+    "number of areas",
+    "one dimensional output"
+  ],
+  "observations": [
+    "Training pair 1: 7x7 -> 3x1; colors [0, 5] -> [0]; output dimensions changed.",
+    "Training pair 2: 3x3 -> 2x1; colors [0, 5] -> [0]; output dimensions changed.",
+    "Training pair 3: 9x12 -> 5x1; colors [0, 5] -> [0]; output dimensions changed.",
+    "Training pair 4: 12x12 -> 4x1; colors [0, 5] -> [0]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

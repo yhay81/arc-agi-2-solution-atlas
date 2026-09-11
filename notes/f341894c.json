@@ -1,0 +1,18 @@
+{
+  "title": "Point the two colored short sticks at the orange mark",
+  "summary": "Find the orange endpoint on the same line of blue-purple dominoes, and make the side closest to that endpoint purple.",
+  "steps": [
+    "Find the orange endpoint on the same line of blue-purple dominoes, and make the side closest to that endpoint purple."
+  ],
+  "concepts": [
+    "Direction",
+    "landmark",
+    "color exchange"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [1, 6, 7, 8] -> [1, 6, 7, 8]; 6 cells changed.",
+    "Training pair 2: 8x8 -> 8x8; colors [1, 6, 7, 8] -> [1, 6, 7, 8]; 4 cells changed.",
+    "Training pair 3: 14x14 -> 14x14; colors [1, 6, 7, 8] -> [1, 6, 7, 8]; 4 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

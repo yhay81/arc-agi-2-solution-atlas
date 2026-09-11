@@ -1,0 +1,20 @@
+{
+  "title": "Complete zero-punctured rows/columns from compatible lines",
+  "summary": "Complete zero-punctured rows/columns from compatible lines. This is the training-inferred `complete_matching_lines_and_diagonal` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `complete_matching_lines_and_diagonal`: complete zero-punctured rows/columns from compatible lines"
+  ],
+  "concepts": [
+    "complete",
+    "matching",
+    "lines",
+    "diagonal"
+  ],
+  "observations": [
+    "Training pair 1: 30x30 -> 30x30; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [1, 2, 3, 4, 5, 6, 7, 8, 9]; 93 cells changed.",
+    "Training pair 2: 30x30 -> 30x30; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [1, 2, 3, 4, 5, 6, 7, 8, 9]; 114 cells changed.",
+    "Training pair 3: 30x30 -> 30x30; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [1, 2, 3, 4, 5, 6, 7, 8, 9]; 84 cells changed.",
+    "Training pair 4: 30x30 -> 30x30; colors [0, 1, 2, 3, 4, 5, 6, 7, 9] -> [1, 2, 3, 4, 5, 6, 7, 9]; 82 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

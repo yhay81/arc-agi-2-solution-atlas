@@ -1,0 +1,19 @@
+{
+  "title": "Move rectangular color objects by the length of an attached stick",
+  "summary": "Move rectangular color objects by the length of an attached stick. Each object in this task is a solid rectangle, sometimes partially hidden by another object, with an optional one-cell-wide stick extending from one side. The stick is an instruction: for sticks of length at least two, translate the rectangle by that many cells toward the stick and remove the stick. A one-cell protrusion is the degenerate form of a damaged corner; it is absorbed by the rectangle instead of causing a translation. The input is also the only available depth cue. Whenever a visible cell lies inside another object's rectangle, its color is drawn above that rectangle in the reconstructed scene. This preserves the observed occlusion order after the translations. This is the training-inferred `move_rectangles_to_stick_ends` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `move_rectangles_to_stick_ends`: move rectangular color objects by the length of an attached stick"
+  ],
+  "concepts": [
+    "move",
+    "rectangles",
+    "stick",
+    "ends"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 20x20; colors [0, 1, 3, 6, 7, 8] -> [0, 1, 3, 6, 7, 8]; 60 cells changed.",
+    "Training pair 2: 20x20 -> 20x20; colors [0, 2, 3, 5, 6, 8] -> [0, 2, 3, 5, 6, 8]; 47 cells changed.",
+    "Training pair 3: 20x20 -> 20x20; colors [0, 2, 3, 8] -> [0, 2, 3, 8]; 46 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

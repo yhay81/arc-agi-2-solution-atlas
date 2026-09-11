@@ -1,0 +1,20 @@
+{
+  "title": "Shift the row one square at a time to make it diagonal",
+  "summary": "Without moving the bottom row, move the upper rows one square at a time to the right. Set the increased margin to 0.",
+  "steps": [
+    "Let the input height be H and the width W.",
+    "Prepare black output in row H and column W+H−1.",
+    "Copy the i-th row from the bottom by shifting it i squares to the right.",
+    "Do not change the order of colors in each row."
+  ],
+  "concepts": [
+    "shear",
+    "Translation by line"
+  ],
+  "observations": [
+    "Training pair 1: 4x9 -> 4x12; colors [4, 5, 7, 9] -> [0, 4, 5, 7, 9]; output dimensions changed.",
+    "Training pair 2: 6x6 -> 6x11; colors [1, 4, 6, 7, 8] -> [0, 1, 4, 6, 7, 8]; output dimensions changed.",
+    "Training pair 3: 7x4 -> 7x10; colors [1, 5, 6, 8] -> [0, 1, 5, 6, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

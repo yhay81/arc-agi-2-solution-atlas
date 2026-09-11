@@ -1,0 +1,20 @@
+{
+  "title": "Distinguish noise colors and restore rectangular frames for each color",
+  "summary": "Distinguish noise colors and restore rectangular frames for each color. Only connect partitions that were cut due to noise or one square intersection. Count the number of closed rooms and organize them into bars in ascending order.",
+  "steps": [
+    "Distinguish noise colors and restore rectangular frames for each color",
+    "Connect only partitions broken by noise or 1 square intersection",
+    "Count the number of closed rooms and organize them into bars in ascending order."
+  ],
+  "concepts": [
+    "Obi summary",
+    "multiple colors",
+    "length sign"
+  ],
+  "observations": [
+    "Training pair 1: 22x28 -> 3x4; colors [0, 1, 2, 3, 5] -> [1, 2, 3, 5]; output dimensions changed.",
+    "Training pair 2: 22x28 -> 5x4; colors [0, 1, 2, 3, 4, 5, 8] -> [1, 2, 3, 4, 5, 8]; output dimensions changed.",
+    "Training pair 3: 22x20 -> 4x4; colors [0, 1, 2, 4, 7, 8] -> [1, 2, 4, 7, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

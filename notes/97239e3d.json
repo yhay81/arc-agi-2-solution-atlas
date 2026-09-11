@@ -1,0 +1,18 @@
+{
+  "title": "Determine the color of the enclosure with two colored points",
+  "summary": "Align two marks of the same color with the nearby grid intersections, and paint the center of the rectangular frame and the inner small frame with that color.",
+  "steps": [
+    "Align two marks of the same color with the nearby grid intersections, and paint the center of the rectangular frame and the inner small frame with that color."
+  ],
+  "concepts": [
+    "Specifying the range",
+    "frame",
+    "interior color"
+  ],
+  "observations": [
+    "Training pair 1: 17x17 -> 17x17; colors [0, 1, 6, 8] -> [0, 1, 6, 8]; 57 cells changed.",
+    "Training pair 2: 17x17 -> 17x17; colors [0, 2, 8] -> [0, 2, 8]; 44 cells changed.",
+    "Training pair 3: 17x17 -> 17x17; colors [0, 3, 7, 8] -> [0, 3, 7, 8]; 48 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

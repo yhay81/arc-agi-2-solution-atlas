@@ -1,0 +1,18 @@
+{
+  "title": "Flip each color shape vertically within your range",
+  "summary": "Find a rectangle surrounding each square for each color. Flip each colored shape vertically within its rectangle.",
+  "steps": [
+    "Find a rectangle surrounding each square for each color.",
+    "Flip each colored shape vertically within its rectangle."
+  ],
+  "concepts": [
+    "upside down",
+    "figure unit"
+  ],
+  "observations": [
+    "Training pair 1: 11x11 -> 11x11; colors [0, 1, 2, 3, 5, 8] -> [0, 1, 2, 3, 5, 8]; 14 cells changed.",
+    "Training pair 2: 13x13 -> 13x13; colors [0, 1, 2, 3, 4] -> [0, 1, 2, 3, 4]; 32 cells changed.",
+    "Training pair 3: 7x7 -> 7x7; colors [0, 3, 4, 9] -> [0, 3, 4, 9]; 16 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

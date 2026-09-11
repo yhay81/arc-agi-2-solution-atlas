@@ -1,0 +1,18 @@
+{
+  "title": "Gather the points into a square and make the square red",
+  "summary": "Change the blue square to red, pull the closest brown point to the edge of the square, and pull the remaining points one square outside the square.",
+  "steps": [
+    "Change the blue square to red, pull the closest brown point to the edge of the square, and pull the remaining points one square outside the square."
+  ],
+  "concepts": [
+    "suction",
+    "color change",
+    "boundary"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [1, 7, 9] -> [2, 7, 9]; 21 cells changed.",
+    "Training pair 2: 8x8 -> 8x8; colors [1, 7, 9] -> [2, 7, 9]; 12 cells changed.",
+    "Training pair 3: 12x12 -> 12x12; colors [1, 7, 9] -> [2, 7, 9]; 23 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

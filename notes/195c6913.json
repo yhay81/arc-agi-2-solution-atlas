@@ -1,0 +1,18 @@
+{
+  "title": "Decode a top legend and propagate its cyclic pattern through fill regions",
+  "summary": "Decode a top legend and propagate its cyclic pattern through fill regions. This is the training-inferred `decode_palette_and_propagate` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `decode_palette_and_propagate`: decode a top legend and propagate its cyclic pattern through fill regions"
+  ],
+  "concepts": [
+    "decode",
+    "palette",
+    "propagate"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 20x20; colors [0, 2, 3, 4, 8] -> [0, 2, 3, 4, 8]; 53 cells changed.",
+    "Training pair 2: 25x25 -> 25x25; colors [1, 2, 4, 8, 9] -> [1, 2, 4, 8, 9]; 65 cells changed.",
+    "Training pair 3: 25x25 -> 25x25; colors [1, 2, 3, 4, 8] -> [1, 2, 3, 4, 8]; 93 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

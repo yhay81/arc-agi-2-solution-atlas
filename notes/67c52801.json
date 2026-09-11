@@ -1,0 +1,20 @@
+{
+  "title": "Pack solid rectangular objects into the gaps of a floor marker row",
+  "summary": "Pack solid rectangular objects into the gaps of a floor marker row. The bottom row is a solid floor. The row immediately above it repeats the floor color at marker positions; each zero run bounded by two markers is a slot. Payloads above the marker row are solid rectangles. They are moved into slots of matching width, rotating a rectangle when its height is the required width. The floor and its markers remain unchanged. This is the training-inferred `pack_rectangles_into_floor_slots` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `pack_rectangles_into_floor_slots`: pack solid rectangular objects into the gaps of a floor marker row"
+  ],
+  "concepts": [
+    "pack",
+    "rectangles",
+    "floor",
+    "slots"
+  ],
+  "observations": [
+    "Training pair 1: 4x5 -> 4x5; colors [0, 3, 8] -> [0, 3, 8]; 4 cells changed.",
+    "Training pair 2: 8x8 -> 8x8; colors [0, 2, 5, 8] -> [0, 2, 5, 8]; 20 cells changed.",
+    "Training pair 3: 9x12 -> 9x12; colors [0, 1, 5, 6, 7] -> [0, 1, 5, 6, 7]; 24 cells changed.",
+    "Training pair 4: 7x6 -> 7x6; colors [0, 1, 2, 3] -> [0, 1, 2, 3]; 12 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

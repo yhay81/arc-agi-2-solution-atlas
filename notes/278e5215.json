@@ -1,0 +1,20 @@
+{
+  "title": "Render a color-5 mask with a repeated column key and uniform fallback",
+  "summary": "Render a color-5 mask with a repeated column key and uniform fallback. This is the training-inferred `render_five_mask_with_column_palette` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `render_five_mask_with_column_palette`: render a color-5 mask with a repeated column key and uniform fallback"
+  ],
+  "concepts": [
+    "render",
+    "five",
+    "mask",
+    "column",
+    "palette"
+  ],
+  "observations": [
+    "Training pair 1: 15x10 -> 6x5; colors [0, 2, 3, 4, 5, 8] -> [2, 3, 4, 8]; output dimensions changed.",
+    "Training pair 2: 15x15 -> 10x7; colors [0, 1, 2, 3, 4, 5, 6, 8] -> [1, 2, 3, 4, 6, 8]; output dimensions changed.",
+    "Training pair 3: 15x16 -> 5x8; colors [0, 1, 2, 3, 5, 6, 8] -> [1, 2, 3, 6, 8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

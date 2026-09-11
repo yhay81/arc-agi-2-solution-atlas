@@ -1,0 +1,19 @@
+{
+  "title": "Combine different colored rectangles by exactly overlapping the shapes and positions of landmarks of a common color.",
+  "summary": "Combine different colored rectangles by exactly overlapping the shapes and positions of landmarks of the same color. Using the largest rectangle as a base, stack the pieces in descending order.",
+  "steps": [
+    "Combine different colored rectangles by exactly overlapping the shapes and positions of landmarks of a common color.",
+    "Using the largest rectangle as a base, stack the parts in descending order."
+  ],
+  "concepts": [
+    "Sample verification",
+    "Cut out",
+    "scale"
+  ],
+  "observations": [
+    "Training pair 1: 30x30 -> 9x5; colors [1, 2, 3, 8] -> [1, 2, 3]; output dimensions changed.",
+    "Training pair 2: 30x30 -> 12x16; colors [1, 2, 3, 4] -> [1, 2, 3]; output dimensions changed.",
+    "Training pair 3: 30x30 -> 13x15; colors [1, 2, 3, 4, 8] -> [1, 2, 4, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

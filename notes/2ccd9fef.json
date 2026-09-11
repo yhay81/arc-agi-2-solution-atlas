@@ -1,0 +1,19 @@
+{
+  "title": "Separate consecutive frames from the last empty frame by matching repeating background patterns",
+  "summary": "Separate consecutive frames from the last empty frame by matching repeating background patterns. Find out how many frames each color appears and choose the color that will appear in the next frame. Read the number of color dots, starting position, and spacing between dots in each line, and draw a shape that advances the previous two changes one more time on the final background.",
+  "steps": [
+    "Separate consecutive frames from the last empty frame by matching repeating background patterns",
+    "Find out how many frames each color appears and choose the color that will appear in the next frame.",
+    "Read the number of color dots, starting position, and spacing between dots in each line, and draw a shape that advances the previous two changes one more time on the final background."
+  ],
+  "concepts": [
+    "Time series",
+    "growth",
+    "Difference iteration"
+  ],
+  "observations": [
+    "Training pair 1: 24x11 -> 8x11; colors [1, 3, 4, 8] -> [1, 3, 4, 8]; output dimensions changed.",
+    "Training pair 2: 21x11 -> 7x11; colors [1, 2, 4, 8] -> [1, 2, 4, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

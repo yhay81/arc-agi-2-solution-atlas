@@ -1,0 +1,20 @@
+{
+  "title": "Divide into four 2×2 sections using the orange cross in the center.",
+  "summary": "Divide into four 2x2 sections using the orange cross in the center. Fill in the orange holes in each section with one color so that all four sections have the same color combination. Combinations containing two of the same color also maintain their number.",
+  "steps": [
+    "Divide into four 2×2 sections using the orange cross in the center.",
+    "Fill in the orange holes in each section with one color so that all four sections have the same color combination.",
+    "Combinations containing two of the same color also maintain the number"
+  ],
+  "concepts": [
+    "Direction",
+    "Color scheme",
+    "partial replacement"
+  ],
+  "observations": [
+    "Training pair 1: 5x5 -> 5x5; colors [0, 1, 5, 7, 8] -> [0, 1, 5, 7, 8]; 4 cells changed.",
+    "Training pair 2: 5x5 -> 5x5; colors [2, 3, 7, 8, 9] -> [2, 3, 7, 8, 9]; 4 cells changed.",
+    "Training pair 3: 5x5 -> 5x5; colors [3, 4, 5, 7] -> [3, 4, 5, 7]; 4 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

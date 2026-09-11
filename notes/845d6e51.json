@@ -1,0 +1,19 @@
+{
+  "title": "Find the same shape as the sample and color it the same color.",
+  "summary": "Read the correspondence between shapes and colors from the gray sample area.",
+  "steps": [
+    "Read the correspondence between shapes and colors from the gray sample area.",
+    "Match each outer green shape to the sample, taking into account rotation and reversal.",
+    "Repaint the shape with the corresponding sample color."
+  ],
+  "concepts": [
+    "Classification of shapes",
+    "Specify color by sample"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [0, 1, 2, 3, 4, 5] -> [0, 1, 2, 4, 5]; 36 cells changed.",
+    "Training pair 2: 16x16 -> 16x16; colors [0, 1, 2, 3, 5] -> [0, 1, 2, 5]; 28 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 2, 3, 5, 7] -> [0, 2, 5, 7]; 15 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

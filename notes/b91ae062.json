@@ -1,0 +1,20 @@
+{
+  "title": "Scale by color count",
+  "summary": "Scale by color count. This is the training-inferred `scale_by_color_count` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `scale_by_color_count`: scale by color count"
+  ],
+  "concepts": [
+    "scale",
+    "color",
+    "count"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 9x9; colors [0, 6, 8, 9] -> [0, 6, 8, 9]; output dimensions changed.",
+    "Training pair 2: 3x3 -> 6x6; colors [0, 1, 4] -> [0, 1, 4]; output dimensions changed.",
+    "Training pair 3: 3x3 -> 9x9; colors [0, 2, 3, 7] -> [0, 2, 3, 7]; output dimensions changed.",
+    "Training pair 4: 3x3 -> 12x12; colors [0, 2, 3, 4, 8] -> [0, 2, 3, 4, 8]; output dimensions changed.",
+    "Training pair 5: 3x3 -> 6x6; colors [0, 6, 7] -> [0, 6, 7]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

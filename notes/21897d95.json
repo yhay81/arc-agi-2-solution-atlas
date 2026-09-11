@@ -1,0 +1,25 @@
+{
+  "title": "Pass the color to the next block at the T-shape and rotate at the L-shape.",
+  "summary": "Repaint the next section where the protruding end of the T is facing. If the center is blue (1), use the original color of the section with the T, and if it is other than blue, use the center color. Erase the T and L characters and turn the entire board 90 degrees clockwise if the 9 L shape is ┌, and 90 degrees counterclockwise if it is ┐. If there is no L shape, do not turn. These two types of L-shaped rules matched all provided examples.",
+  "steps": [
+    "Look for the T-shape made up of three blue arms and the center, and read the direction of one square sticking out from the horizontal bar. Determine the T-shape with the blue center first, and do not mix the arms of separate T-shapes that are adjacent to each other.",
+    "Using the two diagonally neighboring colors on the protruding side of the T as clues, restore the original compartment color and erase the T. The L-shape consisting of 5 squares of 9 (two sides of length 3 share a corner) is also erased with the surrounding area color.",
+    "Divide the board from which the symbol has been erased into sections of the same color that connect top, bottom, left and right. Proceed in the direction protruding from the center of each T, and target the first section you enter after exiting the current section.",
+    "If the center of the T is blue (1), transfer the color of the section where the T was originally located to the target section. Otherwise, paint the target section with the center color of the T. All instructions are applied simultaneously based on the pre-repaint lot color.",
+    "If the L-shape of 9 is made up of the top and left sides, the board will be rotated 90 degrees clockwise, and if it is made up of the top and right sides, the board will be rotated 90 degrees counterclockwise. If there is no L shape, keep the orientation."
+  ],
+  "concepts": [
+    "T direction",
+    "Instructions to adjacent plots",
+    "Branching by center color",
+    "Pass the original color at the same time",
+    "Rotation instructions using L-shape"
+  ],
+  "observations": [
+    "Training pair 1: 16x12 -> 12x16; colors [0, 1, 3, 4, 6, 7, 8, 9] -> [0, 3, 7]; output dimensions changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [1, 3, 5, 6, 7, 8, 9] -> [3, 6, 7, 8, 9]; 100 cells changed.",
+    "Training pair 3: 14x9 -> 9x14; colors [1, 3, 4, 5, 6, 7, 8, 9] -> [3, 4, 5, 6, 7, 8]; output dimensions changed.",
+    "Training pair 4: 10x10 -> 10x10; colors [1, 2, 3, 4, 6] -> [2, 3, 6]; 100 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

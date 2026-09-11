@@ -1,0 +1,20 @@
+{
+  "title": "Scale a scene by its palette size and mark the center block's corners",
+  "summary": "Scale a scene by its palette size and mark the center block's corners. ARC scenes in this family contain one solid 2x2 object surrounded by colored regions. Every source cell is enlarged by the number of non-zero colors. The four diagonally outward cells adjacent to that object are drawn as color-2 diagonals in the enlarged grid (only the corners that fit inside the source canvas are used). This is the training-inferred `expand_center_rectangle_with_corner_diagonals` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `expand_center_rectangle_with_corner_diagonals`: scale a scene by its palette size and mark the center block's corners"
+  ],
+  "concepts": [
+    "expand",
+    "center",
+    "rectangle",
+    "corner",
+    "diagonals"
+  ],
+  "observations": [
+    "Training pair 1: 5x5 -> 15x15; colors [0, 4, 6, 7] -> [0, 2, 4, 6, 7]; output dimensions changed.",
+    "Training pair 2: 5x5 -> 10x10; colors [0, 3, 8] -> [0, 2, 3, 8]; output dimensions changed.",
+    "Training pair 3: 5x5 -> 20x20; colors [0, 1, 3, 4, 9] -> [0, 1, 2, 3, 4, 9]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

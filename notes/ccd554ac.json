@@ -1,0 +1,22 @@
+{
+  "title": "Tile the input height times vertically and width times horizontally",
+  "summary": "Creates an output with the number of rows twice the height and the number of columns twice the width of the input, and periodically repeats the original grid in the remainder coordinates.",
+  "steps": [
+    "Measure the height and width of the input",
+    "Prepare the output as height² x width²",
+    "Duplicate each cell from the periodic position on the original board"
+  ],
+  "concepts": [
+    "periodic tiles",
+    "Expand"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 9x9; colors [0, 8] -> [0, 8]; output dimensions changed.",
+    "Training pair 2: 2x2 -> 4x4; colors [0, 1] -> [0, 1]; output dimensions changed.",
+    "Training pair 3: 2x2 -> 4x4; colors [0, 3] -> [0, 3]; output dimensions changed.",
+    "Training pair 4: 4x4 -> 16x16; colors [0, 2] -> [0, 2]; output dimensions changed.",
+    "Training pair 5: 3x3 -> 9x9; colors [0, 2] -> [0, 2]; output dimensions changed.",
+    "Training pair 6: 4x4 -> 16x16; colors [0, 7] -> [0, 7]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

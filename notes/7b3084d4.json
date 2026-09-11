@@ -1,0 +1,21 @@
+{
+  "title": "Take out the separated parts and find the length of the sides of the completed square from the total number of cells.",
+  "summary": "Take out the separated parts and find the length of the sides of the completed square from the total number of cells. Turn each part 90 degrees, but do not flip it over. Find a way to make a square with no gaps or overlaps, and the gray mark is in the upper left corner. Also make sure that the arrangement is unique.",
+  "steps": [
+    "Take out the separated parts and find the length of the sides of the completed square from the total number of cells.",
+    "Turn each part 90 degrees, but do not flip it over.",
+    "Find a way to create a square with no gaps or overlaps, and the gray mark is in the upper left corner.",
+    "Also make sure that the arrangement is unique."
+  ],
+  "concepts": [
+    "all over",
+    "exploration",
+    "rotation and reflection"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 6x6; colors [0, 3, 4, 5, 7, 9] -> [3, 4, 5, 7, 9]; output dimensions changed.",
+    "Training pair 2: 20x20 -> 10x10; colors [0, 2, 3, 5, 6, 7] -> [2, 3, 5, 6, 7]; output dimensions changed.",
+    "Training pair 3: 20x20 -> 4x4; colors [0, 2, 5, 6, 7, 8] -> [2, 5, 6, 7, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

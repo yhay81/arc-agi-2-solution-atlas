@@ -1,0 +1,19 @@
+{
+  "title": "The large arrangement is also lined up in the same shape as the small red shape.",
+  "summary": "Large arrangements are also lined up in the same shape as the small red shapes. Restore the shapes hidden in green and turn one square in each small shape light blue that corresponds to the overall placement position.",
+  "steps": [
+    "The large arrangement is also lined up in the same shape as the small red shape.",
+    "Restore the shapes hidden in green and make one square in each small shape light blue that corresponds to the overall placement position."
+  ],
+  "concepts": [
+    "Figure self-referencing",
+    "Layout diagram",
+    "Copy"
+  ],
+  "observations": [
+    "Training pair 1: 11x11 -> 11x11; colors [0, 2, 3] -> [0, 2, 8]; 37 cells changed.",
+    "Training pair 2: 19x19 -> 19x19; colors [0, 2, 3] -> [0, 2, 8]; 84 cells changed.",
+    "Training pair 3: 11x11 -> 11x11; colors [0, 2, 3] -> [0, 2, 8]; 37 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

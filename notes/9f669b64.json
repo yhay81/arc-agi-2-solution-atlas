@@ -1,0 +1,20 @@
+{
+  "title": "Use the small rectangle in the center of the three colors as a bullet, and send it to the edge in the direction away from the turret.",
+  "summary": "Use the small rectangle in the center of the three colors as a bullet and send it to the edge, away from the turret. Divide the middle rectangle into two at the center of the bullet, and push each half of the width of the bullet horizontally.",
+  "steps": [
+    "Use the small rectangle in the center of the three colors as a bullet, and send it to the edge in the direction away from the turret.",
+    "Divide the middle rectangle in half at the center of the bullet and push it half the width of the bullet to the side."
+  ],
+  "concepts": [
+    "firing",
+    "Go straight",
+    "division",
+    "conservation of quantity"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [3, 7, 8, 9] -> [3, 7, 8, 9]; 16 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [1, 6, 7, 8] -> [1, 6, 7, 8]; 22 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [1, 2, 4, 7] -> [1, 2, 4, 7]; 10 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

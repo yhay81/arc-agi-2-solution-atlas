@@ -1,0 +1,23 @@
+{
+  "title": "Divide the board into four equal parts",
+  "summary": "Divide the board into 4 equal parts. The number of non-black cells in the top left is the height of the output, and the number of non-black cells in the top right is the width. Use the bottom right as a pattern tile, and line up the tiles by filling in the black holes with the colors of each cell in the bottom left. Prints only the specified height and width range.",
+  "steps": [
+    "Divide the board into four equal parts",
+    "Set the number of non-black cells in the top left as the output height, and the number of non-black cells in the top right as the width.",
+    "Use the bottom right as a pattern tile and line up the tiles by filling the black holes with the colors of each cell in the bottom left.",
+    "Print only the specified height and width range"
+  ],
+  "concepts": [
+    "tiles",
+    "Procession compatible",
+    "Deficiency completion"
+  ],
+  "observations": [
+    "Training pair 1: 8x8 -> 16x4; colors [0, 1, 3, 5, 6] -> [5, 6]; output dimensions changed.",
+    "Training pair 2: 8x8 -> 16x16; colors [0, 1, 4, 5, 6, 8] -> [1, 4, 5]; output dimensions changed.",
+    "Training pair 3: 16x16 -> 10x10; colors [0, 1, 4, 6, 8] -> [1, 6, 8]; output dimensions changed.",
+    "Training pair 4: 8x8 -> 4x4; colors [0, 2, 4, 5] -> [2, 5]; output dimensions changed.",
+    "Training pair 5: 8x8 -> 3x4; colors [0, 1, 4, 6, 8] -> [1, 6]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

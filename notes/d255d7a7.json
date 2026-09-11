@@ -1,0 +1,20 @@
+{
+  "title": "Move the U-shape at the end of the long black stick to the opposite end of the stick without changing direction.",
+  "summary": "Move the U-shape at the end of the long black stick to the opposite end of the stick without changing direction. Carry the brown color in the U-shape with you. The stick disappears, leaving the brown color on the outside intact.",
+  "steps": [
+    "Move the U-shape at the end of the long black stick to the opposite end of the stick without changing direction.",
+    "Carry the brown color inside the U-shape as well.",
+    "The stick disappears, leaving the brown color on the outside as is."
+  ],
+  "concepts": [
+    "compression",
+    "end signal",
+    "direction"
+  ],
+  "observations": [
+    "Training pair 1: 14x14 -> 14x14; colors [0, 7, 9] -> [0, 7, 9]; 71 cells changed.",
+    "Training pair 2: 8x8 -> 8x8; colors [0, 7, 9] -> [0, 7, 9]; 35 cells changed.",
+    "Training pair 3: 16x16 -> 16x16; colors [0, 7, 9] -> [0, 7, 9]; 78 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

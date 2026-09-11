@@ -1,0 +1,20 @@
+{
+  "title": "Leave the horizontal reference line and maintain the color, horizontal position, and width of each vertical bar.",
+  "summary": "Leave the horizontal reference line and maintain the color, horizontal position, and width of each vertical bar. Arrange the heights of the bars in descending order of height, assign them in order starting from the left bar, and redraw them centering on the reference line. If the height is even, the top side will be one square longer.",
+  "steps": [
+    "Leave the horizontal reference line and maintain the color, horizontal position, and width of each vertical bar.",
+    "Arrange the heights of the bars in descending order, assign them in order starting from the left bar, and redraw them centering on the reference line.",
+    "If the height is an even number, the top side will be one square longer."
+  ],
+  "concepts": [
+    "sort",
+    "height",
+    "reference line"
+  ],
+  "observations": [
+    "Training pair 1: 13x13 -> 13x13; colors [1, 2, 5, 6, 7, 8] -> [1, 2, 5, 6, 7, 8]; 16 cells changed.",
+    "Training pair 2: 15x15 -> 15x15; colors [1, 4, 5, 6, 7, 8, 9] -> [1, 4, 5, 6, 7, 8, 9]; 12 cells changed.",
+    "Training pair 3: 7x7 -> 7x7; colors [1, 4, 6, 7, 8] -> [1, 4, 6, 7, 8]; 4 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

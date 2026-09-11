@@ -1,0 +1,17 @@
+{
+  "title": "Reflect the grid from left to right",
+  "summary": "Reflect the grid from left to right. This is the training-inferred `flip_lr` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `flip_lr`: reflect the grid from left to right"
+  ],
+  "concepts": [
+    "flip",
+    "lr"
+  ],
+  "observations": [
+    "Training pair 1: 7x7 -> 7x7; colors [1, 2, 6, 7] -> [1, 2, 6, 7]; 28 cells changed.",
+    "Training pair 2: 4x4 -> 4x4; colors [1, 2, 6, 7] -> [1, 2, 6, 7]; 14 cells changed.",
+    "Training pair 3: 6x6 -> 6x6; colors [1, 2, 6, 7] -> [1, 2, 6, 7]; 30 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

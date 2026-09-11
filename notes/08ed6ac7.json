@@ -1,0 +1,21 @@
+{
+  "title": "Recolor connected objects in a stable geometric order",
+  "summary": "Recolor connected objects in a stable geometric order. This is the training-inferred `recolor_components_ordered` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `recolor_components_ordered`: recolor connected objects in a stable geometric order"
+  ],
+  "concepts": [
+    "recolor",
+    "components",
+    "ordered"
+  ],
+  "observations": [
+    "Training pair 1: 9x9 -> 9x9; colors [0, 5] -> [0, 1, 2, 3, 4]; 19 cells changed.",
+    "Training pair 2: 9x9 -> 9x9; colors [0, 5] -> [0, 1, 2, 3, 4]; 26 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "ordering rule: top_left",
+    "color sequence: 1 x 2 x 3 x 4"
+  ]
+}

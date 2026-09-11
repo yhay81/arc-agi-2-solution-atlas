@@ -1,0 +1,19 @@
+{
+  "title": "Copy the color of the intersection to the flower-shaped hole (under consideration)",
+  "summary": "Divide rows and columns into 5 squares using the top left as a reference, and read the colored instructions at the intersections of the grid. Don't skip reading the light blue instructions. Fill in the black flower-shaped hole in the 4x4 at the bottom right of the instructions with the color of the instructions. Return the indicated intersections to black, and keep the light blue outline surrounding the flower and other areas.",
+  "steps": [
+    "Divide rows and columns into 5 squares using the top left as a reference, and read the colored instructions at the intersections of the grid. Don't skip reading the light blue instructions.",
+    "Fill in the black flower-shaped hole in the 4x4 at the bottom right of the instructions with the color of the instructions.",
+    "Return the indicated intersections to black, and keep the light blue outline surrounding the flower and other areas."
+  ],
+  "concepts": [
+    "periodic lattice",
+    "signal",
+    "filling the hole"
+  ],
+  "observations": [
+    "Training pair 1: 16x21 -> 16x21; colors [0, 4, 8] -> [0, 4, 8]; 26 cells changed.",
+    "Training pair 2: 16x16 -> 16x16; colors [0, 1, 4, 7, 8] -> [0, 1, 4, 7, 8]; 39 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

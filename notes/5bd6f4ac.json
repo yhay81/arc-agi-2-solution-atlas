@@ -1,0 +1,23 @@
+{
+  "title": "Crop the grid at the specified row, column, height, and width",
+  "summary": "Crop the grid at the specified row, column, height, and width. This is the training-inferred `crop_at` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `crop_at`: crop the grid at the specified row, column, height, and width"
+  ],
+  "concepts": [
+    "crop"
+  ],
+  "observations": [
+    "Training pair 1: 9x9 -> 3x3; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 4, 6, 9]; output dimensions changed.",
+    "Training pair 2: 9x9 -> 3x3; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 4, 5, 6, 8]; output dimensions changed.",
+    "Training pair 3: 9x9 -> 3x3; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 3, 4]; output dimensions changed.",
+    "Training pair 4: 9x9 -> 3x3; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 4, 7, 8, 9]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "starting row: 0",
+    "starting column: 6",
+    "height: 3",
+    "width: 3"
+  ]
+}

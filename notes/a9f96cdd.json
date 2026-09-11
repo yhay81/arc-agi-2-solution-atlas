@@ -1,0 +1,17 @@
+{
+  "title": "Replace red seeds with diagonal color markers",
+  "summary": "Erase every red seed and place direction-specific colors at its four diagonal neighbors.",
+  "steps": [
+    "Locate and erase each red cell.",
+    "Place green, magenta, azure, and orange at the northwest, northeast, southwest, and southeast diagonals respectively."
+  ],
+  "concepts": ["directional coloring", "diagonal expansion"],
+  "observations": [
+    "Training pair 1: 3x5 -> 3x5; colors [0, 2] -> [0, 7, 8]; 3 cells changed.",
+    "Training pair 2: 3x5 -> 3x5; colors [0, 2] -> [0, 3]; 2 cells changed.",
+    "Training pair 3: 3x5 -> 3x5; colors [0, 2] -> [0, 3, 6, 7, 8]; 5 cells changed.",
+    "Training pair 4: 3x5 -> 3x5; colors [0, 2] -> [0, 3, 6, 7, 8]; 5 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": ["diagonal colors NW=3, NE=6, SW=8, SE=7"]
+}

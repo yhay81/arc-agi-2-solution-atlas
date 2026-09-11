@@ -1,0 +1,17 @@
+{
+  "title": "Continuing to change from continuous scenes at each break",
+  "summary": "Continuing to change from continuous scenes at each break. The rod increases the length of the increment, the object moves by the same amount, and if the color advances, the same shape in the next row is replaced with a new color.",
+  "steps": [
+    "Continuing to change from continuous scenes at each break",
+    "The rod increases the length of the increment, the object moves by the same amount of movement, and if the color advances, the same shape in the next row is replaced with a new color."
+  ],
+  "concepts": [
+    "moving columns",
+    "gradual change"
+  ],
+  "observations": [
+    "Training pair 1: 15x13 -> 3x13; colors [0, 1, 5] -> [0, 1]; output dimensions changed.",
+    "Training pair 2: 15x13 -> 3x13; colors [0, 2, 3, 5] -> [0, 2, 3]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

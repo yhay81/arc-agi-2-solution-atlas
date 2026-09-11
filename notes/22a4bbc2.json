@@ -1,0 +1,20 @@
+{
+  "title": "Make every third lump red",
+  "summary": "Divide squares of the same color into clusters by connecting them vertically, horizontally, and horizontally. Arrange the blocks from top to bottom and from left to right if they are the same height. Make every third lump, the 1st, 4th, and 7th, red 2.",
+  "steps": [
+    "Divide squares of the same color into clusters by connecting them vertically, horizontally, and horizontally.",
+    "Arrange the blocks from top to bottom and from left to right if they are the same height.",
+    "Make every third lump, the 1st, 4th, and 7th, red 2."
+  ],
+  "concepts": [
+    "order",
+    "3 cycles"
+  ],
+  "observations": [
+    "Training pair 1: 20x4 -> 20x4; colors [0, 1, 8] -> [0, 1, 2, 8]; 26 cells changed.",
+    "Training pair 2: 19x5 -> 19x5; colors [0, 1, 8] -> [0, 1, 2, 8]; 16 cells changed.",
+    "Training pair 3: 14x5 -> 14x5; colors [0, 1, 8] -> [0, 1, 2, 8]; 12 cells changed.",
+    "Training pair 4: 15x3 -> 15x3; colors [0, 1, 8] -> [0, 1, 2, 8]; 15 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

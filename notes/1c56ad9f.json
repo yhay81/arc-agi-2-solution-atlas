@@ -1,0 +1,19 @@
+{
+  "title": "cyclically shift rows left and right",
+  "summary": "Using the last non-blank row as a reference, shift 0,−1,0,+1 columns according to the remainder of the row distance divided by 4.",
+  "steps": [
+    "Using the last non-blank row as a reference, shift 0,−1,0,+1 columns according to the remainder of the row distance divided by 4."
+  ],
+  "concepts": [
+    "Move by line",
+    "period",
+    "Bottom reference"
+  ],
+  "observations": [
+    "Training pair 1: 15x15 -> 15x15; colors [0, 5] -> [0, 5]; 22 cells changed.",
+    "Training pair 2: 15x14 -> 15x14; colors [0, 2] -> [0, 2]; 20 cells changed.",
+    "Training pair 3: 15x15 -> 15x15; colors [0, 8] -> [0, 8]; 32 cells changed.",
+    "Training pair 4: 13x14 -> 13x14; colors [0, 3] -> [0, 3]; 14 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

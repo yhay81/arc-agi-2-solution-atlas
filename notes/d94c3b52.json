@@ -1,0 +1,20 @@
+{
+  "title": "Find the same shape as the light blue sample and make the shape between orange",
+  "summary": "Read diagonally touching parts as one figure, and colorize all shapes that match the light blue sample only by parallel movement to light blue. Look for pairs where the centers of the light blue shapes are in the same row or column. Color another shape with a center between its centers orange.",
+  "steps": [
+    "Read diagonally touching parts as one figure, and colorize all shapes that match the light blue sample only by parallel movement to light blue.",
+    "Look for pairs where the centers of the light blue shapes are in the same row or column.",
+    "Color another shape with a center between its centers orange."
+  ],
+  "concepts": [
+    "Shape matching",
+    "between the end points",
+    "lattice relationships"
+  ],
+  "observations": [
+    "Training pair 1: 17x25 -> 17x25; colors [0, 1, 8] -> [0, 1, 7, 8]; 75 cells changed.",
+    "Training pair 2: 17x25 -> 17x25; colors [0, 1, 8] -> [0, 1, 7, 8]; 67 cells changed.",
+    "Training pair 3: 17x25 -> 17x25; colors [0, 1, 8] -> [0, 1, 7, 8]; 28 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Reverse the pattern and copy it",
+  "summary": "Normalize to the orientation and color correspondence selected in the learning example, and read the black rectangle as the destination. Cut out the background and non-black patterns, flip them horizontally and place them on a black destination of the same size. Leave the original pattern. Return the color and orientation to their original state.",
+  "steps": [
+    "Normalize to the orientation and color correspondence selected in the learning example, and read the black rectangle as the destination.",
+    "Cut out the background and non-black patterns, flip them horizontally and place them on a black destination of the same size. Leave the original pattern.",
+    "Return the color and orientation to their original state."
+  ],
+  "concepts": [
+    "reflection"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 12x12; colors [0, 1, 2, 4] -> [1, 2, 4]; 25 cells changed.",
+    "Training pair 2: 12x12 -> 12x12; colors [0, 1, 2, 3] -> [1, 2, 3]; 16 cells changed.",
+    "Training pair 3: 12x12 -> 12x12; colors [0, 1, 2, 3] -> [1, 2, 3]; 24 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

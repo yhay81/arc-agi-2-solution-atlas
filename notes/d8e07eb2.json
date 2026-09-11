@@ -1,0 +1,21 @@
+{
+  "title": "Select the section represented by the color sample above from the board and surround that section with green.",
+  "summary": "Select the section represented by the color sample above from the board and surround it with green. If the selection completes a given row, the top and bottom bands are green; otherwise, the bottom band is red. For official verification, the modified output of the current upstream will be used as is.",
+  "steps": [
+    "Select the section represented by the color sample above from the board and surround that section with green.",
+    "Make the top and bottom bands green if the selection completes a given row, otherwise make the bottom band red."
+  ],
+  "concepts": [
+    "number",
+    "Partition selection",
+    "emphasis"
+  ],
+  "observations": [
+    "Training pair 1: 30x22 -> 30x22; colors [0, 1, 2, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 202 cells changed.",
+    "Training pair 2: 30x22 -> 30x22; colors [0, 1, 2, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 202 cells changed.",
+    "Training pair 3: 30x22 -> 30x22; colors [0, 1, 2, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 118 cells changed.",
+    "Training pair 4: 30x22 -> 30x22; colors [0, 1, 2, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 119 cells changed.",
+    "Training pair 5: 30x22 -> 30x22; colors [0, 1, 2, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 99 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

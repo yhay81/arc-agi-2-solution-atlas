@@ -1,0 +1,16 @@
+{
+  "title": "Continue the cycle of the multicolored pattern below all the way to the top.",
+  "summary": "Repeat upward using the color pattern at the bottom as one cycle.",
+  "steps": [
+    "Repeat upward using the color pattern at the bottom as one cycle."
+  ],
+  "concepts": [
+    "vertical period",
+    "complement"
+  ],
+  "observations": [
+    "Training pair 1: 10x5 -> 10x5; colors [2, 5, 8] -> [2, 5, 8]; 9 cells changed.",
+    "Training pair 2: 10x7 -> 10x7; colors [2, 3, 9] -> [2, 3, 9]; 14 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

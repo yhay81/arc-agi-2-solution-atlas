@@ -1,0 +1,18 @@
+{
+  "title": "Stretch the color in 8 directions from the center of 3×3",
+  "summary": "Fix the center of the 3×3 color swatch. Stretch each color of the surrounding 8 squares to the end in the vertical, horizontal, and diagonal directions that the square points to.",
+  "steps": [
+    "Fix the center of the 3×3 color swatch.",
+    "Stretch each color of the surrounding 8 squares to the end in the vertical, horizontal, and diagonal directions that the square points to."
+  ],
+  "concepts": [
+    "Directional correspondence",
+    "radial extension"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 20x20; colors [0, 2, 4, 5, 6, 8] -> [0, 2, 4, 5, 6, 8]; 55 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 1, 2, 3, 6, 7] -> [0, 1, 2, 3, 6, 7]; 25 cells changed.",
+    "Training pair 3: 15x15 -> 15x15; colors [0, 2, 3, 5, 7, 8] -> [0, 2, 3, 5, 7, 8]; 38 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

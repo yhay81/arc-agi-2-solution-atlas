@@ -1,0 +1,19 @@
+{
+  "title": "Fill the interiors of axis-aligned rectangles given by four corners",
+  "summary": "Fill the interiors of axis-aligned rectangles given by four corners. This is the training-inferred `fill_rectangles_between_corners` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `fill_rectangles_between_corners`: fill the interiors of axis-aligned rectangles given by four corners"
+  ],
+  "concepts": [
+    "fill",
+    "rectangles",
+    "between",
+    "corners"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 4] -> [0, 2, 4]; 16 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 4] -> [0, 2, 4]; 1 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 4] -> [0, 2, 4]; 9 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "List colors by frequency after removing blank separators",
+  "summary": "List colors by frequency after removing blank separators. ARC scenes often encode a compact categorical matrix with zero rows and columns between its cells. After those bookkeeping lines are removed, the modal color is the cell background; the remaining colors are emitted from most to least frequent. This is the training-inferred `non_background_colors_by_frequency` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `non_background_colors_by_frequency`: list colors by frequency after removing blank separators"
+  ],
+  "concepts": [
+    "non",
+    "background",
+    "colors",
+    "frequency"
+  ],
+  "observations": [
+    "Training pair 1: 13x10 -> 3x1; colors [0, 1, 2, 3, 8] -> [1, 2, 8]; output dimensions changed.",
+    "Training pair 2: 13x16 -> 3x1; colors [0, 1, 2, 6, 8] -> [1, 2, 6]; output dimensions changed.",
+    "Training pair 3: 13x13 -> 3x1; colors [0, 1, 2, 4, 8] -> [2, 4, 8]; output dimensions changed.",
+    "Training pair 4: 13x13 -> 3x1; colors [0, 1, 2, 3, 4] -> [2, 3, 4]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

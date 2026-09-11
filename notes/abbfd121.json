@@ -1,0 +1,19 @@
+{
+  "title": "Restore background repeating pattern hidden by solid color rectangles",
+  "summary": "Restores the repeating pattern in the background hidden by solid rectangles. Cut out only the rectangular area with the largest area.",
+  "steps": [
+    "Restore background repeating pattern hidden by solid color rectangles",
+    "Cut out only the rectangular range with the largest area"
+  ],
+  "concepts": [
+    "Period estimation",
+    "defect repair",
+    "extraction"
+  ],
+  "observations": [
+    "Training pair 1: 22x20 -> 7x7; colors [1, 2, 3, 4, 5, 6] -> [3, 4, 5, 6]; output dimensions changed.",
+    "Training pair 2: 23x19 -> 10x10; colors [0, 1, 2, 3, 8] -> [0, 1, 2]; output dimensions changed.",
+    "Training pair 3: 21x22 -> 6x12; colors [2, 3, 4, 5, 6, 8] -> [4, 5, 6]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

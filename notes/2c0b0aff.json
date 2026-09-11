@@ -1,0 +1,20 @@
+{
+  "title": "Choose the frame with the most crosses",
+  "summary": "Count the positions where there is green on all sides of the green square as the center of the green cross. Compare the number of crosses inside each color frame. Select the frame with the largest number of frames and cut out a rectangle that includes its outer periphery.",
+  "steps": [
+    "Count the positions where there is green on all sides of the green square as the center of the green cross.",
+    "Compare the number of crosses inside each color frame.",
+    "Select the frame with the largest number of frames and cut out a rectangle that includes its outer periphery."
+  ],
+  "concepts": [
+    "number of objects",
+    "biggest selection"
+  ],
+  "observations": [
+    "Training pair 1: 24x24 -> 8x8; colors [0, 3, 8] -> [3, 8]; output dimensions changed.",
+    "Training pair 2: 24x24 -> 8x9; colors [0, 3, 8] -> [3, 8]; output dimensions changed.",
+    "Training pair 3: 22x20 -> 8x11; colors [0, 3, 8] -> [3, 8]; output dimensions changed.",
+    "Training pair 4: 23x23 -> 7x8; colors [0, 3, 8] -> [3, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

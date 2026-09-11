@@ -1,0 +1,18 @@
+{
+  "title": "Move the four colors in the center to the corresponding four corners",
+  "summary": "Find the range surrounding the four colored dots in the center and read where each dot is located: top left, top right, bottom left, bottom right. Erase the center point. Place one square of the color of each point in the four corners of the corresponding board.",
+  "steps": [
+    "Find the range surrounding the four colored dots in the center and read where each dot is located: top left, top right, bottom left, bottom right.",
+    "Erase the center point.",
+    "Place one square of the color of each point in the four corners of the corresponding board."
+  ],
+  "concepts": [
+    "relative position",
+    "Move to the four corners"
+  ],
+  "observations": [
+    "Training pair 1: 4x4 -> 4x4; colors [0, 3, 5, 6, 8] -> [0, 3, 5, 6, 8]; 8 cells changed.",
+    "Training pair 2: 4x4 -> 4x4; colors [0, 3, 4, 6, 7] -> [0, 3, 4, 6, 7]; 8 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

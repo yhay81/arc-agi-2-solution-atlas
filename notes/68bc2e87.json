@@ -1,0 +1,21 @@
+{
+  "title": "Sort the overlapping frames in color order from the back to the front",
+  "summary": "For each color frame, consider supplementing the original four sides from the minimum and maximum matrices of the same color. At an intersection where a different color is visible on the four sides of a certain frame, the frame of the visible color is determined to be in front. Find an order that does not contradict this context, and line up each color vertically, one square at a time, from the back to the front.",
+  "steps": [
+    "For each color frame, consider supplementing the original four sides from the minimum and maximum matrices of the same color.",
+    "At an intersection where a different color is visible on the four sides of a certain frame, the frame of the visible color is determined to be in front.",
+    "Find an order that does not contradict this context, and line up each color vertically, one square at a time, from the back to the front."
+  ],
+  "concepts": [
+    "shielding",
+    "context",
+    "order"
+  ],
+  "observations": [
+    "Training pair 1: 18x19 -> 5x1; colors [2, 3, 4, 5, 6, 8] -> [2, 3, 4, 5, 6]; output dimensions changed.",
+    "Training pair 2: 18x19 -> 5x1; colors [2, 3, 6, 7, 8, 9] -> [2, 3, 6, 7, 9]; output dimensions changed.",
+    "Training pair 3: 18x19 -> 4x1; colors [2, 3, 4, 6, 8] -> [2, 3, 4, 6]; output dimensions changed.",
+    "Training pair 4: 18x19 -> 4x1; colors [1, 2, 4, 6, 8] -> [1, 2, 4, 6]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

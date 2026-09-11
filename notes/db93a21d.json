@@ -1,0 +1,20 @@
+{
+  "title": "Frame each ``9`` rectangle and project its columns downward",
+  "summary": "Frame each ``9`` rectangle and project its columns downward. The input scenes contain separated solid rectangles of one object color on a zero background. For a rectangle of width ``w``, paint a frame of thickness ``w // 2`` around its outside (only in originally empty cells). Also project every occupied column to the bottom using color ``1`` in originally empty cells. Frames are painted last, so they interrupt the projected rays wherever the two constructions overlap. This is the training-inferred `frame_nines_and_project_downward` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `frame_nines_and_project_downward`: frame each ``9`` rectangle and project its columns downward"
+  ],
+  "concepts": [
+    "frame",
+    "nines",
+    "project",
+    "downward"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 20x20; colors [0, 9] -> [0, 1, 3, 9]; 191 cells changed.",
+    "Training pair 2: 15x15 -> 15x15; colors [0, 9] -> [0, 1, 3, 9]; 114 cells changed.",
+    "Training pair 3: 20x20 -> 20x20; colors [0, 9] -> [0, 1, 3, 9]; 236 cells changed.",
+    "Training pair 4: 10x10 -> 10x10; colors [0, 9] -> [0, 1, 3, 9]; 34 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

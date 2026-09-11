@@ -1,0 +1,18 @@
+{
+  "title": "Make a 5-column bar graph of the number of clusters for each color",
+  "summary": "Diagonal contacts are also counted as connections, and the number of ash, red, water, brown, and peach lumps is made into a bottom-aligned stick.",
+  "steps": [
+    "Diagonal contacts are also counted as connections, and the number of ash, red, water, brown, and peach lumps is made into a bottom-aligned stick."
+  ],
+  "concepts": [
+    "compression",
+    "sort",
+    "small diagram"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 2x5; colors [2, 6, 7, 9] -> [2, 6, 7, 9]; output dimensions changed.",
+    "Training pair 2: 10x10 -> 3x5; colors [5, 7, 8, 9] -> [5, 7, 8, 9]; output dimensions changed.",
+    "Training pair 3: 10x10 -> 5x5; colors [2, 5, 6, 7, 8, 9] -> [2, 5, 6, 7, 8, 9]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

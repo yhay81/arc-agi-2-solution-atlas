@@ -1,0 +1,24 @@
+{
+  "title": "Surround each object with a one-cell frame and fill its closed holes",
+  "summary": "Surround each object with a one-cell frame and fill its closed holes. Components are selected by color and four-neighbour connectivity. The bounding-box perimeter expanded by one cell is the object's outer box; background cells strictly enclosed by the component are its holes. Both constructions are relative to each component, so positions and object sizes do not become part of the solution. This is the training-inferred `frame_components_and_fill_holes` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `frame_components_and_fill_holes`: surround each object with a one-cell frame and fill its closed holes"
+  ],
+  "concepts": [
+    "frame",
+    "components",
+    "fill",
+    "holes"
+  ],
+  "observations": [
+    "Training pair 1: 15x15 -> 15x15; colors [6, 8] -> [3, 4, 6, 8]; 82 cells changed.",
+    "Training pair 2: 15x15 -> 15x15; colors [6, 8] -> [3, 4, 6, 8]; 60 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "object color: 6",
+    "background color: 8",
+    "frame color: 3",
+    "fill color: 4"
+  ]
+}

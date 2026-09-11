@@ -1,0 +1,19 @@
+{
+  "title": "Set the plain window of the yellow divided windows to the output size",
+  "summary": "Set the plain window of the yellow divided windows to the output size. Stretch and contract the pattern on the other window, keeping 3 squares from the edge, and draw it using the color of the plain window as the base.",
+  "steps": [
+    "Set the plain window of the yellow divided windows to the output size",
+    "Stretch and contract the pattern on the other window, keeping 3 squares from the edge, and draw the color of the plain window as the base."
+  ],
+  "concepts": [
+    "selection",
+    "mark completion",
+    "lattice"
+  ],
+  "observations": [
+    "Training pair 1: 20x24 -> 5x7; colors [1, 2, 3, 4, 5, 8] -> [3, 5]; output dimensions changed.",
+    "Training pair 2: 22x20 -> 20x12; colors [2, 3, 4, 7, 8] -> [7, 8]; output dimensions changed.",
+    "Training pair 3: 20x20 -> 10x6; colors [1, 2, 3, 4, 6, 8] -> [1, 6]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

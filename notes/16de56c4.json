@@ -1,0 +1,20 @@
+{
+  "title": "Determine the direction in which two points of the same color line up across the board, and extend each point line by that distance.",
+  "summary": "Determine the direction in which two dots of the same color line up across the board, and extend each dot line by that distance. If there is a point of a different color at the same interval at the extension destination, stop at that point and change the entire dot sequence to that color. Points that fall outside the interval are left as they are.",
+  "steps": [
+    "Determine the direction in which two points of the same color line up across the board, and extend each point line by that distance.",
+    "If there are points of a different color at the same interval at the extension destination, stop at that point and change the entire dot sequence to that color.",
+    "Leave points that fall outside the interval as they are"
+  ],
+  "concepts": [
+    "interval",
+    "Vertical and horizontal composition",
+    "regular extension"
+  ],
+  "observations": [
+    "Training pair 1: 12x9 -> 12x9; colors [0, 1, 3, 6, 8, 9] -> [0, 1, 3, 6]; 18 cells changed.",
+    "Training pair 2: 9x20 -> 9x20; colors [0, 1, 3, 4, 5, 9] -> [0, 1, 3, 4, 5, 9]; 13 cells changed.",
+    "Training pair 3: 7x15 -> 7x15; colors [0, 2, 6] -> [0, 2, 6]; 13 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

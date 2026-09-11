@@ -1,0 +1,21 @@
+{
+  "title": "Specify the color of large shapes with small symbols",
+  "summary": "Read the blue 1 symbol as a 3x3 binary pattern. If it's a cross, choose red 2, if it's a symbol with a horizontal bar at the top and a dot at the bottom, choose orange 7, and if it's an inverted symbol, choose green 3. Change all light blue 8 squares to the selected color and return the blue symbols to black.",
+  "steps": [
+    "Read the blue 1 symbol as a 3x3 binary pattern. If it's a cross, choose red 2, if it's a symbol with a horizontal bar at the top and a point at the bottom, choose orange 7, and if it's an inverted symbol, choose green 3.",
+    "Change all light blue 8 squares to the selected color and return the blue symbols to black."
+  ],
+  "concepts": [
+    "Meaning of symbols",
+    "Conditional branching by shape",
+    "color replacement"
+  ],
+  "observations": [
+    "Training pair 1: 14x14 -> 14x14; colors [0, 1, 8] -> [0, 7]; 37 cells changed.",
+    "Training pair 2: 14x14 -> 14x14; colors [0, 1, 8] -> [0, 3]; 20 cells changed.",
+    "Training pair 3: 14x14 -> 14x14; colors [0, 1, 8] -> [0, 2]; 29 cells changed.",
+    "Training pair 4: 14x14 -> 14x14; colors [0, 1, 8] -> [0, 3]; 22 cells changed.",
+    "Training pair 5: 14x14 -> 14x14; colors [0, 1, 8] -> [0, 2]; 35 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

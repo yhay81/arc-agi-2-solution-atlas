@@ -1,0 +1,20 @@
+{
+  "title": "Flip the left outline horizontally to create the right outline",
+  "summary": "Flip the left outline horizontally to create the right outline. The inversion axis is half a square to the right of the right end of the original shape. Paint only the space between the left and right outlines with the same color, and erase the outline itself.",
+  "steps": [
+    "Flip the left outline horizontally to create the right outline",
+    "The inversion axis is half a square to the right of the right end of the original shape.",
+    "Paint only the space between the left and right outlines with the same color, and erase the outline itself."
+  ],
+  "concepts": [
+    "reflection",
+    "closed area",
+    "internal extraction"
+  ],
+  "observations": [
+    "Training pair 1: 6x6 -> 6x6; colors [0, 8] -> [0, 8]; 21 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 7] -> [0, 7]; 18 cells changed.",
+    "Training pair 3: 6x6 -> 6x6; colors [0, 6] -> [0, 6]; 13 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Unwind a bent string that touches a straight line",
+  "summary": "Unravel the curved string that touches the straight line. Approach the landmark diagonally from the connection position, trace the shape of the landmark one cell away, and move away as a diagonal line in the opposite direction. Stop when the number of cells on the original string is used up or when the end of the board is reached.",
+  "steps": [
+    "Unwind a bent string that touches a straight line",
+    "Approach the landmark diagonally from the connection position, trace the shape of the landmark one cell away, and move away as a diagonal line in the opposite direction.",
+    "Stop when the number of cells in the original string is used up or when the end of the board is reached."
+  ],
+  "concepts": [
+    "route",
+    "contact",
+    "Movement in 8 directions"
+  ],
+  "observations": [
+    "Training pair 1: 7x7 -> 7x7; colors [0, 2, 4, 8] -> [0, 2, 4, 8]; 8 cells changed.",
+    "Training pair 2: 12x12 -> 12x12; colors [2, 3, 4, 7] -> [2, 3, 4, 7]; 8 cells changed.",
+    "Training pair 3: 17x17 -> 17x17; colors [1, 2, 7, 9] -> [1, 2, 7, 9]; 16 cells changed.",
+    "Training pair 4: 10x10 -> 10x10; colors [0, 3, 5, 8] -> [0, 3, 5, 8]; 9 cells changed.",
+    "Training pair 5: 9x9 -> 9x9; colors [0, 3, 6, 9] -> [0, 3, 6, 9]; 10 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

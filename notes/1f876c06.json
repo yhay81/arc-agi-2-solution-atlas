@@ -1,0 +1,18 @@
+{
+  "title": "Connect exactly two same-colored diagonal markers with a straight line",
+  "summary": "Connect exactly two same-colored diagonal markers with a straight line. This is the training-inferred `connect_diagonal_markers` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `connect_diagonal_markers`: connect exactly two same-colored diagonal markers with a straight line"
+  ],
+  "concepts": [
+    "connect",
+    "diagonal",
+    "markers"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 3, 7, 8, 9] -> [0, 3, 7, 8, 9]; 10 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 2, 4, 6] -> [0, 2, 4, 6]; 7 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 4, 6, 8, 9] -> [0, 4, 6, 8, 9]; 11 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

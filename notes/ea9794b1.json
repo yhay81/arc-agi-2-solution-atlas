@@ -1,0 +1,20 @@
+{
+  "title": "Stack the four sections in the order of top left, bottom right, bottom left, and top right, leaving the black part transparent and leaving the bottom color.",
+  "summary": "Stack the four sections in the order of top left, bottom right, bottom left, and top right, leaving the black part transparent and leaving the color underneath.",
+  "steps": [
+    "Stack the four sections in the order of top left, bottom right, bottom left, and top right, leaving the black part transparent and leaving the bottom color."
+  ],
+  "concepts": [
+    "superposition",
+    "preferred color"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 5x5; colors [0, 3, 4, 8, 9] -> [0, 3, 4, 8, 9]; output dimensions changed.",
+    "Training pair 2: 10x10 -> 5x5; colors [0, 3, 4, 8, 9] -> [0, 3, 4, 8, 9]; output dimensions changed.",
+    "Training pair 3: 10x10 -> 5x5; colors [0, 3, 4, 8, 9] -> [0, 3, 8, 9]; output dimensions changed.",
+    "Training pair 4: 10x10 -> 5x5; colors [0, 3, 4, 8, 9] -> [0, 3, 8, 9]; output dimensions changed.",
+    "Training pair 5: 10x10 -> 5x5; colors [0, 3, 4, 8, 9] -> [0, 3, 4, 8, 9]; output dimensions changed.",
+    "Training pair 6: 10x10 -> 5x5; colors [0, 3, 4, 8, 9] -> [0, 3, 4, 8, 9]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

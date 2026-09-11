@@ -1,0 +1,19 @@
+{
+  "title": "The gray point will go straight to the nearest black surface and will slide if there is only one slope direction that can be diagonally 90 degrees.",
+  "summary": "The gray point will go straight to the nearest black surface and will slide if there is only one slope direction that allows it to go diagonally 90 degrees. It will stop on the spot on a flat surface without a slope.",
+  "steps": [
+    "The gray point will go straight to the nearest black surface and will slide if there is only one slope direction that can be diagonally 90 degrees.",
+    "Stops on the spot on flat surfaces without slopes"
+  ],
+  "concepts": [
+    "projection",
+    "boundary",
+    "line"
+  ],
+  "observations": [
+    "Training pair 1: 10x6 -> 10x6; colors [0, 5, 7] -> [0, 5, 7]; 2 cells changed.",
+    "Training pair 2: 6x8 -> 6x8; colors [0, 5, 7] -> [0, 5, 7]; 2 cells changed.",
+    "Training pair 3: 12x8 -> 12x8; colors [0, 5, 7] -> [0, 5, 7]; 2 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

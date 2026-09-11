@@ -1,0 +1,18 @@
+{
+  "title": "Find the direction from adjacent, continuous lines of the same color, and align the length and end position of the center line with orthogonal translation to other parallel lines in the order of position.",
+  "summary": "Find the direction from adjacent, continuous lines of the same color, and align the length and end position of the center line with the other parallel lines by orthogonal translation in order of position.",
+  "steps": [
+    "Find the direction from adjacent, continuous lines of the same color, and align the length and end position of the center line with orthogonal translation to other parallel lines in the order of position."
+  ],
+  "concepts": [
+    "direction of the line",
+    "median",
+    "alignment"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [1, 2, 7, 9] -> [1, 2, 7, 9]; 12 cells changed.",
+    "Training pair 2: 16x16 -> 16x16; colors [3, 5, 7, 9] -> [3, 5, 7, 9]; 10 cells changed.",
+    "Training pair 3: 16x16 -> 16x16; colors [7, 8] -> [7, 8]; 5 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

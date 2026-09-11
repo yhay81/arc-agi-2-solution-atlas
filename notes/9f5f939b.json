@@ -1,0 +1,20 @@
+{
+  "title": "Make the center of the blue bars arranged at equal intervals in all four directions yellow",
+  "summary": "Find a cross arrangement with four blue sticks of length 2 lined up at equal distances from the same center in all directions. Make only the light blue square in the center yellow.",
+  "steps": [
+    "The light blue (8) square is the central candidate.",
+    "For a certain distance d, check to see if all 8 locations from the center to the top, bottom, left, and right of squares d and d+1 are blue (1).",
+    "Color only the center where all four bars have the same spacing yellow (4). Leave the blue bars and other background as is."
+  ],
+  "concepts": [
+    "Vertical and horizontal symmetry",
+    "evenly spaced",
+    "Mapping of the four bars"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [1, 8] -> [1, 4, 8]; 1 cells changed.",
+    "Training pair 2: 8x8 -> 8x8; colors [1, 8] -> [1, 4, 8]; 1 cells changed.",
+    "Training pair 3: 16x16 -> 16x16; colors [1, 8] -> [1, 4, 8]; 2 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

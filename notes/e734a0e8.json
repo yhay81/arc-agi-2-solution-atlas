@@ -1,0 +1,19 @@
+{
+  "title": "Replace points in grid with larger sample pattern",
+  "summary": "There are black dots in some sections of the grid, colored samples in one section, and the output increases to multiple sections.",
+  "steps": [
+    "Divide into grid sections and select samples with patterns other than dots.",
+    "Copy the sample to the area where the black dot is located, aligning it to the top left.",
+    "The original black dots are replaced with the copied pattern, and the partitions are kept."
+  ],
+  "concepts": [
+    "lattice",
+    "sample transcription",
+    "selection"
+  ],
+  "observations": [
+    "Training pair 1: 23x23 -> 23x23; colors [0, 7, 9] -> [0, 7, 9]; 45 cells changed.",
+    "Training pair 2: 11x11 -> 11x11; colors [0, 2, 7] -> [0, 2, 7]; 9 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

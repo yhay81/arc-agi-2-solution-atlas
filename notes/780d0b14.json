@@ -1,0 +1,20 @@
+{
+  "title": "Summarize each zero-separated panel by its sole non-zero color",
+  "summary": "Summarize each zero-separated panel by its sole non-zero color. This is the training-inferred `compress_zero_separated_panels_color` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `compress_zero_separated_panels_color`: summarize each zero-separated panel by its sole non-zero color"
+  ],
+  "concepts": [
+    "compress",
+    "zero",
+    "separated",
+    "panels",
+    "color"
+  ],
+  "observations": [
+    "Training pair 1: 18x22 -> 2x3; colors [0, 1, 2, 3, 4, 8] -> [1, 2, 3, 4, 8]; output dimensions changed.",
+    "Training pair 2: 20x20 -> 2x2; colors [0, 1, 6, 8] -> [1, 6, 8]; output dimensions changed.",
+    "Training pair 3: 23x17 -> 3x2; colors [0, 1, 2, 4, 6, 7, 8] -> [1, 2, 4, 6, 7, 8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Project bottom markers upward, stepping right around blockers",
+  "summary": "Project bottom markers upward, stepping right around blockers. Each bottom marker emits a vertical ray. A blocker is bypassed by adding one cell to the right on the row immediately below it, then continuing upward from that new column. A contiguous horizontal run of blockers is therefore bypassed by repeated one-cell steps. If the required bend is itself occupied, that ray terminates; other rays remain independent. This is the training-inferred `project_bottom_rays_around_blockers` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `project_bottom_rays_around_blockers`: project bottom markers upward, stepping right around blockers"
+  ],
+  "concepts": [
+    "project",
+    "bottom",
+    "rays",
+    "around",
+    "blockers"
+  ],
+  "observations": [
+    "Training pair 1: 13x14 -> 13x14; colors [0, 2, 5] -> [0, 2, 5]; 33 cells changed.",
+    "Training pair 2: 12x13 -> 12x13; colors [0, 2, 5] -> [0, 2, 5]; 34 cells changed.",
+    "Training pair 3: 13x15 -> 13x15; colors [0, 2, 5] -> [0, 2, 5]; 43 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Look for two unique dotted lines lined up at the same distance",
+  "summary": "Look for two uniquely colored dotted lines lined up at the same distance. The center of the two is the axis of the mirror, and the color of the side of the complex shape is reflected. Color the reflected shape the other dotted line.",
+  "steps": [
+    "Look for two unique dotted lines lined up at the same distance",
+    "The middle of the two is used as the axis of the mirror, and the color of the side of the complex shape is reflected.",
+    "The reflected shape is the color of the other dotted line."
+  ],
+  "concepts": [
+    "reflection",
+    "landmark",
+    "transcription"
+  ],
+  "observations": [
+    "Training pair 1: 22x22 -> 22x22; colors [2, 3, 8] -> [2, 3, 8]; 32 cells changed.",
+    "Training pair 2: 22x22 -> 22x22; colors [1, 2, 4] -> [1, 2, 4]; 38 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

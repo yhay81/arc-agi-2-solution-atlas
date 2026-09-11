@@ -1,0 +1,20 @@
+{
+  "title": "Drop each non-frame component onto the one-cell clearance above a frame",
+  "summary": "Drop each non-frame component onto the one-cell clearance above a frame. The bottom-touching color is a support/frame, while the most frequent remaining color is the empty background. Payload components fall vertically, independently, until the first frame cell in each occupied column (or the sparse bottom marker row) leaves the learned clearance. Components in the same column stack without changing their shape. This is the training-inferred `settle_payload_above_frame` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `settle_payload_above_frame`: drop each non-frame component onto the one-cell clearance above a frame"
+  ],
+  "concepts": [
+    "settle",
+    "payload",
+    "above",
+    "frame"
+  ],
+  "observations": [
+    "Training pair 1: 6x10 -> 6x10; colors [2, 7, 8] -> [2, 7, 8]; 4 cells changed.",
+    "Training pair 2: 4x9 -> 4x9; colors [2, 6, 7] -> [2, 6, 7]; 6 cells changed.",
+    "Training pair 3: 9x10 -> 9x10; colors [1, 4, 7] -> [1, 4, 7]; 22 cells changed.",
+    "Training pair 4: 6x7 -> 6x7; colors [5, 7, 9] -> [5, 7, 9]; 2 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

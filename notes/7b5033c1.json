@@ -1,0 +1,17 @@
+{
+  "title": "Trace a polygonal line from the edge across the differences in colors, and arrange the visited colors in a vertical line.",
+  "summary": "Trace a polygonal line from the edge across the different colors, and arrange the visited colors in a vertical line.",
+  "steps": [
+    "Trace a polygonal line from the edge across the differences in colors, and arrange the visited colors in a vertical line."
+  ],
+  "concepts": [
+    "Number of pieces",
+    "First appearance order",
+    "bar graph"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 22x1; colors [1, 2, 3, 4, 6, 8] -> [1, 2, 3, 4, 6]; output dimensions changed.",
+    "Training pair 2: 16x16 -> 24x1; colors [1, 2, 3, 8] -> [2, 3, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

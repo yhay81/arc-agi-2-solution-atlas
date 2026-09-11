@@ -1,0 +1,17 @@
+{
+  "title": "Connect opposite ends with yellow",
+  "summary": "Find the aperture with the red frame from the two gray centers, and change the black cells included in all the shortest paths between the apertures to yellow.",
+  "steps": [
+    "Find the aperture with the red frame from the two gray centers, and change the black cells included in all the shortest paths between the apertures to yellow."
+  ],
+  "concepts": [
+    "opposite ends",
+    "connection"
+  ],
+  "observations": [
+    "Training pair 1: 15x15 -> 15x15; colors [0, 2, 5] -> [0, 2, 4, 5]; 48 cells changed.",
+    "Training pair 2: 15x15 -> 15x15; colors [0, 2, 5] -> [0, 2, 4, 5]; 58 cells changed.",
+    "Training pair 3: 15x15 -> 15x15; colors [0, 2, 5] -> [0, 2, 4, 5]; 114 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

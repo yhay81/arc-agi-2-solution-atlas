@@ -1,0 +1,23 @@
+{
+  "title": "Connect consecutive aligned centers of one-cell hollow diamonds",
+  "summary": "Connect consecutive aligned centers of one-cell hollow diamonds. This is the training-inferred `connect_aligned_hollow_diamonds` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `connect_aligned_hollow_diamonds`: connect consecutive aligned centers of one-cell hollow diamonds"
+  ],
+  "concepts": [
+    "connect",
+    "aligned",
+    "hollow",
+    "diamonds"
+  ],
+  "observations": [
+    "Training pair 1: 14x16 -> 14x16; colors [0, 2] -> [0, 1, 2]; 7 cells changed.",
+    "Training pair 2: 10x15 -> 10x15; colors [0, 2] -> [0, 1, 2]; 5 cells changed.",
+    "Training pair 3: 12x15 -> 12x15; colors [0, 2] -> [0, 1, 2]; 12 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "shell color: 2",
+    "fill color: 1"
+  ]
+}

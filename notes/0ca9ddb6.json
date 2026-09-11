@@ -1,0 +1,18 @@
+{
+  "title": "Stamp the local patterns designated by marker colors 1 and 2",
+  "summary": "Stamp the local patterns designated by marker colors 1 and 2. This is the training-inferred `stamp_marker_patterns` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `stamp_marker_patterns`: stamp the local patterns designated by marker colors 1 and 2"
+  ],
+  "concepts": [
+    "stamp",
+    "marker",
+    "patterns"
+  ],
+  "observations": [
+    "Training pair 1: 9x9 -> 9x9; colors [0, 1, 2, 8] -> [0, 1, 2, 4, 7, 8]; 16 cells changed.",
+    "Training pair 2: 9x9 -> 9x9; colors [0, 1, 2] -> [0, 1, 2, 4, 7]; 8 cells changed.",
+    "Training pair 3: 9x9 -> 9x9; colors [0, 1, 2, 6] -> [0, 1, 2, 4, 6, 7]; 8 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

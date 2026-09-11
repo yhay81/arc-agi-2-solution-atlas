@@ -1,0 +1,21 @@
+{
+  "title": "Paint leaving a blank space inside the large black space.",
+  "summary": "Find a large rectangular black blank space.",
+  "steps": [
+    "Find a large rectangular black blank space.",
+    "Leave one space around the perimeter black.",
+    "Paint the remaining inner rectangle with light blue 8.",
+    "Don't touch the miscellaneous color schemes around you."
+  ],
+  "concepts": [
+    "free space",
+    "shrinking inward",
+    "margin"
+  ],
+  "observations": [
+    "Training pair 1: 15x15 -> 15x15; colors [0, 2] -> [0, 2, 8]; 4 cells changed.",
+    "Training pair 2: 19x19 -> 19x19; colors [0, 4, 5] -> [0, 4, 5, 8]; 12 cells changed.",
+    "Training pair 3: 16x16 -> 16x16; colors [0, 3] -> [0, 3, 8]; 8 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

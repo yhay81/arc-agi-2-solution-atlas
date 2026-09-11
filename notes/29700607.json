@@ -1,0 +1,19 @@
+{
+  "title": "Connect points of the same color with a right-angled polygonal line",
+  "summary": "Starting from the point of the color at the end, move toward the next landmark of that color.",
+  "steps": [
+    "Starting from the point of the color at the end, move toward the next landmark of that color.",
+    "Connect dots of the same color with a right-angled line, turning sideways when you reach the next landmark row.",
+    "If there is only one dot of the same color, extend it straight to the opposite end."
+  ],
+  "concepts": [
+    "follow the landmarks",
+    "right angle path"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 12x12; colors [0, 3, 5, 8] -> [0, 3, 5, 8]; 28 cells changed.",
+    "Training pair 2: 15x15 -> 15x15; colors [0, 3, 5, 6] -> [0, 3, 5, 6]; 30 cells changed.",
+    "Training pair 3: 11x11 -> 11x11; colors [0, 2, 4, 6] -> [0, 2, 4, 6]; 28 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

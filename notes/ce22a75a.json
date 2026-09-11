@@ -1,0 +1,15 @@
+{
+  "title": "Expand gray seeds into blue squares",
+  "summary": "Replace each gray seed and its eight neighboring cells with a solid blue 3x3 square.",
+  "steps": [
+    "Locate every gray seed.",
+    "Color its clipped 3x3 neighborhood blue."
+  ],
+  "concepts": ["neighborhood expansion", "square stamping"],
+  "observations": [
+    "Training pair 1: 9x9 -> 9x9; colors [0, 5] -> [0, 1]; 36 cells changed.",
+    "Training pair 2: 9x9 -> 9x9; colors [0, 5] -> [0, 1]; 27 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": ["3x3 fill color: blue 1"]
+}

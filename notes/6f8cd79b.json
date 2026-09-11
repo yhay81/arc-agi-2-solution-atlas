@@ -1,0 +1,14 @@
+{
+  "title": "Draw an azure border",
+  "summary": "Color the outermost row and column of the grid azure, leaving the interior black.",
+  "steps": ["Replace every cell on the grid perimeter with azure."],
+  "concepts": ["border", "perimeter"],
+  "observations": [
+    "Training pair 1: 5x4 -> 5x4; colors [0] -> [0, 8]; 14 cells changed.",
+    "Training pair 2: 4x3 -> 4x3; colors [0] -> [0, 8]; 10 cells changed.",
+    "Training pair 3: 5x6 -> 5x6; colors [0] -> [0, 8]; 18 cells changed.",
+    "Training pair 4: 3x3 -> 3x3; colors [0] -> [0, 8]; 8 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": ["perimeter color: azure 8"]
+}

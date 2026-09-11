@@ -1,0 +1,19 @@
+{
+  "title": "Arrange as many blue shapes as there are marks horizontally",
+  "summary": "Make sure to center the light blue sample and fit it into a 3x3 size, and repeat horizontally for the number of yellow dots 4.",
+  "steps": [
+    "Make sure to center the light blue sample and fit it into a 3x3 size, and repeat horizontally for the number of yellow dots 4."
+  ],
+  "concepts": [
+    "Copy by number",
+    "prototype"
+  ],
+  "observations": [
+    "Training pair 1: 9x9 -> 3x3; colors [0, 4, 8] -> [0, 8]; output dimensions changed.",
+    "Training pair 2: 9x9 -> 3x9; colors [0, 4, 8] -> [0, 8]; output dimensions changed.",
+    "Training pair 3: 9x9 -> 3x12; colors [0, 4, 8] -> [0, 8]; output dimensions changed.",
+    "Training pair 4: 9x9 -> 3x9; colors [0, 4, 8] -> [0, 8]; output dimensions changed.",
+    "Training pair 5: 9x9 -> 3x6; colors [0, 4, 8] -> [0, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Swap the shape and background color of paired windows",
+  "summary": "Read the windows separated by black dividers as left and right sets on each line. The shape of the right window is set as the background color of the right window and is copied to the left, and the shape of the left window is set as the background color of the left window and copied to the right. The background color of each window itself is preserved.",
+  "steps": [
+    "Read the windows separated by black dividers as left and right sets on each line.",
+    "The shape of the right window is set as the background color of the right window and is copied to the left, and the shape of the left window is set as the background color of the left window and copied to the right.",
+    "The background color of each window itself is preserved."
+  ],
+  "concepts": [
+    "Separation of shapes and colors",
+    "exchange",
+    "background color"
+  ],
+  "observations": [
+    "Training pair 1: 25x17 -> 25x17; colors [0, 1, 2, 3, 4, 6, 8] -> [0, 1, 2, 3, 4, 6]; 57 cells changed.",
+    "Training pair 2: 25x17 -> 25x17; colors [0, 1, 2, 3, 4, 8] -> [0, 2, 4, 8]; 59 cells changed.",
+    "Training pair 3: 18x17 -> 18x17; colors [0, 1, 2, 3, 4, 6, 8, 9] -> [0, 2, 3, 4, 8]; 70 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

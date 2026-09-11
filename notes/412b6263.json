@@ -1,0 +1,21 @@
+{
+  "title": "Divide the rotated diagram into two layers and surround it with a blue frame.",
+  "summary": "Turn the input 90 degrees to the left, line up two identical ones one above the other, and add a blue 1 outer frame and a partition.",
+  "steps": [
+    "Rotate the board 90 degrees counterclockwise.",
+    "Add a one square wide blue frame and make only the four corners of the frame 7.",
+    "Copy the same diagram one step further down.",
+    "The central horizontal frame is shared by two levels."
+  ],
+  "concepts": [
+    "rotation",
+    "Reproduction",
+    "frame"
+  ],
+  "observations": [
+    "Training pair 1: 9x6 -> 15x11; colors [5, 7, 9] -> [1, 5, 7, 9]; output dimensions changed.",
+    "Training pair 2: 7x8 -> 19x9; colors [5, 7, 9] -> [1, 5, 7, 9]; output dimensions changed.",
+    "Training pair 3: 5x5 -> 13x7; colors [5, 7, 9] -> [1, 5, 7, 9]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

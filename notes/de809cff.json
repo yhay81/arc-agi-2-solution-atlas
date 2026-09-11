@@ -1,0 +1,19 @@
+{
+  "title": "If three or more of the top, bottom, left, and right of the black square are the same color, change that to light blue.",
+  "summary": "If three or more of the top, bottom, left, and right sides of a black square are the same color, change that to light blue. Among the 8 surrounding squares, the squares that were originally black or the majority color are changed to the other color. If three or more of the remaining color squares on the top, bottom, left, or right are opposite colors, repeat the operation four times to change them to the opposite color, and if three or more are black, change them back to black.",
+  "steps": [
+    "If three or more of the top, bottom, left, and right of the black square are the same color, change that to light blue.",
+    "Change the squares that were originally black or the majority color out of the surrounding 8 squares to the other color.",
+    "If 3 or more of the remaining color squares on the top, bottom, left and right are opposite colors, repeat the operation 4 times to change them to the opposite color, and if 3 or more are black, change them back to black."
+  ],
+  "concepts": [
+    "Hollow",
+    "edging",
+    "Noise removal"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 20x20; colors [0, 3, 4] -> [0, 3, 4, 8]; 129 cells changed.",
+    "Training pair 2: 20x20 -> 20x20; colors [0, 1, 2] -> [0, 1, 2, 8]; 108 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

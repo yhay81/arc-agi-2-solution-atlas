@@ -1,0 +1,21 @@
+{
+  "title": "Shrink the section with a hole to one square and flip it left and right.",
+  "summary": "Shrink the large color block with the noise hole to one square of the representative color, and finally flip the left and right sides.",
+  "steps": [
+    "Examine the rectangle that encloses the entire foreground.",
+    "Find the partition boundaries of rows and columns from the changes in adjacent non-zero colors.",
+    "Shrink each section to one square with multiple colors other than 0.",
+    "Reverse each row of the contracted table and flip it horizontally."
+  ],
+  "concepts": [
+    "partition abstraction",
+    "multiple colors",
+    "Left/right flip"
+  ],
+  "observations": [
+    "Training pair 1: 20x14 -> 3x3; colors [0, 1, 2, 3, 4, 6, 8] -> [1, 2, 3, 4, 6, 8]; output dimensions changed.",
+    "Training pair 2: 22x11 -> 2x2; colors [0, 3, 5, 6, 8] -> [3, 5, 6, 8]; output dimensions changed.",
+    "Training pair 3: 18x19 -> 2x3; colors [0, 1, 2, 3, 4, 6, 8] -> [1, 2, 3, 4, 6, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

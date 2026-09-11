@@ -1,0 +1,18 @@
+{
+  "title": "Stack parts of the same width on top of each other without shifting them horizontally.",
+  "summary": "Stack parts of the same width on top of each other without shifting them horizontally. Interlock the contours tightly without rotating, using all parts and making sure the outer edges of the stack are flat.",
+  "steps": [
+    "Stack parts of the same width on top of each other without shifting them horizontally.",
+    "Engage the contours tightly without rotating, using all parts and ensuring that the outer edges of the stack are flat."
+  ],
+  "concepts": [
+    "alignment",
+    "Classification by size",
+    "piled up"
+  ],
+  "observations": [
+    "Training pair 1: 30x30 -> 30x30; colors [0, 1, 2, 3, 4, 6, 8] -> [0, 1, 2, 3, 4, 6, 8]; 111 cells changed.",
+    "Training pair 2: 30x30 -> 30x30; colors [0, 1, 2, 3, 4] -> [0, 1, 2, 3, 4]; 54 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

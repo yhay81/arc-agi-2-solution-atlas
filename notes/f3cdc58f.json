@@ -1,0 +1,20 @@
+{
+  "title": "Arrange the numbers of the four colors into sticks",
+  "summary": "Count the number of blue 1, red 2, green 3, and yellow 4. Prepare a black board of the same size as the original. Stack the number of colors in that order from the bottom in the 4 columns from the left.",
+  "steps": [
+    "Count the number of blue 1, red 2, green 3, and yellow 4.",
+    "Prepare a black board of the same size as the original.",
+    "Stack the number of colors in that order from the bottom in the 4 columns from the left."
+  ],
+  "concepts": [
+    "Number of pieces",
+    "bar graph",
+    "Bottom alignment"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 1, 2, 3, 4] -> [0, 1, 2, 3, 4]; 44 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 1, 2, 3, 4] -> [0, 1, 2, 3, 4]; 30 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 1, 2, 3, 4] -> [0, 1, 2, 3, 4]; 23 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

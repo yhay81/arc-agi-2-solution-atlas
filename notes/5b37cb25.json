@@ -1,0 +1,20 @@
+{
+  "title": "Add border color to the edges of large areas of color",
+  "summary": "Normalize to the orientation and color correspondence determined in the learning example, and read the colors on the four sides as instructions for up, down, left, and right. Look for the tip of a large shape indentation where three directions (top, bottom, left and right) are the shape, and the remaining direction is the background. Draw a 5-square cross centered one square in the opening direction from the tip, using the color of the corresponding side. Restore color and orientation.",
+  "steps": [
+    "Normalize to the correspondence between orientation and color determined in the learning example, and read the colors on the four sides as instructions for up, down, left, and right.",
+    "Look for the tip of a large shape indentation where three directions (top, bottom, left and right) are the shape, and the remaining direction is the background.",
+    "Draw a 5-square cross centered one square in the opening direction from the tip, using the color of the corresponding side.",
+    "Restore color and orientation."
+  ],
+  "concepts": [
+    "extreme value",
+    "direction",
+    "Edge legend"
+  ],
+  "observations": [
+    "Training pair 1: 30x30 -> 30x30; colors [0, 1, 2, 3, 4, 6, 8] -> [0, 1, 2, 3, 4, 6, 8]; 35 cells changed.",
+    "Training pair 2: 30x30 -> 30x30; colors [0, 1, 2, 3, 4, 6, 8] -> [0, 1, 2, 3, 4, 6, 8]; 15 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

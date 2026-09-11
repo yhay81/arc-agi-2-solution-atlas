@@ -1,0 +1,20 @@
+{
+  "title": "Scale an outside color key into the canvas marked by four corners",
+  "summary": "Scale an outside color key into the canvas marked by four corners. This is the training-inferred `expand_key_inside_corner_canvas` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `expand_key_inside_corner_canvas`: scale an outside color key into the canvas marked by four corners"
+  ],
+  "concepts": [
+    "expand",
+    "key",
+    "inside",
+    "corner",
+    "canvas"
+  ],
+  "observations": [
+    "Training pair 1: 17x18 -> 7x7; colors [0, 2, 3, 4, 8] -> [0, 2, 3, 4, 8]; output dimensions changed.",
+    "Training pair 2: 17x17 -> 9x14; colors [0, 1, 2, 3, 4] -> [0, 1, 2, 3, 4]; output dimensions changed.",
+    "Training pair 3: 16x18 -> 11x11; colors [0, 1, 2, 3, 4] -> [0, 1, 2, 3, 4]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Decode glyphs into color blocks",
+  "summary": "Classify each 3-by-3 glyph by simple geometric features and replace its section with a solid color block.",
+  "steps": [
+    "Split the grid into three 3-by-3 glyphs.",
+    "Classify center dot, outline, diagonal, top line, or bottom line and paint the corresponding block."
+  ],
+  "concepts": [
+    "glyph",
+    "classification",
+    "color"
+  ],
+  "observations": [
+    "Training pair 1 identifies top line, outline, and bottom line.",
+    "Training pair 2 identifies diagonal and center-dot glyphs.",
+    "Training pair 3 confirms position-independent decoding.",
+    "Training pair 4 confirms all repeated glyph classes."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "Dot maps to 4, outline to 3, diagonal to 9, top line to 6, and bottom line to 1."
+  ],
+  "limitations": "Only the five demonstrated glyph classes are defined."
+}

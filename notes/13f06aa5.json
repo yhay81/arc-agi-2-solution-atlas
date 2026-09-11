@@ -1,0 +1,19 @@
+{
+  "title": "Project oriented singleton glyphs onto the corresponding canvas edge",
+  "summary": "Project oriented singleton glyphs onto the corresponding canvas edge. A singleton is embedded in one of four two-cell-wide glyphs: a horizontal glyph with the singleton at its top/bottom, or a vertical glyph with it at its left/right. The long axis reaches the nearest edge and the short-axis arm continues at period two. Multiple glyphs share the edge interval; their unclaimed top corners are the canonical zero color. The rule is deliberately structural: singleton colors and the repeated body color are learned from the grid, and no task-specific values are encoded here. This is the training-inferred `project_edge_marker_glyphs` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `project_edge_marker_glyphs`: project oriented singleton glyphs onto the corresponding canvas edge"
+  ],
+  "concepts": [
+    "project",
+    "edge",
+    "marker",
+    "glyphs"
+  ],
+  "observations": [
+    "Training pair 1: 12x14 -> 12x14; colors [1, 2, 4, 8] -> [0, 1, 2, 4, 8]; 31 cells changed.",
+    "Training pair 2: 11x13 -> 11x13; colors [1, 2, 3, 8] -> [0, 1, 2, 3, 8]; 25 cells changed.",
+    "Training pair 3: 15x12 -> 15x12; colors [1, 3, 6] -> [1, 3, 6]; 17 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

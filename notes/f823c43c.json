@@ -1,0 +1,18 @@
+{
+  "title": "Return the purple noise to a periodic pattern",
+  "summary": "Exclude purple 6 as a defect and search for vertical and horizontal cycles that do not contradict the visible color. Using a period that uniquely determines the color of each defective position with the minimum area, only the purple color is restored.",
+  "steps": [
+    "Exclude purple 6 as a defect and search for vertical and horizontal cycles that do not contradict the visible color.",
+    "Using a period that uniquely determines the color of each defective position with the minimum area, only the purple color is restored."
+  ],
+  "concepts": [
+    "period",
+    "Noise removal",
+    "complement"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 12x12; colors [6, 7, 8] -> [7, 8]; 23 cells changed.",
+    "Training pair 2: 15x19 -> 15x19; colors [4, 6, 8] -> [4, 8]; 51 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

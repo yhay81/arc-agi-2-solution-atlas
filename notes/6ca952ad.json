@@ -1,0 +1,19 @@
+{
+  "title": "Drop only objects that are four squares or larger down.",
+  "summary": "A candidate solution method that if the number of cells of each color object is 4 or more, it is dropped to the bottom row as it is, and if it is 3 or less, it is left in its original position.",
+  "steps": [
+    "Separate connected objects other than orange 7 and count the number of squares.",
+    "Move objects of 4 or more without changing the row position until they touch the bottom edge",
+    "Hold small objects of 1 to 3 squares"
+  ],
+  "concepts": [
+    "size threshold",
+    "selective gravity"
+  ],
+  "observations": [
+    "Training pair 1: 7x7 -> 7x7; colors [6, 7] -> [6, 7]; 8 cells changed.",
+    "Training pair 2: 15x15 -> 15x15; colors [5, 7] -> [5, 7]; 38 cells changed.",
+    "Training pair 3: 16x16 -> 16x16; colors [1, 7] -> [1, 7]; 50 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Make the large black rectangle red first",
+  "summary": "List all black rectangles with height and width greater than or equal to 2. Select rectangles in descending order of area, and skip rectangles that overlap with already selected rectangles. Change all squares of the selected rectangle to red 2.",
+  "steps": [
+    "List all black rectangles with height and width greater than or equal to 2.",
+    "Select rectangles in descending order of area, and skip rectangles that overlap with already selected rectangles.",
+    "Change all squares of the selected rectangle to red 2."
+  ],
+  "concepts": [
+    "local pattern",
+    "rectangle selection"
+  ],
+  "observations": [
+    "Training pair 1: 18x18 -> 18x18; colors [0, 5] -> [0, 2, 5]; 24 cells changed.",
+    "Training pair 2: 18x18 -> 18x18; colors [0, 5] -> [0, 2, 5]; 22 cells changed.",
+    "Training pair 3: 18x18 -> 18x18; colors [0, 5] -> [0, 2, 5]; 16 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

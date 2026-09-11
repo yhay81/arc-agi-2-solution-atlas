@@ -1,0 +1,17 @@
+{
+  "title": "Paint only 3×3 black around the blue dot",
+  "summary": "In a 3x3 grid centered around each blue point, change only the black squares to blue and keep the other colors.",
+  "steps": [
+    "In a 3x3 grid centered around each blue point, change only the black squares to blue and keep the other colors."
+  ],
+  "concepts": [
+    "Local expansion",
+    "color protection"
+  ],
+  "observations": [
+    "Training pair 1: 15x15 -> 15x15; colors [0, 1, 2, 3, 4, 6] -> [0, 1, 2, 3, 4, 6]; 30 cells changed.",
+    "Training pair 2: 15x15 -> 15x15; colors [0, 1, 2, 3, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 5, 6, 7, 8, 9]; 25 cells changed.",
+    "Training pair 3: 15x15 -> 15x15; colors [0, 1, 2, 3, 4, 7, 8, 9] -> [0, 1, 2, 3, 4, 7, 8, 9]; 37 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

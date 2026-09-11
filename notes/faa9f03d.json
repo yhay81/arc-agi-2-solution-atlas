@@ -1,0 +1,21 @@
+{
+  "title": "At the end marked in yellow, erase the short branch in front and extend the line to the opposite side.",
+  "summary": "At the end marked yellow, erase the short branch in front and extend the line to the opposite side. Correct the red corner to the color of the connecting line and connect the breaks of the same color line. At intersections, check whether the branch is vertical or horizontal to avoid accidentally connecting different parallel lines.",
+  "steps": [
+    "At the end marked in yellow, erase the short branch in front and extend the line to the opposite side.",
+    "Correct the red corner to the color of the connecting line and connect the breaks of the same color line.",
+    "At intersections, check whether it is a vertical or horizontal branch to avoid accidentally connecting different parallel lines."
+  ],
+  "concepts": [
+    "line completion",
+    "Noise removal",
+    "propagation"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 12x12; colors [0, 1, 2, 3] -> [0, 1, 3]; 9 cells changed.",
+    "Training pair 2: 12x12 -> 12x12; colors [0, 3, 4, 7] -> [0, 3, 7]; 14 cells changed.",
+    "Training pair 3: 12x12 -> 12x12; colors [0, 1, 2, 3, 6, 7] -> [0, 1, 3, 6, 7]; 12 cells changed.",
+    "Training pair 4: 12x12 -> 12x12; colors [0, 1, 4, 6] -> [0, 1, 6]; 15 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

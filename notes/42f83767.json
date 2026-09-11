@@ -1,0 +1,21 @@
+{
+  "title": "Replace each cell of the small diagram with a glyph using the color legend",
+  "summary": "Match the color samples and gray glyphs on the top in the same order from the left. Expand each color square in the small diagram below to the corresponding glyph drawn in that color.",
+  "steps": [
+    "Read the small colored blocks at the top from the left. Also take out the gray (5) glyph lined up in the same upper row from the left and match the color and glyph shape in order.",
+    "Cut out the colored subfigure below the legend, excluding the margins.",
+    "Replace each square of the small diagram with the corresponding glyph. The gray part of the glyph should be the color of that square, and the black hole inside the glyph should remain black.",
+    "Arrange the glyphs in the same matrix order as the small picture without any gaps."
+  ],
+  "concepts": [
+    "Legend mapping",
+    "Replacing color with shape",
+    "Expanding the grid"
+  ],
+  "observations": [
+    "Training pair 1: 15x20 -> 15x15; colors [0, 1, 2, 3, 5] -> [0, 1, 2, 3]; output dimensions changed.",
+    "Training pair 2: 15x17 -> 20x20; colors [0, 2, 4, 5] -> [0, 2, 4]; output dimensions changed.",
+    "Training pair 3: 15x17 -> 30x30; colors [0, 1, 5, 8] -> [0, 1, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

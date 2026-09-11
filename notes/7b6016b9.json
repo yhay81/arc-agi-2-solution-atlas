@@ -1,0 +1,22 @@
+{
+  "title": "Fill enclosed color",
+  "summary": "Fill enclosed color. This is the training-inferred `fill_enclosed_color` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `fill_enclosed_color`: fill enclosed color"
+  ],
+  "concepts": [
+    "fill",
+    "enclosed",
+    "color"
+  ],
+  "observations": [
+    "Training pair 1: 22x25 -> 22x25; colors [0, 1] -> [1, 2, 3]; 448 cells changed.",
+    "Training pair 2: 23x23 -> 23x23; colors [0, 8] -> [2, 3, 8]; 421 cells changed.",
+    "Training pair 3: 24x21 -> 24x21; colors [0, 4] -> [2, 3, 4]; 393 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "color: 2",
+    "final color map: 0 -> 3, 1 -> 1, 2 -> 2, 8 -> 8, 4 -> 4"
+  ]
+}

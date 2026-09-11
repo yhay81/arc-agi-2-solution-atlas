@@ -1,0 +1,20 @@
+{
+  "title": "Select the red 2×2 square closest to each blue point using Chebyshev distance",
+  "summary": "Choose the red 2x2 square closest to each blue point using Chebyshev distance. Slide only the blue dots that are aligned with the same row or column width to one square outside the side of the square, and do not move the diagonal blue dots. If there is a tie in distance, choose the square to the left from the top.",
+  "steps": [
+    "Select the red 2×2 square closest to each blue point using Chebyshev distance",
+    "Slide only the blue dots that are aligned with the same row or column width to one square outside the side of the square, and do not move the diagonal blue dots.",
+    "If the distance is tied, choose the square to the left from the top."
+  ],
+  "concepts": [
+    "Attraction",
+    "Correspondence on a straight line",
+    "Nearest distance"
+  ],
+  "observations": [
+    "Training pair 1: 30x30 -> 30x30; colors [0, 1, 2] -> [0, 1, 2]; 14 cells changed.",
+    "Training pair 2: 30x30 -> 30x30; colors [0, 1, 2] -> [0, 1, 2]; 24 cells changed.",
+    "Training pair 3: 10x13 -> 10x13; colors [0, 1, 2] -> [0, 1, 2]; 4 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

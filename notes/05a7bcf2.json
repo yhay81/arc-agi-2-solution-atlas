@@ -1,0 +1,20 @@
+{
+  "title": "Push the red stick across the boundary",
+  "summary": "Change the yellow 4 object to green 3. Check whether the light blue 8 border is vertical or horizontal. Draw a yellow straight line from the object to the boundary. Beyond the border, extend the light blue line. When the line hits the red 2 stick, keep the length of the stick and push it to the opposite end, filling in the gap with light blue.",
+  "steps": [
+    "Change the yellow 4 object to green 3. Check whether the light blue 8 border is vertical or horizontal.",
+    "Draw a yellow straight line from the object to the boundary. Beyond the border, extend the light blue line.",
+    "When the line hits the red 2 stick, keep the length of the stick and push it to the opposite end, filling in the gap with light blue."
+  ],
+  "concepts": [
+    "crossing the border",
+    "color switching",
+    "extruding objects"
+  ],
+  "observations": [
+    "Training pair 1: 30x30 -> 30x30; colors [0, 2, 4, 8] -> [0, 2, 3, 4, 8]; 208 cells changed.",
+    "Training pair 2: 30x30 -> 30x30; colors [0, 2, 4, 8] -> [0, 2, 3, 4, 8]; 247 cells changed.",
+    "Training pair 3: 30x30 -> 30x30; colors [0, 2, 4, 8] -> [0, 2, 3, 4, 8]; 285 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Flow the light blue line down from the edge near the red obstacle.",
+  "summary": "Proceed down each light blue line extending from the top. If the next square is a red bar, move horizontally to the outside of the nearest edge directly above it. If the distance is the same, use the right side. From there, extend it downward again and draw to the bottom edge of the board. Keep the red stick.",
+  "steps": [
+    "Proceed down each light blue line extending from the top.",
+    "If the next square is a red bar, move horizontally to the outside of the nearest edge directly above it. If the distance is the same, use the right side.",
+    "From there, extend it downward again and draw to the bottom edge of the board. Keep the red stick."
+  ],
+  "concepts": [
+    "falling",
+    "bypassing obstacles",
+    "near end"
+  ],
+  "observations": [
+    "Training pair 1: 10x12 -> 10x12; colors [0, 2, 8] -> [0, 2, 8]; 27 cells changed.",
+    "Training pair 2: 10x12 -> 10x12; colors [0, 2, 8] -> [0, 2, 8]; 38 cells changed.",
+    "Training pair 3: 10x12 -> 10x12; colors [0, 2, 8] -> [0, 2, 8]; 33 cells changed.",
+    "Training pair 4: 9x10 -> 9x10; colors [0, 2, 8] -> [0, 2, 8]; 20 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

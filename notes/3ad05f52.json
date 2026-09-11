@@ -1,0 +1,19 @@
+{
+  "title": "For each building with light blue walls, paint the area you can pass through from the colored room.",
+  "summary": "For each building with light blue walls, paint the area that you can pass through from the colored room. The exits of two separate buildings are connected by a rectangular passageway with the two points as diagonals.",
+  "steps": [
+    "For each building with light blue walls, paint the area you can pass through from the colored room.",
+    "The exits of two separate buildings are connected by a rectangular passage with the two points as diagonals."
+  ],
+  "concepts": [
+    "room connections",
+    "route",
+    "area filling"
+  ],
+  "observations": [
+    "Training pair 1: 22x26 -> 22x26; colors [0, 6, 8] -> [0, 6, 8]; 84 cells changed.",
+    "Training pair 2: 29x24 -> 29x24; colors [0, 4, 8] -> [0, 4, 8]; 200 cells changed.",
+    "Training pair 3: 24x28 -> 24x28; colors [0, 3, 8] -> [0, 3, 8]; 122 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

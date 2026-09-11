@@ -1,0 +1,23 @@
+{
+  "title": "Encode the number of blue cells in red",
+  "summary": "Count the blue cells and render that many red cells along a fixed four-position path in a 3x3 output.",
+  "steps": [
+    "Count all non-black input cells.",
+    "Fill the top row from left to right, then the center cell, until the count is represented."
+  ],
+  "concepts": ["counting", "compact encoding"],
+  "observations": [
+    "Training pair 1: 3x3 -> 3x3; colors [0, 1] -> [0, 2]; 6 cells changed.",
+    "Training pair 2: 3x3 -> 3x3; colors [0, 1] -> [0, 2]; 4 cells changed.",
+    "Training pair 3: 3x3 -> 3x3; colors [0, 1] -> [0, 2]; 4 cells changed.",
+    "Training pair 4: 3x3 -> 3x3; colors [0, 1] -> [0, 2]; 6 cells changed.",
+    "Training pair 5: 3x3 -> 3x3; colors [0, 1] -> [0, 2]; 7 cells changed.",
+    "Training pair 6: 3x3 -> 3x3; colors [0, 1] -> [0, 2]; 5 cells changed.",
+    "Training pair 7: 3x3 -> 3x3; colors [0, 1] -> [0, 2]; 3 cells changed.",
+    "Training pair 8: 3x3 -> 3x3; colors [0, 1] -> [0, 2]; 3 cells changed.",
+    "Training pair 9: 3x3 -> 3x3; colors [0, 1] -> [0, 2]; 2 cells changed.",
+    "Training pair 10: 3x3 -> 3x3; colors [0, 1] -> [0, 2]; 2 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": ["fill order: upper-left, upper-center, upper-right, center"]
+}

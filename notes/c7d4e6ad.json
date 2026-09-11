@@ -1,0 +1,18 @@
+{
+  "title": "Recolor each gray cell from its row's leading color key",
+  "summary": "For each gray cell, read the left edge of the same row as a color indication and replace it with that color. Other cells are retained.",
+  "steps": [
+    "Look for gray cells",
+    "Get the first color of the same row",
+    "Replace only gray with that color"
+  ],
+  "concepts": [
+    "row key",
+    "color replacement"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 4, 5, 6, 9] -> [0, 4, 6, 9]; 13 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 2, 5, 8] -> [0, 2, 8]; 12 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

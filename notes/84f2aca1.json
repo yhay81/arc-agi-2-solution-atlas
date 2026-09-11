@@ -1,0 +1,24 @@
+{
+  "title": "Fill enclosed holes according to area",
+  "summary": "Find background regions fully enclosed by colored outlines and fill them according to their area.",
+  "steps": [
+    "Label connected background regions and discard those touching the grid border.",
+    "Fill area-one holes with color 5 and area-two holes with color 7."
+  ],
+  "concepts": [
+    "enclosure",
+    "area",
+    "fill"
+  ],
+  "observations": [
+    "Training pair 1 maps a two-cell hole to color 7.",
+    "Training pair 2 maps a one-cell hole to color 5.",
+    "Training pair 3 confirms both mappings across several outline colors.",
+    "Training pair 4 confirms that only enclosed area matters."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "Hole area 1 maps to color 5; hole area 2 maps to color 7."
+  ],
+  "limitations": "The examples define mappings only for hole areas one and two."
+}

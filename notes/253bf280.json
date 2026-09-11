@@ -1,0 +1,27 @@
+{
+  "title": "Fill intervals bounded by nonzero cells",
+  "summary": "Fill spans bounded by non-zero cells with a chosen color. This is the training-inferred `fill_between_nonzero` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `fill_between_nonzero`: fill intervals bounded by nonzero cells"
+  ],
+  "concepts": [
+    "fill",
+    "between",
+    "nonzero"
+  ],
+  "observations": [
+    "Training pair 1: 9x6 -> 9x6; colors [0, 8] -> [0, 3, 8]; 5 cells changed.",
+    "Training pair 2: 3x3 -> 3x3; colors [0, 8] -> [0, 8]; 0 cells changed.",
+    "Training pair 3: 7x6 -> 7x6; colors [0, 8] -> [0, 3, 8]; 4 cells changed.",
+    "Training pair 4: 12x11 -> 12x11; colors [0, 8] -> [0, 3, 8]; 10 cells changed.",
+    "Training pair 5: 12x11 -> 12x11; colors [0, 8] -> [0, 3, 8]; 11 cells changed.",
+    "Training pair 6: 5x6 -> 5x6; colors [0, 8] -> [0, 8]; 0 cells changed.",
+    "Training pair 7: 7x13 -> 7x13; colors [0, 8] -> [0, 3, 8]; 6 cells changed.",
+    "Training pair 8: 10x11 -> 10x11; colors [0, 8] -> [0, 3, 8]; 8 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "color: 1",
+    "final color map: 0 -> 0, 8 -> 8, 1 -> 3"
+  ]
+}

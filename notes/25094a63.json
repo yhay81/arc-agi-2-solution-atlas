@@ -1,0 +1,16 @@
+{
+  "title": "Make a solid rectangle yellow",
+  "summary": "Search all rectangles that are filled with the same color and have a height and width of 3 or more, and select them in order of area without duplication and set them to yellow 4.",
+  "steps": [
+    "Search all rectangles that are filled with the same color and have a height and width of 3 or more, and select them in order of area without duplication and set them to yellow 4."
+  ],
+  "concepts": [
+    "rectangle detection",
+    "Repaint by area"
+  ],
+  "observations": [
+    "Training pair 1: 30x30 -> 30x30; colors [1, 2, 3, 6, 8] -> [1, 2, 3, 4, 6, 8]; 87 cells changed.",
+    "Training pair 2: 30x30 -> 30x30; colors [1, 2, 3, 6, 8] -> [1, 2, 3, 4, 6, 8]; 145 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

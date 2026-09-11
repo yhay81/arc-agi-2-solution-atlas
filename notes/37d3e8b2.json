@@ -1,0 +1,19 @@
+{
+  "title": "Repaint the light blue shape depending on the number of holes",
+  "summary": "Divide the light blue 8 shape including diagonal contact. Count the black areas trapped inside each shape. If there are 1, 2, 3, and 4 holes, make them 1 blue, 2 red, 3 green, and 7 orange.",
+  "steps": [
+    "Divide the light blue 8 shape including diagonal contact.",
+    "Count the black areas trapped inside each shape.",
+    "If there are 1, 2, 3, and 4 holes, make them 1 blue, 2 red, 3 green, and 7 orange."
+  ],
+  "concepts": [
+    "number of holes",
+    "Correspondence between numbers and colors"
+  ],
+  "observations": [
+    "Training pair 1: 17x17 -> 17x17; colors [0, 8] -> [0, 1, 2, 3, 7]; 120 cells changed.",
+    "Training pair 2: 19x17 -> 19x17; colors [0, 8] -> [0, 1, 2, 3]; 95 cells changed.",
+    "Training pair 3: 17x16 -> 17x16; colors [0, 8] -> [0, 3, 7]; 112 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

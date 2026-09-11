@@ -1,0 +1,17 @@
+{
+  "title": "Find a grid matrix with each black room as one unit, and make the entire outer room red and the inner room green.",
+  "summary": "Determine the grid matrix with each black room as one unit, and make the entire outer room red and the inner room green.",
+  "steps": [
+    "Find a grid matrix with each black room as one unit, and make the entire outer room red and the inner room green."
+  ],
+  "concepts": [
+    "contour",
+    "Color coding inside and outside"
+  ],
+  "observations": [
+    "Training pair 1: 23x23 -> 23x23; colors [0, 1] -> [1, 2, 3]; 121 cells changed.",
+    "Training pair 2: 19x19 -> 19x19; colors [0, 1] -> [1, 2, 3]; 144 cells changed.",
+    "Training pair 3: 25x25 -> 25x25; colors [0, 1] -> [1, 2, 3]; 324 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Highlight connected green cells",
+  "summary": "Recolor every green cell that has an orthogonally adjacent green neighbor to azure, leaving isolated green cells unchanged.",
+  "steps": [
+    "Inspect the four orthogonal neighbors of every green cell.",
+    "Recolor the cell azure when at least one neighbor is green."
+  ],
+  "concepts": ["orthogonal adjacency", "component highlighting"],
+  "observations": [
+    "Training pair 1: 4x4 -> 4x4; colors [0, 3] -> [0, 3, 8]; 8 cells changed.",
+    "Training pair 2: 4x6 -> 4x6; colors [0, 3] -> [0, 3, 8]; 4 cells changed.",
+    "Training pair 3: 5x6 -> 5x6; colors [0, 3] -> [0, 3, 8]; 7 cells changed.",
+    "Training pair 4: 3x3 -> 3x3; colors [0, 3] -> [0, 3, 8]; 3 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": ["green 3 becomes azure 8 when it has a green orthogonal neighbor"]
+}

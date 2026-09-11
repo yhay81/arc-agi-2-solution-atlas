@@ -1,0 +1,18 @@
+{
+  "title": "Complete the sequence of black holes advancing one by one.",
+  "summary": "Reads the input as n×n partitions separated by 1-square black partitions. Each section itself is also an n×n square. Fills the entire area with the original foreground color. In the i-th square from the top and j-th square from the left, the i-th square from the top and j-th square from the left in that square will be black.",
+  "steps": [
+    "Reads the input as n×n partitions separated by 1-square black partitions. Each section itself is also an n×n square.",
+    "Fills the entire area with the original foreground color.",
+    "In the i-th square from the top and j-th square from the left, the i-th square from the top and j-th square from the left in that square will be black."
+  ],
+  "concepts": [
+    "sequence of positions",
+    "Deficiency completion"
+  ],
+  "observations": [
+    "Training pair 1: 5x5 -> 5x5; colors [0, 8] -> [0, 8]; 6 cells changed.",
+    "Training pair 2: 11x11 -> 11x11; colors [0, 2] -> [0, 2]; 32 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

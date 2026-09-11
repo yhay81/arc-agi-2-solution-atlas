@@ -1,0 +1,24 @@
+{
+  "title": "Send a beam to the opposite side of the missing corner and change the direction and color with a reflector.",
+  "summary": "From a 3-square L-shape with one square missing from a 2×2, extend a diagonal beam of light in the opposite direction of the missing corner. Reverse the direction in front of the reflector and continue drawing from that point using the color of the reflector.",
+  "steps": [
+    "Find clusters of the same color that are connected vertically and horizontally. The L-shaped 2×2 with one square missing is used as the firing source, and the other blocks are treated as reflectors.",
+    "Starting from the corner diagonal to the missing corner of the L, draw one square of the color of the L in a 45 degree diagonal direction away from the missing corner.",
+    "When the light rays touch the reflector from above and below, the light beam reverses the vertical direction, and when it touches the reflector from the left and right, the horizontal direction is reversed. Switch from the reflection point to the color of the reflector.",
+    "Proceed to the edge of the board. The same rules apply when reflections are repeated. The original source and reflector remain.",
+    "Draws rays from multiple sources overlapping each other. The drawn light ray itself is not used as a reflector."
+  ],
+  "concepts": [
+    "L-shaped direction",
+    "diagonal straight line",
+    "reflection",
+    "color delivery",
+    "multiple rays"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 20x20; colors [0, 1, 2, 3, 5] -> [0, 1, 2, 3, 5]; 56 cells changed.",
+    "Training pair 2: 18x18 -> 18x18; colors [0, 2, 4, 5, 6] -> [0, 2, 4, 5, 6]; 28 cells changed.",
+    "Training pair 3: 20x20 -> 20x20; colors [0, 1, 2, 4, 5, 7] -> [0, 1, 2, 4, 5, 7]; 26 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

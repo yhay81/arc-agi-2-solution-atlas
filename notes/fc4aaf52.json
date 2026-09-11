@@ -1,0 +1,18 @@
+{
+  "title": "Swap the two payload colors and slide the upper half rightward",
+  "summary": "Swap the two payload colors and slide the upper half rightward. The non-background drawing consists of two vertically adjoining copies of a motif. Exchange the two payload colors, then move the upper part one column at a time to the right, retaining the last position at which the two parts are still one eight-connected drawing. The first disconnected position is rejected, so the resulting copies just cease to touch. This is the training-inferred `swap_colors_and_separate_halves` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `swap_colors_and_separate_halves`: swap the two payload colors and slide the upper half rightward"
+  ],
+  "concepts": [
+    "swap",
+    "colors",
+    "separate",
+    "halves"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [0, 5, 8] -> [0, 5, 8]; 32 cells changed.",
+    "Training pair 2: 16x16 -> 16x16; colors [1, 2, 8] -> [1, 2, 8]; 36 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Complete partial L-shaped components",
+  "summary": "Complete partial L-shaped components. This is the training-inferred `complete_l_components` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `complete_l_components`: complete partial L-shaped components"
+  ],
+  "concepts": [
+    "complete",
+    "l",
+    "components"
+  ],
+  "observations": [
+    "Training pair 1: 7x7 -> 7x7; colors [0, 8] -> [0, 1, 8]; 3 cells changed.",
+    "Training pair 2: 7x7 -> 7x7; colors [0, 8] -> [0, 1, 8]; 2 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

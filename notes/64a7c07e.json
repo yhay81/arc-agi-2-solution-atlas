@@ -1,0 +1,17 @@
+{
+  "title": "Move to the right according to the width of the shape",
+  "summary": "Divide squares of the same color other than black into shapes by connecting them in 8 directions, including diagonally. Find the width of each shape and move it to the right by that width. Return the original position to black.",
+  "steps": [
+    "Divide squares of the same color other than black into shapes by connecting them in 8 directions, including diagonally.",
+    "Find the width of each shape and move it to the right by that width. Return the original position to black."
+  ],
+  "concepts": [
+    "Convert dimensions to travel amounts"
+  ],
+  "observations": [
+    "Training pair 1: 5x5 -> 5x5; colors [0, 8] -> [0, 8]; 8 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 8] -> [0, 8]; 18 cells changed.",
+    "Training pair 3: 12x12 -> 12x12; colors [0, 8] -> [0, 8]; 32 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

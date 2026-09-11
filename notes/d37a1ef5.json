@@ -1,0 +1,19 @@
+{
+  "title": "Fill the red frame except for the gray pattern's bounding box",
+  "summary": "Targeting the inside of the red frame, protecting only the minimum rectangular area surrounding the gray pattern and painting the rest in red.",
+  "steps": [
+    "Find a circumscribed rectangle with a red frame and gray pattern",
+    "Scan inside the red frame",
+    "Make only the area outside the circumscribing rectangle of the gray pattern red"
+  ],
+  "concepts": [
+    "Filling inside the frame",
+    "protected area"
+  ],
+  "observations": [
+    "Training pair 1: 12x11 -> 12x11; colors [0, 2, 5] -> [0, 2, 5]; 32 cells changed.",
+    "Training pair 2: 8x11 -> 8x11; colors [0, 2, 5] -> [0, 2, 5]; 16 cells changed.",
+    "Training pair 3: 12x12 -> 12x12; colors [0, 2, 5] -> [0, 2, 5]; 36 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

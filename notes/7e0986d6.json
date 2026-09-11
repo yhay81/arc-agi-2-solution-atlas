@@ -1,0 +1,18 @@
+{
+  "title": "remove points that disturb the rectangle",
+  "summary": "Separate everything other than black by connecting the top, bottom, left, and right of the same color. A block of less than 4 squares is considered a noise candidate, and a block of 4 squares or more is a rectangle candidate. If the adjacent areas above, below, left, or right of the noise candidate touch two or more squares of one rectangular candidate, the color is changed to that of that rectangle. Noise that is not sufficiently close to any rectangle is returned to black.",
+  "steps": [
+    "Separate everything other than black by connecting the top, bottom, left, and right of the same color. A block of less than 4 squares is considered a noise candidate, and a block of 4 squares or more is a rectangle candidate.",
+    "If the adjacent areas above, below, left, or right of the noise candidate touch two or more squares of one rectangular candidate, the color is changed to that of that rectangle.",
+    "Noise that is not sufficiently close to any rectangle is returned to black."
+  ],
+  "concepts": [
+    "noise removal",
+    "shape restoration"
+  ],
+  "observations": [
+    "Training pair 1: 13x16 -> 13x16; colors [0, 1, 2] -> [0, 2]; 12 cells changed.",
+    "Training pair 2: 13x14 -> 13x14; colors [0, 3, 8] -> [0, 3]; 16 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

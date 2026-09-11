@@ -1,0 +1,20 @@
+{
+  "title": "Read the horizontal frames as a chronological animation",
+  "summary": "Read the horizontal frames as chronological animation. The amount of movement of the small figure in each frame is calculated from the previous two frames, and the next frame is created by moving in the same direction and distance from the last frame. In the example where a square of the same color as the frame falls down, the amount of fall will be increased by one space for the last step.",
+  "steps": [
+    "Read the horizontal frames as a chronological animation",
+    "Find the amount of movement of the small figure in each frame from the previous two frames, and create the next frame moved in the same direction and distance from the last frame.",
+    "In the example where a square with the same color as the frame falls down, the amount of fall will be increased by one square for the last step."
+  ],
+  "concepts": [
+    "number sequence",
+    "extrapolation",
+    "position"
+  ],
+  "observations": [
+    "Training pair 1: 16x21 -> 16x6; colors [1, 2, 3] -> [1, 2, 3]; output dimensions changed.",
+    "Training pair 2: 16x16 -> 16x6; colors [2, 8] -> [2, 8]; output dimensions changed.",
+    "Training pair 3: 16x19 -> 16x7; colors [1, 2, 3] -> [1, 2, 3]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

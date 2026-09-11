@@ -1,0 +1,20 @@
+{
+  "title": "Set the input dimensions to the size of the black tile",
+  "summary": "Let the vertical and horizontal dimensions of the input be the dimensions of one black rectangular tile.",
+  "steps": [
+    "Let the vertical and horizontal dimensions of the input be the dimensions of one black rectangular tile.",
+    "Arrange the tiles repeatedly on a 15x15 board.",
+    "Insert rows and columns of one square width of the input color between tiles."
+  ],
+  "concepts": [
+    "Diversion of dimensions",
+    "tiles",
+    "partition"
+  ],
+  "observations": [
+    "Training pair 1: 2x2 -> 15x15; colors [8] -> [0, 8]; output dimensions changed.",
+    "Training pair 2: 3x3 -> 15x15; colors [3] -> [0, 3]; output dimensions changed.",
+    "Training pair 3: 4x4 -> 15x15; colors [2] -> [0, 2]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

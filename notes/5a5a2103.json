@@ -1,0 +1,18 @@
+{
+  "title": "Combine shape sample and row color specification",
+  "summary": "Read the color of the grid lines from the colored rows that run the entire width and divide them into sections. The 2x2 color block in the left pane of each row indicates the color of that row. Use a sample shape other than the one 2×2 block, and redraw each section in that shape using the indicated color of the row.",
+  "steps": [
+    "Read the color of the grid lines from the colored rows that run the entire width and divide them into sections.",
+    "The 2x2 color block in the left pane of each row indicates the color of that row.",
+    "Use a sample shape other than the one 2×2 block, and redraw each section in that shape using the indicated color of the row."
+  ],
+  "concepts": [
+    "Separation of shapes and colors",
+    "Copy to grid"
+  ],
+  "observations": [
+    "Training pair 1: 19x19 -> 19x19; colors [0, 1, 2, 3, 4, 6, 8] -> [0, 1, 2, 3, 4, 8]; 88 cells changed.",
+    "Training pair 2: 14x14 -> 14x14; colors [0, 1, 2, 3, 5, 8] -> [0, 1, 2, 3, 8]; 66 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Continue a solid object's corner diagonals beyond a linear frame",
+  "summary": "Continue a solid object's corner diagonals beyond a linear frame. This is the training-inferred `project_object_diagonals_through_frame` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `project_object_diagonals_through_frame`: continue a solid object's corner diagonals beyond a linear frame"
+  ],
+  "concepts": [
+    "project",
+    "object",
+    "diagonals",
+    "frame"
+  ],
+  "observations": [
+    "Training pair 1: 9x9 -> 9x9; colors [0, 2, 4] -> [0, 2, 4]; 3 cells changed.",
+    "Training pair 2: 8x8 -> 8x8; colors [0, 6, 8] -> [0, 6, 8]; 3 cells changed.",
+    "Training pair 3: 12x12 -> 12x12; colors [0, 4, 5] -> [0, 4, 5]; 5 cells changed.",
+    "Training pair 4: 6x6 -> 6x6; colors [0, 3, 9] -> [0, 3, 9]; 2 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

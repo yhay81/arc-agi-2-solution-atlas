@@ -1,0 +1,19 @@
+{
+  "title": "Crop the sole connected component of a color that occurs in one group",
+  "summary": "Crop the sole connected component of a color that occurs in one group. This is the training-inferred `crop_rare_color_component` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `crop_rare_color_component`: crop the sole connected component of a color that occurs in one group"
+  ],
+  "concepts": [
+    "crop",
+    "rare",
+    "color",
+    "component"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 2x2; colors [0, 2, 6, 7, 8] -> [7]; output dimensions changed.",
+    "Training pair 2: 11x11 -> 4x1; colors [0, 2, 4, 5] -> [2]; output dimensions changed.",
+    "Training pair 3: 13x13 -> 2x3; colors [0, 1, 2, 3, 6] -> [1, 2]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

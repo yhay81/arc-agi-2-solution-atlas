@@ -1,0 +1,17 @@
+{
+  "title": "Draw a square ring every other square around the intersection",
+  "summary": "Leave a green cross and draw a yellow square ring on the squares with an even number of vertical and horizontal maximum distances from the intersection.",
+  "steps": [
+    "Leave a green cross and draw a yellow square ring on the squares with an even number of vertical and horizontal maximum distances from the intersection."
+  ],
+  "concepts": [
+    "center",
+    "concentric frame",
+    "period"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 3] -> [0, 3, 4]; 41 cells changed.",
+    "Training pair 2: 20x20 -> 20x20; colors [0, 3] -> [0, 3, 4]; 184 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

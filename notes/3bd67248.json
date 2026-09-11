@@ -1,0 +1,18 @@
+{
+  "title": "Corner completion left",
+  "summary": "Corner completion left. This is the training-inferred `corner_completion_left` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `corner_completion_left`: corner completion left"
+  ],
+  "concepts": [
+    "corner",
+    "completion",
+    "left"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 3x3; colors [0, 5] -> [0, 2, 4, 5]; 4 cells changed.",
+    "Training pair 2: 15x15 -> 15x15; colors [0, 6] -> [0, 2, 4, 6]; 28 cells changed.",
+    "Training pair 3: 7x7 -> 7x7; colors [0, 8] -> [0, 2, 4, 8]; 12 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Restore the ring of six squares and find the front and back from the colors visible at the intersection",
+  "summary": "Reconstruct the ring of six squares and find the front and back from the colors that appear at the intersection. Arrange the rings vertically, starting with the ring in front, and remove irrelevant points.",
+  "steps": [
+    "Restore the ring of six squares and find the front and back from the colors visible at the intersection",
+    "Arrange the rings vertically starting from the front ring and remove irrelevant points."
+  ],
+  "concepts": [
+    "Normalization",
+    "Listing",
+    "order"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 18x6; colors [2, 3, 4, 5, 8, 9] -> [2, 3, 4, 8]; output dimensions changed.",
+    "Training pair 2: 10x10 -> 18x6; colors [1, 3, 4, 5, 8] -> [1, 3, 4, 8]; output dimensions changed.",
+    "Training pair 3: 13x13 -> 18x6; colors [2, 3, 4, 5, 7, 8] -> [2, 3, 4, 8]; output dimensions changed.",
+    "Training pair 4: 10x10 -> 12x6; colors [2, 3, 4, 5, 8] -> [3, 4, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

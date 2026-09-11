@@ -1,0 +1,22 @@
+{
+  "title": "Overlay the top and bottom panels using the larger color index",
+  "summary": "Overlay the top and bottom panels using the larger color index. This is the training-inferred `overlay_tb_max` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `overlay_tb_max`: overlay the top and bottom panels using the larger color index"
+  ],
+  "concepts": [
+    "overlay",
+    "tb",
+    "max"
+  ],
+  "observations": [
+    "Training pair 1: 8x4 -> 4x4; colors [0, 1, 3] -> [0, 2]; output dimensions changed.",
+    "Training pair 2: 8x4 -> 4x4; colors [0, 1, 3] -> [0, 2]; output dimensions changed.",
+    "Training pair 3: 8x4 -> 4x4; colors [0, 1, 3] -> [0, 2]; output dimensions changed.",
+    "Training pair 4: 8x4 -> 4x4; colors [0, 1, 3] -> [0, 2]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "final color map: 1 -> 0, 3 -> 0, 0 -> 2"
+  ]
+}

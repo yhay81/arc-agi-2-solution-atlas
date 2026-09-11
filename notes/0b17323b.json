@@ -1,0 +1,17 @@
+{
+  "title": "Extend diagonal dots by the same distance",
+  "summary": "Read the diagonal point spacing and add red 2 with the same difference from the last point.",
+  "steps": [
+    "Read the diagonal point spacing and add red 2 with the same difference from the last point."
+  ],
+  "concepts": [
+    "evenly spaced",
+    "Extension of number sequence",
+    "diagonal"
+  ],
+  "observations": [
+    "Training pair 1: 15x15 -> 15x15; colors [0, 1] -> [0, 1, 2]; 1 cells changed.",
+    "Training pair 2: 15x15 -> 15x15; colors [0, 1] -> [0, 1, 2]; 4 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Render a filled-rectangle mosaic as a compact marker-color mask",
+  "summary": "Render a filled-rectangle mosaic as a compact marker-color mask. This is the training-inferred `mosaic_mask_to_marker` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `mosaic_mask_to_marker`: render a filled-rectangle mosaic as a compact marker-color mask"
+  ],
+  "concepts": [
+    "mosaic",
+    "mask",
+    "marker"
+  ],
+  "observations": [
+    "Training pair 1: 22x23 -> 3x3; colors [0, 1, 2] -> [0, 2]; output dimensions changed.",
+    "Training pair 2: 20x24 -> 3x3; colors [0, 4, 8] -> [0, 8]; output dimensions changed.",
+    "Training pair 3: 24x23 -> 3x3; colors [0, 3, 6] -> [0, 3]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

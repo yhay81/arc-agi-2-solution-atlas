@@ -1,0 +1,19 @@
+{
+  "title": "Count full rows in three line-attached glyphs and encode a marker distance",
+  "summary": "Count full rows in three line-attached glyphs and encode a marker distance. This is the training-inferred `summarize_line_attached_glyphs` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `summarize_line_attached_glyphs`: count full rows in three line-attached glyphs and encode a marker distance"
+  ],
+  "concepts": [
+    "summarize",
+    "line",
+    "attached",
+    "glyphs"
+  ],
+  "observations": [
+    "Training pair 1: 21x21 -> 3x5; colors [0, 3, 4, 5, 8, 9] -> [0, 3, 5, 8, 9]; output dimensions changed.",
+    "Training pair 2: 21x21 -> 3x5; colors [0, 1, 4, 5, 7, 9] -> [0, 1, 4, 5, 7, 9]; output dimensions changed.",
+    "Training pair 3: 21x21 -> 3x5; colors [0, 4, 5, 6, 8, 9] -> [0, 4, 5, 6, 8, 9]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

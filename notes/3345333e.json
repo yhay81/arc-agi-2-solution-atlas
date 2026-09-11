@@ -1,0 +1,19 @@
+{
+  "title": "Remove a solid rectangular occluder and restore horizontal symmetry",
+  "summary": "Remove a solid rectangular occluder and restore horizontal symmetry. This is the training-inferred `restore_lr_symmetry_under_rectangle` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `restore_lr_symmetry_under_rectangle`: remove a solid rectangular occluder and restore horizontal symmetry"
+  ],
+  "concepts": [
+    "restore",
+    "lr",
+    "symmetry",
+    "under",
+    "rectangle"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [0, 2, 3] -> [0, 2]; 16 cells changed.",
+    "Training pair 2: 16x16 -> 16x16; colors [0, 1, 6] -> [0, 6]; 12 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

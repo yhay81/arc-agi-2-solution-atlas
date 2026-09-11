@@ -1,0 +1,20 @@
+{
+  "title": "Draw the canonical one-cell square spiral on an empty square canvas",
+  "summary": "Draw the canonical one-cell square spiral on an empty square canvas. This is the training-inferred `draw_square_spiral` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `draw_square_spiral`: draw the canonical one-cell square spiral on an empty square canvas"
+  ],
+  "concepts": [
+    "draw",
+    "square",
+    "spiral"
+  ],
+  "observations": [
+    "Training pair 1: 13x13 -> 13x13; colors [0] -> [0, 3]; 97 cells changed.",
+    "Training pair 2: 8x8 -> 8x8; colors [0] -> [0, 3]; 40 cells changed.",
+    "Training pair 3: 15x15 -> 15x15; colors [0] -> [0, 3]; 127 cells changed.",
+    "Training pair 4: 10x10 -> 10x10; colors [0] -> [0, 3]; 60 cells changed.",
+    "Training pair 5: 6x6 -> 6x6; colors [0] -> [0, 3]; 24 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

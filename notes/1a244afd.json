@@ -1,0 +1,20 @@
+{
+  "title": "Put blue and purple one on one and turn purple a quarter turn to the left.",
+  "summary": "Pair blue 1 and purple 6 in the same row or column so that each point is used only once. Find a unique combination. Return the original position of purple to background 8. Rotate the relative position of purple 90 degrees counterclockwise around blue, and place orange 7 if it is on the board. Leave the blue as is.",
+  "steps": [
+    "Pair blue 1 and purple 6 in the same row or column so that each point is used only once. Find a unique combination.",
+    "Return the original position of purple to background 8.",
+    "Rotate the relative position of purple 90 degrees counterclockwise around blue, and place orange 7 if it is on the board. Leave the blue as is."
+  ],
+  "concepts": [
+    "fulcrum",
+    "90 degree rotation",
+    "relative distance"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [1, 6, 8] -> [1, 7, 8]; 8 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [1, 6, 8] -> [1, 7, 8]; 6 cells changed.",
+    "Training pair 3: 8x8 -> 8x8; colors [1, 6, 8] -> [1, 7, 8]; 5 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

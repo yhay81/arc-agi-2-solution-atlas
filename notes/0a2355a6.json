@@ -1,0 +1,20 @@
+{
+  "title": "Color-code the outline by number of holes",
+  "summary": "Separate figures of the same color other than the background by vertical and horizontal connections. Count the number of blank areas that cannot be moved out of the outline of the figure at the top, bottom, left, or right. Color the entire shape blue if there is one hole, green if there are two, red if there are three, and yellow if there are four. The other numbers keep their original colors.",
+  "steps": [
+    "Separate figures of the same color other than the background by vertical and horizontal connections.",
+    "Count the number of blank areas that cannot be moved out of the outline of the figure at the top, bottom, left, or right.",
+    "Color the entire shape blue if there is one hole, green if there are two, red if there are three, and yellow if there are four. The other numbers keep their original colors."
+  ],
+  "concepts": [
+    "enclosed area",
+    "Color coding by number"
+  ],
+  "observations": [
+    "Training pair 1: 14x14 -> 14x14; colors [0, 8] -> [0, 1, 2, 3]; 55 cells changed.",
+    "Training pair 2: 14x11 -> 14x11; colors [0, 8] -> [0, 1, 2, 3]; 57 cells changed.",
+    "Training pair 3: 15x14 -> 15x14; colors [0, 8] -> [0, 1, 2, 3, 4]; 75 cells changed.",
+    "Training pair 4: 9x11 -> 9x11; colors [0, 8] -> [0, 1, 3]; 31 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

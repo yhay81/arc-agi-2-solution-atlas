@@ -1,0 +1,21 @@
+{
+  "title": "Cut out the large solid color surface with the pattern inside.",
+  "summary": "Cut out the large solid color surface along with the pattern inside. Use the thin two-colored frame on the outside of the surface as a guide. Rotate or flip the cut out side so that the two colors are in the same direction as the outer frame of the entire board. Do not include thin frames in the output.",
+  "steps": [
+    "Cut out the large solid color surface with the pattern inside.",
+    "Use the two-colored thin frame on the outside of the screen as a guide.",
+    "Rotate or flip the cut out side so that the two colors are in the same direction as the outer frame of the entire board",
+    "Do not include thin frames in the output"
+  ],
+  "concepts": [
+    "Cut out",
+    "Orientation normalization",
+    "color bias"
+  ],
+  "observations": [
+    "Training pair 1: 22x22 -> 11x15; colors [0, 1, 2, 3, 4, 5, 6, 8] -> [0, 1, 2, 3, 8]; output dimensions changed.",
+    "Training pair 2: 22x22 -> 10x10; colors [0, 1, 2, 3, 4, 5, 8] -> [2, 4, 8]; output dimensions changed.",
+    "Training pair 3: 22x22 -> 5x5; colors [0, 2, 3, 4, 5, 6, 8, 9] -> [0, 3, 6, 8, 9]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

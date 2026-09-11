@@ -1,0 +1,19 @@
+{
+  "title": "Extend diagonal lines and periodic rays from the red cross",
+  "summary": "Find the center of the red 2 cross. Extend the four diagonal lines to the end with Blue 1. Draw 8 repeats of light blue, 8 light blue, and 4 yellow starting from the outside of the cross in the 4 directions vertically and horizontally.",
+  "steps": [
+    "Find the center of the red 2 cross.",
+    "Extend the four diagonal lines to the end with Blue 1.",
+    "Draw 8 repeats of light blue, 8 light blue, and 4 yellow starting from the outside of the cross in the 4 directions vertically and horizontally."
+  ],
+  "concepts": [
+    "Eight directions",
+    "color cycle",
+    "cross"
+  ],
+  "observations": [
+    "Training pair 1: 7x16 -> 7x16; colors [0, 2] -> [0, 1, 2, 4, 8]; 29 cells changed.",
+    "Training pair 2: 12x10 -> 12x10; colors [0, 2] -> [0, 1, 2, 4, 8]; 33 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

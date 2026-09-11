@@ -1,0 +1,19 @@
+{
+  "title": "Replace two colored shapes with each other's shape and color without changing their positions",
+  "summary": "Replace two types of colored figures with each other's shape and color without changing their positions. Align the top left of each shape's circumscribing frame.",
+  "steps": [
+    "Replace two colored shapes with each other's shape and color without changing their positions",
+    "Align the top left of each shape's circumscribing frame"
+  ],
+  "concepts": [
+    "exchange of types",
+    "Shape substitution"
+  ],
+  "observations": [
+    "Training pair 1: 9x10 -> 9x10; colors [0, 3, 8] -> [0, 3, 8]; 21 cells changed.",
+    "Training pair 2: 9x12 -> 9x12; colors [0, 2, 3] -> [0, 2, 3]; 20 cells changed.",
+    "Training pair 3: 11x10 -> 11x10; colors [0, 1, 7] -> [0, 1, 7]; 20 cells changed.",
+    "Training pair 4: 9x17 -> 9x17; colors [0, 1, 8] -> [0, 1, 8]; 36 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

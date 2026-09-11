@@ -1,0 +1,22 @@
+{
+  "title": "Write the number leaving only the colored blocks in the legend",
+  "summary": "Count the colored blocks in the legend above in the area below, and draw a number bar above. Delete colors that are not in the legend from the bottom.",
+  "steps": [
+    "Separate the bottom colored area and the top 0 background legend area.",
+    "Count the vertical and horizontal connections of the same color at the bottom as one piece.",
+    "For each color in the legend, paint the number of pieces from the left of that row with that color.",
+    "Change the color that is not in the legend at the bottom to the background color below."
+  ],
+  "concepts": [
+    "Number of pieces",
+    "legend",
+    "sorting",
+    "bar graph"
+  ],
+  "observations": [
+    "Training pair 1: 20x10 -> 20x10; colors [0, 1, 2, 3, 4, 8] -> [0, 2, 3, 4, 8]; 8 cells changed.",
+    "Training pair 2: 20x10 -> 20x10; colors [0, 1, 2, 3, 4, 8] -> [0, 1, 2, 3]; 7 cells changed.",
+    "Training pair 3: 20x10 -> 20x10; colors [0, 1, 2, 3, 4, 6, 8] -> [0, 1, 2, 4, 8]; 13 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

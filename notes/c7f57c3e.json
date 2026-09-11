@@ -1,0 +1,18 @@
+{
+  "title": "Find two symbols that share a blue skeleton and replace each symbol with the other symbol.",
+  "summary": "Find two symbols that share a blue skeleton and replace each symbol with the other symbol. The position of the blue skeleton and the magnification of each symbol are maintained.",
+  "steps": [
+    "Find two symbols that share a blue skeleton and replace each symbol with the other symbol.",
+    "The position of the blue skeleton and the magnification of each symbol are maintained."
+  ],
+  "concepts": [
+    "adjacent",
+    "conditional branch",
+    "color replacement"
+  ],
+  "observations": [
+    "Training pair 1: 18x18 -> 18x18; colors [1, 2, 3, 4, 8] -> [1, 2, 3, 4, 8]; 24 cells changed.",
+    "Training pair 2: 18x18 -> 18x18; colors [1, 2, 3, 4, 6] -> [1, 2, 3, 4, 6]; 12 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

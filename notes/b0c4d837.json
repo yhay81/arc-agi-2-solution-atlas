@@ -1,0 +1,22 @@
+{
+  "title": "Encode the empty depth above a rectangle inside an open U frame",
+  "summary": "Encode the empty depth above a rectangle inside an open U frame. The enclosed rectangle spans the U's full inner width and rests on its bottom. Its clearance from the open top is drawn as that many cells of a clockwise 3-by-3 spiral, using the rectangle's color. This is the training-inferred `encode_u_frame_clearance` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `encode_u_frame_clearance`: encode the empty depth above a rectangle inside an open U frame"
+  ],
+  "concepts": [
+    "encode",
+    "u",
+    "frame",
+    "clearance"
+  ],
+  "observations": [
+    "Training pair 1: 9x9 -> 3x3; colors [0, 5, 8] -> [0, 8]; output dimensions changed.",
+    "Training pair 2: 9x9 -> 3x3; colors [0, 5, 8] -> [0, 8]; output dimensions changed.",
+    "Training pair 3: 9x9 -> 3x3; colors [0, 5, 8] -> [0, 8]; output dimensions changed.",
+    "Training pair 4: 5x6 -> 3x3; colors [0, 5, 8] -> [0, 8]; output dimensions changed.",
+    "Training pair 5: 6x6 -> 3x3; colors [0, 5, 8] -> [0, 8]; output dimensions changed.",
+    "Training pair 6: 7x7 -> 3x3; colors [0, 5, 8] -> [0, 8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

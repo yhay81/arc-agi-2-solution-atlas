@@ -1,0 +1,20 @@
+{
+  "title": "Starting from the black corner, read each part in the order parallel to the blue edge, and when you finish that row, move on to the next one along the red edge.",
+  "summary": "Starting from the black corner, read each part in the order parallel to the blue edge, and when you finish that row, move on to the next one along the red edge. For vertical input, turn each component 90 degrees to the left to make it horizontal, align them in the center, and line them up from the top without any gaps.",
+  "steps": [
+    "Starting from the black corner, read each part in the order parallel to the blue edge, and when you finish that row, move on to the next one along the red edge.",
+    "For vertical input, turn each component 90 degrees to the left to make it horizontal, align them in the center, and line them up from the top without any gaps."
+  ],
+  "concepts": [
+    "scan order",
+    "Decoding the order",
+    "compression"
+  ],
+  "observations": [
+    "Training pair 1: 20x8 -> 12x6; colors [0, 1, 2, 3, 4, 6, 7, 8, 9] -> [1, 2, 3, 4, 6, 7, 8, 9]; output dimensions changed.",
+    "Training pair 2: 8x11 -> 8x4; colors [0, 1, 2, 3, 4, 6, 8, 9] -> [3, 4, 6, 8, 9]; output dimensions changed.",
+    "Training pair 3: 8x28 -> 14x8; colors [0, 1, 2, 3, 4, 6, 7, 8, 9] -> [3, 4, 6, 7, 8, 9]; output dimensions changed.",
+    "Training pair 4: 8x23 -> 14x6; colors [0, 1, 2, 3, 4, 6, 7, 8, 9] -> [3, 4, 6, 7, 8, 9]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

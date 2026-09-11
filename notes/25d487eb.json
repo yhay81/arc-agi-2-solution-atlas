@@ -1,0 +1,19 @@
+{
+  "title": "Continue a boundary marker through its host object to the canvas edge",
+  "summary": "Continue a boundary marker through its host object to the canvas edge. A two-color object contains one uniquely colored marker on one side of the main color's bounding box. The marker indicates an inward direction; its ray resumes after the opposite side and continues to the grid edge. This is the training-inferred `extend_single_marker_through_object` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `extend_single_marker_through_object`: continue a boundary marker through its host object to the canvas edge"
+  ],
+  "concepts": [
+    "extend",
+    "single",
+    "marker",
+    "object"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 12x12; colors [0, 3, 8] -> [0, 3, 8]; 5 cells changed.",
+    "Training pair 2: 10x15 -> 10x15; colors [0, 1, 2] -> [0, 1, 2]; 9 cells changed.",
+    "Training pair 3: 15x12 -> 15x12; colors [0, 2, 3] -> [0, 2, 3]; 10 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

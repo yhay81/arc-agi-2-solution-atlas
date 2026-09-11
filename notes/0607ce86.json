@@ -1,0 +1,19 @@
+{
+  "title": "The same pattern repeated in a grid is restored by majority vote.",
+  "summary": "The same pattern repeated in a grid is restored by majority vote. The vertical and horizontal periods and representative colors at each position are estimated from the densely arranged range, and only the completely repeating range is left.",
+  "steps": [
+    "The same pattern repeated in a grid is restored by majority vote.",
+    "Estimates the vertical and horizontal periods and the representative color at each position from the densely arranged range, leaving only the completely repeating range."
+  ],
+  "concepts": [
+    "Matching multiple samples",
+    "symmetry",
+    "noise removal"
+  ],
+  "observations": [
+    "Training pair 1: 21x22 -> 21x22; colors [0, 1, 2, 3, 8] -> [0, 1, 2, 3, 8]; 52 cells changed.",
+    "Training pair 2: 23x22 -> 23x22; colors [0, 3, 6, 8] -> [0, 3, 6, 8]; 39 cells changed.",
+    "Training pair 3: 22x22 -> 22x22; colors [0, 1, 2, 3] -> [0, 1, 2, 3]; 43 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

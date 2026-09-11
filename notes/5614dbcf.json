@@ -1,0 +1,17 @@
+{
+  "title": "Compress three blocks",
+  "summary": "Compress three blocks. This is the training-inferred `compress_three_blocks` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `compress_three_blocks`: compress three blocks"
+  ],
+  "concepts": [
+    "compress",
+    "three",
+    "blocks"
+  ],
+  "observations": [
+    "Training pair 1: 9x9 -> 3x3; colors [0, 2, 5, 7] -> [0, 2, 7]; output dimensions changed.",
+    "Training pair 2: 9x9 -> 3x3; colors [0, 3, 5, 6, 7, 8, 9] -> [0, 3, 6, 7, 8, 9]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

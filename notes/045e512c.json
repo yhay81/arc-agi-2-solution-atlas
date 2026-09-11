@@ -1,0 +1,18 @@
+{
+  "title": "Repeat a largest local glyph from partial copies on its eight rays",
+  "summary": "Repeat a largest local glyph from partial copies on its eight rays. One component is a complete template and the other components are partial copies placed one tile away (with a one-cell gap) on a horizontal, vertical, or diagonal ray. Completing each partial copy and continuing that ray gives the output. The tile and its stride are inferred from the complete component, so no task-specific coordinates are retained. This is the training-inferred `extrapolate_template_markers` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `extrapolate_template_markers`: repeat a largest local glyph from partial copies on its eight rays"
+  ],
+  "concepts": [
+    "extrapolate",
+    "template",
+    "markers"
+  ],
+  "observations": [
+    "Training pair 1: 21x21 -> 21x21; colors [0, 1, 2, 4] -> [0, 1, 2, 4]; 29 cells changed.",
+    "Training pair 2: 21x21 -> 21x21; colors [0, 2, 3, 8] -> [0, 2, 3, 8]; 42 cells changed.",
+    "Training pair 3: 21x21 -> 21x21; colors [0, 1, 5, 6] -> [0, 1, 5, 6]; 21 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

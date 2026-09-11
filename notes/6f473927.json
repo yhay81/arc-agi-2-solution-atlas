@@ -1,0 +1,19 @@
+{
+  "title": "Pair each shape with a foreground-background negative",
+  "summary": "Pair a binary photograph with its horizontally oriented negative. This is the training-inferred `negative_photo_pair` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `negative_photo_pair`: pair each shape with a foreground-background negative"
+  ],
+  "concepts": [
+    "negative",
+    "photo",
+    "pair"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 3x6; colors [0, 2] -> [0, 2, 8]; output dimensions changed.",
+    "Training pair 2: 8x6 -> 8x12; colors [0, 2] -> [0, 2, 8]; output dimensions changed.",
+    "Training pair 3: 3x3 -> 3x6; colors [0, 2] -> [0, 2, 8]; output dimensions changed.",
+    "Training pair 4: 10x5 -> 10x10; colors [0, 2] -> [0, 2, 8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

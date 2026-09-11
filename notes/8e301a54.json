@@ -1,0 +1,19 @@
+{
+  "title": "Count the number of squares for each block of the same color other than the background",
+  "summary": "Count the number of squares for each block of the same color other than the background. Translate the block down a distance equal to the number of squares. Cut off the part that sticks out from the bottom edge.",
+  "steps": [
+    "Count the number of squares for each block of the same color other than the background",
+    "Move the block downward by a distance equal to the number of squares",
+    "Cut off the part that sticks out from the bottom edge"
+  ],
+  "concepts": [
+    "corner signal",
+    "moving the rod"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [2, 5, 7, 9] -> [2, 5, 7, 9]; 16 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [2, 5, 7, 9] -> [2, 5, 7, 9]; 12 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [2, 5, 7, 9] -> [2, 5, 7, 9]; 19 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

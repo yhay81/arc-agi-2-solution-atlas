@@ -1,0 +1,20 @@
+{
+  "title": "Return the gray dot that touched the path to the entrance",
+  "summary": "Choose the green 3 path that touches the gray 5 point on the top, bottom, left and right. Leave 1 square of the entrance on both sides of the road with black 0, and return the others to background 7. Erase the gray dot and replace it in a direction perpendicular to the black row next to the entrance. You can place it in the following order: top, then bottom, or left, then right.",
+  "steps": [
+    "Choose the green 3 path that touches the gray 5 point on the top, bottom, left and right.",
+    "Leave 1 square of the entrance on both sides of the road with black 0, and return the others to background 7.",
+    "Erase the gray dot and replace it in a direction perpendicular to the black row next to the entrance. You can place it in the following order: top, then bottom, or left, then right."
+  ],
+  "concepts": [
+    "Contact conditions",
+    "route",
+    "move"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 12x12; colors [0, 3, 5, 7] -> [0, 3, 5, 7]; 17 cells changed.",
+    "Training pair 2: 9x9 -> 9x9; colors [0, 3, 5, 7] -> [0, 3, 5, 7]; 9 cells changed.",
+    "Training pair 3: 13x13 -> 13x13; colors [0, 3, 5, 7] -> [0, 3, 5, 7]; 10 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

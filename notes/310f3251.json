@@ -1,0 +1,19 @@
+{
+  "title": "Repeat the pattern and make the area next to each mark red.",
+  "summary": "Arrange the input 3 times vertically and horizontally. If the top left of the colored squares is black, make it red, and calculate the positions of the edges by connecting them periodically.",
+  "steps": [
+    "Arrange the input 3 times vertically and horizontally. If the top left of the colored squares is black, make it red, and calculate the positions of the edges by connecting them periodically."
+  ],
+  "concepts": [
+    "repeat",
+    "Add relative position"
+  ],
+  "observations": [
+    "Training pair 1: 4x4 -> 12x12; colors [0, 5] -> [0, 2, 5]; output dimensions changed.",
+    "Training pair 2: 3x3 -> 9x9; colors [0, 6] -> [0, 2, 6]; output dimensions changed.",
+    "Training pair 3: 5x5 -> 15x15; colors [0, 8] -> [0, 2, 8]; output dimensions changed.",
+    "Training pair 4: 4x4 -> 12x12; colors [0, 1] -> [0, 1, 2]; output dimensions changed.",
+    "Training pair 5: 2x2 -> 6x6; colors [0, 7] -> [0, 2, 7]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

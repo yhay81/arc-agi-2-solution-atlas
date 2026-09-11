@@ -1,0 +1,20 @@
+{
+  "title": "Surround the black hole or notch surrounded by blue on three sides in the original blue area with one orange square.",
+  "summary": "Surround the black hole or notch surrounded by blue on three sides in the original blue area with one orange square. Check the two directions that exist at the corners of the board. Erase the blue isolated points and the thin outward protrusions, and use the blue between the holes as the surrounding color.",
+  "steps": [
+    "Surround the black hole or notch surrounded by blue on three sides in the original blue area with one orange square.",
+    "Check the two directions that exist at the corners of the board",
+    "Erase the blue isolated points and thin outward protrusions, and use the blue between the holes as the surrounding color."
+  ],
+  "concepts": [
+    "tip",
+    "negative shape",
+    "local conditions"
+  ],
+  "observations": [
+    "Training pair 1: 19x17 -> 19x17; colors [0, 1] -> [0, 1, 7]; 41 cells changed.",
+    "Training pair 2: 16x16 -> 16x16; colors [0, 1] -> [0, 1, 7]; 34 cells changed.",
+    "Training pair 3: 16x16 -> 16x16; colors [0, 1] -> [0, 1, 7]; 23 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

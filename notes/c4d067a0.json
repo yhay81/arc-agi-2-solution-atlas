@@ -1,0 +1,19 @@
+{
+  "title": "Complete the arrangement of the large square using the arrangement of the small dots as a sample.",
+  "summary": "Using the arrangement of small dots as a sample, complete the arrangement of the large square. Determine the spacing and position relative to the sample from the color and position of the existing large square.",
+  "steps": [
+    "Complete the arrangement of the large square using the arrangement of the small dots as a sample.",
+    "Determine the spacing and position relative to the swatch using the color and position of the existing large square."
+  ],
+  "concepts": [
+    "instruction string",
+    "Duplicate columns",
+    "Bottom alignment"
+  ],
+  "observations": [
+    "Training pair 1: 23x23 -> 23x23; colors [1, 4, 8] -> [1, 4, 8]; 36 cells changed.",
+    "Training pair 2: 23x23 -> 23x23; colors [1, 2, 3, 8] -> [1, 2, 3, 8]; 32 cells changed.",
+    "Training pair 3: 23x23 -> 23x23; colors [1, 2, 3, 4] -> [1, 2, 3, 4]; 16 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

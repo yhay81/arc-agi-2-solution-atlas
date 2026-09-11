@@ -1,0 +1,23 @@
+{
+  "title": "Color rectangle corners, edges, and interiors",
+  "summary": "For every gray rectangle cell, count its horizontally and vertically adjacent gray neighbors. Color cells with two neighbors blue, three neighbors yellow, and four neighbors red, distinguishing corners, edges, and interiors.",
+  "steps": [
+    "Count the four-neighbor gray degree of each gray cell.",
+    "Map degree two to blue, degree three to yellow, and degree four to red."
+  ],
+  "concepts": [
+    "rectangle",
+    "boundary",
+    "degree"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 5] -> [0, 1, 2, 4]; 54 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 5] -> [0, 1, 2, 4]; 36 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "gray degree 2 -> blue 1",
+    "gray degree 3 -> yellow 4",
+    "gray degree 4 -> red 2"
+  ]
+}

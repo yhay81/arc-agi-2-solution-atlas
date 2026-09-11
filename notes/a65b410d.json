@@ -1,0 +1,23 @@
+{
+  "title": "Complete a left-anchored triangular wedge around a horizontal bar",
+  "summary": "Complete a left-anchored triangular wedge around a horizontal bar. The sole non-background bar is the middle row of a descending-width pattern. Rows above it widen in ``upper_color`` and rows below narrow in ``lower_color``; the bar itself is preserved. This is the training-inferred `complete_wedge_from_bar` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `complete_wedge_from_bar`: complete a left-anchored triangular wedge around a horizontal bar"
+  ],
+  "concepts": [
+    "complete",
+    "wedge",
+    "bar"
+  ],
+  "observations": [
+    "Training pair 1: 8x9 -> 8x9; colors [0, 2] -> [0, 1, 2, 3]; 18 cells changed.",
+    "Training pair 2: 7x7 -> 7x7; colors [0, 2] -> [0, 1, 2, 3]; 13 cells changed.",
+    "Training pair 3: 7x9 -> 7x9; colors [0, 2] -> [0, 1, 2, 3]; 17 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "marker color: 2",
+    "upper color: 3",
+    "lower color: 1"
+  ]
+}

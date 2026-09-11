@@ -1,0 +1,21 @@
+{
+  "title": "Color repeated marker strips from a compact, column-wise color key",
+  "summary": "Color repeated marker strips from a compact, column-wise color key. A small key near the top contains zero-separated colored columns. Below it, each key column is encoded as one or more horizontal strips of the marker color. A strip's cell width equals its repeated row height; the marker cells are colored by the non-zero key values read bottom-to-top. This keeps gaps in the marker mask while expressing the key column in a horizontal orientation. This is the training-inferred `recolor_strips_from_column_key` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `recolor_strips_from_column_key`: color repeated marker strips from a compact, column-wise color key"
+  ],
+  "concepts": [
+    "recolor",
+    "strips",
+    "column",
+    "key"
+  ],
+  "observations": [
+    "Training pair 1: 22x12 -> 22x12; colors [0, 1, 2, 3, 4, 8] -> [0, 1, 2, 3, 4]; 54 cells changed.",
+    "Training pair 2: 24x13 -> 24x13; colors [0, 1, 2, 3, 4, 8] -> [0, 1, 2, 3, 4]; 36 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "marker: 8"
+  ]
+}

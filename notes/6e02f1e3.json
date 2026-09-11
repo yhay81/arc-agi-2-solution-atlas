@@ -1,0 +1,20 @@
+{
+  "title": "Unique color glyph",
+  "summary": "Unique color glyph. This is the training-inferred `unique_color_glyph` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `unique_color_glyph`: unique color glyph"
+  ],
+  "concepts": [
+    "unique",
+    "color",
+    "glyph"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 3x3; colors [3] -> [0, 5]; 9 cells changed.",
+    "Training pair 2: 3x3 -> 3x3; colors [2, 3, 4] -> [0, 5]; 9 cells changed.",
+    "Training pair 3: 3x3 -> 3x3; colors [4] -> [0, 5]; 9 cells changed.",
+    "Training pair 4: 3x3 -> 3x3; colors [3, 4] -> [0, 5]; 9 cells changed.",
+    "Training pair 5: 3x3 -> 3x3; colors [2, 3] -> [0, 5]; 9 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

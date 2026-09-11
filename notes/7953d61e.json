@@ -1,0 +1,21 @@
+{
+  "title": "Arrange the four rotated images in a 2x2 format",
+  "summary": "Place the input at the top left and the 90 degree counterclockwise statue at the top right.",
+  "steps": [
+    "Place the input at the top left and the 90 degree counterclockwise statue at the top right.",
+    "Place the 180 degree statue at the bottom left and the 270 degree statue at the bottom right.",
+    "Arrange the 4 sheets in a 2x2 pattern without any gaps to make the output twice the height and width."
+  ],
+  "concepts": [
+    "rotation",
+    "2×2 arrangement"
+  ],
+  "observations": [
+    "Training pair 1: 4x4 -> 8x8; colors [1, 4, 8, 9] -> [1, 4, 8, 9]; output dimensions changed.",
+    "Training pair 2: 4x4 -> 8x8; colors [1, 2, 5, 6] -> [1, 2, 5, 6]; output dimensions changed.",
+    "Training pair 3: 4x4 -> 8x8; colors [1, 6, 7, 9] -> [1, 6, 7, 9]; output dimensions changed.",
+    "Training pair 4: 4x4 -> 8x8; colors [1, 2, 6, 7] -> [1, 2, 6, 7]; output dimensions changed.",
+    "Training pair 5: 4x4 -> 8x8; colors [1, 4, 6, 9] -> [1, 4, 6, 9]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

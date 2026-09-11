@@ -1,0 +1,21 @@
+{
+  "title": "Read the prototype and layout from separate columns",
+  "summary": "A horizontal gray line separates the upper pattern from the lower layout. Shrink the consecutive rows and columns of the pattern above into one to obtain a small prototype. Place one prototype for each red square below. Place a black section of the same size on the black square and output the whole.",
+  "steps": [
+    "A horizontal gray line separates the upper pattern from the lower layout.",
+    "Shrink the consecutive rows and columns of the pattern above into one to obtain a small prototype.",
+    "Place one prototype for each red square below. Place a black section of the same size on the black square and output the whole."
+  ],
+  "concepts": [
+    "Prototype and layout",
+    "compression",
+    "Copy"
+  ],
+  "observations": [
+    "Training pair 1: 13x6 -> 18x18; colors [0, 1, 2, 3, 5] -> [0, 1, 2, 3]; output dimensions changed.",
+    "Training pair 2: 13x6 -> 18x18; colors [0, 1, 2, 3, 5, 6] -> [0, 1, 2, 3, 6]; output dimensions changed.",
+    "Training pair 3: 13x6 -> 18x18; colors [0, 1, 2, 3, 5] -> [0, 1, 3]; output dimensions changed.",
+    "Training pair 4: 13x6 -> 18x18; colors [0, 1, 2, 3, 5, 6] -> [0, 1, 2, 3, 6]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

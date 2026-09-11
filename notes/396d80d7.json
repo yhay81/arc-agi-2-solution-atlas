@@ -1,0 +1,17 @@
+{
+  "title": "Paint the background squares that touch the outer pattern diagonally but not vertically, horizontally, or vertically with the color of the center pattern.",
+  "summary": "Paint the background squares that touch the outer pattern diagonally but not vertically, horizontally, or vertically with the color of the center pattern. Keep the original pattern.",
+  "steps": [
+    "Paint the background squares that touch the outer pattern diagonally but not vertically, horizontally, or vertically with the color of the center pattern.",
+    "Keep the original pattern"
+  ],
+  "concepts": [
+    "symmetry",
+    "Contour completion"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [2, 6, 7] -> [2, 6, 7]; 15 cells changed.",
+    "Training pair 2: 16x16 -> 16x16; colors [1, 4, 7] -> [1, 4, 7]; 12 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

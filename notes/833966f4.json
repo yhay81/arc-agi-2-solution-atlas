@@ -1,0 +1,18 @@
+{
+  "title": "Exchange the top and bottom two sets of five colors",
+  "summary": "A rule of 5 rows and 1 column of colors, swapping the top two colors and the bottom two colors, leaving the middle one.",
+  "steps": [
+    "Swap the first and second colors from the top",
+    "hold the third",
+    "swap the fourth and fifth"
+  ],
+  "concepts": [
+    "partial replacement",
+    "order"
+  ],
+  "observations": [
+    "Training pair 1: 5x1 -> 5x1; colors [0, 1, 6, 8, 9] -> [0, 1, 6, 8, 9]; 4 cells changed.",
+    "Training pair 2: 5x1 -> 5x1; colors [2, 3, 4, 6, 8] -> [2, 3, 4, 6, 8]; 4 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

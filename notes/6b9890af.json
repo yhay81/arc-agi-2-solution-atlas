@@ -1,0 +1,20 @@
+{
+  "title": "Crop a hollow frame and scale a detached glyph into its interior",
+  "summary": "Crop a hollow frame and scale a detached glyph into its interior. This is the training-inferred `embed_scaled_glyph_in_hollow_frame` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `embed_scaled_glyph_in_hollow_frame`: crop a hollow frame and scale a detached glyph into its interior"
+  ],
+  "concepts": [
+    "embed",
+    "scaled",
+    "glyph",
+    "hollow",
+    "frame"
+  ],
+  "observations": [
+    "Training pair 1: 19x22 -> 5x5; colors [0, 1, 2] -> [0, 1, 2]; output dimensions changed.",
+    "Training pair 2: 18x21 -> 8x8; colors [0, 2, 8] -> [0, 2, 8]; output dimensions changed.",
+    "Training pair 3: 21x24 -> 11x11; colors [0, 2, 4] -> [0, 2, 4]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

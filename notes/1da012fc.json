@@ -1,0 +1,18 @@
+{
+  "title": "Move a small color scheme to a large group of shapes",
+  "summary": "Read the colored dots in the gray swatch starting from the top row and, within the same row, from the left. Separate the shapes that are outside the sample one by one, including diagonal contacts, and arrange them in order, starting with the top edge and then the left edge. Paint the entire shape with the color of the sample points in the same order. Leave a sample.",
+  "steps": [
+    "Read the colored dots in the gray swatch starting from the top row and, within the same row, from the left.",
+    "Separate the shapes that are outside the sample one by one, including diagonal contacts, and arrange them in order, starting with the top edge and then the left edge.",
+    "Paint the entire shape with the color of the sample points in the same order. Leave a sample."
+  ],
+  "concepts": [
+    "Placement support",
+    "color scheme instructions"
+  ],
+  "observations": [
+    "Training pair 1: 14x20 -> 14x20; colors [0, 1, 2, 3, 4, 5, 6] -> [0, 2, 3, 4, 5, 6]; 28 cells changed.",
+    "Training pair 2: 19x22 -> 19x22; colors [0, 2, 3, 4, 5, 8] -> [0, 2, 3, 4, 5]; 43 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

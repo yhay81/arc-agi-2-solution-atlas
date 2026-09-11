@@ -1,0 +1,21 @@
+{
+  "title": "Find the central part made of 4 colors",
+  "summary": "Look for the central part made of four colors. Rotate and connect parts of the same color to the connection surfaces of the two cells on the top, bottom, left and right. The connection surfaces on the component side must also be two adjacent cells in the center of the side. Erase colors and shapes that cannot be connected.",
+  "steps": [
+    "Find the central part made of 4 colors",
+    "Rotate and connect parts of the same color to the connection surfaces of the two cells on the top, bottom, left and right.",
+    "The connection surfaces on the component side must also be two adjacent cells in the center of the side.",
+    "Erase colors and shapes that cannot be connected"
+  ],
+  "concepts": [
+    "axis",
+    "center of gravity",
+    "Directed expansion"
+  ],
+  "observations": [
+    "Training pair 1: 23x20 -> 23x20; colors [1, 2, 3, 4, 6, 8] -> [1, 2, 3, 6, 8]; 36 cells changed.",
+    "Training pair 2: 18x21 -> 18x21; colors [1, 2, 3, 4, 8] -> [1, 2, 3, 4, 8]; 44 cells changed.",
+    "Training pair 3: 20x25 -> 20x25; colors [1, 2, 3, 7, 8] -> [1, 2, 3, 7, 8]; 52 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Swap paired colors",
+  "summary": "Apply four color substitutions independently at every cell: blue with gray, red with magenta, green with yellow, and azure with maroon.",
+  "steps": ["Replace each color by its partner while preserving positions."],
+  "concepts": ["color substitution", "color pairs"],
+  "observations": [
+    "Training pair 1: 3x3 -> 3x3; colors [5, 6, 8] -> [1, 2, 9]; 9 cells changed.",
+    "Training pair 2: 3x3 -> 3x3; colors [2, 3, 8] -> [4, 6, 9]; 9 cells changed.",
+    "Training pair 3: 3x3 -> 3x3; colors [2, 4, 9] -> [3, 6, 8]; 9 cells changed.",
+    "Training pair 4: 3x3 -> 3x3; colors [1, 2, 3] -> [4, 5, 6]; 9 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": ["color pairs: 1/5, 2/6, 3/4, 8/9"]
+}

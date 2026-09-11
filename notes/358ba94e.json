@@ -1,0 +1,19 @@
+{
+  "title": "Select an outcast from multiple small shapes",
+  "summary": "Compare the arrangement and number of black dots in each small shape.",
+  "steps": [
+    "Compare the arrangement and number of black dots in each small shape.",
+    "Out of multiple identical items, pick out one with different characteristics."
+  ],
+  "concepts": [
+    "comparison",
+    "ostracism"
+  ],
+  "observations": [
+    "Training pair 1: 16x19 -> 5x5; colors [0, 6] -> [0, 6]; output dimensions changed.",
+    "Training pair 2: 15x19 -> 5x5; colors [0, 8] -> [0, 8]; output dimensions changed.",
+    "Training pair 3: 16x19 -> 5x5; colors [0, 2] -> [0, 2]; output dimensions changed.",
+    "Training pair 4: 14x18 -> 5x5; colors [0, 7] -> [0, 7]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

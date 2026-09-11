@@ -1,0 +1,20 @@
+{
+  "title": "Sort the amount of color into bars in order of length",
+  "summary": "For each color, count the height from the top to the bottom. Even if the middle row is hidden by another color, it will be included in the height. Arrange the colors from the largest height to the left, and if the heights are the same, place the color with the largest color number first. Paint each color vertically by the height from the top edge, and paint the bottom part black.",
+  "steps": [
+    "For each color, count the height from the top to the bottom. Even if the middle row is hidden by another color, it will be included in the height.",
+    "Arrange the colors from the largest height to the left, and if the heights are the same, place the color with the largest color number first.",
+    "Paint each color vertically by the height from the top edge, and paint the bottom part black."
+  ],
+  "concepts": [
+    "quantity",
+    "sort",
+    "bar graph"
+  ],
+  "observations": [
+    "Training pair 1: 10x15 -> 3x3; colors [0, 1, 2, 3] -> [0, 1, 2, 3]; output dimensions changed.",
+    "Training pair 2: 19x18 -> 5x4; colors [0, 1, 2, 7, 8] -> [0, 1, 2, 7, 8]; output dimensions changed.",
+    "Training pair 3: 10x15 -> 4x3; colors [0, 3, 4, 8] -> [0, 3, 4, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

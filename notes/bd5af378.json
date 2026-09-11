@@ -1,0 +1,19 @@
+{
+  "title": "Draw a diagonal line from the two sides of the frame and make the inside light blue.",
+  "summary": "Move the thick L shape one step inward, draw the original inside color on the outer edge and diagonal, and paint the rest light blue.",
+  "steps": [
+    "Move the thick L shape one step inward, draw the original inside color on the outer edge and diagonal, and paint the rest light blue."
+  ],
+  "concepts": [
+    "diagonal",
+    "frame",
+    "background change"
+  ],
+  "observations": [
+    "Training pair 1: 5x6 -> 5x6; colors [7, 9] -> [7, 8, 9]; 27 cells changed.",
+    "Training pair 2: 5x8 -> 5x8; colors [3, 6] -> [3, 6, 8]; 37 cells changed.",
+    "Training pair 3: 8x6 -> 8x6; colors [1, 5] -> [1, 5, 8]; 44 cells changed.",
+    "Training pair 4: 10x10 -> 10x10; colors [1, 6] -> [1, 6, 8]; 92 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

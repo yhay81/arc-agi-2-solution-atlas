@@ -1,0 +1,19 @@
+{
+  "title": "Extract the smallest connected component",
+  "summary": "Extract the smallest connected component. This is the training-inferred `smallest_component` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `smallest_component`: extract the smallest connected component"
+  ],
+  "concepts": [
+    "smallest",
+    "component"
+  ],
+  "observations": [
+    "Training pair 1: 13x15 -> 3x4; colors [0, 2, 3, 7] -> [7]; output dimensions changed.",
+    "Training pair 2: 20x20 -> 2x3; colors [0, 1, 2, 3, 4, 8] -> [1]; output dimensions changed.",
+    "Training pair 3: 10x15 -> 3x2; colors [0, 2, 3, 6] -> [6]; output dimensions changed.",
+    "Training pair 4: 18x15 -> 2x2; colors [0, 1, 4, 6] -> [4]; output dimensions changed.",
+    "Training pair 5: 10x10 -> 3x3; colors [0, 2, 8] -> [8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

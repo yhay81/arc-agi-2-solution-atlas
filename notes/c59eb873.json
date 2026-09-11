@@ -1,0 +1,19 @@
+{
+  "title": "Return the input without modification",
+  "summary": "Return the input without modification. This is the training-inferred `identity` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `identity`: return the input without modification"
+  ],
+  "concepts": [
+    "identity"
+  ],
+  "observations": [
+    "Training pair 1: 2x2 -> 4x4; colors [1, 2, 3] -> [1, 2, 3]; output dimensions changed.",
+    "Training pair 2: 3x3 -> 6x6; colors [0, 1, 2, 5] -> [0, 1, 2, 5]; output dimensions changed.",
+    "Training pair 3: 4x4 -> 8x8; colors [0, 1, 2, 3, 5] -> [0, 1, 2, 3, 5]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "cell repeat factor: 2 x 2"
+  ]
+}

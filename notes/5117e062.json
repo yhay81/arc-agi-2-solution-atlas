@@ -1,0 +1,19 @@
+{
+  "title": "Extract a 3x3 glyph whose center marker is replaced by its glyph color",
+  "summary": "Extract a 3x3 glyph whose center marker is replaced by its glyph color. This is the training-inferred `fill_center_marker_glyph` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `fill_center_marker_glyph`: extract a 3x3 glyph whose center marker is replaced by its glyph color"
+  ],
+  "concepts": [
+    "fill",
+    "center",
+    "marker",
+    "glyph"
+  ],
+  "observations": [
+    "Training pair 1: 13x13 -> 3x3; colors [0, 1, 2, 3, 8] -> [0, 3]; output dimensions changed.",
+    "Training pair 2: 13x13 -> 3x3; colors [0, 2, 3, 4, 6, 8] -> [0, 4]; output dimensions changed.",
+    "Training pair 3: 13x13 -> 3x3; colors [0, 1, 2, 3, 8] -> [0, 2]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

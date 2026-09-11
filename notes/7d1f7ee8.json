@@ -1,0 +1,19 @@
+{
+  "title": "Recolor every object inside a frame with its outermost frame color",
+  "summary": "Recolor every object inside a frame with its outermost frame color. Hollow rectangular frames form a hierarchy in this task family. A frame can contain other frames and arbitrary colored payloads; all of those nested cells are keyed by the *outermost* containing frame, rather than by the nearest frame. The frame borders themselves are also recolored when they lie inside another frame. Frame candidates are recovered from pure same-color connected components, keeping the rule independent of the concrete ARC palette and scene coordinates. This is the training-inferred `recolor_nested_frame_contents` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `recolor_nested_frame_contents`: recolor every object inside a frame with its outermost frame color"
+  ],
+  "concepts": [
+    "recolor",
+    "nested",
+    "frame",
+    "contents"
+  ],
+  "observations": [
+    "Training pair 1: 22x28 -> 22x28; colors [0, 1, 2, 3, 4, 6] -> [0, 1, 2, 3]; 78 cells changed.",
+    "Training pair 2: 23x27 -> 23x27; colors [0, 1, 2, 3, 4, 7, 8] -> [0, 4, 7, 8]; 60 cells changed.",
+    "Training pair 3: 12x18 -> 12x18; colors [0, 1, 2, 3, 8] -> [0, 1]; 32 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

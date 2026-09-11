@@ -1,0 +1,19 @@
+{
+  "title": "Find contour points of the same color in the same row",
+  "summary": "Find outline points of the same color in the same row. Paint the black squares between adjacent points red.",
+  "steps": [
+    "Find contour points of the same color in the same row",
+    "Paint the black squares between adjacent points red"
+  ],
+  "concepts": [
+    "scan line",
+    "inner fill"
+  ],
+  "observations": [
+    "Training pair 1: 5x12 -> 5x12; colors [0, 8] -> [0, 2, 8]; 21 cells changed.",
+    "Training pair 2: 3x8 -> 3x8; colors [0, 4] -> [0, 2, 4]; 4 cells changed.",
+    "Training pair 3: 5x8 -> 5x8; colors [0, 1] -> [0, 1, 2]; 9 cells changed.",
+    "Training pair 4: 4x8 -> 4x8; colors [0, 3] -> [0, 2, 3]; 9 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

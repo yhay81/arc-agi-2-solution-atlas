@@ -1,0 +1,21 @@
+{
+  "title": "Extend a short edge line into a periodic ladder",
+  "summary": "From the edge with the short line of color 4, extend a cycle of 6 columns or 6 rows: 4, background, 4, background, 3, background. Change other shapes in the same row or column as 3 to 3 as well.",
+  "steps": [
+    "Find out where the continuous line of color 4 is on the top, bottom, left or right edge of the board.",
+    "Maintaining the width and position of the line, draw [4, background, 4, background, 3, background] from the edge inward at a cycle of 6.",
+    "In the row or column that corresponds to the rung of color 3, change the foreground squares outside the ladder to 3 as well.",
+    "Leave the other squares outside the ladder as they are."
+  ],
+  "concepts": [
+    "sign of the edge",
+    "period",
+    "Response to rotation",
+    "conditional color change"
+  ],
+  "observations": [
+    "Training pair 1: 29x22 -> 29x22; colors [1, 4, 8] -> [1, 3, 4, 8]; 102 cells changed.",
+    "Training pair 2: 29x22 -> 29x22; colors [2, 4, 8] -> [2, 3, 4, 8]; 76 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

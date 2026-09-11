@@ -1,0 +1,21 @@
+{
+  "title": "Find four square frames of the same size on a large board",
+  "summary": "Find four square frames of the same size on a large board. Use the blank box as the place for your answer. Of the remaining three, two with the same set of colors are used as samples of change, and one with a different color is used as a problem. From the sample, decide whether to invert the colors and spaces, connect vertical and horizontal dots, extend the ring outward from the center, or fill in the pattern by the distance between the four corners. Perform the same operation with the color in question.",
+  "steps": [
+    "Find four square frames of the same size on a large board",
+    "Use the blank frame as the place for your answer.",
+    "Of the remaining three, two with the same color set are samples of change, and one with a different color is used as a problem.",
+    "From the sample, determine whether to invert the colors and spaces, connect vertical and horizontal dots, extend the ring outward from the center, or fill the pattern with the distance between the four corners.",
+    "Perform the same operation with the color in question"
+  ],
+  "concepts": [
+    "negative shape",
+    "skeleton",
+    "drawing"
+  ],
+  "observations": [
+    "Training pair 1: 30x30 -> 5x5; colors [0, 1, 2, 3, 4, 6] -> [0, 2, 6]; output dimensions changed.",
+    "Training pair 2: 30x30 -> 4x4; colors [0, 1, 2, 3, 4, 8] -> [0, 2]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

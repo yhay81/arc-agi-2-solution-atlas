@@ -1,0 +1,19 @@
+{
+  "title": "Expand the sole foreground marker into a rectangle toward its nearest corner",
+  "summary": "Expand the sole foreground marker into a rectangle toward its nearest corner. This is the training-inferred `extend_marker_to_corner` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `extend_marker_to_corner`: expand the sole foreground marker into a rectangle toward its nearest corner"
+  ],
+  "concepts": [
+    "extend",
+    "marker",
+    "corner"
+  ],
+  "observations": [
+    "Training pair 1: 6x8 -> 6x8; colors [4, 8] -> [4, 8]; 8 cells changed.",
+    "Training pair 2: 6x6 -> 6x6; colors [8, 9] -> [8, 9]; 5 cells changed.",
+    "Training pair 3: 10x8 -> 10x8; colors [6, 8] -> [6, 8]; 14 cells changed.",
+    "Training pair 4: 4x4 -> 4x4; colors [6, 8] -> [6, 8]; 1 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

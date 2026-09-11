@@ -1,0 +1,17 @@
+{
+  "title": "Recolor from single marker",
+  "summary": "Recolor from single marker. This is the training-inferred `recolor_from_single_marker` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `recolor_from_single_marker`: recolor from single marker"
+  ],
+  "concepts": [
+    "recolor",
+    "single",
+    "marker"
+  ],
+  "observations": [
+    "Training pair 1: 7x7 -> 7x7; colors [0, 3, 6] -> [0, 6]; 13 cells changed.",
+    "Training pair 2: 7x7 -> 7x7; colors [0, 2, 4] -> [0, 4]; 13 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

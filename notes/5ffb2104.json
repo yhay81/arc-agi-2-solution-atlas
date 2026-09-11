@@ -1,0 +1,18 @@
+{
+  "title": "Shift same-color connected blocks right until a block or edge stops them",
+  "summary": "Shift same-color connected blocks right until a block or edge stops them. This is the training-inferred `pack_components_right` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `pack_components_right`: shift same-color connected blocks right until a block or edge stops them"
+  ],
+  "concepts": [
+    "pack",
+    "components",
+    "right"
+  ],
+  "observations": [
+    "Training pair 1: 6x6 -> 6x6; colors [0, 2, 3, 6, 8] -> [0, 2, 3, 6, 8]; 16 cells changed.",
+    "Training pair 2: 10x13 -> 10x13; colors [0, 2, 3, 5, 6, 8] -> [0, 2, 3, 5, 6, 8]; 26 cells changed.",
+    "Training pair 3: 6x6 -> 6x6; colors [0, 2, 3, 6, 8] -> [0, 2, 3, 6, 8]; 17 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

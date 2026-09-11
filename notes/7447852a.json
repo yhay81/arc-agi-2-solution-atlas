@@ -1,0 +1,20 @@
+{
+  "title": "Fill every third zero region across a three-row diamond lattice",
+  "summary": "Fill every third zero region across a three-row diamond lattice. This is the training-inferred `fill_every_third_diamond_region` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `fill_every_third_diamond_region`: fill every third zero region across a three-row diamond lattice"
+  ],
+  "concepts": [
+    "fill",
+    "every",
+    "third",
+    "diamond",
+    "region"
+  ],
+  "observations": [
+    "Training pair 1: 3x15 -> 3x15; colors [0, 2] -> [0, 2, 4]; 11 cells changed.",
+    "Training pair 2: 3x10 -> 3x10; colors [0, 2] -> [0, 2, 4]; 7 cells changed.",
+    "Training pair 3: 3x18 -> 3x18; colors [0, 2] -> [0, 2, 4]; 12 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

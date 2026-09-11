@@ -1,0 +1,18 @@
+{
+  "title": "Build tapered layers around each red bar",
+  "summary": "Using each red horizontal or vertical stick as a core, draw light blue layers on each side of the stick, each becoming shorter from the end. Existing cells will not be overwritten.",
+  "steps": [
+    "Verify the four neighboring components of red as a straight bar",
+    "Find the direction and length of the stick",
+    "Draw a light blue parallel layer on both sides with the edges shortened at each distance."
+  ],
+  "concepts": [
+    "Stepped expansion",
+    "straight bar"
+  ],
+  "observations": [
+    "Training pair 1: 19x21 -> 19x21; colors [0, 2] -> [0, 2, 8]; 40 cells changed.",
+    "Training pair 2: 17x19 -> 17x19; colors [0, 2] -> [0, 2, 8]; 84 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

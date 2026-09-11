@@ -1,0 +1,19 @@
+{
+  "title": "Fix the corners indicated by the L-shaped marks in the 3 squares, move the scattered parts in parallel without rotating them, and pack them into one rectangle.",
+  "summary": "Fix the corners indicated by the L-shaped marks in the 3 squares, and pack the scattered parts into one rectangle by moving them in parallel without rotating them. The outer periphery of the rectangle should be the color of the base of the part only. Look for an arrangement in which the colors of each pattern inside are connected together, and different pattern colors do not touch each other directly.",
+  "steps": [
+    "Fix the corners indicated by the L-shaped marks in the 3 squares, move the scattered parts in parallel without rotating them, and pack them into one rectangle.",
+    "Make the outer periphery of the rectangle only the color of the base of the part.",
+    "Look for an arrangement where the colors of each pattern inside are connected together and different pattern colors do not touch each other directly."
+  ],
+  "concepts": [
+    "Noise removal",
+    "Placement optimization",
+    "frame"
+  ],
+  "observations": [
+    "Training pair 1: 12x20 -> 12x20; colors [0, 2, 4, 7, 8] -> [0, 2, 7, 8]; 123 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [3, 4, 8, 9] -> [3, 8, 9]; 38 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

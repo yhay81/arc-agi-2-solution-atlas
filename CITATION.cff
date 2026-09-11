@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: "ARC-AGI-2 Solution Atlas"
+message: "If you use this atlas, please cite the repository and the ARC-AGI-2 dataset."
+type: software
+authors:
+  - name: "Yusuke Hayashi"
+repository-code: "https://github.com/yhay81/arc-agi-2-solution-atlas"
+license: Apache-2.0
+version: 1.0.0
+date-released: 2026-09-11
+abstract: >-
+  An executable, provenance-aware, and independently verifiable atlas of
+  solutions for the public ARC-AGI-2 task collection.

@@ -1,0 +1,20 @@
+{
+  "title": "Match the color marks and copy the red parts onto the large window",
+  "summary": "The largest non-black block is the destination rectangle. Find the small red 2 part and the different color mark inside it. Trace the relative positions of the parts onto the large rectangular marks of the same color and cut out only the rectangle.",
+  "steps": [
+    "The largest non-black block is the destination rectangle.",
+    "Find the small red 2 part and the different color mark inside it.",
+    "Trace the relative positions of the parts onto the large rectangular marks of the same color and cut out only the rectangle."
+  ],
+  "concepts": [
+    "Correspondence with landmarks",
+    "local pattern",
+    "Cut out"
+  ],
+  "observations": [
+    "Training pair 1: 16x20 -> 9x6; colors [0, 1, 2, 3, 4, 8] -> [1, 2, 4, 8]; output dimensions changed.",
+    "Training pair 2: 18x22 -> 12x11; colors [0, 1, 2, 3, 4, 7, 8] -> [1, 2, 3, 4, 7, 8]; output dimensions changed.",
+    "Training pair 3: 16x18 -> 6x12; colors [0, 1, 2, 3, 4, 8] -> [1, 2, 3, 4, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Replace each disconnected solid rectangle by its perimeter",
+  "summary": "Replace each disconnected solid rectangle by its perimeter. Only components whose cells exactly fill their bounding box are changed; unrelated objects and non-rectangular components remain untouched. This is the training-inferred `outline_solid_rectangles` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `outline_solid_rectangles`: replace each disconnected solid rectangle by its perimeter"
+  ],
+  "concepts": [
+    "outline",
+    "solid",
+    "rectangles"
+  ],
+  "observations": [
+    "Training pair 1: 8x7 -> 8x7; colors [0, 2] -> [0, 2]; 6 cells changed.",
+    "Training pair 2: 18x16 -> 18x16; colors [0, 3, 6, 7, 8] -> [0, 3, 6, 7, 8]; 30 cells changed.",
+    "Training pair 3: 11x12 -> 11x12; colors [0, 4, 5] -> [0, 4, 5]; 20 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

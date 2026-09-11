@@ -1,0 +1,18 @@
+{
+  "title": "Fill each colored object's bounding box with the next object's color",
+  "summary": "Fill each colored object's bounding box with the next object's color. A recurring ARC construction places several differently colored, sparse objects in separate column bands. The pixels of the object are a mask; the background holes inside its bounding box are rendered using the next object's color (with the bands ordered left-to-right and wrapping around). Existing object pixels and everything outside the boxes are preserved. The rule learns both the background and palette from the scene and keeps no task-specific coordinates. This is the training-inferred `fill_component_bboxes_cyclic` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `fill_component_bboxes_cyclic`: fill each colored object's bounding box with the next object's color"
+  ],
+  "concepts": [
+    "fill",
+    "component",
+    "bboxes",
+    "cyclic"
+  ],
+  "observations": [
+    "Training pair 1: 10x8 -> 10x8; colors [2, 4, 5, 6] -> [2, 4, 5, 6]; 25 cells changed.",
+    "Training pair 2: 10x8 -> 10x8; colors [0, 3, 4, 9] -> [0, 3, 4, 9]; 36 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

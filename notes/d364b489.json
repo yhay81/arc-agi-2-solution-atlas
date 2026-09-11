@@ -1,0 +1,15 @@
+{
+  "title": "Add direction-colored arms to blue seeds",
+  "summary": "Preserve every blue seed and color its orthogonal neighbors according to their direction from the seed.",
+  "steps": [
+    "Locate every blue seed.",
+    "Color the cells above, below, left, and right azure, red, orange, and magenta respectively."
+  ],
+  "concepts": ["directional coloring", "cross expansion"],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 1] -> [0, 1, 2, 6, 7, 8]; 19 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 1] -> [0, 1, 2, 6, 7, 8]; 18 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": ["directions from seed: north=8, south=2, west=7, east=6"]
+}

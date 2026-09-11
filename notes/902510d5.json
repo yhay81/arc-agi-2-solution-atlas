@@ -1,0 +1,20 @@
+{
+  "title": "Leave a large arrow shape and paint a triangle starting from the corner mark.",
+  "summary": "Leave a large arrow shape and paint a triangle starting from the corner mark. The total number of small color points other than the corners is the side length of the triangle, and the color of the most numerous points is the fill color. Erase small dots.",
+  "steps": [
+    "Leave a large arrow shape and paint a triangle starting from the corner mark.",
+    "The total number of small color points other than the corners is the length of the triangle's sides, and the color of the most numerous points is the fill color.",
+    "Erase small dots"
+  ],
+  "concepts": [
+    "instruction interpretation",
+    "Area expansion"
+  ],
+  "observations": [
+    "Training pair 1: 6x9 -> 6x9; colors [0, 2, 3, 4] -> [0, 2, 4]; 5 cells changed.",
+    "Training pair 2: 11x11 -> 11x11; colors [0, 1, 2, 3, 7, 8] -> [0, 2, 7]; 20 cells changed.",
+    "Training pair 3: 15x14 -> 15x14; colors [0, 3, 6, 8] -> [0, 6, 8]; 13 cells changed.",
+    "Training pair 4: 10x10 -> 10x10; colors [0, 3, 4, 7, 8, 9] -> [0, 7, 8]; 20 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

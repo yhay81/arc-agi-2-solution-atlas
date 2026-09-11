@@ -1,0 +1,19 @@
+{
+  "title": "Keep the uniquely occurring color cell and surround it with a 3x3 frame",
+  "summary": "Keep the uniquely occurring color cell and surround it with a 3x3 frame. The noisy scene contains several repeated colors and exactly one non-zero color that occurs once. That singleton is the signal; all other cells are discarded and its eight neighbours are painted with ``frame_color``. This is the training-inferred `frame_unique_frequency_cell` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `frame_unique_frequency_cell`: keep the uniquely occurring color cell and surround it with a 3x3 frame"
+  ],
+  "concepts": [
+    "frame",
+    "unique",
+    "frequency",
+    "cell"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 1, 2, 3, 4, 5, 6, 7, 9] -> [0, 2, 6]; 33 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 1, 2, 3, 4, 5, 8] -> [0, 2, 4]; 22 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 1, 2, 3, 5, 6, 7, 8, 9] -> [0, 2, 3]; 24 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

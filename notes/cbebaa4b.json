@@ -1,0 +1,20 @@
+{
+  "title": "Fix a square part with a filled inside",
+  "summary": "Fix the square part with the inside filled in. Examine the red connection points protruding from the parts and determine the positional relationship between the parts that have two opposite connection points at the same spacing. Convey the positional relationships connected to the fixed parts in order. For parts that do not connect, connect them by overlapping one or more unused red dots, and each time, the positional relationship of the two-point connection is communicated again to the whole.",
+  "steps": [
+    "Fix a square part with a filled inside",
+    "Examine the red connection points protruding from the parts and determine the positional relationship between the parts that have two opposite connection points at the same distance.",
+    "Sequentially convey the positional relationships connected to fixed parts",
+    "For parts that cannot be connected, connect one or more unused red dots over each other, and each time communicate the positional relationship of the two-point connection to the whole."
+  ],
+  "concepts": [
+    "connection graph",
+    "assembly",
+    "parallel movement"
+  ],
+  "observations": [
+    "Training pair 1: 22x22 -> 22x22; colors [0, 1, 2, 3, 4, 5, 8] -> [0, 1, 2, 3, 4, 5, 8]; 93 cells changed.",
+    "Training pair 2: 22x22 -> 22x22; colors [0, 1, 2, 3, 4, 6, 8] -> [0, 1, 2, 3, 4, 6, 8]; 84 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

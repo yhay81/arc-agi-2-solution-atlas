@@ -1,0 +1,18 @@
+{
+  "title": "Fold a vertical color-depth key into a square of concentric frames",
+  "summary": "Fold a vertical color-depth key into a square of concentric frames. This is the training-inferred `uniform_rows_to_concentric_frames` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `uniform_rows_to_concentric_frames`: fold a vertical color-depth key into a square of concentric frames"
+  ],
+  "concepts": [
+    "uniform",
+    "rows",
+    "concentric",
+    "frames"
+  ],
+  "observations": [
+    "Training pair 1: 14x14 -> 26x26; colors [1, 2, 6, 8] -> [1, 2, 6, 8]; output dimensions changed.",
+    "Training pair 2: 13x12 -> 24x24; colors [1, 2, 3, 8] -> [1, 2, 3, 8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

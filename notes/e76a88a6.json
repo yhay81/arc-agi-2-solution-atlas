@@ -1,0 +1,19 @@
+{
+  "title": "Replace equal solid placeholder rectangles with the sole multicolor template",
+  "summary": "Replace equal solid placeholder rectangles with the sole multicolor template. This is the training-inferred `stamp_multicolor_template_into_solid_placeholders` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `stamp_multicolor_template_into_solid_placeholders`: replace equal solid placeholder rectangles with the sole multicolor template"
+  ],
+  "concepts": [
+    "stamp",
+    "multicolor",
+    "template",
+    "solid",
+    "placeholders"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 5, 6, 8] -> [0, 6, 8]; 24 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 2, 4, 5] -> [0, 2, 4]; 18 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

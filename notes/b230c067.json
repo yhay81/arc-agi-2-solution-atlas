@@ -1,0 +1,20 @@
+{
+  "title": "Color unique normalized shapes two and repeated normalized shapes one",
+  "summary": "Color unique normalized shapes two and repeated normalized shapes one. This is the training-inferred `recolor_unique_and_repeated_component_shapes` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `recolor_unique_and_repeated_component_shapes`: color unique normalized shapes two and repeated normalized shapes one"
+  ],
+  "concepts": [
+    "recolor",
+    "unique",
+    "repeated",
+    "component",
+    "shapes"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 8] -> [0, 1, 2]; 26 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 8] -> [0, 1, 2]; 28 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 8] -> [0, 1, 2]; 14 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

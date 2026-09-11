@@ -1,0 +1,19 @@
+{
+  "title": "Color code between and outside the gray squares",
+  "summary": "Find the 2x2 square of gray 5 and examine its rows and columns. The black squares between the columns and rows of squares are set to red 2 within the range of the square group. Extend the same row and column as that gap to the outside, and change the remaining black squares to blue 1.",
+  "steps": [
+    "Find the 2x2 square of gray 5 and examine its rows and columns.",
+    "The black squares between the columns and rows of squares are set to red 2 within the range of the square group.",
+    "Extend the same row and column as that gap to the outside, and change the remaining black squares to blue 1."
+  ],
+  "concepts": [
+    "inside and outside the enclosure",
+    "outlook"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 5] -> [0, 1, 2, 5]; 36 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 5] -> [0, 1, 2, 5]; 36 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 5] -> [0, 1, 2, 5]; 52 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

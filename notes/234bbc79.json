@@ -1,0 +1,21 @@
+{
+  "title": "Recolor endpoint markers and align successive segments at their endpoints",
+  "summary": "Recolor endpoint markers and align successive segments at their endpoints. This is the training-inferred `join_marker_ended_colored_segments` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `join_marker_ended_colored_segments`: recolor endpoint markers and align successive segments at their endpoints"
+  ],
+  "concepts": [
+    "join",
+    "marker",
+    "ended",
+    "colored",
+    "segments"
+  ],
+  "observations": [
+    "Training pair 1: 3x11 -> 3x9; colors [0, 2, 5, 6, 8] -> [0, 2, 6, 8]; output dimensions changed.",
+    "Training pair 2: 3x11 -> 3x9; colors [0, 1, 2, 3, 5] -> [0, 1, 2, 3]; output dimensions changed.",
+    "Training pair 3: 3x11 -> 3x8; colors [0, 1, 2, 5] -> [0, 1, 2]; output dimensions changed.",
+    "Training pair 4: 3x9 -> 3x7; colors [0, 1, 2, 5] -> [0, 1, 2]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

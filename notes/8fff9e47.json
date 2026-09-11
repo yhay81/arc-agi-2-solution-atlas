@@ -1,0 +1,19 @@
+{
+  "title": "Layer the 2×2 color swatches outwards in order.",
+  "summary": "Read a 2x2 sample of the input from the top row to the left. Center the first swatch. Using the four colors in the sample below, paint the outer frame one step further using the corresponding four corner colors.",
+  "steps": [
+    "Read a 2x2 sample of the input from the top row to the left.",
+    "Center the first swatch.",
+    "Using the four colors in the sample below, paint the outer frame one step further using the corresponding four corner colors."
+  ],
+  "concepts": [
+    "nesting",
+    "Reading order",
+    "four color layers"
+  ],
+  "observations": [
+    "Training pair 1: 6x4 -> 12x12; colors [0, 1, 2, 3, 4, 5, 6, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 8, 9]; output dimensions changed.",
+    "Training pair 2: 4x6 -> 12x12; colors [0, 1, 2, 3, 5, 7, 8, 9] -> [0, 1, 2, 3, 5, 7, 8, 9]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Read the correspondence between the color of the shape and the color around it from the two-color sample at the bottom left.",
+  "summary": "Read the correspondence between the color of the shape and the color surrounding it from the two-color sample at the bottom left. Paint a rectangle that extends the circumference of each shape by one square with the corresponding color. However, closed holes inside the shape remain black.",
+  "steps": [
+    "Read the correspondence between the color of the shape and the color around it from the two-color sample at the bottom left.",
+    "Paint a rectangle with the corresponding color by expanding the circumscribed frame of each shape by one square.",
+    "However, closed holes inside the shape remain black."
+  ],
+  "concepts": [
+    "symmetry",
+    "classification",
+    "background painting"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 20x20; colors [0, 1, 2, 3, 4] -> [0, 1, 2, 3, 4]; 102 cells changed.",
+    "Training pair 2: 20x20 -> 20x20; colors [0, 1, 2, 3, 8] -> [0, 1, 2, 3, 8]; 129 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Restore the color from the symmetry axis of the visible part using the orange rectangle as the hidden range",
+  "summary": "Using the orange rectangle as the hidden range, restore the color from the symmetry axis of the visible part. If the image cannot be filled only by reflection, the transposed position is used as a complement candidate.",
+  "steps": [
+    "Restore the color from the symmetry axis of the visible part using the orange rectangle as the hidden range",
+    "If it is not filled with reflection alone, use the transposed position as a complement candidate."
+  ],
+  "concepts": [
+    "Restoration of occlusion",
+    "symmetry",
+    "partial output"
+  ],
+  "observations": [
+    "Training pair 1: 30x30 -> 10x10; colors [2, 3, 4, 5, 6, 7, 8, 9] -> [2, 3, 4, 5, 6, 8, 9]; output dimensions changed.",
+    "Training pair 2: 30x30 -> 7x5; colors [1, 2, 3, 4, 5, 6, 7, 8, 9] -> [1, 2, 3, 5, 8, 9]; output dimensions changed.",
+    "Training pair 3: 30x30 -> 4x4; colors [1, 2, 3, 4, 5, 6, 7, 8, 9] -> [1, 2, 3, 8, 9]; output dimensions changed.",
+    "Training pair 4: 30x30 -> 6x8; colors [1, 2, 3, 4, 5, 6, 7, 8, 9] -> [1, 2, 3, 4, 5, 8, 9]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Kronecker most frequent color",
+  "summary": "Kronecker most frequent color. This is the training-inferred `kronecker_most_frequent_color` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `kronecker_most_frequent_color`: kronecker most frequent color"
+  ],
+  "concepts": [
+    "kronecker",
+    "most",
+    "frequent",
+    "color"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 9x9; colors [3, 6, 8] -> [0, 3, 6, 8]; output dimensions changed.",
+    "Training pair 2: 3x3 -> 9x9; colors [3, 7, 8, 9] -> [0, 3, 7, 8, 9]; output dimensions changed.",
+    "Training pair 3: 3x3 -> 9x9; colors [4, 6, 8, 9] -> [0, 4, 6, 8, 9]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

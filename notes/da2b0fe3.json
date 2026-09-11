@@ -1,0 +1,20 @@
+{
+  "title": "Make the black cut through the shape a green straight line",
+  "summary": "Find a 1-square-wide black slit that runs in a straight line down the middle of the colored shape.",
+  "steps": [
+    "Find a 1-square-wide black slit that runs in a straight line down the middle of the colored shape.",
+    "If the cut is vertical, fill that column, if it is horizontal, fill that row, up to both ends of the board, with green.",
+    "The shapes other than the cuts and the black background remain unchanged."
+  ],
+  "concepts": [
+    "missing line",
+    "straight line extension",
+    "Vertical/horizontal determination"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 5] -> [0, 3, 5]; 10 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 1] -> [0, 1, 3]; 10 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 2] -> [0, 2, 3]; 10 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

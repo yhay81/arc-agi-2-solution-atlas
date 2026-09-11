@@ -1,0 +1,24 @@
+{
+  "title": "Read the starting point of a color, lines of the same color, and the inside of a ring as separate parts",
+  "summary": "Read the starting point of a color, a line segment of the same color, and the inside of a ring as separate parts. |From the starting point, trace the connections in this order: line segment, ring, then next same color line segment. Even if the rings meet diagonally, they cannot connect directly. If another line hides an intersection, connect the lines of the same color on both sides. |Make the inside of the reached ring the color of the starting point. Lines of different colors are processed independently.",
+  "steps": [
+    "Read the starting point of a color, lines of the same color, and the inside of a ring as separate parts",
+    "|Tracing connections from the starting point to a line, then a ring, then the next segment of the same color",
+    "Even if rings touch each other diagonally, they cannot connect directly.",
+    "If another line hides an intersection, connect the same color lines on both sides.",
+    "|Set the inside of the reached ring as the starting point color",
+    "Process lines of different colors independently"
+  ],
+  "concepts": [
+    "hole",
+    "distance",
+    "conditional filling"
+  ],
+  "observations": [
+    "Training pair 1: 18x24 -> 18x24; colors [0, 1, 2, 3, 5, 7] -> [0, 1, 2, 3, 5, 7]; 24 cells changed.",
+    "Training pair 2: 12x20 -> 12x20; colors [0, 1, 2, 4] -> [0, 1, 2, 4]; 12 cells changed.",
+    "Training pair 3: 16x20 -> 16x20; colors [0, 1, 2, 3, 4] -> [0, 1, 2, 3, 4]; 12 cells changed.",
+    "Training pair 4: 8x8 -> 8x8; colors [0, 1, 2, 4] -> [0, 1, 2, 4]; 4 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

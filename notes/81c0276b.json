@@ -1,0 +1,20 @@
+{
+  "title": "List the number of each color in descending order",
+  "summary": "Count the small 2x2 blocks of color by color, excluding the divider color.",
+  "steps": [
+    "Count the small 2x2 blocks of color by color, excluding the divider color.",
+    "Use one row for each color in descending order of number, and represent each number with squares of the same color.",
+    "Set the remaining cells to the background color."
+  ],
+  "concepts": [
+    "Quantity by color",
+    "sort",
+    "table"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 2x3; colors [0, 1, 2, 3] -> [0, 1, 2]; output dimensions changed.",
+    "Training pair 2: 19x13 -> 3x3; colors [0, 3, 4, 6, 8] -> [0, 3, 4, 8]; output dimensions changed.",
+    "Training pair 3: 16x18 -> 3x4; colors [0, 1, 2, 4, 8] -> [0, 1, 4, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

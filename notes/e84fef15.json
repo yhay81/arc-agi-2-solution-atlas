@@ -1,0 +1,21 @@
+{
+  "title": "The missing tile with only one missing tile is shown in blue.",
+  "summary": "Compare the repeated 5×5 tiles and output a tile with only one missing piece indicated in blue 1.",
+  "steps": [
+    "Divide into 5 x 5 tiles, excluding one square.",
+    "Find the tile that is different from the most complete tile.",
+    "For the same position in two tiles, use the color of the complete tile.",
+    "Set only the different positions to 1 and output as 5×5."
+  ],
+  "concepts": [
+    "ostracism",
+    "difference",
+    "restoration"
+  ],
+  "observations": [
+    "Training pair 1: 29x29 -> 5x5; colors [0, 2, 3, 4, 8] -> [0, 1, 2, 4, 8]; output dimensions changed.",
+    "Training pair 2: 29x29 -> 5x5; colors [0, 2, 3, 4, 6, 8] -> [0, 1, 4, 6, 8]; output dimensions changed.",
+    "Training pair 3: 29x29 -> 5x5; colors [0, 2, 3, 4, 8] -> [0, 1, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

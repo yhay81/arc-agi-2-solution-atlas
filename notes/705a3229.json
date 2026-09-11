@@ -1,0 +1,20 @@
+{
+  "title": "Draw an L shape from the point to the nearest edge",
+  "summary": "For each point, choose the closest of the top and bottom sides and the closest of the left and right sides. Draw a vertical line and a horizontal line from the point to the two selected sides. Make both the dots the same color.",
+  "steps": [
+    "For each point, choose the closest of the top and bottom sides and the closest of the left and right sides.",
+    "Draw a vertical line and a horizontal line from the point to the two selected sides.",
+    "Make both the dots the same color."
+  ],
+  "concepts": [
+    "distance comparison",
+    "L-shape"
+  ],
+  "observations": [
+    "Training pair 1: 12x10 -> 12x10; colors [0, 4, 5, 8] -> [0, 4, 5, 8]; 17 cells changed.",
+    "Training pair 2: 14x15 -> 14x15; colors [0, 3, 5] -> [0, 3, 5]; 16 cells changed.",
+    "Training pair 3: 11x8 -> 11x8; colors [0, 9] -> [0, 9]; 7 cells changed.",
+    "Training pair 4: 12x12 -> 12x12; colors [0, 3, 8] -> [0, 3, 8]; 8 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

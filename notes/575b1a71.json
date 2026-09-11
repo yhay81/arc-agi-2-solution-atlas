@@ -1,0 +1,19 @@
+{
+  "title": "Color-code the black parts by column order",
+  "summary": "Count only the rows that contain one or more black squares, starting from the left. Paint the black squares in those rows blue, red, green, and yellow in order. Repeat the same four colors starting from the 5th row. Leave the original squares other than black.",
+  "steps": [
+    "Count only the rows that contain one or more black squares, starting from the left.",
+    "Paint the black squares in those rows blue, red, green, and yellow in order. Repeat the same four colors starting from the 5th row.",
+    "Leave the original squares other than black."
+  ],
+  "concepts": [
+    "column order",
+    "Color by rank"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 5] -> [1, 2, 3, 4, 5]; 8 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 5] -> [1, 2, 3, 4, 5]; 15 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 5] -> [1, 2, 3, 4, 5]; 8 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

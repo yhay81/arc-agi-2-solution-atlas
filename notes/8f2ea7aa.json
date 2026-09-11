@@ -1,0 +1,19 @@
+{
+  "title": "Extract one square motif and place it at each occupied motif cell",
+  "summary": "Extract one square motif and place it at each occupied motif cell. This is the training-inferred `extract_nonzero_tile_kronecker` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `extract_nonzero_tile_kronecker`: extract one square motif and place it at each occupied motif cell"
+  ],
+  "concepts": [
+    "extract",
+    "nonzero",
+    "tile",
+    "kronecker"
+  ],
+  "observations": [
+    "Training pair 1: 9x9 -> 9x9; colors [0, 7] -> [0, 7]; 12 cells changed.",
+    "Training pair 2: 9x9 -> 9x9; colors [0, 8] -> [0, 8]; 12 cells changed.",
+    "Training pair 3: 9x9 -> 9x9; colors [0, 6] -> [0, 6]; 20 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

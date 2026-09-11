@@ -1,0 +1,19 @@
+{
+  "title": "Project color-six axes through the centers of odd hollow square frames",
+  "summary": "Project color-six axes through the centers of odd hollow square frames. This is the training-inferred `project_hollow_square_center_axes` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `project_hollow_square_center_axes`: project color-six axes through the centers of odd hollow square frames"
+  ],
+  "concepts": [
+    "project",
+    "hollow",
+    "square",
+    "center",
+    "axes"
+  ],
+  "observations": [
+    "Training pair 1: 15x15 -> 15x15; colors [1, 8] -> [1, 6, 8]; 48 cells changed.",
+    "Training pair 2: 15x15 -> 15x15; colors [1, 8] -> [1, 6, 8]; 25 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

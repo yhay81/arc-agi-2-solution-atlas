@@ -1,0 +1,18 @@
+{
+  "title": "In each row, move the greens to the left until they are in front of the obstacle.",
+  "summary": "Read each row from the left and move each green 3 square to the left as long as its left neighbor is black 0. Fixed objects such as light blue 8 are not moved, and the positions where green appears are returned to black.",
+  "steps": [
+    "Read each row from the left and move each green 3 square to the left as long as its left neighbor is black 0.",
+    "Fixed objects such as light blue 8 are not moved, and the positions where green appears are returned to black."
+  ],
+  "concepts": [
+    "Move by line",
+    "fixed object"
+  ],
+  "observations": [
+    "Training pair 1: 7x8 -> 7x8; colors [0, 3, 8] -> [0, 3, 8]; 4 cells changed.",
+    "Training pair 2: 7x6 -> 7x6; colors [0, 3, 8] -> [0, 3, 8]; 6 cells changed.",
+    "Training pair 3: 9x8 -> 9x8; colors [0, 3, 8] -> [0, 3, 8]; 12 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

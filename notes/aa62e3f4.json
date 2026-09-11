@@ -1,0 +1,18 @@
+{
+  "title": "Extend the outline of the multicolored object by one square on the top, bottom, left and right, and erase the original object.",
+  "summary": "Extend the outline of the multicolored object by one square in the top, bottom, left and right, and erase the original object. Use the innermost minority color for new outlines.",
+  "steps": [
+    "Extend the outline of the multicolored object by one square on the top, bottom, left and right, and erase the original object.",
+    "Use innermost minority color for new contours"
+  ],
+  "concepts": [
+    "Deployment",
+    "Color compatible",
+    "shape conversion"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [2, 3, 4, 8] -> [4, 8]; 34 cells changed.",
+    "Training pair 2: 7x7 -> 7x7; colors [1, 3, 8] -> [1, 8]; 30 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Fill a closed enclosure with multiple colors",
+  "summary": "Find a blank area surrounded by an outline of the same color and count the colors of colored points within the area. Fill the inside of a closed contour with the color of the most points. The color of the outline itself is maintained. Return the small dots scattered outside to black. In the verification implementation, we use a boundary that leaves open contours of 8 squares or more, so during mass production, small points and long contours are clearly separated.",
+  "steps": [
+    "Find a blank area surrounded by an outline of the same color and count the colors of colored points within the area.",
+    "Fill the inside of a closed contour with the color of the most points. The color of the outline itself is maintained.",
+    "Return the small dots scattered outside to black. In the verification implementation, we use a boundary that leaves open contours of 8 squares or more, so during mass production, small points and long contours are clearly separated."
+  ],
+  "concepts": [
+    "closed area",
+    "majority vote",
+    "Delete unnecessary points"
+  ],
+  "observations": [
+    "Training pair 1: 19x18 -> 19x18; colors [0, 2, 3, 4, 6, 8] -> [0, 2, 3, 4, 6, 8]; 66 cells changed.",
+    "Training pair 2: 21x21 -> 21x21; colors [0, 1, 2, 3, 5, 8] -> [0, 1, 2, 3, 5, 8]; 44 cells changed.",
+    "Training pair 3: 16x14 -> 16x14; colors [0, 2, 3, 6, 8] -> [0, 3, 6]; 68 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

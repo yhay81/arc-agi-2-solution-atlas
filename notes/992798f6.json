@@ -1,0 +1,21 @@
+{
+  "title": "Connect two points using a combination of diagonals and straight lines",
+  "summary": "Draw a path for Green 3 from Blue 1 to Red 2. As long as the row and column distances are both 2 or more, move diagonally toward red. When the distance on one side becomes 1, keep the difference in that direction at 1 and move vertically or horizontally, taking the last step diagonally to reach red. The blue and red at both ends will not be repainted.",
+  "steps": [
+    "Draw a path for Green 3 from Blue 1 to Red 2.",
+    "As long as the row and column distances are both 2 or more, move diagonally toward red.",
+    "When the distance on one side becomes 1, keep the difference in that direction at 1 and move vertically or horizontally, taking the last step diagonally to reach red.",
+    "The blue and red at both ends will not be repainted."
+  ],
+  "concepts": [
+    "diagonal line",
+    "Switch to straight line"
+  ],
+  "observations": [
+    "Training pair 1: 15x16 -> 15x16; colors [0, 1, 2] -> [0, 1, 2, 3]; 10 cells changed.",
+    "Training pair 2: 15x12 -> 15x12; colors [0, 1, 2] -> [0, 1, 2, 3]; 11 cells changed.",
+    "Training pair 3: 16x16 -> 16x16; colors [0, 1, 2] -> [0, 1, 2, 3]; 11 cells changed.",
+    "Training pair 4: 13x12 -> 13x12; colors [0, 1, 2] -> [0, 1, 2, 3]; 9 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

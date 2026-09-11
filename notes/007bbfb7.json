@@ -1,0 +1,19 @@
+{
+  "title": "Expand one pattern through the mask of another",
+  "summary": "Replace every nonzero source cell by a copy of the source pattern. This is the training-inferred `kronecker_pattern` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `kronecker_pattern`: expand one pattern through the mask of another"
+  ],
+  "concepts": [
+    "kronecker",
+    "pattern"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 9x9; colors [0, 6] -> [0, 6]; output dimensions changed.",
+    "Training pair 2: 3x3 -> 9x9; colors [0, 4] -> [0, 4]; output dimensions changed.",
+    "Training pair 3: 3x3 -> 9x9; colors [0, 2] -> [0, 2]; output dimensions changed.",
+    "Training pair 4: 3x3 -> 9x9; colors [0, 2] -> [0, 2]; output dimensions changed.",
+    "Training pair 5: 3x3 -> 9x9; colors [0, 7] -> [0, 7]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Swap the top and bottom positions without reversing the shape",
+  "summary": "Find a rectangle that encloses each color object. Move only the top and bottom of the rectangle to the opposite side of the center of the entire board. Maintain the orientation of the object itself.",
+  "steps": [
+    "Find a rectangle that encloses each color object.",
+    "Move only the top and bottom of the rectangle to the opposite side of the center of the entire board.",
+    "Maintain the orientation of the object itself."
+  ],
+  "concepts": [
+    "Reversing the order",
+    "Preserving object orientation",
+    "pile up"
+  ],
+  "observations": [
+    "Training pair 1: 7x7 -> 7x7; colors [0, 1, 2, 3] -> [0, 1, 2, 3]; 18 cells changed.",
+    "Training pair 2: 13x13 -> 13x13; colors [0, 1, 2, 3, 4, 5] -> [0, 1, 2, 3, 4, 5]; 74 cells changed.",
+    "Training pair 3: 13x13 -> 13x13; colors [0, 1, 2, 3, 4, 8] -> [0, 1, 2, 3, 4, 8]; 53 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

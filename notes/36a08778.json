@@ -1,0 +1,21 @@
+{
+  "title": "Extend edge markers and frame only the marked horizontal runs",
+  "summary": "Extend edge markers and frame only the marked horizontal runs. Two short vertical markers in the first two rows identify scaffold columns. The marker color is continued downward until it meets a row containing a ``2``. Every horizontal run of ``2`` touched by that scaffold is surrounded by the same color; single-cell runs receive only their right neighbour above. This reproduces the training construction without relying on coordinates or task-specific layouts. This is the training-inferred `scaffold_edge_components` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `scaffold_edge_components`: extend edge markers and frame only the marked horizontal runs"
+  ],
+  "concepts": [
+    "scaffold",
+    "edge",
+    "components"
+  ],
+  "observations": [
+    "Training pair 1: 14x14 -> 14x14; colors [2, 6, 7] -> [2, 6, 7]; 61 cells changed.",
+    "Training pair 2: 16x13 -> 16x13; colors [2, 6, 7] -> [2, 6, 7]; 48 cells changed.",
+    "Training pair 3: 8x9 -> 8x9; colors [2, 6, 7] -> [2, 6, 7]; 28 cells changed.",
+    "Training pair 4: 14x5 -> 14x5; colors [2, 6, 7] -> [2, 6, 7]; 21 cells changed.",
+    "Training pair 5: 8x20 -> 8x20; colors [2, 6, 7] -> [2, 6, 7]; 36 cells changed.",
+    "Training pair 6: 15x16 -> 15x16; colors [2, 6, 7] -> [2, 6, 7]; 65 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

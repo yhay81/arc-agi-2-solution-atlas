@@ -1,0 +1,20 @@
+{
+  "title": "Extend each rectangle's marked cell toward its open grid edge",
+  "summary": "Extend each rectangle's marked cell toward its open grid edge. This is the training-inferred `extend_marked_rectangles_to_edges` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `extend_marked_rectangles_to_edges`: extend each rectangle's marked cell toward its open grid edge"
+  ],
+  "concepts": [
+    "extend",
+    "marked",
+    "rectangles",
+    "edges"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 20x20; colors [0, 2, 3] -> [0, 2, 3]; 105 cells changed.",
+    "Training pair 2: 20x20 -> 20x20; colors [0, 2, 3] -> [0, 2, 3]; 62 cells changed.",
+    "Training pair 3: 20x20 -> 20x20; colors [0, 2, 3] -> [0, 2, 3]; 163 cells changed.",
+    "Training pair 4: 10x10 -> 10x10; colors [0, 2, 3] -> [0, 2, 3]; 21 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Choose a long diagonal route",
+  "summary": "Examine all 45 degree diagonals in the black shape and choose the longest line. If there are multiple lines of the same length, choose the line closest to the center of gravity of the entire black square. Makes only the selected line light blue. The method of selecting ties is a hypothesis based on published examples and is not necessarily an intended rule.",
+  "steps": [
+    "Examine all 45 degree diagonals in the black shape and choose the longest line.",
+    "If there are multiple lines of the same length, choose the line closest to the center of gravity of the entire black square.",
+    "Makes only the selected line light blue. The method of selecting ties is a hypothesis based on published examples and is not necessarily an intended rule."
+  ],
+  "concepts": [
+    "Comparison of candidate routes",
+    "diagonal"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 5] -> [0, 5, 8]; 8 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 5] -> [0, 5, 8]; 7 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 5] -> [0, 5, 8]; 6 cells changed.",
+    "Training pair 4: 10x10 -> 10x10; colors [0, 5] -> [0, 5, 8]; 8 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

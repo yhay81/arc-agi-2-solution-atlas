@@ -1,0 +1,19 @@
+{
+  "title": "Read the number of squares with the short monochrome mark above as the rank of that color.",
+  "summary": "Read the number of squares marked with a single color short mark above as the rank of that color. Arrange the bars with the same color on the top and bottom in order of length, and fill only the bars in the specified order with the same color as both ends.",
+  "steps": [
+    "Read the number of squares with the short monochrome mark above as the rank of that color.",
+    "Arrange the bars with the same color on the top and bottom in order of length, and fill only the bars in the specified order with the same color as both ends."
+  ],
+  "concepts": [
+    "pinching",
+    "section",
+    "conditional color change"
+  ],
+  "observations": [
+    "Training pair 1: 10x15 -> 10x15; colors [0, 2, 5] -> [0, 2, 5]; 5 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 2, 3] -> [0, 2, 3]; 5 cells changed.",
+    "Training pair 3: 10x15 -> 10x15; colors [0, 1, 3, 5, 7] -> [0, 1, 3, 5, 7]; 6 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

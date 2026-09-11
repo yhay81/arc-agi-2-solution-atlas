@@ -1,0 +1,18 @@
+{
+  "title": "Infer a small rectangular period from sparse cells and tile it",
+  "summary": "Infer a small rectangular period from sparse cells and tile it. This is the training-inferred `complete_periodic_grid` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `complete_periodic_grid`: infer a small rectangular period from sparse cells and tile it"
+  ],
+  "concepts": [
+    "complete",
+    "periodic",
+    "grid"
+  ],
+  "observations": [
+    "Training pair 1: 29x29 -> 29x29; colors [0, 1, 2, 3, 4, 5, 6, 7] -> [1, 2, 3, 4, 5, 6, 7]; 72 cells changed.",
+    "Training pair 2: 29x29 -> 29x29; colors [0, 1, 2, 3, 4, 5, 6] -> [1, 2, 3, 4, 5, 6]; 59 cells changed.",
+    "Training pair 3: 29x29 -> 29x29; colors [0, 1, 2, 4, 6, 8] -> [1, 2, 4, 6, 8]; 106 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

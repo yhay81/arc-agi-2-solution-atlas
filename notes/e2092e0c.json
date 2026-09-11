@@ -1,0 +1,20 @@
+{
+  "title": "Use a 4-by-4 corner key to locate and fill a matching 5-by-5 window",
+  "summary": "Use a 4-by-4 corner key to locate and fill a matching 5-by-5 window. The seven-cell ``5`` corner at the upper-left of the scene contains a three-by-three key immediately northwest of its bottom and right arms. The unique five-by-five window whose interior equals that key is painted five-cell-wide ``5`` outline. This is the training-inferred `fill_window_matching_corner_key` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `fill_window_matching_corner_key`: use a 4-by-4 corner key to locate and fill a matching 5-by-5 window"
+  ],
+  "concepts": [
+    "fill",
+    "window",
+    "matching",
+    "corner",
+    "key"
+  ],
+  "observations": [
+    "Training pair 1: 15x15 -> 15x15; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 16 cells changed.",
+    "Training pair 2: 15x15 -> 15x15; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 16 cells changed.",
+    "Training pair 3: 15x15 -> 15x15; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 16 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

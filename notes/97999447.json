@@ -1,0 +1,18 @@
+{
+  "title": "Extend each one-cell row marker rightward, alternating marker and 5",
+  "summary": "Extend each one-cell row marker rightward, alternating marker and 5. This is the training-inferred `alternate_right_from_markers` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `alternate_right_from_markers`: extend each one-cell row marker rightward, alternating marker and 5"
+  ],
+  "concepts": [
+    "alternate",
+    "right",
+    "markers"
+  ],
+  "observations": [
+    "Training pair 1: 10x12 -> 10x12; colors [0, 2, 3, 6] -> [0, 2, 3, 5, 6]; 24 cells changed.",
+    "Training pair 2: 10x8 -> 10x8; colors [0, 2, 6] -> [0, 2, 5, 6]; 9 cells changed.",
+    "Training pair 3: 7x8 -> 7x8; colors [0, 8] -> [0, 5, 8]; 4 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

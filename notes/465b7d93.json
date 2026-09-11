@@ -1,0 +1,19 @@
+{
+  "title": "Stretch small parts to the inside of the frame",
+  "summary": "Separate the purple 6 frame and small colored parts that are separated from each other. If the part is filled with a single color, fill the inside of the frame with that color. Otherwise, make the squares at the edges of the part correspond to the inner edges of the frame, and connect adjacent squares of the same color with a straight line to enlarge. Return the original parts to Orange 7.",
+  "steps": [
+    "Separate the purple 6 frame and small colored parts that are separated from each other.",
+    "If the part is filled with a single color, fill the inside of the frame with that color.",
+    "Otherwise, make the squares at the edges of the part correspond to the inner edges of the frame, and connect adjacent squares of the same color with a straight line to enlarge. Return the original parts to Orange 7."
+  ],
+  "concepts": [
+    "color transfer",
+    "Delete sample"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [5, 6, 7] -> [5, 6, 7]; 13 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [2, 6, 7] -> [2, 6, 7]; 2 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [6, 7, 8] -> [6, 7, 8]; 10 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

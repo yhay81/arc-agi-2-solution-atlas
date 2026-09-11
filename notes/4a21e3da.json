@@ -1,0 +1,21 @@
+{
+  "title": "Draw a line straight inward from the red dot at the end to the last orange in the same row or column.",
+  "summary": "Draw a line straight inward from the red dot at the end to the last orange in the same row or column. The orange color on the cutting line will remain in that position. Move the area separated by a line that connects to the side with the red dot to the corresponding corner of the screen. If cutting from two directions, move to three corners and remove the area between the two sides without the red dot.",
+  "steps": [
+    "Draw a line straight inward from the red dot at the end to the last orange in the same row or column.",
+    "Leave the orange color on the cutting line in that position.",
+    "Move the area separated by a line that connects to the side with the red dot to the corresponding corner of the screen",
+    "If cutting from two directions, move to three corners and remove the area between the two sides without the red dot."
+  ],
+  "concepts": [
+    "landmark",
+    "Reproduction",
+    "alignment"
+  ],
+  "observations": [
+    "Training pair 1: 18x18 -> 18x18; colors [1, 2, 7] -> [1, 2, 7]; 61 cells changed.",
+    "Training pair 2: 18x18 -> 18x18; colors [1, 2, 7] -> [1, 2, 7]; 58 cells changed.",
+    "Training pair 3: 18x18 -> 18x18; colors [1, 2, 7] -> [1, 2, 7]; 49 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

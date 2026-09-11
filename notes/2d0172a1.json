@@ -1,0 +1,21 @@
+{
+  "title": "Organize the rings and their inner parts into a tree shape in the order they are included.",
+  "summary": "Organize the rings and their insides into a tree shape in the order they are included. Shrink the innermost part to 1 cell and surround the outside with a 1 cell wide rectangle. The horizontal and vertical rings are aligned based on the deep center point. Insert one cell of the parent color between the branched rings.",
+  "steps": [
+    "Organize the rings and their inner parts into a tree shape in the order they are included.",
+    "Shrink the innermost part to 1 cell and surround the outside with a rectangle 1 cell wide.",
+    "The horizontal and vertical rings should be aligned based on the deep center point.",
+    "Insert one cell of the parent color between the branched rings."
+  ],
+  "concepts": [
+    "circumscribed rectangle",
+    "extension of pattern"
+  ],
+  "observations": [
+    "Training pair 1: 20x25 -> 11x12; colors [3, 4] -> [3, 4]; output dimensions changed.",
+    "Training pair 2: 20x16 -> 5x5; colors [1, 4] -> [1, 4]; output dimensions changed.",
+    "Training pair 3: 20x16 -> 7x5; colors [4, 9] -> [4, 9]; output dimensions changed.",
+    "Training pair 4: 20x25 -> 9x11; colors [2, 4] -> [2, 4]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

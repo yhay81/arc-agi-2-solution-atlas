@@ -1,0 +1,19 @@
+{
+  "title": "Color interior markers from the nearer of two parallel solid borders",
+  "summary": "Color interior markers from the nearer of two parallel solid borders. This is the training-inferred `recolor_markers_by_nearest_border` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `recolor_markers_by_nearest_border`: color interior markers from the nearer of two parallel solid borders"
+  ],
+  "concepts": [
+    "recolor",
+    "markers",
+    "nearest",
+    "border"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 3, 4, 7] -> [0, 4, 7]; 5 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 1, 2, 3] -> [0, 1, 2]; 3 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 3, 8, 9] -> [0, 8, 9]; 6 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

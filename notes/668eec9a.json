@@ -1,0 +1,20 @@
+{
+  "title": "Read the colored lines from the top and make them into five rows.",
+  "summary": "A hypothesis in which colors are arranged in the order of the height at which the line for each color first appears, and is represented by a band three squares wide and five steps deep. If there are fewer than five colors, add a background color layer on top.",
+  "steps": [
+    "Find the top row for each color other than background orange 7",
+    "Arrange the colors in order from top row to top",
+    "Align each color to the bottom in a line of three squares wide, and fill the top margin up to the fifth line with 7s."
+  ],
+  "concepts": [
+    "Sort by height",
+    "color summary",
+    "Bottom alignment"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 5x3; colors [1, 3, 4, 7, 9] -> [1, 3, 4, 7, 9]; output dimensions changed.",
+    "Training pair 2: 16x16 -> 5x3; colors [1, 2, 7, 8] -> [1, 2, 7, 8]; output dimensions changed.",
+    "Training pair 3: 16x16 -> 5x3; colors [1, 3, 4, 7, 8, 9] -> [1, 3, 4, 8, 9]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

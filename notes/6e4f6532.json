@@ -1,0 +1,20 @@
+{
+  "title": "Take out the light blue part and the brown mark inside it.",
+  "summary": "Take out the light blue part and the brown mark inside it. Move the part so that the brown color inside the part perfectly overlaps the distant brown mark. At the same time, rotate and flip the parts to find the direction in which the protrusions of each color on the outside face the wall of the board of the same color. Place a part whose orientation and destination are uniquely determined, and erase the original part.",
+  "steps": [
+    "Take out the light blue part and the brown mark inside it.",
+    "Move the part so that the brown color inside the part perfectly overlaps the distant brown mark.",
+    "Rotate and flip the parts at the same time, and find the direction in which the protrusions of each color on the outside face the wall of the board of the same color.",
+    "Place a part with a unique direction and destination, and erase the original part"
+  ],
+  "concepts": [
+    "Move to landmark",
+    "number of colors",
+    "template"
+  ],
+  "observations": [
+    "Training pair 1: 13x26 -> 13x26; colors [1, 2, 4, 5, 8, 9] -> [1, 2, 4, 5, 8, 9]; 47 cells changed.",
+    "Training pair 2: 26x26 -> 26x26; colors [1, 2, 3, 4, 7, 8, 9] -> [1, 2, 3, 4, 7, 8, 9]; 75 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

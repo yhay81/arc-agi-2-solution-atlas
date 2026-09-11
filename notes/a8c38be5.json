@@ -1,0 +1,19 @@
+{
+  "title": "Arrange eight accented 3x3 tiles by the centroid of each accent",
+  "summary": "Arrange eight accented 3x3 tiles by the centroid of each accent. This is the training-inferred `arrange_accented_three_by_three_tiles` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `arrange_accented_three_by_three_tiles`: arrange eight accented 3x3 tiles by the centroid of each accent"
+  ],
+  "concepts": [
+    "arrange",
+    "accented",
+    "three",
+    "three",
+    "tiles"
+  ],
+  "observations": [
+    "Training pair 1: 16x14 -> 9x9; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [1, 2, 3, 4, 5, 6, 7, 8, 9]; output dimensions changed.",
+    "Training pair 2: 14x14 -> 9x9; colors [0, 1, 2, 3, 4, 5, 6, 8, 9] -> [1, 2, 3, 4, 5, 6, 8, 9]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

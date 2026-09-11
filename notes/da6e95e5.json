@@ -1,0 +1,19 @@
+{
+  "title": "Find a set of four corner parts of the same color lined up in the four corners of a rectangle",
+  "summary": "Find a set of four corner parts of the same color lined up in the four corners of a rectangle. Select a group with a figure of the same color in the center surrounded by four of them, and cut out only the center figure with the smallest rectangle.",
+  "steps": [
+    "Find a set of four corner parts of the same color lined up in the four corners of a rectangle",
+    "Select a group with a figure of the same color in the center surrounded by four of them, and cut out only the center figure with the smallest rectangle."
+  ],
+  "concepts": [
+    "Structural abstraction",
+    "selection",
+    "reduction"
+  ],
+  "observations": [
+    "Training pair 1: 30x30 -> 3x3; colors [1, 2, 3, 4, 6, 8, 9] -> [3, 4]; output dimensions changed.",
+    "Training pair 2: 30x30 -> 2x2; colors [1, 2, 3, 4, 6, 8] -> [1, 8]; output dimensions changed.",
+    "Training pair 3: 30x30 -> 4x5; colors [1, 2, 3, 4, 6, 8] -> [2, 4]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

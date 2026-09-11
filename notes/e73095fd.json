@@ -1,0 +1,23 @@
+{
+  "title": "Fill only qualifying rectangular zero regions",
+  "summary": "Fill the smallest all-background rectangular cavities. Horizontal frame lines are explicit. The left or right canvas edge may replace its vertical wall, allowing compact edge cavities while keeping irregular rooms formed by crossing lines unchanged. This is the training-inferred `fill_rectangular_zero_candidates` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `fill_rectangular_zero_candidates`: fill only qualifying rectangular zero regions"
+  ],
+  "concepts": [
+    "fill",
+    "rectangular",
+    "zero",
+    "candidates"
+  ],
+  "observations": [
+    "Training pair 1: 13x16 -> 13x16; colors [0, 5] -> [0, 4, 5]; 12 cells changed.",
+    "Training pair 2: 12x19 -> 12x19; colors [0, 5] -> [0, 4, 5]; 18 cells changed.",
+    "Training pair 3: 15x17 -> 15x17; colors [0, 5] -> [0, 4, 5]; 19 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "frame color: 5",
+    "fill color: 4"
+  ]
+}

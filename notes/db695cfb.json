@@ -1,0 +1,21 @@
+{
+  "title": "Complete a diagonal key and project crossing markers perpendicularly",
+  "summary": "Complete a diagonal key and project crossing markers perpendicularly. The longest pair of equal-colored diagonal markers is the reference segment. Other colored cells lying on that segment's infinite diagonal are marker keys: each one emits the opposite-slope diagonal to the canvas boundary. This keeps the key segment and all source cells intact. This is the training-inferred `project_perpendicular_diagonal_markers` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `project_perpendicular_diagonal_markers`: complete a diagonal key and project crossing markers perpendicularly"
+  ],
+  "concepts": [
+    "project",
+    "perpendicular",
+    "diagonal",
+    "markers"
+  ],
+  "observations": [
+    "Training pair 1: 15x12 -> 15x12; colors [1, 5, 6] -> [1, 5, 6]; 22 cells changed.",
+    "Training pair 2: 8x11 -> 8x11; colors [1, 6, 8] -> [1, 6, 8]; 10 cells changed.",
+    "Training pair 3: 9x12 -> 9x12; colors [1, 4, 6] -> [1, 4, 6]; 5 cells changed.",
+    "Training pair 4: 15x16 -> 15x16; colors [1, 6, 8] -> [1, 6, 8]; 18 cells changed.",
+    "Training pair 5: 9x9 -> 9x9; colors [1, 4] -> [1, 4]; 4 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

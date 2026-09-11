@@ -1,0 +1,19 @@
+{
+  "title": "For a completed multicolor sample, copy the sample using single color fragments of the same size as the number of colors in the sample as alignment marks.",
+  "summary": "For a completed multicolor sample, the sample is copied using a single color fragment of the same size as the number of colors in the sample as a positioning mark. After copying, cells that appear only once in the sample among non-marker colors are erased from the original sample.",
+  "steps": [
+    "For a completed multicolor sample, copy the sample using single color fragments of the same size as the number of colors in the sample as alignment marks.",
+    "After copying, cells that appear only once in the sample among colors that are not landmarks are deleted from the original sample."
+  ],
+  "concepts": [
+    "part to whole",
+    "pattern reproduction",
+    "alignment"
+  ],
+  "observations": [
+    "Training pair 1: 19x19 -> 19x19; colors [1, 2, 3, 4, 8] -> [1, 2, 3, 4, 8]; 9 cells changed.",
+    "Training pair 2: 13x13 -> 13x13; colors [1, 2, 4, 8] -> [1, 2, 4, 8]; 6 cells changed.",
+    "Training pair 3: 13x13 -> 13x13; colors [1, 2, 3, 8] -> [1, 2, 3, 8]; 13 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

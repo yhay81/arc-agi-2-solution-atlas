@@ -1,0 +1,18 @@
+{
+  "title": "Read the four dots inside the blue square as a layout, and place a small shape outside that matches the color of each dot in a position where that dot is the center.",
+  "summary": "Read the four dots inside the blue square as a layout, and place a small shape outside that matches the color of each dot in a position where that dot is the center. Change the blue background to black and output only the layout diagram.",
+  "steps": [
+    "Read the four dots inside the blue square as a layout, and place a small shape outside that matches the color of each dot in a position where that dot is the center.",
+    "Change the blue background to black and output only the layout diagram"
+  ],
+  "concepts": [
+    "Layout diagram",
+    "Correspondence between color and shape"
+  ],
+  "observations": [
+    "Training pair 1: 17x17 -> 7x7; colors [0, 1, 2, 3, 4, 6, 8] -> [0, 2, 3, 4, 6]; output dimensions changed.",
+    "Training pair 2: 17x13 -> 7x7; colors [0, 1, 2, 3, 4, 8] -> [0, 2, 3, 4, 8]; output dimensions changed.",
+    "Training pair 3: 18x17 -> 7x7; colors [0, 1, 2, 3, 4, 5, 6, 8] -> [0, 2, 3, 4, 5]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

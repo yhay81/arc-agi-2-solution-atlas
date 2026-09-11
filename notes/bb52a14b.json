@@ -1,0 +1,17 @@
+{
+  "title": "Encircle the same local shape as the sample in yellow",
+  "summary": "Copy the yellow mark at a position that matches the sample rectangle excluding the yellow mark.",
+  "steps": [
+    "Copy the yellow mark at a position that matches the sample rectangle excluding the yellow mark."
+  ],
+  "concepts": [
+    "local template",
+    "Isomorphic search"
+  ],
+  "observations": [
+    "Training pair 1: 22x22 -> 22x22; colors [0, 1, 4, 8] -> [0, 1, 4, 8]; 8 cells changed.",
+    "Training pair 2: 22x22 -> 22x22; colors [0, 1, 4, 8] -> [0, 1, 4, 8]; 5 cells changed.",
+    "Training pair 3: 22x22 -> 22x22; colors [0, 1, 4, 8] -> [0, 1, 4, 8]; 12 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

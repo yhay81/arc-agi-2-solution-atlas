@@ -1,0 +1,21 @@
+{
+  "title": "Use a single square of each color as a landmark, and move connected parts containing the same color to the row or column of the landmark.",
+  "summary": "Use the individual squares of each color at the edge of the board as landmarks, and align the individual markers of the same color in the connected parts to the row or column of the landmark. If multiple single cells indicate the same row or column at both ends, align the remaining single cells there as well. Cut off the part where the destination protrudes outside the board.",
+  "steps": [
+    "Use a single square of each color as a landmark, and move connected parts containing the same color to the row or column of the landmark.",
+    "Use colors that appear only once in a part as alignment markers",
+    "If there is enough space for parts that align downward, leave a row between them.",
+    "Cut off the part that goes out of the grid when moving."
+  ],
+  "concepts": [
+    "landmark",
+    "alignment",
+    "compression"
+  ],
+  "observations": [
+    "Training pair 1: 18x8 -> 18x8; colors [1, 4, 8] -> [1, 4, 8]; 39 cells changed.",
+    "Training pair 2: 10x21 -> 10x21; colors [1, 3, 4, 6, 8] -> [1, 3, 4, 6, 8]; 42 cells changed.",
+    "Training pair 3: 22x11 -> 22x11; colors [1, 2, 3] -> [1, 2, 3]; 33 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

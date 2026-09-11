@@ -1,0 +1,17 @@
+{
+  "title": "Connect the same colors and draw a vertical line on top",
+  "summary": "Connect two points of the same color horizontally and vertically, and draw a vertical line at the end.",
+  "steps": [
+    "Connect two points of the same color horizontally and vertically, and draw a vertical line at the end."
+  ],
+  "concepts": [
+    "corresponding point",
+    "Line completion",
+    "Overlap priority"
+  ],
+  "observations": [
+    "Training pair 1: 20x10 -> 20x10; colors [0, 3, 4, 7, 8, 9] -> [0, 3, 4, 7, 8, 9]; 19 cells changed.",
+    "Training pair 2: 30x20 -> 30x20; colors [0, 2, 3, 5, 6, 8] -> [0, 2, 3, 5, 6, 8]; 31 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

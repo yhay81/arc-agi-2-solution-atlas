@@ -1,0 +1,19 @@
+{
+  "title": "Complete the frame from the four L-shaped corners, and paint the inside and vertically and horizontally extending bands in a different corner color.",
+  "summary": "Complete the frame from the four L-shaped corners, and paint the inside and vertically and horizontally extending bands in a different color for only one corner. Extend the outer points included in the band in the opposite direction to the frame, keeping the original color points.",
+  "steps": [
+    "Complete the frame from the four L-shaped corners, and paint the inside and vertically and horizontally extending bands in a different corner color.",
+    "Extend the outer points included in the band in the opposite direction to the frame, keeping the original color points."
+  ],
+  "concepts": [
+    "range by corner",
+    "frame",
+    "extension of color"
+  ],
+  "observations": [
+    "Training pair 1: 22x24 -> 22x24; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 270 cells changed.",
+    "Training pair 2: 23x21 -> 23x21; colors [0, 1, 2, 3, 4, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 6, 7, 8, 9]; 242 cells changed.",
+    "Training pair 3: 23x23 -> 23x23; colors [0, 1, 2, 3, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 5, 6, 7, 8, 9]; 311 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

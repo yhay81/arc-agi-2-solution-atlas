@@ -1,0 +1,21 @@
+{
+  "title": "Shift the top and bottom two pieces by one square and connect them with brown color.",
+  "summary": "Divide the vertically arranged figures of the same size and shift the bottom one space to the right, making the increased gap 9.",
+  "steps": [
+    "Divide the input into two pieces, top and bottom, by half the height.",
+    "Add one square of 9 to the right end of each row at the top.",
+    "Add a line with all 9s in the middle.",
+    "Add one square of 9 to the left end of each row at the bottom."
+  ],
+  "concepts": [
+    "division",
+    "shift",
+    "gap"
+  ],
+  "observations": [
+    "Training pair 1: 4x2 -> 5x3; colors [1, 5, 6, 7] -> [1, 5, 6, 7, 9]; output dimensions changed.",
+    "Training pair 2: 2x1 -> 3x2; colors [0, 4] -> [0, 4, 9]; output dimensions changed.",
+    "Training pair 3: 6x3 -> 7x4; colors [2, 7, 8] -> [2, 7, 8, 9]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

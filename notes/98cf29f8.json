@@ -1,0 +1,18 @@
+{
+  "title": "Keep a target's largest rectangle and align it toward a reference object",
+  "summary": "Keep a target's largest rectangle and align it toward a reference object. A non-rectangular component is treated as a rectangle with a one-cell-wide tail. The other non-background component supplies the direction: the rectangle is translated to the corresponding extreme of its original bounding box, while the reference object is preserved. This is the training-inferred `trim_and_align_rectangle` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `trim_and_align_rectangle`: keep a target's largest rectangle and align it toward a reference object"
+  ],
+  "concepts": [
+    "trim",
+    "align",
+    "rectangle"
+  ],
+  "observations": [
+    "Training pair 1: 13x18 -> 13x18; colors [0, 2, 4] -> [0, 2, 4]; 15 cells changed.",
+    "Training pair 2: 17x14 -> 17x14; colors [0, 4, 5] -> [0, 4, 5]; 22 cells changed.",
+    "Training pair 3: 15x19 -> 15x19; colors [0, 2, 3] -> [0, 2, 3]; 60 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Swap the marks on both sides of the thick band",
+  "summary": "Find the largest colored band and treat it as a horizontal band. If it's a vertical band, consider swapping the board vertically and horizontally. Select only the pairs that have one mark on the top and one mark on the bottom in the same column. Move the top point to just below the obi and the bottom point to just above the obi. Leave the points where there is no opponent.",
+  "steps": [
+    "Find the largest colored band and treat it as a horizontal band. If it's a vertical band, consider swapping the board vertically and horizontally.",
+    "Select only the pairs that have one mark on the top and one mark on the bottom in the same column.",
+    "Move the top point to just below the obi and the bottom point to just above the obi. Leave the points where there is no opponent."
+  ],
+  "concepts": [
+    "penetration",
+    "move",
+    "edge"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 12x12; colors [0, 4, 6, 8] -> [0, 4, 6, 8]; 20 cells changed.",
+    "Training pair 2: 12x12 -> 12x12; colors [0, 2, 3, 7] -> [0, 2, 3, 7]; 8 cells changed.",
+    "Training pair 3: 12x14 -> 12x14; colors [0, 3, 5, 9] -> [0, 3, 5, 9]; 16 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

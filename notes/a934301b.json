@@ -1,0 +1,18 @@
+{
+  "title": "Erase a square with two or more marks inside.",
+  "summary": "Count the small light blue marks inside the large blue square.",
+  "steps": [
+    "Count the small light blue marks inside the large blue square.",
+    "Leave squares with 0 or 1 mark, and erase squares with 2 or more marks black, including the inside."
+  ],
+  "concepts": [
+    "Number threshold",
+    "Delete"
+  ],
+  "observations": [
+    "Training pair 1: 14x14 -> 14x14; colors [0, 1, 8] -> [0, 1, 8]; 44 cells changed.",
+    "Training pair 2: 14x14 -> 14x14; colors [0, 1, 8] -> [0, 1, 8]; 27 cells changed.",
+    "Training pair 3: 13x15 -> 13x15; colors [0, 1, 8] -> [0, 1, 8]; 47 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

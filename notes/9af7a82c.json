@@ -1,0 +1,18 @@
+{
+  "title": "Color histogram",
+  "summary": "Color histogram. This is the training-inferred `color_histogram` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `color_histogram`: color histogram"
+  ],
+  "concepts": [
+    "color",
+    "histogram"
+  ],
+  "observations": [
+    "Training pair 1: 4x3 -> 5x4; colors [2, 3, 4, 8] -> [0, 2, 3, 4, 8]; output dimensions changed.",
+    "Training pair 2: 3x4 -> 6x4; colors [1, 2, 3, 4] -> [0, 1, 2, 3, 4]; output dimensions changed.",
+    "Training pair 3: 4x3 -> 6x3; colors [1, 2, 8] -> [0, 1, 2, 8]; output dimensions changed.",
+    "Training pair 4: 3x3 -> 5x3; colors [1, 2, 3] -> [0, 1, 2, 3]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

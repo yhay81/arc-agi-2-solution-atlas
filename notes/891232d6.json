@@ -1,0 +1,22 @@
+{
+  "title": "Follow the red path upwards from the purple dot",
+  "summary": "Follow the red path upwards from the purple dot. It turns yellow before an orange obstacle, and the point of contact with the obstacle becomes light blue. Go right at the bottom and pass the obstacle, then turn green and go up again. Make it purple and stop it at the place where you can't go to the right and at the top.",
+  "steps": [
+    "Follow the red path upwards from the purple dot",
+    "Turn yellow before an orange obstacle, and make the point of contact with the obstacle light blue.",
+    "Go right at the bottom and pass the obstacle, then turn green and go up again.",
+    "Make it purple and stop it at the place where you can't go to the right and at the top edge."
+  ],
+  "concepts": [
+    "Color according to condition",
+    "route",
+    "obstacles"
+  ],
+  "observations": [
+    "Training pair 1: 23x20 -> 23x20; colors [0, 6, 7] -> [0, 2, 3, 4, 6, 7, 8]; 72 cells changed.",
+    "Training pair 2: 28x29 -> 28x29; colors [0, 6, 7] -> [0, 2, 3, 4, 6, 7, 8]; 45 cells changed.",
+    "Training pair 3: 17x10 -> 17x10; colors [0, 6, 7] -> [0, 2, 3, 4, 6, 7, 8]; 14 cells changed.",
+    "Training pair 4: 28x19 -> 28x19; colors [0, 6, 7] -> [0, 2, 3, 4, 6, 7, 8]; 48 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

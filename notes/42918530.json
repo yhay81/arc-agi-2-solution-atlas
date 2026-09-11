@@ -1,0 +1,20 @@
+{
+  "title": "Copy the contents to an empty frame of the same color",
+  "summary": "Find a solid 5x5 frame. From among the same frame colors, choose one with a pattern on the inside 3x3. Copy that 3x3 inside the empty frame of the same color.",
+  "steps": [
+    "Find a solid 5x5 frame.",
+    "From among the same frame colors, choose one with a pattern on the inside 3x3.",
+    "Copy that 3x3 inside the empty frame of the same color."
+  ],
+  "concepts": [
+    "Correspondence by color",
+    "copy of sample"
+  ],
+  "observations": [
+    "Training pair 1: 25x19 -> 25x19; colors [0, 1, 2, 3, 4, 5, 6, 8] -> [0, 1, 2, 3, 4, 5, 6, 8]; 17 cells changed.",
+    "Training pair 2: 19x19 -> 19x19; colors [0, 1, 2, 3, 4, 8] -> [0, 1, 2, 3, 4, 8]; 7 cells changed.",
+    "Training pair 3: 19x19 -> 19x19; colors [0, 1, 2, 3, 8] -> [0, 1, 2, 3, 8]; 17 cells changed.",
+    "Training pair 4: 13x19 -> 13x19; colors [0, 2, 3, 4, 7, 8] -> [0, 2, 3, 4, 7, 8]; 5 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

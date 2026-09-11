@@ -1,0 +1,21 @@
+{
+  "title": "Read the red small symbols from the left",
+  "summary": "Read the red small symbols from the left. 2 squares vertically moves 2 squares down. An L-shape with the lower part going to the right goes down and to the right, and an L-shape with the bottom part going to the left goes down and goes to the left. Draw a red path starting from the green in the top center.",
+  "steps": [
+    "Read the red small symbols from the left",
+    "2 squares vertically moves 2 squares down",
+    "An L-shape with the bottom row going to the right goes down and to the right, and an L-shape with the bottom row going to the left goes down and goes to the left.",
+    "Draw a red path starting from the green in the top center"
+  ],
+  "concepts": [
+    "instruction string",
+    "route",
+    "deciphering symbols"
+  ],
+  "observations": [
+    "Training pair 1: 2x12 -> 8x7; colors [0, 2] -> [0, 2, 3]; output dimensions changed.",
+    "Training pair 2: 2x12 -> 8x7; colors [0, 2] -> [0, 2, 3]; output dimensions changed.",
+    "Training pair 3: 2x12 -> 8x7; colors [0, 2] -> [0, 2, 3]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

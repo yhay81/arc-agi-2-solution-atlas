@@ -1,0 +1,21 @@
+{
+  "title": "Read the thin parts of each color from left to right",
+  "summary": "Read the thin parts of each color from left to right. Move it up and down without rotating it so that the right-most tip of the part and the left-most tip of the next part touch on the same line. Close the gaps on the sides and make one continuous path.",
+  "steps": [
+    "Read the thin parts of each color from left to right",
+    "Move it up and down without rotating it so that the right-most tip of the part and the left-most tip of the next part touch on the same line.",
+    "Close the horizontal gaps and make one connected path"
+  ],
+  "concepts": [
+    "Connecting parts",
+    "parallel movement",
+    "cramming"
+  ],
+  "observations": [
+    "Training pair 1: 3x11 -> 3x9; colors [0, 2, 6, 8] -> [0, 2, 6, 8]; output dimensions changed.",
+    "Training pair 2: 3x11 -> 3x8; colors [0, 1, 2, 3] -> [0, 1, 2, 3]; output dimensions changed.",
+    "Training pair 3: 3x11 -> 3x8; colors [0, 1, 2] -> [0, 1, 2]; output dimensions changed.",
+    "Training pair 4: 3x9 -> 3x7; colors [0, 1, 2] -> [0, 1, 2]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

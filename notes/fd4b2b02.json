@@ -1,0 +1,20 @@
+{
+  "title": "Stretch a single rectangle diagonally to the four corners in a step-like manner.",
+  "summary": "Stretch one rectangle diagonally to the four corners in a step-like manner. For the next rectangle, swap the length and width, alternating green and pink. Cut off the outside of the board.",
+  "steps": [
+    "Stretch a single rectangle diagonally to the four corners in a step-like manner.",
+    "In the next rectangle, swap the height and width, alternating green and pink.",
+    "Cut off the outside of the board"
+  ],
+  "concepts": [
+    "alternating shapes",
+    "branch",
+    "recursion"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [0, 3] -> [0, 3, 6]; 39 cells changed.",
+    "Training pair 2: 23x23 -> 23x23; colors [0, 6] -> [0, 3, 6]; 82 cells changed.",
+    "Training pair 3: 26x26 -> 26x26; colors [0, 3] -> [0, 3, 6]; 95 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

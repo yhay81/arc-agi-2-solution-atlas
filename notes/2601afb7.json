@@ -1,0 +1,20 @@
+{
+  "title": "Cycle through bar colors and heights in the opposite direction",
+  "summary": "The rule is to reassemble the bars arranged from the left by rotating the color column one place to the right and the height column one place to the left.",
+  "steps": [
+    "Read the bar color order and height order separately",
+    "For color, turn the last part first, and for height, turn the first part last.",
+    "Draw with a new color and height combination for each position, aligned to the bottom."
+  ],
+  "concepts": [
+    "Attribute separation",
+    "circulation",
+    "combination"
+  ],
+  "observations": [
+    "Training pair 1: 9x9 -> 9x9; colors [1, 6, 7, 8, 9] -> [1, 6, 7, 8, 9]; 22 cells changed.",
+    "Training pair 2: 7x7 -> 7x7; colors [2, 5, 7, 8] -> [2, 5, 7, 8]; 16 cells changed.",
+    "Training pair 3: 11x11 -> 11x11; colors [1, 2, 4, 5, 7, 8] -> [1, 2, 4, 5, 7, 8]; 32 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

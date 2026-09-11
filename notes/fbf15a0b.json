@@ -1,0 +1,19 @@
+{
+  "title": "Trim the colored grid according to the gray marks on the edges",
+  "summary": "Divide the board in the same direction using the distance between the two gray points as the division number, and cut out a piece on the marked side.",
+  "steps": [
+    "Divide the board in the same direction using the distance between the two gray points as the division number, and cut out a piece on the marked side."
+  ],
+  "concepts": [
+    "Quantity instruction",
+    "lattice",
+    "cut down"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 10x20; colors [1, 5, 8] -> [1, 8]; output dimensions changed.",
+    "Training pair 2: 20x10 -> 10x10; colors [5, 7, 8] -> [7, 8]; output dimensions changed.",
+    "Training pair 3: 16x30 -> 8x30; colors [3, 5, 8] -> [3, 8]; output dimensions changed.",
+    "Training pair 4: 10x22 -> 10x11; colors [4, 5, 8] -> [4, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

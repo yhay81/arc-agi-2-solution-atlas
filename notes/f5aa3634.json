@@ -1,0 +1,20 @@
+{
+  "title": "Choose the multicolored shape that appears the most",
+  "summary": "Cut out shapes other than the background one by one, including parts with different colors and parts that touch diagonally. Figures whose colored arrangement matches only by translation are counted as the same set. Cut out one of the most numerous pairs of shapes into the smallest rectangle with no margins.",
+  "steps": [
+    "Cut out shapes other than the background one by one, including parts with different colors and parts that touch diagonally.",
+    "Figures whose colored arrangement matches only by translation are counted as the same set.",
+    "Cut out one of the most numerous pairs of shapes into the smallest rectangle with no margins."
+  ],
+  "concepts": [
+    "Most frequent selection",
+    "multicolored shapes",
+    "Cut out"
+  ],
+  "observations": [
+    "Training pair 1: 15x13 -> 3x3; colors [0, 1, 2, 3, 4, 5, 6, 8] -> [0, 5, 8]; output dimensions changed.",
+    "Training pair 2: 10x13 -> 3x4; colors [0, 2, 3, 5, 7, 8] -> [0, 3, 5, 8]; output dimensions changed.",
+    "Training pair 3: 15x15 -> 3x4; colors [0, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 5, 7, 9]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

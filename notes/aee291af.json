@@ -1,0 +1,17 @@
+{
+  "title": "Compare the red patterns and cut out the only pattern that is different from the others along with the edge of one light blue square.",
+  "summary": "Compare the red patterns and cut out the only pattern that is different from the others along with the edge of one light blue square.",
+  "steps": [
+    "Compare the red patterns and cut out the only pattern that is different from the others along with the edge of one light blue square."
+  ],
+  "concepts": [
+    "ostracism",
+    "pattern comparison"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 4x4; colors [1, 2, 8] -> [2, 8]; output dimensions changed.",
+    "Training pair 2: 16x16 -> 4x4; colors [1, 2, 8] -> [2, 8]; output dimensions changed.",
+    "Training pair 3: 18x18 -> 5x5; colors [1, 2, 8] -> [2, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

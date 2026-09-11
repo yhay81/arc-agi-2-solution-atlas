@@ -1,0 +1,20 @@
+{
+  "title": "Attach the prototype to the outside of the enlarged shape",
+  "summary": "Expand each square of the 3x3 input to 3x3 and place the 9x9 shape in the center of the 15x15.",
+  "steps": [
+    "Expand each square of the 3x3 input to 3x3 and place the 9x9 shape in the center of the 15x15.",
+    "For squares with color around the input, place a 3x3 copy of the entire input further outside the corresponding expansion block.",
+    "Copy the corner color squares in two directions: vertically and horizontally."
+  ],
+  "concepts": [
+    "self-replication",
+    "Expand",
+    "direction of outer circumference"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 15x15; colors [0, 5] -> [0, 5]; output dimensions changed.",
+    "Training pair 2: 3x3 -> 15x15; colors [0, 5] -> [0, 5]; output dimensions changed.",
+    "Training pair 3: 3x3 -> 15x15; colors [0, 5] -> [0, 5]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

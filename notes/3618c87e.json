@@ -1,0 +1,24 @@
+{
+  "title": "Move each blue marker to the far end of its gray bar",
+  "summary": "Each blue marker touches one end of a straight gray bar. Erase the marker, follow the bar in that direction, and recolor the gray cell at the opposite end blue.",
+  "steps": [
+    "Find the unique adjacent gray direction for each blue marker.",
+    "Follow contiguous gray cells in a straight line.",
+    "Erase the original marker and paint the far endpoint blue."
+  ],
+  "concepts": [
+    "ray",
+    "translation",
+    "endpoint"
+  ],
+  "observations": [
+    "Training pair 1: 5x5 -> 5x5; colors [0, 1, 5] -> [0, 1, 5]; 4 cells changed.",
+    "Training pair 2: 5x5 -> 5x5; colors [0, 1, 5] -> [0, 1, 5]; 2 cells changed.",
+    "Training pair 3: 5x5 -> 5x5; colors [0, 1, 5] -> [0, 1, 5]; 4 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "marker color: blue 1",
+    "bar color: gray 5"
+  ]
+}

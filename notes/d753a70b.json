@@ -1,0 +1,21 @@
+{
+  "title": "Red diamond keeps center and reduces radius by 1",
+  "summary": "The red diamond keeps its center and reduces its radius by 1. For gray dots and diamonds, increase the radius by 1. However, treat the V-shape of the 3 cells that touch the edge as a different shape, fix the left end point when aligning the openings downward, and increase the height by 1 and width by 2. Keep other colors.",
+  "steps": [
+    "Red diamond keeps center and reduces radius by 1",
+    "Gray dots and diamonds increase radius by 1",
+    "However, the V shape of the 3 cells that touch the edge is treated as a different shape, and when the openings are aligned downward, the left end point is fixed, and the height is increased by 1 and the width is increased by 2.",
+    "keep other colors"
+  ],
+  "concepts": [
+    "rhombus",
+    "manhattan distance",
+    "Scaling"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [2, 5, 7, 8, 9] -> [2, 5, 7, 8, 9]; 34 cells changed.",
+    "Training pair 2: 16x16 -> 16x16; colors [2, 5, 7, 9] -> [2, 5, 7, 9]; 24 cells changed.",
+    "Training pair 3: 16x16 -> 16x16; colors [2, 5, 7, 8] -> [2, 5, 7, 8]; 51 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

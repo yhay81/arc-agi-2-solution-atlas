@@ -1,0 +1,21 @@
+{
+  "title": "Rotate the red shape 90 degrees around the gray pivot",
+  "summary": "Change the original position of the red cell to green, and draw the red shape rotated 90 degrees counterclockwise using the gray point as a fulcrum.",
+  "steps": [
+    "Use the only gray cell as a fulcrum",
+    "Replace the original red cell with green",
+    "Rotate each red cell 90 degrees around the fulcrum and draw it in red"
+  ],
+  "concepts": [
+    "rotation",
+    "fulcrum"
+  ],
+  "observations": [
+    "Training pair 1: 6x7 -> 6x7; colors [0, 2, 5] -> [0, 2, 3, 5]; 6 cells changed.",
+    "Training pair 2: 3x3 -> 3x3; colors [0, 2, 5] -> [0, 2, 3, 5]; 2 cells changed.",
+    "Training pair 3: 7x7 -> 7x7; colors [0, 2, 5] -> [0, 2, 3, 5]; 4 cells changed.",
+    "Training pair 4: 7x7 -> 7x7; colors [0, 2, 5] -> [0, 2, 3, 5]; 2 cells changed.",
+    "Training pair 5: 5x7 -> 5x7; colors [0, 2, 5] -> [0, 2, 3, 5]; 4 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

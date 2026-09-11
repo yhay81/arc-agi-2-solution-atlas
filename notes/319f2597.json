@@ -1,0 +1,19 @@
+{
+  "title": "Extend the black square in a cross shape to the top, bottom, left, and right edges while maintaining its height and width.",
+  "summary": "Extend the black square in a cross shape to the top, bottom, left and right edges, keeping the same height and width. However, leave only the red squares unfilled.",
+  "steps": [
+    "Extend the black square in a cross shape to the top, bottom, left, and right edges while maintaining its height and width.",
+    "However, only the red squares are left unfilled."
+  ],
+  "concepts": [
+    "Origin detection",
+    "extension of the cross",
+    "exception condition"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 20x20; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 62 cells changed.",
+    "Training pair 2: 20x20 -> 20x20; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 64 cells changed.",
+    "Training pair 3: 20x20 -> 20x20; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 61 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

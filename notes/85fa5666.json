@@ -1,0 +1,19 @@
+{
+  "title": "Transfer one color from each corner of the red 2×2 square clockwise, extending the transferred color from that corner to the diagonal line outward.",
+  "summary": "Transfer one color from each corner of the red 2x2 square clockwise, extending the transferred color from that corner to the diagonal line outward. The downward line has the same color as the lower left port of another red square and will be absorbed when it touches that square.",
+  "steps": [
+    "Transfer one color from each corner of the red 2×2 square clockwise, extending the transferred color from that corner to the diagonal line outward.",
+    "The downward line has the same color as the lower left port of another red square and will be absorbed when it touches that square."
+  ],
+  "concepts": [
+    "Rotating correspondence",
+    "Extension from corner"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 12x12; colors [0, 2, 3, 6, 7, 8] -> [0, 2, 3, 6, 7, 8]; 40 cells changed.",
+    "Training pair 2: 12x12 -> 12x12; colors [0, 2, 3, 6, 7, 8] -> [0, 2, 3, 6, 7, 8]; 36 cells changed.",
+    "Training pair 3: 8x8 -> 8x8; colors [0, 2, 3, 6, 7, 8] -> [0, 2, 3, 6, 7, 8]; 11 cells changed.",
+    "Training pair 4: 9x9 -> 9x9; colors [0, 2, 3, 6, 7, 8] -> [0, 2, 3, 6, 7, 8]; 13 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

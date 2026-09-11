@@ -1,0 +1,19 @@
+{
+  "title": "Pack isolated colored points into a three-column snake grid",
+  "summary": "Pack isolated colored points into a three-column snake grid. Occupied source columns define the reading order. Successive groups of three points form output rows, with every other row written right to left. The compact output is padded with background cells when fewer than nine points are present. This is the training-inferred `pack_points_by_column_snake` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `pack_points_by_column_snake`: pack isolated colored points into a three-column snake grid"
+  ],
+  "concepts": [
+    "pack",
+    "points",
+    "column",
+    "snake"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 3x3; colors [0, 2, 3, 4, 5, 6, 8, 9] -> [0, 2, 3, 4, 5, 6, 8, 9]; output dimensions changed.",
+    "Training pair 2: 10x10 -> 3x3; colors [0, 1, 3, 6, 7, 8, 9] -> [0, 1, 3, 6, 7, 8, 9]; output dimensions changed.",
+    "Training pair 3: 10x10 -> 3x3; colors [0, 1, 2, 3, 4, 5, 9] -> [1, 2, 3, 4, 5, 9]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Layer the two sheets and leave the color on either side.",
+  "summary": "Overlap the left and right boards with OR and change the foreground to 8.",
+  "steps": [
+    "Overlap the left and right boards with OR and change the foreground to 8."
+  ],
+  "concepts": [
+    "superposition",
+    "conditions for either"
+  ],
+  "observations": [
+    "Training pair 1: 6x9 -> 6x4; colors [0, 1, 4] -> [0, 8]; output dimensions changed.",
+    "Training pair 2: 6x9 -> 6x4; colors [0, 1, 4] -> [0, 8]; output dimensions changed.",
+    "Training pair 3: 6x9 -> 6x4; colors [0, 1, 4] -> [0, 8]; output dimensions changed.",
+    "Training pair 4: 6x9 -> 6x4; colors [0, 1, 4] -> [0, 8]; output dimensions changed.",
+    "Training pair 5: 6x9 -> 6x4; colors [0, 1, 4] -> [0, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

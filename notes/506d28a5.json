@@ -1,0 +1,18 @@
+{
+  "title": "Leave a common blank space above and below",
+  "summary": "Overlap the top and bottom two boards with OR, and set the foreground on either side to green 3.",
+  "steps": [
+    "Overlap the top and bottom two boards with OR, and set the foreground on either side to green 3."
+  ],
+  "concepts": [
+    "superposition",
+    "logical condition"
+  ],
+  "observations": [
+    "Training pair 1: 9x5 -> 4x5; colors [0, 1, 2, 4] -> [0, 3]; output dimensions changed.",
+    "Training pair 2: 9x5 -> 4x5; colors [0, 1, 2, 4] -> [0, 3]; output dimensions changed.",
+    "Training pair 3: 9x5 -> 4x5; colors [0, 1, 2, 4] -> [0, 3]; output dimensions changed.",
+    "Training pair 4: 9x5 -> 4x5; colors [0, 1, 2, 4] -> [0, 3]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

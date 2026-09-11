@@ -1,0 +1,20 @@
+{
+  "title": "Pull the red rectangle whose width and position match the short central protrusion of the trident until it touches the protrusion.",
+  "summary": "Pull the red rectangle whose width and position match the short central protrusion of the trident until it touches the protrusion. The traces from before the move to after the move are made black, and red objects that do not correspond are erased.",
+  "steps": [
+    "Pull the red rectangle whose width and position match the short central protrusion of the trident until it touches the protrusion.",
+    "Make the trace from before movement to after movement black, and erase red objects that do not correspond."
+  ],
+  "concepts": [
+    "aisle",
+    "quota",
+    "move",
+    "sorting"
+  ],
+  "observations": [
+    "Training pair 1: 19x22 -> 19x22; colors [1, 2, 4] -> [0, 1, 2, 4]; 16 cells changed.",
+    "Training pair 2: 19x22 -> 19x22; colors [2, 3, 4] -> [0, 2, 3, 4]; 32 cells changed.",
+    "Training pair 3: 19x22 -> 19x22; colors [2, 4, 8] -> [0, 2, 4, 8]; 34 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

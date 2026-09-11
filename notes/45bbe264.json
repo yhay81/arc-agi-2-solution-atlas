@@ -1,0 +1,18 @@
+{
+  "title": "Project every singleton marker across its row and column; mark crossings as 2",
+  "summary": "Project every singleton marker across its row and column; mark crossings as 2. This is the training-inferred `cross_lines_by_marker` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `cross_lines_by_marker`: project every singleton marker across its row and column; mark crossings as 2"
+  ],
+  "concepts": [
+    "cross",
+    "lines",
+    "marker"
+  ],
+  "observations": [
+    "Training pair 1: 14x14 -> 14x14; colors [0, 3, 4] -> [0, 2, 3, 4]; 50 cells changed.",
+    "Training pair 2: 16x16 -> 16x16; colors [0, 5, 8] -> [0, 2, 5, 8]; 58 cells changed.",
+    "Training pair 3: 13x13 -> 13x13; colors [0, 3, 5, 7] -> [0, 2, 3, 5, 7]; 66 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

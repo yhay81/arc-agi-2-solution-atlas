@@ -1,0 +1,20 @@
+{
+  "title": "Connect aligned singleton markers in a lattice whose dividers are colored",
+  "summary": "Connect aligned singleton markers in a lattice whose dividers are colored. Solid rows and columns of one color divide the canvas into cells. A singleton non-background mark in a cell is a route endpoint: for every pair of same-colored endpoints sharing a lattice row or column, fill the complete cells between them. When routes of different colors cross, the crossing cells are rendered with color ``6``. The rule is inferred from the lattice geometry and never relies on the absolute canvas size. This is the training-inferred `connect_markers_in_colored_cell_lattice` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `connect_markers_in_colored_cell_lattice`: connect aligned singleton markers in a lattice whose dividers are colored"
+  ],
+  "concepts": [
+    "connect",
+    "markers",
+    "colored",
+    "cell",
+    "lattice"
+  ],
+  "observations": [
+    "Training pair 1: 24x24 -> 24x24; colors [0, 2, 3, 8] -> [0, 2, 3, 6, 8]; 62 cells changed.",
+    "Training pair 2: 22x22 -> 22x22; colors [0, 2, 3, 8] -> [0, 2, 3, 6, 8]; 77 cells changed.",
+    "Training pair 3: 26x26 -> 26x26; colors [0, 2, 3, 8] -> [0, 2, 3, 8]; 171 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

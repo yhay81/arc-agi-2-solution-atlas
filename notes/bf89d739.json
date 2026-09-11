@@ -1,0 +1,20 @@
+{
+  "title": "Connect red markers to a single orthogonal trunk",
+  "summary": "Connect the only pair of red dots in the same row or column with the green stem, and draw a perpendicular line from each remaining red dot to the stem. The red dot itself remains red.",
+  "steps": [
+    "Find unique aligned pair from red dots",
+    "Connect the aligned pairs with green",
+    "Orthogonally project the other red points onto the trunk and return the red of the end points"
+  ],
+  "concepts": [
+    "orthogonal connection",
+    "trunk"
+  ],
+  "observations": [
+    "Training pair 1: 14x10 -> 14x10; colors [0, 2] -> [0, 2, 3]; 6 cells changed.",
+    "Training pair 2: 16x12 -> 16x12; colors [0, 2] -> [0, 2, 3]; 17 cells changed.",
+    "Training pair 3: 14x15 -> 14x15; colors [0, 2] -> [0, 2, 3]; 20 cells changed.",
+    "Training pair 4: 19x13 -> 19x13; colors [0, 2] -> [0, 2, 3]; 15 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

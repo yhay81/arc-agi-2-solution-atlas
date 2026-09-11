@@ -1,0 +1,22 @@
+{
+  "title": "Look for the two orange connection marks",
+  "summary": "Look for the two orange connection marks. Divide the parts into parts that connect to one mark and the remaining parts, and move them in parallel so that the connecting marks are vertically adjacent. Of the two combinations, choose the one with the smallest area without negative coordinates, and make it all yellow.",
+  "steps": [
+    "Look for the two orange connection marks",
+    "Divide the parts into parts that connect to one mark and the remaining parts, and move them in parallel so that the connection marks are adjacent to each other vertically.",
+    "Of the two ways of assembling, choose the one with the smallest area without negative coordinates, and make it all yellow."
+  ],
+  "concepts": [
+    "Parts synthesis",
+    "connection point",
+    "parallel movement",
+    "Cut out"
+  ],
+  "observations": [
+    "Training pair 1: 7x13 -> 7x8; colors [1, 4, 7] -> [1, 4]; output dimensions changed.",
+    "Training pair 2: 7x13 -> 7x6; colors [1, 4, 7] -> [1, 4]; output dimensions changed.",
+    "Training pair 3: 9x3 -> 6x3; colors [1, 4, 7] -> [1, 4]; output dimensions changed.",
+    "Training pair 4: 7x9 -> 5x12; colors [1, 4, 7] -> [1, 4]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Duplicate the color pattern on the left end to the right end in the same direction",
+  "summary": "Duplicate the color pattern on the left end to the right end in the same direction. Fill in the space between the left and right patterns by stretching the rightmost row of the original pattern horizontally.",
+  "steps": [
+    "Duplicate the color pattern on the left end to the right end in the same direction",
+    "Fill in the space between the left and right patterns by stretching the rightmost row of the original pattern horizontally."
+  ],
+  "concepts": [
+    "Left and right correspondence",
+    "complement",
+    "extension of the obi"
+  ],
+  "observations": [
+    "Training pair 1: 4x12 -> 4x12; colors [0, 1, 2, 3] -> [1, 2, 3]; 36 cells changed.",
+    "Training pair 2: 3x10 -> 3x10; colors [0, 1, 2, 8] -> [1, 2, 8]; 21 cells changed.",
+    "Training pair 3: 3x14 -> 3x14; colors [0, 2, 3, 8] -> [2, 3, 8]; 30 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

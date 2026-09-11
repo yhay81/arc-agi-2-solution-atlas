@@ -1,0 +1,18 @@
+{
+  "title": "Use inversion and color swapping on both sides of the line",
+  "summary": "Mirror the original to the opposite side of the blue axis and replace the two colors only on the original side.",
+  "steps": [
+    "Mirror the original to the opposite side of the blue axis and replace the two colors only on the original side."
+  ],
+  "concepts": [
+    "reflection",
+    "color exchange",
+    "Role of left and right"
+  ],
+  "observations": [
+    "Training pair 1: 11x12 -> 11x12; colors [0, 1, 4, 8] -> [0, 1, 4, 8]; 14 cells changed.",
+    "Training pair 2: 12x9 -> 12x9; colors [0, 1, 2, 3] -> [0, 1, 2, 3]; 14 cells changed.",
+    "Training pair 3: 14x11 -> 14x11; colors [0, 1, 5, 6] -> [0, 1, 5, 6]; 20 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

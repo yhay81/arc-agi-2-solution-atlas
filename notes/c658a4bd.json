@@ -1,0 +1,17 @@
+{
+  "title": "Nest large and small squares with even centers.",
+  "summary": "Check the size of the squares for each color, align the centers from the largest frame to the smallest, and stack them.",
+  "steps": [
+    "Check the size of the squares for each color, align the centers from the largest frame to the smallest, and stack them."
+  ],
+  "concepts": [
+    "nesting",
+    "order by size",
+    "Complementing occlusion"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 9x9; colors [0, 1, 2, 3, 4, 8] -> [1, 2, 3, 4, 8]; output dimensions changed.",
+    "Training pair 2: 13x13 -> 8x8; colors [0, 2, 3, 4, 8] -> [2, 3, 4, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Recolor payload cells inside rectangles bounded by sparse markers",
+  "summary": "Recolor payload cells inside rectangles bounded by sparse markers. A marker pattern is represented by one color sparsely distributed over a fully occupied rectangle. Its bounding box is therefore recoverable without memorising the rectangle's position or dimensions. Every cell in such a box that is neither the marker nor the background is the payload; recolor those cells while preserving the marker pixels. Enumerating rectangles is intentional here: marker pixels in one pattern need not be adjacent (there can be a payload-only row between them). This is the training-inferred `recolor_target_in_marker_rectangles` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `recolor_target_in_marker_rectangles`: recolor payload cells inside rectangles bounded by sparse markers"
+  ],
+  "concepts": [
+    "recolor",
+    "target",
+    "marker",
+    "rectangles"
+  ],
+  "observations": [
+    "Training pair 1: 15x16 -> 15x16; colors [0, 2, 8] -> [0, 2, 4, 8]; 15 cells changed.",
+    "Training pair 2: 17x18 -> 17x18; colors [0, 1, 2] -> [0, 1, 2, 4]; 19 cells changed.",
+    "Training pair 3: 15x14 -> 15x14; colors [0, 2, 3] -> [0, 2, 3, 4]; 6 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "marker color: 2",
+    "fill color: 4",
+    "background color: 0"
+  ]
+}

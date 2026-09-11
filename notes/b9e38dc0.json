@@ -1,0 +1,20 @@
+{
+  "title": "Determine the direction of flow from the color inside the frame to the opposite side",
+  "summary": "Determine the direction of flow from the color inside the frame to the opposite side. Paint the inside of the frame sequentially, and after leaving the opening, paint a band that spreads along the slope of the wall. If there is an obstacle of a different color on the way, that row will not be painted and its shadow will remain.",
+  "steps": [
+    "Determine the direction of flow from the color inside the frame to the opposite side",
+    "Paint the inside of the frame sequentially, and after leaving the opening, paint a band that spreads along the slope of the wall.",
+    "If there is an obstacle of a different color on the way, that row will not be painted again and will leave a shadow."
+  ],
+  "concepts": [
+    "propagation",
+    "obstacles",
+    "section"
+  ],
+  "observations": [
+    "Training pair 1: 15x15 -> 15x15; colors [1, 3, 5, 9] -> [1, 3, 5, 9]; 62 cells changed.",
+    "Training pair 2: 8x15 -> 8x15; colors [0, 4, 5] -> [0, 4, 5]; 72 cells changed.",
+    "Training pair 3: 18x16 -> 18x16; colors [3, 6, 7, 8, 9] -> [3, 6, 7, 8, 9]; 43 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

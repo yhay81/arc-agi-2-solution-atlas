@@ -1,0 +1,23 @@
+{
+  "title": "Keep two filled-rectangle borders and rank-color their interiors",
+  "summary": "Keep two filled-rectangle borders and rank-color their interiors. This is the training-inferred `recolor_ranked_rectangle_interiors` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `recolor_ranked_rectangle_interiors`: keep two filled-rectangle borders and rank-color their interiors"
+  ],
+  "concepts": [
+    "recolor",
+    "ranked",
+    "rectangle",
+    "interiors"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 4] -> [0, 1, 2, 4]; 11 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 4] -> [0, 1, 2, 4]; 12 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "source color: 4",
+    "smaller color: 1",
+    "larger color: 2"
+  ]
+}

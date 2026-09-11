@@ -1,0 +1,22 @@
+{
+  "title": "Repeat the vertical color row for the number of grays",
+  "summary": "Count the number of squares with ash 5. Read the row of colors extending the full height of the board from the left as a color sample. Erase the row of colors, arrange the number of grays of each color in the row to the left, and cycle down.",
+  "steps": [
+    "Count the number of squares with ash 5.",
+    "Read the row of colors extending the full height of the board from the left as a color sample.",
+    "Erase the row of colors, arrange the number of grays of each color in the row to the left, and cycle down."
+  ],
+  "concepts": [
+    "number command",
+    "periodic sequence",
+    "compression"
+  ],
+  "observations": [
+    "Training pair 1: 12x8 -> 12x8; colors [0, 2, 3, 5] -> [0, 2, 3, 5]; 36 cells changed.",
+    "Training pair 2: 7x7 -> 7x7; colors [0, 5, 8, 9] -> [0, 5, 8, 9]; 21 cells changed.",
+    "Training pair 3: 9x7 -> 9x7; colors [0, 5, 6, 7, 9] -> [0, 5, 6, 7, 9]; 36 cells changed.",
+    "Training pair 4: 14x6 -> 14x6; colors [0, 2, 4, 5, 8] -> [0, 2, 4, 5, 8]; 56 cells changed.",
+    "Training pair 5: 5x5 -> 5x5; colors [0, 1, 3, 5] -> [0, 1, 3, 5]; 15 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

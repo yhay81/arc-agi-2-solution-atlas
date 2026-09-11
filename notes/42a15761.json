@@ -1,0 +1,18 @@
+{
+  "title": "Sort the red boards separated by black vertical lines from left to right in descending order of the number of black dots inside.",
+  "summary": "Sort the red boards separated by black vertical lines from left to right in descending order of the number of black dots inside. The positions of the points within each board do not change.",
+  "steps": [
+    "Sort the red boards separated by black vertical lines from left to right in descending order of the number of black dots inside.",
+    "Do not change the position of the points within each board"
+  ],
+  "concepts": [
+    "quantity order",
+    "compartment"
+  ],
+  "observations": [
+    "Training pair 1: 9x15 -> 9x15; colors [0, 2] -> [0, 2]; 10 cells changed.",
+    "Training pair 2: 7x11 -> 7x11; colors [0, 2] -> [0, 2]; 6 cells changed.",
+    "Training pair 3: 9x15 -> 9x15; colors [0, 2] -> [0, 2]; 6 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

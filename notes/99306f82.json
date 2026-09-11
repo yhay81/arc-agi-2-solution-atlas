@@ -1,0 +1,18 @@
+{
+  "title": "Move the diagonal color swatches to the inside of the square.",
+  "summary": "Inside the blue frame, paint concentric rectangles in the order of the outer color swatches, spreading the last color to the center.",
+  "steps": [
+    "Inside the blue frame, paint concentric rectangles in the order of the outer color swatches, spreading the last color to the center."
+  ],
+  "concepts": [
+    "Color order",
+    "layer",
+    "from outside to inside"
+  ],
+  "observations": [
+    "Training pair 1: 15x15 -> 15x15; colors [0, 1, 2, 4, 6] -> [0, 1, 2, 4, 6]; 49 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 1, 2, 3] -> [0, 1, 2, 3]; 16 cells changed.",
+    "Training pair 3: 15x15 -> 15x15; colors [0, 1, 2, 4, 6, 8] -> [0, 1, 2, 4, 6, 8]; 64 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Mark every third yellow column",
+  "summary": "Recolor yellow cells magenta in columns whose zero-based index is divisible by three.",
+  "steps": [
+    "Count columns from the left starting at zero.",
+    "In every third column, replace yellow with magenta."
+  ],
+  "concepts": ["periodicity", "column coloring"],
+  "observations": [
+    "Training pair 1: 3x13 -> 3x13; colors [0, 4] -> [0, 4, 6]; 10 cells changed.",
+    "Training pair 2: 3x11 -> 3x11; colors [0, 4] -> [0, 4, 6]; 8 cells changed.",
+    "Training pair 3: 3x11 -> 3x11; colors [0, 4] -> [0, 4, 6]; 8 cells changed.",
+    "Training pair 4: 3x14 -> 3x14; colors [0, 4] -> [0, 4, 6]; 10 cells changed.",
+    "Training pair 5: 3x10 -> 3x10; colors [0, 4] -> [0, 4, 6]; 8 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": ["period: 3 columns", "yellow 4 becomes magenta 6"]
+}

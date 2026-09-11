@@ -1,0 +1,19 @@
+{
+  "title": "Fill in gaps in repeating patterns",
+  "summary": "Excluding the black missing parts, look for vertical and horizontal repeating cycles where the visible pattern matches. Choose a period with the smallest area and color support at all locations of the defect. Fill in the black parts with corresponding colors of the same period and return the whole.",
+  "steps": [
+    "Excluding the black missing parts, look for vertical and horizontal repeating cycles where the visible pattern matches.",
+    "Choose a period with the smallest area and color support at all locations of the defect.",
+    "Fill in the black parts with corresponding colors of the same period and return the whole."
+  ],
+  "concepts": [
+    "period",
+    "Deficiency completion"
+  ],
+  "observations": [
+    "Training pair 1: 25x25 -> 25x25; colors [0, 1, 2, 3, 5] -> [1, 2, 3, 5]; 80 cells changed.",
+    "Training pair 2: 25x25 -> 25x25; colors [0, 1, 2, 4, 5] -> [1, 2, 4, 5]; 81 cells changed.",
+    "Training pair 3: 25x25 -> 25x25; colors [0, 1, 2, 5] -> [1, 2, 5]; 52 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

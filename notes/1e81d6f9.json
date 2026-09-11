@@ -1,0 +1,18 @@
+{
+  "title": "Erase the color specified by the corner color swatch",
+  "summary": "The largest connected part of gray 5 is regarded as a corner partition, and one color point in its circumscribed range is read. Distant gray noise is not included in the partition. Return all squares of the designated color to black, leaving only the designated point inside the partition in its original position.",
+  "steps": [
+    "The largest connected part of gray 5 is regarded as a corner partition, and one color point in its circumscribed range is read. Distant gray noise is not included in the partition.",
+    "Return all squares of the designated color to black, leaving only the designated point inside the partition in its original position."
+  ],
+  "concepts": [
+    "indication color",
+    "selective deletion"
+  ],
+  "observations": [
+    "Training pair 1: 15x15 -> 15x15; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 5 cells changed.",
+    "Training pair 2: 15x15 -> 15x15; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 3 cells changed.",
+    "Training pair 3: 15x15 -> 15x15; colors [0, 1, 2, 3, 4, 5, 6, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 8, 9]; 5 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

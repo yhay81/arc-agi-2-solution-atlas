@@ -1,0 +1,20 @@
+{
+  "title": "Move every component of the most fragmented non-background color one block inward",
+  "summary": "Move every component of the most fragmented non-background color one block inward. This is the training-inferred `move_corner_blocks_inward` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `move_corner_blocks_inward`: move every component of the most fragmented non-background color one block inward"
+  ],
+  "concepts": [
+    "move",
+    "corner",
+    "blocks",
+    "inward"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [2, 7] -> [2, 7]; 8 cells changed.",
+    "Training pair 2: 17x17 -> 17x17; colors [1, 7, 8, 9] -> [1, 7, 8, 9]; 64 cells changed.",
+    "Training pair 3: 22x15 -> 22x15; colors [2, 7, 9] -> [2, 7, 9]; 54 cells changed.",
+    "Training pair 4: 7x7 -> 7x7; colors [5, 7, 9] -> [5, 7, 9]; 20 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

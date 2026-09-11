@@ -1,0 +1,18 @@
+{
+  "title": "Fill each left-panel hole using the matching right-panel glyph color",
+  "summary": "Fill each left-panel hole using the matching right-panel glyph color. The two equal-width halves contain a sequence of row-delimited glyphs. Each glyph in the left half is represented by its zero mask, while the corresponding glyph in the right half is represented by its non-zero mask. A left glyph is filled with the color of the unique right glyph having the same full-width mask; the separator rows and the left glyph's existing pixels are preserved. This is the training-inferred `match_panel_shapes_fill` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `match_panel_shapes_fill`: fill each left-panel hole using the matching right-panel glyph color"
+  ],
+  "concepts": [
+    "match",
+    "panel",
+    "shapes",
+    "fill"
+  ],
+  "observations": [
+    "Training pair 1: 13x12 -> 13x6; colors [0, 1, 2, 3, 5] -> [1, 2, 3, 5]; output dimensions changed.",
+    "Training pair 2: 10x12 -> 10x6; colors [0, 1, 2, 3, 6] -> [1, 2, 3, 6]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Reflect the blue diagonal lines on the red wall",
+  "summary": "Extend the blue 1 diagonal line from both ends. Green 3 passes through and changes to blue. If it's a red 2 vertical wall, it's horizontal, and if it's a horizontal wall, it's vertical. Don't paint red itself. Stop when you reach the edge or return to the same state.",
+  "steps": [
+    "Extend the blue 1 diagonal line from both ends. Green 3 passes through and changes to blue.",
+    "If it's a red 2 vertical wall, it's horizontal, and if it's a horizontal wall, it's vertical. Don't paint red itself.",
+    "Stop when you reach the edge or return to the same state."
+  ],
+  "concepts": [
+    "reflection",
+    "passing",
+    "route"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [0, 1, 2, 3] -> [0, 1, 2, 3]; 11 cells changed.",
+    "Training pair 2: 16x16 -> 16x16; colors [0, 1, 3] -> [0, 1, 3]; 10 cells changed.",
+    "Training pair 3: 16x16 -> 16x16; colors [0, 1, 2] -> [0, 1, 2]; 9 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Connect equal-colored solid cells in a separator-defined lattice",
+  "summary": "Connect equal-colored solid cells in a separator-defined lattice. This is the training-inferred `connect_same_color_cells` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `connect_same_color_cells`: connect equal-colored solid cells in a separator-defined lattice"
+  ],
+  "concepts": [
+    "connect",
+    "same",
+    "color",
+    "cells"
+  ],
+  "observations": [
+    "Training pair 1: 23x23 -> 23x23; colors [0, 1, 2, 4, 8, 9] -> [0, 1, 2, 4, 8, 9]; 36 cells changed.",
+    "Training pair 2: 20x20 -> 20x20; colors [0, 1, 2, 3, 8] -> [0, 1, 2, 3, 8]; 20 cells changed.",
+    "Training pair 3: 23x23 -> 23x23; colors [0, 2, 3, 4] -> [0, 2, 3, 4]; 36 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Using light blue and another color as obstacles, find a vertical and horizontal path that passes through all points of the same color.",
+  "summary": "Using light blue and another color as obstacles, find a vertical and horizontal path that passes through all dots of the same color. Minimize the length of the road, and minimize the number of turns within the same length. Leave only one color as is.",
+  "steps": [
+    "Using light blue and another color as obstacles, find a vertical and horizontal path that passes through all points of the same color.",
+    "Minimize the length of the road and minimize the number of turns within the same length",
+    "Leave only one color as is"
+  ],
+  "concepts": [
+    "obstacle avoidance",
+    "Route completion",
+    "Same color compatible"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [1, 2, 8] -> [1, 2, 8]; 6 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [1, 2, 3, 4, 8] -> [1, 2, 3, 4, 8]; 6 cells changed.",
+    "Training pair 3: 12x12 -> 12x12; colors [1, 2, 3, 4, 5, 6, 7, 8, 9] -> [1, 2, 3, 4, 5, 6, 7, 8, 9]; 20 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "The rule for expanding the color row at the top to the lower surface has not been determined.",
+  "summary": "Draw the inverted color of 2 and 5 on the top left in a position where the top left and right sides are not in the background to create a triangle.",
+  "steps": [
+    "Draw the inverted color of 2 and 5 on the top left in a position where the top left and right sides are not in the background to create a triangle."
+  ],
+  "concepts": [
+    "instruction string",
+    "line",
+    "Deployment"
+  ],
+  "observations": [
+    "Training pair 1: 3x5 -> 3x5; colors [2, 5, 7] -> [2, 5, 7]; 1 cells changed.",
+    "Training pair 2: 3x5 -> 3x5; colors [2, 7] -> [2, 5, 7]; 1 cells changed.",
+    "Training pair 3: 3x5 -> 3x5; colors [2, 5, 7] -> [2, 5, 7]; 4 cells changed.",
+    "Training pair 4: 3x5 -> 3x5; colors [2, 5, 7] -> [2, 5, 7]; 1 cells changed.",
+    "Training pair 5: 5x9 -> 5x9; colors [2, 5, 7] -> [2, 5, 7]; 16 cells changed.",
+    "Training pair 6: 3x5 -> 3x5; colors [5, 7] -> [2, 5, 7]; 1 cells changed.",
+    "Training pair 7: 4x7 -> 4x7; colors [2, 5, 7] -> [2, 5, 7]; 9 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

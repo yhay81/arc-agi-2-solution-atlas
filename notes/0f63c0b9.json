@@ -1,0 +1,19 @@
+{
+  "title": "Extend the row of colors and separate the ends with similar colors",
+  "summary": "Extend the dot row to full width and fill the left and right edges with the color of the nearest dot row. The top and bottom edges are also similar in color.",
+  "steps": [
+    "Extend the dot row to full width and fill the left and right edges with the color of the nearest dot row.",
+    "The top and bottom edges are also similar in color."
+  ],
+  "concepts": [
+    "straight line extension",
+    "Region segmentation by distance"
+  ],
+  "observations": [
+    "Training pair 1: 15x15 -> 15x15; colors [0, 2, 7, 8] -> [0, 2, 7, 8]; 92 cells changed.",
+    "Training pair 2: 15x15 -> 15x15; colors [0, 1, 2, 3, 8] -> [0, 1, 2, 3, 8]; 104 cells changed.",
+    "Training pair 3: 15x15 -> 15x15; colors [0, 2, 3, 9] -> [0, 2, 3, 9]; 92 cells changed.",
+    "Training pair 4: 15x15 -> 15x15; colors [0, 2, 6, 8] -> [0, 2, 6, 8]; 92 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

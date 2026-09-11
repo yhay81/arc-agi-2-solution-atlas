@@ -1,0 +1,23 @@
+{
+  "title": "Overlay two halves after mapping the second panel's colors",
+  "summary": "Overlay two equal panels, mapping only values contributed by panel two. This is the training-inferred `overlay_halves_mapped` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `overlay_halves_mapped`: overlay two halves after mapping the second panel's colors"
+  ],
+  "concepts": [
+    "overlay",
+    "halves",
+    "mapped"
+  ],
+  "observations": [
+    "Training pair 1: 11x11 -> 5x11; colors [0, 3, 5, 7] -> [0, 3, 7]; output dimensions changed.",
+    "Training pair 2: 11x11 -> 5x11; colors [0, 1, 5, 8] -> [0, 1, 8]; output dimensions changed.",
+    "Training pair 3: 11x11 -> 5x11; colors [0, 1, 2, 5] -> [0, 1, 2]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "axis: 0",
+    "fill: 0",
+    "second-panel color map: 7 -> 7"
+  ]
+}

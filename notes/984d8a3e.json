@@ -1,0 +1,17 @@
+{
+  "title": "Move the neutral horizontal bands to the center row",
+  "summary": "Identify the most common center band color on the board and move each row of bands to the left to the center column. Move the pressed color to the right side of the obi.",
+  "steps": [
+    "Identify the most common center band color on the board and move each row of bands to the left to the center column. Move the pressed color to the right side of the obi."
+  ],
+  "concepts": [
+    "Move by line",
+    "Save quantity",
+    "central reference"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 1, 3] -> [0, 1, 3]; 24 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [3, 7, 9] -> [3, 7, 9]; 22 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

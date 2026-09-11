@@ -1,0 +1,19 @@
+{
+  "title": "Find the placement of brown 6 in the sample by rotating and mirroring, and supplement the yellow 4 part",
+  "summary": "Find the placement of brown 6 in the sample by rotating and mirroring, and supplement the yellow 4. Matches that are cut off at the edge of the board are also judged by the visible part.",
+  "steps": [
+    "Find the placement of brown 6 in the sample by rotating and mirroring, and supplement the yellow 4 part",
+    "Matches that are cut off at the edge of the board are also judged by the visible part."
+  ],
+  "concepts": [
+    "part to whole",
+    "corner",
+    "3×3"
+  ],
+  "observations": [
+    "Training pair 1: 18x16 -> 18x16; colors [0, 1, 4, 6, 8] -> [0, 1, 4, 6, 8]; 4 cells changed.",
+    "Training pair 2: 19x12 -> 19x12; colors [0, 1, 4, 6, 8] -> [0, 1, 4, 6, 8]; 10 cells changed.",
+    "Training pair 3: 17x17 -> 17x17; colors [0, 1, 4, 6, 8] -> [0, 1, 4, 6, 8]; 3 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

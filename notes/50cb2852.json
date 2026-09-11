@@ -1,0 +1,23 @@
+{
+  "title": "Paint rectangle interiors gray",
+  "summary": "Preserve the border of each solid colored rectangle and recolor every strictly interior cell gray.",
+  "steps": [
+    "Find each solid non-background rectangle.",
+    "Keep its outer border and recolor its interior with color 8."
+  ],
+  "concepts": [
+    "rectangle",
+    "interior",
+    "border"
+  ],
+  "observations": [
+    "Training pair 1 applies the same operation to rectangles of colors 1 and 2.",
+    "Training pair 2 confirms that rectangle width and height may differ.",
+    "Training pair 3 confirms that position and source color are irrelevant."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "Background is 0 and the interior fill color is 8."
+  ],
+  "limitations": "Only filled rectangular components occur in the examples; irregular solid objects are left unchanged by the implementation."
+}

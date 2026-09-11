@@ -1,0 +1,22 @@
+{
+  "title": "Complete interrupted rectangle borders",
+  "summary": "Fill gaps on dense rectangular frames made from ``source_color``. This is the training-inferred `complete_partial_rectangles` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `complete_partial_rectangles`: complete interrupted rectangle borders"
+  ],
+  "concepts": [
+    "complete",
+    "partial",
+    "rectangles"
+  ],
+  "observations": [
+    "Training pair 1: 11x13 -> 11x13; colors [0, 1] -> [0, 1, 2]; 9 cells changed.",
+    "Training pair 2: 9x13 -> 9x13; colors [0, 1] -> [0, 1, 2]; 12 cells changed.",
+    "Training pair 3: 13x13 -> 13x13; colors [0, 1] -> [0, 1, 2]; 12 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "source color: 1",
+    "fill color: 2"
+  ]
+}

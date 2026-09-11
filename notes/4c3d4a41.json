@@ -1,0 +1,19 @@
+{
+  "title": "Insert the gray key on the left horizontally into the frame on the right",
+  "summary": "Insert the gray key on the left horizontally into the frame on the right. When the teeth of the key hit each colored bar, push the bar upwards. Any color that extends above the frame will no longer be visible, leaving a gray frame and key.",
+  "steps": [
+    "Insert the gray key on the left horizontally into the frame on the right",
+    "When the teeth of the key hit each colored bar, push the bar upwards.",
+    "Colors that extend beyond the frame become invisible, leaving a gray frame and key."
+  ],
+  "concepts": [
+    "corresponding movement",
+    "reflection",
+    "shape detection"
+  ],
+  "observations": [
+    "Training pair 1: 8x20 -> 8x20; colors [0, 2, 3, 4, 5, 7] -> [0, 2, 3, 4, 5, 7]; 34 cells changed.",
+    "Training pair 2: 8x20 -> 8x20; colors [0, 4, 5, 6, 7, 8] -> [0, 4, 5, 6, 7, 8]; 32 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

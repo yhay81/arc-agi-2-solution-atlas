@@ -1,0 +1,16 @@
+{
+  "title": "Color gray shapes differently using the color scheme table",
+  "summary": "Correlate the color grid with the matrix order of the gray symbols, and paint each symbol with the specified color.",
+  "steps": [
+    "Correlate the color grid with the matrix order of the gray symbols, and paint each symbol with the specified color."
+  ],
+  "concepts": [
+    "reading table",
+    "Coloring each object"
+  ],
+  "observations": [
+    "Training pair 1: 23x23 -> 23x23; colors [0, 1, 4, 5, 8] -> [0, 1, 4, 8]; 112 cells changed.",
+    "Training pair 2: 23x23 -> 23x23; colors [0, 1, 2, 3, 5] -> [0, 1, 2, 3]; 120 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

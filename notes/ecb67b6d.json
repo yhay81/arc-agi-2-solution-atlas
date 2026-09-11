@@ -1,0 +1,20 @@
+{
+  "title": "Divide the gray color into clusters connected vertically, horizontally, and diagonally.",
+  "summary": "Divide the gray color into clusters connected vertically, horizontally, and diagonally. Check to see if there is a place where three or more cells continue in a diagonal straight line. Change only one block to light blue.",
+  "steps": [
+    "Divide the gray color into clusters connected vertically, horizontally, and diagonally.",
+    "Check if there is a place where 3 or more cells continue in a diagonal straight line.",
+    "Change only a certain part to light blue"
+  ],
+  "concepts": [
+    "Concatenation",
+    "shape classification",
+    "color change"
+  ],
+  "observations": [
+    "Training pair 1: 6x8 -> 6x8; colors [5, 7] -> [5, 7, 8]; 7 cells changed.",
+    "Training pair 2: 4x5 -> 4x5; colors [5, 7] -> [5, 7, 8]; 5 cells changed.",
+    "Training pair 3: 12x11 -> 12x11; colors [5, 7] -> [5, 7, 8]; 15 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

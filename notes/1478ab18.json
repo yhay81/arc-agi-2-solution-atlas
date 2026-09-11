@@ -1,0 +1,21 @@
+{
+  "title": "Draw a triangle using the shifted corners as clues",
+  "summary": "Of the four points in gray 5, three points represent the corners of the square, and the remaining points represent the corners shifted inward by one point. Draw two sides and a diagonal line from the missing corner using light blue 8.",
+  "steps": [
+    "Find the square surrounding the point 5 and find the missing angle.",
+    "Connect the vertical and horizontal sides from that corner with 8.",
+    "Connect the existing corners at the ends of the two sides with a diagonal line 8.",
+    "Leave the original 4 gray points as 5."
+  ],
+  "concepts": [
+    "misaligned clues",
+    "corner",
+    "diagonal line"
+  ],
+  "observations": [
+    "Training pair 1: 8x8 -> 8x8; colors [5, 7] -> [5, 7, 8]; 7 cells changed.",
+    "Training pair 2: 8x8 -> 8x8; colors [5, 7] -> [5, 7, 8]; 13 cells changed.",
+    "Training pair 3: 8x8 -> 8x8; colors [5, 7] -> [5, 7, 8]; 19 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

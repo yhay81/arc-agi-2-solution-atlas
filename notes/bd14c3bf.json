@@ -1,0 +1,19 @@
+{
+  "title": "Make the same type as the top left shape red",
+  "summary": "Read the top left figure as the reference shape.",
+  "steps": [
+    "Read the top left figure as the reference shape.",
+    "Look for shapes of the same type even if they are different sizes.",
+    "Color the shape that is the same as the standard red, and leave the other shapes in their original color."
+  ],
+  "concepts": [
+    "Criteria selection",
+    "shape independent of size"
+  ],
+  "observations": [
+    "Training pair 1: 18x18 -> 18x18; colors [0, 1, 2] -> [0, 1, 2]; 42 cells changed.",
+    "Training pair 2: 15x15 -> 15x15; colors [0, 1, 2] -> [0, 1, 2]; 26 cells changed.",
+    "Training pair 3: 18x18 -> 18x18; colors [0, 1, 2] -> [0, 1, 2]; 40 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Overlay the left and right panels using the smaller color index",
+  "summary": "Overlay the left and right panels using the smaller color index. This is the training-inferred `overlay_lr_min` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `overlay_lr_min`: overlay the left and right panels using the smaller color index"
+  ],
+  "concepts": [
+    "overlay",
+    "lr",
+    "min"
+  ],
+  "observations": [
+    "Training pair 1: 3x7 -> 3x3; colors [0, 1, 5] -> [0, 2]; output dimensions changed.",
+    "Training pair 2: 3x7 -> 3x3; colors [0, 1, 5] -> [0, 2]; output dimensions changed.",
+    "Training pair 3: 3x7 -> 3x3; colors [0, 1, 5] -> [0, 2]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "final color map: 0 -> 0, 1 -> 2"
+  ]
+}

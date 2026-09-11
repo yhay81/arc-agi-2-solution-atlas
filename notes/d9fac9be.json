@@ -1,0 +1,19 @@
+{
+  "title": "Return the center color of a 3x3 hollow square",
+  "summary": "Return the center color of a 3x3 hollow square. This is the training-inferred `center_of_hollow_square` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `center_of_hollow_square`: return the center color of a 3x3 hollow square"
+  ],
+  "concepts": [
+    "center",
+    "hollow",
+    "square"
+  ],
+  "observations": [
+    "Training pair 1: 11x9 -> 1x1; colors [0, 1, 2] -> [1]; output dimensions changed.",
+    "Training pair 2: 7x9 -> 1x1; colors [0, 3, 8] -> [8]; output dimensions changed.",
+    "Training pair 3: 11x12 -> 1x1; colors [0, 3, 8] -> [8]; output dimensions changed.",
+    "Training pair 4: 5x9 -> 1x1; colors [0, 2, 4] -> [2]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

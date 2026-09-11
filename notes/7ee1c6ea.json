@@ -1,0 +1,18 @@
+{
+  "title": "Swap the two colors only inside the gray frame",
+  "summary": "Find the range of the gray 5 frame. Swap the two colors other than black and gray only inside the frame. Leave the outside part.",
+  "steps": [
+    "Find the range of the gray 5 frame.",
+    "Swap the two colors other than black and gray only inside the frame. Leave the outside part."
+  ],
+  "concepts": [
+    "Select area",
+    "color exchange"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 5, 6, 8] -> [0, 5, 6, 8]; 30 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 4, 5, 9] -> [0, 4, 5, 9]; 8 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 2, 3, 5] -> [0, 2, 3, 5]; 28 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

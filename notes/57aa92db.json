@@ -1,0 +1,19 @@
+{
+  "title": "Render a two-color template around each scaled marker object",
+  "summary": "Render a two-color template around each scaled marker object. The small connected motif supplies a dominant color and a rare marker color. Elsewhere, each marker component is paired with its nearest third-color seed; the motif is scaled to the marker's square size and the dominant template color is replaced by that seed color. This is the training-inferred `scale_template_from_marker` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `scale_template_from_marker`: render a two-color template around each scaled marker object"
+  ],
+  "concepts": [
+    "scale",
+    "template",
+    "marker"
+  ],
+  "observations": [
+    "Training pair 1: 17x18 -> 17x18; colors [0, 1, 4, 8] -> [0, 1, 4, 8]; 54 cells changed.",
+    "Training pair 2: 16x18 -> 16x18; colors [0, 2, 3, 6, 8] -> [0, 2, 3, 6, 8]; 8 cells changed.",
+    "Training pair 3: 15x18 -> 15x18; colors [0, 2, 3, 4, 8] -> [0, 2, 3, 4, 8]; 15 cells changed.",
+    "Training pair 4: 16x12 -> 16x12; colors [0, 1, 3, 4] -> [0, 1, 3, 4]; 12 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

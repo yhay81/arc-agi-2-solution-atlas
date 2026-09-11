@@ -1,0 +1,19 @@
+{
+  "title": "Keep colors in order and spread dots apart",
+  "summary": "Read the original color order.",
+  "steps": [
+    "Read the original color order.",
+    "While arranging the subsequent colors in the same order, increase the number of black squares between the colored dots one by one.",
+    "Stop at the edge of the board."
+  ],
+  "concepts": [
+    "order",
+    "increasing interval"
+  ],
+  "observations": [
+    "Training pair 1: 3x19 -> 3x19; colors [0, 1, 6, 8] -> [0, 1, 6, 8]; 3 cells changed.",
+    "Training pair 2: 3x29 -> 3x29; colors [0, 2, 3] -> [0, 2, 3]; 6 cells changed.",
+    "Training pair 3: 3x19 -> 3x19; colors [0, 1, 2] -> [0, 1, 2]; 4 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

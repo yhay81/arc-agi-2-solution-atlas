@@ -1,0 +1,19 @@
+{
+  "title": "Find a thin part with a width of 2 squares, and read it by rotating and flipping it so that it has the same color scheme.",
+  "summary": "Find a thin piece with a width of 2 squares, rotate it and turn it over, and read it by aligning it in a common direction so that it has the same color scheme. Starting from the one square colored mark at the edge of the board, go inward perpendicular to that side, find the first part you hit, and record the height inside the part and whether to draw the line to the left or right. Extend straight lines of the same color from all parts to the edge of the board at the same height and direction.",
+  "steps": [
+    "Find a thin part with a width of 2 squares, and read it by rotating and flipping it so that it has the same color scheme.",
+    "From the 1 square colored mark at the edge of the board, go inward perpendicular to that side, find the first part you hit, and record the height inside the part and whether to draw the line to the left or right.",
+    "Extend straight lines of the same color from all parts to the edge of the board at the same height and direction."
+  ],
+  "concepts": [
+    "projection",
+    "Direction",
+    "superposition"
+  ],
+  "observations": [
+    "Training pair 1: 26x29 -> 26x29; colors [1, 2, 3, 4, 5, 6, 8] -> [1, 2, 3, 4, 5, 6, 8]; 144 cells changed.",
+    "Training pair 2: 21x27 -> 21x27; colors [1, 2, 3, 4, 6, 8, 9] -> [1, 2, 3, 4, 6, 8, 9]; 45 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

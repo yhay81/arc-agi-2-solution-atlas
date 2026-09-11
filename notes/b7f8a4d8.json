@@ -1,0 +1,19 @@
+{
+  "title": "Connect the centers of the same color, which is different from the majority, horizontally and vertically, and paint only the black gaps, leaving the frame and inner color.",
+  "summary": "Connect the centers of the same color, which is different from the majority, horizontally and vertically, and paint only the black gaps, leaving the frame and the inner color. If the center has multiple squares, make the lines the same width.",
+  "steps": [
+    "Connect the centers of the same color, which is different from the majority, horizontally and vertically, and paint only the black gaps, leaving the frame and inner color.",
+    "If the center has multiple squares, make the lines the same width."
+  ],
+  "concepts": [
+    "few colors",
+    "Correlation",
+    "thick route"
+  ],
+  "observations": [
+    "Training pair 1: 24x29 -> 24x29; colors [0, 2, 3, 4, 8] -> [0, 2, 3, 4, 8]; 40 cells changed.",
+    "Training pair 2: 23x28 -> 23x28; colors [0, 1, 2, 3, 4] -> [0, 1, 2, 3, 4]; 32 cells changed.",
+    "Training pair 3: 26x29 -> 26x29; colors [0, 1, 2, 3] -> [0, 1, 2, 3]; 30 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

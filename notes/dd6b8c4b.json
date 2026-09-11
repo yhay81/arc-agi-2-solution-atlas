@@ -1,0 +1,20 @@
+{
+  "title": "Find a 3x3 box with a red center",
+  "summary": "Look for a 3x3 box with a red center. Instead of passing through the pink wall, it spreads in the order closest to the box and sucks in up to 9 brown dots. Erase the inhaled dot and fill the box with the same number of brown pieces in row order starting from the top left.",
+  "steps": [
+    "Find a 3x3 box with a red center",
+    "Spreads in order from the box closest to you without passing through the pink wall, sucking up to 9 brown dots.",
+    "Erase the inhaled dots and fill the box with the same number of brown pieces in row order starting from the top left."
+  ],
+  "concepts": [
+    "Difference in number",
+    "conservation of quantity",
+    "move"
+  ],
+  "observations": [
+    "Training pair 1: 11x11 -> 11x11; colors [2, 3, 6, 7, 9] -> [2, 3, 6, 7, 9]; 4 cells changed.",
+    "Training pair 2: 11x11 -> 11x11; colors [2, 3, 6, 7, 9] -> [6, 7, 9]; 18 cells changed.",
+    "Training pair 3: 11x11 -> 11x11; colors [2, 3, 7, 9] -> [2, 3, 7, 9]; 8 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Extend each column color downward",
+  "summary": "Extend each column color downward. This is the training-inferred `fill_down` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `fill_down`: extend each column color downward"
+  ],
+  "concepts": [
+    "fill",
+    "down"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 3x3; colors [0, 2, 7, 8] -> [0, 2, 7, 8]; 4 cells changed.",
+    "Training pair 2: 3x3 -> 3x3; colors [0, 3, 4, 6] -> [0, 3, 4, 6]; 3 cells changed.",
+    "Training pair 3: 3x3 -> 3x3; colors [0, 2, 4] -> [0, 2, 4]; 3 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

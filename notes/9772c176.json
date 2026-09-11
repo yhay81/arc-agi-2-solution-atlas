@@ -1,0 +1,17 @@
+{
+  "title": "Extend the four flat sides of the light blue polygon with yellow to create a diamond shape with a 45 degree hypotenuse.",
+  "summary": "Extend the four flat sides of the light blue polygon with yellow to create a diamond shape with a 45 degree hypotenuse. Cut outside the board.",
+  "steps": [
+    "Extend the four flat sides of the light blue polygon with yellow to create a diamond shape with a 45 degree hypotenuse.",
+    "Cut outside the surface of the board"
+  ],
+  "concepts": [
+    "contour",
+    "Completion to diamond"
+  ],
+  "observations": [
+    "Training pair 1: 22x21 -> 22x21; colors [0, 8] -> [0, 4, 8]; 39 cells changed.",
+    "Training pair 2: 26x29 -> 26x29; colors [0, 8] -> [0, 4, 8]; 38 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

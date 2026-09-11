@@ -1,0 +1,20 @@
+{
+  "title": "Arrange nine windows at the center of gravity of the pattern",
+  "summary": "Take out nine 5x5 windows separated by black partitions. The color that is most common among all windows is used as the base color, and the average position of the squares other than the base color of each window is determined. Assign windows to a 3x3 arrangement depending on whether the average position is above, below, left, or right of the center. Place the average-centered window in the center.",
+  "steps": [
+    "Take out nine 5x5 windows separated by black partitions.",
+    "The color that is most common among all windows is used as the base color, and the average position of the squares other than the base color of each window is determined.",
+    "Assign windows to a 3x3 arrangement depending on whether the average position is above, below, left, or right of the center. Place the average-centered window in the center."
+  ],
+  "concepts": [
+    "Completeness comparison",
+    "direction",
+    "Reconfigure placement"
+  ],
+  "observations": [
+    "Training pair 1: 19x19 -> 19x19; colors [0, 2, 3] -> [0, 2, 3]; 28 cells changed.",
+    "Training pair 2: 19x19 -> 19x19; colors [0, 1, 8] -> [0, 1, 8]; 54 cells changed.",
+    "Training pair 3: 19x19 -> 19x19; colors [0, 6, 8] -> [0, 6, 8]; 48 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Look for a large rectangular frame with a solid color inside.",
+  "summary": "Look for a large rectangular frame with a solid color inside. Add lines outside the frame to the outline of the rectangle for each set of the same color. Draw solid outlines in the same color. In the case of two colors, read the visible side of the opposite side from the position reflected in the mirror and draw the two colors interchangeably. Finally, cut out only the inside of the frame.",
+  "steps": [
+    "Look for a large rectangular frame with a solid color inside.",
+    "Add lines outside the frame to the outline of the rectangle for each set of the same color",
+    "Draw monochrome outlines in the same color",
+    "In the case of two colors, read the visible side of the opposite side from the position reflected in the mirror and draw the two colors interchangeably.",
+    "Finally, cut out only the inside of the frame"
+  ],
+  "concepts": [
+    "Projection from frame",
+    "alternating pattern",
+    "complement"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 4x7; colors [2, 3, 4, 8] -> [2, 4, 8]; output dimensions changed.",
+    "Training pair 2: 30x30 -> 13x14; colors [1, 2, 3, 6, 8] -> [2, 6, 8]; output dimensions changed.",
+    "Training pair 3: 22x22 -> 7x8; colors [2, 3, 4, 5, 8, 9] -> [2, 4, 5, 8, 9]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

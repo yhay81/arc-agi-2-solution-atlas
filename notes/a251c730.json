@@ -1,0 +1,19 @@
+{
+  "title": "Find the two solid colored frames within the striped pattern",
+  "summary": "Find two solid colored frames within the striped pattern. Use the completed frame with the pattern as a sample, and copy the pattern by overlapping the same color marks on the color points of the other frame. Cut out only the completed frame.",
+  "steps": [
+    "Find the two solid colored frames within the striped pattern",
+    "Use the completed frame with the pattern as a sample, and copy the pattern by overlapping the same color marks on the color points of the other frame.",
+    "Cut out only the completed frame"
+  ],
+  "concepts": [
+    "color frequency",
+    "memorization detection",
+    "unresolved"
+  ],
+  "observations": [
+    "Training pair 1: 30x30 -> 9x20; colors [1, 2, 3, 5, 6, 7, 8, 9] -> [1, 2, 3, 8]; output dimensions changed.",
+    "Training pair 2: 30x30 -> 19x8; colors [0, 1, 2, 3, 4, 6, 8] -> [1, 3, 4, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

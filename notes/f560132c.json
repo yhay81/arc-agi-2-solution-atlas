@@ -1,0 +1,21 @@
+{
+  "title": "Take out a color sample for each square and treat the remaining color blocks as parts of a jigsaw puzzle.",
+  "summary": "Take out a color swatch for each square and treat the remaining blocks of color as parts of a jigsaw puzzle. Keep the orientation of parts including color samples, rotate other parts in 90 degree increments, and pack them into a square without overlapping. Components that correspond to the corners of the sample are placed at the same corner, samples in the middle of a side correspond to components that touch only that side, and samples in the center correspond to components that do not touch the outer edge. Repaint the parts with the sample color for that position, and also paint the parts where the sample is black.",
+  "steps": [
+    "Take out a color sample for each square and treat the remaining color blocks as parts of a jigsaw puzzle.",
+    "Keep the orientation of parts including color samples, rotate other parts in 90 degree increments, and pack them into a square without overlapping them.",
+    "Place parts that correspond to the corners of the sample at the same corner, samples in the middle of a side to correspond to parts that touch only that side, and samples in the center to correspond to parts that do not touch the outer edge.",
+    "Repaint the parts to the sample color of that position, and also paint the parts where the sample is black."
+  ],
+  "concepts": [
+    "quadrant",
+    "rotation",
+    "synthesis",
+    "Color scheme"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 8x8; colors [0, 1, 2, 3, 4, 5, 7, 8, 9] -> [1, 5, 8, 9]; output dimensions changed.",
+    "Training pair 2: 20x20 -> 10x10; colors [0, 1, 2, 3, 4, 5, 6, 8, 9] -> [2, 3, 4, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

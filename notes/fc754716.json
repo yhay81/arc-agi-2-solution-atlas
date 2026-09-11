@@ -1,0 +1,18 @@
+{
+  "title": "Border from marker",
+  "summary": "Border from marker. This is the training-inferred `border_from_marker` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `border_from_marker`: border from marker"
+  ],
+  "concepts": [
+    "border",
+    "marker"
+  ],
+  "observations": [
+    "Training pair 1: 5x7 -> 5x7; colors [0, 1] -> [0, 1]; 21 cells changed.",
+    "Training pair 2: 5x3 -> 5x3; colors [0, 3] -> [0, 3]; 13 cells changed.",
+    "Training pair 3: 5x5 -> 5x5; colors [0, 6] -> [0, 6]; 17 cells changed.",
+    "Training pair 4: 3x3 -> 3x3; colors [0, 2] -> [0, 2]; 9 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

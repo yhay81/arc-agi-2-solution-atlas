@@ -1,0 +1,19 @@
+{
+  "title": "Mark the eight exterior corner cells around each square object",
+  "summary": "Mark the eight exterior corner cells around each square object. This is the training-inferred `mark_square_compartment_corners` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `mark_square_compartment_corners`: mark the eight exterior corner cells around each square object"
+  ],
+  "concepts": [
+    "mark",
+    "square",
+    "compartment",
+    "corners"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [6, 7] -> [2, 6, 7]; 8 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [6, 7] -> [2, 6, 7]; 8 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [7, 8] -> [2, 7, 8]; 16 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

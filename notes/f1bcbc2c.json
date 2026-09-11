@@ -1,0 +1,23 @@
+{
+  "title": "Paint the passage and stop before the brown corner",
+  "summary": "Paint the passage light blue from the entrance at the top along the orange wall. If a brown square is in a straight line, it will pass through and be painted, but if there is a need to turn there, it will stop without painting brown.",
+  "steps": [
+    "At the top, look for the black (0) entrance flanked by orange (7) on the left and right, and start moving downward.",
+    "Proceed while painting the passage light blue (8). If the front is an orange wall, turn in the only right angle direction you can pass through.",
+    "When you reach brown (9), check whether you can proceed in the same direction beyond it. If you can go straight, change the brown to light blue and continue. If the front needs to curve at a wall, leave the brown color and finish there.",
+    "If it doesn't stop at the brown corner, paint until the passage exits the board. Do not paint the outer black background."
+  ],
+  "concepts": [
+    "one space wide aisle",
+    "Route tracking from entrance",
+    "Distinguishing between straight lines and angles",
+    "conditional stop"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 7, 9] -> [0, 7, 8]; 12 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 7, 9] -> [0, 7, 8, 9]; 9 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 7, 9] -> [0, 7, 8]; 14 cells changed.",
+    "Training pair 4: 10x10 -> 10x10; colors [0, 7] -> [0, 7, 8]; 14 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

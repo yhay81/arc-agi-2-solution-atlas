@@ -1,0 +1,19 @@
+{
+  "title": "Overlapping and connecting the same connection patterns of separate parts",
+  "summary": "Overlap and connect the same connection patterns of separate parts. For overlapping ranges, the backgrounds are also matched, and priority is given to connections where the entire markings of the same color match on both parts. The rest of the pattern is connected at the edges, and the entire circumscribed rectangle is output.",
+  "steps": [
+    "Overlapping and connecting the same connection patterns of separate parts",
+    "For overlapping areas, match the background, and prioritize connections where the entire mark of the same color matches on both parts.",
+    "Connect the remaining patterns cut at the edges and output the entire circumscribed rectangle."
+  ],
+  "concepts": [
+    "classification",
+    "order",
+    "Concatenation"
+  ],
+  "observations": [
+    "Training pair 1: 23x25 -> 5x12; colors [1, 2, 3, 4, 6, 8, 9] -> [1, 2, 3, 4, 6, 8, 9]; output dimensions changed.",
+    "Training pair 2: 30x20 -> 5x22; colors [1, 2, 3, 4, 5, 6, 8] -> [1, 2, 3, 4, 5, 6, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

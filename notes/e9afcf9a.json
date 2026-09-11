@@ -1,0 +1,17 @@
+{
+  "title": "Checker two rows",
+  "summary": "Checker two rows. This is the training-inferred `checker_two_rows` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `checker_two_rows`: checker two rows"
+  ],
+  "concepts": [
+    "checker",
+    "two",
+    "rows"
+  ],
+  "observations": [
+    "Training pair 1: 2x6 -> 2x6; colors [4, 8] -> [4, 8]; 6 cells changed.",
+    "Training pair 2: 2x6 -> 2x6; colors [3, 9] -> [3, 9]; 6 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

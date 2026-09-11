@@ -1,0 +1,17 @@
+{
+  "title": "Arrange rectangles of different sizes on top of each other",
+  "summary": "Restore the size from the visible circumscribed range of each color rectangle, and overlap the top left in order of size.",
+  "steps": [
+    "Restore the size from the visible circumscribed range of each color rectangle, and overlap the top left in order of size."
+  ],
+  "concepts": [
+    "order of magnitude",
+    "superposition"
+  ],
+  "observations": [
+    "Training pair 1: 16x15 -> 6x9; colors [2, 3, 5, 8] -> [2, 3, 5]; output dimensions changed.",
+    "Training pair 2: 14x15 -> 6x8; colors [1, 2, 3, 4] -> [1, 2, 3]; output dimensions changed.",
+    "Training pair 3: 15x15 -> 8x8; colors [0, 3, 4, 6, 8] -> [3, 4, 6, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

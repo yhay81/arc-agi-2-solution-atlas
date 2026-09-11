@@ -1,0 +1,19 @@
+{
+  "title": "Collapse consecutive duplicate rows and columns",
+  "summary": "Collapse consecutive duplicate rows and columns. This is the training-inferred `dedupe_rows_cols` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `dedupe_rows_cols`: collapse consecutive duplicate rows and columns"
+  ],
+  "concepts": [
+    "dedupe",
+    "rows",
+    "cols"
+  ],
+  "observations": [
+    "Training pair 1: 12x9 -> 5x3; colors [0, 3, 4, 8] -> [0, 3, 4, 8]; output dimensions changed.",
+    "Training pair 2: 12x11 -> 5x7; colors [0, 1, 2, 3, 5, 8] -> [0, 1, 2, 3, 5, 8]; output dimensions changed.",
+    "Training pair 3: 12x11 -> 7x5; colors [0, 1, 2, 3, 7, 8] -> [0, 1, 2, 3, 7, 8]; output dimensions changed.",
+    "Training pair 4: 10x11 -> 5x5; colors [0, 3, 5, 6, 8] -> [0, 3, 5, 6, 8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

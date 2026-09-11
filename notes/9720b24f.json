@@ -1,0 +1,21 @@
+{
+  "title": "Find large curved outlines of the same color",
+  "summary": "Find a large curved outline of the same color. Erase the squares of a different color within the area surrounded by the rubber band outside the outline. Leave the outline itself and the color squares outside.",
+  "steps": [
+    "Find large curved outlines of the same color",
+    "Erase the squares of a different color within the area surrounded by the rubber band outside the outline.",
+    "Leave the outline itself and the color squares outside"
+  ],
+  "concepts": [
+    "line shape",
+    "end point",
+    "restoration"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 3x3; colors [0, 1, 7] -> [0, 1]; 1 cells changed.",
+    "Training pair 2: 11x11 -> 11x11; colors [0, 2, 5, 6, 8] -> [0, 2, 6]; 6 cells changed.",
+    "Training pair 3: 15x15 -> 15x15; colors [0, 3, 6, 7, 8] -> [0, 3, 6, 7, 8]; 6 cells changed.",
+    "Training pair 4: 11x11 -> 11x11; colors [0, 2, 5, 6, 9] -> [0, 2, 6, 9]; 1 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

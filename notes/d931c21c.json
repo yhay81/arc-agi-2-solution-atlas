@@ -1,0 +1,20 @@
+{
+  "title": "Select only the blue closed ring and make the area immediately inside green and the area immediately outside red.",
+  "summary": "Select only the closed blue ring, and make the area immediately inside green and the area immediately outside red. If 3 of the 2x2 corners of the circumscribed rectangle are blue, the outside of those corners will also be filled with red.",
+  "steps": [
+    "Select only the blue closed ring and make the area immediately inside green and the area immediately outside red.",
+    "If 3 squares out of 2x2 are blue in the corners of the circumscribed rectangle, the outside of those corners will also be filled with red."
+  ],
+  "concepts": [
+    "closed curve",
+    "inside and outside",
+    "1 square border"
+  ],
+  "observations": [
+    "Training pair 1: 16x14 -> 16x14; colors [0, 1] -> [0, 1, 2, 3]; 69 cells changed.",
+    "Training pair 2: 9x10 -> 9x10; colors [0, 1] -> [0, 1]; 0 cells changed.",
+    "Training pair 3: 19x22 -> 19x22; colors [0, 1] -> [0, 1, 2, 3]; 72 cells changed.",
+    "Training pair 4: 8x8 -> 8x8; colors [0, 1] -> [0, 1, 2, 3]; 30 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

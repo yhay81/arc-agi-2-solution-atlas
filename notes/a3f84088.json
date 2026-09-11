@@ -1,0 +1,20 @@
+{
+  "title": "Draw a concentric frame that shrinks one square at a time inside the gray square frame.",
+  "summary": "Draw a concentric frame that shrinks one square at a time inside the gray square frame. Repeat the colors from the outside in the order of \"gray, red, gray, black\" until it reaches the center. Leave the last point black in all nine squares.",
+  "steps": [
+    "Draw a concentric frame that shrinks one square at a time inside the gray square frame.",
+    "Repeat the colors from the outside in the order of \"gray, red, gray, black\" and fill in to the center.",
+    "Leave the last point black in all nine squares."
+  ],
+  "concepts": [
+    "concentric frame",
+    "4 cycles"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [0, 5] -> [0, 2, 5]; 80 cells changed.",
+    "Training pair 2: 6x6 -> 6x6; colors [0, 5] -> [2, 5]; 16 cells changed.",
+    "Training pair 3: 19x19 -> 19x19; colors [0, 5] -> [0, 2, 5]; 177 cells changed.",
+    "Training pair 4: 13x13 -> 13x13; colors [0, 5] -> [0, 2, 5]; 40 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

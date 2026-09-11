@@ -1,0 +1,21 @@
+{
+  "title": "Movement of the gray line and whether the blue number is even or odd (tentative arithmetic hypothesis)",
+  "summary": "As a tentative arithmetic hypothesis, count the columns of gray vertical lines from the left as k, starting at 0. Erase the gray line and move it to the new column 2k+1. If the total number of blue squares to the left of the original gray line is an odd number, turn the red squares to the left of the new line blue. If the number is even, the color will not change. Although it matched all published examples, the match with the intended rule is particularly uncertain.",
+  "steps": [
+    "As a tentative arithmetic hypothesis, count the columns of gray vertical lines from the left as k, starting at 0.",
+    "Erase the gray line and move it to the new column 2k+1.",
+    "If the total number of blue squares to the left of the original gray line is an odd number, turn the red squares to the left of the new line blue. If the number is even, the color will not change. Although it matched all published examples, the match with the intended rule is particularly uncertain."
+  ],
+  "concepts": [
+    "scanning",
+    "first empty row",
+    "Color change due to passage"
+  ],
+  "observations": [
+    "Training pair 1: 7x15 -> 7x15; colors [0, 1, 2, 5] -> [0, 1, 2, 5]; 14 cells changed.",
+    "Training pair 2: 7x15 -> 7x15; colors [0, 1, 2, 5] -> [0, 1, 2, 5]; 21 cells changed.",
+    "Training pair 3: 7x15 -> 7x15; colors [0, 1, 2, 5] -> [0, 1, 2, 5]; 14 cells changed.",
+    "Training pair 4: 7x15 -> 7x15; colors [0, 1, 2, 5] -> [0, 1, 2, 5]; 17 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

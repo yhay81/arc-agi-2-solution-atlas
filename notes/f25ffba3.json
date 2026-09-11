@@ -1,0 +1,16 @@
+{
+  "title": "Complete top-bottom reflection symmetry",
+  "summary": "Complete top-bottom reflection symmetry. This is the training-inferred `symmetrize_ud` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `symmetrize_ud`: complete top-bottom reflection symmetry"
+  ],
+  "concepts": [
+    "symmetrize",
+    "ud"
+  ],
+  "observations": [
+    "Training pair 1: 10x4 -> 10x4; colors [0, 2, 3, 8] -> [0, 2, 3, 8]; 11 cells changed.",
+    "Training pair 2: 10x4 -> 10x4; colors [0, 2, 3, 4, 9] -> [0, 2, 3, 4, 9]; 12 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

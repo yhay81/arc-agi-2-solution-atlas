@@ -1,0 +1,21 @@
+{
+  "title": "Paint the middle dots with multiple colors on the edge of the plot",
+  "summary": "Find each square surrounded by a blue grid.",
+  "steps": [
+    "Find each square surrounded by a blue grid.",
+    "Count the markings of a color other than blue on the corners and edges surrounding the plot.",
+    "Repaint the blue dot inside to the color of the most common mark.",
+    "Retain grid lines and edge markings."
+  ],
+  "concepts": [
+    "majority vote",
+    "compartment",
+    "sign of the edge"
+  ],
+  "observations": [
+    "Training pair 1: 22x24 -> 22x24; colors [0, 1, 2, 3, 8] -> [0, 1, 2, 3, 8]; 26 cells changed.",
+    "Training pair 2: 27x23 -> 27x23; colors [0, 1, 2, 3, 6, 8] -> [0, 1, 2, 3, 6, 8]; 32 cells changed.",
+    "Training pair 3: 20x22 -> 20x22; colors [0, 1, 2, 3, 8] -> [0, 1, 2, 3, 8]; 20 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/arcprize/ARC-AGI-2",
+  "commit": "f3283f727488ad98fe575ea6a5ac981e4a188e49",
+  "data_tree": "e43b87b55bfcffa0d13a966a88fe58c3472f5450",
+  "content_sha256": "beac01b6557ce745b547d3616722aebe521128d1b96ebb3292988adf4c28abe7",
+  "task_counts": {
+    "training": 1000,
+    "evaluation": 120
+  },
+  "pair_count": 4834
+}

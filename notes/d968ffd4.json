@@ -1,0 +1,19 @@
+{
+  "title": "Spread the colored blocks at both ends to the center",
+  "summary": "Extend a full-height strip from the color blocks at both ends to the center, leaving the center row in the background for odd widths. Transpose vertically.",
+  "steps": [
+    "Extend a full-height strip from the color blocks at both ends to the center, leaving the center row in the background for odd widths.",
+    "Transpose vertically."
+  ],
+  "concepts": [
+    "opposing expansion",
+    "midpoint",
+    "area"
+  ],
+  "observations": [
+    "Training pair 1: 5x16 -> 5x16; colors [1, 4, 6] -> [1, 4, 6]; 50 cells changed.",
+    "Training pair 2: 4x17 -> 4x17; colors [1, 2, 3] -> [1, 2, 3]; 40 cells changed.",
+    "Training pair 3: 19x3 -> 19x3; colors [1, 2, 8] -> [1, 2, 8]; 36 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

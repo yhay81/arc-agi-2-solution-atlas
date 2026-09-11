@@ -1,0 +1,19 @@
+{
+  "title": "Swap the two colors of the small pattern in the description column and place it in each square of the large shape.",
+  "summary": "Swap the two colors of the small pattern in the description box and place it in each square of the large shape. Rotate the large shape using the direction indicated by the short orange line as the rotation angle relative to the top, and place it in the corner indicated by the yellow dot. If there are description columns on the left and right, overlap both.",
+  "steps": [
+    "Swap the two colors of the small pattern in the description column and place it in each square of the large shape.",
+    "Rotate the large shape using the direction indicated by the short orange line as the rotation angle relative to the top, and place it in the corner indicated by the yellow dot.",
+    "If there are description columns on the left and right, overlap both."
+  ],
+  "concepts": [
+    "Sign expansion",
+    "Line-by-line drawing"
+  ],
+  "observations": [
+    "Training pair 1: 20x30 -> 20x24; colors [0, 1, 3, 4, 5, 6, 7, 8] -> [1, 3, 4, 5, 7, 8]; output dimensions changed.",
+    "Training pair 2: 20x30 -> 20x24; colors [0, 1, 2, 4, 6, 7, 8, 9] -> [1, 2, 8, 9]; output dimensions changed.",
+    "Training pair 3: 20x30 -> 20x24; colors [0, 2, 3, 4, 5, 6, 7, 8] -> [3, 4, 5, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

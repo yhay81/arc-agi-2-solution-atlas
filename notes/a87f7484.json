@@ -1,0 +1,20 @@
+{
+  "title": "Select densest square panel",
+  "summary": "Select densest square panel. This is the training-inferred `select_densest_square_panel` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `select_densest_square_panel`: select densest square panel"
+  ],
+  "concepts": [
+    "select",
+    "densest",
+    "square",
+    "panel"
+  ],
+  "observations": [
+    "Training pair 1: 3x15 -> 3x3; colors [0, 1, 2, 3, 4, 8] -> [0, 4]; output dimensions changed.",
+    "Training pair 2: 3x12 -> 3x3; colors [0, 1, 2, 3, 7] -> [0, 7]; output dimensions changed.",
+    "Training pair 3: 12x3 -> 3x3; colors [0, 2, 3, 7, 8] -> [0, 7]; output dimensions changed.",
+    "Training pair 4: 9x3 -> 3x3; colors [0, 4, 6, 8] -> [0, 8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

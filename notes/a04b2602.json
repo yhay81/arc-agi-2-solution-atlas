@@ -1,0 +1,19 @@
+{
+  "title": "Surround the red point within the green area with blue",
+  "summary": "Select the red dot inside the green area.",
+  "steps": [
+    "Select the red dot inside the green area.",
+    "Draw a blue square around that point and keep the red dot itself.",
+    "Red dots outside the green area are not targeted."
+  ],
+  "concepts": [
+    "Selection within area",
+    "neighborhood"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 20x20; colors [0, 2, 3] -> [0, 1, 2, 3]; 96 cells changed.",
+    "Training pair 2: 20x20 -> 20x20; colors [0, 2, 3] -> [0, 1, 2, 3]; 64 cells changed.",
+    "Training pair 3: 10x17 -> 10x17; colors [0, 2, 3] -> [0, 1, 2, 3]; 26 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

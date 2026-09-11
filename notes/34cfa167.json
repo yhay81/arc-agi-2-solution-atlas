@@ -1,0 +1,18 @@
+{
+  "title": "Copy the opposite blue corner to the remaining two corners",
+  "summary": "Copy the opposite blue corner to the remaining two corners. Extend the two-color bar and blank space attached to the first corner to each side in a four-square period, and connect the outside with the color of the first bar on each side.",
+  "steps": [
+    "Copy the opposite blue corner to the remaining two corners",
+    "Extend the two-color bar and blank space attached to the first corner to each side in a four-square period, and connect the outside with the color of the first bar on each side."
+  ],
+  "concepts": [
+    "frame",
+    "color sample",
+    "period"
+  ],
+  "observations": [
+    "Training pair 1: 24x26 -> 24x26; colors [0, 1, 2, 4, 8] -> [0, 1, 2, 4, 8]; 142 cells changed.",
+    "Training pair 2: 18x22 -> 18x22; colors [1, 2, 3, 4, 8] -> [1, 2, 3, 4, 8]; 92 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

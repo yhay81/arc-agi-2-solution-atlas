@@ -1,0 +1,20 @@
+{
+  "title": "Copy the shapes that touch each corner clockwise to the next corner without changing the direction.",
+  "summary": "Copies the shapes touching each corner clockwise to the next corner without changing direction. Do not copy from empty corners. Leave the original shape and overwrite only the colored parts at the copy destination.",
+  "steps": [
+    "Copy the shapes that touch each corner clockwise to the next corner without changing the direction.",
+    "Do not copy from empty corners",
+    "Leave the original shape and overwrite only the colored parts at the copy destination"
+  ],
+  "concepts": [
+    "Correspondence",
+    "color exchange",
+    "corner"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [2, 4, 5, 6, 7, 8, 9] -> [2, 4, 5, 6, 7, 8, 9]; 14 cells changed.",
+    "Training pair 2: 8x8 -> 8x8; colors [2, 3, 5, 7, 9] -> [2, 3, 5, 7, 9]; 10 cells changed.",
+    "Training pair 3: 8x8 -> 8x8; colors [2, 3, 4, 5, 6, 7] -> [2, 3, 4, 5, 6, 7]; 10 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

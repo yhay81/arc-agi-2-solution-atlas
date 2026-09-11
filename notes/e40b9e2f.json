@@ -1,0 +1,19 @@
+{
+  "title": "Complete fourfold rotation from the minimal seed",
+  "summary": "Complete the smallest conflict-free 90-degree rotational closure. This is the training-inferred `complete_minimal_fourfold_rotation` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `complete_minimal_fourfold_rotation`: complete fourfold rotation from the minimal seed"
+  ],
+  "concepts": [
+    "complete",
+    "minimal",
+    "fourfold",
+    "rotation"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 3, 6] -> [0, 3, 6]; 6 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 4, 7] -> [0, 4, 7]; 6 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 8, 9] -> [0, 8, 9]; 3 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

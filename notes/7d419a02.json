@@ -1,0 +1,19 @@
+{
+  "title": "Split into bands with parallel separation of zero",
+  "summary": "Divide into bands with parallel separators of zero. Leave a purple central band and change the light blue on the left and right outer sides to yellow depending on the distance between the bands. For vertical bands, transpose and perform the same operation.",
+  "steps": [
+    "Split into bands with parallel separation of zero",
+    "Leave the purple central band and change the light blue on the left and right outer sides to yellow depending on the distance between the bands.",
+    "For vertical bands, transpose and do the same operation"
+  ],
+  "concepts": [
+    "symmetrical expansion",
+    "Branching by dimensions"
+  ],
+  "observations": [
+    "Training pair 1: 16x14 -> 16x14; colors [0, 6, 8] -> [0, 4, 6, 8]; 59 cells changed.",
+    "Training pair 2: 12x19 -> 12x19; colors [0, 6, 8] -> [0, 4, 6, 8]; 44 cells changed.",
+    "Training pair 3: 16x22 -> 16x22; colors [0, 6, 8] -> [0, 4, 6, 8]; 90 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

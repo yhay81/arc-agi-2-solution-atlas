@@ -1,0 +1,19 @@
+{
+  "title": "Mirror only the most frequent foreground color horizontally",
+  "summary": "Select a color other than black that has the largest total number of cells, and add all cells of that color to the center of the board, horizontally reversed about the vertical axis.",
+  "steps": [
+    "Count the number of cells for each non-black color",
+    "Choose the most unique color",
+    "Mirror only that color left and right and overlay it on the original image."
+  ],
+  "concepts": [
+    "frequency",
+    "symmetrical"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 3, 7, 9] -> [0, 3, 7, 9]; 14 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 1, 6, 8] -> [0, 1, 6, 8]; 6 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 1, 2, 4] -> [0, 1, 2, 4]; 6 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

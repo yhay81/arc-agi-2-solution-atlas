@@ -1,0 +1,18 @@
+{
+  "title": "Represent the number of green and red lines in a small table",
+  "summary": "Count the green 3 and red 2 bars regardless of the background color, and pack the number of green bars → the number of red bars → 0 in the order of 2 × 3 in row priority.",
+  "steps": [
+    "Count the green 3 and red 2 bars regardless of the background color, and pack the number of green bars → the number of red bars → 0 in the order of 2 × 3 in row priority."
+  ],
+  "concepts": [
+    "number of lines",
+    "Expression of quantity"
+  ],
+  "observations": [
+    "Training pair 1: 10x14 -> 2x3; colors [1, 2, 3] -> [0, 2, 3]; output dimensions changed.",
+    "Training pair 2: 10x10 -> 2x3; colors [2, 3, 5] -> [0, 2, 3]; output dimensions changed.",
+    "Training pair 3: 13x15 -> 2x3; colors [2, 3, 8] -> [2, 3]; output dimensions changed.",
+    "Training pair 4: 10x19 -> 2x3; colors [2, 3, 8] -> [0, 2, 3]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

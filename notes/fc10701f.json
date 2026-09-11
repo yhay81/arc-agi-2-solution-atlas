@@ -1,0 +1,19 @@
+{
+  "title": "Move the orange object in a straight line to the brown destination",
+  "summary": "Move the orange object in a straight line to the brown destination. Leave a red mark only where the black sticks are located on both sides while passing, and mark the destination orange.",
+  "steps": [
+    "Move the orange object in a straight line to the brown destination",
+    "While passing, leave a red mark only where the black sticks are located on both sides, and mark the destination orange."
+  ],
+  "concepts": [
+    "parts alignment",
+    "shape selection",
+    "move"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 12x12; colors [0, 6, 7, 9] -> [0, 2, 6, 7]; 14 cells changed.",
+    "Training pair 2: 8x8 -> 8x8; colors [0, 6, 7, 9] -> [0, 2, 6, 7]; 4 cells changed.",
+    "Training pair 3: 16x16 -> 16x16; colors [0, 6, 7, 9] -> [0, 2, 6, 7]; 12 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

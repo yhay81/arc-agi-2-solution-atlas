@@ -1,0 +1,22 @@
+{
+  "title": "Choose the path that passes through the most small squares",
+  "summary": "Treat the 2×2 red 2 and light blue 8 squares as points. It is assumed that the closest points can be connected in a straight line vertically, horizontally, and horizontally. Starting from red, find a route that passes through the most points without passing through the same point twice. If there is a tie, choose the route with the shortest total distance. Connect the points on the route with orange 7, leaving the original points.",
+  "steps": [
+    "Treat the 2×2 red 2 and light blue 8 squares as points.",
+    "It is assumed that the closest points can be connected in a straight line vertically, horizontally, and horizontally.",
+    "Starting from red, find a route that passes through the most points without passing through the same point twice. If there is a tie, choose the route with the shortest total distance.",
+    "Connect the points on the route with orange 7, leaving the original points."
+  ],
+  "concepts": [
+    "route search",
+    "corner",
+    "Maintaining thickness"
+  ],
+  "observations": [
+    "Training pair 1: 16x18 -> 16x18; colors [0, 2, 8] -> [0, 2, 7, 8]; 6 cells changed.",
+    "Training pair 2: 26x28 -> 26x28; colors [0, 2, 8] -> [0, 2, 7, 8]; 78 cells changed.",
+    "Training pair 3: 26x25 -> 26x25; colors [0, 2, 8] -> [0, 2, 7, 8]; 78 cells changed.",
+    "Training pair 4: 26x18 -> 26x18; colors [0, 2, 8] -> [0, 2, 7, 8]; 48 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

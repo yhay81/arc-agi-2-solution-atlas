@@ -1,0 +1,19 @@
+{
+  "title": "Color three evenly spaced cells on the diagonal of a line lattice",
+  "summary": "Color three evenly spaced cells on the diagonal of a line lattice. Solid non-background rows and columns partition the canvas into cells. The first, middle, and last cells along the diagonal are labeled 1, 2, and 3 respectively. The construction intentionally uses the ordered cell positions rather than dimensions, so extra guide lines simply make smaller intermediate cells. This is the training-inferred `fill_diagonal_lattice_cells` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `fill_diagonal_lattice_cells`: color three evenly spaced cells on the diagonal of a line lattice"
+  ],
+  "concepts": [
+    "fill",
+    "diagonal",
+    "lattice",
+    "cells"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 5] -> [0, 1, 2, 3, 5]; 12 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 5] -> [0, 1, 2, 3, 5]; 22 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 5] -> [0, 1, 2, 3, 5]; 8 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

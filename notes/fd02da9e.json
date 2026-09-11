@@ -1,0 +1,21 @@
+{
+  "title": "Place a small pattern using a point in the corner as a cue",
+  "summary": "Read the dots at each corner of the 8x8 board and erase the original dots. Place the top corner point one square inward from that corner as a 2x2 square of the same color. For the bottom corner points, place two vertical points on the inside of the fourth and third rows from the bottom, and place one point further inward on the next row. Since the four corners and colors have a fixed correspondence, it is not possible to distinguish between the position and the color based on examples alone.",
+  "steps": [
+    "Read the dots at each corner of the 8x8 board and erase the original dots.",
+    "Place the top corner point one square inward from that corner as a 2x2 square of the same color.",
+    "For the bottom corner points, place two vertical points on the inside of the fourth and third rows from the bottom, and place one point further inward on the next row. Since the four corners and colors have a fixed correspondence, it is not possible to distinguish between the position and the color based on examples alone."
+  ],
+  "concepts": [
+    "signs and patterns",
+    "Location compatible",
+    "lack of examples"
+  ],
+  "observations": [
+    "Training pair 1: 8x8 -> 8x8; colors [1, 7] -> [1, 7]; 4 cells changed.",
+    "Training pair 2: 8x8 -> 8x8; colors [7, 8] -> [7, 8]; 5 cells changed.",
+    "Training pair 3: 8x8 -> 8x8; colors [0, 7] -> [0, 7]; 4 cells changed.",
+    "Training pair 4: 8x8 -> 8x8; colors [7, 9] -> [7, 9]; 5 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

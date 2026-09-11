@@ -1,0 +1,19 @@
+{
+  "title": "tie diagonally facing crosses",
+  "summary": "Find the center of the green cross. If the two centers are the same distance apart horizontally and vertically, connect them with a 45 degree red line. The original green cross will be retained in preference to the red line.",
+  "steps": [
+    "Find the center of the green cross.",
+    "If the two centers are the same distance apart horizontally and vertically, connect them with a 45 degree red line.",
+    "The original green cross will be retained in preference to the red line."
+  ],
+  "concepts": [
+    "alignment",
+    "diagonal"
+  ],
+  "observations": [
+    "Training pair 1: 14x16 -> 14x16; colors [0, 3] -> [0, 2, 3]; 5 cells changed.",
+    "Training pair 2: 14x10 -> 14x10; colors [0, 3] -> [0, 2, 3]; 7 cells changed.",
+    "Training pair 3: 12x13 -> 12x13; colors [0, 3] -> [0, 2, 3]; 2 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Color the gray rectangle using corner markers",
+  "summary": "Look for a large rectangle of gray 5 and three landmarks of the same color. Starting from the mark at the corner of the rectangle, paint a small rectangle with the width and height specified by the two outer marks with that color. Return the outer markers to black and leave the unpainted areas gray.",
+  "steps": [
+    "Look for a large rectangle of gray 5 and three landmarks of the same color.",
+    "Starting from the mark at the corner of the rectangle, paint a small rectangle with the width and height specified by the two outer marks with that color.",
+    "Return the outer markers to black and leave the unpainted areas gray."
+  ],
+  "concepts": [
+    "coordinate instructions",
+    "intersection of ranges",
+    "rectangle"
+  ],
+  "observations": [
+    "Training pair 1: 15x15 -> 15x15; colors [0, 3, 4, 5] -> [0, 3, 4, 5]; 67 cells changed.",
+    "Training pair 2: 15x15 -> 15x15; colors [0, 2, 5] -> [0, 2, 5]; 43 cells changed.",
+    "Training pair 3: 15x15 -> 15x15; colors [0, 1, 4, 5, 6] -> [0, 1, 4, 5, 6]; 75 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

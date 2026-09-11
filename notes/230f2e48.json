@@ -1,0 +1,18 @@
+{
+  "title": "Bend the red stick with the gray base at a right angle at the end of the black joint.",
+  "summary": "Bend the red stick with the gray base at a right angle at the end of the black joint. The direction of bending should be the side that approaches the center of the board, keeping the length of the tip of the joint the same.",
+  "steps": [
+    "Bend the red stick with the gray base at a right angle at the end of the black joint.",
+    "The direction of bending should be the side that approaches the center of the board, keeping the length of the tip of the joint."
+  ],
+  "concepts": [
+    "connecting the dots",
+    "right angle path"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 2, 5, 7] -> [0, 2, 5, 7]; 10 cells changed.",
+    "Training pair 2: 8x8 -> 8x8; colors [0, 2, 5, 7] -> [0, 2, 5, 7]; 4 cells changed.",
+    "Training pair 3: 12x12 -> 12x12; colors [0, 2, 5, 7] -> [0, 2, 5, 7]; 16 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

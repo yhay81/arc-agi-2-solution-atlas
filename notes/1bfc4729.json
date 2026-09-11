@@ -1,0 +1,19 @@
+{
+  "title": "Expand two markers into stacked framed panels",
+  "summary": "Sort the two colored point markers from top to bottom and divide the canvas between their rows. In each half, draw its marker color on both vertical borders, across the marker's row, and across the nearest outer horizontal border.",
+  "steps": [
+    "Sort the two non-background point markers by row and split the canvas midway between them.",
+    "For each marker's half, color the left and right borders, its original row, and the outer top or bottom border with the marker color."
+  ],
+  "concepts": [
+    "marker expansion",
+    "panel",
+    "border",
+    "relative position"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 1, 4] -> [0, 1, 4]; 50 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 6, 7] -> [0, 6, 7]; 50 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

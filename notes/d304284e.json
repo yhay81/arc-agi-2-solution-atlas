@@ -1,0 +1,20 @@
+{
+  "title": "Arrange the shapes in the order of orange, orange, purple and extend only the purple downwards.",
+  "summary": "Extract the input orange small figure as a prototype.",
+  "steps": [
+    "Extract the input orange small figure as a prototype.",
+    "Repeat from the original position to the right, leaving one black row between the shapes. The colors should be orange, orange, and magenta in cycles.",
+    "Repeat the same magenta shapes vertically, leaving one black line below each magenta shape.",
+    "Cut the part that goes beyond the right edge or bottom edge outside the grid, and do not change the output dimensions."
+  ],
+  "concepts": [
+    "two-way iteration",
+    "color cycle",
+    "cutting at the edge"
+  ],
+  "observations": [
+    "Training pair 1: 23x28 -> 23x28; colors [0, 7] -> [0, 6, 7]; 101 cells changed.",
+    "Training pair 2: 23x28 -> 23x28; colors [0, 7] -> [0, 6, 7]; 103 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

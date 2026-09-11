@@ -1,0 +1,20 @@
+{
+  "title": "Replace the 3 horizontal orange squares with 3 vertical purple squares keeping the center.",
+  "summary": "Replace the 3 horizontal orange squares with 3 vertical purple squares keeping the center. Count the original green squares in each light blue passage and drop them to the bottom. Go to the dead end on the opposite side of the opening you came down from. If there is no place to go down, keep the original end.",
+  "steps": [
+    "Replace the 3 horizontal orange squares with 3 vertical purple squares keeping the center.",
+    "Count the original green squares for each light blue passage and drop them to the bottom.",
+    "Go to the dead end on the opposite side of the opening you came down from.",
+    "If there is no place to go down, keep the original edge"
+  ],
+  "concepts": [
+    "local shape",
+    "distance",
+    "contour"
+  ],
+  "observations": [
+    "Training pair 1: 13x19 -> 13x19; colors [0, 3, 7, 8] -> [0, 3, 6, 8]; 74 cells changed.",
+    "Training pair 2: 11x16 -> 11x16; colors [0, 3, 7, 8] -> [0, 3, 6, 8]; 42 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

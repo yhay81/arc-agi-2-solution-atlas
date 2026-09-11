@@ -1,0 +1,17 @@
+{
+  "title": "Look for flowers with repeating petal colors",
+  "summary": "4Detect flowers that have the same color on the top, bottom, left and right of the center, and answer the petal color that is used by the most flowers.",
+  "steps": [
+    "4Detect flowers that have the same color on the top, bottom, left and right of the center, and answer the petal color that is used by the most flowers."
+  ],
+  "concepts": [
+    "object attributes",
+    "Duplicate detection"
+  ],
+  "observations": [
+    "Training pair 1: 22x22 -> 1x1; colors [0, 1, 2, 3, 4, 6, 7, 8] -> [3]; output dimensions changed.",
+    "Training pair 2: 26x24 -> 1x1; colors [0, 1, 2, 3, 4, 8] -> [2]; output dimensions changed.",
+    "Training pair 3: 20x22 -> 1x1; colors [0, 3, 4, 5, 8] -> [8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Turn a bar-shaped sample into a diagonal checkered pattern",
+  "summary": "Move the gray comb to the other side and move the teeth diagonally one step at a time. Extend the bottom border in brown.",
+  "steps": [
+    "Move the gray comb to the other side and move the teeth diagonally one step at a time. Extend the bottom border in brown."
+  ],
+  "concepts": [
+    "checkered pattern",
+    "slope",
+    "Dimension conversion"
+  ],
+  "observations": [
+    "Training pair 1: 17x17 -> 17x17; colors [1, 5, 6] -> [1, 5, 6, 9]; 62 cells changed.",
+    "Training pair 2: 16x16 -> 16x16; colors [1, 5, 6] -> [1, 5, 6, 9]; 51 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

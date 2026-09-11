@@ -1,0 +1,19 @@
+{
+  "title": "Read the isosceles triangle from the two hypotenuses indicated by the green dots, and turn the non-green triangle squares light blue.",
+  "summary": "Read the isosceles triangle from the two hypotenuses indicated by the green dots, and turn the squares of the triangle other than green light blue. Fill in the missing green on the hypotenuse with light blue.",
+  "steps": [
+    "Read the isosceles triangle from the two hypotenuses indicated by the green dots, and turn the non-green triangle squares light blue.",
+    "Fill in the missing green on the hypotenuse with light blue."
+  ],
+  "concepts": [
+    "hypotenuse",
+    "symmetry",
+    "Completion of areas"
+  ],
+  "observations": [
+    "Training pair 1: 15x12 -> 15x12; colors [0, 1, 3] -> [0, 1, 3, 8]; 15 cells changed.",
+    "Training pair 2: 13x12 -> 13x12; colors [0, 1, 3] -> [0, 1, 3, 8]; 15 cells changed.",
+    "Training pair 3: 15x16 -> 15x16; colors [0, 1, 3] -> [0, 1, 3, 8]; 19 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

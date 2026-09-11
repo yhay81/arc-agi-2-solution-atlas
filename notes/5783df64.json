@@ -1,0 +1,17 @@
+{
+  "title": "Rearrange the nine separated colors in a 3x3 format.",
+  "summary": "Divide the input into thirds vertically and horizontally, and reduce the one color point in each of the nine sections to 3 x 3.",
+  "steps": [
+    "Divide the input into thirds vertically and horizontally, and reduce the one color point in each of the nine sections to 3 x 3."
+  ],
+  "concepts": [
+    "spatial order",
+    "compression"
+  ],
+  "observations": [
+    "Training pair 1: 9x9 -> 3x3; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [1, 2, 3, 4, 5, 6, 7, 8, 9]; output dimensions changed.",
+    "Training pair 2: 6x6 -> 3x3; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [1, 2, 3, 4, 5, 6, 7, 8, 9]; output dimensions changed.",
+    "Training pair 3: 6x6 -> 3x3; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [1, 2, 3, 4, 5, 6, 7, 8, 9]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

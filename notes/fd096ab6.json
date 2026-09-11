@@ -1,0 +1,17 @@
+{
+  "title": "A set of adjacent fragments within the maximum side length of the yellow sample is complemented by parallel translation of the only sample containing each set.",
+  "summary": "Proximal fragments within the maximum side length of the yellow sample are set as a set, and each set is complemented by parallel translation of the only sample that includes the set. Fragments that are the same color but far apart are different shapes.",
+  "steps": [
+    "A set of adjacent fragments within the maximum side length of the yellow sample is complemented by parallel translation of the only sample containing each set.",
+    "Fragments that are the same color but far apart are different shapes"
+  ],
+  "concepts": [
+    "Complement from sample",
+    "alignment"
+  ],
+  "observations": [
+    "Training pair 1: 24x24 -> 24x24; colors [1, 3, 4, 6, 7, 8] -> [1, 3, 4, 6, 7, 8]; 21 cells changed.",
+    "Training pair 2: 22x22 -> 22x22; colors [1, 2, 3, 4, 6, 8] -> [1, 2, 3, 4, 6, 8]; 11 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

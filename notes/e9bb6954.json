@@ -1,0 +1,22 @@
+{
+  "title": "Extend a cross from the center of 3×3 and make the intersection black",
+  "summary": "Select a 3x3 square filled with the same color as the firing source.",
+  "steps": [
+    "Select a 3x3 square filled with the same color as the firing source.",
+    "Extend the center row and column to the edge of the board with the same color.",
+    "Squares that overlap with another firing source line are set to black 0.",
+    "Also check the holding conditions when a single point other than the firing source is on the line."
+  ],
+  "concepts": [
+    "cross projection",
+    "crossing",
+    "competition"
+  ],
+  "observations": [
+    "Training pair 1: 18x14 -> 18x14; colors [0, 1, 2, 3, 4, 5, 6, 7, 8] -> [0, 1, 2, 3, 4, 5, 6, 7, 8]; 47 cells changed.",
+    "Training pair 2: 14x13 -> 14x13; colors [0, 1, 2, 3, 4, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 6, 7, 8, 9]; 21 cells changed.",
+    "Training pair 3: 18x18 -> 18x18; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 78 cells changed.",
+    "Training pair 4: 17x18 -> 17x18; colors [0, 1, 2, 3, 4, 5, 7, 8, 9] -> [0, 1, 2, 4, 7, 8, 9]; 53 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

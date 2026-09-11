@@ -1,0 +1,21 @@
+{
+  "title": "Place an 8-mask in an open frame and recolor uniquely nearest cells",
+  "summary": "Place an 8-mask in an open frame and recolor uniquely nearest cells. This is the training-inferred `recolor_eights_by_nearest_open_frame_side` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `recolor_eights_by_nearest_open_frame_side`: place an 8-mask in an open frame and recolor uniquely nearest cells"
+  ],
+  "concepts": [
+    "recolor",
+    "eights",
+    "nearest",
+    "open",
+    "frame",
+    "side"
+  ],
+  "observations": [
+    "Training pair 1: 14x16 -> 5x5; colors [0, 2, 3, 4, 6, 8] -> [0, 2, 3, 4, 6, 8]; output dimensions changed.",
+    "Training pair 2: 15x16 -> 6x6; colors [0, 1, 2, 3, 4, 8] -> [0, 1, 2, 3, 4, 8]; output dimensions changed.",
+    "Training pair 3: 15x15 -> 6x6; colors [0, 1, 4, 6, 7, 8] -> [0, 1, 4, 6, 7, 8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

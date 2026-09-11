@@ -1,0 +1,22 @@
+{
+  "title": "Stretch a hollow colored rectangle to an aligned external marker",
+  "summary": "Stretch a hollow colored rectangle to an aligned external marker. The marker selects one side of an existing rectangular frame. The frame is extended in that direction until the marker's row or column, with its perimeter and interior colors repeated over the new rectangle. This is deliberately limited to a single, well-formed hollow frame so unrelated scene content is left untouched. This is the training-inferred `extend_hollow_frame_to_marker` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `extend_hollow_frame_to_marker`: stretch a hollow colored rectangle to an aligned external marker"
+  ],
+  "concepts": [
+    "extend",
+    "hollow",
+    "frame",
+    "marker"
+  ],
+  "observations": [
+    "Training pair 1: 11x11 -> 11x11; colors [0, 2, 3, 8] -> [0, 2, 3]; 22 cells changed.",
+    "Training pair 2: 11x11 -> 11x11; colors [0, 1, 2, 8] -> [0, 1, 2]; 18 cells changed.",
+    "Training pair 3: 13x12 -> 13x12; colors [0, 1, 6, 8] -> [0, 1, 6]; 33 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "marker color: 8"
+  ]
+}

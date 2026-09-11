@@ -1,0 +1,21 @@
+{
+  "title": "Align each connected object to the top row of a reference-colored object",
+  "summary": "Align each connected object to the top row of a reference-colored object. This is the training-inferred `align_components_to_reference` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `align_components_to_reference`: align each connected object to the top row of a reference-colored object"
+  ],
+  "concepts": [
+    "align",
+    "components",
+    "reference"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 1, 2, 4] -> [0, 1, 2, 4]; 24 cells changed.",
+    "Training pair 2: 5x10 -> 5x10; colors [0, 1, 2, 4] -> [0, 1, 2, 4]; 8 cells changed.",
+    "Training pair 3: 5x10 -> 5x10; colors [0, 1, 2, 4] -> [0, 1, 2, 4]; 4 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "reference color: 1"
+  ]
+}

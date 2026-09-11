@@ -1,0 +1,17 @@
+{
+  "title": "Arrange rotated copies of the input in four panels",
+  "summary": "Arrange rotated copies of the input in four panels. This is the training-inferred `rotation_quad` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `rotation_quad`: arrange rotated copies of the input in four panels"
+  ],
+  "concepts": [
+    "rotation",
+    "quad"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 6x6; colors [7, 8] -> [7, 8]; output dimensions changed.",
+    "Training pair 2: 2x2 -> 4x4; colors [6, 8] -> [6, 8]; output dimensions changed.",
+    "Training pair 3: 3x3 -> 6x6; colors [4, 6, 9] -> [4, 6, 9]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

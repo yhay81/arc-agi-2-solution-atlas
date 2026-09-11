@@ -1,0 +1,18 @@
+{
+  "title": "Label components by whether their area equals a distinguished size",
+  "summary": "Label components by whether their area equals a distinguished size. This is the training-inferred `label_components_by_size` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `label_components_by_size`: label components by whether their area equals a distinguished size"
+  ],
+  "concepts": [
+    "label",
+    "components",
+    "size"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 5] -> [0, 1, 2]; 27 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 5] -> [0, 1, 2]; 17 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 5] -> [0, 1, 2]; 35 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

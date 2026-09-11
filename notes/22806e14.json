@@ -1,0 +1,21 @@
+{
+  "title": "Use the five-square cross as a color marker",
+  "summary": "Use the five-square cross as a color marker. Among the squares painted in the same color, only those with an odd number of sides have one square in the center marked as a color. If the mark is blue or light blue, erase the original cross, and if it is green or yellow, leave it. Squares with even-numbered sides do not change.",
+  "steps": [
+    "Use the five-square cross as a color marker",
+    "Among squares painted in the same color, only those with odd numbers of sides have one square in the center marked as a color.",
+    "If the mark is blue/light blue, erase the original cross, if it is green/yellow, leave it.",
+    "Squares with even-numbered sides do not change."
+  ],
+  "concepts": [
+    "even-odd",
+    "center",
+    "color transfer"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [7, 8, 9] -> [7, 8, 9]; 7 cells changed.",
+    "Training pair 2: 16x16 -> 16x16; colors [1, 7, 8] -> [1, 7, 8]; 8 cells changed.",
+    "Training pair 3: 16x16 -> 16x16; colors [1, 3, 7] -> [1, 3, 7]; 5 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

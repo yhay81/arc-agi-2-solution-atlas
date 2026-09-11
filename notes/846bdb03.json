@@ -1,0 +1,21 @@
+{
+  "title": "Move a separate motif into a sparse rectangle identified by four corners",
+  "summary": "Move a separate motif into a sparse rectangle identified by four corners. This is the training-inferred `insert_pattern_inside_corner_frame` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `insert_pattern_inside_corner_frame`: move a separate motif into a sparse rectangle identified by four corners"
+  ],
+  "concepts": [
+    "insert",
+    "pattern",
+    "inside",
+    "corner",
+    "frame"
+  ],
+  "observations": [
+    "Training pair 1: 13x13 -> 4x6; colors [0, 1, 2, 4] -> [0, 1, 2, 4]; output dimensions changed.",
+    "Training pair 2: 13x13 -> 7x8; colors [0, 3, 4, 8] -> [0, 3, 4, 8]; output dimensions changed.",
+    "Training pair 3: 13x13 -> 5x6; colors [0, 3, 4, 7] -> [0, 3, 4, 7]; output dimensions changed.",
+    "Training pair 4: 13x13 -> 6x8; colors [0, 1, 2, 4] -> [0, 1, 2, 4]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Paint the four corners and center of the green divider with a fixed color",
+  "summary": "The four outermost corners separated by the green line are red, yellow, blue, and light blue, and all inner sections except the outside are orange.",
+  "steps": [
+    "The four outermost corners separated by the green line are red, yellow, blue, and light blue, and all inner sections except the outside are orange."
+  ],
+  "concepts": [
+    "The role of space",
+    "Fixed color scheme",
+    "compartment"
+  ],
+  "observations": [
+    "Training pair 1: 15x12 -> 15x12; colors [0, 3] -> [0, 1, 2, 3, 4, 7, 8]; 67 cells changed.",
+    "Training pair 2: 19x12 -> 19x12; colors [0, 3] -> [0, 1, 2, 3, 4, 7, 8]; 92 cells changed.",
+    "Training pair 3: 18x16 -> 18x16; colors [0, 3] -> [0, 1, 2, 3, 4, 7, 8]; 88 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

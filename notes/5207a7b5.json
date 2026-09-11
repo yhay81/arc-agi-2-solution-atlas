@@ -1,0 +1,19 @@
+{
+  "title": "Change the height of the stick by 2 squares to the left and right",
+  "summary": "Measure the top, height, and row of the gray vertical bars. From the same top edge, draw a light blue bar that increases in height by 2 squares each time you move one row to the left. Draw a pink stick whose height decreases by 2 squares each time you move one row to the right. Do not draw in columns whose height is less than 0.",
+  "steps": [
+    "Measure the top, height, and row of the gray vertical bars.",
+    "From the same top edge, draw a light blue bar that increases in height by 2 squares each time you move one row to the left.",
+    "Draw a pink stick whose height decreases by 2 squares each time you move one row to the right. Do not draw in columns whose height is less than 0."
+  ],
+  "concepts": [
+    "arithmetic progression",
+    "standard length"
+  ],
+  "observations": [
+    "Training pair 1: 11x8 -> 11x8; colors [0, 5] -> [0, 5, 6, 8]; 16 cells changed.",
+    "Training pair 2: 14x7 -> 14x7; colors [0, 5] -> [0, 5, 6, 8]; 31 cells changed.",
+    "Training pair 3: 14x8 -> 14x8; colors [0, 5] -> [0, 5, 6, 8]; 56 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Count the length of each horizontal bar and write the number as a color in the column of gray marks.",
+  "summary": "Count the length of each horizontal bar and write the number as a color in the column of gray marks. Usually the last digit of (length - 1)². If there is a reference bar that repeats the same length, use the last digit of (length - reference length)² for bars with different lengths.",
+  "steps": [
+    "Count the length of each horizontal bar and write the number as a color in the column of gray marks.",
+    "Usually the last digit of (length - 1)²",
+    "If there is a reference bar that repeats the same length, use the last digit of (length - reference length)² for bars with different lengths."
+  ],
+  "concepts": [
+    "length sign",
+    "output column",
+    "color"
+  ],
+  "observations": [
+    "Training pair 1: 4x3 -> 4x3; colors [0, 1, 5] -> [0, 1, 5]; 1 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 1, 2, 3, 5, 9] -> [0, 1, 2, 3, 4, 5, 6, 9]; 4 cells changed.",
+    "Training pair 3: 8x11 -> 8x11; colors [0, 2, 4, 5, 7, 8] -> [0, 1, 2, 4, 5, 7, 8, 9]; 4 cells changed.",
+    "Training pair 4: 6x6 -> 6x6; colors [0, 2, 5] -> [0, 1, 2, 4, 5, 9]; 3 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

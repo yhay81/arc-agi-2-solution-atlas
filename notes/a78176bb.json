@@ -1,0 +1,18 @@
+{
+  "title": "Turn triangular ``5`` markers beside a diagonal into parallel lines",
+  "summary": "Turn triangular ``5`` markers beside a diagonal into parallel lines. The input contains one sparse, positive-slope diagonal in a foreground color and one or more triangular clusters of color ``5``. Each triangle is a directional key: its side (and the side of the reference diagonal on which it lies) determines a parallel diagonal to draw. The markers themselves are erased in the output. All quantities are recovered from the shape, so no task coordinates are memorised. This is the training-inferred `complete_diagonal_triangles` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `complete_diagonal_triangles`: turn triangular ``5`` markers beside a diagonal into parallel lines"
+  ],
+  "concepts": [
+    "complete",
+    "diagonal",
+    "triangles"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 5, 9] -> [0, 9]; 19 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 5, 7] -> [0, 7]; 9 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 2, 5] -> [0, 2]; 20 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

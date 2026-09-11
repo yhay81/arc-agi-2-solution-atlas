@@ -1,0 +1,18 @@
+{
+  "title": "Extend a cross from the point and decorate around the center",
+  "summary": "Extend the cross of the entire matrix from point 1, and draw the center 2 and diagonally adjacent 3.",
+  "steps": [
+    "Extend the cross of the entire matrix from point 1, and draw the center 2 and diagonally adjacent 3."
+  ],
+  "concepts": [
+    "crosshair",
+    "neighborhood",
+    "Drawing priority"
+  ],
+  "observations": [
+    "Training pair 1: 9x9 -> 9x9; colors [1, 9] -> [1, 2, 3, 9]; 40 cells changed.",
+    "Training pair 2: 13x13 -> 13x13; colors [1, 8] -> [1, 2, 3, 8]; 104 cells changed.",
+    "Training pair 3: 11x11 -> 11x11; colors [1, 7] -> [1, 2, 3, 7]; 69 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

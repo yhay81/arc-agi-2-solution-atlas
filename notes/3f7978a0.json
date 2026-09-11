@@ -1,0 +1,22 @@
+{
+  "title": "Crop a vertical frame, retaining one contextual row above and below",
+  "summary": "Crop a vertical frame, retaining one contextual row above and below. The selected color determines the exact horizontal extent. Its vertical extent is expanded by one row at each available edge so nearby boundary marks remain visible, while unrelated marks to either side are discarded. This is the training-inferred `crop_vertical_frame_with_margin` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `crop_vertical_frame_with_margin`: crop a vertical frame, retaining one contextual row above and below"
+  ],
+  "concepts": [
+    "crop",
+    "vertical",
+    "frame",
+    "margin"
+  ],
+  "observations": [
+    "Training pair 1: 9x11 -> 5x7; colors [0, 5, 8] -> [0, 5, 8]; output dimensions changed.",
+    "Training pair 2: 9x9 -> 5x5; colors [0, 5, 8] -> [0, 5, 8]; output dimensions changed.",
+    "Training pair 3: 11x13 -> 6x5; colors [0, 5, 8] -> [0, 5, 8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "frame color: 5"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Separate the sections with black partitions",
+  "summary": "Separate the sections with black partitions. Look for pairs of small marks of the same color arranged in the same row or column. In each section in between, only the same internal position is marked with the same color.",
+  "steps": [
+    "Separate the sections with black partitions",
+    "Look for pairs of small marks of the same color in the same compartment row or column.",
+    "In each section in between, only mark the same internal position with the same color."
+  ],
+  "concepts": [
+    "Same color correspondence",
+    "section",
+    "selective replacement"
+  ],
+  "observations": [
+    "Training pair 1: 26x21 -> 26x21; colors [0, 1, 2, 3, 6, 8] -> [0, 1, 2, 3, 6, 8]; 6 cells changed.",
+    "Training pair 2: 21x21 -> 21x21; colors [0, 1, 2, 4, 8] -> [0, 1, 2, 4, 8]; 4 cells changed.",
+    "Training pair 3: 16x16 -> 16x16; colors [0, 3, 4, 7, 8] -> [0, 3, 4, 7, 8]; 2 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

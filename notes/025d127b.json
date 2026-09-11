@@ -1,0 +1,18 @@
+{
+  "title": "Right-shear objects while preserving their bottom/right corner cells",
+  "summary": "Right-shear objects while preserving their bottom/right corner cells. This is the training-inferred `shear_components_right_boundary` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `shear_components_right_boundary`: right-shear objects while preserving their bottom/right corner cells"
+  ],
+  "concepts": [
+    "shear",
+    "components",
+    "right",
+    "boundary"
+  ],
+  "observations": [
+    "Training pair 1: 8x9 -> 8x9; colors [0, 8] -> [0, 8]; 12 cells changed.",
+    "Training pair 2: 14x9 -> 14x9; colors [0, 2, 6] -> [0, 2, 6]; 16 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Answer the color pointed to by the incomplete enclosure",
+  "summary": "Cut out a small figure included in the circumscribed rectangle of the interrupted large frame.",
+  "steps": [
+    "Cut out a small figure included in the circumscribed rectangle of the interrupted large frame."
+  ],
+  "concepts": [
+    "selection by enclosure",
+    "Extracting attributes"
+  ],
+  "observations": [
+    "Training pair 1: 17x18 -> 3x3; colors [1, 2, 3, 4, 5, 7, 8] -> [4, 5]; output dimensions changed.",
+    "Training pair 2: 17x16 -> 3x3; colors [1, 2, 3, 5, 6, 7, 8] -> [1, 5]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

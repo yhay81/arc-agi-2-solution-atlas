@@ -1,0 +1,21 @@
+{
+  "title": "Encode red area as a blue five-dot pattern",
+  "summary": "Divide the number of red cells by four and render that many blue marks along the standard five-dot positions of a 3x3 grid.",
+  "steps": [
+    "Count the red cells and divide the count by four.",
+    "Fill the two upper corners, center, and two lower corners in that order."
+  ],
+  "concepts": ["counting", "five-dot pattern"],
+  "observations": [
+    "Training pair 1: 6x6 -> 3x3; colors [0, 2] -> [0, 1]; output dimensions changed.",
+    "Training pair 2: 7x7 -> 3x3; colors [0, 2] -> [0, 1]; output dimensions changed.",
+    "Training pair 3: 7x7 -> 3x3; colors [0, 2] -> [0, 1]; output dimensions changed.",
+    "Training pair 4: 3x3 -> 3x3; colors [0, 2] -> [0, 1]; 5 cells changed.",
+    "Training pair 5: 5x5 -> 3x3; colors [0, 2] -> [0, 1]; output dimensions changed.",
+    "Training pair 6: 7x7 -> 3x3; colors [0, 2] -> [0, 1]; output dimensions changed.",
+    "Training pair 7: 7x7 -> 3x3; colors [0, 2] -> [0, 1]; output dimensions changed.",
+    "Training pair 8: 5x5 -> 3x3; colors [0, 2] -> [0, 1]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": ["one blue output mark per four red input cells"]
+}

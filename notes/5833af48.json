@@ -1,0 +1,17 @@
+{
+  "title": "Combine three instructions: prototype, position, and output area",
+  "summary": "Read the largest output frame, left prototype, and right layout plan from the three blocks, reduce the layout plan to the necessary magnification, and lay out the prototype.",
+  "steps": [
+    "Read the largest output frame, left prototype, and right layout plan from the three blocks, reduce the layout plan to the necessary magnification, and lay out the prototype."
+  ],
+  "concepts": [
+    "multiple instructions",
+    "Separation of shape and position"
+  ],
+  "observations": [
+    "Training pair 1: 16x18 -> 9x15; colors [0, 2, 3, 8] -> [3, 8]; output dimensions changed.",
+    "Training pair 2: 17x18 -> 8x16; colors [0, 1, 2, 8] -> [1, 8]; output dimensions changed.",
+    "Training pair 3: 15x15 -> 6x9; colors [0, 2, 4, 8] -> [4, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

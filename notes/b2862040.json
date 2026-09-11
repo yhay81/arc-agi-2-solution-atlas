@@ -1,0 +1,23 @@
+{
+  "title": "Recolor source components that enclose a background region",
+  "summary": "Recolor source components that enclose a background region. Unlike :func:`_recolor_hollow_rectangles`, this recognizes arbitrary closed polyomino outlines (including tails and stepped sides), while leaving open components untouched. The enclosed region is tested inside each component's bounding box, so unrelated objects outside that box do not affect the decision. This is the training-inferred `recolor_hollow_components` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `recolor_hollow_components`: recolor source components that enclose a background region"
+  ],
+  "concepts": [
+    "recolor",
+    "hollow",
+    "components"
+  ],
+  "observations": [
+    "Training pair 1: 12x13 -> 12x13; colors [1, 9] -> [1, 8, 9]; 13 cells changed.",
+    "Training pair 2: 12x11 -> 12x11; colors [1, 9] -> [1, 8, 9]; 31 cells changed.",
+    "Training pair 3: 14x15 -> 14x15; colors [1, 9] -> [1, 8, 9]; 36 cells changed.",
+    "Training pair 4: 9x11 -> 9x11; colors [1, 9] -> [1, 8, 9]; 10 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "source color: 1",
+    "target color: 8"
+  ]
+}

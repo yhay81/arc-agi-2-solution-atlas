@@ -1,0 +1,20 @@
+{
+  "title": "Move the colored points from the top to the nearest empty gray square.",
+  "summary": "Move the colored points from the top to the nearest empty gray square. Usually placed in the shortest outer cell. Approach diagonally from the bottom left, and place the point where the vertical distance is greater than the horizontal distance to the point where it crosses the corner and reaches the bottom edge first.",
+  "steps": [
+    "Move the colored points from the top to the nearest empty gray square.",
+    "Usually placed in the shortest outer cell",
+    "Approach diagonally from the bottom left, and place the point where the vertical gap is larger than the horizontal distance to the point where it crosses the corner and reaches the bottom edge first."
+  ],
+  "concepts": [
+    "landmark",
+    "moving points",
+    "quota"
+  ],
+  "observations": [
+    "Training pair 1: 15x15 -> 15x15; colors [0, 1, 2, 3, 4, 5, 6, 7, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 9]; 24 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 2, 3, 4, 5, 6, 7, 8] -> [0, 2, 3, 4, 5, 6, 7, 8]; 14 cells changed.",
+    "Training pair 3: 15x15 -> 15x15; colors [0, 1, 5, 6, 8, 9] -> [0, 1, 5, 6, 8, 9]; 10 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

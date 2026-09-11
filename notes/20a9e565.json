@@ -1,0 +1,19 @@
+{
+  "title": "Read the direction in which shapes are lined up and the changes in length, color, and pattern for each step.",
+  "summary": "Read the direction in which the shapes are lined up and the changes in length, color, and pattern as you move forward. Extend the sequence to the position of the gray frame. Extracts only the part that fits within the rectangle specified by the two gray corners, rather than the entire shape.",
+  "steps": [
+    "Read the direction in which shapes are lined up and the changes in length, color, and pattern for each step.",
+    "Extend the sequence to the position of the gray frame",
+    "Extract only the part that fits into the rectangle specified by the two gray corners, not the entire shape you created."
+  ],
+  "concepts": [
+    "shape classification",
+    "template"
+  ],
+  "observations": [
+    "Training pair 1: 30x30 -> 3x6; colors [0, 1, 2, 4, 5] -> [0, 2]; output dimensions changed.",
+    "Training pair 2: 29x29 -> 14x2; colors [0, 4, 5, 8, 9] -> [0, 4, 8, 9]; output dimensions changed.",
+    "Training pair 3: 30x30 -> 17x3; colors [0, 2, 3, 5, 7] -> [0, 7]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

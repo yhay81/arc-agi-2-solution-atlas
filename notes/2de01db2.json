@@ -1,0 +1,19 @@
+{
+  "title": "The criteria for organizing the three rows of color patterns has not been determined.",
+  "summary": "Convert the primary color of each row to 0, and convert the other colors to primary colors. 7 is excluded from the main color selection as noise.",
+  "steps": [
+    "Convert the primary color of each row to 0, and convert the other colors to primary colors.",
+    "7 is excluded from the main color selection as noise."
+  ],
+  "concepts": [
+    "period",
+    "rearrangement",
+    "Background judgment"
+  ],
+  "observations": [
+    "Training pair 1: 3x10 -> 3x10; colors [0, 2, 4, 6, 7, 8] -> [0, 4, 6, 8]; 30 cells changed.",
+    "Training pair 2: 3x10 -> 3x10; colors [0, 4, 6, 7, 8] -> [0, 4, 6, 8]; 30 cells changed.",
+    "Training pair 3: 3x10 -> 3x10; colors [0, 4, 6, 8] -> [0, 4, 6, 8]; 30 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

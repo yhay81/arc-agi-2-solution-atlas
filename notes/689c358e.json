@@ -1,0 +1,19 @@
+{
+  "title": "Find the center of each colored cross and the long arm in one direction",
+  "summary": "Find the center of each colored cross and the long arm in one direction. Make the squares of the frame extending in the direction of the long arm black. Make the cells in the opposite frame the same color as the cross.",
+  "steps": [
+    "Find the center of each colored cross and the long arm in one direction",
+    "Make the squares of the frame extending in the direction of the long arm black.",
+    "Make the cells in the opposite frame the same color as the cross"
+  ],
+  "concepts": [
+    "projection",
+    "frame",
+    "color conflict"
+  ],
+  "observations": [
+    "Training pair 1: 11x11 -> 11x11; colors [2, 5, 6, 7, 8, 9] -> [0, 2, 5, 6, 7, 8, 9]; 8 cells changed.",
+    "Training pair 2: 11x11 -> 11x11; colors [2, 5, 6, 7, 8, 9] -> [0, 2, 5, 6, 7, 8, 9]; 8 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

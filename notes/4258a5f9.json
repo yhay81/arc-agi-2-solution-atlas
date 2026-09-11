@@ -1,0 +1,15 @@
+{
+  "title": "Draw blue halos around gray cells",
+  "summary": "Color every black cell in the 3x3 neighborhood of a gray seed blue while preserving the seed.",
+  "steps": [
+    "Locate every gray cell.",
+    "Color the surrounding black cells, including diagonals, blue."
+  ],
+  "concepts": ["neighborhood expansion", "halo"],
+  "observations": [
+    "Training pair 1: 9x9 -> 9x9; colors [0, 5] -> [0, 1, 5]; 32 cells changed.",
+    "Training pair 2: 9x9 -> 9x9; colors [0, 5] -> [0, 1, 5]; 24 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": ["gray 5 remains gray; surrounding black 0 becomes blue 1"]
+}

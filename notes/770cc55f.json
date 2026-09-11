@@ -1,0 +1,19 @@
+{
+  "title": "Shows the overlapping width of two opposing shapes",
+  "summary": "Find the row where the top and bottom bars overlap, and fill in yellow only between the side with the long bar and the red separator.",
+  "steps": [
+    "Find the row where the top and bottom bars overlap, and fill in yellow only between the side with the long bar and the red separator."
+  ],
+  "concepts": [
+    "projection",
+    "Overlapping ranges",
+    "Size comparison"
+  ],
+  "observations": [
+    "Training pair 1: 13x5 -> 13x5; colors [0, 1, 2] -> [0, 1, 2, 4]; 10 cells changed.",
+    "Training pair 2: 13x5 -> 13x5; colors [0, 2, 6] -> [0, 2, 4, 6]; 15 cells changed.",
+    "Training pair 3: 13x6 -> 13x6; colors [0, 2, 3] -> [0, 2, 3, 4]; 10 cells changed.",
+    "Training pair 4: 9x4 -> 9x4; colors [0, 2, 3] -> [0, 2, 3, 4]; 3 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

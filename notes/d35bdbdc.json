@@ -1,0 +1,20 @@
+{
+  "title": "Find both ends of the gray road and leave only the two small figures that touch both ends.",
+  "summary": "Find both ends of the gray road and leave only the two small drawings that touch both ends. Find another subfigure with the same outer color as the center color of each subfigure and receive that center color. Erase the remaining small drawings and leave the gray road as it is.",
+  "steps": [
+    "Find both ends of the gray road and leave only the two small figures that touch both ends.",
+    "Find another subfigure with the same outer color as the center color of each subfigure and receive its center color",
+    "Erase the remaining subfigures and leave the gray road as is."
+  ],
+  "concepts": [
+    "color relationship",
+    "end point",
+    "graph"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 1, 2, 3, 4, 5, 6] -> [0, 2, 3, 5, 6]; 20 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 1, 2, 3, 4, 5, 6, 8] -> [0, 1, 2, 5, 8]; 29 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 1, 2, 3, 4, 5, 6, 7, 9] -> [0, 1, 3, 5, 7, 9]; 29 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

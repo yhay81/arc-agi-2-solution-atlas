@@ -1,0 +1,23 @@
+{
+  "title": "Use the most common color as the background and the next most common color as the divider.",
+  "summary": "Use the most common color as the background, and use the second most common color as the divider. In each room separated by a partition, count the distance from the outside. Moving one square diagonally also counts as one step. The color samples left in the room indicate which ring from the outside and what color to paint. Repeat the color order inward to the innermost swatch. Use the background color for distances where there is no sample.",
+  "steps": [
+    "Use the most common color as the background and the next most common color as the divider.",
+    "Count the distance from the outside in each room divided by partitions",
+    "Going one square diagonally also counts as one step.",
+    "The color swatches left in the room indicate what color the ring should be from the outside.",
+    "Repeat the color order inward to the innermost sample",
+    "Use background color for distances without samples"
+  ],
+  "concepts": [
+    "Partial shape matching",
+    "Completed form",
+    "alignment"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 20x20; colors [1, 2, 3, 4, 7, 8] -> [2, 3, 4, 7, 8]; 354 cells changed.",
+    "Training pair 2: 20x20 -> 20x20; colors [0, 1, 2, 3, 4, 5, 8] -> [0, 1, 2, 3, 4, 5, 8]; 245 cells changed.",
+    "Training pair 3: 10x13 -> 10x13; colors [1, 6, 7, 8, 9] -> [1, 6, 7, 8, 9]; 93 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Purple 6 moves up, yellow 4 moves down, light blue 8 moves to the right, green 3 moves to the left, and moves the figure to the corresponding edge of the board.",
+  "summary": "Purple 6 moves up, yellow 4 moves down, light blue 8 moves to the right, green 3 moves to the left, and the figure is moved to the corresponding edge of the board.",
+  "steps": [
+    "Purple 6 moves up, yellow 4 moves down, light blue 8 moves to the right, green 3 moves to the left, and moves the figure to the corresponding edge of the board."
+  ],
+  "concepts": [
+    "color instruction",
+    "move to edge"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 6] -> [0, 6]; 16 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 6] -> [0, 6]; 16 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 8] -> [0, 8]; 16 cells changed.",
+    "Training pair 4: 10x10 -> 10x10; colors [0, 4] -> [0, 4]; 16 cells changed.",
+    "Training pair 5: 10x10 -> 10x10; colors [0, 8] -> [0, 8]; 16 cells changed.",
+    "Training pair 6: 10x10 -> 10x10; colors [0, 8] -> [0, 8]; 16 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

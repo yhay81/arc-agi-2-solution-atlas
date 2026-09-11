@@ -1,0 +1,20 @@
+{
+  "title": "Move the part to the opposite side of the contact point with brown",
+  "summary": "Separate the blocks of each color other than background 7, including those that touch diagonally. Includes black 0 parts. Fix the mass of tea 9. Check the direction of the contact point for the parts that touch it. Move the part straight in the opposite direction of the contact and stop at the edge of the board.",
+  "steps": [
+    "Separate the blocks of each color other than background 7, including those that touch diagonally. Includes black 0 parts.",
+    "Fix the mass of tea 9. Check the direction of the contact point for the parts that touch it.",
+    "Move the part straight in the opposite direction of the contact and stop at the edge of the board."
+  ],
+  "concepts": [
+    "separation",
+    "move",
+    "direction instructions"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 1, 2, 6, 7, 8, 9] -> [0, 1, 2, 6, 7, 8, 9]; 18 cells changed.",
+    "Training pair 2: 9x9 -> 9x9; colors [2, 5, 7, 8, 9] -> [2, 5, 7, 8, 9]; 12 cells changed.",
+    "Training pair 3: 12x12 -> 12x12; colors [3, 4, 6, 7, 8, 9] -> [3, 4, 6, 7, 8, 9]; 22 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

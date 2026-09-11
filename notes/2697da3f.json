@@ -1,0 +1,20 @@
+{
+  "title": "Reverse the same shape in 4 directions",
+  "summary": "Cut out the original pattern, excluding the black margin, and measure its height H and width W. Create a black board with one side of 2W+H. Place the original pattern to the left of the center and its horizontal inversion to the right of the center. Place the original pattern rotated 90 degrees clockwise on top, and place the top pattern upside down on the bottom. Leave the center H×H as black.",
+  "steps": [
+    "Cut out the original pattern, excluding the black margin, and measure its height H and width W.",
+    "Create a black board with one side of 2W+H. Place the original pattern to the left of the center and its horizontal inversion to the right of the center.",
+    "Place the original pattern rotated 90 degrees clockwise on top, and place the top pattern upside down on the bottom. Leave the center H×H as black."
+  ],
+  "concepts": [
+    "inversion",
+    "4-way symmetry"
+  ],
+  "observations": [
+    "Training pair 1: 7x8 -> 11x11; colors [0, 4] -> [0, 4]; output dimensions changed.",
+    "Training pair 2: 7x7 -> 11x11; colors [0, 4] -> [0, 4]; output dimensions changed.",
+    "Training pair 3: 8x8 -> 15x15; colors [0, 4] -> [0, 4]; output dimensions changed.",
+    "Training pair 4: 9x7 -> 15x15; colors [0, 4] -> [0, 4]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

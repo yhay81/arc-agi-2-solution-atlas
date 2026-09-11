@@ -1,0 +1,20 @@
+{
+  "title": "Rotate the gray part and insert it into the recess under the blue line.",
+  "summary": "Rotate the gray part and insert it into the recess under the blue line. Fill in all the dents and color red the parts that do not overlap the blue line and the excess parts go down.",
+  "steps": [
+    "Rotate the gray part and insert it into the recess under the blue line.",
+    "Fill in all the depressions and make red the parts that do not overlap the blue line and the excess parts go down."
+  ],
+  "concepts": [
+    "form fit",
+    "rotation",
+    "Selection based on conditions"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 12x12; colors [0, 1, 5] -> [0, 1, 2, 5]; 15 cells changed.",
+    "Training pair 2: 12x12 -> 12x12; colors [0, 1, 5] -> [0, 1, 2, 5]; 9 cells changed.",
+    "Training pair 3: 12x12 -> 12x12; colors [0, 1, 5] -> [0, 1, 2, 5]; 9 cells changed.",
+    "Training pair 4: 12x12 -> 12x12; colors [0, 1, 5] -> [0, 1, 2, 5]; 4 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

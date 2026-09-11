@@ -1,0 +1,20 @@
+{
+  "title": "Follow the red stream at the end straight to the light blue wall, and branch up and down before the wall.",
+  "summary": "Follow the red stream at the end straight to the light blue wall, and before the wall it branches up and down. Once you find the first hole in each branch, switch to forward movement.",
+  "steps": [
+    "Follow the red stream at the end straight to the light blue wall, and branch up and down before the wall.",
+    "For each branch, when you find the first hole, switch to forward movement from there."
+  ],
+  "concepts": [
+    "flow",
+    "wall",
+    "branch",
+    "hole"
+  ],
+  "observations": [
+    "Training pair 1: 11x12 -> 11x12; colors [0, 2, 8] -> [0, 2, 8]; 29 cells changed.",
+    "Training pair 2: 11x17 -> 11x17; colors [0, 2, 8] -> [0, 2, 8]; 43 cells changed.",
+    "Training pair 3: 10x13 -> 10x13; colors [0, 2, 8] -> [0, 2, 8]; 26 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

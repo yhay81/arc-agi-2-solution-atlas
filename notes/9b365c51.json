@@ -1,0 +1,19 @@
+{
+  "title": "Read the left vertical bar as color order",
+  "summary": "Read the vertical bar on the left as the order of colors. Divide the light blue shape on the right into rectangles whose top and bottom edges are in the same column, and paint them in the color of the vertical bars starting from the left. Delete the vertical bars.",
+  "steps": [
+    "Read the left vertical bar as color order",
+    "Divide the light blue shape on the right into rectangles whose top and bottom edges are in the same column, and paint them in the color of the vertical bars starting from the left.",
+    "Delete the vertical bar"
+  ],
+  "concepts": [
+    "Corresponding order",
+    "color instructions"
+  ],
+  "observations": [
+    "Training pair 1: 6x15 -> 6x15; colors [0, 1, 6, 7, 8] -> [0, 1, 6, 7]; 41 cells changed.",
+    "Training pair 2: 8x20 -> 8x20; colors [0, 2, 3, 4, 8] -> [0, 2, 3, 4]; 64 cells changed.",
+    "Training pair 3: 7x18 -> 7x18; colors [0, 2, 3, 4, 7, 8] -> [0, 2, 3, 4, 7]; 54 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

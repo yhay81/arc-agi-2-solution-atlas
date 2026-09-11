@@ -1,0 +1,18 @@
+{
+  "title": "Arrange the left and right mirror images alternately 5 times.",
+  "summary": "Connect horizontally in the order of input, horizontally flipped input, input, horizontally flipped input, and input.",
+  "steps": [
+    "Connect horizontally in the order of input, horizontally flipped input, input, horizontally flipped input, and input."
+  ],
+  "concepts": [
+    "repeat",
+    "alternating reflections"
+  ],
+  "observations": [
+    "Training pair 1: 4x4 -> 4x20; colors [2, 3, 5] -> [2, 3, 5]; output dimensions changed.",
+    "Training pair 2: 4x4 -> 4x20; colors [1, 5, 9] -> [1, 5, 9]; output dimensions changed.",
+    "Training pair 3: 4x4 -> 4x20; colors [1, 4, 7] -> [1, 4, 7]; output dimensions changed.",
+    "Training pair 4: 4x4 -> 4x20; colors [2, 8] -> [2, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

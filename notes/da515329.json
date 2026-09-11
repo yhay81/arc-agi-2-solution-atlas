@@ -1,0 +1,24 @@
+{
+  "title": "Stretch the four crosses clockwise without touching them.",
+  "summary": "Stretch out the four crosses with an open center at the same time. Choose your next step in the order of right turn, straight ahead, and left turn without touching any other line diagonally, creating a clockwise winding pattern. The same process continues outside the board, and only the original board is displayed.",
+  "steps": [
+    "Find the color of the lines, the black center, and the four arms of the same length. Each arm has its own tip and direction of movement.",
+    "At each tip, prioritize a step that turns to the right from the current direction of travel. If you can't move forward, go straight, and if that doesn't work, try turning left.",
+    "The next square should not touch the existing line vertically, horizontally, or diagonally. However, the two squares closest to you allow contact in order to create a normal turning angle.",
+    "All four of them look at the board at the same point in time to determine the next position, and then draw one square at a time.",
+    "Continue to extend the line even outside the original frame. Paint the part that curves outside the frame and returns inside the board, and finally cut out only the original area."
+  ],
+  "concepts": [
+    "clockwise",
+    "contact avoidance",
+    "Simultaneous update",
+    "Cutting an infinite lattice",
+    "spiral"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 12x12; colors [0, 8] -> [0, 8]; 69 cells changed.",
+    "Training pair 2: 22x22 -> 22x22; colors [0, 8] -> [0, 8]; 227 cells changed.",
+    "Training pair 3: 16x16 -> 16x16; colors [0, 8] -> [0, 8]; 119 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

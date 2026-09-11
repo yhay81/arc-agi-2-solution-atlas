@@ -1,0 +1,19 @@
+{
+  "title": "Make the black positions gray on both the left and right sides",
+  "summary": "Splits the input into left and right halves of equal width. If both corresponding squares are black 0, gray 5 is output, otherwise black 0 is output.",
+  "steps": [
+    "Splits the input into left and right halves of equal width.",
+    "If both corresponding squares are black 0, gray 5 is output, otherwise black 0 is output."
+  ],
+  "concepts": [
+    "common part",
+    "blank logical condition"
+  ],
+  "observations": [
+    "Training pair 1: 4x14 -> 4x7; colors [0, 2, 3] -> [0, 5]; output dimensions changed.",
+    "Training pair 2: 4x14 -> 4x7; colors [0, 2, 3] -> [0, 5]; output dimensions changed.",
+    "Training pair 3: 4x14 -> 4x7; colors [0, 2, 3] -> [0, 5]; output dimensions changed.",
+    "Training pair 4: 4x14 -> 4x7; colors [0, 2, 3] -> [0, 5]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

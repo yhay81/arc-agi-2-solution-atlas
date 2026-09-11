@@ -1,0 +1,23 @@
+{
+  "title": "Only red blocks that connect 4 squares or more become purple.",
+  "summary": "Count the number of squares for each red mass, and only change the mass of 4 squares or more to purple. Leave chunks of 3 squares or less and the black background as is. The rule of dividing by the number of squares 4, not the ranking, matches all the provided examples.",
+  "steps": [
+    "Divide the red square into blocks that are connected vertically, horizontally, and horizontally.",
+    "Count the number of squares in each block.",
+    "If the block is 4 squares or more, the entire block turns purple (6). Leave clusters smaller than 3 squares as red (2).",
+    "The black background, shape, size, and position of the blocks remain unchanged."
+  ],
+  "concepts": [
+    "connected mass",
+    "count area",
+    "absolute threshold",
+    "conditional color change"
+  ],
+  "observations": [
+    "Training pair 1: 6x6 -> 6x6; colors [0, 2] -> [0, 2, 6]; 8 cells changed.",
+    "Training pair 2: 10x12 -> 10x12; colors [0, 2] -> [0, 2, 6]; 20 cells changed.",
+    "Training pair 3: 10x9 -> 10x9; colors [0, 2] -> [0, 2, 6]; 4 cells changed.",
+    "Training pair 4: 10x8 -> 10x8; colors [0, 2] -> [0, 2, 6]; 14 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Swap color pairs on rows and columns selected by purple endpoints",
+  "summary": "Select a row with purple edges on the left and right, and a column with purple edges on the top and bottom, and exchange black and light blue, magenta and orange in both directions on the intersection band.",
+  "steps": [
+    "Find rows and columns with purple ends",
+    "See only cells belonging to the target row or column",
+    "Swap 0↔8 and 6↔7"
+  ],
+  "concepts": [
+    "selection band",
+    "color exchange"
+  ],
+  "observations": [
+    "Training pair 1: 9x9 -> 9x9; colors [0, 4, 6, 7, 8] -> [0, 4, 6]; 21 cells changed.",
+    "Training pair 2: 7x9 -> 7x9; colors [0, 4, 6] -> [0, 4, 6, 7, 8]; 7 cells changed.",
+    "Training pair 3: 6x9 -> 6x9; colors [0, 4, 6] -> [0, 4, 6, 7, 8]; 8 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

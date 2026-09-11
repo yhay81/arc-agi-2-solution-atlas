@@ -1,0 +1,19 @@
+{
+  "title": "Encode the count of complete 2-by-2 blocks in one row",
+  "summary": "Encode the number of isolated 2x2 color-1 blocks as five flags. This is the training-inferred `count_complete_2x2_row` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `count_complete_2x2_row`: encode the count of complete 2-by-2 blocks in one row"
+  ],
+  "concepts": [
+    "count",
+    "complete",
+    "2x2",
+    "row"
+  ],
+  "observations": [
+    "Training pair 1: 9x9 -> 1x5; colors [0, 1, 2] -> [0, 1]; output dimensions changed.",
+    "Training pair 2: 9x9 -> 1x5; colors [0, 1, 2] -> [0, 1]; output dimensions changed.",
+    "Training pair 3: 9x9 -> 1x5; colors [0, 1, 2] -> [0, 1]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

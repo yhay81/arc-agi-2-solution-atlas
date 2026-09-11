@@ -1,0 +1,20 @@
+{
+  "title": "Restore the line color hidden at crossings of two colored segments",
+  "summary": "Restore the line color hidden at crossings of two colored segments. This is the training-inferred `repair_overwritten_line_crossings` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `repair_overwritten_line_crossings`: restore the line color hidden at crossings of two colored segments"
+  ],
+  "concepts": [
+    "repair",
+    "overwritten",
+    "line",
+    "crossings"
+  ],
+  "observations": [
+    "Training pair 1: 8x7 -> 8x7; colors [0, 1, 7] -> [0, 1, 7]; 1 cells changed.",
+    "Training pair 2: 7x9 -> 7x9; colors [0, 1, 6] -> [0, 1, 6]; 2 cells changed.",
+    "Training pair 3: 8x6 -> 8x6; colors [0, 2, 3] -> [0, 2, 3]; 1 cells changed.",
+    "Training pair 4: 13x13 -> 13x13; colors [0, 3, 8] -> [0, 3, 8]; 6 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

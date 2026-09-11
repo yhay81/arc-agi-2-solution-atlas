@@ -1,0 +1,20 @@
+{
+  "title": "Frame color-one components and mark enclosed background pockets",
+  "summary": "Frame color-one components and mark enclosed background pockets. This is the training-inferred `frame_one_components_and_mark_holes` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `frame_one_components_and_mark_holes`: frame color-one components and mark enclosed background pockets"
+  ],
+  "concepts": [
+    "frame",
+    "one",
+    "components",
+    "mark",
+    "holes"
+  ],
+  "observations": [
+    "Training pair 1: 23x25 -> 23x25; colors [1, 4] -> [1, 2, 4, 6, 8]; 171 cells changed.",
+    "Training pair 2: 28x23 -> 28x23; colors [1, 4] -> [1, 2, 4, 6, 8]; 202 cells changed.",
+    "Training pair 3: 20x15 -> 20x15; colors [1, 4] -> [1, 2, 4, 6, 8]; 76 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

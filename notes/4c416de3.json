@@ -1,0 +1,20 @@
+{
+  "title": "Find the corners of the input completed color shape and black frame",
+  "summary": "Find the input completed color shape and the corner of the black frame. Read the relative positions of all squares of the shape with that corner as the origin. Copy the entire shape, reversing the direction of the corners to match the other isolated colored markings.",
+  "steps": [
+    "Find the corners of the input completed color shape and black frame",
+    "Read the relative positions of all squares of the shape with that corner as the origin",
+    "Copy the entire shape with the corners reversed to match the other isolated colored markings"
+  ],
+  "concepts": [
+    "deciphering the seal",
+    "shape selection",
+    "Expand"
+  ],
+  "observations": [
+    "Training pair 1: 21x21 -> 21x21; colors [0, 1, 2, 3, 4, 8] -> [0, 1, 2, 3, 4, 8]; 20 cells changed.",
+    "Training pair 2: 23x23 -> 23x23; colors [0, 1, 2, 3, 4, 6, 7, 8] -> [0, 1, 2, 3, 4, 6, 7, 8]; 30 cells changed.",
+    "Training pair 3: 21x21 -> 21x21; colors [0, 1, 2, 3, 4, 8, 9] -> [0, 1, 2, 3, 4, 8, 9]; 21 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

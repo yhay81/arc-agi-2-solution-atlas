@@ -1,0 +1,18 @@
+{
+  "title": "Propagate one colored seed over an even-spaced lattice",
+  "summary": "Using the only color point other than gray as a phase reference, the same color is periodically arranged in black cells where the row and column differences are both even numbers. Keep the gray color.",
+  "steps": [
+    "Find the unique colored seed point",
+    "Check whether the row and column differences from the seed point are even or odd",
+    "Fill black cells with even numbers with the seed point color"
+  ],
+  "concepts": [
+    "lattice repetition",
+    "even-odd"
+  ],
+  "observations": [
+    "Training pair 1: 13x13 -> 13x13; colors [0, 1, 5] -> [0, 1, 5]; 26 cells changed.",
+    "Training pair 2: 13x16 -> 13x16; colors [0, 3, 5] -> [0, 3, 5]; 23 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

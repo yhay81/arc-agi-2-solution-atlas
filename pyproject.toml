@@ -1,0 +1,45 @@
+[project]
+name = "arc-agi-2-solution-atlas"
+version = "1.0.0"
+requires-python = ">=3.12,<3.13"
+dependencies = []
+
+[tool.uv]
+package = false
+required-version = "==0.12.12"
+
+[dependency-groups]
+dev = [
+  "pytest>=9.1.1",
+  "pytest-cov>=7.1.0",
+  "ruff>=0.16.7",
+  "ty>=0.0.80",
+]
+
+[tool.pytest]
+minversion = "9.1"
+addopts = ["--strict-config", "--strict-markers", "--import-mode=importlib", "-ra"]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["scripts.verify"]
+
+[tool.coverage.report]
+fail_under = 95
+show_missing = true
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+extend-exclude = ["data", "notes", "metadata"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP", "B", "SIM", "C4", "PIE", "RUF"]
+
+[tool.ruff.lint.per-file-ignores]
+"solutions/*.py" = ["B006", "B007", "B023", "B905", "C401", "C408", "C414", "E402", "E722", "E731", "E741", "F601", "F811", "F821", "F841", "RUF002", "RUF005", "RUF007", "RUF015", "RUF017", "RUF059", "SIM102", "SIM108", "SIM113", "UP035"]
+
+[tool.ruff.format]
+docstring-code-format = true

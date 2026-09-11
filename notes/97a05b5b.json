@@ -1,0 +1,19 @@
+{
+  "title": "Crop a perforated canvas and fit detached 3-by-3 glyphs into its holes",
+  "summary": "Crop a perforated canvas and fit detached 3-by-3 glyphs into its holes. This is the training-inferred `fit_glyphs_into_canvas_holes` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `fit_glyphs_into_canvas_holes`: crop a perforated canvas and fit detached 3-by-3 glyphs into its holes"
+  ],
+  "concepts": [
+    "fit",
+    "glyphs",
+    "canvas",
+    "holes"
+  ],
+  "observations": [
+    "Training pair 1: 20x10 -> 8x8; colors [0, 2, 3, 4] -> [2, 3, 4]; output dimensions changed.",
+    "Training pair 2: 24x19 -> 17x9; colors [0, 1, 2, 3, 4, 5, 8] -> [1, 2, 3, 4, 5, 8]; output dimensions changed.",
+    "Training pair 3: 16x12 -> 9x9; colors [0, 2, 8] -> [2, 8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

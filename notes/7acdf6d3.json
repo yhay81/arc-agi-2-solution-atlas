@@ -1,0 +1,19 @@
+{
+  "title": "Pour into a red container that matches the number of grains.",
+  "summary": "For Red 2 and Brown 9, try both roles, one being a grain and the other being an open vessel. In each row of vessels, count the blank spaces between the walls on both sides and choose the one that matches the number of grains. Return the original grain to orange 7 and fill the inside of the selected container with the color of the grain. It handles not only V-shapes but also U-shapes with flat bottoms.",
+  "steps": [
+    "For Red 2 and Brown 9, try both roles, one being a grain and the other being an open vessel.",
+    "In each row of vessels, count the blank spaces between the walls on both sides and choose the one that matches the number of grains.",
+    "Return the original grain to orange 7 and fill the inside of the selected container with the color of the grain. It handles not only V-shapes but also U-shapes with flat bottoms."
+  ],
+  "concepts": [
+    "Number and capacity",
+    "container",
+    "transfer"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [2, 7, 9] -> [2, 7, 9]; 2 cells changed.",
+    "Training pair 2: 13x13 -> 13x13; colors [2, 7, 9] -> [2, 7, 9]; 8 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

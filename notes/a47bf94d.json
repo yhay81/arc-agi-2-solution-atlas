@@ -1,0 +1,22 @@
+{
+  "title": "Find and follow both ends of the light blue line",
+  "summary": "Find and follow both ends of the light blue line. At the intersection, go straight and at the brown box, take the exit on the opposite side. If there is no exit to go straight on, turn to the remaining exit. The color of the shape on one end is transmitted to the other end. Draw a small diamond on the end facing up and to the left, and a diagonal x on the end facing down and right.",
+  "steps": [
+    "Find and follow both ends of the light blue line",
+    "At the intersection, go straight and at the brown box, go to the exit on the opposite side.",
+    "If there is no exit to go straight on, turn to the remaining exit.",
+    "Convey the color of the shape on one end to the other end",
+    "Draw a small diamond on the edge facing up and to the left, and a diagonal x on the edge facing down and to the right."
+  ],
+  "concepts": [
+    "Shape conversion",
+    "axis",
+    "two types of crosses"
+  ],
+  "observations": [
+    "Training pair 1: 22x22 -> 22x22; colors [0, 2, 3, 4, 5, 6, 8, 9] -> [0, 2, 3, 4, 5, 6, 8, 9]; 24 cells changed.",
+    "Training pair 2: 19x22 -> 19x22; colors [0, 1, 2, 3, 4, 5, 8] -> [0, 1, 2, 3, 4, 5, 8]; 40 cells changed.",
+    "Training pair 3: 22x22 -> 22x22; colors [0, 1, 2, 4, 5, 6, 8, 9] -> [0, 1, 2, 4, 5, 6, 8, 9]; 34 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Return a 2x2 key filled with the color of the largest hollow rectangle",
+  "summary": "Return a 2x2 key filled with the color of the largest hollow rectangle. This is the training-inferred `largest_rectangle_color_summary` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `largest_rectangle_color_summary`: return a 2x2 key filled with the color of the largest hollow rectangle"
+  ],
+  "concepts": [
+    "largest",
+    "rectangle",
+    "color",
+    "summary"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 2x2; colors [0, 6, 7] -> [7]; output dimensions changed.",
+    "Training pair 2: 10x10 -> 2x2; colors [0, 7, 8] -> [8]; output dimensions changed.",
+    "Training pair 3: 10x10 -> 2x2; colors [0, 2, 4] -> [4]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

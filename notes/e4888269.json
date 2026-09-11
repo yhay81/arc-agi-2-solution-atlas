@@ -1,0 +1,17 @@
+{
+  "title": "Replace colors sequentially in a vertical correspondence table",
+  "summary": "Look for a table with two vertical columns filled with a color different from the background. Read the table from the top and replace the left color with the right color sequentially, keeping the table itself.",
+  "steps": [
+    "Look for a table with two vertical columns filled with a color different from the background. Read the table from the top and replace the left color with the right color sequentially, keeping the table itself."
+  ],
+  "concepts": [
+    "color table",
+    "conditional conversion"
+  ],
+  "observations": [
+    "Training pair 1: 10x20 -> 10x20; colors [0, 1, 2, 3, 4, 5, 6, 7] -> [0, 1, 2, 3, 4, 5, 6, 7]; 3 cells changed.",
+    "Training pair 2: 10x20 -> 10x20; colors [0, 1, 2, 3, 4, 5, 6, 7] -> [0, 1, 2, 3, 4, 5, 6, 7]; 3 cells changed.",
+    "Training pair 3: 10x20 -> 10x20; colors [0, 1, 2, 3, 4, 5, 6, 7] -> [0, 1, 2, 3, 4, 5, 6, 7]; 3 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

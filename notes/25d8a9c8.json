@@ -1,0 +1,19 @@
+{
+  "title": "Mark uniform rows",
+  "summary": "Mark uniform rows. This is the training-inferred `mark_uniform_rows` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `mark_uniform_rows`: mark uniform rows"
+  ],
+  "concepts": [
+    "mark",
+    "uniform",
+    "rows"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 3x3; colors [2, 4, 9] -> [0, 5]; 9 cells changed.",
+    "Training pair 2: 3x3 -> 3x3; colors [3, 6, 7] -> [0, 5]; 9 cells changed.",
+    "Training pair 3: 3x3 -> 3x3; colors [1, 2, 4] -> [0, 5]; 9 cells changed.",
+    "Training pair 4: 3x3 -> 3x3; colors [2, 3, 4] -> [0, 5]; 9 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

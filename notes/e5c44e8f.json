@@ -1,0 +1,18 @@
+{
+  "title": "Stretch the green spiral until it hits the red dot",
+  "summary": "From the green point, move up, right, down, left, 2, 2, 4, 4, etc., and stop just before touching the red. Even if you go off the board, you continue your mathematical path and draw the part you come back to.",
+  "steps": [
+    "From the green point, move up, right, down, left, 2, 2, 4, 4, etc., and stop just before touching the red. Even if you go off the board, you continue your mathematical path and draw the part you come back to."
+  ],
+  "concepts": [
+    "swirl",
+    "length sequence",
+    "Stop conditions"
+  ],
+  "observations": [
+    "Training pair 1: 11x11 -> 11x11; colors [0, 2, 3] -> [0, 2, 3]; 45 cells changed.",
+    "Training pair 2: 11x11 -> 11x11; colors [0, 3] -> [0, 3]; 59 cells changed.",
+    "Training pair 3: 11x11 -> 11x11; colors [0, 2, 3] -> [0, 2, 3]; 21 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

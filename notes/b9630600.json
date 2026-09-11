@@ -1,0 +1,19 @@
+{
+  "title": "Connect rectangular frames with a passage the width of which is one square removed from each end of the overlap of opposite sides.",
+  "summary": "Connect the rectangular frames with a passage the width of which is one square at each end of the overlap of the opposite sides. Connect the frames so that they do not circulate from the nearest frame, and draw the outline of the eight neighbors of the connected area.",
+  "steps": [
+    "Connect rectangular frames with a passage the width of which is one square removed from each end of the overlap of opposite sides.",
+    "Connect nearby frames so that they do not circulate, and draw the outline of the eight neighbors of the connected area."
+  ],
+  "concepts": [
+    "adjacency",
+    "aisle",
+    "Edit boundaries"
+  ],
+  "observations": [
+    "Training pair 1: 30x30 -> 30x30; colors [0, 3] -> [0, 3]; 52 cells changed.",
+    "Training pair 2: 30x30 -> 30x30; colors [0, 3] -> [0, 3]; 44 cells changed.",
+    "Training pair 3: 30x30 -> 30x30; colors [0, 3] -> [0, 3]; 44 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

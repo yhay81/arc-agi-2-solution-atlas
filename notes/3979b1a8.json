@@ -1,0 +1,17 @@
+{
+  "title": "Extend the alternate frame pattern to the bottom right",
+  "summary": "Leave the original 5 x 5 and increase the outer L-shaped layer to 10 x 10 using the three color cycles of corners, center, and sides. Next color only for diagonal cells.",
+  "steps": [
+    "Leave the original 5 x 5 and increase the outer L-shaped layer to 10 x 10 using the three color cycles of corners, center, and sides.",
+    "Next color only for diagonal cells."
+  ],
+  "concepts": [
+    "frame period",
+    "extension of pattern"
+  ],
+  "observations": [
+    "Training pair 1: 5x5 -> 10x10; colors [2, 3, 5] -> [2, 3, 5]; output dimensions changed.",
+    "Training pair 2: 5x5 -> 10x10; colors [2, 8, 9] -> [2, 8, 9]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

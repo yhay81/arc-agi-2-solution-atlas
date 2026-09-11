@@ -1,0 +1,18 @@
+{
+  "title": "Stamp the first cell's shape mask into every separator-lattice cell",
+  "summary": "Stamp the first cell's shape mask into every separator-lattice cell. The first cell is a monochrome key. Its inset nonzero mask is copied to every other cell using the lattice color, without overwriting marks that are already present in a destination cell. This is the training-inferred `stamp_lattice_template` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `stamp_lattice_template`: stamp the first cell's shape mask into every separator-lattice cell"
+  ],
+  "concepts": [
+    "stamp",
+    "lattice",
+    "template"
+  ],
+  "observations": [
+    "Training pair 1: 17x17 -> 17x17; colors [0, 1, 2] -> [0, 1, 2]; 63 cells changed.",
+    "Training pair 2: 17x17 -> 17x17; colors [0, 2, 8] -> [0, 2, 8]; 28 cells changed.",
+    "Training pair 3: 17x17 -> 17x17; colors [0, 1, 3] -> [0, 1, 3]; 26 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

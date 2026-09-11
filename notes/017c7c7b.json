@@ -1,0 +1,21 @@
+{
+  "title": "Extend vertical period",
+  "summary": "Extend vertical period. This is the training-inferred `extend_vertical_period` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `extend_vertical_period`: extend vertical period"
+  ],
+  "concepts": [
+    "extend",
+    "vertical",
+    "period"
+  ],
+  "observations": [
+    "Training pair 1: 6x3 -> 9x3; colors [0, 1] -> [0, 2]; output dimensions changed.",
+    "Training pair 2: 6x3 -> 9x3; colors [0, 1] -> [0, 2]; output dimensions changed.",
+    "Training pair 3: 6x3 -> 9x3; colors [0, 1] -> [0, 2]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "final color map: 0 -> 0, 1 -> 2"
+  ]
+}

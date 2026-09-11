@@ -1,0 +1,20 @@
+{
+  "title": "Paint the gray quadrants with the color of the corner marks",
+  "summary": "Examine each separate gray rectangle one by one. Read the colored marks diagonally outside the four corners. Divide the rectangle in half, top, bottom, left and right, and fill each quarter with the color of the corresponding corner. Erase the outside markings.",
+  "steps": [
+    "Examine each separate gray rectangle one by one.",
+    "Read the colored marks diagonally outside the four corners.",
+    "Divide the rectangle in half, top, bottom, left and right, and fill each quarter with the color of the corresponding corner. Erase the outside markings."
+  ],
+  "concepts": [
+    "four corners",
+    "quadrant",
+    "Color specification"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 3, 4, 5, 6, 8] -> [0, 3, 4, 6, 8]; 20 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 1, 2, 4, 5, 7] -> [0, 1, 2, 4, 7]; 8 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 5, 6, 7, 8, 9] -> [0, 6, 7, 8, 9]; 40 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

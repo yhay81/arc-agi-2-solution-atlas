@@ -1,0 +1,18 @@
+{
+  "title": "Classify gray panels by the position of their holes",
+  "summary": "Split the input at black separator columns and classify each 4x4 gray panel by whether its holes touch a side, touch the bottom, remain central, or are absent.",
+  "steps": [
+    "Split the grid into panels at all-black columns.",
+    "Assign red to a solid panel, green when holes touch a side, yellow when internal holes touch the bottom, and azure to central holes.",
+    "Render each classification as a three-cell row."
+  ],
+  "concepts": ["panel segmentation", "shape classification", "negative space"],
+  "observations": [
+    "Training pair 1: 4x14 -> 3x3; colors [0, 5] -> [2, 4, 8]; output dimensions changed.",
+    "Training pair 2: 4x14 -> 3x3; colors [0, 5] -> [2, 3, 4]; output dimensions changed.",
+    "Training pair 3: 4x14 -> 3x3; colors [0, 5] -> [2, 4]; output dimensions changed.",
+    "Training pair 4: 4x14 -> 3x3; colors [0, 5] -> [2, 3, 8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": ["solid=2, side holes=3, bottom holes=4, central holes=8"]
+}

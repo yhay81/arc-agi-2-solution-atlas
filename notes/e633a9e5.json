@@ -1,0 +1,18 @@
+{
+  "title": "Leave one square in the center and expand the outside to double the size.",
+  "summary": "Repeat each 3×3 outer matrix twice and the central matrix once to make it 5×5.",
+  "steps": [
+    "Repeat each 3×3 outer matrix twice and the central matrix once to make it 5×5."
+  ],
+  "concepts": [
+    "non-uniform expansion",
+    "center",
+    "Duplicate matrix"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 5x5; colors [1, 2, 3, 5, 8] -> [1, 2, 3, 5, 8]; output dimensions changed.",
+    "Training pair 2: 3x3 -> 5x5; colors [1, 2, 4, 5, 6, 7] -> [1, 2, 4, 5, 6, 7]; output dimensions changed.",
+    "Training pair 3: 3x3 -> 5x5; colors [1, 2, 3, 5, 6, 7] -> [1, 2, 3, 5, 6, 7]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

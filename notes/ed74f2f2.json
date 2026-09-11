@@ -1,0 +1,26 @@
+{
+  "title": "Color the right glyph using the left key",
+  "summary": "Decode the small left glyph as color 1, 2, or 3, then crop and recolor the right glyph.",
+  "steps": [
+    "Classify the left 3-by-3 key by its top edge orientation.",
+    "Crop the right 3-by-3 glyph and replace gray cells with the decoded color."
+  ],
+  "concepts": [
+    "glyph",
+    "color key",
+    "crop"
+  ],
+  "observations": [
+    "Training pair 1 demonstrates the T-shaped color-1 key.",
+    "Training pair 2 demonstrates the color-3 key.",
+    "Training pair 3 repeats the T-shaped color-1 key with a different target glyph.",
+    "Training pair 4 demonstrates the color-2 key.",
+    "Training pair 5 repeats the color-2 key with a different target glyph.",
+    "Training pair 6 confirms the color-2 key once more."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "T shape maps to 1, upper-left diagonal key to 2, and upper-right diagonal key to 3."
+  ],
+  "limitations": "Only the three demonstrated key glyphs are defined."
+}

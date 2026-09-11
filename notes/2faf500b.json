@@ -1,0 +1,18 @@
+{
+  "title": "Rules for changing the brown shape from two-color parts are undefined.",
+  "summary": "Use purple 6 as a break, and move the two separated brown 9 parts one square at a time in the direction away from the break.",
+  "steps": [
+    "Use purple 6 as a break, and move the two separated brown 9 parts one square at a time in the direction away from the break."
+  ],
+  "concepts": [
+    "shape instructions",
+    "Die cutting",
+    "Expand"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 12x12; colors [0, 6, 9] -> [0, 9]; 40 cells changed.",
+    "Training pair 2: 8x8 -> 8x8; colors [0, 6, 9] -> [0, 9]; 15 cells changed.",
+    "Training pair 3: 16x16 -> 16x16; colors [0, 6, 9] -> [0, 9]; 60 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

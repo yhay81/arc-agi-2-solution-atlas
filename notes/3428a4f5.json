@@ -1,0 +1,19 @@
+{
+  "title": "Keep cells occupied in exactly one separated panel",
+  "summary": "Keep cells occupied in exactly one separated panel. This is the training-inferred `xor_separated_panels` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `xor_separated_panels`: keep cells occupied in exactly one separated panel"
+  ],
+  "concepts": [
+    "xor",
+    "separated",
+    "panels"
+  ],
+  "observations": [
+    "Training pair 1: 13x5 -> 6x5; colors [0, 2, 4] -> [0, 3]; output dimensions changed.",
+    "Training pair 2: 13x5 -> 6x5; colors [0, 2, 4] -> [0, 3]; output dimensions changed.",
+    "Training pair 3: 13x5 -> 6x5; colors [0, 2, 4] -> [0, 3]; output dimensions changed.",
+    "Training pair 4: 13x5 -> 6x5; colors [0, 2, 4] -> [0, 3]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

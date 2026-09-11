@@ -1,0 +1,20 @@
+{
+  "title": "Restore the horizontal, vertical, and diagonal lines created by each color, and count the number of hidden intersections by subtracting the number of visible cells from the original line length.",
+  "summary": "Restore the horizontal, vertical, and diagonal lines created by each color, and count the number of hidden intersections by subtracting the number of visible cells from the original line length. Arrange the lines in descending order of the number hidden, and if there is a tie, arrange the lines in descending order of the color number.",
+  "steps": [
+    "Restore the horizontal, vertical, and diagonal lines created by each color, and count the number of hidden intersections by subtracting the number of visible cells from the original line length.",
+    "Arrange the lines in descending order of the number hidden, and if there is a tie, arrange them in descending order of the color number."
+  ],
+  "concepts": [
+    "overlap",
+    "context",
+    "order"
+  ],
+  "observations": [
+    "Training pair 1: 7x7 -> 1x2; colors [2, 5, 7] -> [2, 5]; output dimensions changed.",
+    "Training pair 2: 10x10 -> 1x3; colors [0, 7, 8, 9] -> [0, 8, 9]; output dimensions changed.",
+    "Training pair 3: 12x12 -> 1x4; colors [1, 2, 3, 5, 7] -> [1, 2, 3, 5]; output dimensions changed.",
+    "Training pair 4: 16x16 -> 1x5; colors [1, 3, 4, 5, 7, 9] -> [1, 3, 4, 5, 9]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

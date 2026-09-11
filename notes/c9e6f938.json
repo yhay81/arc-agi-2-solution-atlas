@@ -1,0 +1,18 @@
+{
+  "title": "Concatenate the left panel followed by the right panel",
+  "summary": "Concatenate the left panel followed by the right panel. This is the training-inferred `concat_h_lr` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `concat_h_lr`: concatenate the left panel followed by the right panel"
+  ],
+  "concepts": [
+    "concat",
+    "h",
+    "lr"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 3x6; colors [0, 7] -> [0, 7]; output dimensions changed.",
+    "Training pair 2: 3x3 -> 3x6; colors [0, 7] -> [0, 7]; output dimensions changed.",
+    "Training pair 3: 3x3 -> 3x6; colors [0, 7] -> [0, 7]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

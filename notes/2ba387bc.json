@@ -1,0 +1,20 @@
+{
+  "title": "Pair top-to-bottom hollow and solid 4-by-4 squares in two columns",
+  "summary": "Pair top-to-bottom hollow and solid 4-by-4 squares in two columns. This is the training-inferred `pair_hollow_and_solid_squares` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `pair_hollow_and_solid_squares`: pair top-to-bottom hollow and solid 4-by-4 squares in two columns"
+  ],
+  "concepts": [
+    "pair",
+    "hollow",
+    "solid",
+    "squares"
+  ],
+  "observations": [
+    "Training pair 1: 23x24 -> 16x8; colors [0, 1, 2, 3, 4, 6, 7, 8] -> [0, 1, 2, 3, 4, 6, 7, 8]; output dimensions changed.",
+    "Training pair 2: 20x21 -> 12x8; colors [0, 1, 2, 4, 8, 9] -> [0, 1, 2, 4, 8, 9]; output dimensions changed.",
+    "Training pair 3: 20x23 -> 8x8; colors [0, 2, 4, 7, 8] -> [0, 2, 4, 7, 8]; output dimensions changed.",
+    "Training pair 4: 22x22 -> 12x8; colors [0, 2, 3, 4, 6, 8] -> [0, 2, 3, 4, 6, 8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

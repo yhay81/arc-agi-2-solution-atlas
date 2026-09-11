@@ -1,0 +1,20 @@
+{
+  "title": "The only place in the 3x3 filled with the color of the line is the intersection.",
+  "summary": "The intersection is the only place in the 3x3 filled with the color of the line. Leave 8 surrounding cells and change each branch extending from it to the majority color of the color block it touches. The color of the center of an intersection is determined by the number of cells in contact with the surrounding edges.",
+  "steps": [
+    "The only place in the 3x3 filled with the color of the line is the intersection.",
+    "Leave 8 surrounding cells and change each branch extending from it to the majority color of the adjacent color block.",
+    "The color of the center of the intersection is determined by the number of cells of the surrounding branches."
+  ],
+  "concepts": [
+    "boundary",
+    "local features",
+    "neighborhood reference"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [3, 4, 8, 9] -> [3, 4, 8, 9]; 64 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 1, 2, 5] -> [0, 1, 2, 5]; 30 cells changed.",
+    "Training pair 3: 20x20 -> 20x20; colors [5, 6, 7, 8] -> [5, 6, 7, 8]; 101 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Recolor source cells whose vertical mirror is the same source color",
+  "summary": "Recolor source cells whose vertical mirror is the same source color. This is the training-inferred `recolor_vertical_mirror_pairs` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `recolor_vertical_mirror_pairs`: recolor source cells whose vertical mirror is the same source color"
+  ],
+  "concepts": [
+    "recolor",
+    "vertical",
+    "mirror",
+    "pairs"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 5] -> [0, 1, 5]; 20 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 5] -> [0, 1, 5]; 16 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 5] -> [0, 1, 5]; 14 cells changed.",
+    "Training pair 4: 10x10 -> 10x10; colors [0, 5] -> [0, 1, 5]; 8 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "source color: 5",
+    "target color: 1"
+  ]
+}

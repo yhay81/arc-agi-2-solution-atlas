@@ -1,0 +1,20 @@
+{
+  "title": "Fill lattice cells having the largest marker count",
+  "summary": "Fill lattice cells having the largest marker count. Uniform separator rows and columns partition the scene into equal cells. Each cell contains zero or more pixels of one marker color. The sparse marks are reduced to a competition: cells with the maximum count become solid marker-color blocks and every other cell is cleared. This is the training-inferred `fill_lattice_max_marker_cells` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `fill_lattice_max_marker_cells`: fill lattice cells having the largest marker count"
+  ],
+  "concepts": [
+    "fill",
+    "lattice",
+    "max",
+    "marker",
+    "cells"
+  ],
+  "observations": [
+    "Training pair 1: 11x11 -> 11x11; colors [0, 2, 5] -> [0, 2, 5]; 21 cells changed.",
+    "Training pair 2: 11x11 -> 11x11; colors [0, 1, 5] -> [0, 1, 5]; 13 cells changed.",
+    "Training pair 3: 11x11 -> 11x11; colors [0, 3, 5] -> [0, 3, 5]; 14 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

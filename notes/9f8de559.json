@@ -1,0 +1,19 @@
+{
+  "title": "Move the inner sections in the same direction as the center line",
+  "summary": "Proceed in the opposite direction to the arrangement of red 2 to purple 6, and change the border 1 square immediately after the orange area to orange.",
+  "steps": [
+    "Proceed in the opposite direction to the arrangement of red 2 to purple 6, and change the border 1 square immediately after the orange area to orange."
+  ],
+  "concepts": [
+    "direction instructions",
+    "parallel movement",
+    "boundary"
+  ],
+  "observations": [
+    "Training pair 1: 14x14 -> 14x14; colors [2, 5, 6, 7, 8, 9] -> [2, 5, 6, 7, 8, 9]; 1 cells changed.",
+    "Training pair 2: 14x14 -> 14x14; colors [2, 5, 6, 7, 8, 9] -> [2, 5, 6, 7, 8, 9]; 1 cells changed.",
+    "Training pair 3: 14x14 -> 14x14; colors [2, 5, 6, 7, 8, 9] -> [2, 5, 6, 7, 8, 9]; 1 cells changed.",
+    "Training pair 4: 14x14 -> 14x14; colors [2, 5, 6, 7, 8, 9] -> [2, 5, 6, 7, 8, 9]; 1 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Collapse horizontally repeated panels, retaining each row's unique view",
+  "summary": "Collapse horizontally repeated panels, retaining each row's unique view. This is the training-inferred `select_unique_repeated_panel_by_rows` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `select_unique_repeated_panel_by_rows`: collapse horizontally repeated panels, retaining each row's unique view"
+  ],
+  "concepts": [
+    "select",
+    "unique",
+    "repeated",
+    "panel",
+    "rows"
+  ],
+  "observations": [
+    "Training pair 1: 19x19 -> 19x7; colors [1, 4, 6] -> [1, 4, 6]; output dimensions changed.",
+    "Training pair 2: 19x25 -> 19x7; colors [1, 3, 4] -> [1, 3, 4]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

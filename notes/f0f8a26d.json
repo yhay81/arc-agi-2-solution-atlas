@@ -1,0 +1,21 @@
+{
+  "title": "Rotate each rod at right angles around the center",
+  "summary": "Take out the separated sticks one by one, and without moving the center, turn the vertical sticks into horizontal sticks and the horizontal sticks into vertical sticks. Leave only one dot as is. It is not an operation that rotates the entire board.",
+  "steps": [
+    "Find sticks of the same color that are connected vertically and horizontally one by one.",
+    "Find the center square of the stick",
+    "Fix the center and draw a bar with the same length but with the vertical and horizontal directions switched.",
+    "Return the squares of the original bar that are not included in the new bar to orange"
+  ],
+  "concepts": [
+    "local rotation",
+    "center fixation",
+    "save length"
+  ],
+  "observations": [
+    "Training pair 1: 9x9 -> 9x9; colors [5, 7] -> [5, 7]; 24 cells changed.",
+    "Training pair 2: 9x9 -> 9x9; colors [2, 7] -> [2, 7]; 20 cells changed.",
+    "Training pair 3: 11x11 -> 11x11; colors [7, 8] -> [7, 8]; 40 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

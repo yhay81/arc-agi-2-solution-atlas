@@ -1,0 +1,19 @@
+{
+  "title": "Connect keyed rectangular tiles in the order given by a guide row",
+  "summary": "Connect keyed rectangular tiles in the order given by a guide row. Rectangular tiles contain one marker color. A separated guide line lists those marker colors; consecutive tiles in that list are joined through the gap between their frames using the preceding tile's marker color. The marker footprint determines the thickness of each connector. This is the training-inferred `connect_lattice_tiles_by_key` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `connect_lattice_tiles_by_key`: connect keyed rectangular tiles in the order given by a guide row"
+  ],
+  "concepts": [
+    "connect",
+    "lattice",
+    "tiles",
+    "key"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 20x20; colors [1, 2, 3, 4, 5, 6, 7, 8, 9] -> [1, 2, 3, 4, 5, 6, 7, 8, 9]; 32 cells changed.",
+    "Training pair 2: 13x20 -> 13x20; colors [1, 2, 3, 4, 5, 6, 7, 8, 9] -> [1, 2, 3, 4, 5, 6, 7, 8, 9]; 6 cells changed.",
+    "Training pair 3: 27x27 -> 27x27; colors [1, 2, 3, 4, 6, 7, 8, 9] -> [1, 2, 3, 4, 6, 7, 8, 9]; 15 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

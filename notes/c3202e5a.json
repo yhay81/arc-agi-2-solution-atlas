@@ -1,0 +1,19 @@
+{
+  "title": "Extract the unique monochrome panel from the separator grid",
+  "summary": "The non-black monochromatic rows and columns that run through the board are divided into sections, and the sections with only one color other than black are cut out as the only answer.",
+  "steps": [
+    "Detect rows and columns with the same color throughout as delimiters",
+    "Examine each partition between partitions",
+    "Return plots with only one type of non-black color as is"
+  ],
+  "concepts": [
+    "Partition selection",
+    "Single color"
+  ],
+  "observations": [
+    "Training pair 1: 23x23 -> 5x5; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 7]; output dimensions changed.",
+    "Training pair 2: 23x23 -> 5x5; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 2]; output dimensions changed.",
+    "Training pair 3: 23x23 -> 3x3; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 4]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

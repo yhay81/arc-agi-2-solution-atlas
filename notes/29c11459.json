@@ -1,0 +1,22 @@
+{
+  "title": "Join each equidistant row endpoint pair through a marked midpoint",
+  "summary": "Join each equidistant row endpoint pair through a marked midpoint. The cells strictly left and right of the midpoint inherit their nearest endpoint color. The midpoint itself is rendered with ``center_color``. Rows without exactly two separated foreground endpoints are preserved. This is the training-inferred `join_row_endpoints_with_center_marker` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `join_row_endpoints_with_center_marker`: join each equidistant row endpoint pair through a marked midpoint"
+  ],
+  "concepts": [
+    "join",
+    "row",
+    "endpoints",
+    "center",
+    "marker"
+  ],
+  "observations": [
+    "Training pair 1: 5x11 -> 5x11; colors [0, 3, 7] -> [0, 3, 5, 7]; 9 cells changed.",
+    "Training pair 2: 5x11 -> 5x11; colors [0, 1, 2] -> [0, 1, 2, 5]; 9 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "center color: 5"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Move each red dot on the bottom to the tip of the adjacent pink path and erase the pink color.",
+  "summary": "Move each red dot on the bottom to the tip of the adjacent pink path and erase the pink. Move the upper gray dot to a position that is symmetrical to the red dot using the border as a mirror.",
+  "steps": [
+    "Move each red dot on the bottom to the tip of the adjacent pink path and erase the pink color.",
+    "Move the upper gray point to a position that is symmetrical to the red point after moving, using the border line as a mirror."
+  ],
+  "concepts": [
+    "follow the path",
+    "reflection",
+    "Interlocking movement"
+  ],
+  "observations": [
+    "Training pair 1: 9x9 -> 9x9; colors [2, 5, 6, 7, 9] -> [2, 5, 7, 9]; 13 cells changed.",
+    "Training pair 2: 7x7 -> 7x7; colors [2, 5, 6, 7, 9] -> [2, 5, 7, 9]; 8 cells changed.",
+    "Training pair 3: 9x9 -> 9x9; colors [2, 5, 6, 7, 9] -> [2, 5, 7, 9]; 17 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

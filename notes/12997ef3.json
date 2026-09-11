@@ -1,0 +1,21 @@
+{
+  "title": "Duplicate shapes using color rows as blueprints",
+  "summary": "Take out the blue 3×3 shape as the prototype.",
+  "steps": [
+    "Take out the blue 3×3 shape as the prototype.",
+    "Read the dots of different colors in order, make one prototype for each dot, and change it to the color of that dot.",
+    "If the colored dots are lined up horizontally, line them up horizontally, and if they are lined up vertically, line them up in 3x3 blocks without gaps."
+  ],
+  "concepts": [
+    "copy of the original",
+    "color instruction string",
+    "order"
+  ],
+  "observations": [
+    "Training pair 1: 11x11 -> 6x3; colors [0, 1, 2, 6] -> [0, 2, 6]; output dimensions changed.",
+    "Training pair 2: 11x9 -> 9x3; colors [0, 1, 3, 6, 8] -> [0, 3, 6, 8]; output dimensions changed.",
+    "Training pair 3: 11x10 -> 3x6; colors [0, 1, 2, 3] -> [0, 2, 3]; output dimensions changed.",
+    "Training pair 4: 11x14 -> 3x9; colors [0, 1, 2, 3, 4] -> [0, 2, 3, 4]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

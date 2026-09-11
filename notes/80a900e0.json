@@ -1,0 +1,18 @@
+{
+  "title": "Find a diamond-shaped ring with 8 squares of the same color, and extend two parallel diagonal lines outward from both ends of the side where the outer 3 diagonal squares are of the same color.",
+  "summary": "Find a diamond-shaped ring with 8 squares of the same color, and extend two parallel diagonal lines outward from both ends of the side where the outer 3 diagonal squares are of the same color. If the third square is cut off at the edge of the board, judge using the two visible squares.",
+  "steps": [
+    "Find a diamond-shaped ring with 8 squares of the same color, and extend two parallel diagonal lines outward from both ends of the side where the outer 3 diagonal squares are of the same color.",
+    "If the third square is cut off at the edge of the board, judge by the two visible squares."
+  ],
+  "concepts": [
+    "direction cue",
+    "diagonal line",
+    "extension"
+  ],
+  "observations": [
+    "Training pair 1: 20x14 -> 20x14; colors [0, 1, 3, 8] -> [0, 1, 3, 8]; 18 cells changed.",
+    "Training pair 2: 24x30 -> 24x30; colors [0, 1, 2, 3, 4] -> [0, 1, 2, 3, 4]; 62 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

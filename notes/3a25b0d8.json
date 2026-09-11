@@ -1,0 +1,19 @@
+{
+  "title": "Find solid contour shapes and colored swatches, including diagonal contacts",
+  "summary": "Find solid contour shapes and colored swatches, including diagonal contacts. The holes surrounded by the outline are matched in relative position, and the color of each hole in the sample is transferred to the hole in the same position in the monochrome figure. Outputs the circumscribed rectangle of only the completed shape.",
+  "steps": [
+    "Find solid contour shapes and colored swatches, including diagonal contacts",
+    "Match the holes surrounded by the outline by relative position, and transfer the color of each hole in the sample to the hole in the same position in the monochrome shape.",
+    "Output the circumscribed rectangle of only the completed shape"
+  ],
+  "concepts": [
+    "dividing the band",
+    "Normalization",
+    "Reproduction"
+  ],
+  "observations": [
+    "Training pair 1: 22x22 -> 11x11; colors [1, 3, 4, 6, 7, 8, 9] -> [1, 3, 4, 6, 7, 8, 9]; output dimensions changed.",
+    "Training pair 2: 22x22 -> 13x7; colors [1, 2, 3, 4, 8] -> [1, 2, 3, 4, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

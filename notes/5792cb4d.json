@@ -1,0 +1,19 @@
+{
+  "title": "Reverse the color order of one road",
+  "summary": "The hypothesis is to reverse the order of colors from one end to the other without changing the shape of a single curved road.",
+  "steps": [
+    "Follow paths other than background 8 in order from one end",
+    "Reverse the color sequence on Michigami",
+    "Return colors in reverse order to the same road position"
+  ],
+  "concepts": [
+    "route",
+    "order reversal",
+    "shape retention"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [1, 2, 4, 5, 6, 7, 8] -> [1, 2, 4, 5, 6, 7, 8]; 8 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [1, 2, 4, 6, 7, 8, 9] -> [1, 2, 4, 6, 7, 8, 9]; 8 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

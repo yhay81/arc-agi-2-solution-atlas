@@ -1,0 +1,17 @@
+{
+  "title": "Draw a double triangle outline from the corner shape",
+  "summary": "Double the vertical dimension of the corner shape and draw the three sides of the right triangle in the same corner. The size of the board is the vertical dimension multiplied by 3 and subtracted by 2.",
+  "steps": [
+    "Double the vertical dimension of the corner shape and draw the three sides of the right triangle in the same corner. The size of the board is the vertical dimension multiplied by 3 and subtracted by 2."
+  ],
+  "concepts": [
+    "extrapolation",
+    "stairs",
+    "dimensions"
+  ],
+  "observations": [
+    "Training pair 1: 6x6 -> 16x16; colors [5, 7] -> [5, 7]; output dimensions changed.",
+    "Training pair 2: 6x6 -> 16x16; colors [7, 9] -> [7, 9]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

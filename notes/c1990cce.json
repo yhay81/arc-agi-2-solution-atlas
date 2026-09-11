@@ -1,0 +1,20 @@
+{
+  "title": "Create a square with diagonal stripes from the red dot in the center",
+  "summary": "Let the width of one line of input be N, and create a black output of N×N.",
+  "steps": [
+    "Let the width of one line of input be N, and create a black output of N×N.",
+    "Draw a 45 degree red line from the red dot in the center of the top side to the left and right to create a chevron outline.",
+    "Fill in the bottom half by repeating parallel blue diagonal lines starting from every other position on the red line toward the bottom left and toward the bottom right."
+  ],
+  "concepts": [
+    "Specifying dimensions",
+    "Repeating diagonal lines",
+    "Yamagata"
+  ],
+  "observations": [
+    "Training pair 1: 1x5 -> 5x5; colors [0, 2] -> [0, 1, 2]; output dimensions changed.",
+    "Training pair 2: 1x13 -> 13x13; colors [0, 2] -> [0, 1, 2]; output dimensions changed.",
+    "Training pair 3: 1x7 -> 7x7; colors [0, 2] -> [0, 1, 2]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

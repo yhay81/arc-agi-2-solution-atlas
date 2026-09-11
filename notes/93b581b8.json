@@ -1,0 +1,17 @@
+{
+  "title": "Satellite blocks",
+  "summary": "Satellite blocks. This is the training-inferred `satellite_blocks` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `satellite_blocks`: satellite blocks"
+  ],
+  "concepts": [
+    "satellite",
+    "blocks"
+  ],
+  "observations": [
+    "Training pair 1: 6x6 -> 6x6; colors [0, 1, 2, 4, 6] -> [0, 1, 2, 4, 6]; 9 cells changed.",
+    "Training pair 2: 6x6 -> 6x6; colors [0, 3, 7, 8, 9] -> [0, 3, 7, 8, 9]; 16 cells changed.",
+    "Training pair 3: 6x6 -> 6x6; colors [0, 2, 3, 5, 6] -> [0, 2, 3, 5, 6]; 16 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

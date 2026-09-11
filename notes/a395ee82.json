@@ -1,0 +1,19 @@
+{
+  "title": "Copy a large sample of a single color corresponding to each point in the dot arrangement.",
+  "summary": "Copy a large sample of a single color, corresponding to each point in the dot arrangement. The point with the same color as the sample is the reference point, and the two squares between the points are expanded to the height and width of the sample, and only the color of the reference point is replaced with another point color.",
+  "steps": [
+    "Copy a large sample of a single color corresponding to each point in the dot arrangement.",
+    "The point with the same color as the sample is the reference point, expand the two squares between the points to the height and width of the sample, and replace only the color of the reference point with another point color."
+  ],
+  "concepts": [
+    "lattice",
+    "Reproduction",
+    "color replacement"
+  ],
+  "observations": [
+    "Training pair 1: 22x22 -> 22x22; colors [2, 4, 8] -> [2, 4, 8]; 42 cells changed.",
+    "Training pair 2: 22x22 -> 22x22; colors [1, 2, 3] -> [1, 2, 3]; 55 cells changed.",
+    "Training pair 3: 22x22 -> 22x22; colors [4, 6, 7] -> [4, 6, 7]; 48 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

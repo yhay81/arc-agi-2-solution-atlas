@@ -1,0 +1,19 @@
+{
+  "title": "Color a large mask with a diagonally opposite compact palette key",
+  "summary": "Color a large mask with a diagonally opposite compact palette key. This is the training-inferred `color_mask_from_diagonal_key` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `color_mask_from_diagonal_key`: color a large mask with a diagonally opposite compact palette key"
+  ],
+  "concepts": [
+    "color",
+    "mask",
+    "diagonal",
+    "key"
+  ],
+  "observations": [
+    "Training pair 1: 9x9 -> 6x6; colors [0, 1, 2, 3, 4, 8] -> [0, 1, 2, 4]; output dimensions changed.",
+    "Training pair 2: 9x9 -> 6x6; colors [0, 1, 2, 3, 4, 6, 8] -> [0, 1, 2, 4, 6]; output dimensions changed.",
+    "Training pair 3: 9x9 -> 6x6; colors [0, 2, 3, 4, 5, 6, 8] -> [0, 2, 4, 5, 6]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

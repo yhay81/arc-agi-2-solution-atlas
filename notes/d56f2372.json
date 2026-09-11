@@ -1,0 +1,19 @@
+{
+  "title": "Extract the unique horizontally symmetric colored shape",
+  "summary": "For each color, extract only that color within the circumscribed rectangle, flip it left and right, and search for matching candidates. Returns the minimum bounding rectangle of unique candidates.",
+  "steps": [
+    "Cut out shapes of each color using circumscribed rectangles",
+    "Examine the symmetry of the shape masked in black",
+    "returns the only symmetrical shape"
+  ],
+  "concepts": [
+    "symmetry selection",
+    "Cut out"
+  ],
+  "observations": [
+    "Training pair 1: 22x17 -> 6x7; colors [0, 1, 2, 3, 4] -> [0, 1]; output dimensions changed.",
+    "Training pair 2: 21x16 -> 4x5; colors [0, 1, 2, 6, 7, 8] -> [0, 8]; output dimensions changed.",
+    "Training pair 3: 21x19 -> 3x5; colors [0, 1, 3, 4, 6, 7] -> [0, 6]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

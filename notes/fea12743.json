@@ -1,0 +1,20 @@
+{
+  "title": "Find the shape made by combining two shapes",
+  "summary": "Read the entire 4×4 section divided by a 1-square black partition as a shape, including the separated parts. Rather than re-aligning the shapes to the center, overlap them at the same coordinates within the section. Find a pair where the sum of two shapes matches another shape. Add the two shapes to light blue, make one of the results green, and leave the other shapes as red.",
+  "steps": [
+    "Read the entire 4×4 section divided by a 1-square black partition as a shape, including the separated parts.",
+    "Rather than re-aligning the shapes to the center, overlap them at the same coordinates within the section. Find a pair where the sum of two shapes matches another shape.",
+    "Add the two shapes to light blue, make one of the results green, and leave the other shapes as red."
+  ],
+  "concepts": [
+    "sum of sets",
+    "Decomposition and synthesis",
+    "relationship of shapes"
+  ],
+  "observations": [
+    "Training pair 1: 16x11 -> 16x11; colors [0, 2] -> [0, 2, 3, 8]; 40 cells changed.",
+    "Training pair 2: 16x11 -> 16x11; colors [0, 2] -> [0, 2, 3, 8]; 32 cells changed.",
+    "Training pair 3: 16x11 -> 16x11; colors [0, 2] -> [0, 2, 3, 8]; 27 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Replace body symbols using the header key",
+  "summary": "Decode 3x3 value-to-pattern rules above a separator row. This is the training-inferred `substitute_from_header` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `substitute_from_header`: replace body symbols using the header key"
+  ],
+  "concepts": [
+    "substitute",
+    "header"
+  ],
+  "observations": [
+    "Training pair 1: 20x11 -> 13x11; colors [0, 2, 3, 5, 6, 7, 8, 9] -> [2, 3, 7, 9]; output dimensions changed.",
+    "Training pair 2: 20x11 -> 13x11; colors [1, 2, 4, 5, 6, 7, 8] -> [4, 5, 6, 7]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "partition color: 6"
+  ]
+}

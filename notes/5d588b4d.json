@@ -1,0 +1,21 @@
+{
+  "title": "Wrap the color sequence that increases and decreases from one",
+  "summary": "The rule is to write 1, 2, ..., n, ..., 2, 1 color blocks separated by one black cell, and wrap them at the input width, where the number of color cells in the top row is n.",
+  "steps": [
+    "Count the number of consecutive colored squares n on the top row",
+    "Arrange the pieces of the same color by adding or subtracting them by 1~n~1, and place a black 0 square behind each cluster.",
+    "Continue to the next line with the same width as the input, print out only the necessary lines, and make the remainder black at the end."
+  ],
+  "concepts": [
+    "number sequence",
+    "increase/decrease",
+    "turn back"
+  ],
+  "observations": [
+    "Training pair 1: 8x11 -> 5x11; colors [0, 3] -> [0, 3]; output dimensions changed.",
+    "Training pair 2: 7x23 -> 1x23; colors [0, 1] -> [0, 1]; output dimensions changed.",
+    "Training pair 3: 8x5 -> 3x5; colors [0, 7] -> [0, 7]; output dimensions changed.",
+    "Training pair 4: 7x23 -> 1x23; colors [0, 4] -> [0, 4]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

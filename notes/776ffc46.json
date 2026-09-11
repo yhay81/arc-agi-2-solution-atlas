@@ -1,0 +1,21 @@
+{
+  "title": "Use complete rectangular frames as color-and-shape references",
+  "summary": "Use complete rectangular frames as color-and-shape references. A complete hollow rectangle contains a small colored exemplar. Every detached component having the same normalized geometry is recolored with the exemplar's color. Partial frames and the exemplar itself are kept as scene context; matching is purely geometric and therefore works for translated objects and multiple references. This is the training-inferred `recolor_components_matching_framed_shapes` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `recolor_components_matching_framed_shapes`: use complete rectangular frames as color-and-shape references"
+  ],
+  "concepts": [
+    "recolor",
+    "components",
+    "matching",
+    "framed",
+    "shapes"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 20x20; colors [0, 1, 2, 5] -> [0, 1, 2, 5]; 12 cells changed.",
+    "Training pair 2: 20x20 -> 20x20; colors [0, 1, 3, 5] -> [0, 1, 3, 5]; 18 cells changed.",
+    "Training pair 3: 20x20 -> 20x20; colors [0, 1, 3, 5] -> [0, 1, 3, 5]; 9 cells changed.",
+    "Training pair 4: 20x20 -> 20x20; colors [0, 1, 2, 5] -> [0, 1, 2, 5]; 10 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

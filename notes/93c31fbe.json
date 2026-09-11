@@ -1,0 +1,19 @@
+{
+  "title": "Build a frame with the four corners of an L shape of the same color, and mirror the blue pattern along the long sides.",
+  "summary": "Build a frame with the four corners of an L shape of the same color, and mirror the blue pattern along the long sides. Delete the blue outside the frame.",
+  "steps": [
+    "Build a frame with the four corners of an L shape of the same color, and mirror the blue pattern along the long sides.",
+    "Delete the blue outside the frame"
+  ],
+  "concepts": [
+    "frame",
+    "symmetrical completion",
+    "Delete"
+  ],
+  "observations": [
+    "Training pair 1: 22x23 -> 22x23; colors [0, 1, 8] -> [0, 1, 8]; 19 cells changed.",
+    "Training pair 2: 23x25 -> 23x25; colors [0, 1, 2] -> [0, 1, 2]; 17 cells changed.",
+    "Training pair 3: 20x21 -> 20x21; colors [0, 1, 3] -> [0, 1, 3]; 19 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

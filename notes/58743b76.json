@@ -1,0 +1,18 @@
+{
+  "title": "Apply the color scheme to the four sections",
+  "summary": "Read the 2×2 color swatch on the outside.",
+  "steps": [
+    "Read the 2×2 color swatch on the outside.",
+    "Divide the large inner area into four sections and replace the points in each section with the corresponding sample color.",
+    "Leave the outer frame and color sample as is."
+  ],
+  "concepts": [
+    "Compartment correspondence",
+    "Color scheme table"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 12x12; colors [0, 1, 2, 4, 6, 8] -> [0, 1, 2, 4, 6, 8]; 11 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 1, 2, 3, 4, 8] -> [0, 1, 2, 3, 4, 8]; 9 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

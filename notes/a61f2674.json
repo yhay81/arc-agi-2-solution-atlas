@@ -1,0 +1,19 @@
+{
+  "title": "Keep the longest and shortest occupied columns, ranked with colors one and two",
+  "summary": "Keep the longest and shortest occupied columns, ranked with colors one and two. This is the training-inferred `keep_longest_and_shortest_vertical_runs` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `keep_longest_and_shortest_vertical_runs`: keep the longest and shortest occupied columns, ranked with colors one and two"
+  ],
+  "concepts": [
+    "keep",
+    "longest",
+    "shortest",
+    "vertical",
+    "runs"
+  ],
+  "observations": [
+    "Training pair 1: 9x9 -> 9x9; colors [0, 5] -> [0, 1, 2]; 24 cells changed.",
+    "Training pair 2: 9x9 -> 9x9; colors [0, 5] -> [0, 1, 2]; 28 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Render a vertical stack of a glyph in the colors of a compact key",
+  "summary": "Render a vertical stack of a glyph in the colors of a compact key. A small filled rectangle whose rows repeat a sequence of distinct colors is a palette key. The remaining colored cells are one or more copies of the same glyph, each carrying one key color. Copies are normalized to a common vertical stack in key order; the key and the sparse source copies are removed. The stack anchor is inferred from every observed copy. This is the training-inferred `render_keyed_glyph_stack` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `render_keyed_glyph_stack`: render a vertical stack of a glyph in the colors of a compact key"
+  ],
+  "concepts": [
+    "render",
+    "keyed",
+    "glyph",
+    "stack"
+  ],
+  "observations": [
+    "Training pair 1: 18x14 -> 18x14; colors [0, 1, 2, 3, 7] -> [0, 1, 2, 3, 7]; 32 cells changed.",
+    "Training pair 2: 17x13 -> 17x13; colors [0, 1, 4, 6] -> [0, 1, 4, 6]; 28 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

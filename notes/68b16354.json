@@ -1,0 +1,17 @@
+{
+  "title": "Reflect the grid from top to bottom",
+  "summary": "Reflect the grid from top to bottom. This is the training-inferred `flip_ud` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `flip_ud`: reflect the grid from top to bottom"
+  ],
+  "concepts": [
+    "flip",
+    "ud"
+  ],
+  "observations": [
+    "Training pair 1: 5x5 -> 5x5; colors [1, 2, 3, 4, 7, 8] -> [1, 2, 3, 4, 7, 8]; 20 cells changed.",
+    "Training pair 2: 5x5 -> 5x5; colors [1, 2, 3, 4, 7, 8] -> [1, 2, 3, 4, 7, 8]; 18 cells changed.",
+    "Training pair 3: 7x7 -> 7x7; colors [1, 2, 3, 4, 7, 8] -> [1, 2, 3, 4, 7, 8]; 40 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Connect the small squares to the blue side mark",
+  "summary": "Take out a hollow rectangle with a black background and measure its width and height. Choose a direction with blue marks on the left and right sides of the same row as the rectangle, or on the top and bottom sides of the same column. Repeat the same color scheme as the original rectangle for each width (horizontal) and each height (vertical). Copy it including the black inside, and also draw the cut part at the edge. The blue mark will be replaced with the copy result.",
+  "steps": [
+    "Take out a hollow rectangle with a black background and measure its width and height.",
+    "Choose a direction with blue marks on the left and right sides of the same row as the rectangle, or on the top and bottom sides of the same column.",
+    "Repeat the same color scheme as the original rectangle for each width (horizontal) and each height (vertical). Copy it including the black inside, and also draw the cut part at the edge. The blue mark will be replaced with the copy result."
+  ],
+  "concepts": [
+    "periodic copying",
+    "edge mark",
+    "sharing edges"
+  ],
+  "observations": [
+    "Training pair 1: 22x19 -> 22x19; colors [0, 1, 8] -> [0, 8]; 82 cells changed.",
+    "Training pair 2: 18x17 -> 18x17; colors [0, 1, 2] -> [0, 2]; 70 cells changed.",
+    "Training pair 3: 22x22 -> 22x22; colors [0, 1, 3] -> [0, 3]; 78 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

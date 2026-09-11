@@ -1,0 +1,17 @@
+{
+  "title": "Paint the inside of the frame and draw lines from the opening",
+  "summary": "Paint the inside of the blue rectangle with 8 and draw a straight line out of the board from the opening on each side.",
+  "steps": [
+    "Paint the inside of the blue rectangle with 8 and draw a straight line out of the board from the opening on each side."
+  ],
+  "concepts": [
+    "inside the enclosure",
+    "opening",
+    "extension"
+  ],
+  "observations": [
+    "Training pair 1: 24x25 -> 24x25; colors [0, 1] -> [0, 1, 8]; 103 cells changed.",
+    "Training pair 2: 24x28 -> 24x28; colors [0, 1] -> [0, 1, 8]; 113 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

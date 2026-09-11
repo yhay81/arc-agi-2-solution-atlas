@@ -1,0 +1,23 @@
+{
+  "title": "Connect markers to full separator lines and frame each intersection",
+  "summary": "Connect markers to full separator lines and frame each intersection. This is the training-inferred `connect_markers_to_separator_frames` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `connect_markers_to_separator_frames`: connect markers to full separator lines and frame each intersection"
+  ],
+  "concepts": [
+    "connect",
+    "markers",
+    "separator",
+    "frames"
+  ],
+  "observations": [
+    "Training pair 1: 13x18 -> 13x18; colors [0, 2, 8] -> [0, 2, 8]; 21 cells changed.",
+    "Training pair 2: 13x13 -> 13x13; colors [0, 2, 8] -> [0, 2, 8]; 18 cells changed.",
+    "Training pair 3: 17x12 -> 17x12; colors [0, 2, 8] -> [0, 2, 8]; 26 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "marker color: 2",
+    "separator color: 8"
+  ]
+}

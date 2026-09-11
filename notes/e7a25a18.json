@@ -1,0 +1,19 @@
+{
+  "title": "Expand the small color scheme inside the frame to fill the inside",
+  "summary": "Find the red rectangular frame and cut out only the area that includes the frame.",
+  "steps": [
+    "Find the red rectangular frame and cut out only the area that includes the frame.",
+    "Read the top, bottom, left and right arrangement of the small color samples inside.",
+    "Divide the inside of the frame into a corresponding number of equal sections and fill them with each color without any gaps.",
+    "Leave the red outer frame."
+  ],
+  "concepts": [
+    "Cutting out the frame",
+    "Expanding the color scheme"
+  ],
+  "observations": [
+    "Training pair 1: 14x14 -> 6x6; colors [0, 2, 3, 5, 6, 8] -> [2, 3, 5, 6, 8]; output dimensions changed.",
+    "Training pair 2: 14x14 -> 10x10; colors [0, 1, 2, 3, 4, 8] -> [1, 2, 3, 4, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

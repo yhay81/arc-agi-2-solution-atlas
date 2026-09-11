@@ -1,0 +1,20 @@
+{
+  "title": "Rotate, flip, and move the two-colored keys to fill the indentations in the locks at the ends.",
+  "summary": "Rotate, flip, and move the two-colored keys to fill the indentations in the locks at the ends. Separate the inside and outside of the lock with two colors, and if it is necessary to turn the lock over, the roles of the two colors can also be exchanged. Multiple keys should have a one-to-one correspondence.",
+  "steps": [
+    "Rotate, flip, and move the two-colored keys to fill the indentations in the locks at the ends.",
+    "Separate the inside and outside of the lock with two colors, and if it is necessary to turn the lock over, replace the roles of the two colors.",
+    "Match multiple keys one-to-one"
+  ],
+  "concepts": [
+    "hole",
+    "parts assembly",
+    "alignment"
+  ],
+  "observations": [
+    "Training pair 1: 18x25 -> 18x25; colors [1, 2, 3, 4] -> [1, 2, 3, 4]; 28 cells changed.",
+    "Training pair 2: 18x25 -> 18x25; colors [1, 2, 3, 4] -> [1, 2, 3, 4]; 28 cells changed.",
+    "Training pair 3: 18x25 -> 18x25; colors [1, 5, 6, 7] -> [1, 5, 6, 7]; 22 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

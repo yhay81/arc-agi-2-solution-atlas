@@ -1,0 +1,19 @@
+{
+  "title": "Extend opposite color-3 quadrants outward with color-8 blocks",
+  "summary": "Extend opposite color-3 quadrants outward with color-8 blocks. This is the training-inferred `extend_diagonal_block_pairs` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `extend_diagonal_block_pairs`: extend opposite color-3 quadrants outward with color-8 blocks"
+  ],
+  "concepts": [
+    "extend",
+    "diagonal",
+    "block",
+    "pairs"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 3] -> [0, 3, 8]; 6 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 3] -> [0, 3, 8]; 4 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 3] -> [0, 3, 8]; 2 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

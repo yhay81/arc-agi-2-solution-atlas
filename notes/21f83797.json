@@ -1,0 +1,18 @@
+{
+  "title": "Color-code rectangles determined by two points",
+  "summary": "Determine the rectangle from the minimum and maximum rows and columns marked in red. Make the entire rows above and below, and the columns to the left and right, red. Color the inside of the rectangle blue and leave the rest of the area blue.",
+  "steps": [
+    "Determine the rectangle from the minimum and maximum rows and columns marked in red.",
+    "Make the entire rows above and below, and the columns to the left and right, red.",
+    "Color the inside of the rectangle blue and leave the rest of the area blue."
+  ],
+  "concepts": [
+    "Define the range from two points",
+    "Color coding inside and outside"
+  ],
+  "observations": [
+    "Training pair 1: 13x13 -> 13x13; colors [0, 2] -> [0, 1, 2]; 67 cells changed.",
+    "Training pair 2: 13x13 -> 13x13; colors [0, 2] -> [0, 1, 2]; 66 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Crop to the bounding box of non-background cells",
+  "summary": "Crop to the bounding box of non-background cells. This is the training-inferred `crop_non_background` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `crop_non_background`: crop to the bounding box of non-background cells"
+  ],
+  "concepts": [
+    "crop",
+    "non",
+    "background"
+  ],
+  "observations": [
+    "Training pair 1: 7x7 -> 2x3; colors [1, 2, 3] -> [0, 2, 3]; output dimensions changed.",
+    "Training pair 2: 5x7 -> 3x3; colors [1, 2, 3] -> [0, 2, 3]; output dimensions changed.",
+    "Training pair 3: 7x6 -> 3x2; colors [1, 5, 6] -> [5, 6]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "final color map: 3 -> 3, 1 -> 0, 2 -> 2, 5 -> 5, 6 -> 6"
+  ]
+}

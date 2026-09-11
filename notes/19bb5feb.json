@@ -1,0 +1,18 @@
+{
+  "title": "Encode colored blocks inside a large rectangular frame as a 2x2 quadrant key",
+  "summary": "Encode colored blocks inside a large rectangular frame as a 2x2 quadrant key. This is the training-inferred `quadrant_color_summary` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `quadrant_color_summary`: encode colored blocks inside a large rectangular frame as a 2x2 quadrant key"
+  ],
+  "concepts": [
+    "quadrant",
+    "color",
+    "summary"
+  ],
+  "observations": [
+    "Training pair 1: 16x15 -> 2x2; colors [0, 1, 2, 3, 8] -> [0, 1, 2, 3]; output dimensions changed.",
+    "Training pair 2: 13x15 -> 2x2; colors [0, 2, 3, 8] -> [0, 2, 3]; output dimensions changed.",
+    "Training pair 3: 14x16 -> 2x2; colors [0, 3, 4, 5, 8] -> [0, 3, 4, 5]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

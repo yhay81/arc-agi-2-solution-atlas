@@ -1,0 +1,25 @@
+{
+  "title": "Classify components by structural features",
+  "summary": "Classify components by structural features. This is the training-inferred `feature_classifier` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `feature_classifier`: classify components by structural features"
+  ],
+  "concepts": [
+    "feature",
+    "classifier"
+  ],
+  "observations": [
+    "Training pair 1: 5x5 -> 3x3; colors [0, 1] -> [0, 5]; output dimensions changed.",
+    "Training pair 2: 5x5 -> 3x3; colors [0, 2] -> [0, 5]; output dimensions changed.",
+    "Training pair 3: 5x5 -> 3x3; colors [0, 3] -> [0, 5]; output dimensions changed.",
+    "Training pair 4: 5x5 -> 3x3; colors [0, 1] -> [0, 5]; output dimensions changed.",
+    "Training pair 5: 5x5 -> 3x3; colors [0, 3] -> [0, 5]; output dimensions changed.",
+    "Training pair 6: 5x5 -> 3x3; colors [0, 2] -> [0, 5]; output dimensions changed.",
+    "Training pair 7: 5x5 -> 3x3; colors [0, 2] -> [0, 5]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "classification feature: single_color",
+    "feature-to-color labels: ('1', [[0, 5, 0], [5, 5, 5], [0, 5, 0]]) x ('2', [[5, 5, 5], [0, 5, 0], [0, 5, 0]]) x ('3', [[0, 0, 5], [0, 0, 5], [5, 5, 5]])"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Peel a monochrome polyomino into one-cell lines and two-cell blocks",
+  "summary": "Peel a monochrome polyomino into one-cell lines and two-cell blocks. The source is a single foreground polyomino on a zero background. At each round, a bounded 2-by-2 terminal block is painted with ``block_color``; then a three-cell terminal line (a center cell with three empty orthogonal neighbours and a two-cell continuation) is painted with ``line_color``. Four rotations of both stencils are considered and removed cells are ignored by subsequent rounds. A one-cell zero border makes the rule well-defined for objects touching the canvas edge. This is a compact geometric peeling rule: it does not retain task coordinates or output examples and is useful for decomposing glyph-like polyominoes into their terminal primitives. This is the training-inferred `peel_line_and_block_layers` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `peel_line_and_block_layers`: peel a monochrome polyomino into one-cell lines and two-cell blocks"
+  ],
+  "concepts": [
+    "peel",
+    "line",
+    "block",
+    "layers"
+  ],
+  "observations": [
+    "Training pair 1: 8x10 -> 8x10; colors [0, 5] -> [0, 2, 8]; 21 cells changed.",
+    "Training pair 2: 9x11 -> 9x11; colors [0, 5] -> [0, 2, 8]; 21 cells changed.",
+    "Training pair 3: 8x9 -> 8x9; colors [0, 5] -> [0, 2, 8]; 14 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "foreground: 5",
+    "line color: 2",
+    "block color: 8"
+  ]
+}

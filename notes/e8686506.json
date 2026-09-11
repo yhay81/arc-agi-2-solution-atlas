@@ -1,0 +1,18 @@
+{
+  "title": "Assemble dense glyph tiles and pack the remaining glyphs into holes",
+  "summary": "Assemble dense glyph tiles and pack the remaining glyphs into holes. The input contains several monochrome glyphs scattered on a common background. The densest, largest bounding-box glyph(s) are the base tile(s), ordered by their input position and stacked vertically. Every other glyph keeps its orientation and is translated into an empty cell of the base mosaic. A placement is accepted only when all of its foreground cells land on currently empty cells; the result is the exact tiling when the remaining holes and glyph cells have equal cardinality. This is the training-inferred `assemble_nested_colored_mosaic` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `assemble_nested_colored_mosaic`: assemble dense glyph tiles and pack the remaining glyphs into holes"
+  ],
+  "concepts": [
+    "assemble",
+    "nested",
+    "colored",
+    "mosaic"
+  ],
+  "observations": [
+    "Training pair 1: 13x13 -> 5x5; colors [1, 3, 4, 6, 8] -> [1, 3, 4, 6]; output dimensions changed.",
+    "Training pair 2: 13x13 -> 8x5; colors [1, 2, 3, 4, 5, 6, 8] -> [1, 2, 4, 5, 6, 8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

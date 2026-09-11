@@ -1,0 +1,19 @@
+{
+  "title": "Create a checkerboard pattern on the inside of the shape",
+  "summary": "Find each colored rectangle, keeping the perimeter one square wide. Starting from the inner top left square, the squares whose rows and columns are even and odd are colored black. Place black on every other square to create a checkered pattern, leaving the original color in between.",
+  "steps": [
+    "Find each colored rectangle, keeping the perimeter one square wide.",
+    "Starting from the inner top left square, the squares whose rows and columns are even and odd are colored black.",
+    "Place black on every other square to create a checkered pattern, leaving the original color in between."
+  ],
+  "concepts": [
+    "separation of inside and outside",
+    "checkered pattern"
+  ],
+  "observations": [
+    "Training pair 1: 13x15 -> 13x15; colors [0, 1, 8] -> [0, 1, 8]; 21 cells changed.",
+    "Training pair 2: 16x15 -> 16x15; colors [0, 2] -> [0, 2]; 24 cells changed.",
+    "Training pair 3: 17x16 -> 17x16; colors [0, 3, 4, 8] -> [0, 3, 4, 8]; 36 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

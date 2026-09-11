@@ -1,0 +1,17 @@
+{
+  "title": "Highlight isolated red cells",
+  "summary": "Recolor red cells with no orthogonally adjacent red neighbor to blue.",
+  "steps": [
+    "Inspect the four orthogonal neighbors of every red cell.",
+    "Recolor the cell blue only when all four positions are non-red or outside the grid."
+  ],
+  "concepts": ["isolation", "orthogonal adjacency"],
+  "observations": [
+    "Training pair 1: 5x4 -> 5x4; colors [0, 2] -> [0, 1, 2]; 1 cells changed.",
+    "Training pair 2: 4x4 -> 4x4; colors [0, 2] -> [0, 1, 2]; 2 cells changed.",
+    "Training pair 3: 3x3 -> 3x3; colors [0, 2] -> [0, 1, 2]; 2 cells changed.",
+    "Training pair 4: 3x3 -> 3x3; colors [0, 2] -> [0, 1, 2]; 1 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": ["isolated red 2 becomes blue 1"]
+}

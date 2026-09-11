@@ -1,0 +1,19 @@
+{
+  "title": "Adjust the height of the stick to the stride length of the diagonal pattern.",
+  "summary": "Read the two vertical bars on the left and right of each color and their height. As you move one row from the left stick to the left and from the right stick to the right, spread the pattern by shifting it up and down by the height of the stick. Squares with overlapping patterns of different colors are marked peach 6.",
+  "steps": [
+    "Read the two vertical bars on the left and right of each color and their height.",
+    "As you move one row from the left stick to the left and from the right stick to the right, spread the pattern by shifting it up and down by the height of the stick.",
+    "Squares with overlapping patterns of different colors are marked peach 6."
+  ],
+  "concepts": [
+    "diagonal repeat",
+    "overlap color"
+  ],
+  "observations": [
+    "Training pair 1: 22x18 -> 22x18; colors [0, 3, 8] -> [0, 3, 8]; 61 cells changed.",
+    "Training pair 2: 23x17 -> 23x17; colors [0, 3, 8] -> [0, 3, 6, 8]; 67 cells changed.",
+    "Training pair 3: 24x19 -> 24x19; colors [0, 3, 8] -> [0, 3, 6, 8]; 63 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Divide the colored scaffolding into vertical bars and horizontal bars, and combine the horizontal bars that connect to the bottom of the vertical bars as a foot.",
+  "summary": "Divide the colored scaffolding into vertical and horizontal bars, and unite the horizontal bars that connect to the bottom of the vertical bars as legs. In the part where the vertical bar rests on the horizontal bar of a different color, think of the tip of the bar as being hidden by one square. Erase the parts of the specified color in the upper left. It is determined that it can be supported not only when it touches the bottom or stationary parts, but also when it is pinched from the left and right, and unsupported parts are dropped one by one. Finally, draw the vertical bar first, then overlap the horizontal bar on top.",
+  "steps": [
+    "Divide the colored scaffolding into vertical bars and horizontal bars, and combine the horizontal bars that connect to the bottom of the vertical bars as a foot.",
+    "In the part where the vertical bar rests on the horizontal bar of a different color, think of the tip of the bar as being hidden by one square.",
+    "Erase the parts of the specified color in the upper left",
+    "It is determined that it can be supported not only when it touches the bottom or stationary parts, but also when it is pinched from the left and right, and drops unsupported parts one row at a time.",
+    "Finally, draw the vertical bar first, then overlap the horizontal bar on top."
+  ],
+  "concepts": [
+    "decrypting the key",
+    "Line feature",
+    "replacement"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 12x12; colors [0, 1, 2, 3, 4, 5, 6, 7, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 9]; 0 cells changed.",
+    "Training pair 2: 12x12 -> 12x12; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 38 cells changed.",
+    "Training pair 3: 12x12 -> 12x12; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 23 cells changed.",
+    "Training pair 4: 12x12 -> 12x12; colors [0, 1, 2, 3, 4, 5, 6, 7] -> [0, 1, 2, 3, 4, 5, 6, 7]; 57 cells changed.",
+    "Training pair 5: 12x12 -> 12x12; colors [0, 1, 2, 3, 4, 5, 6, 7] -> [0, 1, 2, 3, 4, 5, 6, 7]; 56 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

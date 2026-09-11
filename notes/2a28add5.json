@@ -1,0 +1,19 @@
+{
+  "title": "Use only lines with peach 6 dots",
+  "summary": "Use only the rows with peach 6 dots. Count the number of squares other than background 7 to the left and right of that point separately. Centering on the peach position, line up the light blue 8's to the left by the number on the left and to the right by the right number. The other lines are background.",
+  "steps": [
+    "Use only lines with peach 6 dots",
+    "Count the number of squares other than background 7 to the left and right of that point separately.",
+    "Centering on the peach position, line up the light blue 8's to the left by the number on the left and to the right by the right number.",
+    "other lines are background"
+  ],
+  "concepts": [
+    "Noise removal",
+    "Line extraction"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [7, 8]; 51 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [2, 5, 6, 7, 9] -> [7, 8]; 29 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

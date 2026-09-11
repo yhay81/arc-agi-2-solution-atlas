@@ -1,0 +1,20 @@
+{
+  "title": "Connect red → yellow → green with a right angle path",
+  "summary": "From the red dot to the yellow dot, first go horizontally to match the columns, then take the gray path that goes vertically.",
+  "steps": [
+    "From the red dot to the yellow dot, first go horizontally to match the columns, then take the gray path that goes vertically.",
+    "Draw a gray path horizontally and vertically from the yellow point to the green point.",
+    "Leave the three color marks unfilled."
+  ],
+  "concepts": [
+    "specified order",
+    "right angle path"
+  ],
+  "observations": [
+    "Training pair 1: 13x13 -> 13x13; colors [0, 2, 3, 4] -> [0, 2, 3, 4, 5]; 24 cells changed.",
+    "Training pair 2: 13x13 -> 13x13; colors [0, 2, 3, 4] -> [0, 2, 3, 4, 5]; 20 cells changed.",
+    "Training pair 3: 13x13 -> 13x13; colors [0, 2, 3, 4] -> [0, 2, 3, 4, 5]; 20 cells changed.",
+    "Training pair 4: 13x13 -> 13x13; colors [0, 2, 3, 4] -> [0, 2, 3, 4, 5]; 23 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

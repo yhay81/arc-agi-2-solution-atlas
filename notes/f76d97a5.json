@@ -1,0 +1,19 @@
+{
+  "title": "Marker mask other color",
+  "summary": "Marker mask other color. This is the training-inferred `marker_mask_other_color` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `marker_mask_other_color`: marker mask other color"
+  ],
+  "concepts": [
+    "marker",
+    "mask",
+    "other",
+    "color"
+  ],
+  "observations": [
+    "Training pair 1: 5x5 -> 5x5; colors [5, 6] -> [0, 6]; 25 cells changed.",
+    "Training pair 2: 3x3 -> 3x3; colors [4, 5] -> [0, 4]; 9 cells changed.",
+    "Training pair 3: 5x5 -> 5x5; colors [5, 9] -> [0, 9]; 25 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Draw a blue grid every other row and every other column",
+  "summary": "Prepare a board with the same size as the input.",
+  "steps": [
+    "Prepare a board with the same size as the input.",
+    "Make the outer periphery blue, and draw blue lines inside every other row and every other column.",
+    "Color each square remaining between the lines black."
+  ],
+  "concepts": [
+    "periodic lattice",
+    "boundary"
+  ],
+  "observations": [
+    "Training pair 1: 5x5 -> 5x5; colors [0] -> [0, 1]; 21 cells changed.",
+    "Training pair 2: 7x7 -> 7x7; colors [0] -> [0, 1]; 40 cells changed.",
+    "Training pair 3: 9x9 -> 9x9; colors [0] -> [0, 1]; 65 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

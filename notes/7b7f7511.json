@@ -1,0 +1,17 @@
+{
+  "title": "Extract the smallest repeating tile",
+  "summary": "Extract the smallest repeating tile. This is the training-inferred `fundamental_tile` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `fundamental_tile`: extract the smallest repeating tile"
+  ],
+  "concepts": [
+    "fundamental",
+    "tile"
+  ],
+  "observations": [
+    "Training pair 1: 3x6 -> 3x3; colors [4, 6, 8] -> [4, 6, 8]; output dimensions changed.",
+    "Training pair 2: 4x8 -> 4x4; colors [1, 2, 3] -> [1, 2, 3]; output dimensions changed.",
+    "Training pair 3: 6x2 -> 3x2; colors [2, 3, 4] -> [2, 3, 4]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

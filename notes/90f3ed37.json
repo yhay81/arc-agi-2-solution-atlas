@@ -1,0 +1,19 @@
+{
+  "title": "Continue each clipped eight-pattern toward the right in color one",
+  "summary": "Continue each clipped eight-pattern toward the right in color one. A horizontal run of eights is completed on its own row. When the run is part of a one-cell diagonal staircase, the continuation starts on the following row and one column beyond the staircase tip. Patterns that already reach the right edge need no extension. Components are detected structurally, so the rule remains independent of task-specific positions. This is the training-inferred `extend_eight_patterns_with_one` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `extend_eight_patterns_with_one`: continue each clipped eight-pattern toward the right in color one"
+  ],
+  "concepts": [
+    "extend",
+    "eight",
+    "patterns",
+    "one"
+  ],
+  "observations": [
+    "Training pair 1: 15x10 -> 15x10; colors [0, 8] -> [0, 1, 8]; 21 cells changed.",
+    "Training pair 2: 15x10 -> 15x10; colors [0, 8] -> [0, 1, 8]; 13 cells changed.",
+    "Training pair 3: 15x10 -> 15x10; colors [0, 8] -> [0, 1, 8]; 12 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

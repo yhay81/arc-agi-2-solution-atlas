@@ -1,0 +1,19 @@
+{
+  "title": "shift the top and bottom of the shape in the opposite direction",
+  "summary": "Extract connected shapes other than the background one by one. Distinguish the upper and lower colors of each shape. Even if each set of shapes has a different color, they are treated the same way. Move all the squares of the upper color to the left one square, move all the squares of the lower color one square to the right, and return the empty space to the background.",
+  "steps": [
+    "Extract connected shapes other than the background one by one.",
+    "Distinguish the upper and lower colors of each shape. Even if each set of figures has a different color, they are treated the same way.",
+    "Move all the squares of the upper color to the left one square, move all the squares of the lower color one square to the right, and return the empty space to the background."
+  ],
+  "concepts": [
+    "decomposition into parts",
+    "movement in the opposite direction"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 12x12; colors [1, 2, 4] -> [1, 2, 4]; 18 cells changed.",
+    "Training pair 2: 16x12 -> 16x12; colors [3, 6, 8] -> [3, 6, 8]; 20 cells changed.",
+    "Training pair 3: 12x13 -> 12x13; colors [2, 3, 6, 7, 8] -> [2, 3, 6, 7, 8]; 18 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

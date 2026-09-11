@@ -1,0 +1,20 @@
+{
+  "title": "Make the number of colors into concentric rectangles",
+  "summary": "Count the number of squares with colors other than black and arrange them in descending order. Create a square with the largest number on each side. Apply a square layer with the most color on the outside, then the next color on the inside.",
+  "steps": [
+    "Count the number of squares with colors other than black and arrange them in descending order.",
+    "Create a square with the largest number on each side.",
+    "Apply a square layer with the most color on the outside, then the next color on the inside."
+  ],
+  "concepts": [
+    "Reading length",
+    "concentric frame",
+    "order"
+  ],
+  "observations": [
+    "Training pair 1: 21x22 -> 6x6; colors [0, 1, 3, 6] -> [1, 3, 6]; output dimensions changed.",
+    "Training pair 2: 23x29 -> 5x5; colors [0, 2, 3, 8] -> [2, 3, 8]; output dimensions changed.",
+    "Training pair 3: 24x20 -> 8x8; colors [0, 3, 4, 7, 8] -> [3, 4, 7, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

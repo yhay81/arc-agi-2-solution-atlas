@@ -1,0 +1,18 @@
+{
+  "title": "Extend the diagonal pattern to twice the height and width of the board",
+  "summary": "Find the minimum repetition period in the main diagonal direction from the input, and continue to double the length and width.",
+  "steps": [
+    "Find the minimum repetition period in the main diagonal direction from the input, and continue to double the length and width."
+  ],
+  "concepts": [
+    "diagonal period",
+    "extension",
+    "Expanding dimensions"
+  ],
+  "observations": [
+    "Training pair 1: 5x5 -> 10x10; colors [0, 2, 5] -> [0, 2, 5]; output dimensions changed.",
+    "Training pair 2: 6x6 -> 12x12; colors [0, 1, 2, 3, 4] -> [0, 1, 2, 3, 4]; output dimensions changed.",
+    "Training pair 3: 8x8 -> 16x16; colors [0, 1, 6] -> [0, 1, 6]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

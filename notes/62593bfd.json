@@ -1,0 +1,20 @@
+{
+  "title": "Compare shapes ignoring color",
+  "summary": "Compare shapes, ignoring color. If a shape has a companion that becomes the same shape when rotated or turned over, it will move to the top edge while maintaining its horizontal position. Shapes with no friends are moved to the bottom. Keep the shape and color as before moving.",
+  "steps": [
+    "Compare shapes ignoring color",
+    "If a shape has a companion that becomes the same shape when rotated or flipped, it will move to the top edge while maintaining its horizontal position.",
+    "Shapes without friends move to the bottom.",
+    "Keep the shape and color as before moving"
+  ],
+  "concepts": [
+    "color frequency",
+    "Column alignment",
+    "move"
+  ],
+  "observations": [
+    "Training pair 1: 28x19 -> 28x19; colors [0, 1, 2, 3, 4] -> [0, 1, 2, 3, 4]; 60 cells changed.",
+    "Training pair 2: 30x30 -> 30x30; colors [1, 2, 3, 4, 5, 7, 9] -> [1, 2, 3, 4, 5, 7, 9]; 64 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

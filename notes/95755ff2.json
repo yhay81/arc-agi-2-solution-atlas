@@ -1,0 +1,19 @@
+{
+  "title": "Project colored markers through the interior of a diamond frame",
+  "summary": "Project colored markers through the interior of a diamond frame. A diamond made from color ``2`` separates an empty interior from four outer legend regions. A nonzero, non-frame cell in one of those regions is a directional marker: its color is carried along the corresponding row or column into the interior. Existing interior objects are blockers, so the ray stops immediately before the first such object. Frame cells and all original nonzero cells are preserved. The frame is discovered from the input rather than relying on a fixed canvas size. This keeps the operation applicable to the same geometric construction at other odd dimensions while rejecting unrelated grids. This is the training-inferred `project_diamond_edge_markers` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `project_diamond_edge_markers`: project colored markers through the interior of a diamond frame"
+  ],
+  "concepts": [
+    "project",
+    "diamond",
+    "edge",
+    "markers"
+  ],
+  "observations": [
+    "Training pair 1: 11x11 -> 11x11; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 19 cells changed.",
+    "Training pair 2: 11x11 -> 11x11; colors [0, 1, 2, 4, 5, 6, 8, 9] -> [0, 1, 2, 4, 5, 6, 8, 9]; 31 cells changed.",
+    "Training pair 3: 11x11 -> 11x11; colors [0, 1, 2, 9] -> [0, 1, 2, 9]; 12 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

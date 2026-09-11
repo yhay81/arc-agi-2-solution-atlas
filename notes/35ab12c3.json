@@ -1,0 +1,21 @@
+{
+  "title": "Connect axis/diagonal-aligned points and copy nearby polygon shapes",
+  "summary": "Connect axis/diagonal-aligned points and copy nearby polygon shapes. Sparse ARC scenes use colors as independent point sets. Points joined by a horizontal, vertical, or 45-degree segment form a line drawing. A singleton color is a pointer: it copies the nearest non-collinear drawing with its nearest point anchored at the singleton and recolors the copy. All geometry is derived from the current grid. This is the training-inferred `connect_aligned_points_and_copy_nearest_shape` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `connect_aligned_points_and_copy_nearest_shape`: connect axis/diagonal-aligned points and copy nearby polygon shapes"
+  ],
+  "concepts": [
+    "connect",
+    "aligned",
+    "points",
+    "copy",
+    "nearest",
+    "shape"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 20x20; colors [0, 1, 3, 4, 6, 7, 8] -> [0, 1, 3, 4, 6, 7, 8]; 62 cells changed.",
+    "Training pair 2: 18x18 -> 18x18; colors [0, 1, 3, 4, 6, 8] -> [0, 1, 3, 4, 6, 8]; 24 cells changed.",
+    "Training pair 3: 15x15 -> 15x15; colors [0, 1, 2, 4, 7, 8] -> [0, 1, 2, 4, 7, 8]; 93 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Find square shapes of the same color in two areas",
+  "summary": "Find square shapes of the same color in two areas. Change the part that protrudes 1 square from the main body of the square and the 1 square indentation on the side into a 2 square mark that straddles the border. The mark should be the color of the other area.",
+  "steps": [
+    "Find square shapes of the same color in two areas",
+    "Change the part that protrudes 1 square from the main body of the square and the 1 square indentation on the side into a 2 square mark that straddles the border.",
+    "Set the mark to the color of the other area"
+  ],
+  "concepts": [
+    "area operations",
+    "Color compatible",
+    "boundary"
+  ],
+  "observations": [
+    "Training pair 1: 23x23 -> 23x23; colors [1, 2, 4, 8] -> [1, 2, 4, 8]; 14 cells changed.",
+    "Training pair 2: 23x23 -> 23x23; colors [1, 2, 4, 8] -> [1, 2, 4, 8]; 10 cells changed.",
+    "Training pair 3: 20x20 -> 20x20; colors [1, 2, 3, 8] -> [1, 2, 3, 8]; 10 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

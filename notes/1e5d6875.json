@@ -1,0 +1,17 @@
+{
+  "title": "Fill in the gaps in the L shape with complementary colors of each original color.",
+  "summary": "Copy the 2×2 L shape with complementary color 4/3 by moving gray 5 to the missing corner and red 2 diagonally to the opposite direction.",
+  "steps": [
+    "Copy the 2×2 L shape with complementary color 4/3 by moving gray 5 to the missing corner and red 2 diagonally to the opposite direction."
+  ],
+  "concepts": [
+    "local shape",
+    "complement",
+    "Color compatible"
+  ],
+  "observations": [
+    "Training pair 1: 8x8 -> 8x8; colors [2, 5, 7] -> [2, 3, 4, 5, 7]; 6 cells changed.",
+    "Training pair 2: 8x8 -> 8x8; colors [2, 5, 7] -> [2, 3, 4, 5, 7]; 12 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Choose a color that appears the same number of times as the landmark",
+  "summary": "Select a lower color with the same frequency as the number n in the upper end 8, and draw a bar of height n directly above the gray line.",
+  "steps": [
+    "Select a lower color with the same frequency as the number n in the upper end 8, and draw a bar of height n directly above the gray line."
+  ],
+  "concepts": [
+    "frequency",
+    "comparison of numbers",
+    "bar graph"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 1, 2, 3, 5, 8] -> [0, 1, 2, 3, 5, 8]; 4 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 1, 2, 4, 5, 6, 8, 9] -> [0, 1, 2, 4, 5, 6, 8, 9]; 1 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 1, 3, 4, 5, 6, 8] -> [0, 1, 3, 4, 5, 6, 8]; 18 cells changed.",
+    "Training pair 4: 10x10 -> 10x10; colors [0, 1, 2, 5, 8] -> [0, 1, 2, 5, 8]; 16 cells changed.",
+    "Training pair 5: 10x10 -> 10x10; colors [0, 3, 4, 5, 6, 7, 8] -> [0, 3, 4, 5, 6, 7, 8]; 9 cells changed.",
+    "Training pair 6: 10x10 -> 10x10; colors [0, 1, 3, 4, 5, 8] -> [0, 1, 3, 4, 5, 8]; 2 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

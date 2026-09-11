@@ -1,0 +1,21 @@
+{
+  "title": "Layer 4 sections in order of color priority",
+  "summary": "Overlap the 4 sections separated by yellow 4 partitions in the same position. At the same position, the first color is adopted in the order of light blue 8, orange 7, brown 9, red 2, and black 0.",
+  "steps": [
+    "Overlap the 4 sections separated by yellow 4 partitions in the same position.",
+    "At the same position, the first color is adopted in the order of light blue 8, orange 7, brown 9, red 2, and black 0."
+  ],
+  "concepts": [
+    "superposition",
+    "priority"
+  ],
+  "observations": [
+    "Training pair 1: 11x9 -> 5x4; colors [0, 2, 4, 7, 8, 9] -> [0, 2, 7, 8, 9]; output dimensions changed.",
+    "Training pair 2: 11x9 -> 5x4; colors [0, 2, 4, 7, 8, 9] -> [0, 2, 7, 8, 9]; output dimensions changed.",
+    "Training pair 3: 11x9 -> 5x4; colors [0, 2, 4, 7, 8, 9] -> [2, 7, 8, 9]; output dimensions changed.",
+    "Training pair 4: 11x9 -> 5x4; colors [0, 2, 4, 7, 8, 9] -> [2, 7, 8, 9]; output dimensions changed.",
+    "Training pair 5: 11x9 -> 5x4; colors [0, 2, 4, 7, 8, 9] -> [0, 2, 7, 8, 9]; output dimensions changed.",
+    "Training pair 6: 11x9 -> 5x4; colors [0, 2, 4, 7, 8, 9] -> [2, 7, 8, 9]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

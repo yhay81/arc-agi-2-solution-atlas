@@ -1,0 +1,19 @@
+{
+  "title": "A road that changes directions in blue and green",
+  "summary": "Proceed from the red starting point, avoid the blue stick on one side and the green stick on the other side, then resume going straight in the original direction.",
+  "steps": [
+    "Proceed from the red starting point, avoid the blue stick on one side and the green stick on the other side, then resume going straight in the original direction."
+  ],
+  "concepts": [
+    "change of direction",
+    "conditional branch",
+    "route"
+  ],
+  "observations": [
+    "Training pair 1: 22x12 -> 22x12; colors [0, 1, 2, 3] -> [0, 1, 2, 3]; 38 cells changed.",
+    "Training pair 2: 22x12 -> 22x12; colors [0, 1, 2, 3] -> [0, 1, 2, 3]; 36 cells changed.",
+    "Training pair 3: 13x19 -> 13x19; colors [0, 1, 2, 3] -> [0, 1, 2, 3]; 28 cells changed.",
+    "Training pair 4: 12x22 -> 12x22; colors [0, 1, 2, 3] -> [0, 1, 2, 3]; 31 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

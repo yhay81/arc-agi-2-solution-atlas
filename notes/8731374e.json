@@ -1,0 +1,20 @@
+{
+  "title": "Detect the dominant two-color rectangle before completing its crosshatch",
+  "summary": "Detect the dominant two-color rectangle before completing its crosshatch. This is the training-inferred `auto_complete_crosshatch_in_dense_rectangle` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `auto_complete_crosshatch_in_dense_rectangle`: detect the dominant two-color rectangle before completing its crosshatch"
+  ],
+  "concepts": [
+    "auto",
+    "complete",
+    "crosshatch",
+    "dense",
+    "rectangle"
+  ],
+  "observations": [
+    "Training pair 1: 27x23 -> 10x9; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [1, 4]; output dimensions changed.",
+    "Training pair 2: 17x23 -> 7x6; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [1, 2]; output dimensions changed.",
+    "Training pair 3: 16x17 -> 6x8; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [2, 8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

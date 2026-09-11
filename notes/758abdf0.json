@@ -1,0 +1,23 @@
+{
+  "title": "The short light blue stretches, and the long light blue falls to the opposite end and turns black.",
+  "summary": "Examine the light blue sticks that grew from the black wall, one by one, perpendicular to the wall. If the length is 1, stretch it to length 2 while it is attached to the wall. If the length is 2, move away from the wall, and when you reach the opposite end, make both squares black.",
+  "steps": [
+    "Find the black wall that runs along one side of the board and decide which direction to go towards the inside of the board.",
+    "In each row or column perpendicular to the wall, count how many squares of light blue extend from the wall. Count them separately even if they are connected horizontally to the next stick.",
+    "Leave the original light blue color for the length 1 stick, and add one square of light blue to the side farthest from the wall.",
+    "The length 2 stick returns the original two squares to orange. Blacken the two squares at opposite ends of the same row or column.",
+    "Keep the black walls and other backgrounds."
+  ],
+  "concepts": [
+    "Direction relative to the wall",
+    "Branching by length",
+    "elongation",
+    "move to edge",
+    "Color change after moving"
+  ],
+  "observations": [
+    "Training pair 1: 16x8 -> 16x8; colors [0, 7, 8] -> [0, 7, 8]; 12 cells changed.",
+    "Training pair 2: 8x16 -> 8x16; colors [0, 7, 8] -> [0, 7, 8]; 7 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

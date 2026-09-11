@@ -1,0 +1,19 @@
+{
+  "title": "Project only rows/columns containing a repeated marker color",
+  "summary": "Project only rows/columns containing a repeated marker color. Sparse noise is discarded. A color is treated as a horizontal guide when it occurs at least twice in one row, and as a vertical guide when it occurs at least twice in one column. This keeps isolated occurrences as clues, while turning the repeated endpoints into complete grid lines. This is the training-inferred `project_matching_marker_lines` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `project_matching_marker_lines`: project only rows/columns containing a repeated marker color"
+  ],
+  "concepts": [
+    "project",
+    "matching",
+    "marker",
+    "lines"
+  ],
+  "observations": [
+    "Training pair 1: 13x20 -> 13x20; colors [0, 1, 2, 8] -> [0, 2]; 55 cells changed.",
+    "Training pair 2: 11x22 -> 11x22; colors [0, 2, 3, 5] -> [0, 3]; 69 cells changed.",
+    "Training pair 3: 15x17 -> 15x17; colors [0, 4, 5, 8] -> [0, 8]; 64 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

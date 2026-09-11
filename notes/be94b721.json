@@ -1,0 +1,18 @@
+{
+  "title": "Extract the largest connected component",
+  "summary": "Extract the largest connected component. This is the training-inferred `largest_component` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `largest_component`: extract the largest connected component"
+  ],
+  "concepts": [
+    "largest",
+    "component"
+  ],
+  "observations": [
+    "Training pair 1: 6x11 -> 4x3; colors [0, 2, 7, 8] -> [0, 8]; output dimensions changed.",
+    "Training pair 2: 5x10 -> 3x2; colors [0, 3, 4, 6] -> [4]; output dimensions changed.",
+    "Training pair 3: 7x9 -> 3x3; colors [0, 2, 7, 8] -> [0, 2]; output dimensions changed.",
+    "Training pair 4: 7x13 -> 4x3; colors [0, 1, 2, 3] -> [0, 2]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

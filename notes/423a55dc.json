@@ -1,0 +1,19 @@
+{
+  "title": "Increase the shift amount for each row by 1",
+  "summary": "Fix the last non-empty line, shift each line above to the left by the distance from the bottom edge, and cut out the range.",
+  "steps": [
+    "Fix the last non-empty line, shift each line above to the left by the distance from the bottom edge, and cut out the range."
+  ],
+  "concepts": [
+    "gradual shift",
+    "Row-by-row conversion"
+  ],
+  "observations": [
+    "Training pair 1: 11x13 -> 11x13; colors [0, 2] -> [0, 2]; 25 cells changed.",
+    "Training pair 2: 10x11 -> 10x11; colors [0, 6] -> [0, 6]; 16 cells changed.",
+    "Training pair 3: 10x13 -> 10x13; colors [0, 3] -> [0, 3]; 20 cells changed.",
+    "Training pair 4: 7x7 -> 7x7; colors [0, 8] -> [0, 8]; 2 cells changed.",
+    "Training pair 5: 10x11 -> 10x11; colors [0, 8] -> [0, 8]; 17 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

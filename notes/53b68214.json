@@ -1,0 +1,19 @@
+{
+  "title": "Find the period of parallel movement and extend it downward",
+  "summary": "When the pattern is shifted downward, find the amount of movement that matches the color of all the overlapping colored squares. Also check for deviations to the left and right. The candidate with the most matching and overlapping points is selected, and if there is a tie, a small downward movement and a small horizontal movement are given priority. Keep the width of the input and repeat the movement to extend the pattern to a height of 10 squares.",
+  "steps": [
+    "When the pattern is shifted downward, find the amount of movement that matches the color of all the overlapping colored squares. Also check for deviations to the left and right.",
+    "The candidate with the most matching and overlapping points is selected, and if there is a tie, a small downward movement and a small horizontal movement are given priority.",
+    "Keep the width of the input and repeat the movement to extend the pattern to a height of 10 squares."
+  ],
+  "concepts": [
+    "period of parallel movement",
+    "extension of pattern"
+  ],
+  "observations": [
+    "Training pair 1: 8x10 -> 10x10; colors [0, 2] -> [0, 2]; output dimensions changed.",
+    "Training pair 2: 5x10 -> 10x10; colors [0, 3] -> [0, 3]; output dimensions changed.",
+    "Training pair 3: 6x10 -> 10x10; colors [0, 1] -> [0, 1]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

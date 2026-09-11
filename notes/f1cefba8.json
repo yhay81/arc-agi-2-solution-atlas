@@ -1,0 +1,19 @@
+{
+  "title": "Project sentinel lines from a colored block through a surrounding panel",
+  "summary": "Project sentinel lines from a colored block through a surrounding panel. A panel is a large axis-aligned rectangle of one color containing a second-color block. The short marker rows at the block's top/bottom and the widest marker row identify vertical and horizontal guide lines. The marker cells lying on those guides are cleared back to the panel color; the remaining marker pattern is preserved. The guides are also drawn in the exterior margin, preserving the panel itself. This is the training-inferred `project_inner_marker_lines` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `project_inner_marker_lines`: project sentinel lines from a colored block through a surrounding panel"
+  ],
+  "concepts": [
+    "project",
+    "inner",
+    "marker",
+    "lines"
+  ],
+  "observations": [
+    "Training pair 1: 15x17 -> 15x17; colors [0, 1, 4] -> [0, 1, 4]; 36 cells changed.",
+    "Training pair 2: 19x13 -> 19x13; colors [0, 2, 8] -> [0, 2, 8]; 40 cells changed.",
+    "Training pair 3: 16x18 -> 16x18; colors [0, 2, 3] -> [0, 2, 3]; 27 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

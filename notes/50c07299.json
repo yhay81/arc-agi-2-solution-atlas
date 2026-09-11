@@ -1,0 +1,23 @@
+{
+  "title": "Draw a northeast diagonal from the first foreground point",
+  "summary": "Treat the most frequent color as background. Count every foreground point, choose the first point in row-major order, discard the original point set, and draw the chosen point's color northeast for that count plus one steps, clipped at the grid edge.",
+  "steps": [
+    "Identify the modal background and count all remaining points.",
+    "Choose the topmost, then leftmost, foreground point as the colored seed.",
+    "Starting one cell northeast of the seed, draw the diagonal within the grid and omit the original points."
+  ],
+  "concepts": [
+    "diagonal projection",
+    "foreground count",
+    "row-major seed"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [2, 7] -> [2, 7]; 5 cells changed.",
+    "Training pair 2: 16x16 -> 16x16; colors [2, 7] -> [2, 7]; 3 cells changed.",
+    "Training pair 3: 16x16 -> 16x16; colors [2, 7] -> [2, 7]; 7 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs",
+  "parameters": [
+    "Infer the background, seed color, seed position, and path length from the grid."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Stamp a learned neighbourhood around every matching panel center",
+  "summary": "Stamp a learned neighbourhood around every matching panel center. A regular lattice of solid panels contains one complete example: a center panel of one color surrounded at fixed offsets by panels of another color. Other panels of the same center color are incomplete copies of that motif; fill their missing foreground neighbours while preserving all existing cells. This is the training-inferred `propagate_panel_neighborhoods` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `propagate_panel_neighborhoods`: stamp a learned neighbourhood around every matching panel center"
+  ],
+  "concepts": [
+    "propagate",
+    "panel",
+    "neighborhoods"
+  ],
+  "observations": [
+    "Training pair 1: 27x27 -> 27x27; colors [0, 3, 4, 6] -> [0, 3, 4, 6]; 54 cells changed.",
+    "Training pair 2: 24x24 -> 24x24; colors [0, 3, 6, 8] -> [0, 3, 6, 8]; 48 cells changed.",
+    "Training pair 3: 27x27 -> 27x27; colors [0, 2, 4, 8] -> [0, 2, 4, 8]; 99 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Separate the four sections with blue crosses",
+  "summary": "Separate the four sections with blue crosses. Use the red square decorated section as a sample. Scale the decoration to match the size of the other red squares, and mirror it to match the left, right, top, and bottom directions as seen from the cross.",
+  "steps": [
+    "Separate the four sections with blue crosses",
+    "Use the red square decorated section as a sample.",
+    "Scale the decoration to match the size of the other red squares, and mirror it according to the left, right, top, and bottom directions seen from the cross."
+  ],
+  "concepts": [
+    "legend",
+    "direction",
+    "edging"
+  ],
+  "observations": [
+    "Training pair 1: 27x27 -> 27x27; colors [1, 2, 3, 4, 8] -> [1, 2, 3, 4, 8]; 28 cells changed.",
+    "Training pair 2: 27x27 -> 27x27; colors [1, 2, 3, 4, 8, 9] -> [1, 2, 3, 4, 8, 9]; 54 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

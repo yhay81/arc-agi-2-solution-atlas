@@ -1,0 +1,19 @@
+{
+  "title": "Repeat a sparse top row while spreading each marker on alternating rows",
+  "summary": "Repeat a sparse top row while spreading each marker on alternating rows. This is the training-inferred `repeat_top_markers_as_diagonal_stripes` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `repeat_top_markers_as_diagonal_stripes`: repeat a sparse top row while spreading each marker on alternating rows"
+  ],
+  "concepts": [
+    "repeat",
+    "top",
+    "markers",
+    "diagonal",
+    "stripes"
+  ],
+  "observations": [
+    "Training pair 1: 6x7 -> 6x7; colors [0, 4] -> [0, 4]; 8 cells changed.",
+    "Training pair 2: 6x10 -> 6x10; colors [0, 2, 8] -> [0, 2, 8]; 16 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

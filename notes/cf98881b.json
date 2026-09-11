@@ -1,0 +1,21 @@
+{
+  "title": "Overlay three equal-width panels separated by uniform marker columns",
+  "summary": "Overlay three equal-width panels separated by uniform marker columns. This is the training-inferred `overlay_three_separated_panels` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `overlay_three_separated_panels`: overlay three equal-width panels separated by uniform marker columns"
+  ],
+  "concepts": [
+    "overlay",
+    "three",
+    "separated",
+    "panels"
+  ],
+  "observations": [
+    "Training pair 1: 4x14 -> 4x4; colors [0, 1, 2, 4, 9] -> [0, 1, 4, 9]; output dimensions changed.",
+    "Training pair 2: 4x14 -> 4x4; colors [0, 1, 2, 4, 9] -> [0, 1, 4, 9]; output dimensions changed.",
+    "Training pair 3: 4x14 -> 4x4; colors [0, 1, 2, 4, 9] -> [0, 1, 4, 9]; output dimensions changed.",
+    "Training pair 4: 4x14 -> 4x4; colors [0, 1, 2, 4, 9] -> [0, 1, 4]; output dimensions changed.",
+    "Training pair 5: 4x14 -> 4x4; colors [0, 1, 2, 4, 9] -> [0, 1, 4, 9]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Read the correspondence table between small symbols for each color and horizontal position from examples.",
+  "summary": "Read the correspondence table between small symbols for each color and horizontal position from the examples. Erases the old input line and draws a line and symbol of that color to the line specified by the color marks at both ends.",
+  "steps": [
+    "Read the correspondence table between small symbols for each color and horizontal position from examples.",
+    "Erase the old input line and draw a line and symbol of that color to the line specified by the color marks at both ends."
+  ],
+  "concepts": [
+    "signal at both ends",
+    "Color code",
+    "horizontal line"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 20x20; colors [0, 6, 7, 9] -> [0, 7, 9]; 53 cells changed.",
+    "Training pair 2: 20x20 -> 20x20; colors [0, 1, 6, 7] -> [0, 6, 7]; 49 cells changed.",
+    "Training pair 3: 20x20 -> 20x20; colors [0, 2, 5, 7] -> [0, 2, 5]; 48 cells changed.",
+    "Training pair 4: 20x20 -> 20x20; colors [0, 1, 2, 3] -> [0, 1, 2]; 41 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Swap two colors for each shape",
+  "summary": "Divide everything other than black into shapes using top, bottom, left and right connections. At this time, do not divide by color difference. Swap the two colors that make up each shape, keeping the black background and the shape's position.",
+  "steps": [
+    "Divide everything other than black into shapes using top, bottom, left and right connections. At this time, do not divide by color difference.",
+    "Swap the two colors that make up each shape, keeping the black background and the shape's position."
+  ],
+  "concepts": [
+    "local color exchange"
+  ],
+  "observations": [
+    "Training pair 1: 7x7 -> 7x7; colors [0, 5, 8] -> [0, 5, 8]; 9 cells changed.",
+    "Training pair 2: 13x10 -> 13x10; colors [0, 2, 3, 4, 6, 8] -> [0, 2, 3, 4, 6, 8]; 27 cells changed.",
+    "Training pair 3: 12x12 -> 12x12; colors [0, 1, 2, 3, 4, 5, 6, 8] -> [0, 1, 2, 3, 4, 5, 6, 8]; 36 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

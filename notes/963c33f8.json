@@ -1,0 +1,23 @@
+{
+  "title": "Drop colored columns under gravity",
+  "summary": "Split the top block into columns. Brown-only columns fall to the floor, while a column containing blue stops immediately above the first gray obstacle.",
+  "steps": [
+    "Remove the three-column brown-and-blue block from the top.",
+    "Drop each column independently, using gray as a stop only for a blue-tipped column."
+  ],
+  "concepts": [
+    "gravity",
+    "obstacle",
+    "column"
+  ],
+  "observations": [
+    "Training pair 1 demonstrates both floor and obstacle landings.",
+    "Training pair 2 contains two missing gray cells in the raw upstream output; the reviewed correction restores them.",
+    "Training pair 3 contains a horizontally shifted falling column in the raw upstream output; the reviewed correction restores vertical motion."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "Background is color 7, obstacle is color 5, brown is 9, and blue is 1."
+  ],
+  "limitations": "The semantic gravity rule is unambiguous on the corrected examples; eleven reviewed cell corrections across this task and b74ca5d1 are recorded separately."
+}

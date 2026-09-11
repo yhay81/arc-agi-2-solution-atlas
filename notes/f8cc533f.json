@@ -1,0 +1,22 @@
+{
+  "title": "Compare flowers of the same shape to compensate for defects",
+  "summary": "Flowers of different colors have the same shape and are symmetrical in eight directions. Estimate a common completed shape from multiple shapes and fill in missing places.",
+  "steps": [
+    "Separate the shapes by color and find the original side length from the largest circumscribed width and height.",
+    "Rotate and reflect the figures whose full width and height remain to collect a common symmetrical completed form.",
+    "Even if the edges are missing and the shape is reduced to a circumscribed rectangle, it will be aligned to the position that matches the completed shape.",
+    "Fill in all the squares of the completed shape with the original color of each shape."
+  ],
+  "concepts": [
+    "Commonality between shapes",
+    "8-way symmetry",
+    "alignment",
+    "complement"
+  ],
+  "observations": [
+    "Training pair 1: 19x19 -> 19x19; colors [1, 2, 3, 4, 8] -> [1, 2, 3, 4, 8]; 11 cells changed.",
+    "Training pair 2: 11x19 -> 11x19; colors [1, 2, 4] -> [1, 2, 4]; 7 cells changed.",
+    "Training pair 3: 11x19 -> 11x19; colors [2, 3, 4, 8] -> [2, 3, 4, 8]; 7 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Continue a color-8 diagonal to a color-2 barrier and reflect it",
+  "summary": "Continue a color-8 diagonal to a color-2 barrier and reflect it. This is the training-inferred `bounce_diagonal_off_two_barrier` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `bounce_diagonal_off_two_barrier`: continue a color-8 diagonal to a color-2 barrier and reflect it"
+  ],
+  "concepts": [
+    "bounce",
+    "diagonal",
+    "off",
+    "two",
+    "barrier"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 12x12; colors [0, 2, 8] -> [0, 2, 3, 8]; 9 cells changed.",
+    "Training pair 2: 12x12 -> 12x12; colors [0, 2, 8] -> [0, 2, 3, 8]; 10 cells changed.",
+    "Training pair 3: 12x12 -> 12x12; colors [0, 2, 8] -> [0, 2, 3, 8]; 9 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

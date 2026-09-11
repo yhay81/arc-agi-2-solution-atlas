@@ -1,0 +1,18 @@
+{
+  "title": "Cycle header rows",
+  "summary": "Cycle header rows. This is the training-inferred `cycle_header_rows` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `cycle_header_rows`: cycle header rows"
+  ],
+  "concepts": [
+    "cycle",
+    "header",
+    "rows"
+  ],
+  "observations": [
+    "Training pair 1: 10x4 -> 10x4; colors [0, 1, 2, 3, 4, 5] -> [1, 2, 3, 4, 5]; 32 cells changed.",
+    "Training pair 2: 8x3 -> 8x3; colors [0, 1, 2, 4, 5] -> [1, 2, 4, 5]; 18 cells changed.",
+    "Training pair 3: 6x2 -> 6x2; colors [0, 3, 5, 8] -> [3, 5, 8]; 8 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Read the two different color marks that touch the light blue swatch",
+  "summary": "Read the two different color marks that touch the light blue swatch. The color of the farthest mark represents the point to be replaced, and the color of the nearest mark represents the color to be drawn. Copy the position one step forward from the nearest mark to the sample side, overlapping the target point, and erase the sample and mark for explanation. Samples of straight lines that line up in tandem are separated by columns for each command.",
+  "steps": [
+    "Read the two different color marks that touch the light blue swatch",
+    "The color of the far mark represents the point to be replaced, and the color of the near mark represents the color to draw.",
+    "Copy the position one step forward from the nearest mark to the sample side, overlapping the target point, and erase the sample and mark for explanation.",
+    "Separate samples of straight lines that line up in tandem by columns for each command."
+  ],
+  "concepts": [
+    "neighborhood reference",
+    "local features",
+    "unresolved"
+  ],
+  "observations": [
+    "Training pair 1: 5x5 -> 5x5; colors [0, 1, 2, 8] -> [0, 2]; 11 cells changed.",
+    "Training pair 2: 15x15 -> 15x15; colors [0, 2, 4, 6, 7, 8] -> [0, 2, 4, 6, 7]; 80 cells changed.",
+    "Training pair 3: 20x20 -> 20x20; colors [0, 1, 2, 4, 7, 8] -> [0, 2, 7]; 83 cells changed.",
+    "Training pair 4: 8x8 -> 8x8; colors [0, 1, 2, 8] -> [0, 1, 2]; 19 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

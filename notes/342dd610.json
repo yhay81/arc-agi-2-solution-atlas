@@ -1,0 +1,21 @@
+{
+  "title": "Move the point in a fixed direction and distance for each color",
+  "summary": "Hypothesis of moving the color points of the light blue background: blue to the right 1, red to the left 2, orange to the top 2, and dark red to the bottom 2.",
+  "steps": [
+    "Extract each color point",
+    "Move Blue 1 one row to the right, Red 2 two rows to the left, Orange 7 to two rows up, and Orange 9 to two rows down.",
+    "Return the original position to background 8"
+  ],
+  "concepts": [
+    "move from color",
+    "direction",
+    "fixed distance"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [7, 8] -> [7, 8]; 4 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [2, 8] -> [2, 8]; 4 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [8, 9] -> [8, 9]; 2 cells changed.",
+    "Training pair 4: 10x10 -> 10x10; colors [1, 8] -> [1, 8]; 4 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

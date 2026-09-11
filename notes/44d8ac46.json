@@ -1,0 +1,25 @@
+{
+  "title": "Fill zero interiors of every axis-aligned square frame",
+  "summary": "Fill zero interiors of every axis-aligned square frame. Rectangular frames whose interior is not square are left untouched. Any non-zero cells already inside a square are preserved; only interior holes are painted with ``fill``. This is the training-inferred `fill_hollow_square_interiors` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `fill_hollow_square_interiors`: fill zero interiors of every axis-aligned square frame"
+  ],
+  "concepts": [
+    "fill",
+    "hollow",
+    "square",
+    "interiors"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 12x12; colors [0, 5] -> [0, 2, 5]; 4 cells changed.",
+    "Training pair 2: 12x12 -> 12x12; colors [0, 5] -> [0, 2, 5]; 21 cells changed.",
+    "Training pair 3: 12x12 -> 12x12; colors [0, 5] -> [0, 5]; 0 cells changed.",
+    "Training pair 4: 12x12 -> 12x12; colors [0, 5] -> [0, 2, 5]; 5 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "frame: 5",
+    "fill: 1",
+    "final color map: 0 -> 0, 5 -> 5, 1 -> 2"
+  ]
+}

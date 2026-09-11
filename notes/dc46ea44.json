@@ -1,0 +1,20 @@
+{
+  "title": "Move the pink mark below the yellow border to the same position in the area above",
+  "summary": "Move the pink mark below the yellow border to the same position in the area above. Think of the smallest rectangle that encloses the other color shape, and move it so that its lower right corner matches the leftmost point of the pink color. When a figure overlaps a pink point, the color of the figure takes priority.",
+  "steps": [
+    "Move the pink mark below the yellow border to the same position in the area above",
+    "Think of the smallest rectangle that encloses the shape of the other color, and move it so that its lower right corner matches the leftmost point of the pink color.",
+    "When a shape overlaps a pink point, give priority to the color of the shape"
+  ],
+  "concepts": [
+    "reference line",
+    "assembly",
+    "move"
+  ],
+  "observations": [
+    "Training pair 1: 11x11 -> 11x11; colors [2, 4, 6, 7] -> [2, 4, 6, 7]; 15 cells changed.",
+    "Training pair 2: 11x11 -> 11x11; colors [4, 6, 7, 8] -> [4, 6, 7, 8]; 17 cells changed.",
+    "Training pair 3: 11x11 -> 11x11; colors [1, 4, 6, 7] -> [1, 4, 6, 7]; 14 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

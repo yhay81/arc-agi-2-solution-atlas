@@ -1,0 +1,16 @@
+{
+  "title": "Draw concentric squares in the order of color scheme",
+  "summary": "Using the color swatches above in order, draw square concentric circles centered on the point below. Make the sample of the ring that goes outside the board gray.",
+  "steps": [
+    "Using the color swatches above in order, draw square concentric circles centered on the point below. Make the sample of the ring that goes outside the board gray."
+  ],
+  "concepts": [
+    "instruction string",
+    "concentric frame"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [0, 2, 3, 4, 5, 8] -> [0, 2, 3, 4, 5, 8]; 78 cells changed.",
+    "Training pair 2: 16x16 -> 16x16; colors [0, 1, 2, 3, 5, 6] -> [0, 1, 2, 3, 5, 6]; 48 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

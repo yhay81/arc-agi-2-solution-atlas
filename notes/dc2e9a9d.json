@@ -1,0 +1,19 @@
+{
+  "title": "Add a reflected, color-coded copy beside each asymmetric glyph",
+  "summary": "Add a reflected, color-coded copy beside each asymmetric glyph. Each foreground object is symmetric on one axis and asymmetric on the other. Reflecting across the asymmetric axis produces its companion: horizontal reflections use color ``1`` and vertical reflections use color ``8``. The companion is placed beyond the object's asymmetric side with a one-cell gap, while the original object is preserved. This is the training-inferred `reflect_asymmetric_foreground_objects` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `reflect_asymmetric_foreground_objects`: add a reflected, color-coded copy beside each asymmetric glyph"
+  ],
+  "concepts": [
+    "reflect",
+    "asymmetric",
+    "foreground",
+    "objects"
+  ],
+  "observations": [
+    "Training pair 1: 23x19 -> 23x19; colors [0, 3] -> [0, 1, 3, 8]; 38 cells changed.",
+    "Training pair 2: 22x17 -> 22x17; colors [0, 3] -> [0, 1, 3, 8]; 26 cells changed.",
+    "Training pair 3: 22x21 -> 22x21; colors [0, 3] -> [0, 1, 3, 8]; 39 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

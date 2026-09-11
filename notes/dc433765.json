@@ -1,0 +1,23 @@
+{
+  "title": "Move green objects toward the yellow target",
+  "summary": "Move green objects toward the yellow target. This is the training-inferred `move_three_toward_four` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `move_three_toward_four`: move green objects toward the yellow target"
+  ],
+  "concepts": [
+    "move",
+    "three",
+    "toward",
+    "four"
+  ],
+  "observations": [
+    "Training pair 1: 7x7 -> 7x7; colors [0, 3, 4] -> [0, 3, 4]; 2 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 3, 4] -> [0, 3, 4]; 2 cells changed.",
+    "Training pair 3: 3x3 -> 3x3; colors [0, 3, 4] -> [0, 3, 4]; 2 cells changed.",
+    "Training pair 4: 5x3 -> 5x3; colors [0, 3, 4] -> [0, 3, 4]; 2 cells changed.",
+    "Training pair 5: 5x5 -> 5x5; colors [0, 3, 4] -> [0, 3, 4]; 2 cells changed.",
+    "Training pair 6: 11x11 -> 11x11; colors [0, 3, 4] -> [0, 3, 4]; 2 cells changed.",
+    "Training pair 7: 3x3 -> 3x3; colors [0, 3, 4] -> [0, 3, 4]; 2 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Paint the intersections where the row and column colors match",
+  "summary": "Only the intersections of matrices whose right and bottom markers have the same color are given that color.",
+  "steps": [
+    "Only the intersections of matrices whose right and bottom markers have the same color are given that color."
+  ],
+  "concepts": [
+    "Matrix correspondence",
+    "Match condition"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 5, 6, 7, 8, 9] -> [0, 5, 6, 7, 8, 9]; 19 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 5, 6, 7, 8, 9] -> [0, 5, 6, 7, 8, 9]; 17 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 3, 4, 5, 8] -> [0, 3, 4, 5, 8]; 20 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

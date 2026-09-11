@@ -1,0 +1,19 @@
+{
+  "title": "Color the protruding and concave corners of the outline separately.",
+  "summary": "Distinguish white space completely enclosed by an outline from white space outside. Look at each square of the outline and choose a corner where the neighbors are at right angles to each other (up, down, left and right). If the diagonal square at the end of those two directions is inside, make it yellow, if it is outside, make it red, and leave the straight part.",
+  "steps": [
+    "Distinguish white space completely enclosed by an outline from white space outside.",
+    "Look at each square of the outline and choose a corner where the neighbors are at right angles to each other (up, down, left and right).",
+    "If the diagonal square at the end of those two directions is inside, make it yellow, if it is outside, make it red, and leave the straight part."
+  ],
+  "concepts": [
+    "contour",
+    "convex and concave angles"
+  ],
+  "observations": [
+    "Training pair 1: 12x15 -> 12x15; colors [0, 8] -> [0, 2, 4, 8]; 22 cells changed.",
+    "Training pair 2: 13x13 -> 13x13; colors [0, 3] -> [0, 2, 3, 4]; 18 cells changed.",
+    "Training pair 3: 14x16 -> 14x16; colors [0, 1] -> [0, 1, 2, 4]; 24 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

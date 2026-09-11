@@ -1,0 +1,19 @@
+{
+  "title": "Extend a blue line up and down from a point of only one different color",
+  "summary": "Extend a blue line up and down from a point of only one different color. When the line reaches the top and bottom ends, if the color of the dot is yellow or dark red, bend the top side to the left and the bottom side to the right; if the color of the dot is purple or light blue, bend the top side to the right and the bottom side to the left.",
+  "steps": [
+    "Extend a blue line up and down from a point of only one different color",
+    "When the line reaches the top and bottom ends, if the color of the dot is yellow/red, bend the top side to the left and the bottom side to the right; if the color of the dot is purple/light blue, bend the top side to the right and the bottom side to the left."
+  ],
+  "concepts": [
+    "route",
+    "edge",
+    "direction"
+  ],
+  "observations": [
+    "Training pair 1: 8x8 -> 8x8; colors [4, 9] -> [1, 4, 9]; 14 cells changed.",
+    "Training pair 2: 5x5 -> 5x5; colors [7, 8] -> [1, 7, 8]; 8 cells changed.",
+    "Training pair 3: 7x7 -> 7x7; colors [2, 4] -> [1, 2, 4]; 12 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

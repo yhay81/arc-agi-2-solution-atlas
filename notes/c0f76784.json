@@ -1,0 +1,23 @@
+{
+  "title": "Fill hollow rectangles according to size",
+  "summary": "Fill the interior of each hollow gray square with a color determined by its outer size.",
+  "steps": [
+    "Find connected gray square outlines.",
+    "Fill each interior using color 6, 7, or 8 for outer sizes 3, 4, or 5."
+  ],
+  "concepts": [
+    "rectangle",
+    "size",
+    "fill"
+  ],
+  "observations": [
+    "Training pair 1 contains three outlined squares of different sizes.",
+    "Training pair 2 confirms that position does not affect the fill color.",
+    "Training pair 3 confirms the size-four and size-five mappings."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "Outer size 3 maps to 6, size 4 to 7, and size 5 to 8."
+  ],
+  "limitations": "The examples consistently identify outer square size as the relevant property; unseen sizes are not specified."
+}

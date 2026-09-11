@@ -1,0 +1,16 @@
+{
+  "title": "Tile the input into a 3-by-3 alternating reflection pattern",
+  "summary": "Tile the input into a 3-by-3 alternating reflection pattern. This is the training-inferred `alternating_tile_3` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `alternating_tile_3`: tile the input into a 3-by-3 alternating reflection pattern"
+  ],
+  "concepts": [
+    "alternating",
+    "tile"
+  ],
+  "observations": [
+    "Training pair 1: 2x2 -> 6x6; colors [3, 4, 7, 9] -> [3, 4, 7, 9]; output dimensions changed.",
+    "Training pair 2: 2x2 -> 6x6; colors [4, 6, 8] -> [4, 6, 8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

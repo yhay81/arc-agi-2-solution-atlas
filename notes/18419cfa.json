@@ -1,0 +1,22 @@
+{
+  "title": "Complete object cells by reflecting them across the axes of each frame",
+  "summary": "Complete object cells by reflecting them across the axes of each frame. This is the training-inferred `complete_frame_symmetry` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `complete_frame_symmetry`: complete object cells by reflecting them across the axes of each frame"
+  ],
+  "concepts": [
+    "complete",
+    "frame",
+    "symmetry"
+  ],
+  "observations": [
+    "Training pair 1: 18x17 -> 18x17; colors [0, 2, 8] -> [0, 2, 8]; 5 cells changed.",
+    "Training pair 2: 16x22 -> 16x22; colors [0, 2, 8] -> [0, 2, 8]; 9 cells changed.",
+    "Training pair 3: 24x16 -> 24x16; colors [0, 2, 8] -> [0, 2, 8]; 9 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "frame: 8",
+    "object color: 2"
+  ]
+}

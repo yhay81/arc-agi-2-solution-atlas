@@ -1,0 +1,19 @@
+{
+  "title": "Complement the 4×4 pattern on the top left by flipping it horizontally on the top right, flipping it vertically on the bottom left, and flipping both on the bottom right.",
+  "summary": "Complement the 4×4 pattern on the top left by flipping it horizontally on the top right, flipping it vertically on the bottom left, and flipping both on the bottom right. Determine the replacement color from the color points of each section, and use black for unspecified colors.",
+  "steps": [
+    "Complement the 4×4 pattern on the top left by flipping it horizontally on the top right, flipping it vertically on the bottom left, and flipping both on the bottom right.",
+    "Determine the replacement color from the color points of each section, and set the unspecified color to black."
+  ],
+  "concepts": [
+    "reflection",
+    "Color correspondence",
+    "Complement of four sections"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 1, 2, 3, 4, 5, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 7, 8, 9]; 42 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 1, 2, 3, 4, 5, 7, 8] -> [0, 1, 2, 3, 4, 5, 7, 8]; 33 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 1, 2, 3, 4, 5, 6, 8] -> [0, 1, 2, 3, 4, 5, 6, 8]; 42 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

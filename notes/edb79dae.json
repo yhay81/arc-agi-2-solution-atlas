@@ -1,0 +1,18 @@
+{
+  "title": "Read the outer two-color sample as a color correspondence table, and replace each fill in the frame with a sample shape of the same original color.",
+  "summary": "Read the outer two-color sample as a color correspondence table, and replace each fill in the frame with a sample shape of the same original color. Draw the shape in the color shown in the correspondence table and cut it out using a gray frame.",
+  "steps": [
+    "Read the outer two-color sample as a color correspondence table, and replace each fill in the frame with a sample shape of the same original color.",
+    "Draw the shape in the color shown in the correspondence table and cut it out with a gray frame."
+  ],
+  "concepts": [
+    "legend",
+    "unit size",
+    "symbol"
+  ],
+  "observations": [
+    "Training pair 1: 23x24 -> 15x19; colors [1, 2, 3, 4, 5, 8] -> [2, 4, 5, 8]; output dimensions changed.",
+    "Training pair 2: 22x23 -> 13x18; colors [1, 2, 3, 4, 5, 6, 7, 8] -> [1, 4, 5, 7, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

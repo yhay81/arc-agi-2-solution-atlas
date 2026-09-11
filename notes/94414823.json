@@ -1,0 +1,18 @@
+{
+  "title": "Fill frame quadrants",
+  "summary": "Fill frame quadrants. This is the training-inferred `fill_frame_quadrants` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `fill_frame_quadrants`: fill frame quadrants"
+  ],
+  "concepts": [
+    "fill",
+    "frame",
+    "quadrants"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 5, 6, 7] -> [0, 5, 6, 7]; 16 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 4, 5, 8] -> [0, 4, 5, 8]; 16 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 2, 3, 5] -> [0, 2, 3, 5]; 16 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

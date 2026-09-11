@@ -1,0 +1,18 @@
+{
+  "title": "Repeat the one non-empty vertical motif over the original canvas",
+  "summary": "Repeat the one non-empty vertical motif over the original canvas. Some scenes provide a short contiguous stack of non-zero rows surrounded by blank rows. The stack is one period of a vertical pattern; preserve its absolute phase (the rows in the input remain unchanged) while extending that period through the complete canvas. This is the training-inferred `repeat_nonzero_vertical_period` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `repeat_nonzero_vertical_period`: repeat the one non-empty vertical motif over the original canvas"
+  ],
+  "concepts": [
+    "repeat",
+    "nonzero",
+    "vertical",
+    "period"
+  ],
+  "observations": [
+    "Training pair 1: 10x12 -> 10x12; colors [0, 2] -> [0, 2]; 54 cells changed.",
+    "Training pair 2: 15x19 -> 15x19; colors [0, 8] -> [0, 8]; 100 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

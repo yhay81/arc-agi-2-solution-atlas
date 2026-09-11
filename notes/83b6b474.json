@@ -1,0 +1,19 @@
+{
+  "title": "Move parts and assemble around the square",
+  "summary": "Extract straight lines and L-shaped parts other than the background. Find one side of the square from the total number of parts. Enumerate the positions that can be placed around the square by translating the parts without rotating them. Find a unique arrangement that fills the entire surrounding area without overlapping parts. Make the inside the background color.",
+  "steps": [
+    "Extract straight lines and L-shaped parts other than the background. Find one side of the square from the total number of parts.",
+    "Enumerate the positions that can be placed around the square by translating the parts without rotating them.",
+    "Find a unique arrangement that fills the entire surrounding area without overlapping parts. Make the inside the background color."
+  ],
+  "concepts": [
+    "Assembling",
+    "frame",
+    "minimum range"
+  ],
+  "observations": [
+    "Training pair 1: 6x6 -> 4x4; colors [1, 2, 4, 8, 9] -> [1, 2, 4, 8, 9]; output dimensions changed.",
+    "Training pair 2: 16x16 -> 6x6; colors [1, 2, 4, 6, 8, 9] -> [1, 2, 4, 6, 8, 9]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

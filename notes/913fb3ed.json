@@ -1,0 +1,25 @@
+{
+  "title": "Expand colored seeds into mapped 3-by-3 halos",
+  "summary": "Keep each isolated seed and fill its eight neighboring black cells with a color determined by the seed. Red produces blue, green produces magenta, and azure produces yellow.",
+  "steps": [
+    "Locate red, green, and azure seed cells.",
+    "For every neighboring black cell, apply the seed-to-halo color mapping."
+  ],
+  "concepts": [
+    "dilation",
+    "eight-neighborhood",
+    "color mapping"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 16x16; colors [0, 2, 3] -> [0, 1, 2, 3, 6]; 16 cells changed.",
+    "Training pair 2: 6x6 -> 6x6; colors [0, 3] -> [0, 3, 6]; 8 cells changed.",
+    "Training pair 3: 6x6 -> 6x6; colors [0, 8] -> [0, 4, 8]; 8 cells changed.",
+    "Training pair 4: 12x12 -> 12x12; colors [0, 2, 3, 8] -> [0, 1, 2, 3, 4, 6, 8]; 24 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "red 2 -> blue 1",
+    "green 3 -> magenta 6",
+    "azure 8 -> yellow 4"
+  ]
+}

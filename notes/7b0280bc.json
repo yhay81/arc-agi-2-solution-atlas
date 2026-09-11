@@ -1,0 +1,20 @@
+{
+  "title": "The starting and ending points are colors with only two square blocks of the same color.",
+  "summary": "The starting and ending points are colors with only two square blocks of the same color. Examine the connections between the road and the square blocks along the way, and choose the route that passes through the least number of blocks along the way. If there is a tie, choose the route with the least number of roads and blocks. The chosen path is gray, the blocks along the way are green, and the blocks at both ends keep their original color.",
+  "steps": [
+    "The starting and ending points are colors with only two square blocks of the same color.",
+    "Check the connections between the road and the square blocks along the way, and choose the route that passes through the least number of blocks along the way.",
+    "If there is a tie, choose the route with fewer roads and blocks.",
+    "The chosen path is gray, the blocks along the way are green, and the blocks at both ends keep their original color."
+  ],
+  "concepts": [
+    "Characteristics of shapes",
+    "conditional color change"
+  ],
+  "observations": [
+    "Training pair 1: 18x18 -> 18x18; colors [0, 1, 2, 8] -> [0, 1, 2, 3, 5, 8]; 27 cells changed.",
+    "Training pair 2: 15x15 -> 15x15; colors [4, 6, 7, 9] -> [3, 4, 5, 6, 7, 9]; 14 cells changed.",
+    "Training pair 3: 20x20 -> 20x20; colors [1, 2, 6, 7] -> [1, 2, 3, 5, 6, 7]; 30 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Turn long black passageways green and cut narrow dead-end streets",
+  "summary": "Turn long black passages green and carve out narrow dead ends. Keep the path where the outward tip reaches the edge of the board, and cut the branches along the edge.",
+  "steps": [
+    "Turn long black passageways green and cut narrow dead-end streets",
+    "Keep the path where the outward tip reaches the edge of the board, and cut the branches along the edge."
+  ],
+  "concepts": [
+    "aisle",
+    "Concatenation",
+    "Width constraints"
+  ],
+  "observations": [
+    "Training pair 1: 30x30 -> 30x30; colors [0, 1] -> [0, 1, 3]; 261 cells changed.",
+    "Training pair 2: 30x30 -> 30x30; colors [0, 8] -> [0, 3, 8]; 221 cells changed.",
+    "Training pair 3: 30x30 -> 30x30; colors [0, 2] -> [0, 2, 3]; 320 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

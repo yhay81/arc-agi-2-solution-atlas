@@ -1,0 +1,20 @@
+{
+  "title": "Use the small pattern as a two-step sample and repeat it on the entire surface.",
+  "summary": "Use the small pattern on the upper left as both a sample of shape and a sample of placement. A small pattern of the original color is placed at the position of the small pattern color, and a small pattern of the frame color is placed at the background position. Repeat that large pattern to fill the entire board.",
+  "steps": [
+    "Find the L-shaped frame on the right and bottom sides in the upper left corner and cut out the small pattern inside it. Differentiate between frame color, pattern color, and background color.",
+    "If the small patterns are in h rows and w columns, arrange h x w small patterns. If the small pattern square whose placement is specified is in the foreground, the original pattern color is used, and if it is in the background, the small pattern at that position is drawn in the frame color. Leave the background inside the small pattern as the background.",
+    "Repeat the pattern in h² rows and w² columns vertically and horizontally, and cut it out with the same dimensions as the input."
+  ],
+  "concepts": [
+    "two stage pattern",
+    "Self-reference of shape and arrangement",
+    "periodic repetition"
+  ],
+  "observations": [
+    "Training pair 1: 7x7 -> 7x7; colors [3, 4, 7] -> [3, 4, 7]; 23 cells changed.",
+    "Training pair 2: 9x9 -> 9x9; colors [2, 7, 8] -> [2, 7, 8]; 40 cells changed.",
+    "Training pair 3: 12x8 -> 12x8; colors [0, 7, 9] -> [0, 7, 9]; 30 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

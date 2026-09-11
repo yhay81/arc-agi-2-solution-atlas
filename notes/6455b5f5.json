@@ -1,0 +1,20 @@
+{
+  "title": "Color the largest and smallest background islands in a line maze",
+  "summary": "Color the largest and smallest background islands in a line maze. The non-background lines partition the canvas into connected background regions. Region area is the code: every smallest island is painted ``8`` and the unique largest island is painted ``1``. The frame/maze pixels and all intermediate islands remain unchanged. This is the training-inferred `fill_extreme_background_regions` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `fill_extreme_background_regions`: color the largest and smallest background islands in a line maze"
+  ],
+  "concepts": [
+    "fill",
+    "extreme",
+    "background",
+    "regions"
+  ],
+  "observations": [
+    "Training pair 1: 11x16 -> 11x16; colors [0, 2] -> [0, 1, 2, 8]; 74 cells changed.",
+    "Training pair 2: 11x13 -> 11x13; colors [0, 2] -> [0, 1, 2, 8]; 80 cells changed.",
+    "Training pair 3: 15x16 -> 15x16; colors [0, 2] -> [0, 1, 2, 8]; 96 cells changed.",
+    "Training pair 4: 18x13 -> 18x13; colors [0, 2] -> [0, 1, 2, 8]; 82 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

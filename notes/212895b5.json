@@ -1,0 +1,20 @@
+{
+  "title": "Extend red diagonal lines from the four corners of light blue",
+  "summary": "Extend red diagonal lines from the four corners of the light blue color. A gap of only one square between connected gray blocks in the same row or column also becomes an obstacle to the red line. Alternately advance the yellow stairs two squares at a time from the center of the side, and stop when you hit the gray one.",
+  "steps": [
+    "Extend red diagonal lines from the four corners of light blue",
+    "A gap of just one square between connected gray blocks in the same row/column also becomes an obstacle to the red line.",
+    "Alternately advance the yellow stairs two squares at a time from the center of the side, and stop when you hit the gray one."
+  ],
+  "concepts": [
+    "trajectory",
+    "periodic change of direction",
+    "obstacles"
+  ],
+  "observations": [
+    "Training pair 1: 18x17 -> 18x17; colors [0, 5, 8] -> [0, 2, 4, 5, 8]; 35 cells changed.",
+    "Training pair 2: 20x20 -> 20x20; colors [0, 5, 8] -> [0, 2, 4, 5, 8]; 52 cells changed.",
+    "Training pair 3: 16x19 -> 16x19; colors [0, 5, 8] -> [0, 2, 4, 5, 8]; 31 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

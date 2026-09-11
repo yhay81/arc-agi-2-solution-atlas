@@ -1,0 +1,21 @@
+{
+  "title": "repeat a small number of patterns on empty plots",
+  "summary": "Normalize to the orientation and color role selected in the learning example. Separate the sections with partitions and use a sample section with only one color pattern. Copy the sample to a section where the difference between the sample and the section number is an even number both vertically and horizontally. In other words, repeat every other row and column. Restore color and orientation.",
+  "steps": [
+    "Normalize to the orientation and color role selected in the learning example.",
+    "Separate the sections with partitions and use a sample section with only one color pattern.",
+    "Copy the sample to a section where the difference between the sample and the section number is an even number both vertically and horizontally. In other words, repeat every other row and column.",
+    "Restore color and orientation."
+  ],
+  "concepts": [
+    "small number pattern",
+    "repeat",
+    "vacant lot"
+  ],
+  "observations": [
+    "Training pair 1: 23x23 -> 23x23; colors [0, 2, 4] -> [0, 2, 4]; 32 cells changed.",
+    "Training pair 2: 27x27 -> 27x27; colors [0, 1, 3] -> [0, 1, 3]; 48 cells changed.",
+    "Training pair 3: 25x25 -> 25x25; colors [0, 2, 8] -> [0, 2, 8]; 46 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

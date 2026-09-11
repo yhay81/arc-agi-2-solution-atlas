@@ -1,0 +1,20 @@
+{
+  "title": "Collapse consecutive duplicate rows and columns",
+  "summary": "By removing the same row as the previous one, and then removing the same column as the previous column in all rows, the enlarged grid is returned to the original size pattern with only the changing points.",
+  "steps": [
+    "Leave the first line and the lines that change from the previous line",
+    "Leave the first column and columns that change from the previous column in some row",
+    "Output the intersection of the remaining matrices"
+  ],
+  "concepts": [
+    "Duplicate removal",
+    "reduction"
+  ],
+  "observations": [
+    "Training pair 1: 15x14 -> 2x3; colors [1, 2, 3, 5, 6, 8] -> [1, 2, 3, 5, 6, 8]; output dimensions changed.",
+    "Training pair 2: 12x14 -> 2x3; colors [1, 2, 3, 4, 5] -> [1, 2, 3, 4, 5]; output dimensions changed.",
+    "Training pair 3: 15x15 -> 3x4; colors [1, 2, 3, 4, 5, 6, 7, 8, 9] -> [1, 2, 3, 4, 5, 6, 7, 8, 9]; output dimensions changed.",
+    "Training pair 4: 13x15 -> 2x2; colors [2, 3, 5, 8] -> [2, 3, 5, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

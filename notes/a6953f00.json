@@ -1,0 +1,19 @@
+{
+  "title": "Count the number of squares on one side of the square",
+  "summary": "Count the number of squares on one side of the square. If it's an odd number, cut out a 2x2 from the top left, and if it's an even number, cut out a 2x2 from the top right.",
+  "steps": [
+    "Count the number of squares on one side of the square",
+    "Cut out a 2x2 from the top left if it is an odd number, and from the top right if it is an even number."
+  ],
+  "concepts": [
+    "partial selection",
+    "2×2",
+    "comparison"
+  ],
+  "observations": [
+    "Training pair 1: 4x4 -> 2x2; colors [0, 1, 2, 4, 5, 6, 7, 8, 9] -> [2, 4, 7, 8]; output dimensions changed.",
+    "Training pair 2: 3x3 -> 2x2; colors [0, 3, 5, 6, 7, 9] -> [0, 5, 6, 7]; output dimensions changed.",
+    "Training pair 3: 5x5 -> 2x2; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 5, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

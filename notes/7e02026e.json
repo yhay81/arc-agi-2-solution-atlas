@@ -1,0 +1,22 @@
+{
+  "title": "Color every complete five-cell plus made entirely of background cells",
+  "summary": "Color every complete five-cell plus made entirely of background cells. This is the training-inferred `fill_plus_shapes` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `fill_plus_shapes`: color every complete five-cell plus made entirely of background cells"
+  ],
+  "concepts": [
+    "fill",
+    "plus",
+    "shapes"
+  ],
+  "observations": [
+    "Training pair 1: 12x12 -> 12x12; colors [0, 8] -> [0, 3, 8]; 8 cells changed.",
+    "Training pair 2: 12x12 -> 12x12; colors [0, 8] -> [0, 3, 8]; 10 cells changed.",
+    "Training pair 3: 12x12 -> 12x12; colors [0, 8] -> [0, 3, 8]; 21 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "color: 1",
+    "final color map: 8 -> 8, 0 -> 0, 1 -> 3"
+  ]
+}

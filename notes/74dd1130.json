@@ -1,0 +1,17 @@
+{
+  "title": "Exchange the rows and columns",
+  "summary": "Exchange the rows and columns. This is the training-inferred `transpose` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `transpose`: exchange the rows and columns"
+  ],
+  "concepts": [
+    "transpose"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 3x3; colors [5, 8, 9] -> [5, 8, 9]; 2 cells changed.",
+    "Training pair 2: 3x3 -> 3x3; colors [2, 5, 6] -> [2, 5, 6]; 4 cells changed.",
+    "Training pair 3: 3x3 -> 3x3; colors [1, 2, 6] -> [1, 2, 6]; 6 cells changed.",
+    "Training pair 4: 3x3 -> 3x3; colors [1, 2, 5] -> [1, 2, 5]; 6 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

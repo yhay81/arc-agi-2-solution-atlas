@@ -1,0 +1,19 @@
+{
+  "title": "Fill multi-cell black regions with azure while preserving singletons",
+  "summary": "Find the 4 neighboring connected components of the black cell, leave one isolated cell, and replace only the components with an area of 2 or more with light blue.",
+  "steps": [
+    "Divide the black cell into four neighboring components",
+    "Count the number of cells for each component",
+    "Paint components of 2 cells or more in light blue"
+  ],
+  "concepts": [
+    "connected components",
+    "Area determination"
+  ],
+  "observations": [
+    "Training pair 1: 13x13 -> 13x13; colors [0, 1] -> [0, 1, 8]; 21 cells changed.",
+    "Training pair 2: 13x13 -> 13x13; colors [0, 1] -> [0, 1, 8]; 14 cells changed.",
+    "Training pair 3: 13x13 -> 13x13; colors [0, 1] -> [0, 1, 8]; 18 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Select unique asymmetric panel",
+  "summary": "Select unique asymmetric panel. This is the training-inferred `select_unique_asymmetric_panel` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `select_unique_asymmetric_panel`: select unique asymmetric panel"
+  ],
+  "concepts": [
+    "select",
+    "unique",
+    "asymmetric",
+    "panel"
+  ],
+  "observations": [
+    "Training pair 1: 9x3 -> 3x3; colors [1, 2, 3, 5, 7, 8] -> [1, 8]; output dimensions changed.",
+    "Training pair 2: 9x3 -> 3x3; colors [1, 2, 3, 5, 6, 7] -> [3, 6]; output dimensions changed.",
+    "Training pair 3: 9x3 -> 3x3; colors [1, 2, 3, 4, 6, 8] -> [4, 8]; output dimensions changed.",
+    "Training pair 4: 9x3 -> 3x3; colors [1, 2, 3, 4, 8, 9] -> [3, 4]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

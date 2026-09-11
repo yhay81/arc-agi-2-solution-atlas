@@ -1,0 +1,19 @@
+{
+  "title": "Stamp pattern count",
+  "summary": "Stamp pattern count. This is the training-inferred `stamp_pattern_count` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `stamp_pattern_count`: stamp pattern count"
+  ],
+  "concepts": [
+    "stamp",
+    "pattern",
+    "count"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 9x9; colors [0, 3] -> [0, 3]; output dimensions changed.",
+    "Training pair 2: 3x3 -> 15x15; colors [0, 4] -> [0, 4]; output dimensions changed.",
+    "Training pair 3: 3x3 -> 18x18; colors [0, 2] -> [0, 2]; output dimensions changed.",
+    "Training pair 4: 3x3 -> 12x12; colors [0, 6] -> [0, 6]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

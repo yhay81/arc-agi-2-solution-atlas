@@ -1,0 +1,23 @@
+{
+  "title": "A green road that curves in front of the colored dots",
+  "summary": "Extend the path to the right from the first green square.",
+  "steps": [
+    "Extend the path to the right from the first green square.",
+    "One square before the light blue 8 dot, turn the direction of travel 90 degrees to the left, and one square before the purple 6 dot, turn the direction of travel 90 degrees to the right.",
+    "Go straight until you reach the next point, and when you run out of points, go to the edge of the board.",
+    "Do not overwrite the signal points."
+  ],
+  "concepts": [
+    "Direction of travel",
+    "color instruction",
+    "route"
+  ],
+  "observations": [
+    "Training pair 1: 6x6 -> 6x6; colors [0, 3, 8] -> [0, 3, 8]; 5 cells changed.",
+    "Training pair 2: 8x6 -> 8x6; colors [0, 3, 6, 8] -> [0, 3, 6, 8]; 7 cells changed.",
+    "Training pair 3: 8x8 -> 8x8; colors [0, 3, 6, 8] -> [0, 3, 6, 8]; 11 cells changed.",
+    "Training pair 4: 9x8 -> 9x8; colors [0, 3, 6, 8] -> [0, 3, 6, 8]; 9 cells changed.",
+    "Training pair 5: 6x6 -> 6x6; colors [0, 3, 6] -> [0, 3, 6]; 5 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

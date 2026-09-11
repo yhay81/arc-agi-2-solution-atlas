@@ -1,0 +1,20 @@
+{
+  "title": "Read the red symbol position from the 3×3 plot divided by lines every 4 squares",
+  "summary": "Read the red symbol position from a 3x3 section separated by lines every 4 squares. Inputs containing symbols other than red should be sent to a 16x16 gray board. If there are only red symbols, determine the additional positions of gray and light blue based on the arrangement of the two symbols, and draw them as cross symbols on the 11 x 11 partition board.",
+  "steps": [
+    "Read the red symbol position from the 3×3 plot divided by lines every 4 squares",
+    "Inputs containing symbols other than red should be sent to a 16x16 gray board.",
+    "If there are only red symbols, determine the additional positions of gray and light blue based on the arrangement of the two symbols, and draw them as cross symbols on the 11 x 11 partition board."
+  ],
+  "concepts": [
+    "period",
+    "lattice",
+    "conditional extraction"
+  ],
+  "observations": [
+    "Training pair 1: 11x11 -> 11x11; colors [2, 6, 7] -> [2, 5, 6, 7, 8]; 8 cells changed.",
+    "Training pair 2: 11x11 -> 11x11; colors [2, 6, 7] -> [2, 5, 6, 7, 8]; 8 cells changed.",
+    "Training pair 3: 11x11 -> 16x16; colors [2, 5, 6, 7, 8] -> [7]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

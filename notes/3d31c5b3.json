@@ -1,0 +1,21 @@
+{
+  "title": "Stack 4 pieces of the same size stacked vertically at the same coordinates",
+  "summary": "Four pieces of the same size stacked vertically are placed on top of each other at the same coordinates. Decide the color of one square in priority order: 5 gray, 4 yellow, 8 light blue, 2 red, 0 black.",
+  "steps": [
+    "Stack 4 pieces of the same size stacked vertically at the same coordinates",
+    "Decide the color of one square in priority order: gray 5, yellow 4, light blue 8, red 2, black 0."
+  ],
+  "concepts": [
+    "Composition of layers",
+    "priority"
+  ],
+  "observations": [
+    "Training pair 1: 12x6 -> 3x6; colors [0, 2, 4, 5, 8] -> [4, 5, 8]; output dimensions changed.",
+    "Training pair 2: 12x6 -> 3x6; colors [0, 2, 4, 5, 8] -> [0, 2, 4, 5, 8]; output dimensions changed.",
+    "Training pair 3: 12x6 -> 3x6; colors [0, 2, 4, 5, 8] -> [4, 5, 8]; output dimensions changed.",
+    "Training pair 4: 12x6 -> 3x6; colors [0, 2, 4, 5, 8] -> [0, 2, 4, 5, 8]; output dimensions changed.",
+    "Training pair 5: 12x6 -> 3x6; colors [0, 2, 4, 5, 8] -> [0, 2, 4, 5]; output dimensions changed.",
+    "Training pair 6: 12x6 -> 3x6; colors [0, 2, 4, 5, 8] -> [2, 4, 5, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

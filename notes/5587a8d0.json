@@ -1,0 +1,18 @@
+{
+  "title": "Represent non-background colors as frequency-ordered square frames",
+  "summary": "Represent non-background colors as frequency-ordered square frames. This is the training-inferred `frequency_concentric_frames` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `frequency_concentric_frames`: represent non-background colors as frequency-ordered square frames"
+  ],
+  "concepts": [
+    "frequency",
+    "concentric",
+    "frames"
+  ],
+  "observations": [
+    "Training pair 1: 6x6 -> 3x3; colors [4, 6, 7] -> [4, 6]; output dimensions changed.",
+    "Training pair 2: 9x9 -> 5x5; colors [1, 5, 7, 8] -> [1, 5, 8]; output dimensions changed.",
+    "Training pair 3: 7x7 -> 7x7; colors [0, 3, 7, 8, 9] -> [0, 3, 8, 9]; 48 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

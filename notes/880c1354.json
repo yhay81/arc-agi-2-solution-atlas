@@ -1,0 +1,17 @@
+{
+  "title": "Rules for sorting around the center color are undefined.",
+  "summary": "Arrange each color area surrounding center 4 by the centroid angle, and advance the area color by one in a clockwise direction.",
+  "steps": [
+    "Arrange each color area surrounding center 4 by the centroid angle, and advance the area color by one in a clockwise direction."
+  ],
+  "concepts": [
+    "Area relocation",
+    "symmetry"
+  ],
+  "observations": [
+    "Training pair 1: 8x8 -> 8x8; colors [1, 2, 3, 4, 6, 7] -> [1, 2, 3, 4, 6, 7]; 22 cells changed.",
+    "Training pair 2: 8x8 -> 8x8; colors [1, 4, 6, 7, 9] -> [1, 4, 6, 7, 9]; 34 cells changed.",
+    "Training pair 3: 8x8 -> 8x8; colors [4, 5, 6, 7] -> [4, 5, 6, 7]; 33 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

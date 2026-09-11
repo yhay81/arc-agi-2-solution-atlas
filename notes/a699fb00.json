@@ -1,0 +1,16 @@
+{
+  "title": "Mark horizontal gaps between blue cells",
+  "summary": "Color a black cell red when it lies directly between two blue cells in the same row.",
+  "steps": [
+    "Scan every horizontal run of three cells.",
+    "Replace the center of each blue-black-blue run with red."
+  ],
+  "concepts": ["gap filling", "horizontal adjacency"],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 1] -> [0, 1, 2]; 6 cells changed.",
+    "Training pair 2: 5x5 -> 5x5; colors [0, 1] -> [0, 1, 2]; 2 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 1] -> [0, 1, 2]; 6 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": ["blue-black-blue becomes blue-red-blue"]
+}

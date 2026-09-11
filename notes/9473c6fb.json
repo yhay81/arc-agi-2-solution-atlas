@@ -1,0 +1,21 @@
+{
+  "title": "Repeat the three colors by reading in the direction in which the dots appear one by one.",
+  "summary": "Read the points from top to bottom if there is less than one point in each row, and from left to right if there is less than one point in each column. Repeatedly assign red, light blue, and gray in order, regardless of the original color.",
+  "steps": [
+    "Collect the positions of points other than orange 7.",
+    "Place at most one point in each row from top to bottom. Instead, if there is at most one point in each column, arrange them from left to right. If both directions are possible and the order is different, it is considered undetermined.",
+    "Make the first red 2, the second light blue 8, the third gray 5, and repeat this order.",
+    "The dot position and background remain unchanged."
+  ],
+  "concepts": [
+    "Reading order",
+    "period",
+    "recoloring"
+  ],
+  "observations": [
+    "Training pair 1: 6x10 -> 6x10; colors [4, 6, 7, 9] -> [2, 5, 7, 8]; 6 cells changed.",
+    "Training pair 2: 8x8 -> 8x8; colors [1, 6, 7, 9] -> [2, 5, 7, 8]; 7 cells changed.",
+    "Training pair 3: 6x10 -> 6x10; colors [1, 6, 7, 9] -> [2, 5, 7, 8]; 9 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

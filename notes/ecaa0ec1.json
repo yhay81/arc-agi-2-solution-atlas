@@ -1,0 +1,21 @@
+{
+  "title": "Set the center of the L shape made by the three yellow points as the new handle position.",
+  "summary": "Position the new handle at the center of the L shape made by the three yellow dots. Use the remaining yellow point as the original handle and rotate it in 90 degree increments around the center of the blue 3x3 from there to the new position. Rotate the 3×3 pattern at the same angle, leaving only one new yellow handle.",
+  "steps": [
+    "Set the center of the L shape made by the three yellow points as the new handle position.",
+    "Use the remaining yellow point as the original handle and rotate it in 90 degree increments around the center of the blue 3x3 from there to the new position.",
+    "Rotate the 3×3 pattern at the same angle, leaving only one new handle in yellow."
+  ],
+  "concepts": [
+    "rotation",
+    "direction cue",
+    "Main body and attached points"
+  ],
+  "observations": [
+    "Training pair 1: 11x10 -> 11x10; colors [0, 1, 4, 8] -> [0, 1, 4, 8]; 9 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 1, 4, 8] -> [0, 1, 4, 8]; 11 cells changed.",
+    "Training pair 3: 11x11 -> 11x11; colors [0, 1, 4, 8] -> [0, 1, 4, 8]; 7 cells changed.",
+    "Training pair 4: 12x10 -> 12x10; colors [0, 1, 4, 8] -> [0, 1, 4, 8]; 7 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

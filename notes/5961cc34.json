@@ -1,0 +1,21 @@
+{
+  "title": "Extend the red line from the yellow tip",
+  "summary": "Extend the red line from the yellow tip. When you hit a blue device, the entire device turns red and the line is redrawn in the direction and width of the green exit. Delete any devices that do not pass.",
+  "steps": [
+    "Extend the red line from the yellow tip",
+    "When you hit the blue device, the entire device turns red and the line is redrawn in the direction and width of the green exit.",
+    "Delete devices that do not pass"
+  ],
+  "concepts": [
+    "Quantity condition",
+    "connection relationship",
+    "propagation"
+  ],
+  "observations": [
+    "Training pair 1: 13x15 -> 13x15; colors [1, 2, 3, 4, 8] -> [2, 8]; 26 cells changed.",
+    "Training pair 2: 23x25 -> 23x25; colors [1, 2, 3, 4, 8] -> [2, 8]; 86 cells changed.",
+    "Training pair 3: 23x22 -> 23x22; colors [1, 2, 3, 4, 8] -> [2, 8]; 109 cells changed.",
+    "Training pair 4: 23x22 -> 23x22; colors [1, 2, 3, 4, 8] -> [2, 8]; 71 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

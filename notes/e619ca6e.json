@@ -1,0 +1,20 @@
+{
+  "title": "Make the top into a mountain by lowering it to the left and right.",
+  "summary": "Measure the height and width of each small green rectangle. From the original rectangle, copy the same rectangle one height down and one width to the right, and repeat to the bottom right. Do the same thing to the bottom left. Cut off the part that protrudes from the surface of the board.",
+  "steps": [
+    "Measure the height and width of each small green rectangle.",
+    "From the original rectangle, copy the same rectangle one height down and one width to the right, and repeat to the bottom right.",
+    "Do the same thing to the bottom left. Cut off the part that protrudes from the surface of the board."
+  ],
+  "concepts": [
+    "Reproduction",
+    "stepped extension",
+    "Yamagata"
+  ],
+  "observations": [
+    "Training pair 1: 25x22 -> 25x22; colors [0, 3] -> [0, 3]; 34 cells changed.",
+    "Training pair 2: 29x29 -> 29x29; colors [0, 3] -> [0, 3]; 157 cells changed.",
+    "Training pair 3: 29x27 -> 29x27; colors [0, 3] -> [0, 3]; 96 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

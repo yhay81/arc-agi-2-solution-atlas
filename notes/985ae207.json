@@ -1,0 +1,19 @@
+{
+  "title": "Copy the square mark of three squares with a color in the center, three squares at a time, toward the band of the same color as the center.",
+  "summary": "Copy the three square square marks with the color in the center toward the band of the same color as the center, three squares at a time. Continue until the center of the mark is in the obi.",
+  "steps": [
+    "Copy the square mark of three squares with a color in the center, three squares at a time, toward the band of the same color as the center.",
+    "Continue until the center of the mark is in the obi"
+  ],
+  "concepts": [
+    "Color compatible",
+    "connection",
+    "periodic hole"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 20x20; colors [1, 2, 4, 8] -> [1, 2, 4, 8]; 61 cells changed.",
+    "Training pair 2: 20x20 -> 20x20; colors [1, 2, 3, 4, 8] -> [1, 2, 3, 4, 8]; 42 cells changed.",
+    "Training pair 3: 20x20 -> 20x20; colors [3, 4, 6, 8] -> [3, 4, 6, 8]; 69 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

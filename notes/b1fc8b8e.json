@@ -1,0 +1,19 @@
+{
+  "title": "Encode azure area in repeated corner blocks",
+  "summary": "Convert each group of four azure input cells into one filled position of a 2x2 motif, then repeat that motif in all four corners of a 5x5 output.",
+  "steps": [
+    "Divide the number of azure cells by four.",
+    "Fill that many cells of a 2x2 motif from the end of row-major order.",
+    "Repeat the motif in the four corners, separated by a black center row and column."
+  ],
+  "concepts": ["counting", "tiling", "compact encoding"],
+  "observations": [
+    "Training pair 1: 6x6 -> 5x5; colors [0, 8] -> [0, 8]; output dimensions changed.",
+    "Training pair 2: 6x6 -> 5x5; colors [0, 8] -> [0, 8]; output dimensions changed.",
+    "Training pair 3: 6x6 -> 5x5; colors [0, 8] -> [0, 8]; output dimensions changed.",
+    "Training pair 4: 6x6 -> 5x5; colors [0, 8] -> [0, 8]; output dimensions changed.",
+    "Training pair 5: 6x6 -> 5x5; colors [0, 8] -> [0, 8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": ["one motif cell per four azure input cells", "output size: 5x5"]
+}

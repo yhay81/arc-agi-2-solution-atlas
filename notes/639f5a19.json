@@ -1,0 +1,18 @@
+{
+  "title": "Make the light blue square into a frame of four colors",
+  "summary": "Find the light blue 8 rectangle. Make the inside yellow 4 and leave a frame of 2 squares from the outside. Paint the top left of the frame with peach 6, the top right with blue 1, the bottom left with red 2, and the bottom right with green 3.",
+  "steps": [
+    "Find the light blue 8 rectangle.",
+    "Make the inside yellow 4 and leave a frame of 2 squares from the outside.",
+    "Paint the top left of the frame with peach 6, the top right with blue 1, the bottom left with red 2, and the bottom right with green 3."
+  ],
+  "concepts": [
+    "Add frame",
+    "Color coding on all sides"
+  ],
+  "observations": [
+    "Training pair 1: 23x23 -> 23x23; colors [0, 8] -> [0, 1, 2, 3, 4, 6]; 216 cells changed.",
+    "Training pair 2: 23x23 -> 23x23; colors [0, 8] -> [0, 1, 2, 3, 4, 6]; 184 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

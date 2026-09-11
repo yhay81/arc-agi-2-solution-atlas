@@ -1,0 +1,21 @@
+{
+  "title": "Layer the four sheets separated by green sections in the same position.",
+  "summary": "Layer the four sheets separated by green sections in the same position. The colors at the top are brown, yellow, light blue, and gray in that order, and the black part is treated as transparent.",
+  "steps": [
+    "Layer the four sheets separated by green sections in the same position.",
+    "The colors at the top are brown, yellow, light blue, and gray in that order, and the black part is treated as transparent."
+  ],
+  "concepts": [
+    "superposition",
+    "priority"
+  ],
+  "observations": [
+    "Training pair 1: 4x19 -> 4x4; colors [0, 3, 4, 5, 8, 9] -> [0, 4, 8, 9]; output dimensions changed.",
+    "Training pair 2: 4x19 -> 4x4; colors [0, 3, 4, 5, 8, 9] -> [4, 5, 8, 9]; output dimensions changed.",
+    "Training pair 3: 4x19 -> 4x4; colors [0, 3, 4, 5, 8, 9] -> [0, 4, 5, 8, 9]; output dimensions changed.",
+    "Training pair 4: 4x19 -> 4x4; colors [0, 3, 4, 5, 8, 9] -> [4, 5, 8, 9]; output dimensions changed.",
+    "Training pair 5: 4x19 -> 4x4; colors [0, 3, 4, 5, 8, 9] -> [4, 5, 8, 9]; output dimensions changed.",
+    "Training pair 6: 4x19 -> 4x4; colors [0, 3, 4, 5, 8, 9] -> [0, 4, 5, 8, 9]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

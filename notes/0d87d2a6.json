@@ -1,0 +1,19 @@
+{
+  "title": "Repaint the entire rectangle that touches the line",
+  "summary": "Connect the opposite blue marks on the left and right sides or the top and bottom sides with straight lines in the same row and column. Marks on the same side are not connected. Turns the entire red shape that overlaps or touches the line blue. Draw a blue line and keep the unrelated red shapes and dimensions of the board.",
+  "steps": [
+    "Connect the opposite blue marks on the left and right sides or the top and bottom sides with straight lines in the same row and column.",
+    "Marks on the same side are not connected. Turns the entire red shape that overlaps or touches the line blue.",
+    "Draw a blue line and keep the unrelated red shapes and dimensions of the board."
+  ],
+  "concepts": [
+    "contact between line and object",
+    "Object unit conversion"
+  ],
+  "observations": [
+    "Training pair 1: 10x20 -> 10x20; colors [0, 1, 2] -> [0, 1, 2]; 24 cells changed.",
+    "Training pair 2: 20x20 -> 20x20; colors [0, 1, 2] -> [0, 1, 2]; 67 cells changed.",
+    "Training pair 3: 13x14 -> 13x14; colors [0, 1, 2] -> [0, 1, 2]; 58 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

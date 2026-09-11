@@ -1,0 +1,21 @@
+{
+  "title": "Drop blue to the edge of light blue to add brown shadow",
+  "summary": "Determine the direction in which you will fill in the blue 1 from the light blue 8 mark on the side. Keep the number of blues in each row or column and pack them to that side. In the marked row, leave the light blue at the edge, line up the blue, and immediately behind it line up the same number of brown 9s as the blue.",
+  "steps": [
+    "Determine the direction in which you will fill in the blue 1 from the light blue 8 mark on the side.",
+    "Keep the number of blues in each row or column and pack them to that side.",
+    "In the marked row, leave the light blue at the edge, line up the blue, and immediately behind it line up the same number of brown 9s as the blue."
+  ],
+  "concepts": [
+    "period",
+    "phase",
+    "hidden shape"
+  ],
+  "observations": [
+    "Training pair 1: 5x6 -> 5x6; colors [0, 1, 8] -> [0, 1, 8, 9]; 17 cells changed.",
+    "Training pair 2: 7x7 -> 7x7; colors [0, 1, 8] -> [0, 1, 8, 9]; 29 cells changed.",
+    "Training pair 3: 4x8 -> 4x8; colors [0, 1, 8] -> [0, 1, 8, 9]; 16 cells changed.",
+    "Training pair 4: 3x3 -> 3x3; colors [0, 1, 8] -> [0, 1, 8, 9]; 6 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

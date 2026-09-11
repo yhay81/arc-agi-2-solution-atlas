@@ -1,0 +1,19 @@
+{
+  "title": "Overlapping window patterns of the same size",
+  "summary": "Using the most common color as the background, take out the windows within it, including those that touch diagonally. Overlap each window as a same-sized cutout. Leave the squares other than black 0 and combine them into one pattern.",
+  "steps": [
+    "Using the most common color as the background, take out the windows within it, including those that touch diagonally.",
+    "Overlap each window as a same-sized cutout.",
+    "Leave the squares other than black 0 and combine them into one pattern."
+  ],
+  "concepts": [
+    "alignment",
+    "superposition"
+  ],
+  "observations": [
+    "Training pair 1: 16x16 -> 3x4; colors [0, 1, 2, 3, 4, 8] -> [0, 1, 2, 3, 4]; output dimensions changed.",
+    "Training pair 2: 16x16 -> 4x4; colors [0, 1, 2, 3, 4] -> [0, 2, 3, 4]; output dimensions changed.",
+    "Training pair 3: 16x16 -> 4x5; colors [0, 1, 2, 9] -> [0, 1, 2]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

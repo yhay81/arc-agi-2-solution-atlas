@@ -1,0 +1,19 @@
+{
+  "title": "Add the color of the nearest edge next to it",
+  "summary": "Look for a colored edge where the entire edge of the board is painted one color. Measure the distance from each blue dot to each edge and choose the closest edge. Paint only one square directly next to the blue dot towards the selected edge with the color of that edge.",
+  "steps": [
+    "Look for a colored edge where the entire edge of the board is painted one color.",
+    "Measure the distance from each blue dot to each edge and choose the closest edge.",
+    "Paint only one square directly next to the blue dot towards the selected edge with the color of that edge."
+  ],
+  "concepts": [
+    "distance comparison",
+    "Equal distance rule"
+  ],
+  "observations": [
+    "Training pair 1: 14x10 -> 14x10; colors [0, 1, 2, 4] -> [0, 1, 2, 4]; 9 cells changed.",
+    "Training pair 2: 12x13 -> 12x13; colors [0, 1, 3, 8] -> [0, 1, 3, 8]; 8 cells changed.",
+    "Training pair 3: 12x10 -> 12x10; colors [0, 1, 3, 4] -> [0, 1, 3, 4]; 6 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

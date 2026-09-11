@@ -1,0 +1,18 @@
+{
+  "title": "Decode color-keyed 2-by-2 masks into the gray target region",
+  "summary": "The blue 2x2 mask adjacent to the color key at the top is read as a dictionary, and each 2x2 target block in the gray area is redrawn and cut out using the color indicated by that block and the corresponding mask.",
+  "steps": [
+    "Create a correspondence between color and blue 2×2 mask from the top",
+    "Read the indicated color contained in a 2x2 block within the gray area",
+    "Draw only the true cells of the compatible mask in the indicated color"
+  ],
+  "concepts": [
+    "color key",
+    "mask decoding"
+  ],
+  "observations": [
+    "Training pair 1: 17x18 -> 8x14; colors [0, 1, 2, 3, 5, 7] -> [0, 2, 3, 7]; output dimensions changed.",
+    "Training pair 2: 18x20 -> 8x11; colors [0, 1, 2, 3, 4, 5, 8] -> [0, 2, 3, 4, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

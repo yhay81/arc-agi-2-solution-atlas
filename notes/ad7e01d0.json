@@ -1,0 +1,18 @@
+{
+  "title": "Copy the entire input to the gray arrangement",
+  "summary": "Self-similar expansion that places a copy of the entire input at the gray 5 position.",
+  "steps": [
+    "Self-similar expansion that places a copy of the entire input at the gray 5 position."
+  ],
+  "concepts": [
+    "self-replication",
+    "instructions mask"
+  ],
+  "observations": [
+    "Training pair 1: 4x4 -> 16x16; colors [0, 2, 3, 5] -> [0, 2, 3, 5]; output dimensions changed.",
+    "Training pair 2: 3x3 -> 9x9; colors [0, 1, 2, 5] -> [0, 1, 2, 5]; output dimensions changed.",
+    "Training pair 3: 4x4 -> 16x16; colors [2, 3, 5] -> [0, 2, 3, 5]; output dimensions changed.",
+    "Training pair 4: 3x3 -> 9x9; colors [0, 1, 2, 5] -> [0, 1, 2, 5]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

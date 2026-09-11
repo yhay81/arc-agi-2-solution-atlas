@@ -1,0 +1,20 @@
+{
+  "title": "From the red dot, extend one square of stairs up and one square of stairs to the right.",
+  "summary": "From the red dot, extend the stairs one square up and one square to the right. If there is a blue obstacle above, go to the right until you reach a position where you can move up, then continue up the stairs.",
+  "steps": [
+    "From the red dot, extend one square of stairs up and one square of stairs to the right.",
+    "If there is a blue obstacle above, go to the right until you reach a position where you can move up, then continue up the stairs."
+  ],
+  "concepts": [
+    "route",
+    "period",
+    "obstacle avoidance"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 1, 2] -> [0, 1, 2]; 16 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 2] -> [0, 2]; 17 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 1, 2] -> [0, 1, 2]; 16 cells changed.",
+    "Training pair 4: 10x10 -> 10x10; colors [0, 2] -> [0, 2]; 13 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

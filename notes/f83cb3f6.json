@@ -1,0 +1,18 @@
+{
+  "title": "Project scattered markers to the near side of a straight separator",
+  "summary": "Project scattered markers to the near side of a straight separator. This is the training-inferred `project_markers_to_separator` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `project_markers_to_separator`: project scattered markers to the near side of a straight separator"
+  ],
+  "concepts": [
+    "project",
+    "markers",
+    "separator"
+  ],
+  "observations": [
+    "Training pair 1: 12x14 -> 12x14; colors [0, 1, 8] -> [0, 1, 8]; 19 cells changed.",
+    "Training pair 2: 17x10 -> 17x10; colors [0, 5, 8] -> [0, 5, 8]; 23 cells changed.",
+    "Training pair 3: 15x10 -> 15x10; colors [0, 2, 8] -> [0, 2, 8]; 21 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

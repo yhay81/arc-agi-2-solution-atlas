@@ -1,0 +1,22 @@
+{
+  "title": "Keep cells occupied on exactly one side of the vertical separator",
+  "summary": "Keep cells occupied on exactly one side of the vertical separator. This is the training-inferred `xor_separated_lr` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `xor_separated_lr`: keep cells occupied on exactly one side of the vertical separator"
+  ],
+  "concepts": [
+    "xor",
+    "separated",
+    "lr"
+  ],
+  "observations": [
+    "Training pair 1: 5x9 -> 5x4; colors [0, 4, 5, 8] -> [0, 2]; output dimensions changed.",
+    "Training pair 2: 5x9 -> 5x4; colors [0, 4, 5, 8] -> [0, 2]; output dimensions changed.",
+    "Training pair 3: 5x9 -> 5x4; colors [0, 4, 5, 8] -> [0, 2]; output dimensions changed.",
+    "Training pair 4: 5x9 -> 5x4; colors [0, 4, 5, 8] -> [0, 2]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "final color map: 0 -> 0, 1 -> 2"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Project color two across every completely empty row and column",
+  "summary": "Project color two across every completely empty row and column. This is the training-inferred `recolor_empty_rows_and_columns_two` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `recolor_empty_rows_and_columns_two`: project color two across every completely empty row and column"
+  ],
+  "concepts": [
+    "recolor",
+    "empty",
+    "rows",
+    "columns",
+    "two"
+  ],
+  "observations": [
+    "Training pair 1: 12x14 -> 12x14; colors [0, 8] -> [0, 2, 8]; 24 cells changed.",
+    "Training pair 2: 12x19 -> 12x19; colors [0, 1] -> [0, 1, 2]; 30 cells changed.",
+    "Training pair 3: 17x15 -> 17x15; colors [0, 3] -> [0, 2, 3]; 45 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

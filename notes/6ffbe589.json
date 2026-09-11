@@ -1,0 +1,19 @@
+{
+  "title": "Cut out a large square pattern and rotate each color independently.",
+  "summary": "Cut out a large square pattern and rotate each color independently. Rotate each square of the same color outside 90 degrees clockwise, making a complete circle with four.",
+  "steps": [
+    "Cut out a large square pattern and rotate each color independently.",
+    "Rotate each square of the same color outside 90 degrees clockwise, making a complete circle with four squares."
+  ],
+  "concepts": [
+    "rotation",
+    "compartment",
+    "Classification of shapes"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 13x13; colors [0, 3, 6, 8] -> [0, 3, 6, 8]; output dimensions changed.",
+    "Training pair 2: 20x20 -> 10x10; colors [0, 3, 4, 5] -> [0, 3, 4, 5]; output dimensions changed.",
+    "Training pair 3: 20x20 -> 10x10; colors [0, 1, 2, 4] -> [0, 1, 2, 4]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

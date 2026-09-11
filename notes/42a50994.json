@@ -1,0 +1,18 @@
+{
+  "title": "Remove isolated singleton cells",
+  "summary": "Remove isolated singleton cells. This is the training-inferred `remove_singletons` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `remove_singletons`: remove isolated singleton cells"
+  ],
+  "concepts": [
+    "remove",
+    "singletons"
+  ],
+  "observations": [
+    "Training pair 1: 11x19 -> 11x19; colors [0, 5] -> [0, 5]; 10 cells changed.",
+    "Training pair 2: 12x18 -> 12x18; colors [0, 6] -> [0, 6]; 13 cells changed.",
+    "Training pair 3: 17x9 -> 17x9; colors [0, 4] -> [0, 4]; 8 cells changed.",
+    "Training pair 4: 16x11 -> 16x11; colors [0, 8] -> [0, 8]; 11 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

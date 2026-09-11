@@ -1,0 +1,24 @@
+{
+  "title": "Move the frame to the brown line while changing the gray to orange one square at a time.",
+  "summary": "Move the black frame and the brown line attached to the frame towards the distant, parallel brown line. Every time you move one square, one gray square within the frame turns orange, and stop when the brown lines overlap or there is no more gray. The order of selecting gray colors is from left to right from the top row when looking upwards in the direction of travel.",
+  "steps": [
+    "Look for the black rectangular frame and the brown (9) line that touches the outside of it. The orange (7) and gray (5) inside the frame move together with the frame.",
+    "Look for parallel brown lines of the same length towards the side with the brown lines. Count the number of squares you need to move to overlap the two brown lines.",
+    "Count the number of gray squares within the frame. The actual amount of movement is the smaller of the \"distance to the brown line\" and the \"number of gray squares\". If everything is orange from the beginning, it won't work.",
+    "When looking upward in the direction of travel, select gray squares in each row from left to right, starting from the top row. Change the gray to orange by the same number of squares you move. Already skip the orange squares.",
+    "Move the black frame, inside the frame, and the attached brown line in parallel by a determined distance. The location before movement is returned to the purple (6) background, and the brown line of the destination remains."
+  ],
+  "concepts": [
+    "line showing direction",
+    "parallel movement",
+    "Use the gray squares as the number of moves",
+    "Two stopping conditions",
+    "Scan order according to direction"
+  ],
+  "observations": [
+    "Training pair 1: 8x8 -> 8x8; colors [0, 5, 6, 7, 9] -> [0, 5, 6, 7, 9]; 20 cells changed.",
+    "Training pair 2: 17x17 -> 17x17; colors [0, 5, 6, 7, 9] -> [0, 5, 6, 7, 9]; 113 cells changed.",
+    "Training pair 3: 12x12 -> 12x12; colors [0, 5, 6, 7, 9] -> [0, 5, 6, 7, 9]; 50 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

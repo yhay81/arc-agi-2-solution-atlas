@@ -1,0 +1,18 @@
+{
+  "title": "Compress a rectangular mosaic whose cells are separated by zero space",
+  "summary": "Compress a rectangular mosaic whose cells are separated by zero space. The non-zero crop is made of axis-aligned, filled color rectangles. A change in a complete row (or column) marks a cell-band boundary, so equal row/column runs provide the mosaic's variable cell dimensions. Sampling each resulting block yields the compact color layout. This is the training-inferred `compress_rectangle_mosaic` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `compress_rectangle_mosaic`: compress a rectangular mosaic whose cells are separated by zero space"
+  ],
+  "concepts": [
+    "compress",
+    "rectangle",
+    "mosaic"
+  ],
+  "observations": [
+    "Training pair 1: 21x21 -> 2x2; colors [0, 1, 2, 4, 8] -> [1, 2, 4, 8]; output dimensions changed.",
+    "Training pair 2: 21x21 -> 3x3; colors [0, 1, 2, 3, 4, 5, 7, 8] -> [1, 2, 3, 4, 5, 7, 8]; output dimensions changed.",
+    "Training pair 3: 21x21 -> 3x2; colors [0, 1, 2, 3, 4, 8] -> [1, 2, 3, 4, 8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "If the colored cell in the sample above is to the left, you will turn left when faced with an obstacle of that color, and if it is to the right, you will turn right.",
+  "summary": "If the colored cell in the sample above is to the left, you will turn left when faced with an obstacle of that color, and if it is to the right, you will turn right. Extend a tube of the same thickness from the light blue square up, down, left and right, and bend it according to the sample just in front of the obstacle. Display only the board without the sample.",
+  "steps": [
+    "If the colored cell in the sample above is to the left, you will turn left when faced with an obstacle of that color, and if it is to the right, you will turn right.",
+    "Extend a tube of the same thickness from the light blue square vertically and horizontally, and bend it according to the sample just in front of the obstacle.",
+    "Display only the board without the sample"
+  ],
+  "concepts": [
+    "heading instructions",
+    "Hollow out",
+    "Correspondence"
+  ],
+  "observations": [
+    "Training pair 1: 25x24 -> 19x24; colors [0, 1, 2, 3, 4, 5, 6, 8] -> [1, 2, 3, 4, 8]; output dimensions changed.",
+    "Training pair 2: 25x24 -> 19x24; colors [0, 1, 2, 3, 4, 5, 6, 8] -> [1, 2, 3, 4, 6, 8]; output dimensions changed.",
+    "Training pair 3: 25x24 -> 19x24; colors [0, 2, 3, 4, 5, 6, 7, 8] -> [2, 3, 4, 6, 7, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

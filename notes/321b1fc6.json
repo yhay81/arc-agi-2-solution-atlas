@@ -1,0 +1,19 @@
+{
+  "title": "Replace repeated monochrome shapes with a matching multicolor template",
+  "summary": "Replace repeated monochrome shapes with a matching multicolor template. This is the training-inferred `replace_repeated_shapes_with_multicolor_template` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `replace_repeated_shapes_with_multicolor_template`: replace repeated monochrome shapes with a matching multicolor template"
+  ],
+  "concepts": [
+    "replace",
+    "repeated",
+    "shapes",
+    "multicolor",
+    "template"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 6, 7, 8] -> [0, 6, 7]; 20 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 4, 6, 7, 8, 9] -> [0, 4, 6, 7, 9]; 16 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

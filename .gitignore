@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+dist/
+build/
+.site-build/
+.pytest_cache/
+.ruff_cache/
+.hypothesis/
+htmlcov/

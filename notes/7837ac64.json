@@ -1,0 +1,20 @@
+{
+  "title": "Decode cells whose four lattice corners share a non-grid color",
+  "summary": "Decode cells whose four lattice corners share a non-grid color. This is the training-inferred `decode_colored_lattice_cells` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `decode_colored_lattice_cells`: decode cells whose four lattice corners share a non-grid color"
+  ],
+  "concepts": [
+    "decode",
+    "colored",
+    "lattice",
+    "cells"
+  ],
+  "observations": [
+    "Training pair 1: 29x29 -> 3x3; colors [0, 1, 3, 6] -> [0, 3, 6]; output dimensions changed.",
+    "Training pair 2: 27x27 -> 3x3; colors [0, 2, 3, 8] -> [0, 2, 8]; output dimensions changed.",
+    "Training pair 3: 27x27 -> 3x3; colors [0, 1, 2, 8] -> [0, 1, 2]; output dimensions changed.",
+    "Training pair 4: 29x29 -> 3x3; colors [0, 1, 3, 4] -> [0, 1, 3]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Draw a diagonal line to the quadrant pointed to by the center color",
+  "summary": "The hypothesis is to select a quadrant with the same color as the center point and leave only a 45 degree line of the same color from the center to its corner.",
+  "steps": [
+    "Read the color in the center of the board",
+    "Determine where in the four quadrants there are clusters of the same color",
+    "Erase all scattered points to orange 7 and draw a diagonal line of the same color from the center to the corner of the selected quadrant"
+  ],
+  "concepts": [
+    "center color",
+    "quadrant",
+    "direction"
+  ],
+  "observations": [
+    "Training pair 1: 11x11 -> 11x11; colors [0, 2, 3, 7, 9] -> [0, 7]; 40 cells changed.",
+    "Training pair 2: 7x7 -> 7x7; colors [0, 1, 4, 5, 7] -> [5, 7]; 18 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

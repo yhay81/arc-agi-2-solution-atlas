@@ -1,0 +1,19 @@
+{
+  "title": "Continue the shortest observed horizontal period through a blank suffix",
+  "summary": "Continue the shortest observed horizontal period through a blank suffix. This is the training-inferred `tile_left_prefix_horizontally` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `tile_left_prefix_horizontally`: continue the shortest observed horizontal period through a blank suffix"
+  ],
+  "concepts": [
+    "tile",
+    "left",
+    "prefix",
+    "horizontally"
+  ],
+  "observations": [
+    "Training pair 1: 5x15 -> 5x15; colors [0, 1, 2, 3] -> [0, 1, 2, 3]; 11 cells changed.",
+    "Training pair 2: 5x15 -> 5x15; colors [0, 1, 2] -> [0, 1, 2]; 14 cells changed.",
+    "Training pair 3: 5x15 -> 5x15; colors [0, 2, 3, 4] -> [0, 2, 3, 4]; 11 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

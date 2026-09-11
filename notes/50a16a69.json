@@ -1,0 +1,19 @@
+{
+  "title": "Shifting the starting position of a repeating pattern",
+  "summary": "The area with the same color as the bottom right is considered to be the area where the pattern is hidden. Restores the whole with a vertical and horizontal period of the minimum area that does not contradict the visible squares. Shift the starting position of each restored row one space to the left.",
+  "steps": [
+    "The area with the same color as the bottom right is considered to be the area where the pattern is hidden.",
+    "Restores the whole with a vertical and horizontal period of the minimum area that does not contradict the visible squares.",
+    "Shift the starting position of each restored row one space to the left."
+  ],
+  "concepts": [
+    "period",
+    "Change phase"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 20x20; colors [3, 5, 6, 7, 8] -> [3, 5, 6, 7]; 400 cells changed.",
+    "Training pair 2: 8x8 -> 8x8; colors [1, 2, 5] -> [2, 5]; 64 cells changed.",
+    "Training pair 3: 9x9 -> 9x9; colors [3, 4, 6, 7] -> [3, 6, 7]; 81 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

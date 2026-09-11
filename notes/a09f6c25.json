@@ -1,0 +1,19 @@
+{
+  "title": "Erase isolated points and examine the axis of symmetry of each shape",
+  "summary": "Erase the isolated points and examine the symmetry axis of each shape. Blue for vertical symmetry, green for horizontal symmetry, and pink for diagonal symmetry.",
+  "steps": [
+    "Erase isolated points and examine the axis of symmetry of each shape",
+    "Blue for vertical symmetry, green for horizontal symmetry, and pink for diagonal symmetry."
+  ],
+  "concepts": [
+    "Direction classification",
+    "Shape characteristics",
+    "Noise removal"
+  ],
+  "observations": [
+    "Training pair 1: 19x19 -> 19x19; colors [2, 7] -> [1, 3, 6, 7]; 63 cells changed.",
+    "Training pair 2: 19x19 -> 19x19; colors [2, 8] -> [1, 3, 8]; 49 cells changed.",
+    "Training pair 3: 17x19 -> 17x19; colors [2, 4] -> [1, 3, 4]; 45 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

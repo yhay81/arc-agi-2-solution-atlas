@@ -1,0 +1,13 @@
+{
+  "title": "Swap gray and azure",
+  "summary": "Exchange gray and azure cells while leaving every other color unchanged.",
+  "steps": ["Replace gray 5 with azure 8 and azure 8 with gray 5."],
+  "concepts": ["color substitution", "color swap"],
+  "observations": [
+    "Training pair 1: 3x3 -> 3x3; colors [1, 2, 3, 4, 5, 8, 9] -> [1, 2, 3, 4, 5, 8, 9]; 3 cells changed.",
+    "Training pair 2: 5x5 -> 5x5; colors [1, 2, 3, 4, 5, 6, 7, 8, 9] -> [1, 2, 3, 4, 5, 6, 7, 8, 9]; 13 cells changed.",
+    "Training pair 3: 3x3 -> 3x3; colors [2, 3, 5, 6, 7, 8] -> [2, 3, 5, 6, 7, 8]; 5 cells changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": ["swap colors 5 and 8"]
+}

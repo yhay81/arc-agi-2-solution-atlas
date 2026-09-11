@@ -1,0 +1,18 @@
+{
+  "title": "Remove uniform lines",
+  "summary": "Remove uniform lines. This is the training-inferred `remove_uniform_lines` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `remove_uniform_lines`: remove uniform lines"
+  ],
+  "concepts": [
+    "remove",
+    "uniform",
+    "lines"
+  ],
+  "observations": [
+    "Training pair 1: 6x6 -> 3x3; colors [0, 1, 2, 3, 8] -> [0, 1, 2, 3, 8]; output dimensions changed.",
+    "Training pair 2: 6x6 -> 3x3; colors [0, 1, 2, 3] -> [0, 1, 2, 3]; output dimensions changed.",
+    "Training pair 3: 6x6 -> 3x3; colors [0, 1, 2, 6] -> [0, 1, 2, 6]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Push square parts to the right without changing the row height",
+  "summary": "Starting from the right side, move the colored checkered parts to the right, keeping their shape, until they touch the right end or the next part.",
+  "steps": [
+    "Starting from the right side, move the colored checkered parts to the right, keeping their shape, until they touch the right end or the next part."
+  ],
+  "concepts": [
+    "gravity to the right",
+    "collision",
+    "Movement of object units"
+  ],
+  "observations": [
+    "Training pair 1: 15x15 -> 15x15; colors [0, 1, 2, 4, 5, 6, 8, 9] -> [0, 1, 2, 4, 5, 6, 8, 9]; 40 cells changed.",
+    "Training pair 2: 15x15 -> 15x15; colors [0, 1, 2, 3, 4, 6, 7, 8] -> [0, 1, 2, 3, 4, 6, 7, 8]; 67 cells changed.",
+    "Training pair 3: 15x15 -> 15x15; colors [0, 2, 3, 5, 6, 7, 8, 9] -> [0, 2, 3, 5, 6, 7, 8, 9]; 55 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

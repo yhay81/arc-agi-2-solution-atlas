@@ -1,0 +1,19 @@
+{
+  "title": "Combine corresponding cells from the left and right panels",
+  "summary": "The left and right sections separated by the gray column are overlapped, and if they are the same, they are reduced to that value, if the left side is not black, it is red, and if the right side is not black, it is blue.",
+  "steps": [
+    "Divide left and right using the gray separator column in the center",
+    "Compare two cells at the same location",
+    "Decide the output color in three cases: match, left only, and right only"
+  ],
+  "concepts": [
+    "Two-sided composition",
+    "position comparison"
+  ],
+  "observations": [
+    "Training pair 1: 10x21 -> 10x10; colors [0, 4, 5, 8, 9] -> [0, 1, 2, 4, 8, 9]; output dimensions changed.",
+    "Training pair 2: 10x21 -> 10x10; colors [0, 3, 5, 6] -> [0, 1, 2, 3, 6]; output dimensions changed.",
+    "Training pair 3: 10x21 -> 10x10; colors [0, 3, 5, 6, 8] -> [0, 1, 2, 3, 6, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

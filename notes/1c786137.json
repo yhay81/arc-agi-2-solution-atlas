@@ -1,0 +1,19 @@
+{
+  "title": "Extract the contents surrounded by a complete one-color rectangle",
+  "summary": "Extract the contents surrounded by a complete one-color rectangle. This is the training-inferred `crop_inside_monochrome_rectangle` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `crop_inside_monochrome_rectangle`: extract the contents surrounded by a complete one-color rectangle"
+  ],
+  "concepts": [
+    "crop",
+    "inside",
+    "monochrome",
+    "rectangle"
+  ],
+  "observations": [
+    "Training pair 1: 13x16 -> 5x3; colors [0, 3, 4, 6, 9] -> [0, 3, 6, 9]; output dimensions changed.",
+    "Training pair 2: 23x21 -> 6x8; colors [0, 1, 2, 3, 5, 8] -> [0, 1, 3, 5, 8]; output dimensions changed.",
+    "Training pair 3: 17x18 -> 8x10; colors [0, 2, 3, 5, 8] -> [0, 2, 3, 5]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

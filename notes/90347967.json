@@ -1,0 +1,18 @@
+{
+  "title": "Rotate the pattern half a turn around the gray dot",
+  "summary": "While keeping the position of Gray 5 fixed, rotate the other color squares 180 degrees to the opposite side of that point.",
+  "steps": [
+    "Find the gray 5 square as the center of rotation.",
+    "Reverse both the vertical and horizontal deviations from the center of each color square and place it on the opposite side of the gray square.",
+    "The original position is returned to the background, and the gray center and color of each square are maintained."
+  ],
+  "concepts": [
+    "180 degree rotation"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 3x3; colors [0, 1, 2, 5, 6] -> [0, 1, 2, 5, 6]; 8 cells changed.",
+    "Training pair 2: 7x9 -> 7x9; colors [0, 1, 2, 3, 4, 5] -> [0, 1, 2, 3, 4, 5]; 12 cells changed.",
+    "Training pair 3: 9x9 -> 9x9; colors [0, 1, 2, 3, 5] -> [0, 1, 2, 3, 5]; 10 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

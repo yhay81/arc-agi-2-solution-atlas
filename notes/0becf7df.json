@@ -1,0 +1,19 @@
+{
+  "title": "Replace two colors at a time according to the color swatch on the upper left.",
+  "summary": "In the 2x2 swatch in the upper left, read as a pair of swapping two colors in the same row.",
+  "steps": [
+    "In the 2x2 swatch in the upper left, read as a pair of swapping two colors in the same row.",
+    "For the center pattern, exchange the two colors in the upper row of the sample and the two colors in the lower row in both directions.",
+    "The upper left sample itself cannot be changed."
+  ],
+  "concepts": [
+    "Correspondence table within input",
+    "Bidirectional color exchange"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 1, 2, 3, 8] -> [0, 1, 2, 3, 8]; 23 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 2, 3, 4, 7] -> [0, 2, 3, 4, 7]; 21 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 4, 6, 7, 9] -> [0, 4, 6, 7, 9]; 13 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

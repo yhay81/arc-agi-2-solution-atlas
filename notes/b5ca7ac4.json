@@ -1,0 +1,19 @@
+{
+  "title": "The light blue frame moves left, the red frame moves horizontally to the right, until it does not overlap another frame moving to the same side.",
+  "summary": "The light blue frame moves to the left, the red frame to the right, and moves horizontally until it does not overlap another frame moving to the same side. The vertical position and internal color are maintained.",
+  "steps": [
+    "The light blue frame moves left, the red frame moves horizontally to the right, until it does not overlap another frame moving to the same side.",
+    "Maintain vertical position and internal color"
+  ],
+  "concepts": [
+    "ring",
+    "alignment",
+    "Collision avoidance"
+  ],
+  "observations": [
+    "Training pair 1: 22x22 -> 22x22; colors [0, 1, 2, 3, 4, 5, 6, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 8, 9]; 276 cells changed.",
+    "Training pair 2: 22x22 -> 22x22; colors [1, 2, 3, 4, 5, 6, 8, 9] -> [1, 2, 3, 4, 5, 6, 8, 9]; 197 cells changed.",
+    "Training pair 3: 22x22 -> 22x22; colors [1, 2, 3, 4, 5, 6, 8] -> [1, 2, 3, 4, 5, 6, 8]; 246 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

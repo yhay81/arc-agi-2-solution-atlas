@@ -1,0 +1,22 @@
+{
+  "title": "Reflect marker cells through the nearest side of one hollow frame",
+  "summary": "Use the bounding sides of the red frame as reflection axes. Move each connected gray marker through the nearest side, preserving its shape and distance from that side while retaining the frame.",
+  "steps": [
+    "Find the bounding sides of the red frame.",
+    "Group orthogonally connected gray marker cells and select the nearest frame side for each group.",
+    "Erase each marker group and reflect it through the selected side."
+  ],
+  "concepts": [
+    "reflect",
+    "markers",
+    "across",
+    "hollow",
+    "frame"
+  ],
+  "observations": [
+    "Training pair 1: 15x15 -> 15x15; colors [0, 2, 5] -> [0, 2, 5]; 16 cells changed.",
+    "Training pair 2: 15x15 -> 15x15; colors [0, 2, 5] -> [0, 2, 5]; 12 cells changed.",
+    "Training pair 3: 15x15 -> 15x15; colors [0, 2, 5] -> [0, 2, 5]; 14 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

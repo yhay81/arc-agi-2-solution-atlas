@@ -1,0 +1,19 @@
+{
+  "title": "Combine four central-separator quadrants, retaining a unique cell value",
+  "summary": "Combine four central-separator quadrants, retaining a unique cell value. This is the training-inferred `overlay_four_quadrants_unique` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `overlay_four_quadrants_unique`: combine four central-separator quadrants, retaining a unique cell value"
+  ],
+  "concepts": [
+    "overlay",
+    "four",
+    "quadrants",
+    "unique"
+  ],
+  "observations": [
+    "Training pair 1: 5x5 -> 2x2; colors [0, 1] -> [0, 1]; output dimensions changed.",
+    "Training pair 2: 5x5 -> 2x2; colors [0, 2] -> [0, 2]; output dimensions changed.",
+    "Training pair 3: 5x5 -> 2x2; colors [0, 8] -> [0, 8]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Overlay four equal panels, resolving occupied cells by panel priority",
+  "summary": "Overlay four equal panels, resolving occupied cells by panel priority. Each panel is a colored binary mask. At every corresponding position the first occupied panel in ``order`` contributes its color; empty positions remain zero. The priority is part of the inferred structural rule rather than a task-specific pixel lookup. This is the training-inferred `compose_quadrants_priority` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `compose_quadrants_priority`: overlay four equal panels, resolving occupied cells by panel priority"
+  ],
+  "concepts": [
+    "compose",
+    "quadrants",
+    "priority"
+  ],
+  "observations": [
+    "Training pair 1: 8x8 -> 4x4; colors [0, 4, 5, 6, 9] -> [5, 6, 9]; output dimensions changed.",
+    "Training pair 2: 8x8 -> 4x4; colors [0, 4, 5, 6, 9] -> [0, 4, 5, 6, 9]; output dimensions changed.",
+    "Training pair 3: 8x8 -> 4x4; colors [0, 4, 5, 6, 9] -> [0, 4, 5, 6, 9]; output dimensions changed.",
+    "Training pair 4: 8x8 -> 4x4; colors [0, 4, 5, 6, 9] -> [0, 5, 6, 9]; output dimensions changed.",
+    "Training pair 5: 8x8 -> 4x4; colors [0, 4, 5, 6, 9] -> [0, 4, 5, 6, 9]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "ordering rule: 1 x 2 x 3 x 0"
+  ]
+}

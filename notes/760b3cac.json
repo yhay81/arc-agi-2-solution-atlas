@@ -1,0 +1,20 @@
+{
+  "title": "Mirror the upper glyph beside itself in the lower guide's direction",
+  "summary": "Mirror the upper glyph beside itself in the lower guide's direction. This is the training-inferred `mirror_upper_glyph_from_lower_guide` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `mirror_upper_glyph_from_lower_guide`: mirror the upper glyph beside itself in the lower guide's direction"
+  ],
+  "concepts": [
+    "mirror",
+    "upper",
+    "glyph",
+    "lower",
+    "guide"
+  ],
+  "observations": [
+    "Training pair 1: 6x9 -> 6x9; colors [0, 4, 8] -> [0, 4, 8]; 7 cells changed.",
+    "Training pair 2: 6x9 -> 6x9; colors [0, 4, 8] -> [0, 4, 8]; 5 cells changed.",
+    "Training pair 3: 6x9 -> 6x9; colors [0, 4, 8] -> [0, 4, 8]; 4 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

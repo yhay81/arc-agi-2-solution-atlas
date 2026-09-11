@@ -1,0 +1,17 @@
+{
+  "title": "Make the number of sections created by the line the output dimension",
+  "summary": "Shrink it to the number of rows and columns of the background section that actually exists between the partition lines, and paint it with the background color. Areas outside the edge lines do not count as sections.",
+  "steps": [
+    "Shrink it to the number of rows and columns of the background section that actually exists between the partition lines, and paint it with the background color. Areas outside the edge lines do not count as sections."
+  ],
+  "concepts": [
+    "Number of sections",
+    "Correspondence between lines and areas"
+  ],
+  "observations": [
+    "Training pair 1: 27x27 -> 5x5; colors [5, 8] -> [5]; output dimensions changed.",
+    "Training pair 2: 21x21 -> 3x4; colors [3, 5] -> [5]; output dimensions changed.",
+    "Training pair 3: 10x10 -> 2x3; colors [1, 4] -> [1]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

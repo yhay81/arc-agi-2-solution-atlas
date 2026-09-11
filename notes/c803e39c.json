@@ -1,0 +1,18 @@
+{
+  "title": "Create a nested pattern using two shapes and two colors",
+  "summary": "Copy the first shape to each painted square of the second shape, and use the second half of the solid color sample as the foreground and background.",
+  "steps": [
+    "Copy the first shape to each painted square of the second shape, and use the second half of the solid color sample as the foreground and background."
+  ],
+  "concepts": [
+    "nesting",
+    "mold",
+    "Color specification"
+  ],
+  "observations": [
+    "Training pair 1: 5x23 -> 9x9; colors [0, 1, 2, 3, 5, 9] -> [3, 9]; output dimensions changed.",
+    "Training pair 2: 5x23 -> 9x9; colors [0, 1, 2, 4, 5, 8] -> [4, 8]; output dimensions changed.",
+    "Training pair 3: 6x27 -> 16x16; colors [0, 1, 2, 5, 7, 8] -> [7, 8]; output dimensions changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

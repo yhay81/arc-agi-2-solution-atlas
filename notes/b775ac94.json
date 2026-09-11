@@ -1,0 +1,19 @@
+{
+  "title": "Copy monochrome shapes into tiles indicated by adjacent corner marks",
+  "summary": "Copy monochrome shapes into tiles indicated by adjacent corner marks. A detached singleton is a color instruction around a source shape. Its direction selects a reflected (or half-turn) copy in the adjacent tile. Every compatible mark is copied; several marks may address the same source corner and produce copies in multiple adjacent tiles. This is the training-inferred `copy_shapes_from_corner_markers` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `copy_shapes_from_corner_markers`: copy monochrome shapes into tiles indicated by adjacent corner marks"
+  ],
+  "concepts": [
+    "copy",
+    "shapes",
+    "corner",
+    "markers"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 20x20; colors [0, 2, 3, 4, 8] -> [0, 2, 3, 4, 8]; 24 cells changed.",
+    "Training pair 2: 30x30 -> 30x30; colors [0, 1, 2, 3, 4, 7, 8] -> [0, 1, 2, 3, 4, 7, 8]; 39 cells changed.",
+    "Training pair 3: 14x14 -> 14x14; colors [0, 1, 2, 4, 6, 8] -> [0, 1, 2, 4, 6, 8]; 18 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

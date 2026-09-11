@@ -1,0 +1,19 @@
+{
+  "title": "Leaving long lines connected vertically and horizontally and erasing fragments that deviate diagonally",
+  "summary": "Leave long lines connected vertically and horizontally, and erase diagonal fragments. Between two sections on the same straight line, only gaps with diagonal bends at the ends are connected. Keep unbroken breaks.",
+  "steps": [
+    "Leaving long lines connected vertically and horizontally and erasing fragments that deviate diagonally",
+    "Connect only the gap between two sections on the same straight line that has a diagonal bend at the end.",
+    "Maintain unbroken breaks"
+  ],
+  "concepts": [
+    "line completion",
+    "Deficit",
+    "Vertical and horizontal"
+  ],
+  "observations": [
+    "Training pair 1: 16x30 -> 16x30; colors [1, 6] -> [1, 6]; 13 cells changed.",
+    "Training pair 2: 28x24 -> 28x24; colors [0, 3] -> [0, 3]; 18 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

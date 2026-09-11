@@ -1,0 +1,18 @@
+{
+  "title": "Extract the unique nonzero row",
+  "summary": "Extract the unique nonzero row. This is the training-inferred `nonzero_row` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `nonzero_row`: extract the unique nonzero row"
+  ],
+  "concepts": [
+    "nonzero",
+    "row"
+  ],
+  "observations": [
+    "Training pair 1: 3x3 -> 1x1; colors [0, 7] -> [7]; output dimensions changed.",
+    "Training pair 2: 3x3 -> 1x3; colors [0, 2] -> [2]; output dimensions changed.",
+    "Training pair 3: 3x3 -> 1x4; colors [0, 8] -> [8]; output dimensions changed.",
+    "Training pair 4: 3x3 -> 1x2; colors [0, 1] -> [1]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only"
+}

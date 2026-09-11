@@ -1,0 +1,22 @@
+{
+  "title": "Replace hollow squares with plus signs",
+  "summary": "Turn every hollow 3-by-3 square of color 1 into a plus sign of color 2 while preserving all other shapes.",
+  "steps": [
+    "Locate exact hollow 3-by-3 squares.",
+    "Replace their eight-cell outlines with five-cell blue plus signs."
+  ],
+  "concepts": [
+    "square",
+    "plus",
+    "shape replacement"
+  ],
+  "observations": [
+    "Training pair 1 replaces two hollow squares and preserves the other objects.",
+    "Training pair 2 confirms the same replacement at different positions."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "Input color is 1 and replacement color is 2."
+  ],
+  "limitations": "Only exact 3-by-3 hollow squares are transformed; behavior for larger outlines is not specified."
+}

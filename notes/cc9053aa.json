@@ -1,0 +1,19 @@
+{
+  "title": "Connect the two brown endpoints on the light blue to make the route brown.",
+  "summary": "Connect the two brown endpoints on the light blue to make the route brown. However, do not approach the orange within one square, including diagonally.",
+  "steps": [
+    "Connect the two brown endpoints on the light blue to make the route brown.",
+    "However, do not approach the orange within one square, including diagonally."
+  ],
+  "concepts": [
+    "route",
+    "constraints",
+    "Reachability"
+  ],
+  "observations": [
+    "Training pair 1: 7x9 -> 7x9; colors [0, 7, 8, 9] -> [0, 7, 8, 9]; 17 cells changed.",
+    "Training pair 2: 7x9 -> 7x9; colors [0, 7, 8, 9] -> [0, 7, 8, 9]; 11 cells changed.",
+    "Training pair 3: 9x9 -> 9x9; colors [0, 7, 8, 9] -> [0, 7, 8, 9]; 19 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

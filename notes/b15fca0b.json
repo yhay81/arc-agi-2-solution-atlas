@@ -1,0 +1,19 @@
+{
+  "title": "Paint the shortest path between the two red dots yellow without passing through the blue wall.",
+  "summary": "Paint the shortest path between the two red dots yellow without passing through the blue wall.",
+  "steps": [
+    "Paint the shortest path between the two red dots yellow without passing through the blue wall."
+  ],
+  "concepts": [
+    "shortest path",
+    "obstacles"
+  ],
+  "observations": [
+    "Training pair 1: 6x6 -> 6x6; colors [0, 1, 2] -> [0, 1, 2, 4]; 18 cells changed.",
+    "Training pair 2: 5x5 -> 5x5; colors [0, 1, 2] -> [0, 1, 2, 4]; 11 cells changed.",
+    "Training pair 3: 6x6 -> 6x6; colors [0, 1, 2] -> [0, 1, 2, 4]; 12 cells changed.",
+    "Training pair 4: 10x10 -> 10x10; colors [0, 1, 2] -> [0, 1, 2, 4]; 25 cells changed.",
+    "Training pair 5: 5x5 -> 5x5; colors [0, 1, 2] -> [0, 1, 2, 4]; 11 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

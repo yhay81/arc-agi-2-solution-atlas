@@ -1,0 +1,19 @@
+{
+  "title": "Center each connected object inside the rectangular cells of a marker lattice",
+  "summary": "Center each connected object inside the rectangular cells of a marker lattice. This is the training-inferred `center_blocks_in_marker_grid` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `center_blocks_in_marker_grid`: center each connected object inside the rectangular cells of a marker lattice"
+  ],
+  "concepts": [
+    "center",
+    "blocks",
+    "marker",
+    "grid"
+  ],
+  "observations": [
+    "Training pair 1: 14x16 -> 14x16; colors [0, 1, 2] -> [0, 1, 2]; 20 cells changed.",
+    "Training pair 2: 13x19 -> 13x19; colors [0, 1, 2] -> [0, 1, 2]; 22 cells changed.",
+    "Training pair 3: 17x10 -> 17x10; colors [0, 1, 2] -> [0, 1, 2]; 16 cells changed."
+  ],
+  "inference": "training_outputs_only"
+}

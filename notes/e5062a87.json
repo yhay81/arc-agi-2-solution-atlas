@@ -1,0 +1,20 @@
+{
+  "title": "Extract the existing red shape as relative coordinates within the circumscribed rectangle and copy it sequentially from the top to the position where all the same shapes fit into the black cells.",
+  "summary": "Extract the existing red shape as a relative coordinate within the circumscribed rectangle and copy it from the top to the position where all the same shapes fit into the black cells. Do not overlap copies. If the center of the shape is a hole, only candidates with a gray marker at that location are used.",
+  "steps": [
+    "Extract the existing red shape as relative coordinates within the circumscribed rectangle and copy it sequentially from the top to the position where all the same shapes fit into the black cells.",
+    "Do not overlap copies",
+    "If the center of the shape is a hole, use only candidates with a gray mark at that position."
+  ],
+  "concepts": [
+    "Shape matching",
+    "negative shape",
+    "color change"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 2, 5] -> [0, 2, 5]; 4 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 2, 5] -> [0, 2, 5]; 16 cells changed.",
+    "Training pair 3: 10x10 -> 10x10; colors [0, 2, 5] -> [0, 2, 5]; 12 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

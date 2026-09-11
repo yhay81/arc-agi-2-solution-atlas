@@ -1,0 +1,20 @@
+{
+  "title": "Paint the area by extending diagonal lines from the multicolored axis",
+  "summary": "The hypothesis is to extend each color of a multicolored stick extending from the end in four diagonal directions, and fill in the area with the two-square mark on the side with that mark color.",
+  "steps": [
+    "Distinguish between multicolored sticks lined up in a row and two squares of the same color on different sides of the board.",
+    "Extend diagonal lines of the same color from each square of the stick in the four colored directions and stop at the colored square or end.",
+    "Paint the area connected to the two square marks in the space divided by diagonal lines with the mark color."
+  ],
+  "concepts": [
+    "multicolor axis",
+    "diagonal line",
+    "area filling"
+  ],
+  "observations": [
+    "Training pair 1: 10x10 -> 10x10; colors [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 60 cells changed.",
+    "Training pair 2: 10x10 -> 10x10; colors [0, 1, 2, 3, 4, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 6, 7, 8, 9]; 78 cells changed.",
+    "Training pair 3: 4x4 -> 4x4; colors [0, 2, 3, 4, 8] -> [0, 2, 3, 4, 8]; 10 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

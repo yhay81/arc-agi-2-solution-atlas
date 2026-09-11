@@ -1,0 +1,20 @@
+{
+  "title": "Photograph only objects that are symmetrical to the direction of the mirror",
+  "summary": "Count the total number of squares of each color, excluding the background and blue mirror. Choose the color with the least amount and reflect all shapes of that color against the blue straight line. If it's a vertical mirror, flip it left and right, if it's horizontal, flip it up and down, and if it's diagonal, flip it around the diagonal line. Leave the original shape and other colors.",
+  "steps": [
+    "Count the total number of squares of each color, excluding the background and blue mirror.",
+    "Choose the color with the least amount and reflect all shapes of that color against the blue straight line.",
+    "If it's a vertical mirror, flip it left and right, if it's horizontal, flip it up and down, and if it's diagonal, flip it around the diagonal line. Leave the original shape and other colors."
+  ],
+  "concepts": [
+    "Determination of symmetry",
+    "selective replication",
+    "mirror shaft"
+  ],
+  "observations": [
+    "Training pair 1: 9x9 -> 9x9; colors [1, 2, 5, 8] -> [1, 2, 5, 8]; 4 cells changed.",
+    "Training pair 2: 16x16 -> 16x16; colors [1, 6, 7, 8] -> [1, 6, 7, 8]; 7 cells changed.",
+    "Training pair 3: 15x15 -> 15x15; colors [1, 2, 6, 8] -> [1, 2, 6, 8]; 7 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}

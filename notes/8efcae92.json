@@ -1,0 +1,22 @@
+{
+  "title": "Select the separated component containing the most cells of one color",
+  "summary": "Select the separated component containing the most cells of one color. This is the training-inferred `component_crop_most_color` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "steps": [
+    "Apply `component_crop_most_color`: select the separated component containing the most cells of one color"
+  ],
+  "concepts": [
+    "component",
+    "crop",
+    "most",
+    "color"
+  ],
+  "observations": [
+    "Training pair 1: 20x20 -> 9x9; colors [0, 1, 2] -> [1, 2]; output dimensions changed.",
+    "Training pair 2: 20x20 -> 5x6; colors [0, 1, 2] -> [1, 2]; output dimensions changed.",
+    "Training pair 3: 20x20 -> 5x17; colors [0, 1, 2] -> [1, 2]; output dimensions changed."
+  ],
+  "inference": "training_outputs_only",
+  "parameters": [
+    "target: 2"
+  ]
+}

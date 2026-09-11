@@ -1,0 +1,18 @@
+{
+  "title": "Replace the two-color square with a frame and an X character",
+  "summary": "Leave a colored rectangular frame and draw an X from the four corners to the center using the color of the mark inside.",
+  "steps": [
+    "Leave a colored rectangular frame and draw an X from the four corners to the center using the color of the mark inside."
+  ],
+  "concepts": [
+    "Majority colors and minority colors",
+    "Specifying roles",
+    "diagonal"
+  ],
+  "observations": [
+    "Training pair 1: 13x14 -> 13x14; colors [0, 3, 6] -> [0, 3, 6]; 55 cells changed.",
+    "Training pair 2: 12x15 -> 12x15; colors [0, 1, 2] -> [0, 1, 2]; 29 cells changed.",
+    "Training pair 3: 17x18 -> 17x18; colors [0, 1, 2, 3, 4] -> [0, 1, 2, 3, 4]; 83 cells changed."
+  ],
+  "inference": "implementation_reviewed_against_provided_pairs"
+}
