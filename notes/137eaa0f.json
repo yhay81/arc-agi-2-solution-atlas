@@ -1,6 +1,6 @@
 {
   "title": "Compose the 3x3 neighborhoods centered on repeated marker cells",
-  "summary": "Compose the 3x3 neighborhoods centered on repeated marker cells. This is the training-inferred `compose_3x3_around_markers` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Compose the 3x3 neighborhoods centered on repeated marker cells.",
   "steps": [
     "Apply `compose_3x3_around_markers`: compose the 3x3 neighborhoods centered on repeated marker cells"
   ],

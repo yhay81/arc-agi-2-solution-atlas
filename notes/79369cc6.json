@@ -1,9 +1,9 @@
 {
-  "title": "Find the placement of brown 6 in the sample by rotating and mirroring, and supplement the yellow 4 part",
-  "summary": "Find the placement of brown 6 in the sample by rotating and mirroring, and supplement the yellow 4. Matches that are cut off at the edge of the board are also judged by the visible part.",
+  "title": "Complete transformed copies of the magenta 6 and yellow 4 sample",
+  "summary": "Find rotated and reflected placements of the sample's magenta 6 cells, then add the corresponding missing yellow 4 cells. Accept placements clipped by the canvas edge when all visible magenta cells match.",
   "steps": [
-    "Find the placement of brown 6 in the sample by rotating and mirroring, and supplement the yellow 4 part",
-    "Matches that are cut off at the edge of the board are also judged by the visible part."
+    "Generate every distinct rotation and reflection of the sample containing magenta 6 and yellow 4.",
+    "Align each transformed sample with the existing magenta cells, including partially clipped edge placements, and add its visible yellow cells."
   ],
   "concepts": [
     "part to whole",

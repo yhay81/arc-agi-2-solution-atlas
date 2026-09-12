@@ -1,10 +1,10 @@
 {
   "title": "Move the closed shape to the left and the open shape to the right.",
-  "summary": "Divide the blue 1 mass by connecting it vertically, horizontally, and horizontally. Set the filled rectangle or the shape surrounding the hole to red 2 and move it to the left edge. Make the others green 3 and move them to the right edge. The height position cannot be changed.",
+  "summary": "For each 4-connected color-1 component, classify it as closed when it is a filled rectangle or encloses a hole; recolor closed components 2 and shift them to the left edge, recolor open components 3 and shift them to the right edge, preserving their rows.",
   "steps": [
-    "Divide the blue 1 mass by connecting it vertically, horizontally, and horizontally.",
-    "Set the filled rectangle or the shape surrounding the hole to red 2 and move it to the left edge.",
-    "Make the others green 3 and move them to the right edge. The height position cannot be changed."
+    "Find each 4-connected component of color 1 and compute its bounding box",
+    "Classify a component as closed if it fills its bounding box or leaves an enclosed interior hole; shift it so its left edge is column 0 and recolor it 2",
+    "For every other component, shift it so its right edge reaches the last column and recolor it 3, keeping its vertical coordinates"
   ],
   "concepts": [
     "opening",

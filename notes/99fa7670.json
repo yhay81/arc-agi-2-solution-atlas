@@ -1,6 +1,6 @@
 {
   "title": "Turn row markers into rightward rays and carry each ray to the bottom",
-  "summary": "Turn row markers into rightward rays and carry each ray to the bottom. A marker owns the blank rows below it until the next marker row. Its ray fills to the right edge, and the edge cell is carried down those rows. This is the training-inferred `right_rays_with_boundary_tails` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Turn row markers into rightward rays and carry each ray to the bottom. A marker owns the blank rows below it until the next marker row. Its ray fills to the right edge, and the edge cell is carried down those rows.",
   "steps": [
     "Apply `right_rays_with_boundary_tails`: turn row markers into rightward rays and carry each ray to the bottom"
   ],

@@ -1,6 +1,6 @@
 {
   "title": "Recolor source cells in alternating columns, anchored at the right edge",
-  "summary": "Recolor source cells in alternating columns, anchored at the right edge. This preserves the sparse arrangement and uses the edge as the only anchor: the rightmost column is selected, then every second column to its left. The rule is useful for a one-cell-per-column path encoded in one color, where the selected phase must remain stable as the canvas width changes. This is the training-inferred `alternate_columns_from_right` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Recolor source cells in alternating columns, anchored at the right edge. This preserves the sparse arrangement and uses the edge as the only anchor: the rightmost column is selected, then every second column to its left. The rule is useful for a one-cell-per-column path encoded in one color, where the selected phase must remain stable as the canvas width changes.",
   "steps": [
     "Apply `alternate_columns_from_right`: recolor source cells in alternating columns, anchored at the right edge"
   ],

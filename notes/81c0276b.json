@@ -1,10 +1,10 @@
 {
-  "title": "List the number of each color in descending order",
-  "summary": "Count the small 2x2 blocks of color by color, excluding the divider color.",
+  "title": "List color counts in ascending order",
+  "summary": "Exclude the separator and background, count each remaining color's 2x2 blocks, and output one row per color in ascending count order, padding shorter rows with background zeros.",
   "steps": [
-    "Count the small 2x2 blocks of color by color, excluding the divider color.",
-    "Use one row for each color in descending order of number, and represent each number with squares of the same color.",
-    "Set the remaining cells to the background color."
+    "Exclude the separator and background, and divide each color's cell count by 4 to obtain its 2x2 block count.",
+    "Output one row per color in ascending block-count order, using that color for the counted length.",
+    "Pad each row to the maximum length with background zeros."
   ],
   "concepts": [
     "Quantity by color",

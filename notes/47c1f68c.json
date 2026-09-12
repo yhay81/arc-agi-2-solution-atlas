@@ -1,6 +1,6 @@
 {
   "title": "Mirror a top-left seed into four quadrants, using the divider color",
-  "summary": "Mirror a top-left seed into four quadrants, using the divider color. An odd canvas contains a uniform, non-zero central row and column. The only pixels outside that divider cross form a seed in the top-left quadrant. Removing the dividers, recoloring the seed to their color, and reflecting it horizontally and vertically produces the compact output. This is the training-inferred `mirror_seed_across_separator_cross` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Mirror a top-left seed into four quadrants, using the divider color. An odd canvas contains a uniform, non-zero central row and column. The only pixels outside that divider cross form a seed in the top-left quadrant. Removing the dividers, recoloring the seed to their color, and reflecting it horizontally and vertically produces the compact output.",
   "steps": [
     "Apply `mirror_seed_across_separator_cross`: mirror a top-left seed into four quadrants, using the divider color"
   ],

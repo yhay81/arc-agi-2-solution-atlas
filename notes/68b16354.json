@@ -1,6 +1,6 @@
 {
   "title": "Reflect the grid from top to bottom",
-  "summary": "Reflect the grid from top to bottom. This is the training-inferred `flip_ud` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Reflect the grid from top to bottom.",
   "steps": [
     "Apply `flip_ud`: reflect the grid from top to bottom"
   ],

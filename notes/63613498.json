@@ -1,6 +1,6 @@
 {
   "title": "Use an L-shaped divider's corner glyph to select a translated copy",
-  "summary": "Use an L-shaped divider's corner glyph to select a translated copy. This is the training-inferred `recolor_translated_reference_shape` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Use an L-shaped divider's corner glyph to select a translated copy.",
   "steps": [
     "Apply `recolor_translated_reference_shape`: use an L-shaped divider's corner glyph to select a translated copy"
   ],

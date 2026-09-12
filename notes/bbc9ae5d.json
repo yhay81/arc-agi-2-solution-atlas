@@ -1,8 +1,9 @@
 {
-  "title": "Growing rows",
-  "summary": "Growing rows. This is the training-inferred `growing_rows` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "From a one-row input, create half as many output rows as input columns",
+  "summary": "From a one-row input, create half as many output rows as input columns. Starting with the source run length, extend the left-aligned foreground run by one cell on each successive row.",
   "steps": [
-    "Apply `growing_rows`: growing rows"
+    "From a one-row input, create half as many output rows as input columns.",
+    "Starting with the source run length, extend the left-aligned foreground run by one cell on each successive row."
   ],
   "concepts": [
     "growing",

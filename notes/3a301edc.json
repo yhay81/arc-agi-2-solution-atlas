@@ -1,10 +1,10 @@
 {
   "title": "Find the two colored rectangles in the center",
-  "summary": "Find the two colored rectangles in the center. The inner short side is the thickness of the frame, but limit it to the maximum common thickness that does not protrude outside the panel. Add the inner color to the four sides using that thickness.",
+  "summary": "Find the bounding box of all nonzero cells and the bounding box of the non-outer color inside it. Use the minimum of the inner height, inner width, and all four margins to choose a safe frame thickness, fill the expanded outer box with the inner color, and restore the original outer-box rows.",
   "steps": [
-    "Find the two colored rectangles in the center",
-    "The inner short side is the thickness of the frame, but it is limited to the maximum common thickness that does not protrude outside the board.",
-    "Add the inner color to the four sides using that thickness"
+    "Find the overall nonzero bounding box, treat its top-left color as the outer color, and find the bounding box of the remaining core color",
+    "Set the frame thickness to the minimum of core height, core width, and the four distances from the outer box to the board edges",
+    "Fill the expanded box with the core color, then restore every original row segment inside the original outer box"
   ],
   "concepts": [
     "Diversion of dimensions",

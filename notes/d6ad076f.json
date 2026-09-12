@@ -1,6 +1,6 @@
 {
   "title": "Bridge separated solid rectangles through their trimmed shared projection",
-  "summary": "Bridge separated solid rectangles through their trimmed shared projection. This is the training-inferred `bridge_two_rectangles_with_eight` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Bridge separated solid rectangles through their trimmed shared projection.",
   "steps": [
     "Apply `bridge_two_rectangles_with_eight`: bridge separated solid rectangles through their trimmed shared projection"
   ],

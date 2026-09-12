@@ -1,9 +1,9 @@
 {
-  "title": "From the three pictures separated by pink, choose only the left object in the first picture, the center in the second, and the right object in the third, and overlap them in the same position.",
-  "summary": "From the three pictures separated by pink, choose only the left object in the first picture, the center in the second, and the right object in the third, and overlap them in the same position. Orange is the background.",
+  "title": "Select one object from each orange-separated panel and overlap them",
+  "summary": "Split the input into three panels separated by one orange column. From the first panel keep its leftmost object, from the second keep its middle object, and from the third keep its rightmost object; overlap the selected objects in the same positions on an orange background.",
   "steps": [
-    "From the three pictures separated by pink, choose only the left object in the first picture, the center in the second, and the right object in the third, and overlap them in the same position.",
-    "Orange is the background"
+    "Split the input into three panels separated by one orange column.",
+    "Keep the leftmost, middle, and rightmost object from the first, second, and third panels respectively, and overlap them in the same positions on an orange background."
   ],
   "concepts": [
     "Comparing multiple figures",

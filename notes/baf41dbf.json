@@ -1,6 +1,6 @@
 {
   "title": "Expand a colored rectangular frame toward aligned external markers",
-  "summary": "Expand a colored rectangular frame toward aligned external markers. The original frame's interior lines are retained; lines spanning its full width or height continue to the newly selected boundary. This is the training-inferred `expand_frame_toward_markers` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Expand a colored rectangular frame toward aligned external markers. The original frame's interior lines are retained; lines spanning its full width or height continue to the newly selected boundary.",
   "steps": [
     "Apply `expand_frame_toward_markers`: expand a colored rectangular frame toward aligned external markers"
   ],

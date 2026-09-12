@@ -1,8 +1,10 @@
 {
-  "title": "Reproducing the hierarchical relationship of the sample in another location",
-  "summary": "If the red T above is facing downward, place it downward, if it is upward, place it upward, and place the sample on the right in contact with the standard shape on the lower grid.",
+  "title": "Place the legend's third shape relative to the lower query",
+  "summary": "Split the grid at the first all-5 separator row, sort the three monochrome legend components above it by left edge, use the middle component's vertical occupancy to determine whether the third component points down or up, and stamp the third shape at the query's left-aligned bounding-box column immediately below or above the query range.",
   "steps": [
-    "If the red T above is facing downward, place it downward, if it is upward, place it upward, and place the sample on the right in contact with the standard shape on the lower grid."
+    "Find the first all-5 separator row and use the nonzero region below it as the query crop",
+    "Sort the three monochrome legend components above the separator by their left edge and inspect the middle component to choose downward versus upward placement",
+    "Copy the third component at the query's leftmost column, placing it immediately below the query when downward or immediately above it when upward, clipped to the output"
   ],
   "concepts": [
     "Transcription of relationships",

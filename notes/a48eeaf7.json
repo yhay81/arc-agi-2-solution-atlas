@@ -1,8 +1,10 @@
 {
-  "title": "Move isolated markers to the nearest cell around one solid object",
-  "summary": "Move isolated markers to the nearest cell around one solid object. This is the training-inferred `move_singletons_to_object_perimeter` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Clamp isolated markers to a solid object's perimeter",
+  "summary": "Find the unique largest nonzero component and require it to be a filled rectangle. Clear every other singleton marker, then move each marker to the corresponding cell clamped to the one-cell perimeter band around the rectangle's bounding box, preserving its color.",
   "steps": [
-    "Apply `move_singletons_to_object_perimeter`: move isolated markers to the nearest cell around one solid object"
+    "Find the unique largest filled rectangular nonzero component.",
+    "Clear all other one-cell components and record their colors and positions.",
+    "Place each recorded marker at its row and column clamped to the rectangle expanded by one cell."
   ],
   "concepts": [
     "move",

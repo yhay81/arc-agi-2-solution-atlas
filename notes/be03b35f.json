@@ -1,8 +1,9 @@
 {
-  "title": "Select panel",
-  "summary": "Select panel. This is the training-inferred `select_panel` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Select the first separator panel and rotate it 90 degrees counterclockwise",
+  "summary": "Split the grid at uniform black separator rows and columns, select the first panel in row-major order, and rotate that panel 90 degrees counterclockwise.",
   "steps": [
-    "Apply `select_panel`: select panel"
+    "Split the grid at uniform black separator rows and columns.",
+    "Select the first panel in row-major order and rotate it 90 degrees counterclockwise."
   ],
   "concepts": [
     "select",

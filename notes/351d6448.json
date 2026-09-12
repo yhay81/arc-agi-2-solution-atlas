@@ -1,9 +1,11 @@
 {
-  "title": "Continuing to change from continuous scenes at each break",
-  "summary": "Continuing to change from continuous scenes at each break. The rod increases the length of the increment, the object moves by the same amount, and if the color advances, the same shape in the next row is replaced with a new color.",
+  "title": "Extrapolate the next panel from the last two panels",
+  "summary": "Split the grid at full rows of color 5 and use the final two panels to generate the next state: extend a nonzero color change one column to the right when every changed cell changes between nonzero values; otherwise translate the last panel when all panels have equal nonzero counts, or extend the densest row by the number of newly added cells when counts differ.",
   "steps": [
-    "Continuing to change from continuous scenes at each break",
-    "The rod increases the length of the increment, the object moves by the same amount of movement, and if the color advances, the same shape in the next row is replaced with a new color."
+    "Split the input into panels separated by rows filled with 5 and copy the last panel as the starting output",
+    "If all changes from the previous panel to the last are nonzero-to-nonzero, recolor cells one column after the rightmost changed column from the old color to the new color",
+    "Otherwise, if all panels have equal nonzero counts, translate the last panel by the displacement of the first nonzero cell between the previous and last panels",
+    "If counts differ, append the increase in nonzero count to the right of the longest nonzero run in the densest row using that row's last color"
   ],
   "concepts": [
     "moving columns",

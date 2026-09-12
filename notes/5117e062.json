@@ -1,8 +1,10 @@
 {
   "title": "Extract a 3x3 glyph whose center marker is replaced by its glyph color",
-  "summary": "Extract a 3x3 glyph whose center marker is replaced by its glyph color. This is the training-inferred `fill_center_marker_glyph` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "When there is exactly one interior color-8 marker and its surrounding 3×3 contains exactly one other nonzero color, extract that 3×3 glyph and replace the center marker with the other color; otherwise preserve the input.",
   "steps": [
-    "Apply `fill_center_marker_glyph`: extract a 3x3 glyph whose center marker is replaced by its glyph color"
+    "Require exactly one color-8 cell that is not on the grid boundary",
+    "Extract its 3×3 neighborhood and require exactly one nonzero color other than 8",
+    "Replace the center with that glyph color and return the 3×3 neighborhood"
   ],
   "concepts": [
     "fill",

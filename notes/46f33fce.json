@@ -1,6 +1,6 @@
 {
   "title": "Sample the odd-indexed cells and render each sample as a 4-by-4 tile",
-  "summary": "Sample the odd-indexed cells and render each sample as a 4-by-4 tile. A scene can use the even-indexed rows and columns as a sparse canvas while the odd-indexed cells carry a compact square design. Reading that design at ``1::2`` on both axes and expanding each cell to a 4-by-4 block preserves the design's relative positions while making the output 20-by-20 for the common 10-by-10 form. The rule is deliberately dimension-preserving in its construction (no coordinates or color lookup table are retained). This is the training-inferred `sample_odd_cells_scale_four` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Sample the odd-indexed cells and render each sample as a 4-by-4 tile. A scene can use the even-indexed rows and columns as a sparse canvas while the odd-indexed cells carry a compact square design. Reading that design at ``1::2`` on both axes and expanding each cell to a 4-by-4 block preserves the design's relative positions while making the output 20-by-20 for the common 10-by-10 form. The rule is deliberately dimension-preserving in its construction (no coordinates or color lookup table are retained).",
   "steps": [
     "Apply `sample_odd_cells_scale_four`: sample the odd-indexed cells and render each sample as a 4-by-4 tile"
   ],

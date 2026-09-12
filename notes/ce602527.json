@@ -1,6 +1,6 @@
 {
   "title": "Select the object whose 2x mask explains the most other fragments",
-  "summary": "Select the object whose 2x mask explains the most other fragments. This is the training-inferred `crop_object_explaining_doubled_fragments` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Select the object whose 2x mask explains the most other fragments.",
   "steps": [
     "Apply `crop_object_explaining_doubled_fragments`: select the object whose 2x mask explains the most other fragments"
   ],

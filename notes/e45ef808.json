@@ -1,9 +1,9 @@
 {
-  "title": "Mark the deepest valleys and highest peaks with vertical lines",
-  "summary": "Count the number of blue 1 squares in each row. The row with the most number will prioritize the left side and will be brown 9, and the column with the least number will prioritize the right side and will be yellow 4. Recolor only the blue part of each column.",
+  "title": "Mark the fullest and emptiest blue columns",
+  "summary": "Count the blue 1 cells in each column. Recolor the blue cells in the leftmost column with the maximum count to brown 9, and the blue cells in the rightmost column with the minimum count to yellow 4; leave all other cells unchanged.",
   "steps": [
-    "Count the number of blue 1 squares in each row.",
-    "The row with the most number will prioritize the left side and will be brown 9, and the column with the least number will prioritize the right side and will be yellow 4. Recolor only the blue part of each column."
+    "Count the number of blue 1 cells in every column.",
+    "In the leftmost maximum-count column, change its blue cells to 9; in the rightmost minimum-count column, change its blue cells to 4."
   ],
   "concepts": [
     "maximum minimum",

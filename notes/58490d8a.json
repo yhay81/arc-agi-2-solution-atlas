@@ -1,6 +1,6 @@
 {
   "title": "Crop a palette panel and repeat each key by its outside object count",
-  "summary": "Crop a palette panel and repeat each key by its outside object count. This is the training-inferred `expand_panel_keys_by_object_count` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Crop a palette panel and repeat each key by its outside object count.",
   "steps": [
     "Apply `expand_panel_keys_by_object_count`: crop a palette panel and repeat each key by its outside object count"
   ],

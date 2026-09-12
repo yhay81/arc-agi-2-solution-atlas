@@ -1,10 +1,10 @@
 {
-  "title": "Read the small two-column color correspondence table and fill in the enclosed black holes with the color that corresponds to the color of the frame.",
-  "summary": "Read the small two-column color mapping table and fill in the black holes with the color that corresponds to the color of the frame. Leave holes with frame colors not listed in the table. The face direction is selected by the number that corresponds to the board frame color.",
+  "title": "Use a small color correspondence table to fill enclosed black holes",
+  "summary": "Read a small rectangular color-correspondence table, choose the row or column orientation that best matches the other colors in the board, and fill each enclosed black hole whose single-color frame appears as a key in that mapping. Leave holes with unlisted frame colors unchanged.",
   "steps": [
-    "Read the small two-column color correspondence table and fill in the enclosed black holes with the color that corresponds to the color of the frame.",
-    "Leave holes with frame colors that are not listed in the table.",
-    "Choose the facing direction based on the number that corresponds to the board frame color."
+    "Identify the filled rectangular correspondence table and consider both possible row/column directions.",
+    "Choose the direction whose keys best match colors used outside the table.",
+    "For each enclosed black hole with a single-color frame, replace the hole with the mapped color; leave unlisted frame colors unchanged."
   ],
   "concepts": [
     "hole",

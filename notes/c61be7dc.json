@@ -1,9 +1,10 @@
 {
-  "title": "Shrink the parallel black lines to one square on each side of the center, and keep the orthogonal lines at their original positions.",
-  "summary": "Shrink the parallel black lines to one square on each side of the center, and keep the orthogonal lines at their original positions. Sort the total gray areas into a straight line with the same center.",
+  "title": "Reduce two empty parallel lines to a centered cross",
+  "summary": "Find the two fully empty parallel rows or columns and use their midpoint as the center axis. Create a 7 background, retain two empty lines one cell on either side of that axis, make the row or column with the most zeros a full empty crossbar, and place a centered run of 5 whose length equals the number of input 5 cells.",
   "steps": [
-    "Shrink the parallel black lines to one square on each side of the center, and keep the orthogonal lines at their original positions.",
-    "Sort the total gray area into a straight line with the same center"
+    "Locate the two fully zero parallel lines and transpose the grid when they are horizontal.",
+    "Use the midpoint axis and the row with the most zeros to define the output cross.",
+    "Set the two neighboring lines and crossbar to 0, and center the counted 5 cells on the axis."
   ],
   "concepts": [
     "Area conservation",

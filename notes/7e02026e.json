@@ -1,8 +1,9 @@
 {
-  "title": "Color every complete five-cell plus made entirely of background cells",
-  "summary": "Color every complete five-cell plus made entirely of background cells. This is the training-inferred `fill_plus_shapes` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Color every complete background plus with 3",
+  "summary": "Find every five-cell plus whose center and four arms are all background, and recolor the complete plus to color 3 while preserving all other cells.",
   "steps": [
-    "Apply `fill_plus_shapes`: color every complete five-cell plus made entirely of background cells"
+    "Find every complete five-cell plus made entirely of background cells.",
+    "Recolor each such plus to 3 and leave all other cells unchanged."
   ],
   "concepts": [
     "fill",

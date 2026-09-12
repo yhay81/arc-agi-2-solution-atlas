@@ -1,6 +1,6 @@
 {
   "title": "Draw filled squares sized by the nearest boundary marker",
-  "summary": "Draw filled squares sized by the nearest boundary marker. This is the training-inferred `draw_square_by_nearest_marker` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Draw filled squares sized by the nearest boundary marker.",
   "steps": [
     "Apply `draw_square_by_nearest_marker`: draw filled squares sized by the nearest boundary marker"
   ],

@@ -1,6 +1,6 @@
 {
   "title": "Use a full-color axis and edge markers to stamp each glyph at marker crossings",
-  "summary": "Use a full-color axis and edge markers to stamp each glyph at marker crossings. This is the training-inferred `stamp_glyphs_at_edge_markers` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Use a full-color axis and edge markers to stamp each glyph at marker crossings.",
   "steps": [
     "Apply `stamp_glyphs_at_edge_markers`: use a full-color axis and edge markers to stamp each glyph at marker crossings"
   ],

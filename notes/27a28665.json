@@ -1,8 +1,8 @@
 {
-  "title": "Classify connected-component shapes",
-  "summary": "Classify connected-component shapes. This is the training-inferred `shape_classifier` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Crop the non-background shape, normalize it to a binary mask, and classify the resulting glyph as label 1, 2, 3, or 6 according to its geometry",
+  "summary": "Crop the non-background shape, normalize it to a binary mask, and classify the resulting glyph as label 1, 2, 3, or 6 according to its geometry.",
   "steps": [
-    "Apply `shape_classifier`: classify connected-component shapes"
+    "Crop the non-background shape, normalize it to a binary mask, and classify the resulting glyph as label 1, 2, 3, or 6 according to its geometry."
   ],
   "concepts": [
     "shape",

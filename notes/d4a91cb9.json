@@ -1,6 +1,6 @@
 {
   "title": "Join two single-cell markers with an axis-aligned L-shaped path",
-  "summary": "Join two single-cell markers with an axis-aligned L-shaped path. The bend is at the row of ``first_color``: the path first travels along that marker's row and then along the column of ``second_color``. Marker cells are preserved, while only empty cells are painted. This is the training-inferred `connect_axis_markers` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Join two single-cell markers with an axis-aligned L-shaped path. The bend is at the row of ``first_color``: the path first travels along that marker's row and then along the column of ``second_color``. Marker cells are preserved, while only empty cells are painted.",
   "steps": [
     "Apply `connect_axis_markers`: join two single-cell markers with an axis-aligned L-shaped path"
   ],

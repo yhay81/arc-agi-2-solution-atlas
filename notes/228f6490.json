@@ -1,8 +1,11 @@
 {
-  "title": "Fill enclosed background components with colors of matching foreground shapes",
-  "summary": "Fill enclosed background components with colors of matching foreground shapes. This is the training-inferred `fill_holes_from_matching_shapes` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Move matching foreground shapes into enclosed holes",
+  "summary": "Find enclosed four-connected background components and foreground components with exactly the same normalized shape and orientation. Restrict attention to holes surrounded predominantly by the common boundary color. Fill each such hole with the matched component's color and erase that source component from its original position.",
   "steps": [
-    "Apply `fill_holes_from_matching_shapes`: fill enclosed background components with colors of matching foreground shapes"
+    "Choose the most frequent color as background, extract same-color foreground components, and record their translation-normalized shapes.",
+    "Extract background components that do not touch the grid border and determine the predominant non-background boundary color across those holes.",
+    "For each hole with that boundary color, find a foreground component with the identical unrotated shape, preferring the largest and then an interior source.",
+    "Fill the hole with the source color and replace the matched source component with background."
   ],
   "concepts": [
     "fill",

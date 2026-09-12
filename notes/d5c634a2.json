@@ -1,8 +1,10 @@
 {
-  "title": "Make the upward and downward T-shapes left and right points.",
-  "summary": "Record the number of red T's pointing up in green and the number pointing down in blue in vertical priority in the frame every two rows of 3 x 6.",
+  "title": "Summarize four-cell T components by orientation",
+  "summary": "Find four-cell 4-connected components of color 2. Classify each by whether its top bounding-box row has one cell (emit type 3) or not (emit type 1), count the two types, and place their labels in a 3×6 output at alternating positions within the left and right 3-column sections.",
   "steps": [
-    "Record the number of red T's pointing up in green and the number pointing down in blue in vertical priority in the frame every two rows of 3 x 6."
+    "Select color-2 components containing exactly four cells.",
+    "Label a component 3 when its top bounding-box row has one cell; otherwise label it 1.",
+    "Place each label in alternating rows and columns of the corresponding 3-column output section."
   ],
   "concepts": [
     "Orientation classification",

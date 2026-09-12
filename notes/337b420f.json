@@ -1,6 +1,6 @@
 {
   "title": "Pack the largest marked object from each zero-separated panel",
-  "summary": "Pack the largest marked object from each zero-separated panel. Panels share a canvas and may contain distractor pixels. Keep the largest 4-connected non-background object from each panel, overlaying in panel order. If a later object would overlap an earlier one, translate it by the smallest available displacement (toward the canvas centre) so the objects remain separate. This is the training-inferred `overlay_packed_largest_panels` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Pack the largest marked object from each zero-separated panel. Panels share a canvas and may contain distractor pixels. Keep the largest 4-connected non-background object from each panel, overlaying in panel order. If a later object would overlap an earlier one, translate it by the smallest available displacement (toward the canvas centre) so the objects remain separate.",
   "steps": [
     "Apply `overlay_packed_largest_panels`: pack the largest marked object from each zero-separated panel"
   ],

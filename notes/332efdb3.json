@@ -1,10 +1,10 @@
 {
-  "title": "Draw a blue grid every other row and every other column",
-  "summary": "Prepare a board with the same size as the input.",
+  "title": "Place black points at interior odd-row/odd-column intersections",
+  "summary": "Ignore the input values and create a same-size grid filled with 1, changing only cells whose row and column indices are both odd and not on the last row or last column to 0.",
   "steps": [
-    "Prepare a board with the same size as the input.",
-    "Make the outer periphery blue, and draw blue lines inside every other row and every other column.",
-    "Color each square remaining between the lines black."
+    "Create an output with the same dimensions as the input and fill it with 1",
+    "For each interior cell at an odd row and odd column, replace its value with 0",
+    "Leave all other cells as 1"
   ],
   "concepts": [
     "periodic lattice",

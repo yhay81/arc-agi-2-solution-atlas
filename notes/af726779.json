@@ -1,6 +1,6 @@
 {
   "title": "Iteratively draw the gaps between marks on alternating lower rows",
-  "summary": "Iteratively draw the gaps between marks on alternating lower rows. The source is a single horizontal row of ``seed_color`` marks on a uniform background. On every second row below it, the background cells strictly between the leftmost and rightmost marks of the preceding active row are filled. The newly drawn row alternates between ``fill_color`` and the seed color. This is a coordinate-free ``between the marks`` construction: contiguous marks have no gaps and terminate the process. This is the training-inferred `interleave_gap_rows` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Iteratively draw the gaps between marks on alternating lower rows. The source is a single horizontal row of ``seed_color`` marks on a uniform background. On every second row below it, the background cells strictly between the leftmost and rightmost marks of the preceding active row are filled. The newly drawn row alternates between ``fill_color`` and the seed color. This is a coordinate-free ``between the marks`` construction: contiguous marks have no gaps and terminate the process.",
   "steps": [
     "Apply `interleave_gap_rows`: iteratively draw the gaps between marks on alternating lower rows"
   ],

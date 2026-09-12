@@ -1,8 +1,8 @@
 {
-  "title": "Extend vertical period",
-  "summary": "Extend vertical period. This is the training-inferred `extend_vertical_period` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Find the shortest vertically repeating row period, extend it until the output height equals the input height plus its width, then map input color 1 to red 2 and every other cell to black 0",
+  "summary": "Find the shortest vertically repeating row period, extend it until the output height equals the input height plus its width, then map input color 1 to red 2 and every other cell to black 0.",
   "steps": [
-    "Apply `extend_vertical_period`: extend vertical period"
+    "Find the shortest vertically repeating row period, extend it until the output height equals the input height plus its width, then map input color 1 to red 2 and every other cell to black 0."
   ],
   "concepts": [
     "extend",

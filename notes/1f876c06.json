@@ -1,6 +1,6 @@
 {
   "title": "Connect exactly two same-colored diagonal markers with a straight line",
-  "summary": "Connect exactly two same-colored diagonal markers with a straight line. This is the training-inferred `connect_diagonal_markers` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Connect exactly two same-colored diagonal markers with a straight line.",
   "steps": [
     "Apply `connect_diagonal_markers`: connect exactly two same-colored diagonal markers with a straight line"
   ],

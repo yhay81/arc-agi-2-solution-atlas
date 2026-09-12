@@ -1,8 +1,10 @@
 {
-  "title": "Continue the cycle of the multicolored pattern below all the way to the top.",
-  "summary": "Repeat upward using the color pattern at the bottom as one cycle.",
+  "title": "Repeat the lower row pattern upward cyclically",
+  "summary": "Treat the rows from the first row containing a non-background cell through the bottom as one cycle. Refill every output row by taking the corresponding row of that cycle modulo its length, so the observed lower pattern continues upward to the top.",
   "steps": [
-    "Repeat upward using the color pattern at the bottom as one cycle."
+    "Find the most frequent background color and the first row containing another color.",
+    "Use that row and all following rows as a cyclic row pattern.",
+    "Fill the complete grid with the pattern in order, wrapping around when reaching its end."
   ],
   "concepts": [
     "vertical period",

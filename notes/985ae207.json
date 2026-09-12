@@ -1,14 +1,17 @@
 {
-  "title": "Copy the square mark of three squares with a color in the center, three squares at a time, toward the band of the same color as the center.",
-  "summary": "Copy the three square square marks with the color in the center toward the band of the same color as the center, three squares at a time. Continue until the center of the mark is in the obi.",
+  "title": "Repeat each 3x3 marker toward its matching bar",
+  "summary": "Find each 3x3 marker whose center has a different color from its eight-cell border. Match the marker to the unique solid bar that has the center color and is aligned with the marker horizontally or vertically. Copy the marker toward that bar in steps of three cells until the marker center lies inside the bar.",
   "steps": [
-    "Copy the square mark of three squares with a color in the center, three squares at a time, toward the band of the same color as the center.",
-    "Continue until the center of the mark is in the obi"
+    "Identify every 3x3 marker made from a uniform eight-cell border and a differently colored center.",
+    "For each marker, find the unique solid bar with the same color as its center and aligned with the marker along a row or column.",
+    "Starting at the original marker, stamp identical 3x3 markers every three cells in the direction of the matching bar.",
+    "Stop after stamping the marker whose center lies inside the bar. Cells outside the grid are ignored when a stamp reaches an edge."
   ],
   "concepts": [
-    "Color compatible",
-    "connection",
-    "periodic hole"
+    "color matching",
+    "axis alignment",
+    "periodic stamping",
+    "object propagation"
   ],
   "observations": [
     "Training pair 1: 20x20 -> 20x20; colors [1, 2, 4, 8] -> [1, 2, 4, 8]; 61 cells changed.",

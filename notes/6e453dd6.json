@@ -1,9 +1,10 @@
 {
-  "title": "Move each black shape horizontally until it touches the gray wall on the right.",
-  "summary": "Move each black shape horizontally until it touches the gray wall on the right. Find a hole surrounded by black shapes that reaches one space in front of the wall, and make the row where that hole is located red on the right side of the wall.",
+  "title": "Recolor black regions beside a vertical wall and mark qualifying rows",
+  "summary": "Use the full vertical 5-colored column as a wall. For every connected black region on its left, compute the rightward shift that would place its right edge immediately before the wall, recolor the original region gray 6, and clear the shifted cells. Then, for each enclosed gray region one cell before the wall that does not touch the outer border, color its rows red 2 to the right of the wall.",
   "steps": [
-    "Move each black shape horizontally until it touches the gray wall on the right.",
-    "Find a hole surrounded by black shapes that reaches one space in front of the wall, and make the row where that hole is located red on the right side of the wall."
+    "Find the full vertical 5-colored wall and, for each connected black region on its left, compute the shift that would place it immediately before the wall; turn the original cells gray 6 and clear the shifted cells.",
+    "Find an enclosed gray region whose right edge is one cell before the wall and that does not touch the outer boundary.",
+    "For every row occupied by that region, fill the cells to the right of the wall with red 2."
   ],
   "concepts": [
     "move",

@@ -1,6 +1,6 @@
 {
   "title": "List colors of sufficiently long straight components as a filled square catalog",
-  "summary": "List colors of sufficiently long straight components as a filled square catalog. This is the training-inferred `line_color_catalog` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "List colors of sufficiently long straight components as a filled square catalog.",
   "steps": [
     "Apply `line_color_catalog`: list colors of sufficiently long straight components as a filled square catalog"
   ],

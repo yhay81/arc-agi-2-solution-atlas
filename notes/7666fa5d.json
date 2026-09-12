@@ -1,6 +1,6 @@
 {
   "title": "Fill background cells lying between matching diagonal components",
-  "summary": "Fill background cells lying between matching diagonal components. The foreground consists of one color on several 45-degree diagonal segments. A cell is painted when a segment with the same diagonal difference lies on each side of it (ordered by ``row + column``). This is the training-inferred `fill_between_diagonal_components` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Fill background cells lying between matching diagonal components. The foreground consists of one color on several 45-degree diagonal segments. A cell is painted when a segment with the same diagonal difference lies on each side of it (ordered by ``row + column``).",
   "steps": [
     "Apply `fill_between_diagonal_components`: fill background cells lying between matching diagonal components"
   ],

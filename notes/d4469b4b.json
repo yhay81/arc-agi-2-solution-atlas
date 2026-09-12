@@ -1,8 +1,10 @@
 {
-  "title": "Classify components by structural features",
-  "summary": "Classify components by structural features. This is the training-inferred `feature_classifier` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Map the input color to a fixed 3×3 structural glyph",
+  "summary": "Inspect the set of nonzero input colors and output a fixed 3×3 pattern: color 1 yields a plus with 5s, color 2 yields a top bar and central stem of 5s, and color 3 yields a right bar with a bottom bar of 5s. For any other or empty palette, preserve the input.",
   "steps": [
-    "Apply `feature_classifier`: classify components by structural features"
+    "Read the nonzero color set in the input.",
+    "For a single color 1, 2, or 3, emit its corresponding fixed 3×3 pattern of 5s and 0s.",
+    "Leave the input unchanged when the palette is not one of the supported cases."
   ],
   "concepts": [
     "feature",

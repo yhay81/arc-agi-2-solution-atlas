@@ -1,6 +1,6 @@
 {
   "title": "Align two equal-sized objects and render their differing cells as color 8",
-  "summary": "Align two equal-sized objects and render their differing cells as color 8. This is the training-inferred `crop_difference_between_two_objects` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Align two equal-sized objects and render their differing cells as color 8.",
   "steps": [
     "Apply `crop_difference_between_two_objects`: align two equal-sized objects and render their differing cells as color 8"
   ],

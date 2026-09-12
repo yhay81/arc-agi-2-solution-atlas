@@ -1,6 +1,6 @@
 {
   "title": "Pack two colored component shapes into the unique non-overlapping 3x3 layout",
-  "summary": "Pack two colored component shapes into the unique non-overlapping 3x3 layout. This is the training-inferred `pack_two_shapes_3x3` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Pack two colored component shapes into the unique non-overlapping 3x3 layout.",
   "steps": [
     "Apply `pack_two_shapes_3x3`: pack two colored component shapes into the unique non-overlapping 3x3 layout"
   ],

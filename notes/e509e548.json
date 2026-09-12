@@ -1,8 +1,9 @@
 {
   "title": "Recolor same-color paths according to their geometric topology",
-  "summary": "Recolor same-color paths according to their geometric topology. This is the training-inferred `recolor_components_by_topology` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "For each 4-connected component of color 3, classify its topology and recolor the entire component: a path with one turn becomes 1, a path with multiple turns becomes 6, and a branching component becomes 2.",
   "steps": [
-    "Apply `recolor_components_by_topology`: recolor same-color paths according to their geometric topology"
+    "Find each 4-connected component of color 3 and inspect its endpoints, turns, and branches.",
+    "Recolor one-turn paths to 1, multi-turn paths to 6, and branching components to 2."
   ],
   "concepts": [
     "recolor",

@@ -1,8 +1,8 @@
 {
-  "title": "Select densest square panel",
-  "summary": "Select densest square panel. This is the training-inferred `select_densest_square_panel` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Split the rectangular input into equal square panels and return the unique panel containing the greatest number of nonzero cells",
+  "summary": "Split the rectangular input into equal square panels and return the unique panel containing the greatest number of nonzero cells.",
   "steps": [
-    "Apply `select_densest_square_panel`: select densest square panel"
+    "Split the rectangular input into equal square panels and return the unique panel containing the greatest number of nonzero cells."
   ],
   "concepts": [
     "select",

@@ -1,8 +1,12 @@
 {
   "title": "Scale an outside color key into the canvas marked by four corners",
-  "summary": "Scale an outside color key into the canvas marked by four corners. This is the training-inferred `expand_key_inside_corner_canvas` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Use the color appearing only at the four corners of a rectangle to crop the output canvas. Remove that canvas from the input and read the single remaining eight-connected nonzero component as a multicolor key. Scale the key by the largest solid-square marker size found inside the canvas, then place it at the unique position consistent with every existing non-frame colored cell.",
   "steps": [
-    "Apply `expand_key_inside_corner_canvas`: scale an outside color key into the canvas marked by four corners"
+    "Find a color occupying exactly the four corners of one axis-aligned rectangle and crop that rectangle as the output canvas.",
+    "Remove the canvas area from the input and require the remaining nonzero cells to form one eight-connected multicolor key.",
+    "Measure solid square components inside the canvas and use the largest side length as the key's integer scale factor.",
+    "Find the unique placement where every existing nonzero, non-frame canvas cell agrees with the scaled key.",
+    "Paint the nonzero cells of the scaled key into that placement while retaining the canvas crop."
   ],
   "concepts": [
     "expand",

@@ -1,6 +1,6 @@
 {
   "title": "Fill gaps upward in columns whose bottom cell is a marker, preserving encountered colors",
-  "summary": "Fill gaps upward in columns whose bottom cell is a marker, preserving encountered colors. This is the training-inferred `fill_columns_to_bottom_marker` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Fill gaps upward in columns whose bottom cell is a marker, preserving encountered colors.",
   "steps": [
     "Apply `fill_columns_to_bottom_marker`: fill gaps upward in columns whose bottom cell is a marker, preserving encountered colors"
   ],

@@ -1,8 +1,10 @@
 {
-  "title": "Turn a bar-shaped sample into a diagonal checkered pattern",
-  "summary": "Move the gray comb to the other side and move the teeth diagonally one step at a time. Extend the bottom border in brown.",
+  "title": "Reflect and diagonally shift a color-5 pattern",
+  "summary": "Replace the original color-5 cells with 1, reflect the 5-pattern across the vertical axis, and shift each row below its solid reference row one cell farther in the side-dependent direction. On the full color-6 wall, extend color 9 over the span implied by the same shift.",
   "steps": [
-    "Move the gray comb to the other side and move the teeth diagonally one step at a time. Extend the bottom border in brown."
+    "Clear every original 5 cell to 1 and mirror the 5-pattern horizontally.",
+    "For rows below the last solid 5 row, shift the mirrored pattern one additional cell per row toward the appropriate side.",
+    "Extend the color-6 wall with color 9 according to the final displacement."
   ],
   "concepts": [
     "checkered pattern",

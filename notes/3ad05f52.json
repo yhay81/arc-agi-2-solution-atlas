@@ -1,9 +1,10 @@
 {
   "title": "For each building with light blue walls, paint the area you can pass through from the colored room.",
-  "summary": "For each building with light blue walls, paint the area that you can pass through from the colored room. The exits of two separate buildings are connected by a rectangular passageway with the two points as diagonals.",
+  "summary": "Treat 8 as wall color, merge overlapping wall-component bounding boxes into two wall systems, flood each box from the first nonzero non-8 fill color through non-wall cells, and recolor the reachable cells plus the rectangular areas spanned by every pair of boundary ports from the two systems with that fill color.",
   "steps": [
-    "For each building with light blue walls, paint the area you can pass through from the colored room.",
-    "The exits of two separate buildings are connected by a rectangular passage with the two points as diagonals."
+    "Find 4-connected color-8 wall components, compute and merge overlapping bounding boxes, and require exactly two resulting wall systems",
+    "Within each system's bounding box, flood from cells of the first nonzero, non-8 color through all non-wall cells and recolor the reached cells",
+    "Collect reached cells on each box boundary as ports and fill every rectangle whose opposite corners are a port from each of the two systems"
   ],
   "concepts": [
     "room connections",

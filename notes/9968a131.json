@@ -1,10 +1,10 @@
 {
-  "title": "Align two colors in opposite directions alternately.",
-  "summary": "Using the two-color pair in the first colored row as a reference, move only the pair in the reverse left-right order one space to the right. Leave the background line as is.",
+  "title": "Shift reversed adjacent color pairs one cell right",
+  "summary": "Use the left-to-right order of the adjacent two-color pair in the first non-background row as the reference. In every row, keep a pair in that order in place; shift a pair in the reversed order one cell to the right, preserving its colors and leaving background-only rows unchanged.",
   "steps": [
     "Skip the background-only line and read the left-right order of the two colors in the first colored line.",
     "Compare the left-right order of the two-color pairs in each row with the standard.",
-    "Move only the reversed order one square to the right, and return the original left edge to orange.",
+    "Move only a reversed pair one cell to the right while preserving both color values.",
     "Leave the pairs in the same order as the standard and the blank lines as they are."
   ],
   "concepts": [

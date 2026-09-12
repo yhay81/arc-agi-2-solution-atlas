@@ -1,8 +1,10 @@
 {
   "title": "Extract the monochrome 3x3 glyph immediately below a marker",
-  "summary": "Extract the monochrome 3x3 glyph immediately below a marker. This is the training-inferred `crop_3x3_below_marker` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "If there is exactly one color-5 marker with a full 3×3 in-bounds neighborhood below it, return that 3×3 crop only when all its nonzero cells share one color and the nonzero pattern touches all four edges; otherwise preserve the input.",
   "steps": [
-    "Apply `crop_3x3_below_marker`: extract the monochrome 3x3 glyph immediately below a marker"
+    "Require exactly one color-5 marker with one full row below and one column on each side",
+    "Inspect the 3×3 region immediately below the marker and require exactly one nonzero color",
+    "Return the 3×3 region only when its nonzero cells reach the top, bottom, left, and right edges"
   ],
   "concepts": [
     "crop",

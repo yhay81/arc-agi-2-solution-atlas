@@ -1,8 +1,8 @@
 {
-  "title": "Satellite blocks",
-  "summary": "Satellite blocks. This is the training-inferred `satellite_blocks` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Treat the sole 2-by-2 foreground block as a color key and paint four clipped 2-by-2 satellite blocks two cells beyond its corners, using the diagonally opposite key color for each satellite",
+  "summary": "Treat the sole 2-by-2 foreground block as a color key and paint four clipped 2-by-2 satellite blocks two cells beyond its corners, using the diagonally opposite key color for each satellite.",
   "steps": [
-    "Apply `satellite_blocks`: satellite blocks"
+    "Treat the sole 2-by-2 foreground block as a color key and paint four clipped 2-by-2 satellite blocks two cells beyond its corners, using the diagonally opposite key color for each satellite."
   ],
   "concepts": [
     "satellite",

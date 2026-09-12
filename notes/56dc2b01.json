@@ -1,6 +1,6 @@
 {
   "title": "Move an object against a full line and add an eight-colored far backstop",
-  "summary": "Move an object against a full line and add an eight-colored far backstop. This is the training-inferred `move_object_against_full_line_with_backstop` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Move an object against a full line and add an eight-colored far backstop.",
   "steps": [
     "Apply `move_object_against_full_line_with_backstop`: move an object against a full line and add an eight-colored far backstop"
   ],

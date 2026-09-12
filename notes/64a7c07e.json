@@ -1,9 +1,9 @@
 {
-  "title": "Move to the right according to the width of the shape",
-  "summary": "Divide squares of the same color other than black into shapes by connecting them in 8 directions, including diagonally. Find the width of each shape and move it to the right by that width. Return the original position to black.",
+  "title": "Move each colored shape right by its width plus one",
+  "summary": "Divide same-colored nonblack cells into 8-connected shapes. For each shape, shift every cell right by its bounding-box width plus one cell, leaving the original canvas black.",
   "steps": [
     "Divide squares of the same color other than black into shapes by connecting them in 8 directions, including diagonally.",
-    "Find the width of each shape and move it to the right by that width. Return the original position to black."
+    "Find each shape's bounding-box width and shift it right by that width plus one cell; the output starts black elsewhere."
   ],
   "concepts": [
     "Convert dimensions to travel amounts"

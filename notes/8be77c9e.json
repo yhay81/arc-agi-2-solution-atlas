@@ -1,8 +1,8 @@
 {
-  "title": "Concatenate the upper panel followed by the lower panel",
-  "summary": "Concatenate the upper panel followed by the lower panel. This is the training-inferred `concat_v_ud` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Append the top-bottom reflection of the input",
+  "summary": "Keep the input as the upper half and append a vertically mirrored copy as the lower half.",
   "steps": [
-    "Apply `concat_v_ud`: concatenate the upper panel followed by the lower panel"
+    "Return the input rows followed by the same rows in reverse order."
   ],
   "concepts": [
     "concat",

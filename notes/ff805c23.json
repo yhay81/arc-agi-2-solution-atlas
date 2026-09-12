@@ -1,6 +1,6 @@
 {
   "title": "Recover a solid-square occlusion from its 180-degree counterpart",
-  "summary": "Recover a solid-square occlusion from its 180-degree counterpart. This is the training-inferred `recover_rotationally_symmetric_patch` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Recover a solid-square occlusion from its 180-degree counterpart.",
   "steps": [
     "Apply `recover_rotationally_symmetric_patch`: recover a solid-square occlusion from its 180-degree counterpart"
   ],

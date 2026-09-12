@@ -1,8 +1,10 @@
 {
   "title": "Fill the unique largest all-zero rectangle having at least two rows and columns",
-  "summary": "Fill the unique largest all-zero rectangle having at least two rows and columns. This is the training-inferred `fill_unique_largest_zero_rectangle_six` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Enumerate all all-zero rectangles with at least two rows and columns, fill the rectangle only when the largest area is unique, and use color 6; preserve the input when no candidate exists or the largest area is tied.",
   "steps": [
-    "Apply `fill_unique_largest_zero_rectangle_six`: fill the unique largest all-zero rectangle having at least two rows and columns"
+    "Enumerate zero rectangles with height and width at least 2",
+    "Select the sole rectangle with maximum area and fill it with 6",
+    "Return the input unchanged when there is no candidate or more than one rectangle has the maximum area"
   ],
   "concepts": [
     "fill",

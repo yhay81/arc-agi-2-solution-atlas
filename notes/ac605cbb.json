@@ -1,8 +1,10 @@
 {
-  "title": "Draw fixed-length rays whose direction is encoded by the marker value",
-  "summary": "Draw fixed-length rays whose direction is encoded by the marker value. This is the training-inferred `draw_value_oriented_rays` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Draw value-specific rays and convert enclosed 5 markers",
+  "summary": "For the first occurrence of each supported marker color, draw a fixed ray of 5 cells and place the same marker color at its color-specific endpoint: 1 rightward, 2 leftward, 3 downward, and 6 upward. Then convert any interior 5 cell whose four orthogonal neighbors are non-background into a down-left ray of 4s.",
   "steps": [
-    "Apply `draw_value_oriented_rays`: draw fixed-length rays whose direction is encoded by the marker value"
+    "Use the first occurrence of colors 1, 2, 3, and 6 as ray origins with their prescribed directions, lengths, and endpoints.",
+    "Paint the ray cells 5 and restore the corresponding color at the endpoint when it is in bounds.",
+    "For each interior 5 cell surrounded orthogonally by non-background cells, paint a down-left ray of 4s to the edge."
   ],
   "concepts": [
     "draw",

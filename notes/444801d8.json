@@ -1,8 +1,10 @@
 {
   "title": "Complete open rectangular frames using their enclosed marker color",
-  "summary": "Complete open rectangular frames using their enclosed marker color. ARC scenes sometimes contain several nearly closed rectangular outlines. Each outline has a single portal on its perimeter and one differently colored cell in the interior. The marker closes the portal and paints the enclosed area; unrelated pixels and frames are retained unchanged. This is the training-inferred `fill_open_frames_from_inner_marker` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "For every color-defined rectangular perimeter with exactly one missing perimeter cell, exactly one non-frame interior color occurring once, and no other interior colors, fill the interior background and the gap with that marker color; if the gap lies on an in-bounds outer side, also extend the marker one row or column outside that side, preserving unrelated cells.",
   "steps": [
-    "Apply `fill_open_frames_from_inner_marker`: complete open rectangular frames using their enclosed marker color"
+    "Find candidate rectangular perimeters with one background gap and a single interior marker color occurring once",
+    "Fill every zero interior cell and the perimeter gap with the marker color",
+    "If the gap is on a non-edge side of the grid, extend a marker-colored line immediately outside that side"
   ],
   "concepts": [
     "fill",

@@ -1,8 +1,9 @@
 {
-  "title": "Connect opposite ends with yellow",
-  "summary": "Find the aperture with the red frame from the two gray centers, and change the black cells included in all the shortest paths between the apertures to yellow.",
+  "title": "Highlight every shortest black path between two gray exits",
+  "summary": "For each of the two gray cells, find its unique orthogonally adjacent black exit. Among black cells, color yellow every cell that lies on at least one shortest path between those two exits.",
   "steps": [
-    "Find the aperture with the red frame from the two gray centers, and change the black cells included in all the shortest paths between the apertures to yellow."
+    "Find the two gray cells and their unique orthogonally adjacent black exits.",
+    "Use breadth-first distances through black cells to identify all cells on shortest exit-to-exit paths, and recolor them yellow."
   ],
   "concepts": [
     "opposite ends",

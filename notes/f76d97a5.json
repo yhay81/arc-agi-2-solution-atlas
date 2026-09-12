@@ -1,8 +1,8 @@
 {
-  "title": "Marker mask other color",
-  "summary": "Marker mask other color. This is the training-inferred `marker_mask_other_color` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Use gray 5 cells as a mask: replace each gray cell with the sole other nonzero color and set every unmasked cell to black 0",
+  "summary": "Use gray 5 cells as a mask: replace each gray cell with the sole other nonzero color and set every unmasked cell to black 0.",
   "steps": [
-    "Apply `marker_mask_other_color`: marker mask other color"
+    "Use gray 5 cells as a mask: replace each gray cell with the sole other nonzero color and set every unmasked cell to black 0."
   ],
   "concepts": [
     "marker",

@@ -1,10 +1,10 @@
 {
-  "title": "Color-code the black parts by column order",
-  "summary": "Count only the rows that contain one or more black squares, starting from the left. Paint the black squares in those rows blue, red, green, and yellow in order. Repeat the same four colors starting from the 5th row. Leave the original squares other than black.",
+  "title": "Color-code black cells by the order of zero-containing columns",
+  "summary": "Scan columns from left to right, select columns containing at least one black 0, and recolor only their black cells cyclically with colors 1, 2, 3, and 4; preserve all nonzero cells and repeat the cycle after the fourth selected column.",
   "steps": [
-    "Count only the rows that contain one or more black squares, starting from the left.",
-    "Paint the black squares in those rows blue, red, green, and yellow in order. Repeat the same four colors starting from the 5th row.",
-    "Leave the original squares other than black."
+    "Find columns containing at least one zero cell and enumerate them from left to right",
+    "In the first, second, third, and fourth selected columns, recolor zero cells to 1, 2, 3, and 4 respectively, repeating cyclically",
+    "Leave every nonzero cell unchanged"
   ],
   "concepts": [
     "column order",

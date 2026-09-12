@@ -1,8 +1,10 @@
 {
-  "title": "Find rectangular tiles of the same color with lines drawn on them, and connect them without any gaps in the original order, except for the decorations between the tiles and on the outside.",
-  "summary": "Find rectangular tiles of the same color with lines drawn on them, and connect them without any gaps in the original order, except for the decorations between the tiles and on the outside.",
+  "title": "Crop the unique rectangle formed by two colors",
+  "summary": "Search pairs of colors whose combined cells occupy every position of a proper Cartesian rectangle formed by a subset of rows and columns. When exactly one such pair exists, return the corresponding submatrix in row and column order, including both colors and their internal decorations.",
   "steps": [
-    "Find rectangular tiles of the same color with lines drawn on them, and connect them without any gaps in the original order, except for the decorations between the tiles and on the outside."
+    "Test each pair of colors and collect the rows and columns containing either color.",
+    "Select the unique pair whose cells fill the entire selected row-column rectangle and whose rectangle is smaller than the grid.",
+    "Crop that rectangle without otherwise changing its cells."
   ],
   "concepts": [
     "delimiter removal",

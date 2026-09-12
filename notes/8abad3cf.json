@@ -1,6 +1,6 @@
 {
   "title": "Pack perfect-square color counts into bottom-aligned colored squares",
-  "summary": "Pack perfect-square color counts into bottom-aligned colored squares. This is the training-inferred `pack_frequency_squares` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Pack perfect-square color counts into bottom-aligned colored squares.",
   "steps": [
     "Apply `pack_frequency_squares`: pack perfect-square color counts into bottom-aligned colored squares"
   ],

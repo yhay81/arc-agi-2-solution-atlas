@@ -1,5 +1,5 @@
 {
-  "title": "Repaint the entire rectangle that touches the line",
+  "title": "Repaint each red object that touches a line between opposite blue markers",
   "summary": "Connect the opposite blue marks on the left and right sides or the top and bottom sides with straight lines in the same row and column. Marks on the same side are not connected. Turns the entire red shape that overlaps or touches the line blue. Draw a blue line and keep the unrelated red shapes and dimensions of the board.",
   "steps": [
     "Connect the opposite blue marks on the left and right sides or the top and bottom sides with straight lines in the same row and column.",

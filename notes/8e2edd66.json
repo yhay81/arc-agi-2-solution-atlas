@@ -1,8 +1,8 @@
 {
-  "title": "Place the flipped prototype on a blank layout",
-  "summary": "Copy the pattern in which the input foreground and black are exchanged to the arrangement of the input black squares.",
+  "title": "Place the foreground-background complement into the zero-cell layout",
+  "summary": "Build the complement of the input pattern by replacing every 0 with the sole foreground color and every foreground cell with 0. For each original zero cell, place one copy of that complement into its corresponding block of a height-times-width enlarged output.",
   "steps": [
-    "Copy the pattern in which the input foreground and black are exchanged to the arrangement of the input black squares."
+    "Construct the foreground-background complement and place it in every output block corresponding to an original zero cell; leave blocks for original foreground cells empty."
   ],
   "concepts": [
     "self-replication",

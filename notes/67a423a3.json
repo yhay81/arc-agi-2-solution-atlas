@@ -1,6 +1,6 @@
 {
   "title": "Fill the empty cells around a full horizontal/vertical cross center",
-  "summary": "Fill the empty cells around a full horizontal/vertical cross center. This is the training-inferred `fill_cross_center_3x3` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Fill the empty cells around a full horizontal/vertical cross center.",
   "steps": [
     "Apply `fill_cross_center_3x3`: fill the empty cells around a full horizontal/vertical cross center"
   ],

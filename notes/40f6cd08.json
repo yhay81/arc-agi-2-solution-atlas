@@ -1,9 +1,10 @@
 {
   "title": "Draw nested color regions of the swatch into other rectangles, keeping the distance from each side.",
-  "summary": "Draw nested color regions of the sample into other rectangles, keeping the distance from each side. Stack them from the outside to the inside and stretch only the center part to fit the rectangle size.",
+  "summary": "Use the only multicolor connected component as a template, compute each color layer's inset margins within its bounding box, and paint those nested rectangular layers into every other connected object using the same margins relative to that object's bounding box, with larger layer areas painted first.",
   "steps": [
-    "Draw nested color regions of the swatch into other rectangles, keeping the distance from each side.",
-    "Stack them from the outside to the inside and stretch only the center part to fit the rectangle size."
+    "Find the multicolor template component and record each color's bounding-box area and its top, bottom, left, and right margins within the template",
+    "For every other nonzero component, apply the template layers to its bounding box using those inset margins",
+    "Paint layers in descending bounding-box area order so inner layers overwrite the appropriate center region"
   ],
   "concepts": [
     "Analogy with different size",

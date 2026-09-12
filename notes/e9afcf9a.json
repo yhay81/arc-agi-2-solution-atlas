@@ -1,8 +1,8 @@
 {
-  "title": "Checker two rows",
-  "summary": "Checker two rows. This is the training-inferred `checker_two_rows` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Use the first cells of the top two rows as alternating colors and fill the whole canvas with their checkerboard pattern",
+  "summary": "Use the first cells of the top two rows as alternating colors and fill the whole canvas with their checkerboard pattern.",
   "steps": [
-    "Apply `checker_two_rows`: checker two rows"
+    "Use the first cells of the top two rows as alternating colors and fill the whole canvas with their checkerboard pattern."
   ],
   "concepts": [
     "checker",

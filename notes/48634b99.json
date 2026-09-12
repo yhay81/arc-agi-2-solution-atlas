@@ -1,10 +1,10 @@
 {
-  "title": "Look for the vertical bar that is half brown.",
-  "summary": "Look for a vertical bar that is half brown. Transfer the brown half to a stick that is one step longer than that stick, keeping the top and bottom halves in the same direction. Return all the original sticks to light blue.",
+  "title": "Transfer the brown half of a marked stick to the next longer stick",
+  "summary": "Among components made of 8 and 9, find the source component containing 9 and the shortest component longer than it. Recolor the source entirely to 8, then paint half of the target's left edge with 9 at the top or bottom according to the source's 9 position; preserve all other cells.",
   "steps": [
-    "Look for the vertical bar that is half brown.",
-    "Transfer the brown half to a stick that is one step longer than that stick, keeping the top and bottom halves in the same direction.",
-    "All the original bars are returned to light blue."
+    "Find 8/9 components, choose the component containing 9 as source and the smallest component strictly longer than it as target",
+    "Recolor every source cell to 8 and paint 9 on the target's leftmost column over its upper or lower half based on the source's top-left color",
+    "Leave all non-source, non-target cells unchanged"
   ],
   "concepts": [
     "aisle",

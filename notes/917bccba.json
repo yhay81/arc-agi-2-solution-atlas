@@ -1,8 +1,9 @@
 {
-  "title": "Determine the position of the cross that touches the corner of the square",
-  "summary": "Identify the color of the cross that reaches the edge and the color of the rectangular frame from the input, and move the center of the cross to the upper right corner of the frame.",
+  "title": "Complete the top and right edges of the frame with the cross color",
+  "summary": "Identify the cross color from the first nonzero cell in the top row and the other frame color from the input. Recolor every existing cross-color cell to background, then fill background cells along the frame's top edge and right edge with the cross color; preserve all other cells.",
   "steps": [
-    "Identify the color of the cross that reaches the edge and the color of the rectangular frame from the input, and move the center of the cross to the upper right corner of the frame."
+    "Identify the cross color and the rectangular frame color, then find the frame bounding box.",
+    "Clear all cells of the cross color and fill background cells on the frame's top and right bounding-box edges with that cross color."
   ],
   "concepts": [
     "alignment",

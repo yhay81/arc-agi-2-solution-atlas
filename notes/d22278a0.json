@@ -1,6 +1,6 @@
 {
   "title": "Render the parity mask emitted by each corner seed",
-  "summary": "Render the parity mask emitted by each corner seed. A non-zero singleton at a canvas corner is a colored seed. Every cell belongs to its uniquely nearest seed under Manhattan distance; ties stay background. In a seed's corner-oriented coordinates, the emitted mask consists of even/even positions together with the alternating half of the even/odd positions beyond the diagonal. The rule is expressed only in distances from the observed corner seeds, so it scales to any canvas size and to any subset of the four corners. This is the training-inferred `render_corner_seed_voronoi` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Render the parity mask emitted by each corner seed. A non-zero singleton at a canvas corner is a colored seed. Every cell belongs to its uniquely nearest seed under Manhattan distance; ties stay background. In a seed's corner-oriented coordinates, the emitted mask consists of even/even positions together with the alternating half of the even/odd positions beyond the diagonal. The rule is expressed only in distances from the observed corner seeds, so it scales to any canvas size and to any subset of the four corners.",
   "steps": [
     "Apply `render_corner_seed_voronoi`: render the parity mask emitted by each corner seed"
   ],

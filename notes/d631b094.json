@@ -1,6 +1,6 @@
 {
   "title": "Extract the unique nonzero row",
-  "summary": "Extract the unique nonzero row. This is the training-inferred `nonzero_row` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Extract the unique nonzero row.",
   "steps": [
     "Apply `nonzero_row`: extract the unique nonzero row"
   ],

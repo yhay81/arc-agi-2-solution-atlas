@@ -1,6 +1,6 @@
 {
   "title": "Expand the least-color cell of a regular separator lattice",
-  "summary": "Expand the least-color cell of a regular separator lattice. The lattice cells form a small color-key matrix. The cell with the fewest distinct values is the key; each of its pixels is expanded into the corresponding cell of the full-size lattice while separator lines remain intact. This is a coordinate-free denoising/expansion operation. This is the training-inferred `expand_least_color_lattice_cell` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Expand the least-color cell of a regular separator lattice. The lattice cells form a small color-key matrix. The cell with the fewest distinct values is the key; each of its pixels is expanded into the corresponding cell of the full-size lattice while separator lines remain intact. This is a coordinate-free denoising/expansion operation.",
   "steps": [
     "Apply `expand_least_color_lattice_cell`: expand the least-color cell of a regular separator lattice"
   ],

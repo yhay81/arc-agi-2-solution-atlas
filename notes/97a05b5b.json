@@ -1,8 +1,12 @@
 {
   "title": "Crop a perforated canvas and fit detached 3-by-3 glyphs into its holes",
-  "summary": "Crop a perforated canvas and fit detached 3-by-3 glyphs into its holes. This is the training-inferred `fit_glyphs_into_canvas_holes` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Crop the largest monochrome four-connected component as the perforated canvas. Outside it, extract full 3-by-3 multicolor glyphs that are eight-connected and include the canvas color. For every glyph, test all distinct rotations and reflections against 3-by-3 canvas windows whose empty-versus-canvas-color mask matches, choose the unique deepest placement, and copy the oriented glyph there.",
   "steps": [
-    "Apply `fit_glyphs_into_canvas_holes`: crop a perforated canvas and fit detached 3-by-3 glyphs into its holes"
+    "Select the largest same-color four-connected component and crop its bounding box as the output canvas.",
+    "Remove that bounding box from the input and extract eight-connected, fully occupied 3-by-3 glyphs containing the canvas color.",
+    "Generate every distinct rotation and reflection of each glyph and compare its canvas-color mask with each 3-by-3 window containing only background and canvas color.",
+    "Prefer matching windows farthest from the canvas border and require the best position to be unique.",
+    "Copy the selected oriented glyph into the canvas before placing the next glyph."
   ],
   "concepts": [
     "fit",

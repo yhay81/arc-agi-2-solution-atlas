@@ -1,8 +1,9 @@
 {
   "title": "Add a reflected, color-coded copy beside each asymmetric glyph",
-  "summary": "Add a reflected, color-coded copy beside each asymmetric glyph. Each foreground object is symmetric on one axis and asymmetric on the other. Reflecting across the asymmetric axis produces its companion: horizontal reflections use color ``1`` and vertical reflections use color ``8``. The companion is placed beyond the object's asymmetric side with a one-cell gap, while the original object is preserved. This is the training-inferred `reflect_asymmetric_foreground_objects` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Add a reflected, color-coded copy beside each asymmetric glyph. If an object is horizontally symmetric but not vertically symmetric, reflect it across its vertical axis and draw the copy in color 1; if it is vertically symmetric but not horizontally symmetric, reflect it across its horizontal axis and draw the copy in color 8. Place the copy beyond the side indicated by the asymmetry with a one-cell gap, preserving the original.",
   "steps": [
-    "Apply `reflect_asymmetric_foreground_objects`: add a reflected, color-coded copy beside each asymmetric glyph"
+    "For each foreground object, determine whether it is symmetric horizontally or vertically and identify its asymmetric axis.",
+    "Reflect across the asymmetric axis, use color 1 for horizontal-symmetry objects and color 8 for vertical-symmetry objects, and place the copy one cell beyond the indicated side."
   ],
   "concepts": [
     "reflect",

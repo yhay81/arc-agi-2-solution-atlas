@@ -1,8 +1,8 @@
 {
-  "title": "Encode marker column",
-  "summary": "Encode marker column. This is the training-inferred `encode_marker_column` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "For each three-cell row containing one gray 5 marker, encode a left, middle, or right marker as a full red 2, yellow 4, or green 3 output row respectively",
+  "summary": "For each three-cell row containing one gray 5 marker, encode a left, middle, or right marker as a full red 2, yellow 4, or green 3 output row respectively.",
   "steps": [
-    "Apply `encode_marker_column`: encode marker column"
+    "For each three-cell row containing one gray 5 marker, encode a left, middle, or right marker as a full red 2, yellow 4, or green 3 output row respectively."
   ],
   "concepts": [
     "encode",

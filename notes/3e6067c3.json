@@ -1,8 +1,11 @@
 {
-  "title": "Connect keyed rectangular tiles in the order given by a guide row",
-  "summary": "Connect keyed rectangular tiles in the order given by a guide row. Rectangular tiles contain one marker color. A separated guide line lists those marker colors; consecutive tiles in that list are joined through the gap between their frames using the preceding tile's marker color. The marker footprint determines the thickness of each connector. This is the training-inferred `connect_lattice_tiles_by_key` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Connect keyed rectangular tiles in the order given by a guide line",
+  "summary": "Identify framed rectangular tiles, each containing one marker color, and a separate horizontal or vertical guide line that lists marker colors in order. Assign each guide entry to a different tile so that every consecutive pair is aligned on the same row band or column band. Connect each aligned pair through the background gap using the preceding tile's marker color; the marker's occupied rows or columns determine the connector thickness.",
   "steps": [
-    "Apply `connect_lattice_tiles_by_key`: connect keyed rectangular tiles in the order given by a guide row"
+    "Use the most frequent color as the background and extract framed rectangular tiles whose interiors contain exactly one marker color.",
+    "Find the longest separate horizontal or vertical non-frame guide line and read its marker-color sequence in coordinate order.",
+    "Assign each guide entry to a distinct tile of that color, requiring consecutive assigned tiles to share a row band or column band.",
+    "Fill only background cells between each consecutive pair with the preceding marker color, using that marker's row or column footprint as the connector width."
   ],
   "concepts": [
     "connect",

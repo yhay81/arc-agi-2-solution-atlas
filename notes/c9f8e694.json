@@ -1,6 +1,6 @@
 {
   "title": "Project each row's leading key color across its dominant payload cells",
-  "summary": "Project each row's leading key color across its dominant payload cells. This is the training-inferred `recolor_row_payload_from_leading_key` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Project each row's leading key color across its dominant payload cells.",
   "steps": [
     "Apply `recolor_row_payload_from_leading_key`: project each row's leading key color across its dominant payload cells"
   ],

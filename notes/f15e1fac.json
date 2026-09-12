@@ -1,6 +1,6 @@
 {
   "title": "Repeat a line template while shifting it at marker boundaries",
-  "summary": "Repeat a line template while shifting it at marker boundaries. This is the training-inferred `project_band_template_from_markers` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Repeat a line template while shifting it at marker boundaries.",
   "steps": [
     "Apply `project_band_template_from_markers`: repeat a line template while shifting it at marker boundaries"
   ],

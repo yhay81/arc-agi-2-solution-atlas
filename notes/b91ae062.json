@@ -1,8 +1,8 @@
 {
-  "title": "Scale by color count",
-  "summary": "Scale by color count. This is the training-inferred `scale_by_color_count` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Count the distinct nonzero colors and enlarge every source cell into a square block whose side length equals that color count",
+  "summary": "Count the distinct nonzero colors and enlarge every source cell into a square block whose side length equals that color count.",
   "steps": [
-    "Apply `scale_by_color_count`: scale by color count"
+    "Count the distinct nonzero colors and enlarge every source cell into a square block whose side length equals that color count."
   ],
   "concepts": [
     "scale",

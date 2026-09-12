@@ -1,6 +1,6 @@
 {
   "title": "Move red objects toward the azure target",
-  "summary": "Move the color-2 object toward color 8 until the objects touch. This is the training-inferred `move_two_toward_eight` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Move the color-2 object toward color 8 until the objects touch.",
   "steps": [
     "Apply `move_two_toward_eight`: move red objects toward the azure target"
   ],

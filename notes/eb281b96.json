@@ -1,6 +1,6 @@
 {
   "title": "Repeat a vertical motif while reflecting at each bottom edge",
-  "summary": "Repeat a vertical motif while reflecting at each bottom edge. The source rows form one traversal from top to bottom; the interior rows are then traversed in reverse, producing a palindrome-like period of ``2 * height - 2`` rows. ARC scenes using this rule request two periods plus the first row, hence the canonical output height ``4h - 3``. This is the training-inferred `reflect_vertical_period` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Repeat a vertical motif while reflecting at each bottom edge. The source rows form one traversal from top to bottom; the interior rows are then traversed in reverse, producing a palindrome-like period of ``2 * height - 2`` rows. ARC scenes using this rule request two periods plus the first row, hence the canonical output height ``4h - 3``.",
   "steps": [
     "Apply `reflect_vertical_period`: repeat a vertical motif while reflecting at each bottom edge"
   ],

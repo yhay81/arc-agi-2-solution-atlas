@@ -1,6 +1,6 @@
 {
   "title": "Fill a sparse lattice frame with the detached rectangular glyphs",
-  "summary": "Fill a sparse lattice frame with the detached rectangular glyphs. The frame and the detached glyphs are drawn on a two-cell-spaced grid. The frame is expanded to a solid rectangle, while each detached glyph is rectangularized and packed, in scan order, along the frame dimension in which all glyphs share a size. This is the training-only rule used by ``db615bd4``; the regular lattice color is discarded inside the frame and detached glyphs are erased from outside it. This is the training-inferred `pack_shapes_into_lattice_frame` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Fill a sparse lattice frame with the detached rectangular glyphs. The frame and the detached glyphs are drawn on a two-cell-spaced grid. The frame is expanded to a solid rectangle, while each detached glyph is rectangularized and packed, in scan order, along the frame dimension in which all glyphs share a size. This is the training-only rule used by ``db615bd4``; the regular lattice color is discarded inside the frame and detached glyphs are erased from outside it.",
   "steps": [
     "Apply `pack_shapes_into_lattice_frame`: fill a sparse lattice frame with the detached rectangular glyphs"
   ],

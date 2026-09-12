@@ -1,6 +1,6 @@
 {
   "title": "Move a 3-by-3 color-2 box two cells down or right along its guide",
-  "summary": "Move a 3-by-3 color-2 box two cells down or right along its guide. This is the training-inferred `move_box_forward_along_marker_line` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Move a 3-by-3 color-2 box two cells down or right along its guide.",
   "steps": [
     "Apply `move_box_forward_along_marker_line`: move a 3-by-3 color-2 box two cells down or right along its guide"
   ],

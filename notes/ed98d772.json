@@ -1,6 +1,6 @@
 {
   "title": "Place four panels in successive quarter-turn orientations",
-  "summary": "Place four panels in successive quarter-turn orientations. This is the training-inferred `rotation_cycle_quad` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Place four panels in successive quarter-turn orientations.",
   "steps": [
     "Apply `rotation_cycle_quad`: place four panels in successive quarter-turn orientations"
   ],

@@ -1,10 +1,10 @@
 {
-  "title": "Separate connected arrow shapes and single points from the leftmost scene",
-  "summary": "From the leftmost scene, separate the connected arrow-like shapes and the single points. Go to the point where the tip of the shape is facing, and from there follow the points connected vertically and horizontally. Erase the points you have passed through and turn the shape in the final direction of movement so that the tip is at the last point.",
+  "title": "Move and rotate the largest foreground shape along an orthogonal singleton path",
+  "summary": "Crop at the first uniform non-background separator column, choose the most frequent non-background color as the shape color, take its largest 8-connected component and its singleton components as dots, follow the shortest valid orthogonal dot path from the shape's unique straight tip, and place a rotated copy of the shape at the final dot on a background canvas.",
   "steps": [
-    "Separate connected arrow shapes and single points from the leftmost scene",
-    "Go to the point where the tip of the shape is facing, and from there follow the points connected vertically and horizontally.",
-    "Erase the points you passed and turn the shape in the final direction of movement so that the tip is at the last point."
+    "Use the region left of the first uniform non-background column, find the largest 8-connected foreground component and all singleton components",
+    "Identify the shape's unique straight extreme tip and repeatedly choose the nearest singleton reachable horizontally or vertically without reversing direction",
+    "Rotate the shape by the final direction relative to its initial direction, clear the canvas, and draw the transformed shape at the last singleton"
   ],
   "concepts": [
     "alignment",

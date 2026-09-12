@@ -1,8 +1,9 @@
 {
-  "title": "Fill enclosed background regions with yellow",
-  "summary": "Fill every enclosed zero region with ARC color 4. This is the training-inferred `fill_enclosed_with_four` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Fill enclosed zero regions and normalize them to 1",
+  "summary": "Flood-fill the zero cells that are not connected to the border through four-neighbor zero paths, then output those enclosed cells as 1. Existing 2 cells remain 2, existing 4 cells are also normalized to 1, and border-connected zeros remain 0.",
   "steps": [
-    "Apply `fill_enclosed_with_four`: fill enclosed background regions with yellow"
+    "Find zero regions disconnected from the grid border using four-neighbor connectivity.",
+    "Change every enclosed zero to 4 temporarily, then map all 4 cells to 1 while preserving 0 and 2."
   ],
   "concepts": [
     "fill",

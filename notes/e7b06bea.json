@@ -1,10 +1,10 @@
 {
   "title": "Repeat the vertical color row for the number of grays",
-  "summary": "Count the number of squares with ash 5. Read the row of colors extending the full height of the board from the left as a color sample. Erase the row of colors, arrange the number of grays of each color in the row to the left, and cycle down.",
+  "summary": "Count the gray 5 cells, read the full-height colored sample columns, erase those columns, and draw one column immediately to their left whose colors cycle through the sample colors, repeating each color for the gray count rows.",
   "steps": [
     "Count the number of squares with ash 5.",
-    "Read the row of colors extending the full height of the board from the left as a color sample.",
-    "Erase the row of colors, arrange the number of grays of each color in the row to the left, and cycle down."
+    "Read the full-height uniform colored columns as the ordered color sample.",
+    "Erase the sample columns and fill the column immediately to their left with the sample colors, cycling to the next color every `count(5)` rows."
   ],
   "concepts": [
     "number command",

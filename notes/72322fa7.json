@@ -1,6 +1,6 @@
 {
   "title": "Learn symmetric local shells and complete centers and shell copies",
-  "summary": "Learn symmetric local shells and complete centers and shell copies. This is the training-inferred `stamp_symmetric_shells_by_center_color` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Learn symmetric local shells and complete centers and shell copies.",
   "steps": [
     "Apply `stamp_symmetric_shells_by_center_color`: learn symmetric local shells and complete centers and shell copies"
   ],

@@ -1,10 +1,9 @@
 {
-  "title": "Draw an L shape from the point to the nearest edge",
-  "summary": "For each point, choose the closest of the top and bottom sides and the closest of the left and right sides. Draw a vertical line and a horizontal line from the point to the two selected sides. Make both the dots the same color.",
+  "title": "Draw colored orthogonal rays from each point to the selected edges",
+  "summary": "For each nonzero point, select the top or bottom edge according to which half contains the point, and likewise select the left or right edge. Draw a vertical and horizontal line from the point to those two edges, preserving that point's color.",
   "steps": [
-    "For each point, choose the closest of the top and bottom sides and the closest of the left and right sides.",
-    "Draw a vertical line and a horizontal line from the point to the two selected sides.",
-    "Make both the dots the same color."
+    "For each nonzero point, select the top or bottom edge and the left or right edge based on the point's position in the grid.",
+    "Draw vertical and horizontal lines from the point to the selected edges using the point's original color."
   ],
   "concepts": [
     "distance comparison",

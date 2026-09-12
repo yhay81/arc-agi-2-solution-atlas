@@ -1,6 +1,6 @@
 {
   "title": "Draw an inner frame whose four extents are specified by marker cells",
-  "summary": "Draw an inner frame whose four extents are specified by marker cells. This is the training-inferred `draw_rectangle_inside_four_markers` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Draw an inner frame whose four extents are specified by marker cells.",
   "steps": [
     "Apply `draw_rectangle_inside_four_markers`: draw an inner frame whose four extents are specified by marker cells"
   ],

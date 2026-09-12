@@ -1,10 +1,10 @@
 {
   "title": "Match the yellow pattern to the black window mark",
-  "summary": "Find the black rectangle inside the light blue 8. Use the window marked yellow 4 and color as a sample. Copy the relative position of the yellow color from the sample mark to the same color mark on the other window. Cut out the window you copied.",
+  "summary": "Treat color 8 as the background, find the non-8 source component containing color 4 and the other target component, crop the target bounding box, and transfer each 4-cell offset relative to the source's non-4 marker to the corresponding target marker.",
   "steps": [
-    "Find the black rectangle inside the light blue 8. Use the window marked yellow 4 and color as a sample.",
-    "Copy the relative position of the yellow color from the sample mark to the same color mark on the other window.",
-    "Cut out the window you copied."
+    "Find the non-8 component containing color 4 as the source and the non-8 component without 4 as the target",
+    "Use the first nonzero, non-4 color as a reference marker and copy the relative positions of all 4-cells from source marker to target marker",
+    "Return only the target component's bounding-box crop"
   ],
   "concepts": [
     "Reference point correspondence",

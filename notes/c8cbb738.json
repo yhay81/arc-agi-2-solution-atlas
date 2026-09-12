@@ -1,6 +1,6 @@
 {
   "title": "Normalize each foreground color's glyph and overlay centered bboxes",
-  "summary": "Normalize each foreground color's glyph and overlay centered bboxes. This is the training-inferred `overlay_color_bboxes_centered` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Normalize each foreground color's glyph and overlay centered bboxes.",
   "steps": [
     "Apply `overlay_color_bboxes_centered`: normalize each foreground color's glyph and overlay centered bboxes"
   ],

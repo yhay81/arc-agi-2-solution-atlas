@@ -1,8 +1,10 @@
 {
   "title": "Render sparse lattice shapes using foreground/background color keys",
-  "summary": "Render sparse lattice shapes using foreground/background color keys. This is the training-inferred `render_keyed_lattice_shapes` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Use the connected nonzero component at the top-left as a two-column foreground-to-background key, then render each keyed foreground object on a zero canvas with a one-cell border of its mapped background color.",
   "steps": [
-    "Apply `render_keyed_lattice_shapes`: render sparse lattice shapes using foreground/background color keys"
+    "Read the top-left connected nonzero key component and require each row to map a foreground color to a background color",
+    "Remove the key component and find each mapped foreground object, requiring its cells to lie on a common two-cell lattice",
+    "Draw a one-cell border rectangle in the mapped background color around each object's bounding box, then restore the foreground cells"
   ],
   "concepts": [
     "render",

@@ -1,9 +1,10 @@
 {
-  "title": "Extend the alternate frame pattern to the bottom right",
-  "summary": "Leave the original 5 x 5 and increase the outer L-shaped layer to 10 x 10 using the three color cycles of corners, center, and sides. Next color only for diagonal cells.",
+  "title": "Expand the grid to a 2N×2N palette-patterned canvas",
+  "summary": "Copy the N×N input into the upper-left quadrant of a 2N×2N output, then fill every other cell using a three-color palette taken from the input's top-left, center, and top-neighbor values; the palette index depends on the maximum of the output row and column and receives an extra diagonal offset.",
   "steps": [
-    "Leave the original 5 x 5 and increase the outer L-shaped layer to 10 x 10 using the three color cycles of corners, center, and sides.",
-    "Next color only for diagonal cells."
+    "Create a 2N×2N output and copy the input only where both row and column are below N",
+    "Use the three palette values input[0][0], input[N//2][N//2], and input[0][1] for all remaining cells",
+    "Select the palette index from max(row, column)−N plus one on diagonal cells, modulo 3"
   ],
   "concepts": [
     "frame period",

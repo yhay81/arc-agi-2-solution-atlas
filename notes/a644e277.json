@@ -1,6 +1,6 @@
 {
   "title": "Crop the unique separator rectangle whose four corners are open",
-  "summary": "Crop the unique separator rectangle whose four corners are open. This is the training-inferred `crop_lattice_rectangle_with_open_corners` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Crop the unique separator rectangle whose four corners are open.",
   "steps": [
     "Apply `crop_lattice_rectangle_with_open_corners`: crop the unique separator rectangle whose four corners are open"
   ],

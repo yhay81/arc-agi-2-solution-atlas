@@ -1,6 +1,6 @@
 {
   "title": "Return the monochrome 3x3 glyph occurring most often in a sparse scene",
-  "summary": "Return the monochrome 3x3 glyph occurring most often in a sparse scene. This is the training-inferred `most_repeated_3x3_glyph` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Return the monochrome 3x3 glyph occurring most often in a sparse scene.",
   "steps": [
     "Apply `most_repeated_3x3_glyph`: return the monochrome 3x3 glyph occurring most often in a sparse scene"
   ],

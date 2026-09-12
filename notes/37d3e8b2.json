@@ -1,10 +1,10 @@
 {
-  "title": "Repaint the light blue shape depending on the number of holes",
-  "summary": "Divide the light blue 8 shape including diagonal contact. Count the black areas trapped inside each shape. If there are 1, 2, 3, and 4 holes, make them 1 blue, 2 red, 3 green, and 7 orange.",
+  "title": "Repaint each 4-connected color-8 shape by its enclosed-hole count",
+  "summary": "For each 4-connected color-8 component, count zero regions enclosed within its bounding box without treating regions touching the box boundary as holes, then recolor the component: 1 hole→1, 2 holes→2, 3 holes→3, and 4 holes→7.",
   "steps": [
-    "Divide the light blue 8 shape including diagonal contact.",
-    "Count the black areas trapped inside each shape.",
-    "If there are 1, 2, 3, and 4 holes, make them 1 blue, 2 red, 3 green, and 7 orange."
+    "Find each 4-connected component of color 8",
+    "Within its bounding box, count connected zero regions that do not touch the bounding-box boundary",
+    "Recolor the component according to the hole count mapping 1→1, 2→2, 3→3, 4→7"
   ],
   "concepts": [
     "number of holes",

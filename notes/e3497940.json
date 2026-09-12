@@ -1,6 +1,6 @@
 {
   "title": "Overlay the left panel with a reflected right panel",
-  "summary": "Remove a central separator and overlay the mirrored right panel. This is the training-inferred `overlay_left_flipped_right` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Remove a central separator and overlay the mirrored right panel.",
   "steps": [
     "Apply `overlay_left_flipped_right`: overlay the left panel with a reflected right panel"
   ],

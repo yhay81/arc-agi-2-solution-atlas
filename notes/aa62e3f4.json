@@ -1,9 +1,10 @@
 {
-  "title": "Extend the outline of the multicolored object by one square on the top, bottom, left and right, and erase the original object.",
-  "summary": "Extend the outline of the multicolored object by one square in the top, bottom, left and right, and erase the original object. Use the innermost minority color for new outlines.",
+  "title": "Replace an object with its one-cell exposed outline",
+  "summary": "Find the least frequent non-background color in the multicolored object. Erase the original non-background cells, then color every background cell sharing an orthogonal edge with the object using that least frequent color; leave all other cells as background.",
   "steps": [
-    "Extend the outline of the multicolored object by one square on the top, bottom, left and right, and erase the original object.",
-    "Use innermost minority color for new contours"
+    "Identify the background and collect all non-background cells as the object.",
+    "Choose the least frequent non-background color.",
+    "For each object cell, paint adjacent background cells with that color and output only these new outline cells."
   ],
   "concepts": [
     "Deployment",

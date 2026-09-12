@@ -1,6 +1,6 @@
 {
   "title": "Arrange the input and its reflections in four panels",
-  "summary": "Arrange the input and its reflections in four panels. This is the training-inferred `mirror_quad` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Arrange the input and its reflections in four panels.",
   "steps": [
     "Apply `mirror_quad`: arrange the input and its reflections in four panels"
   ],

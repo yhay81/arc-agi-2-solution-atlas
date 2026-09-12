@@ -1,8 +1,10 @@
 {
-  "title": "Scale a marker and the diagonal corner of its surrounding L object",
-  "summary": "Scale a marker and the diagonal corner of its surrounding L object. The three-cell L is a directional key: its diagonal (furthest) cell and the singleton marker are the two cells to preserve. They become 4x4 blocks on the corresponding two-cell bounding box, while the original grid's one-cell margin is retained in the resulting stride-four canvas. This is the training-inferred `expand_marker_diagonal` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Expand a marker and its diagonal color-3 cell into 4×4 blocks",
+  "summary": "Require one color-2 marker, exactly three color-3 cells, and exactly one color-3 cell diagonally adjacent to the marker. Create a zero canvas with dimensions 4H−3 by 4W−3 and paint color-3 4×4 blocks at the scaled positions of the marker and that diagonal cell.",
   "steps": [
-    "Apply `expand_marker_diagonal`: scale a marker and the diagonal corner of its surrounding L object"
+    "Require exactly one color-2 cell, exactly three color-3 cells, and one color-3 cell at diagonal distance 1 from the marker",
+    "Use the marker and that diagonal cell as the two retained positions and scale their coordinate difference by four",
+    "Paint a 4×4 block of color 3 at each scaled position on the zero output canvas"
   ],
   "concepts": [
     "expand",

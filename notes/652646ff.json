@@ -1,9 +1,9 @@
 {
-  "title": "Restore the ring of six squares and find the front and back from the colors visible at the intersection",
-  "summary": "Reconstruct the ring of six squares and find the front and back from the colors that appear at the intersection. Arrange the rings vertically, starting with the ring in front, and remove irrelevant points.",
+  "title": "Order overlapping 6x6 ring patterns by their visible intersections",
+  "summary": "Detect the 6x6 ring-like patterns made of 12 colored cells, infer their front-to-back order from colors visible at overlaps, and stack one complete 6x6 tile per color from front to back while discarding the original clutter.",
   "steps": [
-    "Restore the ring of six squares and find the front and back from the colors visible at the intersection",
-    "Arrange the rings vertically starting from the front ring and remove irrelevant points."
+    "Detect each 6x6 ring-like pattern with 12 colored cells and infer which pattern is in front at every overlap.",
+    "Arrange one complete 6x6 tile per color vertically from front to back and omit unrelated input cells."
   ],
   "concepts": [
     "Normalization",

@@ -1,8 +1,8 @@
 {
-  "title": "Crop the grid at the specified row, column, height, and width",
-  "summary": "Crop the grid at the specified row, column, height, and width. This is the training-inferred `crop_at` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Extract the fixed 3x3 block from the upper-right area",
+  "summary": "Extract and return the 3x3 block whose upper-left corner is at row 0, column 6.",
   "steps": [
-    "Apply `crop_at`: crop the grid at the specified row, column, height, and width"
+    "Return rows 0 through 2 and columns 6 through 8 as the output."
   ],
   "concepts": [
     "crop"

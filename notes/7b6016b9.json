@@ -1,8 +1,8 @@
 {
-  "title": "Fill enclosed color",
-  "summary": "Fill enclosed color. This is the training-inferred `fill_enclosed_color` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Find black 0 regions that cannot reach the canvas edge through orthogonal moves, fill those enclosed regions with red 2, and map the remaining black background to green 3",
+  "summary": "Find black 0 regions that cannot reach the canvas edge through orthogonal moves, fill those enclosed regions with red 2, and map the remaining black background to green 3.",
   "steps": [
-    "Apply `fill_enclosed_color`: fill enclosed color"
+    "Find black 0 regions that cannot reach the canvas edge through orthogonal moves, fill those enclosed regions with red 2, and map the remaining black background to green 3."
   ],
   "concepts": [
     "fill",

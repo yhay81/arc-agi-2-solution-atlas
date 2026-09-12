@@ -1,5 +1,5 @@
 {
-  "title": "Rules for sorting around the center color are undefined.",
+  "title": "Rotate surrounding color areas one position around the center",
   "summary": "Arrange each color area surrounding center 4 by the centroid angle, and advance the area color by one in a clockwise direction.",
   "steps": [
     "Arrange each color area surrounding center 4 by the centroid angle, and advance the area color by one in a clockwise direction."

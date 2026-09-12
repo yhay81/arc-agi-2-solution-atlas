@@ -1,9 +1,10 @@
 {
   "title": "Copy the opposite blue corner to the remaining two corners",
-  "summary": "Copy the opposite blue corner to the remaining two corners. Extend the two-color bar and blank space attached to the first corner to each side in a four-square period, and connect the outside with the color of the first bar on each side.",
+  "summary": "Use the two blue monochrome components as opposite corner blocks, copy their rectangle into all four combinations of their top and left positions, and fill the horizontal and vertical gaps with a four-cell repeating sequence of the sampled bar colors and background, extending the first sampled color one cell outside the blocks.",
   "steps": [
-    "Copy the opposite blue corner to the remaining two corners",
-    "Extend the two-color bar and blank space attached to the first corner to each side in a four-square period, and connect the outside with the color of the first bar on each side."
+    "Find the two blue components and use their two top positions and two left positions to paint four blue blocks",
+    "Sample the colors next to and farther from the first block, repeat color/background/color/background across the horizontal and vertical gaps",
+    "Paint the cells immediately outside the gap ends with the first horizontal or vertical sampled color"
   ],
   "concepts": [
     "frame",

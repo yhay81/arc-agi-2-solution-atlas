@@ -1,8 +1,8 @@
 {
-  "title": "Extract the central column",
-  "summary": "Extract the central column. This is the training-inferred `central_column` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Keep only the input's middle column in its original position and replace every other cell with black 0",
+  "summary": "Keep only the input's middle column in its original position and replace every other cell with black 0.",
   "steps": [
-    "Apply `central_column`: extract the central column"
+    "Keep only the input's middle column in its original position and replace every other cell with black 0."
   ],
   "concepts": [
     "central",

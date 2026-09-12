@@ -1,10 +1,10 @@
 {
-  "title": "Find square shapes of the same color in two areas",
-  "summary": "Find square shapes of the same color in two areas. Change the part that protrudes 1 square from the main body of the square and the 1 square indentation on the side into a 2 square mark that straddles the border. The mark should be the color of the other area.",
+  "title": "Mark protrusions and indentations on enclosed colored blocks",
+  "summary": "Identify the dominant colored, nearly rectangular blocks that enclose no interior hole, determine which of two surrounding field colors touches each block, and recolor each one-cell protrusion or indentation together with its adjacent cell using the other field color.",
   "steps": [
-    "Find square shapes of the same color in two areas",
-    "Change the part that protrudes 1 square from the main body of the square and the 1 square indentation on the side into a 2 square mark that straddles the border.",
-    "Set the mark to the color of the other area"
+    "Find sufficiently large, nearly rectangular components of the main non-background color and determine their core rectangles.",
+    "Use neighboring cells to identify the field color touching each block and choose the other field color.",
+    "Recolor each one-cell protrusion or indentation and the adjacent cell with that other field color."
   ],
   "concepts": [
     "area operations",

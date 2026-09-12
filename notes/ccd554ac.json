@@ -1,6 +1,6 @@
 {
   "title": "Tile the input height times vertically and width times horizontally",
-  "summary": "Creates an output with the number of rows twice the height and the number of columns twice the width of the input, and periodically repeats the original grid in the remainder coordinates.",
+  "summary": "Creates an output with height² rows and width² columns by periodically repeating the original grid according to remainder coordinates.",
   "steps": [
     "Measure the height and width of the input",
     "Prepare the output as height² x width²",

@@ -1,8 +1,10 @@
 {
-  "title": "Draw a diagonal line from the two sides of the frame and make the inside light blue.",
-  "summary": "Move the thick L shape one step inward, draw the original inside color on the outer edge and diagonal, and paint the rest light blue.",
+  "title": "Normalize a two-color frame and draw its corner diagonal",
+  "summary": "Use the most frequent color as the base and the other color as the edge color. If the edge color occupies the top or left boundary, rotate the input orientation accordingly; then draw a canonical pattern with the base on the bottom/right borders, the edge color one cell inward, and 8 elsewhere except for the final diagonal cells.",
   "steps": [
-    "Move the thick L shape one step inward, draw the original inside color on the outer edge and diagonal, and paint the rest light blue."
+    "Identify the most frequent base color and the other edge color, and detect whether the edge lies on the top and/or left boundary.",
+    "Reflect the grid to a canonical orientation and create the output with background 8, base-colored outer borders, and edge-colored inner borders.",
+    "Place 8 on the first two cells of the corner diagonal and the base color on the remaining diagonal cells, then restore the original orientation."
   ],
   "concepts": [
     "diagonal",

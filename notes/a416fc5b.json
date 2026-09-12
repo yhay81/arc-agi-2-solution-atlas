@@ -1,10 +1,10 @@
 {
-  "title": "Read the red symbol position from the 3×3 plot divided by lines every 4 squares",
-  "summary": "Read the red symbol position from a 3x3 section separated by lines every 4 squares. Inputs containing symbols other than red should be sent to a 16x16 gray board. If there are only red symbols, determine the additional positions of gray and light blue based on the arrangement of the two symbols, and draw them as cross symbols on the 11 x 11 partition board.",
+  "title": "Convert two red macro positions into an 11×11 cross grid",
+  "summary": "Read a 3×3 macro grid whose cells are separated by 4-cell spacing and collect its non-7/6 symbols. If every collected symbol is 2, infer two extra symbol positions from their arrangement and render all symbols as small crosses on an 11×11 board with color-6 separator lines and color-7 background; otherwise return a 16×16 board filled with 7.",
   "steps": [
-    "Read the red symbol position from the 3×3 plot divided by lines every 4 squares",
-    "Inputs containing symbols other than red should be sent to a 16x16 gray board.",
-    "If there are only red symbols, determine the additional positions of gray and light blue based on the arrangement of the two symbols, and draw them as cross symbols on the 11 x 11 partition board."
+    "Scan the 3×3 macro cells at offsets 0, 4, and 8 and collect their non-7/6 symbols.",
+    "If every collected symbol is 2, infer the two extra positions and colors 5 and 8 from the pair geometry.",
+    "Render the symbols as crosses in an 11×11 board with separator lines 6 and background 7; otherwise return a 16×16 board of 7."
   ],
   "concepts": [
     "period",

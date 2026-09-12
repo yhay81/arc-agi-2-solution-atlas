@@ -1,6 +1,6 @@
 {
   "title": "Repeat a one-row motif down-left along a square diagonal field",
-  "summary": "Repeat a one-row motif down-left along a square diagonal field. The side length is the motif width multiplied by its number of non-zero cells. Each successive output row places the complete motif one cell farther left, clipping at the square's boundaries. This is the training-inferred `expand_row_diagonal` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Repeat a one-row motif down-left along a square diagonal field. The side length is the motif width multiplied by its number of non-zero cells. Each successive output row places the complete motif one cell farther left, clipping at the square's boundaries.",
   "steps": [
     "Apply `expand_row_diagonal`: repeat a one-row motif down-left along a square diagonal field"
   ],

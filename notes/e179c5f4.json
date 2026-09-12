@@ -1,8 +1,8 @@
 {
-  "title": "Bouncing diagonal",
-  "summary": "Bouncing diagonal. This is the training-inferred `bouncing_diagonal` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Fill the canvas with azure 8, then draw a blue 1 diagonal upward from the bottom-left that reverses horizontal direction whenever it reaches a side edge",
+  "summary": "Fill the canvas with azure 8, then draw a blue 1 diagonal upward from the bottom-left that reverses horizontal direction whenever it reaches a side edge.",
   "steps": [
-    "Apply `bouncing_diagonal`: bouncing diagonal"
+    "Fill the canvas with azure 8, then draw a blue 1 diagonal upward from the bottom-left that reverses horizontal direction whenever it reaches a side edge."
   ],
   "concepts": [
     "bouncing",

@@ -1,6 +1,6 @@
 {
   "title": "Route a color-3 two-cell bar around obstacles toward a color-2 bar",
-  "summary": "Route a color-3 two-cell bar around obstacles toward a color-2 bar. This is the training-inferred `route_two_color_components` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Route a color-3 two-cell bar around obstacles toward a color-2 bar.",
   "steps": [
     "Apply `route_two_color_components`: route a color-3 two-cell bar around obstacles toward a color-2 bar"
   ],

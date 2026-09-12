@@ -1,10 +1,10 @@
 {
-  "title": "Create a square with diagonal stripes from the red dot in the center",
-  "summary": "Let the width of one line of input be N, and create a black output of N×N.",
+  "title": "Generate a fixed chevron and diagonal-stripe pattern from the grid size",
+  "summary": "Ignore the input cell values and use the grid width N to create an N×N output. Draw a color-2 V-shaped boundary from the top center, then fill the region below it with color-1 diagonal stripes at period 4; all remaining cells are 0.",
   "steps": [
-    "Let the width of one line of input be N, and create a black output of N×N.",
-    "Draw a 45 degree red line from the red dot in the center of the top side to the left and right to create a chevron outline.",
-    "Fill in the bottom half by repeating parallel blue diagonal lines starting from every other position on the red line toward the bottom left and toward the bottom right."
+    "Read the input width N and initialize an N×N zero grid.",
+    "Set color 2 on the two diagonals satisfying the distance from the top-center condition.",
+    "Below the chevron, set color 1 where the diagonal phase repeats every four columns."
   ],
   "concepts": [
     "Specifying dimensions",

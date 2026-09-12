@@ -1,8 +1,9 @@
 {
   "title": "Project only rows/columns containing a repeated marker color",
-  "summary": "Project only rows/columns containing a repeated marker color. Sparse noise is discarded. A color is treated as a horizontal guide when it occurs at least twice in one row, and as a vertical guide when it occurs at least twice in one column. This keeps isolated occurrences as clues, while turning the repeated endpoints into complete grid lines. This is the training-inferred `project_matching_marker_lines` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Keep only colors that occur exactly four times, discard sparse noise, and use their repeated rows and columns as guides. A qualifying color fills every row containing at least two of its cells; if those cells do not form a complete rectangle with the qualifying columns, it also fills every column containing at least two of its cells. The remaining cells use the most frequent input color as background.",
   "steps": [
-    "Apply `project_matching_marker_lines`: project only rows/columns containing a repeated marker color"
+    "Select non-background colors whose total count is exactly four.",
+    "Fill rows containing at least two selected cells, and also fill qualifying columns when the selected cells do not form a complete row-column rectangle."
   ],
   "concepts": [
     "project",

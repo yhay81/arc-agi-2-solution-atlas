@@ -1,8 +1,9 @@
 {
-  "title": "Cross lines",
-  "summary": "Cross lines. This is the training-inferred `cross_lines` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Choose the column containing the most azure 8 cells and the row containing the most red 2 cells",
+  "summary": "Choose the column containing the most azure 8 cells and the row containing the most red 2 cells. Draw a full azure column and red row on black, and color their intersection yellow 4.",
   "steps": [
-    "Apply `cross_lines`: cross lines"
+    "Choose the column containing the most azure 8 cells and the row containing the most red 2 cells.",
+    "Draw a full azure column and red row on black, and color their intersection yellow 4."
   ],
   "concepts": [
     "cross",

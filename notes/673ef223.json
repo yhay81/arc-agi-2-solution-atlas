@@ -1,6 +1,6 @@
 {
   "title": "Connect interior markers to one vertical guide and project the rows",
-  "summary": "Connect interior markers to one vertical guide and project the rows. Two equal-length vertical guide segments sit on opposite canvas edges. The sparse markers lie within one segment's row interval. Each marker is recolored as a corner label, while its row is filled from the matching edge to the marker. The same row, shifted by the separation of the two guide segments, is filled from the opposite edge. This is the compact geometric rule behind the ARC line-projection family; positions and the guide orientation are inferred from each input. This is the training-inferred `project_markers_between_vertical_guides` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Connect interior markers to one vertical guide and project the rows. Two equal-length vertical guide segments sit on opposite canvas edges. The sparse markers lie within one segment's row interval. Each marker is recolored as a corner label, while its row is filled from the matching edge to the marker. The same row, shifted by the separation of the two guide segments, is filled from the opposite edge. This is the compact geometric rule behind the ARC line-projection family; positions and the guide orientation are inferred from each input.",
   "steps": [
     "Apply `project_markers_between_vertical_guides`: connect interior markers to one vertical guide and project the rows"
   ],

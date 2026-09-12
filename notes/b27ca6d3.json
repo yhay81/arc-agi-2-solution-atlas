@@ -1,6 +1,6 @@
 {
   "title": "Frame every two-cell orthogonal marker pair with a one-cell border",
-  "summary": "Frame every two-cell orthogonal marker pair with a one-cell border. This is the training-inferred `frame_adjacent_marker_pairs` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Frame every two-cell orthogonal marker pair with a one-cell border.",
   "steps": [
     "Apply `frame_adjacent_marker_pairs`: frame every two-cell orthogonal marker pair with a one-cell border"
   ],

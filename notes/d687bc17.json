@@ -1,6 +1,6 @@
 {
   "title": "Move interior marks to the side of a matching rectangular border",
-  "summary": "Move interior marks to the side of a matching rectangular border. The scene is a full-canvas rectangular frame whose four sides have distinct colors. Interior cells carrying one of those side colors are projected to the adjacent cell on that side, retaining their orthogonal coordinate. Other interior marks are noise and are removed. The frame itself is preserved, so the rule is independent of canvas dimensions and palette values. This is the training-inferred `move_markers_to_matching_frame_sides` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Move interior marks to the side of a matching rectangular border. The scene is a full-canvas rectangular frame whose four sides have distinct colors. Interior cells carrying one of those side colors are projected to the adjacent cell on that side, retaining their orthogonal coordinate. Other interior marks are noise and are removed. The frame itself is preserved, so the rule is independent of canvas dimensions and palette values.",
   "steps": [
     "Apply `move_markers_to_matching_frame_sides`: move interior marks to the side of a matching rectangular border"
   ],

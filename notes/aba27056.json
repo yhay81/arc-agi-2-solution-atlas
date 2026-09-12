@@ -1,6 +1,6 @@
 {
   "title": "Fill an open three-sided frame and project its opening outward",
-  "summary": "Fill an open three-sided frame and project its opening outward. The monochrome source object is a U/C-shaped frame. Its missing side is filled through the frame interior, then the opening is extended as a narrow beam. The two beam edges continue as 45-degree rays; for an opening of at least three cells the interior beam excludes its two edge cells after the first projected layer. This is the training-inferred `project_through_open_u_shape` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Fill an open three-sided frame and project its opening outward. The monochrome source object is a U/C-shaped frame. Its missing side is filled through the frame interior, then the opening is extended as a narrow beam. The two beam edges continue as 45-degree rays; for an opening of at least three cells the interior beam excludes its two edge cells after the first projected layer.",
   "steps": [
     "Apply `project_through_open_u_shape`: fill an open three-sided frame and project its opening outward"
   ],

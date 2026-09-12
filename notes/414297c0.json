@@ -1,10 +1,10 @@
 {
   "title": "Match the color marks and copy the red parts onto the large window",
-  "summary": "The largest non-black block is the destination rectangle. Find the small red 2 part and the different color mark inside it. Trace the relative positions of the parts onto the large rectangular marks of the same color and cut out only the rectangle.",
+  "summary": "Use the largest 8-connected nonzero component as the destination crop. For each other diagonal-connected component, require exactly one non-2 marker color, then copy the component's full colored geometry so its marker aligns with every cell of that marker color inside the crop; return only the largest component's bounding-box crop.",
   "steps": [
-    "The largest non-black block is the destination rectangle.",
-    "Find the small red 2 part and the different color mark inside it.",
-    "Trace the relative positions of the parts onto the large rectangular marks of the same color and cut out only the rectangle."
+    "Find all diagonal-connected nonzero components and crop the bounding box of the largest one",
+    "For each other component, identify its sole color other than 2 and its first cell of that marker color",
+    "For every matching marker cell in the crop, translate and stamp the entire small component, clipping to the crop, then return the crop"
   ],
   "concepts": [
     "Correspondence with landmarks",

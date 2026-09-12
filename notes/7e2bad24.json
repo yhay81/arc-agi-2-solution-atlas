@@ -1,9 +1,9 @@
 {
-  "title": "Reflect the blue diagonal lines on the red wall",
-  "summary": "Extend the blue 1 diagonal line from both ends. Green 3 passes through and changes to blue. If it's a red 2 vertical wall, it's horizontal, and if it's a horizontal wall, it's vertical. Don't paint red itself. Stop when you reach the edge or return to the same state.",
+  "title": "Extend diagonal blue paths and bounce from red walls",
+  "summary": "Extend color-1 diagonal paths from both endpoints. Every non-red cell encountered is overwritten with 1; when the next cell is red 2, reverse the vertical or horizontal component according to the wall orientation without painting the red cell. Stop at the edge or on a repeated state.",
   "steps": [
-    "Extend the blue 1 diagonal line from both ends. Green 3 passes through and changes to blue.",
-    "If it's a red 2 vertical wall, it's horizontal, and if it's a horizontal wall, it's vertical. Don't paint red itself.",
+    "Extend the color-1 diagonal path from both ends, overwriting every encountered non-red cell with 1.",
+    "When the next cell is red 2, reverse the vertical component for a horizontal wall or the horizontal component for a vertical wall; do not paint the red cell.",
     "Stop when you reach the edge or return to the same state."
   ],
   "concepts": [

@@ -1,6 +1,6 @@
 {
   "title": "List non-background colors from most to least frequent",
-  "summary": "List non-background colors from most to least frequent. This is the training-inferred `colors_by_frequency` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "List non-background colors from most to least frequent.",
   "steps": [
     "Apply `colors_by_frequency`: list non-background colors from most to least frequent"
   ],

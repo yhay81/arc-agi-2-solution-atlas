@@ -1,6 +1,6 @@
 {
   "title": "Use color 2 as the mask for a Kronecker expansion",
-  "summary": "Use color 2 as the mask for a Kronecker expansion. This is the training-inferred `kronecker_color_two` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Use color 2 as the mask for a Kronecker expansion.",
   "steps": [
     "Apply `kronecker_color_two`: use color 2 as the mask for a Kronecker expansion"
   ],

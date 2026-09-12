@@ -1,8 +1,9 @@
 {
-  "title": "Fill the bounding box of each 8-connected foreground component",
-  "summary": "Fill the bounding box of each 8-connected foreground component. This is the training-inferred `fill_diagonal_component_bboxes_color` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Fill component boxes and recolor the filled cells",
+  "summary": "For each 8-connected nonzero component, fill its bounding box with 1 wherever it is background, then recolor every 1 cell in the result to 7.",
   "steps": [
-    "Apply `fill_diagonal_component_bboxes_color`: fill the bounding box of each 8-connected foreground component"
+    "Find each 8-connected nonzero component and fill its bounding box with 1.",
+    "Recolor all cells with value 1 to 7."
   ],
   "concepts": [
     "fill",

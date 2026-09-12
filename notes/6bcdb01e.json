@@ -3,7 +3,7 @@
   "summary": "Extend the line in the direction indicated by the first two green squares. If the front is light blue, turn 90 degrees to the left or right side that is not blocked by light blue. It can intersect with the green line you have already drawn, and ends when it exits the board.",
   "steps": [
     "Find two adjacent green (3) squares. The initial direction is from the squares on the edge of the board to the squares on the inside.",
-    "Move one square at a time in the current direction and change the orange (7) squares you pass to green. It also passes through the squares that are already green.",
+    "Move one square at a time in the current direction and change every non-light-blue (non-8) square you pass to green. It also passes through squares that are already green.",
     "If the next square in front of you is light blue (8), check candidates for 90 degrees to the left and 90 degrees to the right. There is only one light blue side where you can move forward without being blocked, so turn to that side.",
     "Repeat the stretching process in a new direction. If the destination you are trying to advance to is off the board, the game ends. The light blue squares will not be changed."
   ],

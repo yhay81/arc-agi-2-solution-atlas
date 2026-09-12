@@ -1,8 +1,9 @@
 {
-  "title": "Color enclosed grid cells by whether broken lines merge regions",
-  "summary": "Color enclosed grid cells by whether broken lines merge regions. This is the training-inferred `color_grid_regions` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Color background regions by their component-size class",
+  "summary": "Treat each orthogonally connected background-0 region as a component. Find the most frequent component size; recolor every region of that nominal size to 3 and every other region to 4, leaving the nonzero separator color unchanged.",
   "steps": [
-    "Apply `color_grid_regions`: color enclosed grid cells by whether broken lines merge regions"
+    "Find all orthogonally connected regions of background 0 and count their sizes.",
+    "Use the most frequent region size as the nominal size: color matching regions 3 and all other regions 4."
   ],
   "concepts": [
     "color",

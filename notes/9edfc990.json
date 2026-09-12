@@ -1,6 +1,6 @@
 {
   "title": "Flood every zero cell four-connected to an existing color-one seed",
-  "summary": "Flood every zero cell four-connected to an existing color-one seed. This is the training-inferred `flood_zeros_from_color_one` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Flood every zero cell four-connected to an existing color-one seed.",
   "steps": [
     "Apply `flood_zeros_from_color_one`: flood every zero cell four-connected to an existing color-one seed"
   ],

@@ -1,6 +1,6 @@
 {
   "title": "Extend a ray outward beyond the missing corner of each 2-by-2 L",
-  "summary": "Extend a ray outward beyond the missing corner of each 2-by-2 L. This is the training-inferred `extend_l_missing_corner_diagonals` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Extend a ray outward beyond the missing corner of each 2-by-2 L.",
   "steps": [
     "Apply `extend_l_missing_corner_diagonals`: extend a ray outward beyond the missing corner of each 2-by-2 L"
   ],

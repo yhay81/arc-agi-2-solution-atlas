@@ -1,11 +1,11 @@
 {
-  "title": "Rules for placing colored parts into small grids are undefined.",
-  "summary": "Read from the top of the rightmost color column and sort by row and column heading color. Figures of each color are normalized and compared against translation, rotation, and inversion. Create a comparison table in which groups of the same shapes are colored red 2, groups of different shapes are colored gray 5, and the diagonal lines are colored black. Add headings to the top and left. Expand each square in the table to 2x2, with a black row and column of one square square in between.",
+  "title": "Build a shape-similarity comparison table",
+  "summary": "Read the nonzero color labels from the rightmost column in row order. Compare each labeled shape up to translation, rotation, and reflection; mark equal-shape pairs with 2 and different-shape pairs with 5. Add the color labels as the top row and left column, separate entries with black lines, and expand each table cell to 2x2.",
   "steps": [
-    "Read from the top of the rightmost color column and sort by row and column heading color.",
-    "Figures of each color are normalized and compared against translation, rotation, and inversion.",
-    "Create a comparison table in which groups of the same shapes are colored red 2, groups of different shapes are colored gray 5, and the diagonal lines are colored black. Add headings to the top and left.",
-    "Expand each square in the table to 2x2, with a black row and column of one square square in between."
+    "Read the nonzero color labels from the rightmost column in row order and use them as both the row and column headings.",
+    "Normalize each labeled shape and compare it with every other shape under translation, rotation, and reflection.",
+    "Set off-diagonal entries to 2 for matching shapes and 5 for nonmatching shapes; keep the diagonal and separators black.",
+    "Expand each table entry to 2x2, inserting one-cell black separator rows and columns."
   ],
   "concepts": [
     "symbol interpretation",

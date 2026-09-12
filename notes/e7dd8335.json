@@ -1,6 +1,6 @@
 {
   "title": "Recolor the lower half of the target color",
-  "summary": "Recolor source cells in the lower half of their occupied bounding box. This is the training-inferred `recolor_lower_half` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Recolor source cells in the lower half of their occupied bounding box.",
   "steps": [
     "Apply `recolor_lower_half`: recolor the lower half of the target color"
   ],

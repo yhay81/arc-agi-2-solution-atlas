@@ -1,6 +1,6 @@
 {
   "title": "Replace both diagonals of a uniform odd square with background zero",
-  "summary": "Replace both diagonals of a uniform odd square with background zero. This is the training-inferred `draw_x_holes` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Replace both diagonals of a uniform odd square with background zero.",
   "steps": [
     "Apply `draw_x_holes`: replace both diagonals of a uniform odd square with background zero"
   ],

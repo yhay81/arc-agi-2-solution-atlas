@@ -1,6 +1,6 @@
 {
   "title": "Restore a damaged hollow rectangle using an intact marker rectangle",
-  "summary": "Restore a damaged hollow rectangle using an intact marker rectangle. This is the training-inferred `repair_corrupted_hollow_rectangle_border` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Restore a damaged hollow rectangle using an intact marker rectangle.",
   "steps": [
     "Apply `repair_corrupted_hollow_rectangle_border`: restore a damaged hollow rectangle using an intact marker rectangle"
   ],

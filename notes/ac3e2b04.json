@@ -1,8 +1,10 @@
 {
-  "title": "Create local patterns by projecting landmarks onto parallel lines",
-  "summary": "Project blue perpendicularly from the green ring on the red parallel line, and draw 3x3 blue rings at the intersections with other red lines.",
+  "title": "Mark rows and neighborhoods relative to color-2 rails",
+  "summary": "Determine whether color-2 rails are predominantly vertical or horizontal. For each four-connected color-3 component, fill its center row with 1 through background cells; for every rail outside that component's bounding span, also paint the surrounding 3×3 neighborhood with 1. Horizontal layouts are handled by transposing the same rule.",
   "steps": [
-    "Project blue perpendicularly from the green ring on the red parallel line, and draw 3x3 blue rings at the intersections with other red lines."
+    "Determine the rail orientation from the density of color-2 cells and transpose horizontal cases.",
+    "For each color-3 component, fill its middle row's zero cells with 1.",
+    "At color-2 rails outside the component span, fill neighboring cells in the 3×3 neighborhoods with 1."
   ],
   "concepts": [
     "projection",

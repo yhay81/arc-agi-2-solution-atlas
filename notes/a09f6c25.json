@@ -1,9 +1,9 @@
 {
   "title": "Erase isolated points and examine the axis of symmetry of each shape",
-  "summary": "Erase the isolated points and examine the symmetry axis of each shape. Blue for vertical symmetry, green for horizontal symmetry, and pink for diagonal symmetry.",
+  "summary": "Erase isolated points and classify each remaining shape by its reflection axis. Repaint symmetry across a horizontal axis blue, symmetry across a vertical axis green, and diagonal symmetry pink.",
   "steps": [
     "Erase isolated points and examine the axis of symmetry of each shape",
-    "Blue for vertical symmetry, green for horizontal symmetry, and pink for diagonal symmetry."
+    "Repaint symmetry across a horizontal axis blue, symmetry across a vertical axis green, and diagonal symmetry pink."
   ],
   "concepts": [
     "Direction classification",

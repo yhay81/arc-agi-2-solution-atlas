@@ -1,6 +1,6 @@
 {
   "title": "Stamp a seed mask on every matching-color occurrence in all rotations",
-  "summary": "Stamp a seed mask on every matching-color occurrence in all rotations. The rare color ``8`` is a compact seed. Its occupied coordinates define a shape; every translated copy of that shape whose cells are all color ``3`` is recolored as ``8``. Rotations are allowed because the seed is an orientation-free glyph, while reflections are intentionally not: the examples distinguish handed copies. Existing cells are preserved and a newly painted occurrence can participate in subsequent scans. This is the training-inferred `grow_rotated_template_on_color` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Stamp a seed mask on every matching-color occurrence in all rotations. The rare color ``8`` is a compact seed. Its occupied coordinates define a shape; every translated copy of that shape whose cells are all color ``3`` is recolored as ``8``. Rotations are allowed because the seed is an orientation-free glyph, while reflections are intentionally not: the examples distinguish handed copies. Existing cells are preserved and a newly painted occurrence can participate in subsequent scans.",
   "steps": [
     "Apply `grow_rotated_template_on_color`: stamp a seed mask on every matching-color occurrence in all rotations"
   ],

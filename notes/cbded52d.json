@@ -1,6 +1,6 @@
 {
   "title": "Connect aligned same-color marks across a zero-separated cell lattice",
-  "summary": "Connect aligned same-color marks across a zero-separated cell lattice. This is the training-inferred `connect_markers_in_cell_lattice` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Connect aligned same-color marks across a zero-separated cell lattice.",
   "steps": [
     "Apply `connect_markers_in_cell_lattice`: connect aligned same-color marks across a zero-separated cell lattice"
   ],

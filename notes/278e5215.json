@@ -1,6 +1,6 @@
 {
   "title": "Render a color-5 mask with a repeated column key and uniform fallback",
-  "summary": "Render a color-5 mask with a repeated column key and uniform fallback. This is the training-inferred `render_five_mask_with_column_palette` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Render a color-5 mask with a repeated column key and uniform fallback.",
   "steps": [
     "Apply `render_five_mask_with_column_palette`: render a color-5 mask with a repeated column key and uniform fallback"
   ],

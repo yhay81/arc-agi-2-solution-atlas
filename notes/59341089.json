@@ -1,8 +1,9 @@
 {
-  "title": "Concatenate the right panel followed by the left panel",
-  "summary": "Concatenate the right panel followed by the left panel. This is the training-inferred `concat_h_rl` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Concatenate reflected and original rows in a four-panel sequence",
+  "summary": "For each input row, append its left-right reversal, the original row, a second left-right reversal, and a second original row, preserving the number of rows and producing four times the input width.",
   "steps": [
-    "Apply `concat_h_rl`: concatenate the right panel followed by the left panel"
+    "Reverse each row left-to-right",
+    "Concatenate reversed row + original row + reversed row + original row"
   ],
   "concepts": [
     "concat",

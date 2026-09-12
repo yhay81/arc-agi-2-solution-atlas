@@ -1,6 +1,6 @@
 {
   "title": "Move line markers into the adjacent rectangular target components",
-  "summary": "Move line markers into the adjacent rectangular target components. The marker color forms one-cell-wide horizontal or vertical bars, while the target color forms solid rectangles. A bar (or a group of bars) immediately bordering a target supplies the same number of cells to it. The bars are erased to the solid background and that many target cells are recolored from the bordering side: horizontal borders fill rows and vertical borders fill columns. Unpaired target rectangles are preserved. This is the training-inferred `transfer_line_mass_into_adjacent_rectangles` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Move line markers into the adjacent rectangular target components. The marker color forms one-cell-wide horizontal or vertical bars, while the target color forms solid rectangles. A bar (or a group of bars) immediately bordering a target supplies the same number of cells to it. The bars are erased to the solid background and that many target cells are recolored from the bordering side: horizontal borders fill rows and vertical borders fill columns. Unpaired target rectangles are preserved.",
   "steps": [
     "Apply `transfer_line_mass_into_adjacent_rectangles`: move line markers into the adjacent rectangular target components"
   ],

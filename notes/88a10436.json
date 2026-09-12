@@ -1,6 +1,6 @@
 {
   "title": "Copy the non-marker glyph with its center on the lone color-5 cell",
-  "summary": "Copy the non-marker glyph with its center on the lone color-5 cell. This is the training-inferred `stamp_glyph_centered_on_five` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Copy the non-marker glyph with its center on the lone color-5 cell.",
   "steps": [
     "Apply `stamp_glyph_centered_on_five`: copy the non-marker glyph with its center on the lone color-5 cell"
   ],

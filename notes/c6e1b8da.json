@@ -1,8 +1,11 @@
 {
   "title": "Move rectangular color objects by the length of an attached stick",
-  "summary": "Move rectangular color objects by the length of an attached stick. Each object in this task is a solid rectangle, sometimes partially hidden by another object, with an optional one-cell-wide stick extending from one side. The stick is an instruction: for sticks of length at least two, translate the rectangle by that many cells toward the stick and remove the stick. A one-cell protrusion is the degenerate form of a damaged corner; it is absorbed by the rectangle instead of causing a translation. The input is also the only available depth cue. Whenever a visible cell lies inside another object's rectangle, its color is drawn above that rectangle in the reconstructed scene. This preserves the observed occlusion order after the translations. This is the training-inferred `move_rectangles_to_stick_ends` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Move rectangular color objects by the length of an attached stick. Each object in this task is a solid rectangle, sometimes partially hidden by another object, with an optional one-cell-wide stick extending from one side. The stick is an instruction: for sticks of length at least two, translate the rectangle by that many cells toward the stick and remove the stick. A one-cell protrusion is the degenerate form of a damaged corner; it is absorbed by the rectangle instead of causing a translation. The input is also the only available depth cue. Whenever a visible cell lies inside another object's rectangle, its color is drawn above that rectangle in the reconstructed scene. This preserves the observed occlusion order after the translations.",
   "steps": [
-    "Apply `move_rectangles_to_stick_ends`: move rectangular color objects by the length of an attached stick"
+    "Choose the most frequent color as background and infer one rectangular body for every other color, allowing cells hidden by overlapping bodies.",
+    "Test the unchanged bounding box and boxes trimmed from each of the four sides; require every trimmed-off cell to form one straight one-cell-wide stick attached to that side.",
+    "Translate bodies with sticks of length at least two toward the stick by its length, while treating a one-cell protrusion as part of the original damaged rectangle.",
+    "Derive the front-to-back order from visible cells lying inside other inferred rectangles, then redraw the translated solid rectangles in that order."
   ],
   "concepts": [
     "move",

@@ -1,6 +1,6 @@
 {
   "title": "Use a large three-by-three mask to select cells of a 3x3 color key",
-  "summary": "Use a large three-by-three mask to select cells of a 3x3 color key. A small, fully occupied multicolor 3x3 component acts as the key. A separate monochrome component is a scaled 3x3 occupancy mask; each of its nine equal-sized regions determines whether the corresponding key value is retained. This is the training-inferred `mask_key_by_threefold_layout` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Use a large three-by-three mask to select cells of a 3x3 color key. A small, fully occupied multicolor 3x3 component acts as the key. A separate monochrome component is a scaled 3x3 occupancy mask; each of its nine equal-sized regions determines whether the corresponding key value is retained.",
   "steps": [
     "Apply `mask_key_by_threefold_layout`: use a large three-by-three mask to select cells of a 3x3 color key"
   ],

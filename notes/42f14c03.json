@@ -1,8 +1,10 @@
 {
   "title": "Estimate the background color and select the only shape that can fill the hole in the circumscribed rectangle of the candidate large shape without rotating other small parts.",
-  "summary": "Estimate the background color and select the only shape that can fill the hole in the circumscribed rectangle of the candidate large shape without rotating other small parts.",
+  "summary": "Use the most frequent color as background, consider each non-background component whose bounding box has holes as a candidate large shape, and test whether the holes can be tiled exactly by translated copies of distinct smaller components without rotation. Return the unique completed rectangle solution.",
   "steps": [
-    "Estimate the background color and select the only shape that can fill the hole in the circumscribed rectangle of the candidate large shape without rotating other small parts."
+    "Estimate the background and find candidate components with missing cells inside their bounding boxes",
+    "Use every other component at most once, translate it without rotation, and recursively cover all candidate holes exactly",
+    "Require one unique completed output across all candidates and return that filled rectangle"
   ],
   "concepts": [
     "Parts synthesis",

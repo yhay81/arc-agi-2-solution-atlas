@@ -1,5 +1,5 @@
 {
-  "title": "Photograph only objects that are symmetrical to the direction of the mirror",
+  "title": "Reflect every object of the rarest non-mirror color across the blue mirror",
   "summary": "Count the total number of squares of each color, excluding the background and blue mirror. Choose the color with the least amount and reflect all shapes of that color against the blue straight line. If it's a vertical mirror, flip it left and right, if it's horizontal, flip it up and down, and if it's diagonal, flip it around the diagonal line. Leave the original shape and other colors.",
   "steps": [
     "Count the total number of squares of each color, excluding the background and blue mirror.",

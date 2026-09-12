@@ -1,6 +1,6 @@
 {
   "title": "Scale a scene by its palette size and mark the center block's corners",
-  "summary": "Scale a scene by its palette size and mark the center block's corners. ARC scenes in this family contain one solid 2x2 object surrounded by colored regions. Every source cell is enlarged by the number of non-zero colors. The four diagonally outward cells adjacent to that object are drawn as color-2 diagonals in the enlarged grid (only the corners that fit inside the source canvas are used). This is the training-inferred `expand_center_rectangle_with_corner_diagonals` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Scale a scene by its palette size and mark the center block's corners. ARC scenes in this family contain one solid 2x2 object surrounded by colored regions. Every source cell is enlarged by the number of non-zero colors. The four diagonally outward cells adjacent to that object are drawn as color-2 diagonals in the enlarged grid (only the corners that fit inside the source canvas are used).",
   "steps": [
     "Apply `expand_center_rectangle_with_corner_diagonals`: scale a scene by its palette size and mark the center block's corners"
   ],

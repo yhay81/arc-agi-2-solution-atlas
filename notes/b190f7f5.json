@@ -1,6 +1,6 @@
 {
   "title": "Expand a palette panel using the other panel's monochrome mask",
-  "summary": "Expand a palette panel using the other panel's monochrome mask. The input is two equal-sized panels placed side by side. The panel whose foreground uses one color supplies the glyph mask; each nonzero cell in the other panel supplies the color for one expanded glyph tile. This is the training-inferred `expand_panel_palette_by_mask` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Expand a palette panel using the other panel's monochrome mask. The input is two equal-sized panels placed side by side. The panel whose foreground uses one color supplies the glyph mask; each nonzero cell in the other panel supplies the color for one expanded glyph tile.",
   "steps": [
     "Apply `expand_panel_palette_by_mask`: expand a palette panel using the other panel's monochrome mask"
   ],

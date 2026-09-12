@@ -1,8 +1,9 @@
 {
-  "title": "Paint the shortest path between the two red dots yellow without passing through the blue wall.",
-  "summary": "Paint the shortest path between the two red dots yellow without passing through the blue wall.",
+  "title": "Paint all shortest paths between two red dots",
+  "summary": "Treat 0 and the two red cells as traversable and all other colors as walls. Find every cell that lies on at least one shortest four-neighbor path between the two red cells, and recolor only those traversed background cells to yellow 4.",
   "steps": [
-    "Paint the shortest path between the two red dots yellow without passing through the blue wall."
+    "Use four-neighbor paths through only 0 and 2 cells, avoiding all other colors.",
+    "Recolor every cell belonging to any shortest path between the two 2 cells to 4, leaving the endpoints unchanged."
   ],
   "concepts": [
     "shortest path",

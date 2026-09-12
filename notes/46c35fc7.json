@@ -1,6 +1,6 @@
 {
   "title": "Rotate the corner and edge orbits of every complete 3x3 ring",
-  "summary": "Rotate the corner and edge orbits of every complete 3x3 ring. A ring-shaped component has a uniform-background centre and foreground cells on all eight positions around it. The corners move one step counter-clockwise around the four corners, while the edge-centres move one step clockwise around their four positions. Components are located from their shape rather than from fixed coordinates, so several rings in one scene are handled independently and all other scene content is preserved. This is the training-inferred `counter_rotate_3x3_rings` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Rotate the corner and edge orbits of every complete 3x3 ring. A ring-shaped component has a uniform-background centre and foreground cells on all eight positions around it. The corners move one step counter-clockwise around the four corners, while the edge-centres move one step clockwise around their four positions. Components are located from their shape rather than from fixed coordinates, so several rings in one scene are handled independently and all other scene content is preserved.",
   "steps": [
     "Apply `counter_rotate_3x3_rings`: rotate the corner and edge orbits of every complete 3x3 ring"
   ],

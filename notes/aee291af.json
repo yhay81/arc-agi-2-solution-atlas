@@ -1,12 +1,13 @@
 {
-  "title": "Compare the red patterns and cut out the only pattern that is different from the others along with the edge of one light blue square.",
-  "summary": "Compare the red patterns and cut out the only pattern that is different from the others along with the edge of one light blue square.",
+  "title": "Extract the unique red pattern with its one-cell cyan margin",
+  "summary": "Group nearby red cells into patterns, compare their normalized shapes, and extract the only pattern that occurs once together with the surrounding one-cell cyan margin.",
   "steps": [
-    "Compare the red patterns and cut out the only pattern that is different from the others along with the edge of one light blue square."
+    "Group nearby red cells into patterns and compare their normalized shapes.",
+    "Extract the only pattern that occurs once together with its surrounding one-cell cyan margin."
   ],
   "concepts": [
-    "ostracism",
-    "pattern comparison"
+    "Unique-shape selection",
+    "Pattern comparison"
   ],
   "observations": [
     "Training pair 1: 16x16 -> 4x4; colors [1, 2, 8] -> [2, 8]; output dimensions changed.",

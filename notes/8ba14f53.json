@@ -3,7 +3,7 @@
   "summary": "Pick out blocks of the same color other than black in order from the left. Count the area of ​​black holes inside each lump that do not connect to the outside vertically, horizontally, or vertically. Line up the color by the area of ​​the hole in the output of 3 squares per row. When the color changes, move on to the next line, make the whole 3x3, and make the remainder black.",
   "steps": [
     "Pick out blocks of the same color other than black in order from the left.",
-    "Count the area of black holes inside each lump that do not connect to the outside vertically, horizontally, or vertically.",
+    "Count the area of black holes inside each lump that do not connect to the outside vertically or horizontally.",
     "Line up the color by the area of the hole in the output of 3 squares per row. When the color changes, move on to the next line, make the whole 3x3, and make the remainder black."
   ],
   "concepts": [

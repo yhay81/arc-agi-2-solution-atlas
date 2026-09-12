@@ -1,8 +1,9 @@
 {
-  "title": "Crop the grid at the specified row, column, height, and width",
-  "summary": "Crop the grid at the specified row, column, height, and width. This is the training-inferred `crop_at` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Crop the fixed cell and remap its color",
+  "summary": "Extract the single cell at row 8, column 8 (zero-based) and remap color 8 to 4 and color 1 to 8, leaving other colors unchanged.",
   "steps": [
-    "Apply `crop_at`: crop the grid at the specified row, column, height, and width"
+    "Crop the 1×1 region beginning at zero-based row 8, column 8.",
+    "Map the extracted value 8 to 4 and 1 to 8; preserve any other value."
   ],
   "concepts": [
     "crop"

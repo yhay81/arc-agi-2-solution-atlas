@@ -1,8 +1,11 @@
 {
   "title": "Scale a marked template onto every matching marker constellation",
-  "summary": "Scale a marked template onto every matching marker constellation. ARC grids in this family contain a reusable object (one color) touching one or more marker components (a second color). The touched markers define the prototype constellation. Every other congruent constellation is a scaled copy of that prototype; copy all non-background cells of the complete template, including the marker color, at the corresponding scale. The implementation discovers the prototype and scale from the grid, so neither example coordinates nor test outputs are retained. This is the training-inferred `scale_template_between_markers` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Scale a marked template onto every matching marker constellation. ARC grids in this family contain a reusable object (one color) touching one or more marker components (a second color). The touched markers define the prototype constellation. Every other congruent constellation is a scaled copy of that prototype; copy all non-background cells of the complete template, including the marker color, at the corresponding scale. The implementation discovers the prototype and scale from the grid, so neither example coordinates nor test outputs are retained.",
   "steps": [
-    "Apply `scale_template_between_markers`: scale a marked template onto every matching marker constellation"
+    "Require exactly two nonzero colors and try each color as the template color while treating the other as the marker color.",
+    "Choose the largest template-color component and collect marker components touching it as the prototype constellation.",
+    "Compare each detached marker component with the prototype marker shape at integer scales and derive the scaled template origin from the marker offsets.",
+    "Require the other prototype markers to appear at the same scaled relative positions, then copy every nonzero cell of the complete template bounding box at that scale."
   ],
   "concepts": [
     "scale",

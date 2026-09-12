@@ -1,6 +1,6 @@
 {
   "title": "Overlay three equal panels in a specified order",
-  "summary": "Overlay three equal panels in a specified order. This is the training-inferred `reorder_three_panels` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Overlay three equal panels in a specified order.",
   "steps": [
     "Apply `reorder_three_panels`: overlay three equal panels in a specified order"
   ],

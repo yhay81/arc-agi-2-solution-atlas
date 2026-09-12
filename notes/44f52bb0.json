@@ -1,8 +1,10 @@
 {
-  "title": "Classify components by structural features",
-  "summary": "Classify components by structural features. This is the training-inferred `feature_classifier` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Classify the grid by horizontal and vertical reflection symmetry",
+  "summary": "Return a 1×1 grid containing 1 exactly when the entire input is symmetric under both top-to-bottom row reversal and left-to-right column reversal; otherwise return a 1×1 grid containing 7.",
   "steps": [
-    "Apply `feature_classifier`: classify components by structural features"
+    "Check whether the row sequence equals its reversed sequence",
+    "Check whether every row equals its reversed row",
+    "Output [[1]] only when both checks pass; otherwise output [[7]]"
   ],
   "concepts": [
     "feature",

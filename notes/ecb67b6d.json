@@ -1,10 +1,10 @@
 {
-  "title": "Divide the gray color into clusters connected vertically, horizontally, and diagonally.",
-  "summary": "Divide the gray color into clusters connected vertically, horizontally, and diagonally. Check to see if there is a place where three or more cells continue in a diagonal straight line. Change only one block to light blue.",
+  "title": "Recolor gray diagonal-line clusters",
+  "summary": "Group gray 5 cells using 8-neighbor connectivity. If a cluster contains at least three cells on one straight diagonal, recolor the entire cluster to light blue 8; leave other clusters unchanged.",
   "steps": [
-    "Divide the gray color into clusters connected vertically, horizontally, and diagonally.",
-    "Check if there is a place where 3 or more cells continue in a diagonal straight line.",
-    "Change only a certain part to light blue"
+    "Divide gray 5 cells into clusters connected vertically, horizontally, or diagonally.",
+    "Check whether each cluster contains three consecutive cells on a diagonal straight line.",
+    "Recolor every qualifying cluster, not just the diagonal cells, to light blue 8."
   ],
   "concepts": [
     "Concatenation",

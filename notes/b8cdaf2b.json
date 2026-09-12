@@ -1,8 +1,10 @@
 {
-  "title": "Grow upward in stages determined by the foreground span",
-  "summary": "Grow upward in stages determined by the foreground span. This is the training-inferred `grow_upward_span` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Project a lower-row span upward with widening endpoints",
+  "summary": "Use the two lowest nonempty rows to determine a centered foreground span, preferring the span in the upper of those rows when it exists. For as many empty rows above as the smaller side margin allows, place the lower-row color one cell farther left and right on each successive row, leaving all other cells unchanged.",
   "steps": [
-    "Apply `grow_upward_span`: grow upward in stages determined by the foreground span"
+    "Read the final two nonempty rows and determine the central color span and its left/right margins.",
+    "Select up to the minimum margin's worth of empty rows immediately above the upper row.",
+    "On successive rows, place the span color at symmetric endpoints that move one cell outward per row."
   ],
   "concepts": [
     "grow",

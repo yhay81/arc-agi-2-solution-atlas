@@ -1,10 +1,10 @@
 {
   "title": "Leave the horizontal reference line and maintain the color, horizontal position, and width of each vertical bar.",
-  "summary": "Leave the horizontal reference line and maintain the color, horizontal position, and width of each vertical bar. Arrange the heights of the bars in descending order of height, assign them in order starting from the left bar, and redraw them centering on the reference line. If the height is even, the top side will be one square longer.",
+  "summary": "Find the densest non-background row as a horizontal reference line, preserve each non-reference object's color, horizontal position, and width, and redraw the objects centered on that line with their heights assigned from shortest to tallest from left to right.",
   "steps": [
-    "Leave the horizontal reference line and maintain the color, horizontal position, and width of each vertical bar.",
-    "Arrange the heights of the bars in descending order, assign them in order starting from the left bar, and redraw them centering on the reference line.",
-    "If the height is an even number, the top side will be one square longer."
+    "Use the row containing the most non-background cells as the reference and fill that row with its most common color",
+    "Extract monochrome objects excluding the reference color, order them by left edge, and sort their heights in ascending order",
+    "Redraw each object at its original horizontal span, centered vertically on the reference row"
   ],
   "concepts": [
     "sort",

@@ -1,8 +1,10 @@
 {
   "title": "Repeat a sparse top row while spreading each marker on alternating rows",
-  "summary": "Repeat a sparse top row while spreading each marker on alternating rows. This is the training-inferred `repeat_top_markers_as_diagonal_stripes` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "When only the first row contains any nonzero cells, copy that top row to every even-indexed row and, on every odd-indexed row, place each nonzero top-row marker one cell to its left and right where those columns exist; otherwise preserve the input.",
   "steps": [
-    "Apply `repeat_top_markers_as_diagonal_stripes`: repeat a sparse top row while spreading each marker on alternating rows"
+    "Require at least two rows, a nonzero top row, and all rows below it to be zero",
+    "Copy the top row unchanged to rows 0, 2, 4, …",
+    "For each nonzero top-row cell, copy its color to the adjacent left and right columns on rows 1, 3, 5, … when in bounds"
   ],
   "concepts": [
     "repeat",

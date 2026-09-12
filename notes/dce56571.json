@@ -1,6 +1,6 @@
 {
   "title": "Replace scattered foreground cells by a centered horizontal count line",
-  "summary": "Replace scattered foreground cells by a centered horizontal count line. This is the training-inferred `center_line_from_count` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Replace scattered foreground cells by a centered horizontal count line.",
   "steps": [
     "Apply `center_line_from_count`: replace scattered foreground cells by a centered horizontal count line"
   ],

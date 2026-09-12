@@ -1,6 +1,6 @@
 {
   "title": "Complete the partial plus indicated by its marker",
-  "summary": "Complete a plus-shaped foreground fragment when its holes are markers. This is the training-inferred `complete_plus_missing` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Complete a plus-shaped foreground fragment when its holes are markers.",
   "steps": [
     "Apply `complete_plus_missing`: complete the partial plus indicated by its marker"
   ],

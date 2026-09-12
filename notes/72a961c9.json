@@ -1,6 +1,6 @@
 {
   "title": "Grow fixed-height columns above special markers in a one-valued base row",
-  "summary": "Grow fixed-height columns above special markers in a one-valued base row. This is the training-inferred `build_marker_towers` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Grow fixed-height columns above special markers in a one-valued base row.",
   "steps": [
     "Apply `build_marker_towers`: grow fixed-height columns above special markers in a one-valued base row"
   ],

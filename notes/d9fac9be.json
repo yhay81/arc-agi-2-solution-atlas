@@ -1,6 +1,6 @@
 {
   "title": "Return the center color of a 3x3 hollow square",
-  "summary": "Return the center color of a 3x3 hollow square. This is the training-inferred `center_of_hollow_square` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Return the center color of a 3x3 hollow square.",
   "steps": [
     "Apply `center_of_hollow_square`: return the center color of a 3x3 hollow square"
   ],

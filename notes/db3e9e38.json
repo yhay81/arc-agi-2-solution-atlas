@@ -1,6 +1,6 @@
 {
   "title": "Expand a vertical seven-line upward into a symmetric seven/eight cone",
-  "summary": "Expand a vertical seven-line upward into a symmetric seven/eight cone. This is the training-inferred `expand_vertical_seven_line_into_cone` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Expand a vertical seven-line upward into a symmetric seven/eight cone.",
   "steps": [
     "Apply `expand_vertical_seven_line_into_cone`: expand a vertical seven-line upward into a symmetric seven/eight cone"
   ],

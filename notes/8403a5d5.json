@@ -1,6 +1,6 @@
 {
   "title": "Project rightward stripes from one bottom marker with alternating edge accents",
-  "summary": "Project rightward stripes from one bottom marker with alternating edge accents. This is the training-inferred `project_alternating_stripes_from_bottom_marker` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Project rightward stripes from one bottom marker with alternating edge accents.",
   "steps": [
     "Apply `project_alternating_stripes_from_bottom_marker`: project rightward stripes from one bottom marker with alternating edge accents"
   ],

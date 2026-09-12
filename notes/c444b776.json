@@ -1,6 +1,6 @@
 {
   "title": "Copy the sole nonempty panel through an equal grid of full separator lines",
-  "summary": "Copy the sole nonempty panel through an equal grid of full separator lines. This is the training-inferred `tile_unique_panel_across_separator_grid` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Copy the sole nonempty panel through an equal grid of full separator lines.",
   "steps": [
     "Apply `tile_unique_panel_across_separator_grid`: copy the sole nonempty panel through an equal grid of full separator lines"
   ],

@@ -1,10 +1,10 @@
 {
   "title": "Move the color bar to the left to make the background gray",
-  "summary": "Prepare the output in gray with the same dimensions as the input. Move each input colored square exactly one column to the left. Keep the original color and each row, and make the remaining areas gray.",
+  "summary": "Create a same-size color-5 background, copy every nonzero input cell from columns greater than zero one column to the left on its row, and leave the first-column input cells uncopied.",
   "steps": [
     "Prepare the output in gray with the same dimensions as the input.",
-    "Move each input colored square exactly one column to the left.",
-    "Keep the original color and each row, and make the remaining areas gray."
+    "For every nonzero cell with a column index greater than zero, write its color one column to the left in the same row",
+    "Keep all other output cells as color 5"
   ],
   "concepts": [
     "move",

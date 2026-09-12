@@ -1,8 +1,10 @@
 {
   "title": "Replace repeated monochrome shapes with a matching multicolor template",
-  "summary": "Replace repeated monochrome shapes with a matching multicolor template. This is the training-inferred `replace_repeated_shapes_with_multicolor_template` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Find a unique nonzero color whose 4-connected components all share one shape, find the nonzero multicolor template with that same shape, and stamp the template into every repeated-shape bounding box on a zero background.",
   "steps": [
-    "Apply `replace_repeated_shapes_with_multicolor_template`: replace repeated monochrome shapes with a matching multicolor template"
+    "For each color with at least two 4-connected components, require all components to have the same normalized shape",
+    "Find the unique multicolor nonzero region whose normalized shape matches that repeated shape",
+    "Copy the multicolor template into each repeated component's bounding-box origin and leave all other cells zero"
   ],
   "concepts": [
     "replace",

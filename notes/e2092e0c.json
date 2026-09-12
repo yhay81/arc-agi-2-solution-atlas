@@ -1,6 +1,6 @@
 {
   "title": "Use a 4-by-4 corner key to locate and fill a matching 5-by-5 window",
-  "summary": "Use a 4-by-4 corner key to locate and fill a matching 5-by-5 window. The seven-cell ``5`` corner at the upper-left of the scene contains a three-by-three key immediately northwest of its bottom and right arms. The unique five-by-five window whose interior equals that key is painted five-cell-wide ``5`` outline. This is the training-inferred `fill_window_matching_corner_key` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Use a 4-by-4 corner key to locate and fill a matching 5-by-5 window. The seven-cell ``5`` corner at the upper-left of the scene contains a three-by-three key immediately northwest of its bottom and right arms. The unique five-by-five window whose interior equals that key is painted five-cell-wide ``5`` outline.",
   "steps": [
     "Apply `fill_window_matching_corner_key`: use a 4-by-4 corner key to locate and fill a matching 5-by-5 window"
   ],

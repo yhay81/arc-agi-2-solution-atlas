@@ -1,8 +1,9 @@
 {
   "title": "Overlay the left and right panels using the larger color index",
-  "summary": "Overlay the left and right panels using the larger color index. This is the training-inferred `overlay_lr_max` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Split the even-width grid into left and right panels, overlay corresponding cells using the larger value, then map 6 and 5 to 0 and 0 to 4 while preserving other values.",
   "steps": [
-    "Apply `overlay_lr_max`: overlay the left and right panels using the larger color index"
+    "Split the grid into equal left and right panels and overlay corresponding cells using the larger value.",
+    "After overlaying, map 6 and 5 to 0, map 0 to 4, and leave other values unchanged."
   ],
   "concepts": [
     "overlay",

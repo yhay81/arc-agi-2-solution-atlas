@@ -1,14 +1,14 @@
 {
   "title": "Change the most common colors, blue, red, and green, into three types of symbols",
-  "summary": "Count the number of blue 1, red 2, and green 3 squares without using the position, and draw the light blue 3x3 symbol that corresponds to the largest number of squares. Learn the correspondence between symbols from examples.",
+  "summary": "Count blue, red, and green cells without using their positions, select the uniquely most frequent of those three colors, and output its learned 3x3 light-blue label. Blue maps to 008/880/080, red to 000/888/000, and green to 088/080/080.",
   "steps": [
     "Classify the example problems by the most common color among blue, red, and green, and record the corresponding output label for each.",
     "Even when inputting a new input, it only counts the number of blues, reds, and greens, and selects the color with the largest number.",
-    "Outputs a 3x3 light blue symbol corresponding to that color. Do not use input positional relationships or a small number of noise colors."
+    "Output the learned label: blue maps to 008/880/080, red to 000/888/000, and green to 088/080/080. Ignore input positions and the less frequent noise colors."
   ],
   "concepts": [
-    "unresolved",
-    "Information extraction"
+    "Frequency classification",
+    "Learned label mapping"
   ],
   "observations": [
     "Training pair 1: 7x7 -> 3x3; colors [0, 1, 2, 3, 4, 7, 8, 9] -> [0, 8]; output dimensions changed.",

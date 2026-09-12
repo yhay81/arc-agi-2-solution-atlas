@@ -1,8 +1,10 @@
 {
-  "title": "Copy the original to an arrangement with fewer colors",
-  "summary": "Copy the entire input to the position of the least frequent color.",
+  "title": "Use the least frequent color as a block mask",
+  "summary": "Choose the least frequent value in the input as a mask color, create an output of size H²×W² filled with zero, and copy the entire H×W input into each H×W output block whose source cell has that mask color.",
   "steps": [
-    "Copy the entire input to the position of the least frequent color."
+    "Find the least frequent value across the input",
+    "For every source cell of that value, place a copy of the full input at the corresponding H×W block position",
+    "Leave all blocks corresponding to other source values as zero"
   ],
   "concepts": [
     "few colors",

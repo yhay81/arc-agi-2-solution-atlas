@@ -1,6 +1,6 @@
 {
   "title": "Repeat a sparse zero-template along the ray indicated by one marker",
-  "summary": "Repeat a sparse zero-template along the ray indicated by one marker. The modal color is the canvas background. A single multi-cell component of another color supplies the template, while a singleton of a third color identifies the ray. The template cell opposite the marker-facing edges is aligned with that marker; copies are then advanced by the same translation until leaving the canvas. Existing cells always win. This is the training-inferred `repeat_sparse_template_from_single_marker` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Repeat a sparse zero-template along the ray indicated by one marker. The modal color is the canvas background. A single multi-cell component of another color supplies the template, while a singleton of a third color identifies the ray. The template cell opposite the marker-facing edges is aligned with that marker; copies are then advanced by the same translation until leaving the canvas. Existing cells always win.",
   "steps": [
     "Apply `repeat_sparse_template_from_single_marker`: repeat a sparse zero-template along the ray indicated by one marker"
   ],

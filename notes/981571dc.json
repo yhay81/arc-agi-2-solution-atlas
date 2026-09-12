@@ -1,6 +1,6 @@
 {
   "title": "Complete zero-punctured rows/columns from compatible lines",
-  "summary": "Complete zero-punctured rows/columns from compatible lines. This is the training-inferred `complete_matching_lines_and_diagonal` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Complete zero-punctured rows/columns from compatible lines.",
   "steps": [
     "Apply `complete_matching_lines_and_diagonal`: complete zero-punctured rows/columns from compatible lines"
   ],

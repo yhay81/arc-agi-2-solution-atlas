@@ -1,8 +1,10 @@
 {
-  "title": "Repeat a short motif along a contiguous vertical guide line",
-  "summary": "Repeat a short motif along a contiguous vertical guide line. This is the training-inferred `repeat_pattern_from_guide` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Repeat a short motif beside a vertical guide",
+  "summary": "Find the longest horizontal run of a nonzero color as a guide, then locate a contiguous vertical run of that color. On the side of the guide containing the active motif, repeat the short motif cyclically down the guide's span; finally replicate any monochromatic horizontal guide bands.",
   "steps": [
-    "Apply `repeat_pattern_from_guide`: repeat a short motif along a contiguous vertical guide line"
+    "Find the longest nonzero horizontal run and use it as the guide band.",
+    "Find a contiguous vertical guide column and select the side containing the source motif.",
+    "Repeat the source motif down the guide span with its detected period, then restore the horizontal guide bands."
   ],
   "concepts": [
     "repeat",

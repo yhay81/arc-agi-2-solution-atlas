@@ -1,6 +1,6 @@
 {
   "title": "Draw concentric square outlines from three evenly spaced diagonal dots",
-  "summary": "Draw concentric square outlines from three evenly spaced diagonal dots. This is the training-inferred `draw_concentric_squares_from_diagonal_markers` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Draw concentric square outlines from three evenly spaced diagonal dots.",
   "steps": [
     "Apply `draw_concentric_squares_from_diagonal_markers`: draw concentric square outlines from three evenly spaced diagonal dots"
   ],

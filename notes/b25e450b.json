@@ -1,6 +1,6 @@
 {
   "title": "Move edge-touching marker components across the canvas",
-  "summary": "Move edge-touching marker components across the canvas. Each component of the rare marker color acts as a cutter. A component touching a horizontal edge erases its columns and moves to the opposite horizontal edge; one touching a vertical edge erases its rows and moves to the opposite vertical edge. Interior cells are left untouched. This is the training-inferred `move_edge_cutters_to_opposite_side` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Move edge-touching marker components across the canvas. Each component of the rare marker color acts as a cutter. A component touching a horizontal edge erases its columns and moves to the opposite horizontal edge; one touching a vertical edge erases its rows and moves to the opposite vertical edge. Interior cells are left untouched.",
   "steps": [
     "Apply `move_edge_cutters_to_opposite_side`: move edge-touching marker components across the canvas"
   ],

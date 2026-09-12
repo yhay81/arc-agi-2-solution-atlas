@@ -1,8 +1,9 @@
 {
-  "title": "Classify source cells by whether their up-down mirror is also occupied",
-  "summary": "Classify source cells by whether their up-down mirror is also occupied. This is the training-inferred `recolor_by_vertical_symmetry` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Recolor 8 cells by vertical mirror occupancy",
+  "summary": "For each source cell of color 8, compare the cell in the vertically mirrored row. Recolor it to 2 when the mirror is also 8 and to 5 otherwise; existing 1 cells become 2 and existing 2 cells become 5, while 0 remains 0.",
   "steps": [
-    "Apply `recolor_by_vertical_symmetry`: classify source cells by whether their up-down mirror is also occupied"
+    "For every 8 cell, inspect the cell at the same column in the vertically mirrored row.",
+    "Map an occupied mirror to 2 and an unoccupied mirror to 5, then normalize existing 1 to 2 and existing 2 to 5."
   ],
   "concepts": [
     "recolor",

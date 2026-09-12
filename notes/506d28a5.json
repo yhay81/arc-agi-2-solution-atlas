@@ -1,8 +1,10 @@
 {
   "title": "Leave a common blank space above and below",
-  "summary": "Overlap the top and bottom two boards with OR, and set the foreground on either side to green 3.",
+  "summary": "For an odd-height grid, skip the middle separator row, compare the top and bottom halves cell by cell, and output a half-height grid containing 3 wherever either corresponding cell is nonzero and 0 otherwise.",
   "steps": [
-    "Overlap the top and bottom two boards with OR, and set the foreground on either side to green 3."
+    "Split the grid around its middle row and ignore that row",
+    "Compute occupancy OR between corresponding cells of the top and bottom halves",
+    "Encode occupied results as 3 and empty results as 0"
   ],
   "concepts": [
     "superposition",

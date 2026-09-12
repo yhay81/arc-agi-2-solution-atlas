@@ -1,8 +1,10 @@
 {
   "title": "Crop a vertical frame, retaining one contextual row above and below",
-  "summary": "Crop a vertical frame, retaining one contextual row above and below. The selected color determines the exact horizontal extent. Its vertical extent is expanded by one row at each available edge so nearby boundary marks remain visible, while unrelated marks to either side are discarded. This is the training-inferred `crop_vertical_frame_with_margin` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "If color 5 is present, crop the grid to the minimum and maximum columns containing 5 and to the rows from one above the minimum 5-row through one below the maximum 5-row, clipped to the grid; otherwise preserve the input.",
   "steps": [
-    "Apply `crop_vertical_frame_with_margin`: crop a vertical frame, retaining one contextual row above and below"
+    "Find the bounding row and column range of all color-5 cells",
+    "Expand only the row range by one cell on each available side and keep the full color-5 column range",
+    "Return that crop, preserving unrelated cells inside it and discarding cells outside it"
   ],
   "concepts": [
     "crop",

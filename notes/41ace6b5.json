@@ -1,9 +1,10 @@
 {
   "title": "Keep the length of the blue in each row and align the blue so that it starts at the height of the gray.",
-  "summary": "Keep the length of the blue in each row so that the blue starts at the height of the gray. Draw a light blue band on the top with a length that is common to many rows, and fill in the empty space below with brown.",
+  "summary": "Find the row containing the most color-5 cells as a level, infer the modal count of color-8 cells in columns that contain color 1, and for every column containing blue cells rebuild the column as: 7 background, the common-length 8 band immediately above the level, the original number of 1 cells starting at the level, and 9 below that run.",
   "steps": [
-    "Keep the length of the blue in each row and align the blue so that it starts at the height of the gray.",
-    "Draw a light blue band on the top with a length that is common to many rows, and fill in the empty space at the bottom with brown."
+    "Find the row with the greatest count of color 5 and use it as the level",
+    "Compute the modal number of color-8 cells per column among columns containing color 1",
+    "For each column containing color 1, clear it to 7, place the common 8-band above the level, preserve its count of 1 cells from the level downward, and fill the remaining lower cells with 9"
   ],
   "concepts": [
     "color separation",

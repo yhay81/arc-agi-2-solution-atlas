@@ -1,6 +1,6 @@
 {
   "title": "Extract the largest connected component",
-  "summary": "Extract the largest connected component. This is the training-inferred `largest_component` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Extract the largest connected component.",
   "steps": [
     "Apply `largest_component`: extract the largest connected component"
   ],

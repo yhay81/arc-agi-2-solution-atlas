@@ -1,8 +1,9 @@
 {
-  "title": "Fill rotation panels",
-  "summary": "Fill rotation panels. This is the training-inferred `fill_rotation_panels` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Fill separator panels with clockwise and 180-degree rotations",
+  "summary": "Use the square panel left of two gray separators as the source, fill the middle panel with its 90-degree clockwise rotation, and fill the right panel with its 180-degree rotation.",
   "steps": [
-    "Apply `fill_rotation_panels`: fill rotation panels"
+    "Use the square panel left of two gray separators as the source.",
+    "Fill the middle panel with the source rotated 90 degrees clockwise and the right panel with the source rotated 180 degrees."
   ],
   "concepts": [
     "fill",

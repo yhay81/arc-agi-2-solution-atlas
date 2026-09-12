@@ -1,8 +1,10 @@
 {
   "title": "Increase the shift amount for each row by 1",
-  "summary": "Fix the last non-empty line, shift each line above to the left by the distance from the bottom edge, and cut out the range.",
+  "summary": "Find the last row containing any nonzero cell and shift every row left by the difference between that row index and the row's index, writing into a same-size zero canvas; rows at or below the last nonempty row remain unshifted or empty according to that offset.",
   "steps": [
-    "Fix the last non-empty line, shift each line above to the left by the distance from the bottom edge, and cut out the range."
+    "Find the greatest row index containing any nonzero value",
+    "For each row, shift its cells left by end_row−row, discarding values that fall outside the grid",
+    "Return the same-height and same-width zero-padded output without cropping"
   ],
   "concepts": [
     "gradual shift",

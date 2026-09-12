@@ -1,6 +1,6 @@
 {
   "title": "Fill cells of a sparse frame lattice from their border markers",
-  "summary": "Fill cells of a sparse frame lattice from their border markers. A dominant non-zero color forms horizontal and vertical frame lines. Every cell between consecutive horizontal lines is painted with the most frequent non-frame marker color on its perimeter. The outer canvas edges act as the two missing vertical frame lines, and existing frame or marker cells are preserved. This is the training-inferred `fill_framed_cells_by_border_majority` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Fill cells of a sparse frame lattice from their border markers. A dominant non-zero color forms horizontal and vertical frame lines. Every cell between consecutive horizontal lines is painted with the most frequent non-frame marker color on its perimeter. The outer canvas edges act as the two missing vertical frame lines, and existing frame or marker cells are preserved.",
   "steps": [
     "Apply `fill_framed_cells_by_border_majority`: fill cells of a sparse frame lattice from their border markers"
   ],

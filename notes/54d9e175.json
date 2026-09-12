@@ -1,10 +1,10 @@
 {
-  "title": "Fill each separator-defined panel from its center marker",
-  "summary": "Use complete gray rows and columns as panel separators. Each remaining rectangular panel contains one marker color; fill that panel with the corresponding output color while leaving the separators gray.",
+  "title": "Fill separator-defined panels from their unique marker colors",
+  "summary": "Use complete color-5 rows and columns as separators. For each remaining panel containing exactly one marker from colors 1–4, fill the entire panel with its mapped color 1→6, 2→7, 3→8, or 4→9 while preserving the separators and panels without a unique marker.",
   "steps": [
-    "Split the grid at complete gray rows and columns.",
-    "Read the unique marker in each panel.",
-    "Fill the panel using the marker-to-fill color correspondence."
+    "Find all full rows and columns of color 5 and split the interior spans into panels",
+    "Collect markers from colors 1, 2, 3, and 4 and continue only when a panel contains exactly one distinct marker",
+    "Fill that panel using the mapping 1→6, 2→7, 3→8, 4→9"
   ],
   "concepts": [
     "panels",

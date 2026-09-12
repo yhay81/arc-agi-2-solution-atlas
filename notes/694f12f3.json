@@ -1,6 +1,6 @@
 {
   "title": "Keep two filled-rectangle borders and rank-color their interiors",
-  "summary": "Keep two filled-rectangle borders and rank-color their interiors. This is the training-inferred `recolor_ranked_rectangle_interiors` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Keep two filled-rectangle borders and rank-color their interiors.",
   "steps": [
     "Apply `recolor_ranked_rectangle_interiors`: keep two filled-rectangle borders and rank-color their interiors"
   ],

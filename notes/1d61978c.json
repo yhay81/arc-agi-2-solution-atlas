@@ -1,6 +1,6 @@
 {
   "title": "Color the longer diagonal family with ``dominant_color``",
-  "summary": "Color the longer diagonal family with ``dominant_color``. This is the training-inferred `recolor_diagonal_components_by_length` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Color the longer diagonal family with ``dominant_color``.",
   "steps": [
     "Apply `recolor_diagonal_components_by_length`: color the longer diagonal family with ``dominant_color``"
   ],

@@ -1,8 +1,10 @@
 {
-  "title": "Rules for changing the brown shape from two-color parts are undefined.",
-  "summary": "Use purple 6 as a break, and move the two separated brown 9 parts one square at a time in the direction away from the break.",
+  "title": "Move split 9-parts away from their separating gap",
+  "summary": "For each nonzero shape, isolate its 9-cells, split them into two parts along the internal gap, and shift the two parts one cell apart along the shape's long axis, discarding the separator and all other colors.",
   "steps": [
-    "Use purple 6 as a break, and move the two separated brown 9 parts one square at a time in the direction away from the break."
+    "For each nonzero connected shape, keep only its 9-cells and verify that they form two parts separated by a gap",
+    "If the shape is taller than wide, shift the two parts one row outward; otherwise shift them one column outward",
+    "Render the shifted 9-cells on a zero background"
   ],
   "concepts": [
     "shape instructions",

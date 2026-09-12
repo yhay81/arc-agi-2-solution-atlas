@@ -1,6 +1,6 @@
 {
   "title": "Repeat four rotated orientations periodically",
-  "summary": "Build a four-way rotated motif, repeating each quadrant twice. This is the training-inferred `rotation_fourfold_repeated` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Build a four-way rotated motif, repeating each quadrant twice.",
   "steps": [
     "Apply `rotation_fourfold_repeated`: repeat four rotated orientations periodically"
   ],

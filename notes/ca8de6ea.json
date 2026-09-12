@@ -1,6 +1,6 @@
 {
   "title": "Collapse a gray X pattern into its compact encoding",
-  "summary": "Collapse a gray X pattern into its compact encoding. This is the training-inferred `collapse_x_five` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Collapse a gray X pattern into its compact encoding.",
   "steps": [
     "Apply `collapse_x_five`: collapse a gray X pattern into its compact encoding"
   ],

@@ -1,6 +1,6 @@
 {
   "title": "Fill hollow squares with seven for odd sides and two for even sides",
-  "summary": "Fill hollow squares with seven for odd sides and two for even sides. This is the training-inferred `fill_square_frames_by_parity` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Fill hollow squares with seven for odd sides and two for even sides.",
   "steps": [
     "Apply `fill_square_frames_by_parity`: fill hollow squares with seven for odd sides and two for even sides"
   ],

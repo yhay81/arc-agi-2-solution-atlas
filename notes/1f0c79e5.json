@@ -1,6 +1,6 @@
 {
   "title": "Propagate a 2-by-2 marker tile along its marked diagonals",
-  "summary": "Propagate a 2-by-2 marker tile along its marked diagonals. The non-zero 2-by-2 tile contains one drawing color and one marker color. Every marker corner selects the diagonal direction from the tile, while the complete tile is recolored with the drawing color and stamped at each successive position (including the final partially visible stamp). This is the training-inferred `propagate_marker_tile_diagonals` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Propagate a 2-by-2 marker tile along its marked diagonals. The non-zero 2-by-2 tile contains one drawing color and one marker color. Every marker corner selects the diagonal direction from the tile, while the complete tile is recolored with the drawing color and stamped at each successive position (including the final partially visible stamp).",
   "steps": [
     "Apply `propagate_marker_tile_diagonals`: propagate a 2-by-2 marker tile along its marked diagonals"
   ],

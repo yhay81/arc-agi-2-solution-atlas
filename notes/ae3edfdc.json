@@ -1,6 +1,6 @@
 {
   "title": "Project distant orange/green markers beside their blue/red centers",
-  "summary": "Project distant orange/green markers beside their blue/red centers. Every distant marker contributes its vertical and horizontal direction from the corresponding singleton center. Diagonal markers consequently contribute two cardinal neighbours, while aligned markers contribute one. This is the training-inferred `project_distant_markers_around_centers` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Project distant orange/green markers beside their blue/red centers. Every distant marker contributes its vertical and horizontal direction from the corresponding singleton center. Diagonal markers consequently contribute two cardinal neighbours, while aligned markers contribute one.",
   "steps": [
     "Apply `project_distant_markers_around_centers`: project distant orange/green markers beside their blue/red centers"
   ],

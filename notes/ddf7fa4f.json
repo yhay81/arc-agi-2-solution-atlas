@@ -1,6 +1,6 @@
 {
   "title": "Project header key colors into the payload components beneath their columns",
-  "summary": "Project header key colors into the payload components beneath their columns. This is the training-inferred `recolor_components_from_header_columns` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Project header key colors into the payload components beneath their columns.",
   "steps": [
     "Apply `recolor_components_from_header_columns`: project header key colors into the payload components beneath their columns"
   ],

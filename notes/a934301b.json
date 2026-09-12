@@ -1,9 +1,9 @@
 {
-  "title": "Erase a square with two or more marks inside.",
-  "summary": "Count the small light blue marks inside the large blue square.",
+  "title": "Erase nonzero components containing at least two 8 cells",
+  "summary": "Find each four-connected nonzero component and count its color-8 cells. Clear the entire component, including all of its colors, when that count is at least two; leave components with zero or one 8 unchanged.",
   "steps": [
-    "Count the small light blue marks inside the large blue square.",
-    "Leave squares with 0 or 1 mark, and erase squares with 2 or more marks black, including the inside."
+    "Group all nonzero cells into four-connected components and count the 8 cells in each component.",
+    "Replace every cell of a component containing at least two 8s with 0; preserve the other components."
   ],
   "concepts": [
     "Number threshold",

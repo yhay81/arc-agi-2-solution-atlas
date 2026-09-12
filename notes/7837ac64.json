@@ -1,6 +1,6 @@
 {
   "title": "Decode cells whose four lattice corners share a non-grid color",
-  "summary": "Decode cells whose four lattice corners share a non-grid color. This is the training-inferred `decode_colored_lattice_cells` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Decode cells whose four lattice corners share a non-grid color.",
   "steps": [
     "Apply `decode_colored_lattice_cells`: decode cells whose four lattice corners share a non-grid color"
   ],

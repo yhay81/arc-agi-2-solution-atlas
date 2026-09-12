@@ -1,10 +1,10 @@
 {
-  "title": "Place two specific colors next to each other in the same row",
-  "summary": "A hypothesis that moves the points on the right side immediately next to the left side for pairs of blue and light blue or yellow and orange in the same row.",
+  "title": "Move paired colors into adjacent positions within each row",
+  "summary": "For every row containing exactly one 1-and-8 pair or one 4-and-7 pair, keep the left member, clear the right member to 0, and write the right member's value immediately to the right of the left member.",
   "steps": [
-    "Find pairs of 1 and 8 and pairs of 4 and 7 in each row",
-    "Leave the points on the left",
-    "Move the right point one row to the right of the left point and return the original position to black 0"
+    "Find rows containing exactly two cells whose values are one of the pairs {1,8} or {4,7}",
+    "Keep the left cell and copy the right cell's color to the cell one column after it",
+    "Clear the original right cell to 0"
   ],
   "concepts": [
     "color pairs",

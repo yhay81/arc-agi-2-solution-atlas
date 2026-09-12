@@ -1,6 +1,6 @@
 {
   "title": "Fill the narrowest intervals between matching endpoints",
-  "summary": "Fill the narrowest intervals between matching endpoints. This is the training-inferred `fill_narrowest_pairs` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Fill the narrowest intervals between matching endpoints.",
   "steps": [
     "Apply `fill_narrowest_pairs`: fill the narrowest intervals between matching endpoints"
   ],

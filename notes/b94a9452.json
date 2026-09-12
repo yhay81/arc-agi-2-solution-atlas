@@ -1,6 +1,6 @@
 {
   "title": "Crop the non-zero object and exchange its two non-zero colors",
-  "summary": "Crop the non-zero object and exchange its two non-zero colors. This is the training-inferred `crop_swap_two_colors` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Crop the non-zero object and exchange its two non-zero colors.",
   "steps": [
     "Apply `crop_swap_two_colors`: crop the non-zero object and exchange its two non-zero colors"
   ],

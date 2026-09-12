@@ -1,11 +1,10 @@
 {
-  "title": "Add border color to the edges of large areas of color",
-  "summary": "Normalize to the orientation and color correspondence determined in the learning example, and read the colors on the four sides as instructions for up, down, left, and right. Look for the tip of a large shape indentation where three directions (top, bottom, left and right) are the shape, and the remaining direction is the background. Draw a 5-square cross centered one square in the opening direction from the tip, using the color of the corresponding side. Restore color and orientation.",
+  "title": "Draw a directed cross from each three-sided indentation",
+  "summary": "Infer the background and figure colors from the interior and use the four border cells as direction-specific instruction colors. For every interior background cell whose four orthogonal neighbors contain the figure on three sides and background on one side, draw a five-cell cross centered one step into the opening, using the instruction color for that direction.",
   "steps": [
-    "Normalize to the correspondence between orientation and color determined in the learning example, and read the colors on the four sides as instructions for up, down, left, and right.",
-    "Look for the tip of a large shape indentation where three directions (top, bottom, left and right) are the shape, and the remaining direction is the background.",
-    "Draw a 5-square cross centered one square in the opening direction from the tip, using the color of the corresponding side.",
-    "Restore color and orientation."
+    "Infer the background and figure colors from the interior and read the four border cells as instruction colors for up, down, left, and right.",
+    "Find each interior background cell with figure-colored neighbors on three sides and a background-colored neighbor on the remaining side.",
+    "Draw a five-cell cross centered one step into the opening, using the instruction color for that direction."
   ],
   "concepts": [
     "extreme value",

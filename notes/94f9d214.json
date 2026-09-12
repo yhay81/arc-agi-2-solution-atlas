@@ -1,8 +1,9 @@
 {
-  "title": "Overlay the top and bottom panels using the larger color index",
-  "summary": "Overlay the top and bottom panels using the larger color index. This is the training-inferred `overlay_tb_max` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Overlay top and bottom halves, then remap the result",
+  "summary": "Overlay the top and bottom halves cell by cell using the larger numeric value, then recolor every 1 and 3 to 0 and every 0 to 2.",
   "steps": [
-    "Apply `overlay_tb_max`: overlay the top and bottom panels using the larger color index"
+    "Overlay the top and bottom halves cell by cell using the larger numeric value.",
+    "Recolor 1 and 3 to 0, and recolor 0 to 2."
   ],
   "concepts": [
     "overlay",

@@ -1,8 +1,8 @@
 {
-  "title": "Mark uniform rows",
-  "summary": "Mark uniform rows. This is the training-inferred `mark_uniform_rows` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Render every uniform input row as a full gray 5 row and every non-uniform row as a full black 0 row",
+  "summary": "Render every uniform input row as a full gray 5 row and every non-uniform row as a full black 0 row.",
   "steps": [
-    "Apply `mark_uniform_rows`: mark uniform rows"
+    "Render every uniform input row as a full gray 5 row and every non-uniform row as a full black 0 row."
   ],
   "concepts": [
     "mark",

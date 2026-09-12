@@ -1,6 +1,6 @@
 {
   "title": "Project sparse markers according to their semantic line direction",
-  "summary": "Project sparse markers according to their semantic line direction. In this family of ARC scenes, markers of one set expand across their row while markers of another set expand down their column. Vertical strokes are laid down first so a horizontal stroke is the deterministic winner at crossings, matching the construction convention in the examples. This is the training-inferred `project_lines_by_color` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Project sparse markers according to their semantic line direction. In this family of ARC scenes, markers of one set expand across their row while markers of another set expand down their column. Vertical strokes are laid down first so a horizontal stroke is the deterministic winner at crossings, matching the construction convention in the examples.",
   "steps": [
     "Apply `project_lines_by_color`: project sparse markers according to their semantic line direction"
   ],

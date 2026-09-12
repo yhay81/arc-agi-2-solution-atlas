@@ -1,8 +1,12 @@
 {
   "title": "Assemble dense glyph tiles and pack the remaining glyphs into holes",
-  "summary": "Assemble dense glyph tiles and pack the remaining glyphs into holes. The input contains several monochrome glyphs scattered on a common background. The densest, largest bounding-box glyph(s) are the base tile(s), ordered by their input position and stacked vertically. Every other glyph keeps its orientation and is translated into an empty cell of the base mosaic. A placement is accepted only when all of its foreground cells land on currently empty cells; the result is the exact tiling when the remaining holes and glyph cells have equal cardinality. This is the training-inferred `assemble_nested_colored_mosaic` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Treat non-background colors with bounding-box density of at least 30 percent as dense candidates, choose the candidate bounding-boxes with maximum area as equally sized base tiles, and stack those tiles vertically in input order. Split the remaining sparse colors into connected motifs while keeping a sufficiently dense, tile-sized color as one motif. Translate each motif without rotation so that all motif cells exactly cover the background holes of the base mosaic once.",
   "steps": [
-    "Apply `assemble_nested_colored_mosaic`: assemble dense glyph tiles and pack the remaining glyphs into holes"
+    "Choose the most frequent color as background and measure each other color's bounding box and density.",
+    "Select all density-at-least-30-percent candidates with maximum bounding-box area, require equal dimensions, and stack their colored footprints vertically to form the base mosaic.",
+    "Convert every remaining color into one motif or its four-connected components, preserving each motif's orientation.",
+    "Enumerate translations contained entirely in the base holes and solve an exact cover in which every motif is used once and every hole is filled once.",
+    "Paint the selected translated motifs with their original colors."
   ],
   "concepts": [
     "assemble",

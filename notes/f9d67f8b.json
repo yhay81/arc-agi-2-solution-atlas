@@ -1,6 +1,6 @@
 {
   "title": "Restore masked cells using horizontal and vertical symmetry",
-  "summary": "Complete a drawing mirrored about its compatible central axes. Nine is a missing-cell marker. A candidate axis is accepted only when every compared pair already agrees, except where one side is masked. The non-masked member is then copied across the horizontal and vertical axes. This is the training-inferred `complete_masked_bilateral_symmetry` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Complete a drawing mirrored about its compatible central axes. Nine is a missing-cell marker. A candidate axis is accepted only when every compared pair already agrees, except where one side is masked. The non-masked member is then copied across the horizontal and vertical axes.",
   "steps": [
     "Apply `complete_masked_bilateral_symmetry`: restore masked cells using horizontal and vertical symmetry"
   ],

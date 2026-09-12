@@ -1,8 +1,9 @@
 {
-  "title": "Extend only columns and rows in directions where there are no points of other colors from the red rectangle to the top, bottom, left, and right to the edge of the board.",
-  "summary": "Extend only the columns and rows in the directions where there are no points of other colors from the red rectangle up, down, left, and right to the edge of the board.",
+  "title": "Extend red rays from exposed red cells",
+  "summary": "For each red cell, inspect each orthogonal direction that is not immediately connected to another red cell. If every cell from the adjacent position to the grid edge is background or red, fill that entire ray red; otherwise leave it unchanged.",
   "steps": [
-    "Extend only columns and rows in directions where there are no points of other colors from the red rectangle to the top, bottom, left, and right to the edge of the board."
+    "For every red cell and each exposed orthogonal direction, trace the ray to the edge.",
+    "Paint the ray red only when it contains no color other than background or red."
   ],
   "concepts": [
     "shielding",

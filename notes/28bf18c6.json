@@ -1,8 +1,9 @@
 {
   "title": "Crop to the bounding box of non-background cells",
-  "summary": "Crop to the bounding box of non-background cells. This is the training-inferred `crop_non_background` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Crop to the bounding box of non-background cells, then duplicate every cropped row horizontally to produce a two-times-wide result.",
   "steps": [
-    "Apply `crop_non_background`: crop to the bounding box of non-background cells"
+    "Crop to the bounding box of non-background cells",
+    "Duplicate each cropped row side by side"
   ],
   "concepts": [
     "crop",

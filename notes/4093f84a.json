@@ -1,8 +1,10 @@
 {
   "title": "Project outside marker counts into packed extensions of a spanning rectangle",
-  "summary": "Project outside marker counts into packed extensions of a spanning rectangle. This is the training-inferred `pack_markers_against_spanning_rectangle` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Find the unique solid nonzero rectangle whose bounding box spans the full height or full width, then create a zero canvas containing that rectangle in its color. For each row or column outside the rectangle, count nonzero cells of other colors and extend the rectangle color inward by that count from the corresponding side.",
   "steps": [
-    "Apply `pack_markers_against_spanning_rectangle`: project outside marker counts into packed extensions of a spanning rectangle"
+    "Find exactly one color forming a solid rectangle that spans the full height or full width, with at least one other nonzero color present",
+    "Initialize a zero output and copy the spanning rectangle",
+    "For a full-height rectangle, count other-color cells on each row to the left and right and fill the same number of cells immediately beside the rectangle; for a full-width rectangle, perform the analogous count above and below"
   ],
   "concepts": [
     "pack",

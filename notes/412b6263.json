@@ -1,11 +1,10 @@
 {
-  "title": "Divide the rotated diagram into two layers and surround it with a blue frame.",
-  "summary": "Turn the input 90 degrees to the left, line up two identical ones one above the other, and add a blue 1 outer frame and a partition.",
+  "title": "Rotate clockwise, duplicate vertically, and frame the diagram",
+  "summary": "Rotate the input 90 degrees clockwise, add a one-cell color-1 border with color-7 corners, duplicate the rotated content directly below the first copy, and separate the two copies with a shared color-1 divider row whose corners are 7.",
   "steps": [
-    "Rotate the board 90 degrees counterclockwise.",
-    "Add a one square wide blue frame and make only the four corners of the frame 7.",
-    "Copy the same diagram one step further down.",
-    "The central horizontal frame is shared by two levels."
+    "Rotate the input clockwise by 90 degrees",
+    "Wrap the rotated content with a one-cell border: color 1 on the border and 7 at its four corners",
+    "Append a second identical bordered content block below the first, sharing the middle border row"
   ],
   "concepts": [
     "rotation",

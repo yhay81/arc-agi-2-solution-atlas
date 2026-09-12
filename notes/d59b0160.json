@@ -1,10 +1,10 @@
 {
-  "title": "Read based on the color in the green frame",
-  "summary": "Read based on the color within the green frame. Black rectangles that contain all of that color are turned orange and erased. Leave even one thing missing.",
+  "title": "Clear components containing every legend color",
+  "summary": "Read the set of non-background legend colors inside the color-3 frame. For each non-7 connected component, clear its entire bounding rectangle to 7 when the component contains every legend color; components missing any legend color are preserved.",
   "steps": [
-    "Read based on the color in the green frame",
-    "Out of the black rectangles, turn all the contents of that color into orange and erase them.",
-    "Leave even one thing missing"
+    "Extract the legend colors from the bounding box of the color-3 component, excluding 3 and background 7.",
+    "Find connected non-7 components and inspect the colors they contain.",
+    "Clear the full bounding rectangle of a component only when it contains every legend color."
   ],
   "concepts": [
     "Shape selection",

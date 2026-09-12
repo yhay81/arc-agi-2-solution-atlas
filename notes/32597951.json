@@ -1,6 +1,6 @@
 {
   "title": "Recolor color-1 pattern cells inside the color-8 bounding box to 3",
-  "summary": "Recolor color-1 pattern cells inside the color-8 bounding box to 3. This is the training-inferred `recolor_one_inside_eight_bbox` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Recolor color-1 pattern cells inside the color-8 bounding box to 3.",
   "steps": [
     "Apply `recolor_one_inside_eight_bbox`: recolor color-1 pattern cells inside the color-8 bounding box to 3"
   ],

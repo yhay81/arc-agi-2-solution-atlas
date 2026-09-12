@@ -1,6 +1,6 @@
 {
   "title": "Move a hollow frame's interior markers to opposite outside corners",
-  "summary": "Move a hollow frame's interior markers to opposite outside corners. This is the training-inferred `move_frame_contents_to_opposite_outer_corners` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Move a hollow frame's interior markers to opposite outside corners.",
   "steps": [
     "Apply `move_frame_contents_to_opposite_outer_corners`: move a hollow frame's interior markers to opposite outside corners"
   ],

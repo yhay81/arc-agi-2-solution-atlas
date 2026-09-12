@@ -1,14 +1,15 @@
 {
-  "title": "Select the section represented by the color sample above from the board and surround that section with green.",
-  "summary": "Select the section represented by the color sample above from the board and surround it with green. If the selection completes a given row, the top and bottom bands are green; otherwise, the bottom band is red. For official verification, the modified output of the current upstream will be used as is.",
+  "title": "Match the header glyphs to the grid and outline the matching cells",
+  "summary": "Treat each colored 3x3 glyph above the first divider as a query and find the identical glyph in the grid below, matching both shape and color. Outline every matching grid cell in green. If the selected cells complete a full row or a full column, color the header band and bottom status band green; otherwise color only the bottom status band red.",
   "steps": [
-    "Select the section represented by the color sample above from the board and surround that section with green.",
-    "Make the top and bottom bands green if the selection completes a given row, otherwise make the bottom band red."
+    "Extract the colored 3x3 query glyphs above the first divider and match them by both shape and color to the 3x3 cells below.",
+    "Outline every matching grid cell in green.",
+    "If the selected cells complete a full row or column, color the header and bottom bands green; otherwise color the bottom band red."
   ],
   "concepts": [
-    "number",
-    "Partition selection",
-    "emphasis"
+    "Exact pattern matching",
+    "Grid selection",
+    "Row or column completion"
   ],
   "observations": [
     "Training pair 1: 30x22 -> 30x22; colors [0, 1, 2, 4, 5, 6, 7, 8, 9] -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 202 cells changed.",

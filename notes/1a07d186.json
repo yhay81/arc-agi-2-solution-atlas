@@ -1,6 +1,6 @@
 {
   "title": "Place colored markers beside the full line of the same color",
-  "summary": "Place colored markers beside the full line of the same color. A solid nonzero row or column is a guide. Other cells of a guide's color are markers: they are removed from their old locations and snapped to the cell immediately before or after that guide along the guide's perpendicular axis. Colors without a solid guide are discarded. This is the training-inferred `snap_markers_to_matching_lines` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Place colored markers beside the full line of the same color. A solid nonzero row or column is a guide. Other cells of a guide's color are markers: they are removed from their old locations and snapped to the cell immediately before or after that guide along the guide's perpendicular axis. Colors without a solid guide are discarded.",
   "steps": [
     "Apply `snap_markers_to_matching_lines`: place colored markers beside the full line of the same color"
   ],

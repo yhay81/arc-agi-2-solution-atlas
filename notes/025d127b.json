@@ -1,8 +1,8 @@
 {
   "title": "Right-shear objects while preserving their bottom/right corner cells",
-  "summary": "Right-shear objects while preserving their bottom/right corner cells. This is the training-inferred `shear_components_right_boundary` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Find 8-connected nonzero objects and shift most cells one step right, while preserving every cell on the bottom row and the rightmost cell of the row just above the bottom; clamp shifts at the right edge.",
   "steps": [
-    "Apply `shear_components_right_boundary`: right-shear objects while preserving their bottom/right corner cells"
+    "Find each 8-connected nonzero object, shift its non-boundary cells one cell right, and preserve the bottom row plus the rightmost cell of the penultimate row"
   ],
   "concepts": [
     "shear",

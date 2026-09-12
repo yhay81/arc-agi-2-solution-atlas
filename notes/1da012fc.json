@@ -1,14 +1,14 @@
 {
-  "title": "Move a small color scheme to a large group of shapes",
-  "summary": "Read the colored dots in the gray swatch starting from the top row and, within the same row, from the left. Separate the shapes that are outside the sample one by one, including diagonal contacts, and arrange them in order, starting with the top edge and then the left edge. Paint the entire shape with the color of the sample points in the same order. Leave a sample.",
+  "title": "Recolor the external shapes using the ordered colors in the gray swatch",
+  "summary": "Read the colored dots in the gray swatch from top to bottom and left to right. Separate the shapes outside the swatch using diagonal as well as orthogonal contact, and order them by their topmost row and then their leftmost column. Repaint each entire shape with the corresponding swatch color, leaving the swatch unchanged.",
   "steps": [
     "Read the colored dots in the gray swatch starting from the top row and, within the same row, from the left.",
-    "Separate the shapes that are outside the sample one by one, including diagonal contacts, and arrange them in order, starting with the top edge and then the left edge.",
-    "Paint the entire shape with the color of the sample points in the same order. Leave a sample."
+    "Separate the shapes outside the swatch using diagonal as well as orthogonal contact, and order them by their topmost row and then their leftmost column.",
+    "Repaint each entire shape with the corresponding swatch color, leaving the swatch unchanged."
   ],
   "concepts": [
-    "Placement support",
-    "color scheme instructions"
+    "Ordered correspondence",
+    "Color instructions"
   ],
   "observations": [
     "Training pair 1: 14x20 -> 14x20; colors [0, 1, 2, 3, 4, 5, 6] -> [0, 2, 3, 4, 5, 6]; 28 cells changed.",

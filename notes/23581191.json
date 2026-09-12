@@ -1,8 +1,9 @@
 {
-  "title": "Cross connect 8 7",
-  "summary": "Cross connect 8 7. This is the training-inferred `cross_connect_8_7` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Extend the unique azure 8 marker across its entire row and column and do the same for the unique orange 7 marker",
+  "summary": "Extend the unique azure 8 marker across its entire row and column and do the same for the unique orange 7 marker. Color the two off-marker intersections red 2.",
   "steps": [
-    "Apply `cross_connect_8_7`: cross connect 8 7"
+    "Extend the unique azure 8 marker across its entire row and column and do the same for the unique orange 7 marker.",
+    "Color the two off-marker intersections red 2."
   ],
   "concepts": [
     "cross",

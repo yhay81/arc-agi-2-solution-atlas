@@ -1,6 +1,6 @@
 {
   "title": "Return the fundamental 3x3 quadrant of a nonzero 6x6 symmetric scene",
-  "summary": "Return the fundamental 3x3 quadrant of a nonzero 6x6 symmetric scene. This is the training-inferred `crop_symmetric_6x6` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Return the fundamental 3x3 quadrant of a nonzero 6x6 symmetric scene.",
   "steps": [
     "Apply `crop_symmetric_6x6`: return the fundamental 3x3 quadrant of a nonzero 6x6 symmetric scene"
   ],

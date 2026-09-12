@@ -1,8 +1,8 @@
 {
-  "title": "Recover periodic hole",
-  "summary": "Recover periodic hole. This is the training-inferred `recover_periodic_hole` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Infer the smallest conflict-free two-dimensional period from all nonzero cells, reconstruct the missing zeros from that period, and crop the result to the bounding box of the original holes",
+  "summary": "Infer the smallest conflict-free two-dimensional period from all nonzero cells, reconstruct the missing zeros from that period, and crop the result to the bounding box of the original holes.",
   "steps": [
-    "Apply `recover_periodic_hole`: recover periodic hole"
+    "Infer the smallest conflict-free two-dimensional period from all nonzero cells, reconstruct the missing zeros from that period, and crop the result to the bounding box of the original holes."
   ],
   "concepts": [
     "recover",

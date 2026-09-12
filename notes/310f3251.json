@@ -1,8 +1,10 @@
 {
   "title": "Repeat the pattern and make the area next to each mark red.",
-  "summary": "Arrange the input 3 times vertically and horizontally. If the top left of the colored squares is black, make it red, and calculate the positions of the edges by connecting them periodically.",
+  "summary": "Tile the input three times in both directions, then change every zero cell to color 2 exactly when its diagonally down-right neighbor in the tiled grid is nonzero.",
   "steps": [
-    "Arrange the input 3 times vertically and horizontally. If the top left of the colored squares is black, make it red, and calculate the positions of the edges by connecting them periodically."
+    "Repeat the input periodically to create a grid three times as tall and three times as wide",
+    "For each zero cell, inspect the cell one row down and one column right with wraparound",
+    "Replace the zero cell with 2 when that diagonal neighbor is nonzero"
   ],
   "concepts": [
     "repeat",

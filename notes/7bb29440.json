@@ -1,6 +1,6 @@
 {
   "title": "Select the component containing the fewest cells of non-reference color",
-  "summary": "Select the component containing the fewest cells of non-reference color. This is the training-inferred `component_crop_fewest_color` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Select the component containing the fewest cells of non-reference color.",
   "steps": [
     "Apply `component_crop_fewest_color`: select the component containing the fewest cells of non-reference color"
   ],

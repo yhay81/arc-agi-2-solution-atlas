@@ -1,8 +1,9 @@
 {
-  "title": "Drop each non-frame component onto the one-cell clearance above a frame",
-  "summary": "Drop each non-frame component onto the one-cell clearance above a frame. The bottom-touching color is a support/frame, while the most frequent remaining color is the empty background. Payload components fall vertically, independently, until the first frame cell in each occupied column (or the sparse bottom marker row) leaves the learned clearance. Components in the same column stack without changing their shape. This is the training-inferred `settle_payload_above_frame` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Settle each non-frame component above its support frame",
+  "summary": "Treat the bottom-touching color as a support/frame and the most frequent other color as background. Drop each non-frame payload component vertically without rotating it until the first frame cell in every occupied column leaves a two-cell clearance; when the support is only a sparse bottom marker row, use a one-cell clearance. Components stack without changing shape, and only frame and settled payload cells remain.",
   "steps": [
-    "Apply `settle_payload_above_frame`: drop each non-frame component onto the one-cell clearance above a frame"
+    "Identify the frame color, background, payload components, and whether the support has a solid floor.",
+    "Drop each payload vertically while keeping a two-cell clearance above frame cells, or one cell above a sparse bottom marker row, stacking without rotation."
   ],
   "concepts": [
     "settle",

@@ -1,6 +1,6 @@
 {
   "title": "Return a background-colored matrix whose shape counts separator-defined cells",
-  "summary": "Return a background-colored matrix whose shape counts separator-defined cells. This is the training-inferred `separator_lattice_background` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Return a background-colored matrix whose shape counts separator-defined cells.",
   "steps": [
     "Apply `separator_lattice_background`: return a background-colored matrix whose shape counts separator-defined cells"
   ],

@@ -1,8 +1,9 @@
 {
   "title": "Encode the difference between two counts as markers",
-  "summary": "Mark the bottom of the penultimate column by count(8)-count(2). This is the training-inferred `mark_count_difference` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Count all color-8 and color-2 cells, compute max(0, count(8)−count(2)), and set color 5 in the penultimate column of the bottom that many rows while preserving every other cell.",
   "steps": [
-    "Apply `mark_count_difference`: encode the difference between two counts as markers"
+    "Count color 8 and color 2 cells and clamp their difference count(8)−count(2) at zero",
+    "For each of the final difference rows, set the second-to-last column to 5"
   ],
   "concepts": [
     "mark",

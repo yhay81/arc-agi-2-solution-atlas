@@ -1,10 +1,10 @@
 {
-  "title": "Separate the sections with black partitions",
-  "summary": "Separate the sections with black partitions. Look for pairs of small marks of the same color arranged in the same row or column. In each section in between, only the same internal position is marked with the same color.",
+  "title": "Connect matching local marks across nonzero blocks",
+  "summary": "Treat contiguous runs of nonzero rows and columns as a grid of blocks. Keep only the two most frequent nonzero colors as the base colors; for every other-colored mark, connect blocks that contain the same color at the same local row and column, drawing the color through all intervening blocks along a shared block row or column.",
   "steps": [
-    "Separate the sections with black partitions",
-    "Look for pairs of small marks of the same color in the same compartment row or column.",
-    "In each section in between, only mark the same internal position with the same color."
+    "Find contiguous nonzero row and column bands and use their intersections as blocks.",
+    "Identify non-base-color marks and group marks by color and within-block coordinates.",
+    "For matching marks in the same block row or column, fill the corresponding local cell in every block between them."
   ],
   "concepts": [
     "Same color correspondence",

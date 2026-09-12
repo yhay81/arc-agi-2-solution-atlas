@@ -1,8 +1,9 @@
 {
-  "title": "The rule for expanding the color row at the top to the lower surface has not been determined.",
-  "summary": "Draw the inverted color of 2 and 5 on the top left in a position where the top left and right sides are not in the background to create a triangle.",
+  "title": "Fill cells beneath supported diagonal pairs with the opposite color",
+  "summary": "For each non-background cell in an interior row, inspect the two cells diagonally above it. When both are not background 7, overwrite the current cell with the opposite of the upper-left value between colors 2 and 5, producing a downward triangular propagation.",
   "steps": [
-    "Draw the inverted color of 2 and 5 on the top left in a position where the top left and right sides are not in the background to create a triangle."
+    "Scan rows from top to bottom and columns excluding the outer boundary.",
+    "When both upper diagonal neighbors are non-7, set the current cell to 5 if the upper-left is 2, otherwise set it to 2."
   ],
   "concepts": [
     "instruction string",

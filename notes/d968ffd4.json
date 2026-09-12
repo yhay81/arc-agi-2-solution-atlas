@@ -1,9 +1,9 @@
 {
   "title": "Spread the colored blocks at both ends to the center",
-  "summary": "Extend a full-height strip from the color blocks at both ends to the center, leaving the center row in the background for odd widths. Transpose vertically.",
+  "summary": "Extend full-height strips from the two colored blocks toward the center, leaving the center column in the background when the width is odd. If the arrangement is vertical, transpose it to apply the same rule and transpose the result back.",
   "steps": [
-    "Extend a full-height strip from the color blocks at both ends to the center, leaving the center row in the background for odd widths.",
-    "Transpose vertically."
+    "Extend full-height strips from the two colored blocks toward the center, leaving the center column in the background when the width is odd.",
+    "For a vertical arrangement, transpose before applying the rule and transpose the result back."
   ],
   "concepts": [
     "opposing expansion",

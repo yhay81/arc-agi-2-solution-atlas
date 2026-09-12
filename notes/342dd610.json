@@ -1,10 +1,10 @@
 {
-  "title": "Move the point in a fixed direction and distance for each color",
-  "summary": "Hypothesis of moving the color points of the light blue background: blue to the right 1, red to the left 2, orange to the top 2, and dark red to the bottom 2.",
+  "title": "Translate every non-background color by its prescribed offset",
+  "summary": "Create a color-8 canvas and move every non-8 cell by its color-specific offset: 1 right by one column, 2 left by two columns, 7 up by two rows, and 9 down by two rows; writes outside the grid are discarded.",
   "steps": [
-    "Extract each color point",
-    "Move Blue 1 one row to the right, Red 2 two rows to the left, Orange 7 to two rows up, and Orange 9 to two rows down.",
-    "Return the original position to background 8"
+    "Initialize the output entirely with background color 8",
+    "Translate each non-8 cell according to its color: 1→(0,+1), 2→(0,-2), 7→(-2,0), and 9→(+2,0)",
+    "Ignore translated cells that fall outside the grid and leave all unoccupied output cells as 8"
   ],
   "concepts": [
     "move from color",

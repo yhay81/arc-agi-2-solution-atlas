@@ -1,9 +1,10 @@
 {
-  "title": "Mark the position 5 squares in the direction from the top of the arrow of the three squares with a brown 9",
-  "summary": "Mark the position 5 squares in the direction from the top of the arrow of the three squares with a brown 9. When the marks overlap, they turn blue 1, and when they hit the original arrow, the entire arrow turns brown.",
+  "title": "Project three-cell arrows five steps from their apex",
+  "summary": "For each diagonal-connected three-cell component, infer its apex and the direction away from the other two cells, mark the cell five steps away with 9, recolor any component hit by such a mark entirely to 9, and recolor locations hit by multiple marks to 1.",
   "steps": [
-    "Mark the position 5 squares in the direction from the top of the arrow of the three squares with a brown 9",
-    "When the marks overlap, it becomes blue 1, and when it hits the original arrow, the entire arrow becomes brown."
+    "Find diagonal-connected non-background components of exactly three cells and infer each apex from the three-point geometry",
+    "Move five cells from the apex in the direction away from the other two cells and count in-bounds hits",
+    "Recolor every component containing a hit to 9, write single-hit destinations as 9, and write overlapping destinations as 1"
   ],
   "concepts": [
     "compression",

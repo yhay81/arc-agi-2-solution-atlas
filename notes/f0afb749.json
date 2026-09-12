@@ -1,8 +1,9 @@
 {
-  "title": "Double every cell and draw down-right diagonals from non-zero cells",
-  "summary": "Double every cell and draw down-right diagonals from non-zero cells. A non-zero source cell becomes a solid 2x2 block of its source color. Every such cell also emits a unit-width diagonal ray in the doubled coordinate system; the ray is colored ``1`` and never overwrites the source blocks. Empty source cells remain empty unless touched by a ray. This is the training-inferred `scale_cells_with_diagonal_rays` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Double every cell and draw diagonal lines through non-zero cells",
+  "summary": "Double the grid in both dimensions. A non-zero source cell becomes a solid 2×2 block of its source color, and also emits a unit-width line of color 1 along the down-right diagonal through that cell in both directions until the board edges; the line never overwrites source blocks. Empty source cells remain empty unless touched by a line.",
   "steps": [
-    "Apply `scale_cells_with_diagonal_rays`: double every cell and draw down-right diagonals from non-zero cells"
+    "Replace each nonzero source cell with a solid 2×2 block of its original color and each zero cell with a 2×2 empty block.",
+    "For every nonzero source, draw the two-cell-wide diagonal trace in the doubled grid along its down-right diagonal in both directions, using color 1 only where the source blocks are empty."
   ],
   "concepts": [
     "scale",

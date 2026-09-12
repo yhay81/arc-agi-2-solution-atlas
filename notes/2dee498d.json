@@ -1,8 +1,9 @@
 {
   "title": "Extract the left third of the grid",
-  "summary": "Extract the left third of the grid. This is the training-inferred `left_third` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "If the input width is divisible by 3, return the left third of every row; otherwise return the input unchanged.",
   "steps": [
-    "Apply `left_third`: extract the left third of the grid"
+    "Check whether the grid width is divisible by 3",
+    "Return the leftmost third of each row when it is divisible by 3; otherwise preserve the input"
   ],
   "concepts": [
     "left",

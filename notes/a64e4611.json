@@ -1,9 +1,10 @@
 {
-  "title": "Turn long black passageways green and cut narrow dead-end streets",
-  "summary": "Turn long black passages green and carve out narrow dead ends. Keep the path where the outward tip reaches the edge of the board, and cut the branches along the edge.",
+  "title": "Mark long clear corridors and prune short dead ends",
+  "summary": "Treat cells whose 3×3 neighborhood is entirely zero as safe space. Mark every horizontal or vertical safe run of at least 12 cells with 3, then repeatedly remove short horizontal 3-runs under the specified empty-neighbor condition while rotating the board so all orientations are handled.",
   "steps": [
-    "Turn long black passageways green and cut narrow dead-end streets",
-    "Keep the path where the outward tip reaches the edge of the board, and cut the branches along the edge."
+    "Identify safe cells whose surrounding 3×3 neighborhood contains only 0.",
+    "Paint horizontal and vertical safe runs of length at least 12 with 3.",
+    "Repeatedly rotate the board and remove short 3-runs that have empty cells on both sides and an empty row above."
   ],
   "concepts": [
     "aisle",

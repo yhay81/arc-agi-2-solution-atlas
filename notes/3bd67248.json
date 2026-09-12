@@ -1,8 +1,8 @@
 {
-  "title": "Corner completion left",
-  "summary": "Corner completion left. This is the training-inferred `corner_completion_left` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "When the input contains only a solid left column, complete the pattern by drawing a red 2 anti-diagonal and filling the remainder of the bottom row with yellow 4",
+  "summary": "When the input contains only a solid left column, complete the pattern by drawing a red 2 anti-diagonal and filling the remainder of the bottom row with yellow 4.",
   "steps": [
-    "Apply `corner_completion_left`: corner completion left"
+    "When the input contains only a solid left column, complete the pattern by drawing a red 2 anti-diagonal and filling the remainder of the bottom row with yellow 4."
   ],
   "concepts": [
     "corner",

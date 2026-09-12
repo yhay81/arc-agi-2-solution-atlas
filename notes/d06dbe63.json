@@ -1,6 +1,6 @@
 {
   "title": "Draw two clipped, alternating diagonal stair-rays from one marker",
-  "summary": "Draw two clipped, alternating diagonal stair-rays from one marker. Each ray advances one row at a time and two columns every other row. The horizontal two-cell step is rendered as a three-cell span, producing the compact zigzag seen in the examples while keeping the marker unchanged. This is the training-inferred `draw_zigzag_rays_from_single_point` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Draw two clipped, alternating diagonal stair-rays from one marker. Each ray advances one row at a time and two columns every other row. The horizontal two-cell step is rendered as a three-cell span, producing the compact zigzag seen in the examples while keeping the marker unchanged.",
   "steps": [
     "Apply `draw_zigzag_rays_from_single_point`: draw two clipped, alternating diagonal stair-rays from one marker"
   ],

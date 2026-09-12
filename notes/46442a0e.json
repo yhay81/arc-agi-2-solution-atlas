@@ -1,6 +1,6 @@
 {
   "title": "Arrange rotated copies of the input in four panels",
-  "summary": "Arrange rotated copies of the input in four panels. This is the training-inferred `rotation_quad` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Arrange rotated copies of the input in four panels.",
   "steps": [
     "Apply `rotation_quad`: arrange rotated copies of the input in four panels"
   ],

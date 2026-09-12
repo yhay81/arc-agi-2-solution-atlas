@@ -1,6 +1,6 @@
 {
   "title": "Repeat each row's shortest prefix period across twice its width",
-  "summary": "Repeat each row's shortest prefix period across twice its width. This is the training-inferred `repeat_horizontal_twice` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Repeat each row's shortest prefix period across twice its width.",
   "steps": [
     "Apply `repeat_horizontal_twice`: repeat each row's shortest prefix period across twice its width"
   ],

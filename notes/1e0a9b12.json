@@ -1,6 +1,6 @@
 {
   "title": "Drop non-background cells to the bottom of each column",
-  "summary": "Drop non-background cells to the bottom of each column. This is the training-inferred `gravity_down` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Drop non-background cells to the bottom of each column.",
   "steps": [
     "Apply `gravity_down`: drop non-background cells to the bottom of each column"
   ],

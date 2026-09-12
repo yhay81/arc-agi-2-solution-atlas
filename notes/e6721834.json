@@ -1,6 +1,6 @@
 {
   "title": "Move dense-panel objects whose embedded markers have one destination match",
-  "summary": "Move dense-panel objects whose embedded markers have one destination match. This is the training-inferred `place_uniquely_matching_panel_objects` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Move dense-panel objects whose embedded markers have one destination match.",
   "steps": [
     "Apply `place_uniquely_matching_panel_objects`: move dense-panel objects whose embedded markers have one destination match"
   ],

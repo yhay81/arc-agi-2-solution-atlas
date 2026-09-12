@@ -1,8 +1,10 @@
 {
   "title": "Expand a centered 3x3 macro ring into a 5x5 macro ring",
-  "summary": "Expand a centered 3x3 macro ring into a 5x5 macro ring. The input contains a single 9-by-9 object whose central 3-by-3 block is background. The eight surrounding blocks are copied into the larger ring by the task's quarter-turn arrangement. The previously empty centre is reconstructed from the eight cells surrounding the input hole, with its centre set to the dominant object color. The expanded object remains centred on the original canvas. This is the training-inferred `expand_nested_3x3_macro` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Expand a centered 3x3 macro arrangement in a 9-by-9 object into a fixed 5x5 macro arrangement on a 15-by-15 canvas. Copy the selected 3-by-3 source blocks into the prescribed ring-like positions, reconstruct the central 3-by-3 block from the cells around the input hole, set its center to the dominant non-background color, and keep the result centered.",
   "steps": [
-    "Apply `expand_nested_3x3_macro`: expand a centered 3x3 macro ring into a 5x5 macro ring"
+    "Read the 9-by-9 object as a 3-by-3 array of 3-by-3 blocks and place the prescribed source blocks into the fixed 5-by-5 macro arrangement.",
+    "Build the central 3-by-3 block from the eight cells surrounding the original hole and set its center to the dominant object color.",
+    "Center the resulting 15-by-15 object on the original canvas."
   ],
   "concepts": [
     "expand",

@@ -1,6 +1,6 @@
 {
   "title": "Expand each 3x3 colored cross into its 5x5 concentric pattern",
-  "summary": "Expand each 3x3 colored cross into its 5x5 concentric pattern. This is the training-inferred `expand_cross_to_five` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Expand each 3x3 colored cross into its 5x5 concentric pattern.",
   "steps": [
     "Apply `expand_cross_to_five`: expand each 3x3 colored cross into its 5x5 concentric pattern"
   ],

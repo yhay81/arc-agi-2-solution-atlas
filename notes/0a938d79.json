@@ -1,6 +1,6 @@
 {
   "title": "Repeat two sparse markers as alternating full lines along the long axis",
-  "summary": "Repeat two sparse markers as alternating full lines along the long axis. This is the training-inferred `repeat_two_marker_lines` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Repeat two sparse markers as alternating full lines along the long axis.",
   "steps": [
     "Apply `repeat_two_marker_lines`: repeat two sparse markers as alternating full lines along the long axis"
   ],

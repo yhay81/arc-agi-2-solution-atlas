@@ -1,9 +1,9 @@
 {
-  "title": "Fill in the black 3×3 spaces with blue",
-  "summary": "Find a 3x3 area that is completely black.",
+  "title": "Fill every encountered all-black 3x3 window with blue",
+  "summary": "Scan all 3x3 windows in row-major order and fill each window that is still entirely black with blue 1s. Earlier fills can affect whether later overlapping windows qualify.",
   "steps": [
-    "Find a 3x3 area that is completely black.",
-    "Fill that area with blue squares, leaving other small black gaps."
+    "Scan 3x3 windows in row-major order.",
+    "Whenever the current window is entirely black, fill all nine cells with blue 1s and continue scanning."
   ],
   "concepts": [
     "local pattern",

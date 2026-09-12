@@ -1,9 +1,10 @@
 {
-  "title": "Paint the background squares that touch the outer pattern diagonally but not vertically, horizontally, or vertically with the color of the center pattern.",
-  "summary": "Paint the background squares that touch the outer pattern diagonally but not vertically, horizontally, or vertically with the color of the center pattern. Keep the original pattern.",
+  "title": "Fill diagonal-only background neighbors with the smallest-bbox color",
+  "summary": "Treat the most frequent value as background, choose the non-background color with the smallest bounding-box area as the fill color, and paint each background cell that is diagonally adjacent to a cell of the other non-background color but has no orthogonal neighbor of that color; preserve all original cells.",
   "steps": [
-    "Paint the background squares that touch the outer pattern diagonally but not vertically, horizontally, or vertically with the color of the center pattern.",
-    "Keep the original pattern"
+    "Identify the background, choose the non-background color with the smallest bounding-box area as fill, and use the other non-background color as the shape",
+    "For each background cell, test for at least one diagonal shape neighbor and no orthogonal shape neighbor",
+    "Recolor qualifying background cells with the fill color and preserve the original pattern"
   ],
   "concepts": [
     "symmetry",

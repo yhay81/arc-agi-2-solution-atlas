@@ -1,8 +1,8 @@
 {
-  "title": "Return the input without modification",
-  "summary": "Return the input without modification. This is the training-inferred `identity` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Expand every input cell into a 2x2 block",
+  "summary": "Replace each input cell by a 2x2 block of the same value, doubling both the height and width.",
   "steps": [
-    "Apply `identity`: return the input without modification"
+    "For each input row and cell, repeat the row twice and each cell twice horizontally."
   ],
   "concepts": [
     "identity"

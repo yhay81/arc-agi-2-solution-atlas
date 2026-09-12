@@ -1,8 +1,8 @@
 {
-  "title": "Recolor from single marker",
-  "summary": "Recolor from single marker. This is the training-inferred `recolor_from_single_marker` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Find the nonzero color occurring exactly once, erase that marker, and recolor every cell of the other foreground color with the marker's color",
+  "summary": "Find the nonzero color occurring exactly once, erase that marker, and recolor every cell of the other foreground color with the marker's color.",
   "steps": [
-    "Apply `recolor_from_single_marker`: recolor from single marker"
+    "Find the nonzero color occurring exactly once, erase that marker, and recolor every cell of the other foreground color with the marker's color."
   ],
   "concepts": [
     "recolor",

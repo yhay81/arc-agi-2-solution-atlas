@@ -1,9 +1,10 @@
 {
   "title": "Read as a line that goes around the perimeter of the board",
-  "summary": "Read as a line that goes around the perimeter of the board. Paint only the length of the original colored part, and repeat around the entire outer circumference, leaving the same length.",
+  "summary": "Read the outer border as a cyclic line, infer the unique phase from the input's colored boundary cells, and recolor the border with one contiguous run whose length equals the number of original colored cells; make all other boundary cells background.",
   "steps": [
-    "Read as a line that goes around the perimeter of the board",
-    "Paint only the length of the original colored part, and repeat around the entire circumference, leaving the same length."
+    "Traverse the outer perimeter in cyclic order and count the non-background cells of the selected color",
+    "Find the unique phase for which the observed marks lie within one run of that length",
+    "Paint that cyclic run with the selected color and set the rest of the perimeter to the dominant background color"
   ],
   "concepts": [
     "edge",

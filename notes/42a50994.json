@@ -1,8 +1,8 @@
 {
-  "title": "Remove isolated singleton cells",
-  "summary": "Remove isolated singleton cells. This is the training-inferred `remove_singletons` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Remove every nonzero cell that has no same-colored neighbor in its surrounding 3-by-3 neighborhood, while preserving cells belonging to larger same-colored components",
+  "summary": "Remove every nonzero cell that has no same-colored neighbor in its surrounding 3-by-3 neighborhood, while preserving cells belonging to larger same-colored components.",
   "steps": [
-    "Apply `remove_singletons`: remove isolated singleton cells"
+    "Remove every nonzero cell that has no same-colored neighbor in its surrounding 3-by-3 neighborhood, while preserving cells belonging to larger same-colored components."
   ],
   "concepts": [
     "remove",

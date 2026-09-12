@@ -1,8 +1,8 @@
 {
-  "title": "Return the input without modification",
-  "summary": "Return the input without modification. This is the training-inferred `identity` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Duplicate each row horizontally",
+  "summary": "Keep every input row unchanged in content and append an identical copy of that row to its right, doubling the grid width while preserving the row order.",
   "steps": [
-    "Apply `identity`: return the input without modification"
+    "Append each row to itself horizontally."
   ],
   "concepts": [
     "identity"

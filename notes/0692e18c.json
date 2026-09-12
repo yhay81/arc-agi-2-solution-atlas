@@ -1,6 +1,6 @@
 {
   "title": "Expand the input pattern through a complemented mask",
-  "summary": "Expand the input pattern through a complemented mask. This is the training-inferred `kronecker_complement` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Expand the input pattern through a complemented mask.",
   "steps": [
     "Apply `kronecker_complement`: expand the input pattern through a complemented mask"
   ],

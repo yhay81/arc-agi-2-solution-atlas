@@ -1,10 +1,10 @@
 {
-  "title": "Fill in the missing blue ring pair",
-  "summary": "Find the 3x3 ring of blue 1 and collect the center row and column. Find all combinations of center row and center column. Place a light blue 8 ring on the group without a ring, leaving the center black.",
+  "title": "Complete the grid of missing blue rings",
+  "summary": "Find every 3x3 ring of blue 1s and collect its center row and column. Form every combination of the observed center rows and columns, then place a light blue 8 ring at each missing combination while leaving its center black.",
   "steps": [
-    "Find the 3x3 ring of blue 1 and collect the center row and column.",
-    "Find all combinations of center row and center column.",
-    "Place a light blue 8 ring on the group without a ring, leaving the center black."
+    "Find every 3x3 ring of blue 1s and record its center row and column.",
+    "Form every combination of the observed center rows and center columns.",
+    "At each missing combination, place a light blue 8 ring and leave the center black."
   ],
   "concepts": [
     "Edge coordinates indication",

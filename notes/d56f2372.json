@@ -1,10 +1,10 @@
 {
   "title": "Extract the unique horizontally symmetric colored shape",
-  "summary": "For each color, extract only that color within the circumscribed rectangle, flip it left and right, and search for matching candidates. Returns the minimum bounding rectangle of unique candidates.",
+  "summary": "For each nonzero color, crop its bounding rectangle and mask every other color to 0. Select the unique masked patch whose rows are individually symmetric left-to-right, and return that patch unchanged.",
   "steps": [
-    "Cut out shapes of each color using circumscribed rectangles",
-    "Examine the symmetry of the shape masked in black",
-    "returns the only symmetrical shape"
+    "For each nonzero color, extract its bounding rectangle and replace other colors with 0.",
+    "Check whether every row of the masked patch equals its left-right reversal.",
+    "Return the unique horizontally symmetric patch."
   ],
   "concepts": [
     "symmetry selection",

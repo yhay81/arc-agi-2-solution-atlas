@@ -1,8 +1,10 @@
 {
-  "title": "Repeat two-color shapes upwards",
-  "summary": "Detect the color band that touches the edge of the blue prototype, maintain the width of the band, and extend it to the edge with the minimum observed period.",
+  "title": "Extend color-1 components from every exposed side by their nearest strip period",
+  "summary": "For each 4-connected color-1 component, inspect each exposed bounding-box side, collect adjacent strips until another 1 or 8 blocks the ray, infer the shortest repeating strip period, and repeat that strip pattern outward to the grid edge while preserving the original component and other cells.",
   "steps": [
-    "Detect the color band that touches the edge of the blue prototype, maintain the width of the band, and extend it to the edge with the minimum observed period."
+    "Find every color-1 component and each of its nonempty top, bottom, left, and right edge strips",
+    "Collect outward strips until the grid edge or a cell of color 1 or 8 blocks the direction, then choose the shortest exact period",
+    "Repeat the period along the full ray for every direction, keeping each strip's width and preserving unrelated cells"
   ],
   "concepts": [
     "Two-color correspondence",

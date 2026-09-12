@@ -1,6 +1,6 @@
 {
   "title": "Propagate each marked cell mask through a separator-defined lattice",
-  "summary": "Propagate each marked cell mask through a separator-defined lattice. Full-color separator rows and columns divide the canvas into cells. A cell containing color 8 is a prototype: every cell of the same dimensions whose one non-separator color occupies the same mask is recolored 8. The lattice and all unmatched pixels remain unchanged. This is the training-inferred `propagate_lattice_marker_masks` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Propagate each marked cell mask through a separator-defined lattice. Full-color separator rows and columns divide the canvas into cells. A cell containing color 8 is a prototype: every cell of the same dimensions whose one non-separator color occupies the same mask is recolored 8. The lattice and all unmatched pixels remain unchanged.",
   "steps": [
     "Apply `propagate_lattice_marker_masks`: propagate each marked cell mask through a separator-defined lattice"
   ],

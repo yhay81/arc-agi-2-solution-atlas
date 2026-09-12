@@ -1,6 +1,6 @@
 {
   "title": "Project each isolated 2x2 block downward by its palette size",
-  "summary": "Project each isolated 2x2 block downward by its palette size. A full 2x2 object acts as a compact key: the number of distinct foreground colors in the object determines how many rows of a new ``fill_color`` rectangle are emitted directly beneath it. Objects are detected by connectivity and their original pixels are preserved. This is the training-inferred `drop_2x2_blocks_by_palette_count` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Project each isolated 2x2 block downward by its palette size. A full 2x2 object acts as a compact key: the number of distinct foreground colors in the object determines how many rows of a new ``fill_color`` rectangle are emitted directly beneath it. Objects are detected by connectivity and their original pixels are preserved.",
   "steps": [
     "Apply `drop_2x2_blocks_by_palette_count`: project each isolated 2x2 block downward by its palette size"
   ],

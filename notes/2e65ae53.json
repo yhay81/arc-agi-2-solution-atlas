@@ -1,12 +1,11 @@
 {
   "title": "Sharing a color between multiple boxes with the same separation",
-  "summary": "In the observation, multiple boxes with four compartments were filled with corresponding colors shown in other boxes. Each section of the box has different dimensions.",
+  "summary": "Find the most frequent nonzero color as the frame color, inspect each framed region with four interior components, and use the color found in each relative quadrant position as a shared legend to recolor matching quadrants in every frame.",
   "steps": [
-    "Normalize the input based on the frequency of appearance of the orientation and color selected in the learning example.",
-    "Separate rectangular boxes with borders.",
-    "Correlate the top left, top right, bottom left, and bottom right sections of each box.",
-    "Try a candidate that copies the color clue remaining in one of the boxes to a compartment at the same relative position.",
-    "Return the converted color and orientation to the original coordinate system."
+    "Select the most frequent nonzero color and find its 4-connected components as frame candidates",
+    "For each frame, split the interior into four components and assign each component a quadrant by its center",
+    "Record the non-frame color in each quadrant as a shared position-to-color legend",
+    "Recolor every corresponding interior component using the legend while preserving the original grid size"
   ],
   "concepts": [
     "multiple samples",

@@ -1,6 +1,6 @@
 {
   "title": "Project scattered markers to the near side of a straight separator",
-  "summary": "Project scattered markers to the near side of a straight separator. This is the training-inferred `project_markers_to_separator` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Project scattered markers to the near side of a straight separator.",
   "steps": [
     "Apply `project_markers_to_separator`: project scattered markers to the near side of a straight separator"
   ],

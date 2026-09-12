@@ -1,6 +1,6 @@
 {
   "title": "Mirror a colored shape across an adjacent copy of its boundary",
-  "summary": "Mirror a colored shape across an adjacent copy of its boundary. A marker strip immediately outside one edge duplicates the occupied cells on that edge. The marker is the hinge: recolor it as the shape and add the reflected shape on the other side. This is deliberately structural (no coordinates or example-specific pixels are retained). This is the training-inferred `reflect_shape_from_adjacent_marker` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Mirror a colored shape across an adjacent copy of its boundary. A marker strip immediately outside one edge duplicates the occupied cells on that edge. The marker is the hinge: recolor it as the shape and add the reflected shape on the other side. This is deliberately structural (no coordinates or example-specific pixels are retained).",
   "steps": [
     "Apply `reflect_shape_from_adjacent_marker`: mirror a colored shape across an adjacent copy of its boundary"
   ],

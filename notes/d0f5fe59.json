@@ -1,6 +1,6 @@
 {
   "title": "Draw an ``n``-by-``n`` marker diagonal for ``n`` marker components",
-  "summary": "Draw an ``n``-by-``n`` marker diagonal for ``n`` marker components. This is the training-inferred `component_count_diagonal` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Draw an ``n``-by-``n`` marker diagonal for ``n`` marker components.",
   "steps": [
     "Apply `component_count_diagonal`: draw an ``n``-by-``n`` marker diagonal for ``n`` marker components"
   ],

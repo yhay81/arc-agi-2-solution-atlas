@@ -1,8 +1,9 @@
 {
   "title": "Keep cells occupied in exactly one of two equal top-bottom panels",
-  "summary": "Keep cells occupied in exactly one of two equal top-bottom panels. This is the training-inferred `xor_equal_tb` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "When the height is even, compare the top and bottom halves cell by cell, keep cells occupied in exactly one half, output the top-half height, and encode kept cells as 6 and empty cells as 0; otherwise preserve the input.",
   "steps": [
-    "Apply `xor_equal_tb`: keep cells occupied in exactly one of two equal top-bottom panels"
+    "If the height is even, split the grid into equal top and bottom panels and compute the occupancy XOR",
+    "Map XOR-present cells to 6 and all other cells to 0"
   ],
   "concepts": [
     "xor",

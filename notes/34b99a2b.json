@@ -1,8 +1,9 @@
 {
   "title": "Keep cells occupied on exactly one side of the vertical separator",
-  "summary": "Keep cells occupied on exactly one side of the vertical separator. This is the training-inferred `xor_separated_lr` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "When a nonzero uniform vertical separator is exactly centered in an odd-width grid, compare the equal left and right panels by occupancy XOR, encode cells present on exactly one side as 2 and all others as 0; otherwise the implementation doubles the input values.",
   "steps": [
-    "Apply `xor_separated_lr`: keep cells occupied on exactly one side of the vertical separator"
+    "Find a nonzero uniform column whose position makes equal-width left and right panels",
+    "Compute occupancy XOR between the two panels and encode the result as 2 for occupied-on-one-side and 0 otherwise"
   ],
   "concepts": [
     "xor",

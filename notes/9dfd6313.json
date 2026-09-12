@@ -1,6 +1,6 @@
 {
   "title": "Exchange the rows and columns",
-  "summary": "Exchange the rows and columns. This is the training-inferred `transpose` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Exchange the rows and columns.",
   "steps": [
     "Apply `transpose`: exchange the rows and columns"
   ],

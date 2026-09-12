@@ -1,8 +1,10 @@
 {
-  "title": "Frame color-one components and mark enclosed background pockets",
-  "summary": "Frame color-one components and mark enclosed background pockets. This is the training-inferred `frame_one_components_and_mark_holes` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Outline color-one components and mark their pockets",
+  "summary": "For each four-connected component of color 1, inspect its bounding box for background regions that do not touch the box boundary. Paint those enclosed pockets 6, paint adjacent background cells 2, and recolor the component to 8 when it has a pocket or leave it 1 otherwise.",
   "steps": [
-    "Apply `frame_one_components_and_mark_holes`: frame color-one components and mark enclosed background pockets"
+    "Find each four-connected color-1 component and the background cells inside its bounding box.",
+    "Classify background regions that avoid the bounding-box boundary as pockets and recolor them 6.",
+    "Paint neighboring background cells 2 and recolor the surrounding component to 8 if any pocket exists, otherwise keep it 1."
   ],
   "concepts": [
     "frame",

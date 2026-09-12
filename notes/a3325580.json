@@ -1,6 +1,6 @@
 {
   "title": "Emit the colors whose objects have the greatest area",
-  "summary": "Emit the colors whose objects have the greatest area. ARC scenes for this rule contain several independently colored marks on a zero background. The mark colors tied for the largest number of cells are read from left to right and represented as constant columns; the column height is that common maximum count. This preserves both the cardinality and the spatial ordering without relying on a task-specific lookup table. This is the training-inferred `max_count_colors_summary` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Emit the colors whose objects have the greatest area. ARC scenes for this rule contain several independently colored marks on a zero background. The mark colors tied for the largest number of cells are read from left to right and represented as constant columns; the column height is that common maximum count. This preserves both the cardinality and the spatial ordering without relying on a task-specific lookup table.",
   "steps": [
     "Apply `max_count_colors_summary`: emit the colors whose objects have the greatest area"
   ],

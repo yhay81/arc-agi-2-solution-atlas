@@ -1,9 +1,9 @@
 {
-  "title": "Color every other square from the right edge light blue",
-  "summary": "Arrange the red 2x2 squares in order of position from right to left.",
+  "title": "Color every other red component from the right edge light blue",
+  "summary": "Find the 4-connected color-2 components, order them from right to left by their leftmost position, and recolor the first, third, fifth, and so on to light blue 8 while leaving the intervening components red.",
   "steps": [
-    "Arrange the red 2x2 squares in order of position from right to left.",
-    "Starting from the right end, change the 1st, 3rd, 5th, etc. squares to light blue, leaving the squares in between red."
+    "Arrange the color-2 components from right to left by their leftmost column.",
+    "Starting at the rightmost component, recolor every other component to 8 and leave the intervening components as 2."
   ],
   "concepts": [
     "order",

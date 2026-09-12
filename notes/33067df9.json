@@ -1,9 +1,10 @@
 {
   "title": "Change the arrangement of small color blocks to a larger floor plan",
-  "summary": "Expand the small grid to 26x26. Combine horizontal sections of the same color, and vertically combine only the upper and lower sections with the same horizontal section.",
+  "summary": "Sample odd rows and odd columns to form a smaller grid, expand each nonzero horizontal run into a proportional colored rectangle on a 26×26 zero canvas, and merge vertically adjacent identical runs into taller rectangles.",
   "steps": [
-    "Expand the small grid to 26x26.",
-    "Combine horizontal sections of the same color, and vertically combine only the upper and lower sections with the same horizontal section."
+    "Take rows and columns at odd indices to create the small grid and map its dimensions to a 24-cell interior offset by 2",
+    "Convert each contiguous nonzero horizontal run into a colored rectangle with the run's row and column spans",
+    "Extend a rectangle downward only while the next sampled row has the identical run at the same columns and color, producing a 26×26 output"
   ],
   "concepts": [
     "lattice",

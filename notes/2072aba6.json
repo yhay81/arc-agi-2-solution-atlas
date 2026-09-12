@@ -1,8 +1,9 @@
 {
-  "title": "Pattern upscale five",
-  "summary": "Pattern upscale five. This is the training-inferred `pattern_upscale_five` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Double both grid dimensions",
+  "summary": "Double both grid dimensions. Replace each gray 5 cell with the 2-by-2 checker block [[1, 2], [2, 1]], and replace every other source cell with a black 2-by-2 block.",
   "steps": [
-    "Apply `pattern_upscale_five`: pattern upscale five"
+    "Double both grid dimensions.",
+    "Replace each gray 5 cell with the 2-by-2 checker block [[1, 2], [2, 1]], and replace every other source cell with a black 2-by-2 block."
   ],
   "concepts": [
     "pattern",

@@ -1,6 +1,6 @@
 {
   "title": "Draw an azure border",
-  "summary": "Color the outermost row and column of the grid azure, leaving the interior black.",
+  "summary": "Color the outermost row and column of the grid azure, while preserving every interior cell.",
   "steps": ["Replace every cell on the grid perimeter with azure."],
   "concepts": ["border", "perimeter"],
   "observations": [

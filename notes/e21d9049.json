@@ -1,6 +1,6 @@
 {
   "title": "Repeat the contiguous color periods of crossing arms across their row and column",
-  "summary": "Repeat the contiguous color periods of crossing arms across their row and column. This is the training-inferred `repeat_cross_arm_periods` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Repeat the contiguous color periods of crossing arms across their row and column.",
   "steps": [
     "Apply `repeat_cross_arm_periods`: repeat the contiguous color periods of crossing arms across their row and column"
   ],

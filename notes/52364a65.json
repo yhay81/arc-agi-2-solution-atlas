@@ -1,10 +1,10 @@
 {
-  "title": "Cut the leftmost two rows of each object",
-  "summary": "A rule that erases two rows of squares from the left end of each object other than the light blue background.",
+  "title": "Clear the leftmost two columns of each object",
+  "summary": "For every 4-connected monochrome object whose color is not background 8, recolor its cells in the leftmost column and the next column to color 8, preserving all other cells and positions.",
   "steps": [
-    "Separate objects with colors other than background 8",
-    "Find the leftmost column of each object",
-    "Set the object squares in that column and the column immediately to the right to 8, and do not move anything else."
+    "Separate each color into 4-connected components while treating 8 as background",
+    "Find each component's leftmost column",
+    "Set component cells in that column or the immediately following column to 8 without moving any cells"
   ],
   "concepts": [
     "Cutting by object",

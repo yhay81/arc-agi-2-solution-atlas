@@ -1,10 +1,10 @@
 {
-  "title": "Read the left vertical bar as color order",
-  "summary": "Read the vertical bar on the left as the order of colors. Divide the light blue shape on the right into rectangles whose top and bottom edges are in the same column, and paint them in the color of the vertical bars starting from the left. Delete the vertical bars.",
+  "title": "Use the top color legend to fill column groups",
+  "summary": "Read the non-background colors in the top row whose columns are vertically constant as a left-to-right legend. Group adjacent columns by their identical set of background-colored rows, then recolor each group with the corresponding legend color and remove the legend columns from the output.",
   "steps": [
-    "Read the left vertical bar as color order",
-    "Divide the light blue shape on the right into rectangles whose top and bottom edges are in the same column, and paint them in the color of the vertical bars starting from the left.",
-    "Delete the vertical bar"
+    "Collect the vertically constant, non-background colors from the top row in left-to-right order.",
+    "Find contiguous column groups whose background-colored row positions match.",
+    "Paint those positions with the corresponding legend color and set all other cells to background."
   ],
   "concepts": [
     "Corresponding order",

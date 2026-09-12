@@ -1,8 +1,9 @@
 {
-  "title": "Move the inner sections in the same direction as the center line",
-  "summary": "Proceed in the opposite direction to the arrangement of red 2 to purple 6, and change the border 1 square immediately after the orange area to orange.",
+  "title": "Extend from the red marker away from the nearest 6",
+  "summary": "Find the red cell (2) and the nearest cell of color 6. Travel from the red cell directly away from that 6 through consecutive cells of color 7, then recolor the last in-bounds cell reached by the ray to 7. Leave the input unchanged when the ray immediately exits the grid or encounters another color.",
   "steps": [
-    "Proceed in the opposite direction to the arrangement of red 2 to purple 6, and change the border 1 square immediately after the orange area to orange."
+    "Locate the red 2 and determine the row/column direction from the nearest 6 toward the red cell.",
+    "Continue in that direction while cells are 7, then color the final in-bounds cell of the ray 7."
   ],
   "concepts": [
     "direction instructions",

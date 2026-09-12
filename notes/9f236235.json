@@ -1,8 +1,10 @@
 {
-  "title": "Compress uniform cells separated by full lines and mirror the result horizontally",
-  "summary": "Compress uniform cells separated by full lines and mirror the result horizontally. This is the training-inferred `mirror_lattice_cells` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Compress regions separated by full-color lines and mirror them",
+  "summary": "Find the unique nonzero color that forms at least one complete horizontal and one complete vertical separator. Treat the rectangles between those separators as cells, reduce each cell to its sole non-separator color (or 0 if empty), and reverse the resulting rows horizontally.",
   "steps": [
-    "Apply `mirror_lattice_cells`: compress uniform cells separated by full lines and mirror the result horizontally"
+    "Find the unique color forming both full-row and full-column separators.",
+    "Read each rectangular region between separators as one value, using 0 for empty regions.",
+    "Return the compressed matrix with each row reversed."
   ],
   "concepts": [
     "mirror",

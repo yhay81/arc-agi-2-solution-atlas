@@ -1,6 +1,6 @@
 {
   "title": "Compress a rectangular mosaic whose cells are separated by zero space",
-  "summary": "Compress a rectangular mosaic whose cells are separated by zero space. The non-zero crop is made of axis-aligned, filled color rectangles. A change in a complete row (or column) marks a cell-band boundary, so equal row/column runs provide the mosaic's variable cell dimensions. Sampling each resulting block yields the compact color layout. This is the training-inferred `compress_rectangle_mosaic` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Compress a rectangular mosaic whose cells are separated by zero space. The non-zero crop is made of axis-aligned, filled color rectangles. A change in a complete row (or column) marks a cell-band boundary, so equal row/column runs provide the mosaic's variable cell dimensions. Sampling each resulting block yields the compact color layout.",
   "steps": [
     "Apply `compress_rectangle_mosaic`: compress a rectangular mosaic whose cells are separated by zero space"
   ],

@@ -1,10 +1,11 @@
 {
   "title": "Find a position where you can move the black rectangle",
-  "summary": "Find a position where you can move the black rectangle. You can pass if all the squares you move to are blue, black, or red. Prioritize the position that overlaps most with the red area, and if it cannot be reached, move to the position furthest from the starting point.",
+  "summary": "Treat the bounding box of black cells as a movable rectangle, search reachable placements through cells colored 0, 1, or 2, and select the placement with the greatest overlap with color 2; break ties by greatest travel distance, then by nearest rectangle center to the color-2 centroid. Recolor all original black cells to 1 and draw the selected rectangle in 0.",
   "steps": [
-    "Find a position where you can move the black rectangle",
-    "You can pass if all the squares you move to are blue, black, or red.",
-    "Prioritize the position that overlaps most with the red area, and if it cannot be reached, move to the position furthest from the starting point."
+    "Find the bounding box of all 0 cells as the rectangle's shape and start its movement from that box's top-left position",
+    "Allow a placement only when every cell in the rectangle is within the grid and has value 0, 1, or 2; explore placements by four-directional moves",
+    "Maximize overlap with 2 cells, then maximize BFS distance from the start, then minimize distance from the rectangle center to the 2-cell centroid",
+    "Convert every original 0 to 1 and paint the selected placement 0"
   ],
   "concepts": [
     "block exchange",

@@ -1,8 +1,10 @@
 {
   "title": "Complete color fragments as disjoint, differently sized D4-symmetric layers",
-  "summary": "Complete color fragments as disjoint, differently sized D4-symmetric layers. This is the training-inferred `complete_fragments_as_distinct_dihedral_layers` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Treat each non-background color as a normalized fragment, assign fragments distinct odd-sized layers (reserving larger sizes for same-size conflicts), complete each fragment under the four-way dihedral orbit in a common square canvas, and choose the unique non-overlapping arrangement with the fewest added cells; otherwise preserve the input.",
   "steps": [
-    "Apply `complete_fragments_as_distinct_dihedral_layers`: complete color fragments as disjoint, differently sized D4-symmetric layers"
+    "Use the most frequent value as background and normalize every other color fragment to its own top-left bounding-box coordinates",
+    "Assign each fragment an odd layer size, separating fragments that would otherwise share a size",
+    "Complete each placement under rotations and reflections in a square canvas, search for pairwise-disjoint placements, and select the unique minimum-addition solution"
   ],
   "concepts": [
     "complete",

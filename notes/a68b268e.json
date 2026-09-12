@@ -1,6 +1,6 @@
 {
   "title": "Overlay four equal quadrants around a central separator row and column",
-  "summary": "Overlay four equal quadrants around a central separator row and column. This is the training-inferred `overlay_four_quadrants` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Overlay four equal quadrants around a central separator row and column.",
   "steps": [
     "Apply `overlay_four_quadrants`: overlay four equal quadrants around a central separator row and column"
   ],

@@ -1,8 +1,10 @@
 {
-  "title": "Turn solid rectangular components into alternating nested frames",
-  "summary": "Turn solid rectangular components into alternating nested frames. This is the training-inferred `nested_frames_from_components` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Recolor nonzero components by distance from their bounding-box border",
+  "summary": "For each 4-connected monochrome nonzero component with at least four cells, use its original color on cells at bounding-box distance 0, color 2 at odd positive distances, and color 3 at even positive distances; leave zeros and components with multiple colors unchanged.",
   "steps": [
-    "Apply `nested_frames_from_components`: turn solid rectangular components into alternating nested frames"
+    "Find each 4-connected nonzero component with at least four cells and exactly one color",
+    "Compute each occupied cell's minimum distance to the component bounding-box edge",
+    "Keep distance-0 cells in the source color, recolor odd positive distances to 2 and even positive distances to 3"
   ],
   "concepts": [
     "nested",

@@ -1,9 +1,10 @@
 {
   "title": "Select an outcast from multiple small shapes",
-  "summary": "Compare the arrangement and number of black dots in each small shape.",
+  "summary": "For each 4-connected monochrome nonzero component, count the holes inside its bounding box as bounding-box area minus component size, select the unique component whose hole count occurs with a unique frequency, and crop its bounding box from the original grid.",
   "steps": [
-    "Compare the arrangement and number of black dots in each small shape.",
-    "Out of multiple identical items, pick out one with different characteristics."
+    "Find every 4-connected monochrome nonzero component and compute its bounding-box area minus its cell count",
+    "Select the sole component whose hole-count frequency differs from all other components",
+    "Return the selected component's original bounding-box crop"
   ],
   "concepts": [
     "comparison",

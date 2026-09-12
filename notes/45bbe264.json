@@ -1,8 +1,10 @@
 {
-  "title": "Project every singleton marker across its row and column; mark crossings as 2",
-  "summary": "Project every singleton marker across its row and column; mark crossings as 2. This is the training-inferred `cross_lines_by_marker` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Project non-background row and column markers into a cross grid",
+  "summary": "Use the most frequent value as background, fill each row containing a non-background value with that row's first marker color and each marker-containing column with its first marker color, then set intersections whose row and column marker colors differ to 2.",
   "steps": [
-    "Apply `cross_lines_by_marker`: project every singleton marker across its row and column; mark crossings as 2"
+    "Determine the most frequent background and collect marker values by row and column",
+    "Paint each marked row and column across the full grid using its first collected value",
+    "Overwrite crossings with 2 when the row's first value differs from the column's first value"
   ],
   "concepts": [
     "cross",

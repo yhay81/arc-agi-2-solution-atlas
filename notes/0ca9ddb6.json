@@ -1,8 +1,9 @@
 {
   "title": "Stamp the local patterns designated by marker colors 1 and 2",
-  "summary": "Stamp the local patterns designated by marker colors 1 and 2. This is the training-inferred `stamp_marker_patterns` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "For each marker 1, paint adjacent empty cells in the four cardinal directions with 7; for each marker 2, paint diagonal empty cells with 4. Existing nonzero cells are preserved.",
   "steps": [
-    "Apply `stamp_marker_patterns`: stamp the local patterns designated by marker colors 1 and 2"
+    "For every 1 marker, stamp 7 into its orthogonally adjacent empty cells",
+    "For every 2 marker, stamp 4 into its diagonally adjacent empty cells without overwriting nonzero cells"
   ],
   "concepts": [
     "stamp",

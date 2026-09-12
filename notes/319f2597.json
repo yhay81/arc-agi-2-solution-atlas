@@ -1,9 +1,10 @@
 {
-  "title": "Extend the black square in a cross shape to the top, bottom, left, and right edges while maintaining its height and width.",
-  "summary": "Extend the black square in a cross shape to the top, bottom, left and right edges, keeping the same height and width. However, leave only the red squares unfilled.",
+  "title": "Clear a cross defined by the bounding box of black cells",
+  "summary": "Find the bounding box of all black cells, clear every cell in its rows or columns to black, and preserve red cells while applying the cross-shaped clearing.",
   "steps": [
-    "Extend the black square in a cross shape to the top, bottom, left, and right edges while maintaining its height and width.",
-    "However, only the red squares are left unfilled."
+    "Find the minimum and maximum row and column containing black cells",
+    "Set every cell in those rows or columns to black",
+    "Leave cells of color 2 unchanged instead of overwriting them"
   ],
   "concepts": [
     "Origin detection",

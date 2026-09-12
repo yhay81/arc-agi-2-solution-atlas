@@ -1,8 +1,10 @@
 {
   "title": "Connect pairs of same-color components with a diagonal bridge",
-  "summary": "Connect pairs of same-color components with a diagonal bridge. This is the training-inferred `connect_same_color_diagonal` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "For every color having exactly two 4-connected components, find a pair of cells with equal row and column displacement, and fill the diagonal cells between the closest such endpoints with that color when they are background (or when the color is 0).",
   "steps": [
-    "Apply `connect_same_color_diagonal`: connect pairs of same-color components with a diagonal bridge"
+    "For each color, find its 4-connected components and continue only when there are exactly two",
+    "Choose the diagonal endpoint pair with the smallest row separation",
+    "Fill the cells strictly between the endpoints along the diagonal if they are background, preserving other cells"
   ],
   "concepts": [
     "connect",

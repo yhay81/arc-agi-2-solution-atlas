@@ -1,8 +1,9 @@
 {
-  "title": "Fill frame quadrants",
-  "summary": "Fill frame quadrants. This is the training-inferred `fill_frame_quadrants` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Find the gray rectangular frame and two differently colored external markers",
+  "summary": "Find the gray rectangular frame and two differently colored external markers. Fill the frame interior with alternating diagonal quadrants whose orientation and color order are determined by the markers' relative positions.",
   "steps": [
-    "Apply `fill_frame_quadrants`: fill frame quadrants"
+    "Find the gray rectangular frame and two differently colored external markers.",
+    "Fill the frame interior with alternating diagonal quadrants whose orientation and color order are determined by the markers' relative positions."
   ],
   "concepts": [
     "fill",

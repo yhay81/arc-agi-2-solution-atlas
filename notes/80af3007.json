@@ -1,6 +1,6 @@
 {
   "title": "Decode a square block mask and render its self-Kronecker product",
-  "summary": "Decode a square block mask and render its self-Kronecker product. This is the training-inferred `self_kronecker_from_scaled_blocks` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Decode a square block mask and render its self-Kronecker product.",
   "steps": [
     "Apply `self_kronecker_from_scaled_blocks`: decode a square block mask and render its self-Kronecker product"
   ],

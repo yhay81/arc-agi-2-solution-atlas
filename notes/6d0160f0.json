@@ -1,6 +1,6 @@
 {
   "title": "Copy a marked panel to the panel addressed by its local marker",
-  "summary": "Copy a marked panel to the panel addressed by its local marker. Full-color separator rows and columns divide the canvas into a regular panel lattice. The sole cell colored four is an address: its row and column within the source panel select the destination panel. All panels are cleared and the source panel is copied, unchanged, to that address. This is the training-inferred `copy_pointer_panel_to_target` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Copy a marked panel to the panel addressed by its local marker. Full-color separator rows and columns divide the canvas into a regular panel lattice. The sole cell colored four is an address: its row and column within the source panel select the destination panel. All panels are cleared and the source panel is copied, unchanged, to that address.",
   "steps": [
     "Apply `copy_pointer_panel_to_target`: copy a marked panel to the panel addressed by its local marker"
   ],

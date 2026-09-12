@@ -1,8 +1,9 @@
 {
-  "title": "Detect the dominant two-color rectangle before completing its crosshatch",
-  "summary": "Detect the dominant two-color rectangle before completing its crosshatch. This is the training-inferred `auto_complete_crosshatch_in_dense_rectangle` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Complete the marker rows and columns in the largest two-color rectangle",
+  "summary": "Among all pairs of colors, find the largest rectangle containing only that pair with unequal counts. Treat the more frequent color as the base and the less frequent color as a marker; then recolor every row and column containing a marker cell entirely to the marker color and return the cropped rectangle.",
   "steps": [
-    "Apply `auto_complete_crosshatch_in_dense_rectangle`: detect the dominant two-color rectangle before completing its crosshatch"
+    "Search for the largest at-least-2x2 rectangle containing only two colors with unequal counts.",
+    "Crop that rectangle, identify the more frequent base and less frequent marker color, and recolor every row and column containing a marker to the marker color."
   ],
   "concepts": [
     "auto",

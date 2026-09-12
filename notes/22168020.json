@@ -1,6 +1,6 @@
 {
   "title": "Fill gaps between equal non-zero markers on rows and columns",
-  "summary": "Fill gaps between equal non-zero markers on rows and columns. This is the training-inferred `fill_between_same` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Fill gaps between equal non-zero markers on rows and columns.",
   "steps": [
     "Apply `fill_between_same`: fill gaps between equal non-zero markers on rows and columns"
   ],

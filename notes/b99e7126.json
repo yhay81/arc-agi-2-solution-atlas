@@ -1,6 +1,6 @@
 {
   "title": "Complete a partial cell-level copy of a marked lattice tile",
-  "summary": "Complete a partial cell-level copy of a marked lattice tile. The canvas is a regular lattice whose cells initially contain one repeated tile. A less frequent tile contains a new color; the positions of that color inside the tile are themselves a mask describing where the marked tile belongs at the lattice level. The input shows only a subset of that mask. Locate the unique translation containing the observed marked cells, then stamp the complete tile at every position in the translated mask. This is the training-inferred `complete_lattice_marker_template` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Complete a partial cell-level copy of a marked lattice tile. The canvas is a regular lattice whose cells initially contain one repeated tile. A less frequent tile contains a new color; the positions of that color inside the tile are themselves a mask describing where the marked tile belongs at the lattice level. The input shows only a subset of that mask. Locate the unique translation containing the observed marked cells, then stamp the complete tile at every position in the translated mask.",
   "steps": [
     "Apply `complete_lattice_marker_template`: complete a partial cell-level copy of a marked lattice tile"
   ],

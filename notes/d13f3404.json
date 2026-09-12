@@ -1,8 +1,8 @@
 {
-  "title": "Diagonal repeat",
-  "summary": "Diagonal repeat. This is the training-inferred `diagonal_repeat` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Create a canvas twice as tall and wide and overlay copies of the input at successive equal row-and-column offsets, preserving only nonzero cells",
+  "summary": "Create a canvas twice as tall and wide and overlay copies of the input at successive equal row-and-column offsets, preserving only nonzero cells.",
   "steps": [
-    "Apply `diagonal_repeat`: diagonal repeat"
+    "Create a canvas twice as tall and wide and overlay copies of the input at successive equal row-and-column offsets, preserving only nonzero cells."
   ],
   "concepts": [
     "diagonal",

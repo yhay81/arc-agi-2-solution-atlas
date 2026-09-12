@@ -1,6 +1,6 @@
 {
   "title": "Recolor a marker-grid center according to its four corner keys",
-  "summary": "Recolor a marker-grid center according to its four corner keys. This is the training-inferred `recolor_center_from_corner_keys` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Recolor a marker-grid center according to its four corner keys.",
   "steps": [
     "Apply `recolor_center_from_corner_keys`: recolor a marker-grid center according to its four corner keys"
   ],

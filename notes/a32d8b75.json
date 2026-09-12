@@ -1,10 +1,10 @@
 {
-  "title": "Swap the two colors of the small pattern in the description column and place it in each square of the large shape.",
-  "summary": "Swap the two colors of the small pattern in the description box and place it in each square of the large shape. Rotate the large shape using the direction indicated by the short orange line as the rotation angle relative to the top, and place it in the corner indicated by the yellow dot. If there are description columns on the left and right, overlap both.",
+  "title": "Tile a transformed two-color stamp from a macro pattern",
+  "summary": "In each side strip, read a two-color stamp and a larger macro pattern separated by color-6 lines. Swap the stamp's two colors, transform the macro according to the color-7 command markers, and tile the transformed stamp into every nonzero macro cell. The color-4 marker selects whether the tiling is anchored at the top or bottom and at the left or right; both side strips are overlaid into the central output.",
   "steps": [
-    "Swap the two colors of the small pattern in the description column and place it in each square of the large shape.",
-    "Rotate the large shape using the direction indicated by the short orange line as the rotation angle relative to the top, and place it in the corner indicated by the yellow dot.",
-    "If there are description columns on the left and right, overlap both."
+    "Extract the stamp and macro from each side strip and swap the two stamp colors.",
+    "Use the positions of color-7 command markers to rotate or reflect the macro, and use the color-4 marker to choose the anchor corner.",
+    "Replace every nonzero macro cell with a copy of the transformed stamp and overlay the results in the central board."
   ],
   "concepts": [
     "Sign expansion",

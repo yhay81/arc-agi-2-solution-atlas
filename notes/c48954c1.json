@@ -1,6 +1,6 @@
 {
   "title": "Arrange the input and two reflections in three panels",
-  "summary": "Unfold a square pattern into three mirrored panels in both axes. This is the training-inferred `mirror_threefold` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Unfold a square pattern into three mirrored panels in both axes.",
   "steps": [
     "Apply `mirror_threefold`: arrange the input and two reflections in three panels"
   ],

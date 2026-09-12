@@ -1,8 +1,10 @@
 {
   "title": "Shrinking and reading monochromatic sections in periodic patterns",
-  "summary": "Divide into sections using monochrome grid lines, cut out and reduce the arrangement of only sections whose entire surface is the same color.",
+  "summary": "Use every uniformly colored row and column as a separator, inspect the resulting interior sections, retain only sections whose entire surface has one color, and emit their colors in the corresponding compact section grid cropped to the bounding box of retained sections.",
   "steps": [
-    "Divide into sections using monochrome grid lines, cut out and reduce the arrangement of only sections whose entire surface is the same color."
+    "Find monochrome rows and columns and use them as section boundaries",
+    "For each section interior, record its color only when all cells share exactly one value",
+    "Place recorded colors in a compact output spanning the minimum and maximum retained section indices"
   ],
   "concepts": [
     "period",

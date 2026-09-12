@@ -1,6 +1,6 @@
 {
   "title": "Extend singleton diagonal markers outward from a solid 2-by-2 block",
-  "summary": "Extend singleton diagonal markers outward from a solid 2-by-2 block. This is the training-inferred `extend_diagonal_markers_from_block` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Extend singleton diagonal markers outward from a solid 2-by-2 block.",
   "steps": [
     "Apply `extend_diagonal_markers_from_block`: extend singleton diagonal markers outward from a solid 2-by-2 block"
   ],

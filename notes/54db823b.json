@@ -1,9 +1,10 @@
 {
-  "title": "Erase the rectangle with the least number of marks inside",
-  "summary": "Take out each green 3 rectangle with connections other than black and count the brown 9 marks inside. Return the rectangle with the fewest marks to black, including the marks. Keep the other rectangles.",
+  "title": "Erase every non-background component with the fewest 9 cells",
+  "summary": "Treat each 4-connected nonzero component as an object, count its color-9 cells, and recolor every component tied for the minimum count to 0 while preserving all other cells.",
   "steps": [
-    "Take out each green 3 rectangle with connections other than black and count the brown 9 marks inside.",
-    "Return the rectangle with the fewest marks to black, including the marks. Keep the other rectangles."
+    "Find all 4-connected components of nonzero cells without separating their colors",
+    "Count color-9 cells in each component and find the minimum count",
+    "Set every cell of each component at that minimum to 0 and preserve the remaining components"
   ],
   "concepts": [
     "Comparison of numbers",

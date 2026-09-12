@@ -1,8 +1,8 @@
 {
-  "title": "Stamp pattern count",
-  "summary": "Stamp pattern count. This is the training-inferred `stamp_pattern_count` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Count the nonzero cells, enlarge the canvas by factor 9 minus that count, and stamp that many full copies of the input into the enlarged grid in row-major order",
+  "summary": "Count the nonzero cells, enlarge the canvas by factor 9 minus that count, and stamp that many full copies of the input into the enlarged grid in row-major order.",
   "steps": [
-    "Apply `stamp_pattern_count`: stamp pattern count"
+    "Count the nonzero cells, enlarge the canvas by factor 9 minus that count, and stamp that many full copies of the input into the enlarged grid in row-major order."
   ],
   "concepts": [
     "stamp",

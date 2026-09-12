@@ -1,6 +1,6 @@
 {
   "title": "Fill intersections selected by markers on the top and right edges",
-  "summary": "Fill intersections selected by markers on the top and right edges. This is the training-inferred `fill_marker_row_column_intersections` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Fill intersections selected by markers on the top and right edges.",
   "steps": [
     "Apply `fill_marker_row_column_intersections`: fill intersections selected by markers on the top and right edges"
   ],

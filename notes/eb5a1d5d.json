@@ -1,6 +1,6 @@
 {
   "title": "Collapse consecutive duplicate rows and columns",
-  "summary": "Collapse consecutive duplicate rows and columns. This is the training-inferred `dedupe_rows_cols` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Collapse consecutive duplicate rows and columns.",
   "steps": [
     "Apply `dedupe_rows_cols`: collapse consecutive duplicate rows and columns"
   ],

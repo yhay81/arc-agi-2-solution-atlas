@@ -1,10 +1,10 @@
 {
-  "title": "Separate spaces that connect to edges and spaces that close",
-  "summary": "Divide the black square into areas that connect vertically, horizontally, and vertically. Make the black area that reaches the edge of the board red. The inner black area that cannot pass through to the edge is made gray, and colors other than black are left as is.",
+  "title": "Classify nonzero components by whether they touch the edge",
+  "summary": "Treat every nonzero cell as foreground and group same-foreground cells with orthogonal connectivity, regardless of their color. Recolor a component to red 2 if it touches the canvas edge, or gray 5 if it is fully enclosed; preserve background 0 and all other cells unchanged.",
   "steps": [
-    "Divide the black square into areas that connect vertically, horizontally, and vertically.",
-    "Make the black area that reaches the edge of the board red.",
-    "The inner black area that cannot pass through to the edge is made gray, and colors other than black are left as is."
+    "Group nonzero cells into orthogonally connected foreground components, ignoring their original colors.",
+    "Recolor components touching any canvas edge to 2.",
+    "Recolor enclosed components to 5 and preserve background cells."
   ],
   "concepts": [
     "Concatenation",

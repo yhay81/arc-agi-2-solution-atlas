@@ -1,6 +1,6 @@
 {
   "title": "Draw the canonical one-cell square spiral on an empty square canvas",
-  "summary": "Draw the canonical one-cell square spiral on an empty square canvas. This is the training-inferred `draw_square_spiral` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Draw the canonical one-cell square spiral on an empty square canvas.",
   "steps": [
     "Apply `draw_square_spiral`: draw the canonical one-cell square spiral on an empty square canvas"
   ],

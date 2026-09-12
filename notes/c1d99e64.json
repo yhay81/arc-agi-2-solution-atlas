@@ -1,6 +1,6 @@
 {
   "title": "Project color two across every completely empty row and column",
-  "summary": "Project color two across every completely empty row and column. This is the training-inferred `recolor_empty_rows_and_columns_two` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Project color two across every completely empty row and column.",
   "steps": [
     "Apply `recolor_empty_rows_and_columns_two`: project color two across every completely empty row and column"
   ],

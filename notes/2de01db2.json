@@ -1,9 +1,10 @@
 {
-  "title": "The criteria for organizing the three rows of color patterns has not been determined.",
-  "summary": "Convert the primary color of each row to 0, and convert the other colors to primary colors. 7 is excluded from the main color selection as noise.",
+  "title": "Normalize each row around its primary color",
+  "summary": "For each row, choose the most frequent nonzero color other than noise color 7; replace that row's chosen color with 0 and every other value with the chosen color.",
   "steps": [
-    "Convert the primary color of each row to 0, and convert the other colors to primary colors.",
-    "7 is excluded from the main color selection as noise."
+    "For each row, choose the most frequent value excluding 0 and 7",
+    "Replace the chosen value with 0 and replace every other cell with the chosen value",
+    "Exclude 7 from the primary-color selection but transform it like any other non-primary value"
   ],
   "concepts": [
     "period",

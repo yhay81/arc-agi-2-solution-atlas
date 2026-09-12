@@ -1,6 +1,6 @@
 {
   "title": "Tile a scene two-by-two and mark each object's diagonal neighbors",
-  "summary": "Tile a scene two-by-two and mark each object's diagonal neighbors. The four copies retain their original colors. Each copied non-background cell paints its four immediately diagonal neighbors; only empty cells are changed, so the repeated source motif remains legible. This is the training-inferred `tile_twice_with_diagonal_neighbors` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Tile a scene two-by-two and mark each object's diagonal neighbors. The four copies retain their original colors. Each copied non-background cell paints its four immediately diagonal neighbors; only empty cells are changed, so the repeated source motif remains legible.",
   "steps": [
     "Apply `tile_twice_with_diagonal_neighbors`: tile a scene two-by-two and mark each object's diagonal neighbors"
   ],

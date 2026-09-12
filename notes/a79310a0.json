@@ -1,8 +1,9 @@
 {
-  "title": "Shift the grid contents downward",
-  "summary": "Shift the grid contents downward. This is the training-inferred `shift_down` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Shift color 8 downward and recolor it to 2",
+  "summary": "Move every input row down by one row, insert an all-zero row at the top, and encode the shifted content as a binary grid: cells that were 8 become 2 and every other value becomes 0.",
   "steps": [
-    "Apply `shift_down`: shift the grid contents downward"
+    "Shift the rows down by one position and insert zeros in the first row.",
+    "Convert shifted 8 cells to 2 and all other cells to 0."
   ],
   "concepts": [
     "shift",

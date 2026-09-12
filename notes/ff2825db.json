@@ -1,6 +1,6 @@
 {
   "title": "Render outer and inner frames using the interior's modal color",
-  "summary": "Render outer and inner frames using the interior's modal color. This is the training-inferred `mode_nested_frames` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Render outer and inner frames using the interior's modal color.",
   "steps": [
     "Apply `mode_nested_frames`: render outer and inner frames using the interior's modal color"
   ],

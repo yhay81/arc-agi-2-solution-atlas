@@ -1,6 +1,6 @@
 {
   "title": "Place the available blue cells into bounded gaps",
-  "summary": "Move one-valued supply cells into bounded zero runs, bottom rows first. This is the training-inferred `consume_ones_into_bounded_gaps` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Move one-valued supply cells into bounded zero runs, bottom rows first.",
   "steps": [
     "Apply `consume_ones_into_bounded_gaps`: place the available blue cells into bounded gaps"
   ],

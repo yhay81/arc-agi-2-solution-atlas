@@ -1,19 +1,19 @@
 {
-  "title": "Stretch the four crosses clockwise without touching them.",
-  "summary": "Stretch out the four crosses with an open center at the same time. Choose your next step in the order of right turn, straight ahead, and left turn without touching any other line diagonally, creating a clockwise winding pattern. The same process continues outside the board, and only the original board is displayed.",
+  "title": "Extend the four arms into a symmetric clockwise spiral",
+  "summary": "Extend one arm of the hollow-centered cross by repeatedly preferring a right turn, then a straight step, then a left turn, while preventing the path from touching itself even diagonally except at its two most recent cells. Rotate each accepted step around the center to extend all four arms symmetrically. Continue the construction outside the grid and retain only the cells that fall inside the original frame.",
   "steps": [
-    "Find the color of the lines, the black center, and the four arms of the same length. Each arm has its own tip and direction of movement.",
-    "At each tip, prioritize a step that turns to the right from the current direction of travel. If you can't move forward, go straight, and if that doesn't work, try turning left.",
-    "The next square should not touch the existing line vertically, horizontally, or diagonally. However, the two squares closest to you allow contact in order to create a normal turning angle.",
-    "All four of them look at the board at the same point in time to determine the next position, and then draw one square at a time.",
-    "Continue to extend the line even outside the original frame. Paint the part that curves outside the frame and returns inside the board, and finally cut out only the original area."
+    "Identify the non-background color and verify that it forms four equal-length arms around an empty center.",
+    "Starting from the tip of the upper arm, choose each next step by trying a right turn first, then continuing straight, and finally turning left.",
+    "Reject a candidate that touches any earlier path cell horizontally, vertically, or diagonally, while allowing contact with the two most recent cells so ordinary bends remain possible.",
+    "Rotate every accepted candidate by 90, 180, and 270 degrees around the center and draw all four symmetric positions together.",
+    "Continue on the unbounded lattice until the completed spiral remains outside the frame, and return only the portion inside the original grid."
   ],
   "concepts": [
     "clockwise",
     "contact avoidance",
-    "Simultaneous update",
-    "Cutting an infinite lattice",
-    "spiral"
+    "rotational symmetry",
+    "unbounded lattice",
+    "spiral growth"
   ],
   "observations": [
     "Training pair 1: 12x12 -> 12x12; colors [0, 8] -> [0, 8]; 69 cells changed.",

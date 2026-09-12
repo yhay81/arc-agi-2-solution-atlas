@@ -1,8 +1,8 @@
 {
   "title": "Tile a small pattern along the axis indicated by a constant row/column",
-  "summary": "Tile a small pattern along the axis indicated by a constant row/column. This is the training-inferred `tile_by_constant_line` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "For a square input, use the first constant row or column as an axis key and expand the input into a square-by-square output: a constant row selects horizontal repetition, while a constant column selects vertical block repetition.",
   "steps": [
-    "Apply `tile_by_constant_line`: tile a small pattern along the axis indicated by a constant row/column"
+    "Detect the first constant row or column and expand the square input to a size-squared output by repeating the pattern along the indicated axis"
   ],
   "concepts": [
     "tile",

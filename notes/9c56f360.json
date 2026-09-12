@@ -1,9 +1,9 @@
 {
-  "title": "In each row, move the greens to the left until they are in front of the obstacle.",
-  "summary": "Read each row from the left and move each green 3 square to the left as long as its left neighbor is black 0. Fixed objects such as light blue 8 are not moved, and the positions where green appears are returned to black.",
+  "title": "Move each marker left through background cells",
+  "summary": "For every marker cell (3), move it left across consecutive background cells (0) until it reaches the nearest obstacle or the row boundary. Clear its original position and leave all non-marker obstacles unchanged.",
   "steps": [
-    "Read each row from the left and move each green 3 square to the left as long as its left neighbor is black 0.",
-    "Fixed objects such as light blue 8 are not moved, and the positions where green appears are returned to black."
+    "Process each marker (3) in its row and find the leftmost position reachable through background cells (0).",
+    "Clear the original marker position, place the marker at that position, and preserve every other color."
   ],
   "concepts": [
     "Move by line",

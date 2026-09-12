@@ -1,8 +1,9 @@
 {
-  "title": "Crop to the bounding box of non-background cells",
-  "summary": "Crop to the bounding box of non-background cells. This is the training-inferred `crop_non_background` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Crop and horizontally flip the non-background bounding box",
+  "summary": "Find the most frequent background color, crop to the bounding box of all non-background cells, and reverse every output row horizontally.",
   "steps": [
-    "Apply `crop_non_background`: crop to the bounding box of non-background cells"
+    "Crop to the bounding box of cells different from the most frequent background color.",
+    "Horizontally reverse each cropped row."
   ],
   "concepts": [
     "crop",

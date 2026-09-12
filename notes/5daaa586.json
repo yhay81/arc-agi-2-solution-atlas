@@ -1,6 +1,6 @@
 {
   "title": "Crop four crossing lines and project the repeated boundary color inward",
-  "summary": "Crop four crossing lines and project the repeated boundary color inward. This is the training-inferred `crop_between_dominant_crossing_lines` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Crop four crossing lines and project the repeated boundary color inward.",
   "steps": [
     "Apply `crop_between_dominant_crossing_lines`: crop four crossing lines and project the repeated boundary color inward"
   ],

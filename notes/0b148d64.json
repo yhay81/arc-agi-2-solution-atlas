@@ -1,6 +1,6 @@
 {
   "title": "Select the separated panel whose non-background color is unique",
-  "summary": "Select the separated panel whose non-background color is unique. This is the training-inferred `select_unique_color_panel` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Select the separated panel whose non-background color is unique.",
   "steps": [
     "Apply `select_unique_color_panel`: select the separated panel whose non-background color is unique"
   ],

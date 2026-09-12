@@ -1,6 +1,6 @@
 {
   "title": "Render a two-color template around each scaled marker object",
-  "summary": "Render a two-color template around each scaled marker object. The small connected motif supplies a dominant color and a rare marker color. Elsewhere, each marker component is paired with its nearest third-color seed; the motif is scaled to the marker's square size and the dominant template color is replaced by that seed color. This is the training-inferred `scale_template_from_marker` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Render a two-color template around each scaled marker object. The small connected motif supplies a dominant color and a rare marker color. Elsewhere, each marker component is paired with its nearest third-color seed; the motif is scaled to the marker's square size and the dominant template color is replaced by that seed color.",
   "steps": [
     "Apply `scale_template_from_marker`: render a two-color template around each scaled marker object"
   ],

@@ -1,10 +1,10 @@
 {
-  "title": "Sort vertically from the left in order of number of colors",
-  "summary": "A rule that arranges colors in ascending order, maintains the number of each color, and packs them from the bottom to the top from the left column.",
+  "title": "Pack colors bottom-up by decreasing frequency",
+  "summary": "Count every color, order colors by decreasing frequency, and emit the same number of cells for each color. Fill the output column by column from the bottom upward, moving to the next column when a column is full.",
   "steps": [
-    "Count the number of squares of all colors and arrange them in descending order",
-    "Place the number of pieces of that color from the bottom of the leftmost column upwards.",
-    "When the row is filled, go to the bottom row on the right, and change the color to the next one depending on the number remaining."
+    "Count all cells of each color and order the colors by decreasing count.",
+    "Write each color's counted cells from the bottom of the leftmost available column upward.",
+    "Continue in the next column after reaching the top, preserving every color count."
   ],
   "concepts": [
     "Number order",

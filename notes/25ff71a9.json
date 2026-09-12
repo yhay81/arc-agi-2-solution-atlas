@@ -1,6 +1,6 @@
 {
   "title": "Shift the grid contents downward",
-  "summary": "Shift the grid contents downward. This is the training-inferred `shift_down` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Shift the grid contents downward.",
   "steps": [
     "Apply `shift_down`: shift the grid contents downward"
   ],

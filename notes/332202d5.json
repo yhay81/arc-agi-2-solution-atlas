@@ -1,11 +1,10 @@
 {
   "title": "Fill the area near the horizontal line with that color",
-  "summary": "Expand the color of the horizontal line to the nearest line, and make the line the same distance from another color line the blue 1 border. Swap 1 and 8 of the original vertical lines.",
+  "summary": "Use each row whose mode is not 7 as a colored sample line; assign every row the nearest sample color, use 1 on sample rows and equidistant ties, then swap every original 1 with 8 and every original 8 with 1.",
   "steps": [
-    "Collect rows with different colors from background 7 as samples.",
-    "Color each row with the closest swatch color.",
-    "Set the sample row itself and rows that are the same distance from two different colors to 1. Do not use the border between two colors that are the same, but between two colors that are the same.",
-    "Change the original vertical 8 to 1, and change the 1 at the intersection to 8 to keep it."
+    "Collect rows whose most frequent value is not 7 and use their modal values as samples",
+    "For each row, find the nearest sample-row distance; use its sample color unless the row is a sample or ties between different sample colors, in which case use 1",
+    "Transform each original cell independently: 1 becomes 8, 8 becomes 1, and every other value becomes the selected row color"
   ],
   "concepts": [
     "shortest distance",

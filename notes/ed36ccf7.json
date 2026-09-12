@@ -1,6 +1,6 @@
 {
   "title": "Rotate the grid 90 degrees counterclockwise",
-  "summary": "Rotate the grid 90 degrees counterclockwise. This is the training-inferred `rotate_90` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Rotate the grid 90 degrees counterclockwise.",
   "steps": [
     "Apply `rotate_90`: rotate the grid 90 degrees counterclockwise"
   ],

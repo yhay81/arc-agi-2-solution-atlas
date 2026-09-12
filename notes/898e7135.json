@@ -1,6 +1,6 @@
 {
   "title": "Infer a scale from colored components and upscale a keyed canvas",
-  "summary": "Infer a scale from colored components and upscale a keyed canvas. This is the training-inferred `scale_colored_components_from_zero_holes` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Infer a scale from colored components and upscale a keyed canvas.",
   "steps": [
     "Apply `scale_colored_components_from_zero_holes`: infer a scale from colored components and upscale a keyed canvas"
   ],

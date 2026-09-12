@@ -1,6 +1,6 @@
 {
   "title": "Expand four corner markers into keyed frames joined by dotted rays",
-  "summary": "Expand four corner markers into keyed frames joined by dotted rays. Four singleton cells, arranged at the corners of an axis-aligned rectangle, encode two colors (each used twice). Each marker becomes the centre of a 3x3 frame whose ring uses the other marker color. The frames are joined in each cardinal direction by color 5 at every second cell, growing inward from both endpoints and stopping at the rectangle's midpoint. This keeps the geometry derived from the marker positions. This is the training-inferred `draw_marker_frames_and_rays` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Expand four corner markers into keyed frames joined by dotted rays. Four singleton cells, arranged at the corners of an axis-aligned rectangle, encode two colors (each used twice). Each marker becomes the centre of a 3x3 frame whose ring uses the other marker color. The frames are joined in each cardinal direction by color 5 at every second cell, growing inward from both endpoints and stopping at the rectangle's midpoint. This keeps the geometry derived from the marker positions.",
   "steps": [
     "Apply `draw_marker_frames_and_rays`: expand four corner markers into keyed frames joined by dotted rays"
   ],

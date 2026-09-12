@@ -1,6 +1,6 @@
 {
   "title": "Extract the interior of four matching corner markers",
-  "summary": "Extract the interior of four matching corner markers. Four singleton cells of one color define the corners of a rectangle. The open interior is emitted as a compact binary glyph, recolored with that marker color. This preserves the spatial pattern while discarding the frame and unrelated canvas background. This is the training-inferred `crop_between_marker_corners` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Extract the interior of four matching corner markers. Four singleton cells of one color define the corners of a rectangle. The open interior is emitted as a compact binary glyph, recolored with that marker color. This preserves the spatial pattern while discarding the frame and unrelated canvas background.",
   "steps": [
     "Apply `crop_between_marker_corners`: extract the interior of four matching corner markers"
   ],

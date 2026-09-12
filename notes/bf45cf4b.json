@@ -1,6 +1,6 @@
 {
   "title": "Use a sparse monochrome object as a block mask for a colored motif",
-  "summary": "Use a sparse monochrome object as a block mask for a colored motif. This is the training-inferred `stamp_multicolor_motif_by_mask` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Use a sparse monochrome object as a block mask for a colored motif.",
   "steps": [
     "Apply `stamp_multicolor_motif_by_mask`: use a sparse monochrome object as a block mask for a colored motif"
   ],

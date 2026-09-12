@@ -1,6 +1,6 @@
 {
   "title": "Cycle colors according to their first appearance from outer to inner rings",
-  "summary": "Cycle colors according to their first appearance from outer to inner rings. This is the training-inferred `cycle_concentric_ring_colors` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Cycle colors according to their first appearance from outer to inner rings.",
   "steps": [
     "Apply `cycle_concentric_ring_colors`: cycle colors according to their first appearance from outer to inner rings"
   ],

@@ -1,8 +1,10 @@
 {
   "title": "Copy a compact multicolor seed around singleton markers",
-  "summary": "Copy a compact multicolor seed around singleton markers. A full-height separator divides a small seed glyph from a sparse marker field. Each marker denotes the centre of another copy of the seed; the separator, seed, and unrelated cells remain intact. This is the training-inferred `stamp_multicolor_pattern_at_markers` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Find one uniform nonzero full-height separator, take the largest left-side nonzero component as a compact seed with no zero cells in its bounding box, and stamp that pattern centered on every right-side cell of the sole marker color; the original grid is otherwise retained but stamped cells may be overwritten.",
   "steps": [
-    "Apply `stamp_multicolor_pattern_at_markers`: copy a compact multicolor seed around singleton markers"
+    "Require exactly one uniform nonzero full-height separator with nonempty regions on both sides",
+    "Choose the largest left-side 4-connected component as the seed and require its bounding box to be fully nonzero",
+    "Require one nonzero marker color on the right, then stamp the seed centered at every marker while clipping to the grid"
   ],
   "concepts": [
     "stamp",

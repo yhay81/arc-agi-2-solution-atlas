@@ -1,6 +1,6 @@
 {
   "title": "Fill a single-gapped rectangular frame and continue its gap outward",
-  "summary": "Fill a single-gapped rectangular frame and continue its gap outward. The frame is a one-cell-thick rectangle whose perimeter has exactly one missing cell. The missing cell is a portal: the rectangle's interior is filled with ``fill`` and the portal is extended in a straight line to the corresponding edge of the canvas. The geometry is inferred from the frame itself, so no coordinates from any task are embedded here. This is the training-inferred `fill_hollow_frame_gap` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Fill a single-gapped rectangular frame and continue its gap outward. The frame is a one-cell-thick rectangle whose perimeter has exactly one missing cell. The missing cell is a portal: the rectangle's interior is filled with ``fill`` and the portal is extended in a straight line to the corresponding edge of the canvas. The geometry is inferred from the frame itself, so no coordinates from any task are embedded here.",
   "steps": [
     "Apply `fill_hollow_frame_gap`: fill a single-gapped rectangular frame and continue its gap outward"
   ],

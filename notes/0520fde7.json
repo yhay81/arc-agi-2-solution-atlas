@@ -1,8 +1,9 @@
 {
   "title": "Overlay the left and right panels using the smaller color index",
-  "summary": "Overlay the left and right panels using the smaller color index. This is the training-inferred `overlay_lr_min` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Overlay the left and right panels cell by cell using the smaller value, then convert the resulting value 1 cells to color 2 while leaving 0 as 0.",
   "steps": [
-    "Apply `overlay_lr_min`: overlay the left and right panels using the smaller color index"
+    "Split the grid into left and right panels and take the smaller value at each matching position",
+    "Convert every resulting 1 to 2 and preserve 0"
   ],
   "concepts": [
     "overlay",

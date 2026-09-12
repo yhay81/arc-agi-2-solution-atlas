@@ -1,6 +1,6 @@
 {
   "title": "Fill hollow square frames using the size-to-color convention",
-  "summary": "Fill hollow square frames using the size-to-color convention. This is the training-inferred `fill_numbered_frames` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Fill hollow square frames using the size-to-color convention.",
   "steps": [
     "Apply `fill_numbered_frames`: fill hollow square frames using the size-to-color convention"
   ],

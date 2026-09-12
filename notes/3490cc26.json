@@ -1,11 +1,11 @@
 {
   "title": "Choose the path that passes through the most small squares",
-  "summary": "Treat the 2×2 red 2 and light blue 8 squares as points. It is assumed that the closest points can be connected in a straight line vertically, horizontally, and horizontally. Starting from red, find a route that passes through the most points without passing through the same point twice. If there is a tie, choose the route with the shortest total distance. Connect the points on the route with orange 7, leaving the original points.",
+  "summary": "Treat every nonzero 4-connected object as a point-like rectangle, start from the object containing color 2, and connect only nearest objects whose bounding boxes share the same row or column span. Choose a simple route with the most objects, breaking ties by shortest total gap distance, and fill zero cells in the connecting rectangles with 7 while preserving the original objects.",
   "steps": [
-    "Treat the 2×2 red 2 and light blue 8 squares as points.",
-    "It is assumed that the closest points can be connected in a straight line vertically, horizontally, and horizontally.",
-    "Starting from red, find a route that passes through the most points without passing through the same point twice. If there is a tie, choose the route with the shortest total distance.",
-    "Connect the points on the route with orange 7, leaving the original points."
+    "Find all 4-connected nonzero objects and their bounding boxes; start at the first object containing color 2",
+    "Connect two objects only when their bounding boxes have matching horizontal or vertical spans and are nearest in that direction",
+    "Search simple routes without revisiting an object, maximizing the number of objects and then minimizing total bounding-box distance",
+    "Fill zero cells in the bounding rectangles between consecutive route objects with color 7 and preserve all original nonzero cells"
   ],
   "concepts": [
     "route search",

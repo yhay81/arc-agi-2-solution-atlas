@@ -1,6 +1,6 @@
 {
   "title": "Fill enclosed background regions with yellow",
-  "summary": "Fill every enclosed zero region with ARC color 4. This is the training-inferred `fill_enclosed_with_four` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Fill every enclosed zero region with ARC color 4.",
   "steps": [
     "Apply `fill_enclosed_with_four`: fill enclosed background regions with yellow"
   ],

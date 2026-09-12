@@ -1,6 +1,6 @@
 {
   "title": "Move four isolated quadrant markers into a central 2-by-2 block",
-  "summary": "Move four isolated quadrant markers into a central 2-by-2 block. This is the training-inferred `place_quadrant_markers_in_rectangle` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Move four isolated quadrant markers into a central 2-by-2 block.",
   "steps": [
     "Apply `place_quadrant_markers_in_rectangle`: move four isolated quadrant markers into a central 2-by-2 block"
   ],

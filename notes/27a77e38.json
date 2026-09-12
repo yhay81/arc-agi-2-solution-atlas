@@ -1,6 +1,6 @@
 {
   "title": "Copy the mode of the region above a solid separator to the last-row center",
-  "summary": "Copy the mode of the region above a solid separator to the last-row center. This is the training-inferred `mark_last_row_with_top_mode` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Copy the mode of the region above a solid separator to the last-row center.",
   "steps": [
     "Apply `mark_last_row_with_top_mode`: copy the mode of the region above a solid separator to the last-row center"
   ],

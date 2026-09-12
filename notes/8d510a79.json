@@ -1,6 +1,6 @@
 {
   "title": "Extend color 1 away from, and color 2 toward, a horizontal divider",
-  "summary": "Extend color 1 away from, and color 2 toward, a horizontal divider. This is the training-inferred `extend_one_away_two_toward_separator` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Extend color 1 away from, and color 2 toward, a horizontal divider.",
   "steps": [
     "Apply `extend_one_away_two_toward_separator`: extend color 1 away from, and color 2 toward, a horizontal divider"
   ],

@@ -1,6 +1,6 @@
 {
   "title": "Move each isolated solid rectangle upward by its own height",
-  "summary": "Move each isolated solid rectangle upward by its own height. ARC scenes sometimes place several colored rectangular blocks against the lower edge. Each block rises by exactly one block height; its dimensions, color, and horizontal position are unchanged. Components that are not exact filled rectangles are left untouched. This is the training-inferred `move_solid_rectangles_up_by_height` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Move each isolated solid rectangle upward by its own height. ARC scenes sometimes place several colored rectangular blocks against the lower edge. Each block rises by exactly one block height; its dimensions, color, and horizontal position are unchanged. Components that are not exact filled rectangles are left untouched.",
   "steps": [
     "Apply `move_solid_rectangles_up_by_height`: move each isolated solid rectangle upward by its own height"
   ],

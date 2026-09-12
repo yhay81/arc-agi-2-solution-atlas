@@ -1,8 +1,8 @@
 {
-  "title": "Sort rows sparse",
-  "summary": "Sort rows sparse. This is the training-inferred `sort_rows_sparse` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Sort rows by their number of nonzero cells, then shift each row's nonzero values to the right while preserving their order",
+  "summary": "Sort rows by their number of nonzero cells, then shift each row's nonzero values to the right while preserving their order.",
   "steps": [
-    "Apply `sort_rows_sparse`: sort rows sparse"
+    "Sort rows by their number of nonzero cells, then shift each row's nonzero values to the right while preserving their order."
   ],
   "concepts": [
     "sort",

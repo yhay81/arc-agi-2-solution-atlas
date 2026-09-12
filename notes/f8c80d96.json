@@ -1,8 +1,12 @@
 {
   "title": "Complete either horizontal-bar or vertical-rail periodic mazes",
-  "summary": "Complete either horizontal-bar or vertical-rail periodic mazes. This is the training-inferred `complete_periodic_bar_maze` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Detect the single foreground color's repeated bars, infer their row period from the greatest common divisor of observed spacings, and infer the linear drift of each bar endpoint. Complete the bar sequence only when exactly one end of the observed sequence has room for another period. Rebuild the grid with gray background, draw every inferred bar, and extend rails from the drifting endpoints toward the boundary opposite the missing continuation; transpose the grid to handle the vertical counterpart with the same rule.",
   "steps": [
-    "Apply `complete_periodic_bar_maze`: complete either horizontal-bar or vertical-rail periodic mazes"
+    "Choose the most frequent color as background, require one foreground color, and record the longest foreground run of length at least two in each occupied row.",
+    "Use the greatest common divisor of bar-row spacings as the period and require both endpoints to follow a linear displacement across periods.",
+    "Require that the periodic sequence can be extended beyond exactly one end, then infer all bar positions across the grid.",
+    "Fill the new grid with gray, draw the inferred bars, and extend vertical rails from the drifting endpoints toward the boundary opposite the side where bars were missing.",
+    "If the horizontal interpretation does not transform the grid, transpose the input, apply the same construction, and transpose the result back."
   ],
   "concepts": [
     "complete",

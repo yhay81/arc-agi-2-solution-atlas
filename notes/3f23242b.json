@@ -1,10 +1,10 @@
 {
   "title": "Draw a gate with a width of 5 and a height of 5 around each green dot.",
-  "summary": "Draw a gate five wide and five high around each green dot. Make the top two squares gray, the pillars on the two squares on the left and right red, and the width five below the two squares light blue. The line below is red outside the gate and extends to the edge.",
+  "summary": "For each green 3 cell, draw a 5-cell gray top bar two rows above it plus one gray cell immediately below that bar, red side pillars at two columns left and right across the three rows above the green cell, and a 5-cell light-blue segment on the row two below it; color the remainder of that row red across the full width.",
   "steps": [
-    "Draw a gate with a width of 5 and a height of 5 around each green dot.",
-    "The top two squares are gray, the pillars on the two squares on the left and right are red, and the width five below two squares is light blue.",
-    "The line below is red outside the gate and extends to the edge."
+    "For each color-3 cell, paint its entire row shifted two rows down as red",
+    "Paint color 5 at the five cells centered two rows above the marker and at the center cell one row above",
+    "Paint color 2 at both side columns two cells from the marker across the three rows above, then overwrite the five cells centered two rows below with color 8"
   ],
   "concepts": [
     "Reference point",

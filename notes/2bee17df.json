@@ -1,6 +1,6 @@
 {
   "title": "Mark empty rows/columns of the one-cell-inside view, shifted inward",
-  "summary": "Mark empty rows/columns of the one-cell-inside view, shifted inward. This is the training-inferred `mark_zero_lines_inside_border` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Mark empty rows/columns of the one-cell-inside view, shifted inward.",
   "steps": [
     "Apply `mark_zero_lines_inside_border`: mark empty rows/columns of the one-cell-inside view, shifted inward"
   ],

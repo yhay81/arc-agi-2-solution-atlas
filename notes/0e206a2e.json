@@ -1,8 +1,8 @@
 {
   "title": "Render majority-color stencils selected by their colored key cells",
-  "summary": "Render majority-color stencils selected by their colored key cells. A multicolor connected object containing four colors is a template. Its majority non-background color is the paint, and its other colored cells form a key. Every translated/rotated/reflected copy whose key cells match the surrounding singleton markers is rendered with the paint color. The source templates and marker keys are removed from the canvas, leaving only the synthesized majority-color shapes. This is the training-inferred `render_multicolor_keys` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Treat each four-color connected object as a template: its most frequent color is paint and its other colors are key cells. Try translated, rotated, and reflected copies whose key cells match the grid and include at least one key outside the source template; paint matching positions, then remove the source template components.",
   "steps": [
-    "Apply `render_multicolor_keys`: render majority-color stencils selected by their colored key cells"
+    "Extract four-color connected templates, use the majority color as paint and all other template colors as keys, test translated/rotated/reflected placements, paint matching placements, and remove the source templates"
   ],
   "concepts": [
     "render",

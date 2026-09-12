@@ -1,11 +1,11 @@
 {
-  "title": "Arrange the shapes in the order of orange, orange, purple and extend only the purple downwards.",
-  "summary": "Extract the input orange small figure as a prototype.",
+  "title": "Repeat a 7-shape in a 7,7,6 cycle and extend 6 vertically",
+  "summary": "Extract the input color-7 figure as a prototype. Repeat it horizontally with one zero column between copies, coloring the first two copies 7 and every third copy 6; repeat only the color-6 copies vertically with one zero row between them, clipping at the grid boundaries.",
   "steps": [
-    "Extract the input orange small figure as a prototype.",
-    "Repeat from the original position to the right, leaving one black row between the shapes. The colors should be orange, orange, and magenta in cycles.",
-    "Repeat the same magenta shapes vertically, leaving one black line below each magenta shape.",
-    "Cut the part that goes beyond the right edge or bottom edge outside the grid, and do not change the output dimensions."
+    "Use all color-7 cells as the prototype shape and determine its bounding box.",
+    "Place copies at successive horizontal offsets of prototype width plus one, using colors 7, 7, and 6 cyclically.",
+    "For every color-6 copy, repeat it downward at offsets of prototype height plus one.",
+    "Keep the output size fixed and clip copies that extend beyond the grid."
   ],
   "concepts": [
     "two-way iteration",

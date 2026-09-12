@@ -1,10 +1,10 @@
 {
   "title": "Arrange the frame and contents into smaller pieces and display in two places.",
-  "summary": "Read the large decoration on the orange background and shrink its outline to a 5x5 frame with no corners. Align the minimum area of ​​the inner pattern proportionally to the inner 3x3. If there is only one item inside, place it in the center. Place two identical decorations on a 15x15 orange board with the upper left coordinates starting at 0 and (2,2) and (8,8).",
+  "summary": "On an orange background, shrink the outer decoration to a 5x5 frame with no corners and map the inner pattern proportionally into its 3x3 interior; a single inner cell goes to the center. Place two identical 5x5 decorations on a 15x15 orange board at upper-left offsets (2,2) and (8,8).",
   "steps": [
     "Read the large decoration on the orange background and shrink its outline to a 5x5 frame with no corners.",
-    "Align the minimum area of the inner pattern proportionally to the inner 3x3. If there is only one item inside, place it in the center.",
-    "Place two identical decorations on a 15x15 orange board with the upper left coordinates starting at 0 and (2,2) and (8,8)."
+    "Map the bounding box of the inner pattern proportionally into the 3x3 interior; if there is one inner cell, place it in the center.",
+    "Place two identical decorations on a 15x15 orange board at upper-left offsets (2,2) and (8,8)."
   ],
   "concepts": [
     "standardization",

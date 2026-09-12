@@ -1,8 +1,10 @@
 {
-  "title": "Count full rows in three line-attached glyphs and encode a marker distance",
-  "summary": "Count full rows in three line-attached glyphs and encode a marker distance. This is the training-inferred `summarize_line_attached_glyphs` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Summarize line-attached glyphs and encode marker distance",
+  "summary": "Read four full-color horizontal lines as a legend. Between each consecutive pair, count rows containing exactly three cells of the preceding line's color and place that many cells in one of three output rows. Fill the output's fourth column with the last line's color, then place a single 5 marker in the row selected by its distance from the input center.",
   "steps": [
-    "Apply `summarize_line_attached_glyphs`: count full rows in three line-attached glyphs and encode a marker distance"
+    "Find exactly four full-color rows whose first cell is nonzero and use their colors in order.",
+    "For each gap between consecutive full rows, count rows containing exactly three cells of the preceding line color and write that count in the corresponding output row.",
+    "Fill output column 3 with the last line color and place 5 in column 4 at the row determined by its horizontal distance from the center."
   ],
   "concepts": [
     "summarize",

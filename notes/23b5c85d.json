@@ -1,6 +1,6 @@
 {
   "title": "Extract the smallest connected component",
-  "summary": "Extract the smallest connected component. This is the training-inferred `smallest_component` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Extract the smallest connected component.",
   "steps": [
     "Apply `smallest_component`: extract the smallest connected component"
   ],

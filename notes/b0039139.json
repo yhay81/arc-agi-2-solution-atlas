@@ -1,6 +1,6 @@
 {
   "title": "Repeat a sparse glyph according to components in a companion panel",
-  "summary": "Repeat a sparse glyph according to components in a companion panel. Four panels are separated by full lines of ``1``. The first two panels are sparse monochrome patterns, followed by two solid color panels. The first pattern is the glyph, while each 4-connected component of the second pattern requests one glyph copy. Copies are laid out along the separator direction, with a one-cell background gap between copies. This is the training-inferred `repeat_shape_by_panel_components` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Repeat a sparse glyph according to components in a companion panel. Four panels are separated by full lines of ``1``. The first two panels are sparse monochrome patterns, followed by two solid color panels. The first pattern is the glyph, while each 4-connected component of the second pattern requests one glyph copy. Copies are laid out along the separator direction, with a one-cell background gap between copies.",
   "steps": [
     "Apply `repeat_shape_by_panel_components`: repeat a sparse glyph according to components in a companion panel"
   ],

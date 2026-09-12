@@ -1,6 +1,6 @@
 {
   "title": "Concatenate the lower panel followed by the upper panel",
-  "summary": "Concatenate the lower panel followed by the upper panel. This is the training-inferred `concat_v_du` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Concatenate the lower panel followed by the upper panel.",
   "steps": [
     "Apply `concat_v_du`: concatenate the lower panel followed by the upper panel"
   ],

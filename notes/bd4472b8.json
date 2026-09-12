@@ -1,8 +1,8 @@
 {
-  "title": "Cycle header rows",
-  "summary": "Cycle header rows. This is the training-inferred `cycle_header_rows` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Keep the two header rows, then fill each later row with one color from the first header row, cycling through the header colors in order",
+  "summary": "Keep the two header rows, then fill each later row with one color from the first header row, cycling through the header colors in order.",
   "steps": [
-    "Apply `cycle_header_rows`: cycle header rows"
+    "Keep the two header rows, then fill each later row with one color from the first header row, cycling through the header colors in order."
   ],
   "concepts": [
     "cycle",

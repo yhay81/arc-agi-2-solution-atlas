@@ -1,6 +1,6 @@
 {
   "title": "Expand solid two-tone square frames into a rounded alternating shell",
-  "summary": "Expand solid two-tone square frames into a rounded alternating shell. A square whose border is one color and whose interior is a second color encodes two successive nested rings. The output repeats those rings outward and inward at the same center. The scaled shell has side ``2*n`` for an even source side and ``2*n-1`` for an odd side; corner blocks are left empty, preserving the rounded frame convention. This is the training-inferred `expand_nested_square_objects` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Expand solid two-tone square frames into a rounded alternating shell. A square whose border is one color and whose interior is a second color encodes two successive nested rings. The output repeats those rings outward and inward at the same center. The scaled shell has side ``2*n`` for an even source side and ``2*n-1`` for an odd side; corner blocks are left empty, preserving the rounded frame convention.",
   "steps": [
     "Apply `expand_nested_square_objects`: expand solid two-tone square frames into a rounded alternating shell"
   ],

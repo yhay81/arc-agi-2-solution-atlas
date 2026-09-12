@@ -1,8 +1,9 @@
 {
-  "title": "Recolor only components that are exact hollow rectangle borders",
-  "summary": "Recolor only components that are exact hollow rectangle borders. A rectangle is recognized from its occupied component rather than from a fixed coordinate or size: every cell on the bounding-box perimeter must belong to the component, and no interior cell may be occupied. Other components and background cells are preserved. This is the training-inferred `recolor_hollow_rectangles` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Recolor exact hollow rectangle borders from 1 to 3",
+  "summary": "Recolor only color-1 components that are exact hollow rectangle borders to color 3. A rectangle is recognized from its occupied component rather than from a fixed coordinate or size: every cell on the bounding-box perimeter must belong to the component, and no interior cell may be occupied. Other components and background cells are preserved.",
   "steps": [
-    "Apply `recolor_hollow_rectangles`: recolor only components that are exact hollow rectangle borders"
+    "Find color-1 components that exactly occupy the perimeter of their bounding box and have an empty interior.",
+    "Recolor those hollow rectangle borders to 3 and preserve all other cells."
   ],
   "concepts": [
     "recolor",

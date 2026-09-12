@@ -1,8 +1,10 @@
 {
   "title": "Extend edge markers and frame only the marked horizontal runs",
-  "summary": "Extend edge markers and frame only the marked horizontal runs. Two short vertical markers in the first two rows identify scaffold columns. The marker color is continued downward until it meets a row containing a ``2``. Every horizontal run of ``2`` touched by that scaffold is surrounded by the same color; single-cell runs receive only their right neighbour above. This reproduces the training construction without relying on coordinates or task-specific layouts. This is the training-inferred `scaffold_edge_components` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Identify a scaffold color repeated in the same columns of the first two rows and a single remaining run color. Extend the scaffold downward through background cells until it meets run cells, then frame only horizontal runs of that run color touched by the scaffold; multi-cell runs receive side and upper/lower extensions, while singleton runs receive only the upper-right extension.",
   "steps": [
-    "Apply `scaffold_edge_components`: extend edge markers and frame only the marked horizontal runs"
+    "Select the background by frequency, find a non-background scaffold color repeated vertically in the first two rows, and require exactly one other run color",
+    "Extend scaffold-colored columns through background cells until a run-color cell blocks each column",
+    "For each run-color horizontal segment touched by the scaffold, add the prescribed scaffold-colored cells around its sides and above/below according to its length"
   ],
   "concepts": [
     "scaffold",

@@ -1,8 +1,9 @@
 {
-  "title": "Look for flowers with repeating petal colors",
-  "summary": "4Detect flowers that have the same color on the top, bottom, left and right of the center, and answer the petal color that is used by the most flowers.",
+  "title": "Return the most common petal color among matching flowers",
+  "summary": "Find flowers whose center is 4 and whose top, bottom, left, and right petals all have the same color. Return the petal color used by the greatest number of such flowers as a 1x1 grid.",
   "steps": [
-    "4Detect flowers that have the same color on the top, bottom, left and right of the center, and answer the petal color that is used by the most flowers."
+    "Find each center-4 flower whose four orthogonal petals share one color.",
+    "Count those petal colors and output the most frequent one as a 1x1 grid."
   ],
   "concepts": [
     "object attributes",

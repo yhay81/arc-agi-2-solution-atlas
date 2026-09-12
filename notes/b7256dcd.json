@@ -1,8 +1,10 @@
 {
-  "title": "Paint the purple shape with the adjacent color marks",
-  "summary": "If the color marks on the top, bottom, left, and right sides of the purple object are all the same color, change the object to that color and erase the marks.",
+  "title": "Recolor 6-components from a unique adjacent marker color",
+  "summary": "Keep 6 and 7 as the structural colors and treat all other values as markers. For each four-connected 6-component, collect the marker colors touching it orthogonally; if that set contains exactly one color, recolor the whole component to that color. All non-6/7 cells are otherwise rendered as 7.",
   "steps": [
-    "If the color marks on the top, bottom, left, and right sides of the purple object are all the same color, change the object to that color and erase the marks."
+    "Initialize the output with 6 and 7 preserved and every other cell set to 7.",
+    "For each 6-component, collect distinct adjacent marker colors, ignoring 6 and 7.",
+    "If exactly one marker color touches the component, recolor every cell of that component with it."
   ],
   "concepts": [
     "contact",

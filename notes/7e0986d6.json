@@ -1,9 +1,9 @@
 {
-  "title": "remove points that disturb the rectangle",
-  "summary": "Separate everything other than black by connecting the top, bottom, left, and right of the same color. A block of less than 4 squares is considered a noise candidate, and a block of 4 squares or more is a rectangle candidate. If the adjacent areas above, below, left, or right of the noise candidate touch two or more squares of one rectangular candidate, the color is changed to that of that rectangle. Noise that is not sufficiently close to any rectangle is returned to black.",
+  "title": "Remove small components that disturb nearby large components",
+  "summary": "Separate every nonblack same-colored component using orthogonal connectivity. A component with fewer than 4 cells is noise, while a component with at least 4 cells is a large reference component regardless of its exact shape. If a noise component is orthogonally adjacent to at least two cells of one large component, recolor it to that component's color; otherwise turn it black.",
   "steps": [
-    "Separate everything other than black by connecting the top, bottom, left, and right of the same color. A block of less than 4 squares is considered a noise candidate, and a block of 4 squares or more is a rectangle candidate.",
-    "If the adjacent areas above, below, left, or right of the noise candidate touch two or more squares of one rectangular candidate, the color is changed to that of that rectangle.",
+    "Separate every nonblack same-colored component using orthogonal connectivity; components under 4 cells are noise and components of at least 4 cells are large references.",
+    "If a noise component is adjacent to at least two cells of one large reference component, recolor it to that reference color.",
     "Noise that is not sufficiently close to any rectangle is returned to black."
   ],
   "concepts": [

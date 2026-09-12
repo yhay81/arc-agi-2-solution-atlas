@@ -1,9 +1,10 @@
 {
-  "title": "The large arrangement is also lined up in the same shape as the small red shape.",
-  "summary": "Large arrangements are also lined up in the same shape as the small red shapes. Restore the shapes hidden in green and turn one square in each small shape light blue that corresponds to the overall placement position.",
+  "title": "Generate a grid of translated color-2 shapes with position markers",
+  "summary": "Extract the largest diagonal-connected color-2 shape, use every color-2 cell in its bounding box as a placement mask, and generate a grid of copies of that shape separated by one cell; in each copy, recolor the cell whose local coordinates equal the copy's placement coordinates to 8.",
   "steps": [
-    "The large arrangement is also lined up in the same shape as the small red shape.",
-    "Restore the shapes hidden in green and make one square in each small shape light blue that corresponds to the overall placement position."
+    "Find the largest diagonal-connected color-2 component and take its bounding-box shape",
+    "For every color-2 position in that shape, place a copy of the full shape at a stride equal to the shape size plus one cell",
+    "Color the corresponding local cell in each copy 8 and leave all other output cells 0"
   ],
   "concepts": [
     "Figure self-referencing",

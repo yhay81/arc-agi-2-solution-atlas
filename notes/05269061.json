@@ -1,6 +1,6 @@
 {
   "title": "Complete a sparse diagonal periodic color lattice",
-  "summary": "Complete a sparse diagonal periodic color lattice. This is the training-inferred `periodic_color_lattice` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Complete a sparse diagonal periodic color lattice.",
   "steps": [
     "Apply `periodic_color_lattice`: complete a sparse diagonal periodic color lattice"
   ],

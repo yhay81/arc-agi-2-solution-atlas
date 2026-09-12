@@ -1,6 +1,6 @@
 {
   "title": "Move a full-color cross by the count of a marker color",
-  "summary": "Move a full-color cross by the count of a marker color. The marker count supplies the displacement: the dominant horizontal line moves down, while the dominant vertical line moves left. The moved lines are extended to the canvas edges and all marker/background cells are cleared. This is the training-inferred `shift_cross_by_marker` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Move a full-color cross by the count of a marker color. The marker count supplies the displacement: the dominant horizontal line moves down, while the dominant vertical line moves left. The moved lines are extended to the canvas edges and all marker/background cells are cleared.",
   "steps": [
     "Apply `shift_cross_by_marker`: move a full-color cross by the count of a marker color"
   ],

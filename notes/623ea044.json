@@ -1,6 +1,6 @@
 {
   "title": "Draw the four diagonal rays emanating from a lone colored point",
-  "summary": "Draw the four diagonal rays emanating from a lone colored point. This is the training-inferred `draw_diagonal_rays_from_single_point` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Draw the four diagonal rays emanating from a lone colored point.",
   "steps": [
     "Apply `draw_diagonal_rays_from_single_point`: draw the four diagonal rays emanating from a lone colored point"
   ],

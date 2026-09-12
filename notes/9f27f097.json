@@ -1,10 +1,10 @@
 {
-  "title": "Reverse the pattern and copy it",
-  "summary": "Normalize to the orientation and color correspondence selected in the learning example, and read the black rectangle as the destination. Cut out the background and non-black patterns, flip them horizontally and place them on a black destination of the same size. Leave the original pattern. Return the color and orientation to their original state.",
+  "title": "Horizontally mirror the motif into the largest zero region",
+  "summary": "Use the largest four-connected zero component as the destination. Extract the bounding rectangle of the nonzero motif excluding the most common background color, reverse that patch horizontally, and copy it into the destination rectangle while preserving the original motif and all other cells.",
   "steps": [
-    "Normalize to the orientation and color correspondence selected in the learning example, and read the black rectangle as the destination.",
-    "Cut out the background and non-black patterns, flip them horizontally and place them on a black destination of the same size. Leave the original pattern.",
-    "Return the color and orientation to their original state."
+    "Find the most common background color and the largest connected component of zero cells.",
+    "Extract the bounding box containing all nonzero, non-background motif cells and reverse each row of that patch.",
+    "Paste the mirrored patch into the largest zero component's bounding rectangle, leaving the source motif unchanged."
   ],
   "concepts": [
     "reflection"

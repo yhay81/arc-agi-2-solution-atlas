@@ -1,8 +1,9 @@
 {
-  "title": "Label components by whether their area equals a distinguished size",
-  "summary": "Label components by whether their area equals a distinguished size. This is the training-inferred `label_components_by_size` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Label six-cell components as 2 and all others as 1",
+  "summary": "Group all nonzero cells into four-connected components. Recolor every component containing exactly six cells to 2 and every other component to 1; background cells remain 0.",
   "steps": [
-    "Apply `label_components_by_size`: label components by whether their area equals a distinguished size"
+    "Find all four-connected nonzero components.",
+    "Count each component's cells and paint the entire component 2 exactly when its size is 6; otherwise paint it 1."
   ],
   "concepts": [
     "label",

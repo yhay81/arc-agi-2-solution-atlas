@@ -1,6 +1,6 @@
 {
   "title": "Nest rectangular frames and solids, progressing toward the bottom-left",
-  "summary": "Nest rectangular frames and solids, progressing toward the bottom-left. This is the training-inferred `nest_rectangular_objects_bottom_left` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Nest rectangular frames and solids, progressing toward the bottom-left.",
   "steps": [
     "Apply `nest_rectangular_objects_bottom_left`: nest rectangular frames and solids, progressing toward the bottom-left"
   ],

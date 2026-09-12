@@ -1,8 +1,10 @@
 {
-  "title": "Place an 8-mask in an open frame and recolor uniquely nearest cells",
-  "summary": "Place an 8-mask in an open frame and recolor uniquely nearest cells. This is the training-inferred `recolor_eights_by_nearest_open_frame_side` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Fill an open frame from its nearest side colors",
+  "summary": "Crop the non-background frame and use its four border colors to fill the interior according to an 8-mask. Each masked cell receives the color of its uniquely nearest border side; cells equally near two or more sides remain 8. The resulting framed grid retains the original border and receives the reconstructed interior.",
   "steps": [
-    "Apply `recolor_eights_by_nearest_open_frame_side`: place an 8-mask in an open frame and recolor uniquely nearest cells"
+    "Crop the colored frame and the separate 8-mask, and verify that the mask matches the frame interior size.",
+    "For each nonzero mask cell, find its nearest top, bottom, left, or right interior edge; use that edge's border color only when the nearest side is unique, otherwise keep 8.",
+    "Insert the reconstructed interior into the cropped frame and leave the frame colors unchanged."
   ],
   "concepts": [
     "recolor",

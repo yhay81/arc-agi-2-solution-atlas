@@ -1,6 +1,6 @@
 {
   "title": "Reveal a keyed top row outward from a vertical marker",
-  "summary": "Reveal a keyed top row outward from a vertical marker. The first row is a one-dimensional color key. A long vertical run of a second color below it supplies the anchor. Starting at the top of that run, each successive row exposes one more cell on either side of the anchor, while the anchor itself remains the run color. This is the compact construction used by the keyed ``bae5c565`` examples. This is the training-inferred `reveal_row_from_vertical_marker` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Reveal a keyed top row outward from a vertical marker. The first row is a one-dimensional color key. A long vertical run of a second color below it supplies the anchor. Starting at the top of that run, each successive row exposes one more cell on either side of the anchor, while the anchor itself remains the run color. This is the compact construction used by the keyed ``bae5c565`` examples.",
   "steps": [
     "Apply `reveal_row_from_vertical_marker`: reveal a keyed top row outward from a vertical marker"
   ],

@@ -1,6 +1,6 @@
 {
   "title": "Remove an L-shaped header and cyclically align its two markers",
-  "summary": "Remove an L-shaped header and cyclically align its two markers. The first row and column are headers with one shared marker color among otherwise uniform cells. A marker's zero-based position inside its header is the cyclic shift for the corresponding axis of the interior. This is the training-inferred `roll_interior_by_header_markers` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Remove an L-shaped header and cyclically align its two markers. The first row and column are headers with one shared marker color among otherwise uniform cells. A marker's zero-based position inside its header is the cyclic shift for the corresponding axis of the interior.",
   "steps": [
     "Apply `roll_interior_by_header_markers`: remove an L-shaped header and cyclically align its two markers"
   ],

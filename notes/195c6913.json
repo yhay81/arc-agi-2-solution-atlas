@@ -1,8 +1,12 @@
 {
   "title": "Decode a top legend and propagate its cyclic pattern through fill regions",
-  "summary": "Decode a top legend and propagate its cyclic pattern through fill regions. This is the training-inferred `decode_palette_and_propagate` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Read the left-to-right colors of the 2-by-2 swatches near the top as a cyclic palette and remove those swatches. Rows beginning with a palette color anchor that cycle inside the main fill-colored region. Continue the cycle vertically and horizontally around the region's bends, placing the optional cap color immediately after each completed run.",
   "steps": [
-    "Apply `decode_palette_and_propagate`: decode a top legend and propagate its cyclic pattern through fill regions"
+    "Find the 2-by-2 monochrome components near the top, order them from left to right, and use their colors as a repeating palette.",
+    "Choose the most frequent remaining non-background color as the fill region and the least frequent remaining color, if present, as the run-ending cap.",
+    "Find anchor rows whose first cell is a palette color followed by a run of the fill color, then paint that run with the cyclic palette.",
+    "Propagate the cycle vertically to the end of the fill run, horizontally across the bend, vertically again, and across the final bend; add the cap color after traversed runs.",
+    "Erase the palette swatches and the small cap sample while retaining the propagated pattern."
   ],
   "concepts": [
     "decode",

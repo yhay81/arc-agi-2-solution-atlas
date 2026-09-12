@@ -1,6 +1,6 @@
 {
   "title": "Restore a noisy grid made of axis-aligned monochrome regions",
-  "summary": "Restore a noisy grid made of axis-aligned monochrome regions. The examples contain one-dimensional color runs (vertical or horizontal) with a small number of corrupted cells. The run orientation is selected by the smaller reconstruction error; each row or column is then rendered with its modal color. This keeps the rule independent of the run count, sizes, and palette. This is the training-inferred `denoise_axis_aligned_regions` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Restore a noisy grid made of axis-aligned monochrome regions. The examples contain one-dimensional color runs (vertical or horizontal) with a small number of corrupted cells. The run orientation is selected by the smaller reconstruction error; each row or column is then rendered with its modal color. This keeps the rule independent of the run count, sizes, and palette.",
   "steps": [
     "Apply `denoise_axis_aligned_regions`: restore a noisy grid made of axis-aligned monochrome regions"
   ],

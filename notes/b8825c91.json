@@ -1,6 +1,6 @@
 {
   "title": "Restore cells marked by a color from their 180-degree counterparts",
-  "summary": "Restore cells marked by a color from their 180-degree counterparts. ARC grids in this family contain an otherwise complete 180-degree symmetric pattern, with one or more regions overwritten by a dedicated marker color. Only marker cells are repaired; all other input cells are retained so that the operation does not infer or rewrite unrelated asymmetries. This is the training-inferred `repair_rot180_marker_occlusions` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Restore cells marked by a color from their 180-degree counterparts. ARC grids in this family contain an otherwise complete 180-degree symmetric pattern, with one or more regions overwritten by a dedicated marker color. Only marker cells are repaired; all other input cells are retained so that the operation does not infer or rewrite unrelated asymmetries.",
   "steps": [
     "Apply `repair_rot180_marker_occlusions`: restore cells marked by a color from their 180-degree counterparts"
   ],

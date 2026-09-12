@@ -1,8 +1,9 @@
 {
-  "title": "Compress three blocks",
-  "summary": "Compress three blocks. This is the training-inferred `compress_three_blocks` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Compress every 3-by-3 source block to one output cell",
+  "summary": "Compress every 3-by-3 source block to one output cell. Ignore gray 5 cells and emit the most common remaining color only when it occupies at least five cells; otherwise emit black 0.",
   "steps": [
-    "Apply `compress_three_blocks`: compress three blocks"
+    "Compress every 3-by-3 source block to one output cell.",
+    "Ignore gray 5 cells and emit the most common remaining color only when it occupies at least five cells; otherwise emit black 0."
   ],
   "concepts": [
     "compress",

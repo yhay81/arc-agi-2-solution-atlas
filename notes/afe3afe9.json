@@ -1,9 +1,10 @@
 {
-  "title": "Reduce the small square rings to one square at a time and remove the matrix with no rings.",
-  "summary": "Shrink the small square rings to one square at a time, and remove the matrix with no rings. Fill each column or row 90 degrees clockwise from the blue outline, maintaining the order of the colors.",
+  "title": "Compress square rings into an edge-aligned color table",
+  "summary": "Find monochrome 3×3 ring components and represent each by its center color in a compact row-column table, omitting empty positions. Use the full border of 1s to determine the alignment: pack values to the right for a top border, to the left for a bottom border, to the top for a left border, or to the bottom for a right border.",
   "steps": [
-    "Reduce the small square rings to one square at a time and remove the matrix with no rings.",
-    "Fill each column or row 90 degrees clockwise from the position of the blue outline, maintaining the order of the colors."
+    "Detect 3×3 components with eight occupied cells and record their center positions and colors.",
+    "Place those colors in a compact table indexed by the distinct ring-center rows and columns.",
+    "Align each table row or column against the side whose full border is color 1."
   ],
   "concepts": [
     "number of objects",

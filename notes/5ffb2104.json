@@ -1,6 +1,6 @@
 {
   "title": "Shift same-color connected blocks right until a block or edge stops them",
-  "summary": "Shift same-color connected blocks right until a block or edge stops them. This is the training-inferred `pack_components_right` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Shift same-color connected blocks right until a block or edge stops them.",
   "steps": [
     "Apply `pack_components_right`: shift same-color connected blocks right until a block or edge stops them"
   ],

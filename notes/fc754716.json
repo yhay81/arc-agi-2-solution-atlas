@@ -1,8 +1,8 @@
 {
-  "title": "Border from marker",
-  "summary": "Border from marker. This is the training-inferred `border_from_marker` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Read the color of the sole nonzero marker, erase the interior, and draw a one-cell-thick rectangular border of that color around the canvas",
+  "summary": "Read the color of the sole nonzero marker, erase the interior, and draw a one-cell-thick rectangular border of that color around the canvas.",
   "steps": [
-    "Apply `border_from_marker`: border from marker"
+    "Read the color of the sole nonzero marker, erase the interior, and draw a one-cell-thick rectangular border of that color around the canvas."
   ],
   "concepts": [
     "border",

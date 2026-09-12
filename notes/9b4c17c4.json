@@ -1,8 +1,9 @@
 {
-  "title": "Determine the left and right destination based on the background color",
-  "summary": "Divide each row into blue and light blue areas, and align the red squares to the right in the blue area and to the left in the light blue area.",
+  "title": "Pack marker cells to the side selected by each row segment",
+  "summary": "In each row, split the cells into contiguous runs separated by non-marker colors. Replace marker cells with the run's resolved non-marker color, then pack the same number of markers to the left when that color is 8 and to the right otherwise. Preserve the resolved color across the rest of the run.",
   "steps": [
-    "Divide each row into blue and light blue areas, and align the red squares to the right in the blue area and to the left in the light blue area."
+    "Resolve each marker cell (2) from the nearest non-marker color in its row.",
+    "For every resulting run, fill it with the resolved color and move its marker count to the left for color 8 or to the right for any other color."
   ],
   "concepts": [
     "Conditions by background",

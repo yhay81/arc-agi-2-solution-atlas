@@ -1,6 +1,6 @@
 {
   "title": "Complete partial rows by applying their color mapping to a template row",
-  "summary": "Complete partial rows by applying their color mapping to a template row. This is the training-inferred `project_two_color_template_rows` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Complete partial rows by applying their color mapping to a template row.",
   "steps": [
     "Apply `project_two_color_template_rows`: complete partial rows by applying their color mapping to a template row"
   ],

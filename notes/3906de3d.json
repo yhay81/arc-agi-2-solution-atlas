@@ -1,6 +1,6 @@
 {
   "title": "Move non-background cells to the top of each column",
-  "summary": "Move non-background cells to the top of each column. This is the training-inferred `gravity_up` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Move non-background cells to the top of each column.",
   "steps": [
     "Apply `gravity_up`: move non-background cells to the top of each column"
   ],

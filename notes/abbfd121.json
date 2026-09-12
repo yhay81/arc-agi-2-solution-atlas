@@ -1,14 +1,17 @@
 {
-  "title": "Restore background repeating pattern hidden by solid color rectangles",
-  "summary": "Restores the repeating pattern in the background hidden by solid rectangles. Cut out only the rectangular area with the largest area.",
+  "title": "Recover the periodic background beneath the largest solid rectangle",
+  "summary": "Treat every solid, single-color rectangle as an occlusion of a shared periodic background. Infer the smallest-area two-dimensional period that is consistent with every visible cell outside those rectangles, reconstruct the hidden background, and return the reconstructed area covered by the largest rectangle.",
   "steps": [
-    "Restore background repeating pattern hidden by solid color rectangles",
-    "Cut out only the rectangular range with the largest area"
+    "Find every connected, single-color component that completely fills its rectangular bounding box.",
+    "Exclude all cells in those solid rectangles while testing candidate row and column periods against the remaining visible background.",
+    "Choose the consistent period with the smallest tile area and use its residue classes to reconstruct the repeating background.",
+    "Return only the reconstructed bounding box of the largest solid rectangle."
   ],
   "concepts": [
-    "Period estimation",
-    "defect repair",
-    "extraction"
+    "period estimation",
+    "occlusion removal",
+    "background reconstruction",
+    "region extraction"
   ],
   "observations": [
     "Training pair 1: 22x20 -> 7x7; colors [1, 2, 3, 4, 5, 6] -> [3, 4, 5, 6]; output dimensions changed.",

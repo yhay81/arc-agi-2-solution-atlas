@@ -1,6 +1,6 @@
 {
   "title": "Fill each foreground color's bounding box",
-  "summary": "Fill each foreground color's bounding box. A set of same-colored point markers can specify the opposite corners of a rectangle. The rule is color-relative and uses no coordinates or task-specific values: every foreground color with at least two cells is filled throughout its own bounding box, while all existing cells are retained. This also handles markers that touch or form an already-filled strip without introducing a second semantic color. This is the training-inferred `fill_same_color_bboxes` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Fill each foreground color's bounding box. A set of same-colored point markers can specify the opposite corners of a rectangle. The rule is color-relative and uses no coordinates or task-specific values: every foreground color with at least two cells is filled throughout its own bounding box, while all existing cells are retained. This also handles markers that touch or form an already-filled strip without introducing a second semantic color.",
   "steps": [
     "Apply `fill_same_color_bboxes`: fill each foreground color's bounding box"
   ],

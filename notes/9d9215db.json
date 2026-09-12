@@ -1,6 +1,6 @@
 {
   "title": "Render square frames encoded by sparse corner and edge markers",
-  "summary": "Render square frames encoded by sparse corner and edge markers. The canvas is an odd-sized lattice centered on its middle cell. A marker's Chebyshev distance from that center selects a square frame. A marker on a frame corner supplies the corner color, while a marker on a side supplies the side color. The encoded lattice uses every other cell, so only positions with the marker parity are rendered and all other input cells remain unchanged. This is the training-inferred `render_concentric_marker_frames` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Render square frames encoded by sparse corner and edge markers. The canvas is an odd-sized lattice centered on its middle cell. A marker's Chebyshev distance from that center selects a square frame. A marker on a frame corner supplies the corner color, while a marker on a side supplies the side color. The encoded lattice uses every other cell, so only positions with the marker parity are rendered and all other input cells remain unchanged.",
   "steps": [
     "Apply `render_concentric_marker_frames`: render square frames encoded by sparse corner and edge markers"
   ],

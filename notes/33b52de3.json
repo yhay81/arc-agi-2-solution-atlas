@@ -1,8 +1,10 @@
 {
   "title": "Color gray shapes differently using the color scheme table",
-  "summary": "Correlate the color grid with the matrix order of the gray symbols, and paint each symbol with the specified color.",
+  "summary": "Use the bounding-box color legend formed by nonzero, non-gray cells: locate each gray component by its top-left row and column index within that legend, then recolor the entire component with the corresponding legend value.",
   "steps": [
-    "Correlate the color grid with the matrix order of the gray symbols, and paint each symbol with the specified color."
+    "Extract the nonzero, non-gray bounding box as a color legend and list gray components by their top-left coordinates",
+    "Use each gray component's row and column position to index the corresponding legend cell",
+    "Recolor every cell of the gray component with that legend color"
   ],
   "concepts": [
     "reading table",

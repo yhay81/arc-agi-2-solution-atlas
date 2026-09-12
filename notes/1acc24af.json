@@ -1,9 +1,9 @@
 {
-  "title": "Rotate the gray part and insert it into the recess under the blue line.",
-  "summary": "Rotate the gray part and insert it into the recess under the blue line. Fill in all the dents and color red the parts that do not overlap the blue line and the excess parts go down.",
+  "title": "Recolor gray components that can fit the blue recess",
+  "summary": "Find enclosed holes inside the blue outline and test whether each gray component can fit one without overlap. For every component that fits, recolor the original gray cells red; the implementation does not draw the rotated component into the hole.",
   "steps": [
-    "Rotate the gray part and insert it into the recess under the blue line.",
-    "Fill in all the depressions and make red the parts that do not overlap the blue line and the excess parts go down."
+    "Find the enclosed holes within the blue outline and enumerate rotations of each gray component",
+    "If some rotation fits entirely inside a hole, recolor the component at its original location to red and leave the blue outline unchanged"
   ],
   "concepts": [
     "form fit",

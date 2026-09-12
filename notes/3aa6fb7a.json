@@ -1,8 +1,9 @@
 {
   "title": "Complete partial L-shaped components",
-  "summary": "Complete partial L-shaped components. This is the training-inferred `complete_l_components` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Scan every 2×2 window and change its sole zero cell to 1 when the other three cells are color 8, thereby completing each partial L-shaped triomino while preserving all other cells.",
   "steps": [
-    "Apply `complete_l_components`: complete partial L-shaped components"
+    "For each 2×2 window, count its color-8 and zero cells",
+    "When the window contains exactly three 8s and one 0, replace that 0 with 1"
   ],
   "concepts": [
     "complete",

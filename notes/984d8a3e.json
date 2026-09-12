@@ -1,8 +1,9 @@
 {
-  "title": "Move the neutral horizontal bands to the center row",
-  "summary": "Identify the most common center band color on the board and move each row of bands to the left to the center column. Move the pressed color to the right side of the obi.",
+  "title": "Shift each row's mode-colored run left toward the center",
+  "summary": "Find the most frequent color on the whole grid. In every row containing a contiguous run of that color, move the run leftward as needed so its right edge is positioned at the row's central target, preserving the run length and all other row values.",
   "steps": [
-    "Identify the most common center band color on the board and move each row of bands to the left to the center column. Move the pressed color to the right side of the obi."
+    "Find the globally most frequent color and the contiguous run of it in each row.",
+    "Reposition each run leftward toward the center target without changing its length or the order of the remaining cells."
   ],
   "concepts": [
     "Move by line",

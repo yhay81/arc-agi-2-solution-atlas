@@ -1,6 +1,6 @@
 {
   "title": "Shift a top-left periodic tile left and extend it through solid right/bottom padding",
-  "summary": "Shift a top-left periodic tile left and extend it through solid right/bottom padding. This is the training-inferred `shift_and_extend_periodic_corner_tile` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Shift a top-left periodic tile left and extend it through solid right/bottom padding.",
   "steps": [
     "Apply `shift_and_extend_periodic_corner_tile`: shift a top-left periodic tile left and extend it through solid right/bottom padding"
   ],

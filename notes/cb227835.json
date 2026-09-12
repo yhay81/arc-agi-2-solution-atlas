@@ -1,6 +1,6 @@
 {
   "title": "Join two point markers with the perimeter of a diagonal band",
-  "summary": "Join two point markers with the perimeter of a diagonal band. The two singleton markers are opposite ends of a strip whose sides use unit-slope diagonal segments. When the displacement is taller than it is wide, each endpoint emits one diagonal and one vertical ray; for a wider displacement the roles are transposed. This is the coordinate-free construction used by the sparse ``8``-marker connector family. This is the training-inferred `connect_two_markers_diagonal_band` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Join two point markers with the perimeter of a diagonal band. The two singleton markers are opposite ends of a strip whose sides use unit-slope diagonal segments. When the displacement is taller than it is wide, each endpoint emits one diagonal and one vertical ray; for a wider displacement the roles are transposed. This is the coordinate-free construction used by the sparse ``8``-marker connector family.",
   "steps": [
     "Apply `connect_two_markers_diagonal_band`: join two point markers with the perimeter of a diagonal band"
   ],

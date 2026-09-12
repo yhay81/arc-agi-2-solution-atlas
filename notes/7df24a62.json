@@ -1,6 +1,6 @@
 {
   "title": "Stamp a keyed frame wherever its holes are occupied by markers",
-  "summary": "Stamp a keyed frame wherever its holes are occupied by markers. A connected template object supplies the paint mask. Its zero cells act as holes; every translated/rotated/reflected copy whose holes coincide with marker cells is rendered in the template color. Placements may cross the canvas edge, which is needed for clipped frames. This is the training-inferred `stamp_template_from_hole_markers` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Stamp a keyed frame wherever its holes are occupied by markers. A connected template object supplies the paint mask. Its zero cells act as holes; every translated/rotated/reflected copy whose holes coincide with marker cells is rendered in the template color. Placements may cross the canvas edge, which is needed for clipped frames.",
   "steps": [
     "Apply `stamp_template_from_hole_markers`: stamp a keyed frame wherever its holes are occupied by markers"
   ],

@@ -1,10 +1,9 @@
 {
-  "title": "Using light blue and another color as obstacles, find a vertical and horizontal path that passes through all points of the same color.",
-  "summary": "Using light blue and another color as obstacles, find a vertical and horizontal path that passes through all dots of the same color. Minimize the length of the road, and minimize the number of turns within the same length. Leave only one color as is.",
+  "title": "Connect each color's points through allowed cells",
+  "summary": "For each color other than 1 and 8, connect all of its points with a shortest 4-neighbor path that may pass only through cells of that color or color 1. Among paths of equal length, minimize turns; recolor the chosen path to the target color while preserving all other cells.",
   "steps": [
-    "Using light blue and another color as obstacles, find a vertical and horizontal path that passes through all points of the same color.",
-    "Minimize the length of the road and minimize the number of turns within the same length",
-    "Leave only one color as is"
+    "For each color other than 1 and 8, find a 4-neighbor path through all cells of that color, using only color 1 or the same target color as walkable cells.",
+    "Choose a path with minimum length, breaking ties by the fewest turns, and recolor its cells to the target color."
   ],
   "concepts": [
     "obstacle avoidance",

@@ -1,8 +1,10 @@
 {
   "title": "Complete interrupted rectangle borders",
-  "summary": "Fill gaps on dense rectangular frames made from ``source_color``. This is the training-inferred `complete_partial_rectangles` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Enumerate axis-aligned rectangles of at least 3×3 whose four sides are at least 50% color 1, each side contains at least three color-1 cells, and at least three corners are color 1; fill every zero gap on qualifying borders with color 2 while preserving all other cells.",
   "steps": [
-    "Apply `complete_partial_rectangles`: complete interrupted rectangle borders"
+    "Enumerate rectangles with height and width at least 3",
+    "Keep rectangles whose four sides have at least three 1s, at least half of each side is 1, and at least three 1-valued corners",
+    "Change only zero cells on the selected borders to 2"
   ],
   "concepts": [
     "complete",

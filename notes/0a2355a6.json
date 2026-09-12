@@ -1,5 +1,5 @@
 {
-  "title": "Color-code the outline by number of holes",
+  "title": "Color-code each shape by its number of enclosed holes",
   "summary": "Separate figures of the same color other than the background by vertical and horizontal connections. Count the number of blank areas that cannot be moved out of the outline of the figure at the top, bottom, left, or right. Color the entire shape blue if there is one hole, green if there are two, red if there are three, and yellow if there are four. The other numbers keep their original colors.",
   "steps": [
     "Separate figures of the same color other than the background by vertical and horizontal connections.",

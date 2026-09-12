@@ -1,6 +1,6 @@
 {
   "title": "Summarize per-color component counts as right-aligned rows",
-  "summary": "Summarize per-color component counts as right-aligned rows. This is the training-inferred `component_count_triangle` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Summarize per-color component counts as right-aligned rows.",
   "steps": [
     "Apply `component_count_triangle`: summarize per-color component counts as right-aligned rows"
   ],

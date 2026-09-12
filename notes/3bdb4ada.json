@@ -1,8 +1,10 @@
 {
   "title": "Punch an alternating pattern through the middle of solid three-row bars",
-  "summary": "Punch an alternating pattern through the middle of solid three-row bars. This is the training-inferred `alternate_middle_rows_of_three_high_rectangles` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "For every 4-connected nonzero monochrome component, require a completely filled rectangle exactly three rows high; if all components satisfy this condition, clear every other cell in the component's middle row starting one column to the right of its left edge, and otherwise return the input unchanged.",
   "steps": [
-    "Apply `alternate_middle_rows_of_three_high_rectangles`: punch an alternating pattern through the middle of solid three-row bars"
+    "Find all 4-connected nonzero components and require each to be monochrome, exactly three rows high, and a completely filled rectangle",
+    "For each valid rectangle, set the middle-row cells at offsets 1, 3, 5, … from the left edge to 0",
+    "If any component fails the validation, preserve the entire input"
   ],
   "concepts": [
     "alternate",

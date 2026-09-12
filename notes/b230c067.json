@@ -1,6 +1,6 @@
 {
   "title": "Color unique normalized shapes two and repeated normalized shapes one",
-  "summary": "Color unique normalized shapes two and repeated normalized shapes one. This is the training-inferred `recolor_unique_and_repeated_component_shapes` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Color unique normalized shapes two and repeated normalized shapes one.",
   "steps": [
     "Apply `recolor_unique_and_repeated_component_shapes`: color unique normalized shapes two and repeated normalized shapes one"
   ],

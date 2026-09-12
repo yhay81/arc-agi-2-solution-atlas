@@ -1,8 +1,9 @@
 {
-  "title": "Edge expand",
-  "summary": "Edge expand. This is the training-inferred `edge_expand` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Add a one-cell border around the grid",
+  "summary": "Add a one-cell border around the grid. Copy each row's left and right edge values onto the new side cells, copy the top and bottom rows onto the new horizontal edges, and set the four new corners to black 0.",
   "steps": [
-    "Apply `edge_expand`: edge expand"
+    "Add a one-cell border around the grid.",
+    "Copy each row's left and right edge values onto the new side cells, copy the top and bottom rows onto the new horizontal edges, and set the four new corners to black 0."
   ],
   "concepts": [
     "edge",

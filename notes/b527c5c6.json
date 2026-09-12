@@ -1,8 +1,10 @@
 {
-  "title": "Extend each rectangle's marked cell toward its open grid edge",
-  "summary": "Extend each rectangle's marked cell toward its open grid edge. This is the training-inferred `extend_marked_rectangles_to_edges` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Extend one-marked components through their open side",
+  "summary": "For each diagonal-connected non-background component containing exactly one 2, require that the marked cell has exactly one orthogonal side open to the outside component. Extend a central line of 2s from that marker toward the grid edge, flanked by 3s across a band whose thickness is derived from the component's span.",
   "steps": [
-    "Apply `extend_marked_rectangles_to_edges`: extend each rectangle's marked cell toward its open grid edge"
+    "Find non-background components with exactly one marker cell 2 and determine the unique open orthogonal direction.",
+    "Use the component's horizontal or vertical span as the extension thickness.",
+    "Draw the center line in 2 and the neighboring band cells in 3 until reaching the grid edge."
   ],
   "concepts": [
     "extend",

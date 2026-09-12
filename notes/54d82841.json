@@ -1,8 +1,8 @@
 {
-  "title": "Mark component centers bottom",
-  "summary": "Mark component centers bottom. This is the training-inferred `mark_component_centers_bottom` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Find every orthogonally connected nonzero component and place a yellow 4 marker in the bottom row at the midpoint of that component's horizontal extent",
+  "summary": "Find every orthogonally connected nonzero component and place a yellow 4 marker in the bottom row at the midpoint of that component's horizontal extent.",
   "steps": [
-    "Apply `mark_component_centers_bottom`: mark component centers bottom"
+    "Find every orthogonally connected nonzero component and place a yellow 4 marker in the bottom row at the midpoint of that component's horizontal extent."
   ],
   "concepts": [
     "mark",

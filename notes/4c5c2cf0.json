@@ -1,6 +1,6 @@
 {
   "title": "Reflect a payload across both axes of a distinct two-axis-symmetric marker",
-  "summary": "Reflect a payload across both axes of a distinct two-axis-symmetric marker. This is the training-inferred `reflect_payload_about_symmetric_marker` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Reflect a payload across both axes of a distinct two-axis-symmetric marker.",
   "steps": [
     "Apply `reflect_payload_about_symmetric_marker`: reflect a payload across both axes of a distinct two-axis-symmetric marker"
   ],

@@ -1,8 +1,10 @@
 {
-  "title": "Make the number of squares of each color a bar graph at the bottom",
-  "summary": "If there is a frame that occupies only the outer periphery of the board, exclude it and fill the remaining shapes from the left to the bottom in order of area.",
+  "title": "Stack each color's components in bottom-anchored lanes",
+  "summary": "Use a full outer-perimeter component as the excluded background frame, then for each remaining color sort its 4-connected components by left edge, stack their bounding-box crops from the bottom upward with one blank row between pieces, and place color lanes left to right by each color's leftmost input position with one blank column between lanes.",
   "steps": [
-    "If there is a frame that occupies only the outer periphery of the board, exclude it and fill the remaining shapes from the left to the bottom in order of area."
+    "Initialize a background-7 output and ignore any component equal to the full outer perimeter",
+    "Group remaining 4-connected components by color, order colors by leftmost occurrence and pieces by left edge, and render each piece's bounding-box shape in a lane",
+    "Anchor each lane at the bottom, separate pieces by two blank rows and lanes by one blank column, preserving background cells inside each bounding box"
   ],
   "concepts": [
     "Number of pieces",

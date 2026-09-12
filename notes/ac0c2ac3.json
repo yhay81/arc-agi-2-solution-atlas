@@ -1,10 +1,10 @@
 {
-  "title": "Create concentric squares from colored points",
-  "summary": "Taking cues from the sparse color dots in the input, the output is filled with square rings of color that share a common center.",
+  "title": "Complete concentric square rings from sparse color samples",
+  "summary": "Use each non-7 input cell to associate a color with its Chebyshev distance from the grid center. For a valid complete mapping of the centered rings, fill every output cell with the color assigned to its distance.",
   "steps": [
-    "Read the distance from the center of each color point.",
-    "Map colors from the outside to the inside ring.",
-    "Try drawing the missing ring once in the same color."
+    "Measure each non-7 cell's Chebyshev distance from the center.",
+    "Require one consistent color for each observed distance.",
+    "Fill the whole grid by looking up the color for every cell's distance."
   ],
   "concepts": [
     "concentric frame",

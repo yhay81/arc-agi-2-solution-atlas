@@ -1,8 +1,8 @@
 {
-  "title": "Color histogram",
-  "summary": "Color histogram. This is the training-inferred `color_histogram` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Count every nonzero color, sort colors by decreasing frequency, and render one top-aligned histogram column per color whose height equals that color's count",
+  "summary": "Count every nonzero color, sort colors by decreasing frequency, and render one top-aligned histogram column per color whose height equals that color's count.",
   "steps": [
-    "Apply `color_histogram`: color histogram"
+    "Count every nonzero color, sort colors by decreasing frequency, and render one top-aligned histogram column per color whose height equals that color's count."
   ],
   "concepts": [
     "color",

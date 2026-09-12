@@ -1,6 +1,6 @@
 {
   "title": "Fill separator-defined cells from a position-relative color palette",
-  "summary": "Fill separator-defined cells from a position-relative color palette. A non-zero, solid row/column lattice partitions the canvas into cells. The palette gives the color for each cell (zero means leave that cell empty), while the lattice itself is retained. This is useful for ARC diagrams in which the lattice is a coordinate frame and the cell colors are the decoded output rather than information to be copied from a particular input cell. This is the training-inferred `fill_lattice_cells_palette` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Fill separator-defined cells from a position-relative color palette. A non-zero, solid row/column lattice partitions the canvas into cells. The palette gives the color for each cell (zero means leave that cell empty), while the lattice itself is retained. This is useful for ARC diagrams in which the lattice is a coordinate frame and the cell colors are the decoded output rather than information to be copied from a particular input cell.",
   "steps": [
     "Apply `fill_lattice_cells_palette`: fill separator-defined cells from a position-relative color palette"
   ],

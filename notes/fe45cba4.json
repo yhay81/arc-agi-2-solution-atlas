@@ -1,6 +1,6 @@
 {
   "title": "Fill the largest non-background color as its near-square rectangle",
-  "summary": "Fill the largest non-background color as its near-square rectangle. The largest payload is a scattered outline/noisy shape whose cell count encodes a rectangle area. Its right and top/bottom attachment to the canvas selects the rectangle corner; the smaller payload is preserved. This is the training-inferred `rectangularize_largest_color` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Fill the largest non-background color as its near-square rectangle. The largest payload is a scattered outline/noisy shape whose cell count encodes a rectangle area. Its right and top/bottom attachment to the canvas selects the rectangle corner; the smaller payload is preserved.",
   "steps": [
     "Apply `rectangularize_largest_color`: fill the largest non-background color as its near-square rectangle"
   ],

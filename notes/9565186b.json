@@ -1,6 +1,6 @@
 {
   "title": "Replace the minority cells with gray",
-  "summary": "Replace the minority cells with gray. This is the training-inferred `minority_to_five` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Replace the minority cells with gray.",
   "steps": [
     "Apply `minority_to_five`: replace the minority cells with gray"
   ],

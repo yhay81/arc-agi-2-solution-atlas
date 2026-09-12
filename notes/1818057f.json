@@ -1,6 +1,6 @@
 {
   "title": "Recolor every five-cell orthogonal plus of ``foreground`` cells",
-  "summary": "Recolor every five-cell orthogonal plus of ``foreground`` cells. This is the training-inferred `recolor_plus_shapes` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Recolor every five-cell orthogonal plus of ``foreground`` cells.",
   "steps": [
     "Apply `recolor_plus_shapes`: recolor every five-cell orthogonal plus of ``foreground`` cells"
   ],

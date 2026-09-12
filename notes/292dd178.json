@@ -1,6 +1,6 @@
 {
   "title": "Emit a red path from each colored source",
-  "summary": "Fill near-rectangular 1-sources with 2 and emit through their openings. This is the training-inferred `source_emit_two` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Fill near-rectangular 1-sources with 2 and emit through their openings.",
   "steps": [
     "Apply `source_emit_two`: emit a red path from each colored source"
   ],

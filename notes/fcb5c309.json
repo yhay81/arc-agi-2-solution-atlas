@@ -1,6 +1,6 @@
 {
   "title": "Crop the largest hollow frame and recolor it with the scene's accent",
-  "summary": "Crop the largest hollow frame and recolor it with the scene's accent. This is the training-inferred `crop_largest_hollow_frame_recolor` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Crop the largest hollow frame and recolor it with the scene's accent.",
   "steps": [
     "Apply `crop_largest_hollow_frame_recolor`: crop the largest hollow frame and recolor it with the scene's accent"
   ],

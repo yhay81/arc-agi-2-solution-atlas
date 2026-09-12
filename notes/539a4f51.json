@@ -1,6 +1,6 @@
 {
   "title": "Repeat a nested-square ring pattern in both axes",
-  "summary": "Repeat a nested-square ring pattern in both axes. The input is a square whose cells are uniform on each upper-left ring ``max(row, col)``. Trailing empty rings are omitted from the period; the resulting ring pattern is then evaluated over a canvas twice as wide and twice as tall. This is the training-inferred `scale_nested_rings_by_two` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Repeat a nested-square ring pattern in both axes. The input is a square whose cells are uniform on each upper-left ring ``max(row, col)``. Trailing empty rings are omitted from the period; the resulting ring pattern is then evaluated over a canvas twice as wide and twice as tall.",
   "steps": [
     "Apply `scale_nested_rings_by_two`: repeat a nested-square ring pattern in both axes"
   ],

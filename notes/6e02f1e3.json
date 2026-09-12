@@ -1,8 +1,8 @@
 {
-  "title": "Unique color glyph",
-  "summary": "Unique color glyph. This is the training-inferred `unique_color_glyph` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Count the distinct colors and encode that count as a gray 5 glyph in a 3-by-3 output: a top bar for one color, the main diagonal for two, and the anti-diagonal for three",
+  "summary": "Count the distinct colors and encode that count as a gray 5 glyph in a 3-by-3 output: a top bar for one color, the main diagonal for two, and the anti-diagonal for three.",
   "steps": [
-    "Apply `unique_color_glyph`: unique color glyph"
+    "Count the distinct colors and encode that count as a gray 5 glyph in a 3-by-3 output: a top bar for one color, the main diagonal for two, and the anti-diagonal for three."
   ],
   "concepts": [
     "unique",

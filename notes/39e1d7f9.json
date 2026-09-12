@@ -1,8 +1,10 @@
 {
   "title": "Stamp a learned neighbourhood around every matching panel center",
-  "summary": "Stamp a learned neighbourhood around every matching panel center. A regular lattice of solid panels contains one complete example: a center panel of one color surrounded at fixed offsets by panels of another color. Other panels of the same center color are incomplete copies of that motif; fill their missing foreground neighbours while preserving all existing cells. This is the training-inferred `propagate_panel_neighborhoods` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "From equal-sized panels separated by one unique full-row/full-column color, select a center panel color and learn its nonzero neighboring offsets and colors from the best example. For every panel of that center color, paint those offsets only into empty panels while preserving existing panels.",
   "steps": [
-    "Apply `propagate_panel_neighborhoods`: stamp a learned neighbourhood around every matching panel center"
+    "Identify one separator color, split the grid into equally sized panels, and reduce each panel to its uniform value or 0",
+    "Choose the center color and the example neighborhood with the most non-center offsets, preferring orthogonal offsets",
+    "For every panel of the center color, fill empty neighboring panels with the learned colors and leave occupied panels unchanged"
   ],
   "concepts": [
     "propagate",

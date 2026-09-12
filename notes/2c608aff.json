@@ -1,6 +1,6 @@
 {
   "title": "Project aligned markers through the dominant background to a solid rectangle",
-  "summary": "Project aligned markers through the dominant background to a solid rectangle. This is the training-inferred `project_markers_to_solid_rectangle` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Project aligned markers through the dominant background to a solid rectangle.",
   "steps": [
     "Apply `project_markers_to_solid_rectangle`: project aligned markers through the dominant background to a solid rectangle"
   ],

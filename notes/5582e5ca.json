@@ -1,6 +1,6 @@
 {
   "title": "Fill the target region with the most frequent color",
-  "summary": "Fill the target region with the most frequent color. This is the training-inferred `fill_most_frequent` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Fill the target region with the most frequent color.",
   "steps": [
     "Apply `fill_most_frequent`: fill the target region with the most frequent color"
   ],

@@ -1,6 +1,6 @@
 {
   "title": "Recolor every second mark in each contiguous diagonal run",
-  "summary": "Recolor every second mark in each contiguous diagonal run. This is the training-inferred `recolor_nonzero_odd_rows` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Recolor every second mark in each contiguous diagonal run.",
   "steps": [
     "Apply `recolor_nonzero_odd_rows`: recolor every second mark in each contiguous diagonal run"
   ],

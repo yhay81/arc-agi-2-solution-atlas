@@ -1,6 +1,6 @@
 {
   "title": "Join two axis-aligned singleton markers with a two-color bowtie",
-  "summary": "Join two axis-aligned singleton markers with a two-color bowtie. The markers define opposite ends of a short, symmetric glyph. A horizontal pair gets a five-row by four-column glyph; a vertical pair gets a four-row by five-column glyph. The marker colors occupy the corresponding halves, and straight colored stems connect the glyph to the original markers. This is the training-inferred `connect_two_points_bowtie` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Join two axis-aligned singleton markers with a two-color bowtie. The markers define opposite ends of a short, symmetric glyph. A horizontal pair gets a five-row by four-column glyph; a vertical pair gets a four-row by five-column glyph. The marker colors occupy the corresponding halves, and straight colored stems connect the glyph to the original markers.",
   "steps": [
     "Apply `connect_two_points_bowtie`: join two axis-aligned singleton markers with a two-color bowtie"
   ],

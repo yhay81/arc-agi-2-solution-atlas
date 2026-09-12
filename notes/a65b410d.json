@@ -1,6 +1,6 @@
 {
   "title": "Complete a left-anchored triangular wedge around a horizontal bar",
-  "summary": "Complete a left-anchored triangular wedge around a horizontal bar. The sole non-background bar is the middle row of a descending-width pattern. Rows above it widen in ``upper_color`` and rows below narrow in ``lower_color``; the bar itself is preserved. This is the training-inferred `complete_wedge_from_bar` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Complete a left-anchored triangular wedge around a horizontal bar. The sole non-background bar is the middle row of a descending-width pattern. Rows above it widen in ``upper_color`` and rows below narrow in ``lower_color``; the bar itself is preserved.",
   "steps": [
     "Apply `complete_wedge_from_bar`: complete a left-anchored triangular wedge around a horizontal bar"
   ],

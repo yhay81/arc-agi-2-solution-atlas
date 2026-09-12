@@ -1,6 +1,6 @@
 {
   "title": "Normalize noisy square blocks against a complete reference block",
-  "summary": "Normalize noisy square blocks against a complete reference block. A grid may be partitioned by all-background rows and columns. The non-background part of each cell is a small pattern, with one complete cell serving as the reference. Color ``5`` is the task's noise marker: it is removed before comparing cells. Cells containing the reference's dominant color become solid dominant-color cells; all other cells copy the reference pattern. Separators remain unchanged. This is the training-inferred `normalize_partitioned_blocks` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Normalize noisy square blocks against a complete reference block. A grid may be partitioned by all-background rows and columns. The non-background part of each cell is a small pattern, with one complete cell serving as the reference. Color ``5`` is the task's noise marker: it is removed before comparing cells. Cells containing the reference's dominant color become solid dominant-color cells; all other cells copy the reference pattern. Separators remain unchanged.",
   "steps": [
     "Apply `normalize_partitioned_blocks`: normalize noisy square blocks against a complete reference block"
   ],

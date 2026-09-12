@@ -1,6 +1,6 @@
 {
   "title": "Copy keyed shapes from a reference panel into a blank panel",
-  "summary": "Copy keyed shapes from a reference panel into a blank panel. Uniform vertical columns split the canvas into a reference panel and a destination panel. Square motifs touching either side of the reference panel are copied to the corresponding side of the destination; wider motifs become horizontal bands spanning its interior. This is the training-inferred `copy_reference_panel_shapes` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Copy keyed shapes from a reference panel into a blank panel. Uniform vertical columns split the canvas into a reference panel and a destination panel. Square motifs touching either side of the reference panel are copied to the corresponding side of the destination; wider motifs become horizontal bands spanning its interior.",
   "steps": [
     "Apply `copy_reference_panel_shapes`: copy keyed shapes from a reference panel into a blank panel"
   ],

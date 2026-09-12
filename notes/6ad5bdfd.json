@@ -1,6 +1,6 @@
 {
   "title": "Slide colored blocks toward a full marker row or column",
-  "summary": "Slide colored blocks toward a full marker row or column. This is the training-inferred `slide_components_to_marker` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Slide colored blocks toward a full marker row or column.",
   "steps": [
     "Apply `slide_components_to_marker`: slide colored blocks toward a full marker row or column"
   ],

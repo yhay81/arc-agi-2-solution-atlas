@@ -1,8 +1,10 @@
 {
-  "title": "Connect points of the same color as the main rectangle with branches",
-  "summary": "Connect the stick to the distant mark, and return the center of the mark to the background. Paint the top, bottom, left and right of the mark, and both sides of the base where the line comes from the stick.",
+  "title": "Connect small same-color marks to each color's main component",
+  "summary": "For every non-background color, identify its largest component as the main shape and classify it as taller or wider. For each smaller component, first connect it to the main shape's span and add a four-neighbor cross, then clear the original small component and place two side marks near the main shape on the side from which it came.",
   "steps": [
-    "Connect the stick to the distant mark, and return the center of the mark to the background. Paint the top, bottom, left and right of the mark, and both sides of the base where the line comes from the stick."
+    "For each color, find the largest component and use its aspect ratio to choose horizontal or vertical connections.",
+    "Connect every smaller component to the main component's bounding span and add the four orthogonal neighbors around it.",
+    "Clear the smaller component and add two marks beside the main component on the corresponding side."
   ],
   "concepts": [
     "body and mark",

@@ -1,8 +1,10 @@
 {
   "title": "Reflect a payload across both axes of a distinct two-axis-symmetric marker",
-  "summary": "Reflect a payload across both axes of a distinct two-axis-symmetric marker. This is the training-inferred `reflect_payload_about_symmetric_marker` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Require exactly two nonzero colors and identify the unique color whose occupied bounding-box pattern is symmetric under both horizontal and vertical reflection. Reflect every cell of the other color across that marker's horizontal and vertical axes, preserving the marker and returning the input unchanged on collisions or ambiguity.",
   "steps": [
-    "Apply `reflect_payload_about_symmetric_marker`: reflect a payload across both axes of a distinct two-axis-symmetric marker"
+    "Require exactly two colors and find the unique marker color with both row and column reflection symmetry",
+    "Use the marker bounding box center as both reflection axes for every payload cell",
+    "Write all four reflected payload positions only into zero or payload cells; preserve the input if any target is invalid"
   ],
   "concepts": [
     "reflect",

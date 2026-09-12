@@ -1,6 +1,6 @@
 {
   "title": "Outline edge objects from the background region containing a marker",
-  "summary": "Outline edge objects from the background region containing a marker. The marker opens a four-connected flood fill through the background. The resulting region is left unchanged in its interior; its canvas boundary and the eight-neighbour halo of objects touching the canvas are colored with ``outline_color``. Whole object components bordering that region are retained, while components on the other side of a closed object wall are discarded. Interior objects in the reachable region are deliberately retained without a halo. This is the training-inferred `outline_reachable_edge_objects` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Outline edge objects from the background region containing a marker. The marker opens a four-connected flood fill through the background. The resulting region is left unchanged in its interior; its canvas boundary and the eight-neighbour halo of objects touching the canvas are colored with ``outline_color``. Whole object components bordering that region are retained, while components on the other side of a closed object wall are discarded. Interior objects in the reachable region are deliberately retained without a halo.",
   "steps": [
     "Apply `outline_reachable_edge_objects`: outline edge objects from the background region containing a marker"
   ],

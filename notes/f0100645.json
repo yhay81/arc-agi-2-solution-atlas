@@ -1,6 +1,6 @@
 {
   "title": "Stack components of the edge colors against their respective edges",
-  "summary": "Stack components of the edge colors against their respective edges. The non-background color on the left canvas edge is a left-facing instruction, and the color on the right edge is a right-facing one. Eight-connected components of each instructed color are slid horizontally toward the edge-most component until the two components become eight-connected. Repeating this operation packs all pieces while keeping each component's shape and row coordinates intact. This is the training-inferred `pack_edge_color_components` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Stack components of the edge colors against their respective edges. The non-background color on the left canvas edge is a left-facing instruction, and the color on the right edge is a right-facing one. Eight-connected components of each instructed color are slid horizontally toward the edge-most component until the two components become eight-connected. Repeating this operation packs all pieces while keeping each component's shape and row coordinates intact.",
   "steps": [
     "Apply `pack_edge_color_components`: stack components of the edge colors against their respective edges"
   ],

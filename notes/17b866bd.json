@@ -1,10 +1,10 @@
 {
-  "title": "Copy the color of the intersection to the flower-shaped hole (under consideration)",
-  "summary": "Divide rows and columns into 5 squares using the top left as a reference, and read the colored instructions at the intersections of the grid. Don't skip reading the light blue instructions. Fill in the black flower-shaped hole in the 4x4 at the bottom right of the instructions with the color of the instructions. Return the indicated intersections to black, and keep the light blue outline surrounding the flower and other areas.",
+  "title": "Copy each 5-grid intersection color into its interior block",
+  "summary": "Read every nonzero value at the top-left cell of each 5-by-5 tile. Clear that instruction cell, then replace every zero inside the corresponding tile's remaining 4-by-4 area with the instruction color while preserving nonzero cells and all other regions.",
   "steps": [
-    "Divide rows and columns into 5 squares using the top left as a reference, and read the colored instructions at the intersections of the grid. Don't skip reading the light blue instructions.",
-    "Fill in the black flower-shaped hole in the 4x4 at the bottom right of the instructions with the color of the instructions.",
-    "Return the indicated intersections to black, and keep the light blue outline surrounding the flower and other areas."
+    "Visit grid positions at 5-row and 5-column intervals and use each nonzero top-left value as an instruction",
+    "Clear the instruction cell and paint every zero in that tile's inner 4-by-4 area with its value",
+    "Preserve existing nonzero interior cells and all cells outside the processed tiles"
   ],
   "concepts": [
     "periodic lattice",

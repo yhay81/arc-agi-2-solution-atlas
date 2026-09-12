@@ -1,9 +1,10 @@
 {
-  "title": "Rearrange small blocks according to delimiter",
-  "summary": "If there are 4 yellow vertical lines in a 9x9 section, replace the left and right, and if there are horizontal lines, replace the top and bottom. If there is no line, copy one color other than blue 1 to 4 small sections.",
+  "title": "Fill four 3×3 subblocks in each 10×10 tile from edge cues",
+  "summary": "Process each 10×10 tile by reading values at its four interior 2×2 corner positions. If the tile has a color-4 cue on its top or left midpoint, reverse the corresponding row or column order; otherwise require one non-1 nonzero color and use it uniformly. Paint the resulting 2×2 values into four 3×3 subblocks separated by one-cell gaps.",
   "steps": [
-    "If there are 4 yellow vertical lines in a 9x9 section, replace the left and right, and if there are horizontal lines, replace the top and bottom.",
-    "If there is no line, copy one color other than blue 1 to 4 small sections."
+    "Partition the grid into 10×10 tiles and read the four values at offsets (2,2), (2,6), (6,2), and (6,6)",
+    "Reverse the 2×2 value arrangement horizontally when the top midpoint is 4, vertically when the left midpoint is 4, or fill it uniformly with the unique non-1 color otherwise",
+    "Write each value into its corresponding 3×3 subblock at offsets 1 and 5, leaving the one-cell gaps unchanged"
   ],
   "concepts": [
     "compartment",

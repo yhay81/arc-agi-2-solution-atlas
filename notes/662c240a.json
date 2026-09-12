@@ -1,8 +1,8 @@
 {
-  "title": "Select unique asymmetric panel",
-  "summary": "Select unique asymmetric panel. This is the training-inferred `select_unique_asymmetric_panel` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Split the rectangular input into equal square panels and return the sole panel that is not symmetric across its main diagonal",
+  "summary": "Split the rectangular input into equal square panels and return the sole panel that is not symmetric across its main diagonal.",
   "steps": [
-    "Apply `select_unique_asymmetric_panel`: select unique asymmetric panel"
+    "Split the rectangular input into equal square panels and return the sole panel that is not symmetric across its main diagonal."
   ],
   "concepts": [
     "select",

@@ -1,6 +1,6 @@
 {
   "title": "Fill dense component interiors from their nearest rare-color marker",
-  "summary": "Fill dense component interiors from their nearest rare-color marker. This is the training-inferred `fill_component_interiors_least` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Fill dense component interiors from their nearest rare-color marker.",
   "steps": [
     "Apply `fill_component_interiors_least`: fill dense component interiors from their nearest rare-color marker"
   ],

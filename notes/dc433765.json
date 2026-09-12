@@ -1,8 +1,9 @@
 {
-  "title": "Move green objects toward the yellow target",
-  "summary": "Move green objects toward the yellow target. This is the training-inferred `move_three_toward_four` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Move the green cell one step toward the yellow target",
+  "summary": "With one green cell (3) and one yellow target (4), erase the green cell and place it one row/column/diagonal step closer to the target.",
   "steps": [
-    "Apply `move_three_toward_four`: move green objects toward the yellow target"
+    "Find the single green cell and single yellow target.",
+    "Move the green cell exactly one 8-neighbor step toward the target, replacing its original position with 0."
   ],
   "concepts": [
     "move",

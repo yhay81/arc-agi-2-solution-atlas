@@ -1,8 +1,9 @@
 {
-  "title": "Recolor components by size",
-  "summary": "Recolor components by size. This is the training-inferred `recolor_components_by_size` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Encode small component sizes as colors",
+  "summary": "Measure each orthogonally connected nonzero component. Components of size 9 or less are filled with their size value, then size 2 becomes green 3, size 3 becomes red 2, and size 4 becomes blue 1; zeros and other values are preserved.",
   "steps": [
-    "Apply `recolor_components_by_size`: recolor components by size"
+    "Find every orthogonally connected nonzero component and replace each component of size at most 9 with its size.",
+    "Map size 2 to 3, size 3 to 2, and size 4 to 1; preserve zeros and other size values."
   ],
   "concepts": [
     "recolor",

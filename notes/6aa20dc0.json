@@ -1,6 +1,6 @@
 {
   "title": "Scale a three-color diagonal template between matching key blocks",
-  "summary": "Scale a three-color diagonal template between matching key blocks. A compact three-by-three motif contains two singleton key colors and a repeated connector color (the remaining cells may be background). Away from that motif, square blocks of the two key colors occur in matching sizes. Each pair whose displacement is a dihedral transform of the key displacement is joined by a scaled copy of the motif. The motif is inferred from the canvas and every existing cell is preserved. This is the training-inferred `scale_multicolor_template_between_keyed_blocks` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Scale a three-color diagonal template between matching key blocks. A compact three-by-three motif contains two singleton key colors and a repeated connector color (the remaining cells may be background). Away from that motif, square blocks of the two key colors occur in matching sizes. Each pair whose displacement is a dihedral transform of the key displacement is joined by a scaled copy of the motif. The motif is inferred from the canvas and every existing cell is preserved.",
   "steps": [
     "Apply `scale_multicolor_template_between_keyed_blocks`: scale a three-color diagonal template between matching key blocks"
   ],

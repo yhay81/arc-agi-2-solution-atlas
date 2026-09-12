@@ -1,8 +1,10 @@
 {
   "title": "Complete five-cell-radius crosses encoded by sparse marker points",
-  "summary": "Complete five-cell-radius crosses encoded by sparse marker points. The modal color is the canvas background and the rarest other color is a marker. A marker constellation that fits an orthogonal radius-two cross is completed with color ``8``. Nearby overlapping constellations are resolved in favor of the denser one; an explicitly marked radius-three endpoint extends the same cross one further cell. Edge-truncated crosses are naturally supported by considering only in-bounds cells. This is the training-inferred `complete_marker_crosses` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Use color 5 as background when present (otherwise the modal color), use color 2 as marker when present (otherwise the rarest non-background color), and find non-overlapping radius-two orthogonal cross windows containing at least three markers. Fill their background cells with 8, preferring denser overlapping candidates, and extend a cross to radius three only when an in-bounds endpoint marker and background-only extension satisfy the condition.",
   "steps": [
-    "Apply `complete_marker_crosses`: complete five-cell-radius crosses encoded by sparse marker points"
+    "Select the background and marker colors using the explicit 5/2 preferences and otherwise their frequency rules",
+    "Scan center positions for in-bounds radius-two cross windows containing only background or marker values and at least three markers, selecting non-overlapping candidates by descending marker count",
+    "Fill background cells with 8 and add radius-three arms only when the endpoint marker and all extension cells meet the input conditions"
   ],
   "concepts": [
     "complete",

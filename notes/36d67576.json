@@ -1,6 +1,6 @@
 {
   "title": "Complete repeated shape components from a labelled local template",
-  "summary": "Complete repeated shape components from a labelled local template. A scene contains several copies of one monochrome component. The copy carrying the richest one-cell frame of colored markers is the reference; its marker frame is reflected/rotated onto the other copies. Existing markers select the unambiguous orientation and are never overwritten. This is the training-inferred `propagate_component_frame_template` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Complete repeated shape components from a labelled local template. A scene contains several copies of one monochrome component. The copy carrying the richest one-cell frame of colored markers is the reference; its marker frame is reflected/rotated onto the other copies. Existing markers select the unambiguous orientation and are never overwritten.",
   "steps": [
     "Apply `propagate_component_frame_template`: complete repeated shape components from a labelled local template"
   ],

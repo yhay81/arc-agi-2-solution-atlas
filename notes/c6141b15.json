@@ -1,8 +1,10 @@
 {
-  "title": "Exchange one long line for copies and connections of compact shapes",
-  "summary": "Exchange one long line for copies and connections of compact shapes. This is the training-inferred `route_line_endpoints_and_shapes` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Replace a long line with endpoint motifs and connect shape centers",
+  "summary": "Identify the largest straight non-background component and the largest non-straight component. Clear the scene, copy the compact motif to the straight line's endpoints, and connect the centers of all compact shapes with the straight component's color.",
   "steps": [
-    "Apply `route_line_endpoints_and_shapes`: exchange one long line for copies and connections of compact shapes"
+    "Classify non-background components as straight lines or compact shapes and choose the largest of each.",
+    "Place the largest compact motif at both endpoints of the largest straight line.",
+    "Draw the straight-line color between the centers of every compact shape."
   ],
   "concepts": [
     "route",

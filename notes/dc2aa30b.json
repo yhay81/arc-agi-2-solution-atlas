@@ -1,6 +1,6 @@
 {
   "title": "Reorder a 3x3 array of 3x3 tiles by each tile's count of color one",
-  "summary": "Reorder a 3x3 array of 3x3 tiles by each tile's count of color one. The tiles are separated by one-cell zero gutters. ARC instances in this family contain nine distinct counts from 0..9; the sorted tiles are laid out in three ascending rows, with the rows ordered from largest counts to smallest counts. Tile contents are preserved byte-for-byte. This is the training-inferred `sort_three_by_three_tiles_by_count` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Reorder a 3x3 array of 3x3 tiles by each tile's count of color one. The tiles are separated by one-cell zero gutters. ARC instances in this family contain nine distinct counts from 0..9; the sorted tiles are laid out in three ascending rows, with the rows ordered from largest counts to smallest counts. Tile contents are preserved byte-for-byte.",
   "steps": [
     "Apply `sort_three_by_three_tiles_by_count`: reorder a 3x3 array of 3x3 tiles by each tile's count of color one"
   ],

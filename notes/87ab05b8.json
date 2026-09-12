@@ -1,8 +1,8 @@
 {
-  "title": "Marker quadrant block",
-  "summary": "Marker quadrant block. This is the training-inferred `marker_quadrant_block` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Locate the sole red 2 marker and fill the entire canvas quadrant containing it with red, using the most frequent input color as the background elsewhere",
+  "summary": "Locate the sole red 2 marker and fill the entire canvas quadrant containing it with red, using the most frequent input color as the background elsewhere.",
   "steps": [
-    "Apply `marker_quadrant_block`: marker quadrant block"
+    "Locate the sole red 2 marker and fill the entire canvas quadrant containing it with red, using the most frequent input color as the background elsewhere."
   ],
   "concepts": [
     "marker",

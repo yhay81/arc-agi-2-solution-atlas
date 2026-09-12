@@ -1,8 +1,8 @@
 {
-  "title": "Move marker down stripes",
-  "summary": "Move marker down stripes. This is the training-inferred `move_marker_down_stripes` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Move the sole marker down by one row and fill the rows above it with alternating yellow 4 columns aligned to the marker's column",
+  "summary": "Move the sole marker down by one row and fill the rows above it with alternating yellow 4 columns aligned to the marker's column.",
   "steps": [
-    "Apply `move_marker_down_stripes`: move marker down stripes"
+    "Move the sole marker down by one row and fill the rows above it with alternating yellow 4 columns aligned to the marker's column."
   ],
   "concepts": [
     "move",

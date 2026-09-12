@@ -1,6 +1,6 @@
 {
   "title": "Transfer the smallest centered template onto marked solid rectangles",
-  "summary": "Transfer the smallest centered template onto marked solid rectangles. This is the training-inferred `transfer_centered_template_axes` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Transfer the smallest centered template onto marked solid rectangles.",
   "steps": [
     "Apply `transfer_centered_template_axes`: transfer the smallest centered template onto marked solid rectangles"
   ],

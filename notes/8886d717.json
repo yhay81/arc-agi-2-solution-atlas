@@ -1,10 +1,9 @@
 {
-  "title": "If the light blue dot touches red on the top, bottom, left, and right, change it to red and fill in the hole.",
-  "summary": "If the light blue dot touches red on the top, bottom, left and right, change it to red and fill in the hole. The light blue color that is not in contact with the red color extends 1 space toward the brown wall. Leave the wall itself.",
+  "title": "Recolor light-blue cells adjacent to red and shift the others toward the wall",
+  "summary": "For each light-blue 8 cell, change it to red 2 when at least one orthogonal neighbor is red. Any remaining light-blue cell shifts one step toward the brown 9 wall, without changing the wall itself.",
   "steps": [
-    "If the light blue dot touches red on the top, bottom, left, and right, change it to red and fill in the hole.",
-    "The light blue color that is not in contact with red extends one space toward the brown wall.",
-    "leave the wall itself"
+    "Change a light-blue 8 cell to red 2 if any of its four orthogonal neighbors is red 2.",
+    "For a light-blue cell not adjacent to red, move it one cell right toward the normalized brown 9 wall, and leave the wall unchanged."
   ],
   "concepts": [
     "Direction",

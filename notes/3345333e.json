@@ -1,8 +1,10 @@
 {
   "title": "Remove a solid rectangular occluder and restore horizontal symmetry",
-  "summary": "Remove a solid rectangular occluder and restore horizontal symmetry. This is the training-inferred `restore_lr_symmetry_under_rectangle` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "When exactly two nonzero colors are present and exactly one forms a solid rectangle, treat that rectangle as an occluder, infer the unique best horizontal reflection axis for the other color, remove the rectangle by changing it to 0, and complete the reflected pattern.",
   "steps": [
-    "Apply `restore_lr_symmetry_under_rectangle`: remove a solid rectangular occluder and restore horizontal symmetry"
+    "Require exactly two nonzero colors and identify the unique color forming a solid rectangle of at least four cells",
+    "Find candidate horizontal reflection axes for the other color, allowing its mirror cells to be either the pattern color or the rectangular occluder",
+    "Choose the unique axis with the most already-matching pattern cells, erase the occluder to 0, and fill the reflected pattern cells"
   ],
   "concepts": [
     "restore",

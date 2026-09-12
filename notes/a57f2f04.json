@@ -1,6 +1,6 @@
 {
   "title": "Tile each separated non-marker block by its smallest nonzero motif",
-  "summary": "Tile each separated non-marker block by its smallest nonzero motif. This is the training-inferred `tile_non_marker_blocks` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Tile each separated non-marker block by its smallest nonzero motif.",
   "steps": [
     "Apply `tile_non_marker_blocks`: tile each separated non-marker block by its smallest nonzero motif"
   ],

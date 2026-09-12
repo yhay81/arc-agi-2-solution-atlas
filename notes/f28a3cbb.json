@@ -1,6 +1,6 @@
 {
   "title": "Pack each color's scattered pixels against its solid rectangular core",
-  "summary": "Pack each color's scattered pixels against its solid rectangular core. Some ARC scenes contain one solid rectangular object per payload color and a handful of pixels scattered around it. The scattered pixels are not discarded: each is slid toward the core until it touches the nearest side. A pixel diagonally outside two sides chooses the side for which its distance is greater, then is clamped along the core edge. This preserves the encoded edge attachments while removing the long separating gaps. This is the training-inferred `pack_pixels_against_solid_cores` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "summary": "Pack each color's scattered pixels against its solid rectangular core. Some ARC scenes contain one solid rectangular object per payload color and a handful of pixels scattered around it. The scattered pixels are not discarded: each is slid toward the core until it touches the nearest side. A pixel diagonally outside two sides chooses the side for which its distance is greater, then is clamped along the core edge. This preserves the encoded edge attachments while removing the long separating gaps.",
   "steps": [
     "Apply `pack_pixels_against_solid_cores`: pack each color's scattered pixels against its solid rectangular core"
   ],

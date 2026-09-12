@@ -1,10 +1,10 @@
 {
   "title": "Find solid contour shapes and colored swatches, including diagonal contacts",
-  "summary": "Find solid contour shapes and colored swatches, including diagonal contacts. The holes surrounded by the outline are matched in relative position, and the color of each hole in the sample is transferred to the hole in the same position in the monochrome figure. Outputs the circumscribed rectangle of only the completed shape.",
+  "summary": "Find two 8-connected multicolor objects, choose the less color-diverse object as the target and the other as a colored reference, extract their enclosed interior regions, match target and reference holes by minimum normalized-center assignment, fill each target hole with the reference hole's most frequent color, and return the completed target bounding box.",
   "steps": [
-    "Find solid contour shapes and colored swatches, including diagonal contacts",
-    "Match the holes surrounded by the outline by relative position, and transfer the color of each hole in the sample to the hole in the same position in the monochrome shape.",
-    "Output the circumscribed rectangle of only the completed shape"
+    "Find exactly two 8-connected non-background objects and designate the less color-diverse one as target and the other as reference",
+    "Extract interior zero regions fully enclosed by each object's wall color and match them by minimum total normalized-center distance",
+    "Fill each target hole with the most common reference-marker color for its matched hole and return only the target bounding-box crop"
   ],
   "concepts": [
     "dividing the band",

@@ -1,8 +1,9 @@
 {
-  "title": "Summarize separator-delimited cells by whether they contain a target count",
-  "summary": "Summarize separator-delimited cells by whether they contain a target count. This is the training-inferred `count_marker_in_lattice` rule. The implementation applies the structural transform first, then any declared post-processing, repetition, tiling, and color mapping in that order.",
+  "title": "Encode cells by whether they contain exactly one target marker",
+  "summary": "Use full rows and columns of 8 as separators to divide the grid into cells. Output 0 for a cell containing exactly one 6 and output 1 for every other cell.",
   "steps": [
-    "Apply `count_marker_in_lattice`: summarize separator-delimited cells by whether they contain a target count"
+    "Use the full 8-colored rows and columns to divide the input into cells.",
+    "Count color-6 markers in each cell; encode exactly one marker as 0 and all other counts as 1."
   ],
   "concepts": [
     "count",
