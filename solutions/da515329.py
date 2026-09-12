@@ -47,8 +47,9 @@ def solve(grid):
     heading = 0
     output = [row[:] for row in grid]
 
-    steps = 4 * (max(height, width) + 2 * length) ** 2
-    for tick in range(steps):
+    turns_outside = 0
+    tick = 0
+    while True:
         allowed = set(previous)
         for direction in ((heading + 1) % 4, heading, (heading - 1) % 4):
             dr, dc = DIRECTIONS[direction]
@@ -69,12 +70,23 @@ def solve(grid):
             for second in proposals[index + 1 :]
         ):
             raise ValueError("Simultaneous path collision")
-        occupied.update(proposals)
-        head, heading = candidate, direction
-        previous = (previous + [candidate])[-2:]
+        visible = False
         for row, col in proposals:
             row += center_row
             col += center_col
             if 0 <= row < height and 0 <= col < width:
                 output[row][col] = color
-    return output
+                visible = True
+        if visible:
+            turns_outside = 0
+        elif direction == (heading + 1) % 4:
+            turns_outside += 1
+        elif direction != heading:
+            turns_outside -= 1
+        if not visible and turns_outside >= 4:
+            return output
+
+        occupied.update(proposals)
+        head, heading = candidate, direction
+        previous = (previous + [candidate])[-2:]
+        tick += 1

@@ -80,7 +80,7 @@ def solve(grid):
             raise ValueError("Matching bar not unique")
         a, b, left, right, _ = matches[0]
         dr, dc = (0, 1 if c < left else -1) if a <= r <= b else (1 if r < a else -1, 0)
-        for _ in range(30):
+        while True:
             for rr in range(r - 1, r + 2):
                 for cc in range(c - 1, c + 2):
                     put(out, rr, cc, center if (rr, cc) == (r, c) else border)
@@ -88,6 +88,6 @@ def solve(grid):
                 break
             r += dr * 3
             c += dc * 3
-        else:
-            raise ValueError("Stamp never reaches bar")
+            if not (0 <= r < len(g) and 0 <= c < len(g[0])):
+                raise ValueError("Stamp never reaches bar")
     return out

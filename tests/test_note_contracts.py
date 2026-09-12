@@ -13,7 +13,14 @@ INFERENCE_VALUES = {
     "training_outputs_only",
     "implementation_reviewed_against_provided_pairs",
 }
-FORBIDDEN_PHRASES = ("input fingerprint", "hash patch", "answer table")
+FORBIDDEN_PHRASES = (
+    "input fingerprint",
+    "hash patch",
+    "answer table",
+    "the implementation applies the structural transform first",
+    "brown 6",
+    "orange 9",
+)
 
 
 def note_violations(root: Path) -> list[str]:
@@ -40,6 +47,9 @@ def note_violations(root: Path) -> list[str]:
                 failures.append(f"{task_id}: {key} must be non-empty text")
             elif key != "inference" and (not ENGLISH.search(value) or JAPANESE.search(value)):
                 failures.append(f"{task_id}: {key} must contain English-only prose")
+        summary = note.get("summary")
+        if isinstance(summary, str) and len(re.findall(r"[A-Za-z0-9]+", summary)) < 5:
+            failures.append(f"{task_id}: summary is too vague to describe the transformation")
         for key in OPTIONAL_TEXT:
             value = note.get(key)
             if value is not None and (

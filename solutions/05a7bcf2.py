@@ -4,14 +4,11 @@ def _transpose(grid):
 
 def _find_divider(grid):
     height, width = len(grid), len(grid[0])
-    for col in range(width):
-        if sum(grid[row][col] == 8 for row in range(height)) > 0.8 * height:
-            return True, col
-    for row in range(height):
-        if sum(value == 8 for value in grid[row]) > 0.8 * width:
-            return False, row
-    positions = [(row, col) for row in range(height) for col in range(width) if grid[row][col] == 8]
-    return False, positions[0][0] if positions else height // 2
+    candidates = [(True, col) for col in range(width) if all(row[col] == 8 for row in grid)]
+    candidates += [(False, row) for row in range(height) if all(value == 8 for value in grid[row])]
+    if len(candidates) != 1:
+        raise ValueError("Expected one complete light-blue divider")
+    return candidates[0]
 
 
 def _move_histogram(source, result, divider):

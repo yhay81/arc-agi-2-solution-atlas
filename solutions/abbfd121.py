@@ -29,6 +29,27 @@ def components(g, background=0, diagonal=False, mono=True):
     return out
 
 
+def compatible_periods(grid, hidden, axis):
+    height, width = len(grid), len(grid[0])
+    periods = []
+    for period in range(1, (height, width)[axis] + 1):
+        phases = {}
+        for row, values in enumerate(grid):
+            for col, value in enumerate(values):
+                if (row, col) in hidden:
+                    continue
+                key = (row % period, col) if axis == 0 else (row, col % period)
+                if key in phases and phases[key] != value:
+                    break
+                phases[key] = value
+            else:
+                continue
+            break
+        else:
+            periods.append(period)
+    return periods
+
+
 def solve(grid):
     g = grid
     g = [row[:] for row in g]
@@ -44,8 +65,10 @@ def solve(grid):
     hidden = set(p for obj in rects for p in obj)
     a, b, c, d = bbox(max(rects, key=len))
     candidates = []
-    for ph in range(1, 9):
-        for pw in range(1, 9):
+    row_periods = compatible_periods(g, hidden, 0)
+    col_periods = compatible_periods(g, hidden, 1)
+    for ph in row_periods:
+        for pw in col_periods:
             cells = {}
             for r, row in enumerate(g):
                 for col, v in enumerate(row):

@@ -9,7 +9,7 @@ uv sync --locked --dev
 uv run --locked ruff format --check .
 uv run --locked ruff check .
 uv run --locked ty check tests scripts
-uv run --locked pytest --cov --cov-report=term-missing
+uv run --locked pytest -q
 uv run --locked python scripts/check_upstream.py
 uv run --locked python -m scripts.verify --expected-tasks 1120
 ```

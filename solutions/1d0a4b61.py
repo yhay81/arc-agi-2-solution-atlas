@@ -9,8 +9,6 @@ def _periodic_fill(grid, missing):
     candidates = []
     for row_period in range(1, height + 1):
         for col_period in range(1, width + 1):
-            if row_period * col_period > height * width // 2:
-                continue
             pattern = {}
             valid = True
             for row, values in enumerate(grid):
